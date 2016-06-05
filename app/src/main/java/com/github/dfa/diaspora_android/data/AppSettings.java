@@ -65,6 +65,7 @@ public class AppSettings {
         private static final String PODUSERPROFILE_NAME = "podUserProfile_name";
         private static final String PODUSERPROFILE_ID = "podUserProfile_guid";
         private static final String PODDOMAIN = "podDomain";
+        private static final String IS_PROXY_ORBOT = "proxyViaOrbot";
     }
 
 
@@ -131,5 +132,13 @@ public class AppSettings {
 
     public void setPreviousPodlist(String[] pods){
         setStringArray(prefApp, PREF.PREVIOUS_PODLIST, pods);
+    }
+
+    public boolean isProxyOrbot() {
+        return prefApp.getBoolean(PREF.IS_PROXY_ORBOT, false);
+    }
+
+    public void setProxyOrbot(boolean active) {
+        setBool(prefApp, PREF.IS_PROXY_ORBOT, active);
     }
 }

@@ -211,4 +211,15 @@
     <string name="prefix_https" translatable="false">https://</string>
     <string name="share_dotdodot">Share…</string>
     <string name="app_hashtag" translatable="false">#DiasporaForAndroid</string>
+
+    <string name="install_orbot_">Install Orbot?</string>
+    <string name="you_must_have_orbot">You must have Orbot installed and activated to proxy traffic through it.</string>
+    <string name="get_orbot_from_fdroid">Would you like to install it from F-Droid?</string>
+    <string name="download_orbot_from_fdroid">Would you like to download it from f-droid.org?</string>
+    <string name="start_orbot_">Start Orbot?</string>
+    <string name="orbot_doesn_t_appear_to_be_running_would_you_like_to_start_it_up_and_connect_to_tor_">Orbot doesn\'t appear to be running. Would you like to start it up and connect to Tor?</string>
+    <string name="orbot_starts_disabled_message">Orbot has background starts disabled. Would you like to open Orbot?</string>
+    <string name="orbot_proxy_enabled">Orbot Proxy: Enabled</string>
+    <string name="orbot_proxy_disabled">Orbot Proxy: Disabled</string>
+
 </resources>

@@ -82,6 +82,7 @@ import com.github.dfa.diaspora_android.listener.WebUserProfileChangedListener;
 import com.github.dfa.diaspora_android.ui.ContextMenuWebView;
 import com.github.dfa.diaspora_android.ui.CustomWebViewClient;
 import com.github.dfa.diaspora_android.util.Helpers;
+import com.github.dfa.diaspora_android.util.ProxyHandler;
 
 import org.json.JSONException;
 
@@ -97,6 +98,7 @@ import java.util.Locale;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import info.guardianproject.netcipher.proxy.OrbotHelper;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, WebUserProfileChangedListener {
@@ -173,6 +175,16 @@ public class MainActivity extends AppCompatActivity
         app = (App) getApplication();
         appSettings = app.getSettings();
         podUserProfile = new PodUserProfile(app, uiHandler, this);
+
+        ProxyHandler.getInstance(this, appSettings).registerOrbotReceiver(this);
+        if(appSettings.isProxyOrbot()) {
+            if(!OrbotHelper.isOrbotInstalled(this)) {
+                appSettings.setProxyOrbot(false);
+                promptInstallOrbot();
+            } else {
+                Toast.makeText(this, "Orbot Proxy: "+ProxyHandler.getInstance(null, null).getActiveProxy(), Toast.LENGTH_SHORT).show();
+            }
+        }
 
         this.registerForContextMenu(webView);
         webView.setParentActivity(this);
@@ -306,7 +318,13 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        if(!appSettings.isProxyOrbot()) {
+            ProxyHandler.getInstance(null, null).unregisterOrbotReceiver(this);
+            afterOnCreate(savedInstanceState);
+        }
+    }
 
+    private void afterOnCreate(Bundle savedInstanceState) {
         if (savedInstanceState == null) {
             if (Helpers.isOnline(MainActivity.this)) {
                 webView.loadData("", "text/html", null);
@@ -404,6 +422,9 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
+        try {
+            ProxyHandler.getInstance(null, null).registerOrbotReceiver(this);
+        } catch (IllegalStateException e){}
         registerReceiver(brLoadUrl, new IntentFilter(URL_MESSAGE));
     }
 
@@ -441,6 +462,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onPause() {
         unregisterReceiver(brLoadUrl);
+        ProxyHandler.getInstance(null, null).unregisterOrbotReceiver(this);
         super.onPause();
     }
 
@@ -926,7 +948,8 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.nav_settings_app: {
                 final CharSequence[] options = {getString(R.string.settings_font), getString(R.string.settings_view), appSettings.isLoadImages() ?
-                        getString(R.string.settings_images_switch_off) : getString(R.string.settings_images_switch_on), getString(R.string.jb_pod)};
+                        getString(R.string.settings_images_switch_off) : getString(R.string.settings_images_switch_on), getString(R.string.jb_pod),
+                appSettings.isProxyOrbot() ? getString(R.string.orbot_proxy_enabled) : getString(R.string.orbot_proxy_disabled)};
 
                 if (Helpers.isOnline(MainActivity.this)) {
                     new AlertDialog.Builder(MainActivity.this)
@@ -959,6 +982,13 @@ public class MainActivity extends AppCompatActivity
                                                             })
                                                     .show();
                                             break;
+                                        case 4:
+                                            if(appSettings.isProxyOrbot()) {
+                                                ProxyHandler.getInstance(null,null).setProxy(MainActivity.this, null, 0, ProxyHandler.NO_PROXY);
+                                            } else {
+                                                OrbotHelper.requestStartTor(MainActivity.this);
+                                            }
+                                            appSettings.setProxyOrbot(!appSettings.isProxyOrbot());
                                     }
                                 }
                             }).show();
@@ -1029,7 +1059,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.main__layout);
-        drawer.closeDrawer(GravityCompat.START);
+        if(drawer != null) drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
@@ -1048,5 +1078,51 @@ public class MainActivity extends AppCompatActivity
                 super.onRequestPermissionsResult(requestCode, permissions,
                         grantResults);
         }
+    }
+
+    /**
+     * Ask the user whether to install Orbot or not. Check if installing from
+     * F-Droid or Google Play, otherwise take the user to the Orbot download
+     * page on f-droid.org.
+     */
+    void promptInstallOrbot() {
+        String message = this.getString(R.string.you_must_have_orbot) + "  ";
+
+        final Intent intent = OrbotHelper.getOrbotInstallIntent(MainActivity.this);
+        if (intent.getPackage() == null) {
+            message += MainActivity.this.getString(R.string.download_orbot_from_fdroid);
+        } else {
+            message += MainActivity.this.getString(R.string.get_orbot_from_fdroid);
+        }
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.install_orbot_);
+        builder.setMessage(message);
+        builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                MainActivity.this.startActivity(intent);
+            }
+        });
+        builder.setNegativeButton(android.R.string.no, null);
+        builder.show();
+    }
+
+    public void requestOrbotStart(boolean backgroundStartsDisabled) {
+        AlertDialog.Builder startDialog = new AlertDialog.Builder(this);
+        startDialog.setTitle(R.string.start_orbot_);
+        if(backgroundStartsDisabled)
+            startDialog.setMessage(R.string.orbot_starts_disabled_message);
+        else
+            startDialog.setMessage(R.string.orbot_doesn_t_appear_to_be_running_would_you_like_to_start_it_up_and_connect_to_tor_);
+
+        startDialog.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                startActivityForResult(OrbotHelper.getShowOrbotStartIntent(), 1);
+            }
+        });
+        startDialog.setNegativeButton(android.R.string.no, null);
+        startDialog.show();
     }
 }
