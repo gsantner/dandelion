@@ -111,13 +111,13 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
     }
 
     public static void setProxy(Context context, String host, int port) {
+        OrbotStatusReceiver.host = host;
+        OrbotStatusReceiver.port = port;
+        NetCipher.setProxy(host, port);
         try {
-            OrbotStatusReceiver.host = host;
-            OrbotStatusReceiver.port = port;
-            NetCipher.setProxy(host, port);
             WebkitProxy.setProxy(MainActivity.class.getName(), context.getApplicationContext(), null, host, port);
-            Log.d(App.TAG, "Proxy successfully set.");
             proxySet = true;
+            Log.d(App.TAG, "Proxy successfully set.");
         } catch(Exception e) {
             Log.e(App.TAG, "setProxy failed: ");
             e.printStackTrace();
@@ -126,15 +126,16 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
 
     public static void resetProxy(Context context) {
         promptOnBackgroundStart = true;
+        OrbotStatusReceiver.host = "";
+        OrbotStatusReceiver.port = 0;
+        NetCipher.clearProxy();
         try {
-            OrbotStatusReceiver.host = "";
-            OrbotStatusReceiver.port = 0;
-            NetCipher.clearProxy();
             WebkitProxy.resetProxy(MainActivity.class.getName(), context.getApplicationContext());
+            proxySet = false;
+            Log.d(App.TAG, "Proxy reset");
         } catch (Exception e) {
             //Fails in any case on android 6. Ignore it and restart application.
         }
-        proxySet = false;
         //Restart application
         Intent restartActivity = new Intent(context, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 12374, restartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
@@ -154,9 +155,9 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
      */
     public static boolean isInCorrectState(boolean orbotProxyActive) {
         if(orbotProxyActive) {
-            return host != null && !host.equals("") && port > 0 && proxySet;
+            return host != null && !host.equals("") && port > 0 && isProxySet();
         } else {
-            return (host.equals("") || host == null) && port < 1 && !proxySet;
+            return (host.equals("") || host == null) && port < 1 && !isProxySet();
         }
     }
 }
