@@ -982,6 +982,7 @@ public class MainActivity extends AppCompatActivity
                                                 OrbotStatusReceiver.resetProxy(MainActivity.this.getApplicationContext());
                                             } else {
                                                 OrbotHelper.requestStartTor(MainActivity.this);
+                                                webView.reload();
                                             }
 
                                     }

@@ -24,6 +24,7 @@ import com.github.dfa.diaspora_android.util.OrbotStatusReceiver;
 
 import java.io.File;
 
+import info.guardianproject.netcipher.NetCipher;
 import info.guardianproject.netcipher.proxy.OrbotHelper;
 
 /**
