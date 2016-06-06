@@ -10,9 +10,13 @@ import com.github.dfa.diaspora_android.data.PodUserProfile;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.URL;
+
+import javax.net.ssl.HttpsURLConnection;
+
+import info.guardianproject.netcipher.NetCipher;
 
 /**
  * Created by Gregor Santner (gsantner) on 30.03.16.
@@ -37,18 +41,21 @@ public class ProfileFetchTask extends AsyncTask<Void, Void, Void> {
         String cookies = cookieManager.getCookie("https://" + app.getSettings().getPodDomain());
         Log.d(App.TAG, cookies);
 
+        HttpsURLConnection connection;
+        InputStream inStream;
         try {
             URL url = new URL("https://" + app.getSettings().getPodDomain() + "/stream");
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setReadTimeout(10000);
-            conn.setConnectTimeout(15000);
-            conn.setRequestMethod("GET");
+            connection = NetCipher.getHttpsURLConnection(url);
+            connection.setReadTimeout(10000);
+            connection.setConnectTimeout(15000);
+            connection.setRequestMethod("GET");
             if (cookies != null) {
-                conn.setRequestProperty("Cookie", cookies);
+                connection.setRequestProperty("Cookie", cookies);
             }
-            conn.connect();
+            connection.connect();
 
-            BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            inStream = connection.getInputStream();
+            BufferedReader br = new BufferedReader(new InputStreamReader(inStream));
             String line;
             final String TARGET_TAG = "window.gon={};gon.user=";
             while ((line = br.readLine()) != null && !line.startsWith("<body")) {
@@ -57,6 +64,14 @@ public class ProfileFetchTask extends AsyncTask<Void, Void, Void> {
                     break;
                 }
             }
+
+            try{
+                br.close();
+                inStream.close();
+            } catch (IOException e){}
+
+            connection.disconnect();
+
         } catch (IOException e) {
             e.printStackTrace();
         }

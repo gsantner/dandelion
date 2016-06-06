@@ -13,6 +13,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import javax.net.ssl.HttpsURLConnection;
+
+import info.guardianproject.netcipher.NetCipher;
+
 /**
  * Created by Gregor Santner (gsantner) on 24.03.16.
  */
@@ -35,15 +39,24 @@ public class ImageDownloadTask extends AsyncTask<String, Void, Bitmap> {
         String url = urls[0];
         Bitmap bitmap = null;
         FileOutputStream out = null;
+        InputStream inStream;
+        HttpsURLConnection connection;
         try {
-            InputStream in = new java.net.URL(url).openStream();
-            bitmap = BitmapFactory.decodeStream(in);
+            connection = NetCipher.getHttpsURLConnection(url);
+            inStream = connection.getInputStream();
+            bitmap = BitmapFactory.decodeStream(inStream);
 
             // Save to file if not null
             if (savePath != null) {
                 out = new FileOutputStream(savePath);
                 bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
             }
+
+            try {
+                inStream.close();
+            } catch (IOException e) {}
+
+            connection.disconnect();
 
         } catch (Exception e) {
             Log.e(App.TAG, e.getMessage());

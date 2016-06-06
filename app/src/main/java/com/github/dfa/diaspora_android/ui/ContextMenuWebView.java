@@ -20,8 +20,13 @@ import android.widget.Toast;
 
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.activity.MainActivity;
+import com.github.dfa.diaspora_android.data.AppSettings;
+import com.github.dfa.diaspora_android.util.OrbotStatusReceiver;
 
 import java.io.File;
+
+import info.guardianproject.netcipher.NetCipher;
+import info.guardianproject.netcipher.proxy.OrbotHelper;
 
 /**
  * Subclass of WebView which adds a context menu for long clicks on images or links to share, save
@@ -148,5 +153,31 @@ public class ContextMenuWebView extends NestedWebView {
 
     public void setParentActivity(Activity activity) {
         this.parentActivity = activity;
+    }
+
+    @Override
+    public void reload() {
+        AppSettings settings = new AppSettings(context);
+        if(settings.isProxyOrbot()) {
+            if(OrbotStatusReceiver.isInCorrectState(settings.isLoadImages())) {
+                super.reload();
+            } else {
+                OrbotHelper.requestStartTor(context.getApplicationContext());
+            }
+        }
+        super.reload();
+    }
+
+    @Override
+    public void loadUrl(String url) {
+        AppSettings settings = new AppSettings(context);
+        if(settings.isProxyOrbot()) {
+            if(OrbotStatusReceiver.isInCorrectState(settings.isLoadImages())) {
+                super.loadUrl(url);
+            } else {
+                OrbotHelper.requestStartTor(context.getApplicationContext());
+            }
+        }
+        super.loadUrl(url);
     }
 }

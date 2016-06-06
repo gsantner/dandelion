@@ -166,5 +166,14 @@ along with this program.  If not, see http://www.gnu.org/licenses.&lt;br> &lt;br
     <string name="toast_saved_image_to_location">Speichere Bild als</string>
     <string name="toast_link_address_copied">Linkadresse kopiert …</string>
     <string name="share_dotdodot">Teilen…</string>
+    <string name="download_orbot_from_fdroid">Möchten Sie Orbot nun von f-droid.org herunterladen?</string>
+    <string name="get_orbot_from_fdroid">Möchten Sie Orbot nun über F-Droid installieren?</string>
+    <string name="install_orbot_">Orbot installieren?</string>
+    <string name="orbot_doesn_t_appear_to_be_running_would_you_like_to_start_it_up_and_connect_to_tor_">Orbot scheint nicht aktiv zu sein. Möchten Sie es nun starten um sich mit dem Tor-Netzwerk zu verbinden?</string>
+    <string name="orbot_proxy_disabled">Orbot-Proxy: Deaktiviert</string>
+    <string name="orbot_proxy_enabled">Orbot-Proxy: Aktiviert</string>
+    <string name="orbot_starts_disabled_message">Orbot scheint Hintergrund-Starts deaktiviert zu haben. Möchten Sie Orbot jetzt öffnen?</string>
+    <string name="start_orbot_">Orbot starten?</string>
+    <string name="you_must_have_orbot">Um das Tor-Netzwerk als Proxy nutzen zu können, müssen Sie Orbot installieren.</string>
 
 </resources>
