@@ -40,8 +40,13 @@ import info.guardianproject.netcipher.web.WebkitProxy;
  */
 public class OrbotStatusReceiver extends BroadcastReceiver {
 
+    public static final String EXTRA_HTTP_HOST = "org.torproject.android.intent.extra.HTTP_PROXY_HOST";
+    public static final String EXTRA_HTTP_PORT = "org.torproject.android.intent.extra.HTTP_PROXY_PORT";
     public static final String defaultHost = "127.0.0.1";
     public static final int defaultPort = 8118;
+
+    private static String host = "";
+    private static int port = 0;
     private Intent lastStatus;
     private Context lastContext;
     private static MainActivity mainActivity;
@@ -59,7 +64,7 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
             if(appSettings == null) appSettings = new AppSettings(context.getApplicationContext());
             String orbotStatus = intent.getExtras().getString(OrbotHelper.EXTRA_STATUS);
             if(appSettings.isProxyOrbot()) {
-                if (orbotStatus.equals(OrbotHelper.STATUS_ON) && !proxySet) {
+                if (orbotStatus.equals(OrbotHelper.STATUS_ON)) {
                     setProxy(lastContext, lastStatus);
                 } else if(orbotStatus.equals(OrbotHelper.STATUS_OFF)) {
                     Log.d(App.TAG, "Warning: Orbot reports status off.");
@@ -78,7 +83,16 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
         if(intent != null) {
             String status = intent.getStringExtra(OrbotHelper.EXTRA_STATUS);
             if(status.equals(OrbotHelper.STATUS_ON)) {
-                setProxy(context, defaultHost, defaultPort);
+                String nHost = intent.getExtras().getString(EXTRA_HTTP_HOST, null);
+                int nPort = intent.getIntExtra(EXTRA_HTTP_PORT, -1);
+                //Got no values from intent
+                if((nHost == null || nPort == -1)) {
+                    if(host.equals("") || port == 0) {
+                        setProxy(context, defaultHost, defaultPort);
+                    }
+                } else {
+                    setProxy(context, nHost, nPort);
+                }
             }
         } else {
             Log.e(App.TAG, "OrbotStatusReceiver: lastStatus intent is null. Cannot set Proxy.");
@@ -87,6 +101,8 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
 
     public static void setProxy(Context context, String host, int port) {
         try {
+            OrbotStatusReceiver.host = host;
+            OrbotStatusReceiver.port = port;
             NetCipher.setProxy(host, port);
             WebkitProxy.setProxy(MainActivity.class.getName(), context.getApplicationContext(), null, host, port);
             Log.d(App.TAG, "Proxy successfully set.");
