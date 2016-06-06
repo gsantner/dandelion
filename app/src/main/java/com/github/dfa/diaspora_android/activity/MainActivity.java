@@ -40,6 +40,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -51,6 +52,7 @@ import android.text.Html;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -179,7 +181,7 @@ public class MainActivity extends AppCompatActivity
         podUserProfile.setListener(this);
 
         //Orbot integration
-        OrbotStatusReceiver.setMainActivity(this);
+        LocalBroadcastManager.getInstance(this).registerReceiver(brRequestShowOrbot, new IntentFilter(OrbotStatusReceiver.REQUEST_SHOW_ORBOT));
         OrbotHelper.requestStartTor(getApplicationContext());
         if(appSettings.isProxyOrbot()) {
             if(!OrbotHelper.isOrbotInstalled(getApplicationContext())) {
@@ -332,6 +334,7 @@ public class MainActivity extends AppCompatActivity
                 Snackbar.make(swipeRefreshLayout, R.string.no_internet, Snackbar.LENGTH_LONG).show();
             }
         }
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(brRequestShowOrbot);
     }
 
     private void setupNavigationSlider() {
@@ -384,6 +387,10 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == OrbotHelper.START_TOR_RESULT) {
+            OrbotStatusReceiver.setProxy(this, data);
+            return;
+        }
         if (requestCode != INPUT_FILE_REQUEST_CODE || mFilePathCallback == null) {
             super.onActivityResult(requestCode, resultCode, data);
             return;
@@ -422,6 +429,7 @@ public class MainActivity extends AppCompatActivity
     protected void onResume() {
         super.onResume();
         registerReceiver(brLoadUrl, new IntentFilter(URL_MESSAGE));
+        LocalBroadcastManager.getInstance(this).registerReceiver(brRequestShowOrbot, new IntentFilter(OrbotStatusReceiver.REQUEST_SHOW_ORBOT));
     }
 
     @Override
@@ -455,9 +463,17 @@ public class MainActivity extends AppCompatActivity
         }
     };
 
+    private final BroadcastReceiver brRequestShowOrbot = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            requestOrbotStart(intent.getBooleanExtra(OrbotStatusReceiver.EXTRA_BACKGROUND_STARTS_DISABLED, false));
+        }
+    };
+
     @Override
     protected void onPause() {
         unregisterReceiver(brLoadUrl);
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(brRequestShowOrbot);
         super.onPause();
     }
 
@@ -1105,7 +1121,7 @@ public class MainActivity extends AppCompatActivity
         startDialog.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                startActivityForResult(OrbotHelper.getShowOrbotStartIntent(), 1);
+                startActivityForResult(OrbotHelper.getShowOrbotStartIntent(), OrbotHelper.START_TOR_RESULT);
             }
         }).setNegativeButton(android.R.string.no, null).show();
     }

@@ -24,6 +24,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 import com.github.dfa.diaspora_android.App;
@@ -42,14 +43,14 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
 
     public static final String EXTRA_HTTP_HOST = "org.torproject.android.intent.extra.HTTP_PROXY_HOST";
     public static final String EXTRA_HTTP_PORT = "org.torproject.android.intent.extra.HTTP_PROXY_PORT";
+    public static final String REQUEST_SHOW_ORBOT = "com.github.dfa.diaspora.request_show_orbot";
+    public static final String EXTRA_BACKGROUND_STARTS_DISABLED = "com.github.dfa.diaspora.request_show_orbot.BG_START_DISABLED";
     public static final String DEFAULT_HOST = "127.0.0.1";
     public static final int DEFAULT_PORT = 8118;
 
     private static String host = "";
     private static int port = 0;
-    private Intent lastStatus;
-    private Context lastContext;
-    private static MainActivity mainActivity;
+    private static boolean promptOnBackgroundStart = true;
     private AppSettings appSettings;
     private static boolean proxySet = false;
 
@@ -59,19 +60,29 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         if(OrbotHelper.ACTION_STATUS.equals(intent.getAction())) {
-            lastStatus = intent;
-            lastContext = context;
             if(appSettings == null) appSettings = new AppSettings(context.getApplicationContext());
             String orbotStatus = intent.getExtras().getString(OrbotHelper.EXTRA_STATUS);
-            if(appSettings.isProxyOrbot()) {
+            if(appSettings.isProxyOrbot() && orbotStatus != null) {
+                //Status on
                 if (orbotStatus.equals(OrbotHelper.STATUS_ON)) {
-                    setProxy(lastContext, lastStatus);
-                } else if(orbotStatus.equals(OrbotHelper.STATUS_OFF)) {
+                    setProxy(context, intent);
+                    return;
+                }
+                //Status off
+                if(orbotStatus.equals(OrbotHelper.STATUS_OFF)) {
                     Log.d(App.TAG, "Warning: Orbot reports status off.");
-                    OrbotHelper.requestStartTor(context.getApplicationContext());
-                } else if(orbotStatus.equals(OrbotHelper.STATUS_STARTS_DISABLED)) {
+                    Intent orbotOffIntent = new Intent(REQUEST_SHOW_ORBOT);
+                    orbotOffIntent.putExtra(EXTRA_BACKGROUND_STARTS_DISABLED, false);
+                    LocalBroadcastManager.getInstance(context).sendBroadcast(orbotOffIntent);
+                    return;
+                }
+                //Background starts disabled
+                if(orbotStatus.equals(OrbotHelper.STATUS_STARTS_DISABLED ) && promptOnBackgroundStart) {
+                    promptOnBackgroundStart = false;
                     Log.d(App.TAG, "Warning: Orbot has background starts disabled.");
-                    if(mainActivity != null) mainActivity.requestOrbotStart(true);
+                    Intent backgroundStartsDisabledIntent = new Intent(REQUEST_SHOW_ORBOT);
+                    backgroundStartsDisabledIntent.putExtra(EXTRA_BACKGROUND_STARTS_DISABLED, true);
+                    LocalBroadcastManager.getInstance(context).sendBroadcast(backgroundStartsDisabledIntent);
                 }
             }
         } else {
@@ -95,7 +106,7 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
                 }
             }
         } else {
-            Log.e(App.TAG, "OrbotStatusReceiver: lastStatus intent is null. Cannot set Proxy.");
+            setProxy(context, DEFAULT_HOST, DEFAULT_PORT);
         }
     }
 
@@ -114,6 +125,7 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
     }
 
     public static void resetProxy(Context context) {
+        promptOnBackgroundStart = true;
         try {
             OrbotStatusReceiver.host = "";
             OrbotStatusReceiver.port = 0;
@@ -135,7 +147,4 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
         return proxySet;
     }
 
-    public static void setMainActivity(MainActivity main) {
-        mainActivity = main;
-    }
 }
