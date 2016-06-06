@@ -180,14 +180,14 @@ public class MainActivity extends AppCompatActivity
 
         //Orbot integration
         OrbotStatusReceiver.setMainActivity(this);
-        OrbotHelper.requestStartTor(this.getApplicationContext());
+        OrbotHelper.requestStartTor(getApplicationContext());
         if(appSettings.isProxyOrbot()) {
-            if(!OrbotHelper.isOrbotInstalled(this)) {
+            if(!OrbotHelper.isOrbotInstalled(getApplicationContext())) {
                 appSettings.setProxyOrbot(false);
                 promptInstallOrbot();
             } else {
                 //precautionary set Proxy
-                OrbotStatusReceiver.setProxy(this.getApplicationContext(), OrbotStatusReceiver.defaultHost, OrbotStatusReceiver.defaultPort);
+                OrbotStatusReceiver.setProxy(getApplicationContext(), OrbotStatusReceiver.DEFAULT_HOST, OrbotStatusReceiver.DEFAULT_PORT);
             }
         }
 
@@ -323,13 +323,9 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        afterOnCreate(savedInstanceState);
-    }
-
-    private void afterOnCreate(Bundle savedInstanceState) {
-        OrbotHelper.requestStartTor(this.getApplicationContext());
+        OrbotHelper.requestStartTor(getApplicationContext());
         if (savedInstanceState == null) {
-            if (Helpers.isOnline(MainActivity.this)) {
+            if (Helpers.isOnline(this)) {
                 webView.loadData("", "text/html", null);
                 webView.loadUrl("https://" + podDomain);
             } else {
@@ -986,11 +982,12 @@ public class MainActivity extends AppCompatActivity
                                             boolean before = appSettings.isProxyOrbot();
                                             appSettings.setProxyOrbot(!before);
                                             if(before) {
-                                                OrbotStatusReceiver.resetProxy(MainActivity.this.getApplicationContext());
+                                                OrbotStatusReceiver.resetProxy(getApplicationContext());
                                             } else {
-                                                OrbotHelper.requestStartTor(MainActivity.this);
+                                                OrbotHelper.requestStartTor(getApplicationContext());
                                                 webView.reload();
                                             }
+                                            break;
 
                                     }
                                 }
@@ -1089,47 +1086,27 @@ public class MainActivity extends AppCompatActivity
      * page on f-droid.org.
      */
     void promptInstallOrbot() {
-        String message = this.getString(R.string.you_must_have_orbot) + "  ";
-
         final Intent intent = OrbotHelper.getOrbotInstallIntent(MainActivity.this);
-        if (intent.getPackage() == null) {
-            message += MainActivity.this.getString(R.string.download_orbot_from_fdroid);
-        } else {
-            message += MainActivity.this.getString(R.string.get_orbot_from_fdroid);
-        }
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.install_orbot_);
-        builder.setMessage(message);
-        builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+        String message = this.getString(R.string.you_must_have_orbot) + "  "
+                + (intent.getPackage() == null ? getString(R.string.download_orbot_from_fdroid)
+                : getString(R.string.get_orbot_from_fdroid));
+        new AlertDialog.Builder(this).setTitle(R.string.install_orbot_).setMessage(message).setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 MainActivity.this.startActivity(intent);
             }
-        });
-        builder.setNegativeButton(android.R.string.no, null);
-        builder.show();
+        }).setNegativeButton(android.R.string.no, null).show();
     }
 
     public void requestOrbotStart(boolean backgroundStartsDisabled) {
-        AlertDialog.Builder startDialog = new AlertDialog.Builder(this);
-        startDialog.setTitle(R.string.start_orbot_);
-        if(backgroundStartsDisabled)
-            startDialog.setMessage(R.string.orbot_starts_disabled_message);
-        else
-            startDialog.setMessage(R.string.orbot_doesn_t_appear_to_be_running_would_you_like_to_start_it_up_and_connect_to_tor_);
-
+        AlertDialog.Builder startDialog = new AlertDialog.Builder(this).setTitle(R.string.start_orbot_)
+                .setMessage((backgroundStartsDisabled ? R.string.orbot_starts_disabled_message
+                        : R.string.orbot_doesn_t_appear_to_be_running_would_you_like_to_start_it_up_and_connect_to_tor_));
         startDialog.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 startActivityForResult(OrbotHelper.getShowOrbotStartIntent(), 1);
             }
-        });
-        startDialog.setNegativeButton(android.R.string.no, null);
-        startDialog.show();
-    }
-
-    public boolean useOrbot() {
-        return appSettings.isProxyOrbot();
+        }).setNegativeButton(android.R.string.no, null).show();
     }
 }

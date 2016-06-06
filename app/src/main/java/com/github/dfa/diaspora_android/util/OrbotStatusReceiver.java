@@ -42,8 +42,8 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
 
     public static final String EXTRA_HTTP_HOST = "org.torproject.android.intent.extra.HTTP_PROXY_HOST";
     public static final String EXTRA_HTTP_PORT = "org.torproject.android.intent.extra.HTTP_PROXY_PORT";
-    public static final String defaultHost = "127.0.0.1";
-    public static final int defaultPort = 8118;
+    public static final String DEFAULT_HOST = "127.0.0.1";
+    public static final int DEFAULT_PORT = 8118;
 
     private static String host = "";
     private static int port = 0;
@@ -88,7 +88,7 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
                 //Got no values from intent
                 if((nHost == null || nPort == -1)) {
                     if(host.equals("") || port == 0) {
-                        setProxy(context, defaultHost, defaultPort);
+                        setProxy(context, DEFAULT_HOST, DEFAULT_PORT);
                     }
                 } else {
                     setProxy(context, nHost, nPort);

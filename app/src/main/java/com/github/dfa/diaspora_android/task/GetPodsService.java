@@ -73,17 +73,25 @@ public class GetPodsService extends Service {
                 StringBuilder builder = new StringBuilder();
                 //HttpClient client = new DefaultHttpClient();
                 List<String> list = null;
+                HttpsURLConnection connection;
+                InputStream inStream;
                 try {
-                    HttpsURLConnection connection = NetCipher.getHttpsURLConnection("https://podupti.me/api.php?key=4r45tg&format=json");
+                    connection = NetCipher.getHttpsURLConnection("https://podupti.me/api.php?key=4r45tg&format=json");
                     int statusCode = connection.getResponseCode();
                     if (statusCode == 200) {
-                        InputStream content = connection.getInputStream();
+                        inStream = connection.getInputStream();
                         BufferedReader reader = new BufferedReader(
-                                new InputStreamReader(content));
+                                new InputStreamReader(inStream));
                         String line;
                         while ((line = reader.readLine()) != null) {
                             builder.append(line);
                         }
+
+                        try {
+                            inStream.close();
+                        } catch (IOException e) {}
+
+                        connection.disconnect();
                     } else {
                         Log.e(TAG, "Failed to download list of pods");
                     }
