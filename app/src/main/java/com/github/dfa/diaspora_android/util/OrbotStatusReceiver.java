@@ -147,4 +147,16 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
         return proxySet;
     }
 
+    /**
+     * Return true if actual state represents desired state
+     * @param orbotProxyActive desired state; true if app should proxy through tor, false if no proxy used
+     * @return boolean
+     */
+    public static boolean isInCorrectState(boolean orbotProxyActive) {
+        if(orbotProxyActive) {
+            return host != null && !host.equals("") && port > 0 && proxySet;
+        } else {
+            return (host.equals("") || host == null) && port < 1 && !proxySet;
+        }
+    }
 }
