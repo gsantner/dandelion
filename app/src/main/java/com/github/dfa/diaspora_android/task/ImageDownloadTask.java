@@ -13,6 +13,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import info.guardianproject.netcipher.NetCipher;
+
 /**
  * Created by Gregor Santner (gsantner) on 24.03.16.
  */
@@ -36,7 +38,8 @@ public class ImageDownloadTask extends AsyncTask<String, Void, Bitmap> {
         Bitmap bitmap = null;
         FileOutputStream out = null;
         try {
-            InputStream in = new java.net.URL(url).openStream();
+            //InputStream in = new java.net.URL(url).openStream();
+            InputStream in = NetCipher.getHttpsURLConnection(url).getInputStream();
             bitmap = BitmapFactory.decodeStream(in);
 
             // Save to file if not null

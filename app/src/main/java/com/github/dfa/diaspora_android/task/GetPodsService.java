@@ -28,12 +28,6 @@ import android.util.Log;
 
 import com.github.dfa.diaspora_android.App;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.StatusLine;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -80,7 +74,7 @@ public class GetPodsService extends Service {
                 //HttpClient client = new DefaultHttpClient();
                 List<String> list = null;
                 try {
-                    HttpsURLConnection connection = NetCipher.getHttpsURLConnection("http://podupti.me/api.php?key=4r45tg&format=json");
+                    HttpsURLConnection connection = NetCipher.getHttpsURLConnection("https://podupti.me/api.php?key=4r45tg&format=json");
                     int statusCode = connection.getResponseCode();
                     if (statusCode == 200) {
                         InputStream content = connection.getInputStream();
@@ -91,7 +85,6 @@ public class GetPodsService extends Service {
                             builder.append(line);
                         }
                     } else {
-                        //TODO  Notify User about failure
                         Log.e(TAG, "Failed to download list of pods");
                     }
                 } catch (IOException e) {

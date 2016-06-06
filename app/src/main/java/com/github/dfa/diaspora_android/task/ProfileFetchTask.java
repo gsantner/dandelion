@@ -11,8 +11,11 @@ import com.github.dfa.diaspora_android.data.PodUserProfile;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.URL;
+
+import javax.net.ssl.HttpsURLConnection;
+
+import info.guardianproject.netcipher.NetCipher;
 
 /**
  * Created by Gregor Santner (gsantner) on 30.03.16.
@@ -39,7 +42,7 @@ public class ProfileFetchTask extends AsyncTask<Void, Void, Void> {
 
         try {
             URL url = new URL("https://" + app.getSettings().getPodDomain() + "/stream");
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            HttpsURLConnection conn = NetCipher.getHttpsURLConnection(url);
             conn.setReadTimeout(10000);
             conn.setConnectTimeout(15000);
             conn.setRequestMethod("GET");
