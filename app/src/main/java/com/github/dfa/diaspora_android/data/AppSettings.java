@@ -74,6 +74,7 @@ public class AppSettings {
         private static final String PODUSERPROFILE_ID = "podUserProfile_guid";
         private static final String PODDOMAIN = "podDomain";
         private static final String PODUSERPROFILE_ASPECTS = "podUserProfile_aspects";
+        private static final String IS_PROXY_ORBOT = "proxyViaOrbot";
     }
 
 
@@ -142,6 +143,13 @@ public class AppSettings {
         setStringArray(prefApp, PREF.PREVIOUS_PODLIST, pods);
     }
 
+    public boolean isProxyOrbot() {
+        return prefApp.getBoolean(PREF.IS_PROXY_ORBOT, false);
+    }
+
+    public void setProxyOrbot(boolean active) {
+        prefApp.edit().putBoolean(PREF.IS_PROXY_ORBOT, active).commit();
+    }
     public void setPodAspects(PodAspect[] aspects) {
         setStringArray(prefPod, PREF.PODUSERPROFILE_ASPECTS, aspects);
     }

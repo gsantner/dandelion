@@ -82,6 +82,7 @@ import com.github.dfa.diaspora_android.listener.WebUserProfileChangedListener;
 import com.github.dfa.diaspora_android.ui.ContextMenuWebView;
 import com.github.dfa.diaspora_android.ui.CustomWebViewClient;
 import com.github.dfa.diaspora_android.util.Helpers;
+import com.github.dfa.diaspora_android.util.OrbotStatusReceiver;
 
 import org.json.JSONException;
 
@@ -97,6 +98,7 @@ import java.util.Locale;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import info.guardianproject.netcipher.proxy.OrbotHelper;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, WebUserProfileChangedListener {
@@ -175,6 +177,19 @@ public class MainActivity extends AppCompatActivity
         podUserProfile = app.getPodUserProfile();
         podUserProfile.setCallbackHandler(uiHandler);
         podUserProfile.setListener(this);
+
+        //Orbot integration
+        OrbotStatusReceiver.setMainActivity(this);
+        OrbotHelper.requestStartTor(getApplicationContext());
+        if(appSettings.isProxyOrbot()) {
+            if(!OrbotHelper.isOrbotInstalled(getApplicationContext())) {
+                appSettings.setProxyOrbot(false);
+                promptInstallOrbot();
+            } else {
+                //precautionary set Proxy
+                OrbotStatusReceiver.setProxy(getApplicationContext(), OrbotStatusReceiver.DEFAULT_HOST, OrbotStatusReceiver.DEFAULT_PORT);
+            }
+        }
 
         this.registerForContextMenu(webView);
         webView.setParentActivity(this);
@@ -308,9 +323,9 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-
+        OrbotHelper.requestStartTor(getApplicationContext());
         if (savedInstanceState == null) {
-            if (Helpers.isOnline(MainActivity.this)) {
+            if (Helpers.isOnline(this)) {
                 webView.loadData("", "text/html", null);
                 webView.loadUrl("https://" + podDomain);
             } else {
@@ -929,7 +944,8 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.nav_settings_app: {
                 final CharSequence[] options = {getString(R.string.settings_font), getString(R.string.settings_view), appSettings.isLoadImages() ?
-                        getString(R.string.settings_images_switch_off) : getString(R.string.settings_images_switch_on), getString(R.string.jb_pod)};
+                        getString(R.string.settings_images_switch_off) : getString(R.string.settings_images_switch_on), getString(R.string.jb_pod),
+                appSettings.isProxyOrbot() ? getString(R.string.orbot_proxy_enabled) : getString(R.string.orbot_proxy_disabled)};
 
                 if (Helpers.isOnline(MainActivity.this)) {
                     new AlertDialog.Builder(MainActivity.this)
@@ -962,6 +978,17 @@ public class MainActivity extends AppCompatActivity
                                                             })
                                                     .show();
                                             break;
+                                        case 4:
+                                            boolean before = appSettings.isProxyOrbot();
+                                            appSettings.setProxyOrbot(!before);
+                                            if(before) {
+                                                OrbotStatusReceiver.resetProxy(getApplicationContext());
+                                            } else {
+                                                OrbotHelper.requestStartTor(getApplicationContext());
+                                                webView.reload();
+                                            }
+                                            break;
+
                                     }
                                 }
                             }).show();
@@ -1032,7 +1059,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.main__layout);
-        drawer.closeDrawer(GravityCompat.START);
+        if(drawer != null) drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
@@ -1051,5 +1078,35 @@ public class MainActivity extends AppCompatActivity
                 super.onRequestPermissionsResult(requestCode, permissions,
                         grantResults);
         }
+    }
+
+    /**
+     * Ask the user whether to install Orbot or not. Check if installing from
+     * F-Droid or Google Play, otherwise take the user to the Orbot download
+     * page on f-droid.org.
+     */
+    void promptInstallOrbot() {
+        final Intent intent = OrbotHelper.getOrbotInstallIntent(MainActivity.this);
+        String message = this.getString(R.string.you_must_have_orbot) + "  "
+                + (intent.getPackage() == null ? getString(R.string.download_orbot_from_fdroid)
+                : getString(R.string.get_orbot_from_fdroid));
+        new AlertDialog.Builder(this).setTitle(R.string.install_orbot_).setMessage(message).setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                MainActivity.this.startActivity(intent);
+            }
+        }).setNegativeButton(android.R.string.no, null).show();
+    }
+
+    public void requestOrbotStart(boolean backgroundStartsDisabled) {
+        AlertDialog.Builder startDialog = new AlertDialog.Builder(this).setTitle(R.string.start_orbot_)
+                .setMessage((backgroundStartsDisabled ? R.string.orbot_starts_disabled_message
+                        : R.string.orbot_doesn_t_appear_to_be_running_would_you_like_to_start_it_up_and_connect_to_tor_));
+        startDialog.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                startActivityForResult(OrbotHelper.getShowOrbotStartIntent(), 1);
+            }
+        }).setNegativeButton(android.R.string.no, null).show();
     }
 }

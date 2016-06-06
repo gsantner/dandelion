@@ -70,6 +70,12 @@
             android:exported="false" >
         </service>
 
+        <receiver android:name=".util.OrbotStatusReceiver">
+            <intent-filter>
+                <action android:name="org.torproject.android.intent.action.STATUS"/>
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>
 

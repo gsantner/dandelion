@@ -28,12 +28,6 @@ import android.util.Log;
 
 import com.github.dfa.diaspora_android.App;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.StatusLine;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -43,6 +37,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
+
+import info.guardianproject.netcipher.NetCipher;
 
 public class GetPodsService extends Service {
     public static final String MESSAGE_PODS_RECEIVED = "com.github.dfa.diaspora.podsreceived";
@@ -73,24 +71,28 @@ public class GetPodsService extends Service {
                 // TODO: Update deprecated code
 
                 StringBuilder builder = new StringBuilder();
-                HttpClient client = new DefaultHttpClient();
+                //HttpClient client = new DefaultHttpClient();
                 List<String> list = null;
+                HttpsURLConnection connection;
+                InputStream inStream;
                 try {
-                    HttpGet httpGet = new HttpGet("http://podupti.me/api.php?key=4r45tg&format=json");
-                    HttpResponse response = client.execute(httpGet);
-                    StatusLine statusLine = response.getStatusLine();
-                    int statusCode = statusLine.getStatusCode();
+                    connection = NetCipher.getHttpsURLConnection("https://podupti.me/api.php?key=4r45tg&format=json");
+                    int statusCode = connection.getResponseCode();
                     if (statusCode == 200) {
-                        HttpEntity entity = response.getEntity();
-                        InputStream content = entity.getContent();
+                        inStream = connection.getInputStream();
                         BufferedReader reader = new BufferedReader(
-                                new InputStreamReader(content));
+                                new InputStreamReader(inStream));
                         String line;
                         while ((line = reader.readLine()) != null) {
                             builder.append(line);
                         }
+
+                        try {
+                            inStream.close();
+                        } catch (IOException e) {}
+
+                        connection.disconnect();
                     } else {
-                        //TODO  Notify User about failure
                         Log.e(TAG, "Failed to download list of pods");
                     }
                 } catch (IOException e) {
