@@ -40,8 +40,11 @@ import info.guardianproject.netcipher.web.WebkitProxy;
  */
 public class OrbotStatusReceiver extends BroadcastReceiver {
 
+    public static final String defaultHost = "127.0.0.1";
+    public static final int defaultPort = 8118;
     private Intent lastStatus;
     private Context lastContext;
+    private static MainActivity mainActivity;
     private AppSettings appSettings;
     private static boolean proxySet = false;
 
@@ -63,6 +66,7 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
                     OrbotHelper.requestStartTor(context.getApplicationContext());
                 } else if(orbotStatus.equals(OrbotHelper.STATUS_STARTS_DISABLED)) {
                     Log.d(App.TAG, "Warning: Orbot has background starts disabled.");
+                    if(mainActivity != null) mainActivity.requestOrbotStart(true);
                 }
             }
         } else {
@@ -74,18 +78,22 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
         if(intent != null) {
             String status = intent.getStringExtra(OrbotHelper.EXTRA_STATUS);
             if(status.equals(OrbotHelper.STATUS_ON)) {
-                try {
-                    NetCipher.setProxy("127.0.0.1", 8118);
-                    WebkitProxy.setProxy(MainActivity.class.getName(), context.getApplicationContext(), null, "127.0.0.1", 8118);
-                    Log.d(App.TAG, "Proxy successfully set.");
-                    proxySet = true;
-                } catch(Exception e) {
-                    Log.e(App.TAG, "setProxy failed: ");
-                    e.printStackTrace();
-                }
+                setProxy(context, defaultHost, defaultPort);
             }
         } else {
             Log.e(App.TAG, "OrbotStatusReceiver: lastStatus intent is null. Cannot set Proxy.");
+        }
+    }
+
+    public static void setProxy(Context context, String host, int port) {
+        try {
+            NetCipher.setProxy(host, port);
+            WebkitProxy.setProxy(MainActivity.class.getName(), context.getApplicationContext(), null, host, port);
+            Log.d(App.TAG, "Proxy successfully set.");
+            proxySet = true;
+        } catch(Exception e) {
+            Log.e(App.TAG, "setProxy failed: ");
+            e.printStackTrace();
         }
     }
 
@@ -107,5 +115,9 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
 
     public static boolean isProxySet() {
         return proxySet;
+    }
+
+    public static void setMainActivity(MainActivity main) {
+        mainActivity = main;
     }
 }

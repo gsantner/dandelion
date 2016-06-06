@@ -179,11 +179,15 @@ public class MainActivity extends AppCompatActivity
         podUserProfile.setListener(this);
 
         //Orbot integration
+        OrbotStatusReceiver.setMainActivity(this);
         OrbotHelper.requestStartTor(this.getApplicationContext());
         if(appSettings.isProxyOrbot()) {
             if(!OrbotHelper.isOrbotInstalled(this)) {
                 appSettings.setProxyOrbot(false);
                 promptInstallOrbot();
+            } else {
+                //precautionary set Proxy
+                OrbotStatusReceiver.setProxy(this.getApplicationContext(), OrbotStatusReceiver.defaultHost, OrbotStatusReceiver.defaultPort);
             }
         }
 
