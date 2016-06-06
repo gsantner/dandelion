@@ -139,6 +139,6 @@ public class AppSettings {
     }
 
     public void setProxyOrbot(boolean active) {
-        setBool(prefApp, PREF.IS_PROXY_ORBOT, active);
+        prefApp.edit().putBoolean(PREF.IS_PROXY_ORBOT, active).commit();
     }
 }

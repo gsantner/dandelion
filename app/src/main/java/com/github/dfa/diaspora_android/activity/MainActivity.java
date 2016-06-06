@@ -82,7 +82,7 @@ import com.github.dfa.diaspora_android.listener.WebUserProfileChangedListener;
 import com.github.dfa.diaspora_android.ui.ContextMenuWebView;
 import com.github.dfa.diaspora_android.ui.CustomWebViewClient;
 import com.github.dfa.diaspora_android.util.Helpers;
-import com.github.dfa.diaspora_android.util.ProxyHandler;
+import com.github.dfa.diaspora_android.util.OrbotStatusReceiver;
 
 import org.json.JSONException;
 
@@ -176,13 +176,12 @@ public class MainActivity extends AppCompatActivity
         appSettings = app.getSettings();
         podUserProfile = new PodUserProfile(app, uiHandler, this);
 
-        ProxyHandler.getInstance(this, appSettings).registerOrbotReceiver(this);
+        //Orbot integration
+        OrbotHelper.requestStartTor(this.getApplicationContext());
         if(appSettings.isProxyOrbot()) {
             if(!OrbotHelper.isOrbotInstalled(this)) {
                 appSettings.setProxyOrbot(false);
                 promptInstallOrbot();
-            } else {
-                Toast.makeText(this, "Orbot Proxy: "+ProxyHandler.getInstance(null, null).getActiveProxy(), Toast.LENGTH_SHORT).show();
             }
         }
 
@@ -318,13 +317,11 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        if(!appSettings.isProxyOrbot()) {
-            ProxyHandler.getInstance(null, null).unregisterOrbotReceiver(this);
-            afterOnCreate(savedInstanceState);
-        }
+        afterOnCreate(savedInstanceState);
     }
 
     private void afterOnCreate(Bundle savedInstanceState) {
+        OrbotHelper.requestStartTor(this.getApplicationContext());
         if (savedInstanceState == null) {
             if (Helpers.isOnline(MainActivity.this)) {
                 webView.loadData("", "text/html", null);
@@ -422,9 +419,6 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
-        try {
-            ProxyHandler.getInstance(null, null).registerOrbotReceiver(this);
-        } catch (IllegalStateException e){}
         registerReceiver(brLoadUrl, new IntentFilter(URL_MESSAGE));
     }
 
@@ -462,7 +456,6 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onPause() {
         unregisterReceiver(brLoadUrl);
-        ProxyHandler.getInstance(null, null).unregisterOrbotReceiver(this);
         super.onPause();
     }
 
@@ -983,12 +976,14 @@ public class MainActivity extends AppCompatActivity
                                                     .show();
                                             break;
                                         case 4:
-                                            if(appSettings.isProxyOrbot()) {
-                                                ProxyHandler.getInstance(null,null).setProxy(MainActivity.this, null, 0, ProxyHandler.NO_PROXY);
+                                            boolean before = appSettings.isProxyOrbot();
+                                            appSettings.setProxyOrbot(!before);
+                                            if(before) {
+                                                OrbotStatusReceiver.resetProxy(MainActivity.this.getApplicationContext());
                                             } else {
                                                 OrbotHelper.requestStartTor(MainActivity.this);
                                             }
-                                            appSettings.setProxyOrbot(!appSettings.isProxyOrbot());
+
                                     }
                                 }
                             }).show();
@@ -1124,5 +1119,9 @@ public class MainActivity extends AppCompatActivity
         });
         startDialog.setNegativeButton(android.R.string.no, null);
         startDialog.show();
+    }
+
+    public boolean useOrbot() {
+        return appSettings.isProxyOrbot();
     }
 }
