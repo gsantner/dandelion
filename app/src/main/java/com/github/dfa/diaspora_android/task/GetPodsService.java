@@ -44,6 +44,10 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.net.ssl.HttpsURLConnection;
+
+import info.guardianproject.netcipher.NetCipher;
+
 public class GetPodsService extends Service {
     public static final String MESSAGE_PODS_RECEIVED = "com.github.dfa.diaspora.podsreceived";
     private static final String TAG = App.TAG;
@@ -73,16 +77,13 @@ public class GetPodsService extends Service {
                 // TODO: Update deprecated code
 
                 StringBuilder builder = new StringBuilder();
-                HttpClient client = new DefaultHttpClient();
+                //HttpClient client = new DefaultHttpClient();
                 List<String> list = null;
                 try {
-                    HttpGet httpGet = new HttpGet("http://podupti.me/api.php?key=4r45tg&format=json");
-                    HttpResponse response = client.execute(httpGet);
-                    StatusLine statusLine = response.getStatusLine();
-                    int statusCode = statusLine.getStatusCode();
+                    HttpsURLConnection connection = NetCipher.getHttpsURLConnection("http://podupti.me/api.php?key=4r45tg&format=json");
+                    int statusCode = connection.getResponseCode();
                     if (statusCode == 200) {
-                        HttpEntity entity = response.getEntity();
-                        InputStream content = entity.getContent();
+                        InputStream content = connection.getInputStream();
                         BufferedReader reader = new BufferedReader(
                                 new InputStreamReader(content));
                         String line;
