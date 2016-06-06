@@ -115,6 +115,8 @@ public class OrbotStatusReceiver extends BroadcastReceiver {
 
     public static void resetProxy(Context context) {
         try {
+            OrbotStatusReceiver.host = "";
+            OrbotStatusReceiver.port = 0;
             NetCipher.clearProxy();
             WebkitProxy.resetProxy(MainActivity.class.getName(), context.getApplicationContext());
         } catch (Exception e) {
