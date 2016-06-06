@@ -1,3 +1,16 @@
+# v0.1.2 (2016-06-05)
+- Extract and show aspects (by @gsantner)
+- Cache last podlist
+- Better sharing from app
+- Collapsing top menu
+- ProgressBar material, Improve search dialog
+- fix keyboard. #4 
+- Reworked sharing from activity #12 
+- toolbar/actions/menu changes, replaced fab
+- Refactor layout & menu files, dialogs
+- Lots of refactoring; Reworked Splash,PodSelectionActivity; Switch Pod; Clear settings;
+- Activity transitions, usability MainActivity, green accent color
+
 # v0.1.1
 - Sharing updated (by @scoute-dich)
 - Screenshotting updated

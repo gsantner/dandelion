@@ -6,6 +6,7 @@ import android.util.Log;
 import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.listener.WebUserProfileChangedListener;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -26,6 +27,7 @@ public class PodUserProfile {
     private String avatarUrl;
     private String guid;
     private String name;
+    private PodAspect[] podAspects;
     private int notificationCount;
     private int unreadMessagesCount;
 
@@ -37,6 +39,7 @@ public class PodUserProfile {
         avatarUrl = appSettings.getAvatarUrl();
         guid = appSettings.getProfileId();
         name = appSettings.getName();
+        podAspects = appSettings.getPodAspects();
     }
 
     public PodUserProfile(App app, Handler callbackHandler, WebUserProfileChangedListener listener) {
@@ -83,7 +86,14 @@ public class PodUserProfile {
 
             // Unread message count
             if (json.has("unread_messages_count") && loadUnreadMessagesCount(json.getInt("unread_messages_count"))) {
+                appSettings.setPodAspects(podAspects);
             }
+
+            // Aspect
+            if (json.has("aspects") && loadAspects(json.getJSONArray("aspects"))) {
+                appSettings.setPodAspects(podAspects);
+            }
+
             isWebUserProfileLoaded = true;
         } catch (JSONException e) {
             Log.d(App.TAG, e.getMessage());
@@ -115,6 +125,10 @@ public class PodUserProfile {
 
     public int getUnreadMessagesCount() {
         return unreadMessagesCount;
+    }
+
+    public PodAspect[] getAspects() {
+        return podAspects;
     }
 
     /*
@@ -173,6 +187,14 @@ public class PodUserProfile {
         return false;
     }
 
+    private boolean loadAspects(final JSONArray jsonAspects) throws JSONException {
+        podAspects = new PodAspect[jsonAspects.length()];
+        for (int i = 0; i < jsonAspects.length(); i++) {
+            podAspects[i] = new PodAspect(jsonAspects.getJSONObject(i));
+        }
+        return true;
+    }
+
     private boolean loadUnreadMessagesCount(final int unreadMessagesCount) {
         if (this.unreadMessagesCount != unreadMessagesCount) {
             this.unreadMessagesCount = unreadMessagesCount;
@@ -188,6 +210,22 @@ public class PodUserProfile {
         return false;
     }
 
+    public Handler getCallbackHandler() {
+        return callbackHandler;
+    }
+
+    public void setCallbackHandler(Handler callbackHandler) {
+        this.callbackHandler = callbackHandler;
+    }
+
+    public WebUserProfileChangedListener getListener() {
+        return listener;
+    }
+
+    public void setListener(WebUserProfileChangedListener listener) {
+        this.listener = listener;
+    }
+
     /*
      * Not implemented / not needed yet:
      *   string "diasporaAddress"
@@ -195,10 +233,6 @@ public class PodUserProfile {
      *   boolean  "admin"
      *   int "following_count"
      *   boolean "moderator"
-     *   array  "aspects"
-     *      int "id"
-     *      string "name"
-     *      boolean "selected"
      *
      *   array  "services"
      *      ? ?

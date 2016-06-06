@@ -132,7 +132,7 @@ public class ShareActivity extends MainActivity {
                 }
 
                 if (progress > 60) {
-                    Helpers.hideTopBar(wv);
+                    Helpers.applyDiasporaMobileSiteChanges(wv);
                 }
 
                 if (progress == 100) {

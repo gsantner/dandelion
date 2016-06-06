@@ -28,8 +28,10 @@ import android.net.NetworkInfo;
 import android.support.v4.content.ContextCompat;
 import android.webkit.WebView;
 
+import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
-import com.github.dfa.diaspora_android.activity.MainActivity;
+import com.github.dfa.diaspora_android.data.PodAspect;
+import com.github.dfa.diaspora_android.data.PodUserProfile;
 
 public class Helpers {
 
@@ -49,7 +51,7 @@ public class Helpers {
         }
     }
 
-    public static void hideTopBar(final WebView wv) {
+    public static void applyDiasporaMobileSiteChanges(final WebView wv) {
         wv.loadUrl("javascript: ( function() {" +
                 "    document.documentElement.style.paddingBottom = '260px';" +
                 "    document.getElementById('main').style.paddingTop = '5px';" +
@@ -81,11 +83,33 @@ public class Helpers {
     }
 
     public static void getUserProfile(final WebView wv) {
+        // aspects":[{"id":124934,"name":"Friends","selected":true},{"id":124937,"name":"Liked me","selected":false},{"id":124938,"name":"Follow","selected":false},{"id":128327,"name":"Nur ich","selected":false}]
         wv.loadUrl("javascript: ( function() {" +
                 "    if (typeof gon !== 'undefined' && typeof gon.user !== 'undefined') {" +
                 "       var userProfile = JSON.stringify(gon.user);" +
                 "       AndroidBridge.setUserProfile(userProfile.toString());" +
                 "    } " +
                 "})();");
+    }
+
+    public static void showAspectList(final WebView wv, final App app) {
+        wv.stopLoading();
+        PodUserProfile profile = app.getPodUserProfile();
+        StringBuffer sb = new StringBuffer();
+        int intColor = ContextCompat.getColor(app, R.color.colorAccent);
+        String strColor = String.format("#%06X", (0xFFFFFF & intColor));
+
+        sb.append("<html><body style='width:80%; margin-left:auto;margin-right:auto; font-size: 400%;'><center><b>");
+        sb.append(String.format("<h1 style='color: %s; text-shadow: 4px 4px 12px #000000;'>%s</h1>", strColor, app.getString(R.string.jb_aspects)));
+        sb.append("</b></center>");
+        // Content
+        for (PodAspect aspect : profile.getAspects()) {
+            sb.append("&raquo; &nbsp;");
+            sb.append(aspect.toHtmlLink(app));
+            sb.append("</br></br>");
+        }
+        // End
+        sb.append("</body></html>");
+        wv.loadData(sb.toString(), "text/html", "UTF-16");
     }
 }

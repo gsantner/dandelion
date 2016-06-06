@@ -10,6 +10,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import com.github.dfa.diaspora_android.data.AppSettings;
+import com.github.dfa.diaspora_android.data.PodUserProfile;
 import com.github.dfa.diaspora_android.ui.CustomWebViewClient;
 import com.github.dfa.diaspora_android.util.AvatarImageLoader;
 
@@ -22,6 +23,7 @@ public class App extends Application {
     private AppSettings appSettings;
     private AvatarImageLoader avatarImageLoader;
     private CookieManager cookieManager;
+    private PodUserProfile podUserProfile;
 
     @Override
     public void onCreate() {
@@ -29,6 +31,7 @@ public class App extends Application {
         final Context c = getApplicationContext();
         appSettings = new AppSettings(c);
         avatarImageLoader = new AvatarImageLoader(c);
+        podUserProfile = new PodUserProfile(this);
 
 
         // Get cookie manager
@@ -59,6 +62,10 @@ public class App extends Application {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             cookieManager.removeAllCookies(null);
         }
+    }
+
+    public PodUserProfile getPodUserProfile(){
+        return podUserProfile;
     }
 
     public AppSettings getSettings() {

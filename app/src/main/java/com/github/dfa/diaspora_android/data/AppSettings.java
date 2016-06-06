@@ -1,7 +1,11 @@
 package com.github.dfa.diaspora_android.data;
 
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.SharedPreferences;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 
 /**
  * Created by gsantner on 20.03.16. Part of Diaspora for Android.
@@ -15,6 +19,10 @@ public class AppSettings {
         this.context = context.getApplicationContext();
         prefApp = this.context.getSharedPreferences("app", Context.MODE_PRIVATE);
         prefPod = this.context.getSharedPreferences("pod0", Context.MODE_PRIVATE);
+    }
+
+    public Context getApplicationContext() {
+        return context;
     }
 
     public void clearPodSettings() {
@@ -37,18 +45,18 @@ public class AppSettings {
         pref.edit().putBoolean(key, value).apply();
     }
 
-    private void setStringArray(SharedPreferences pref, String key, String[] values){
+    private void setStringArray(SharedPreferences pref, String key, Object[] values) {
         StringBuffer sb = new StringBuffer();
-        for(String value : values){
+        for (Object value : values) {
             sb.append("%%%");
-            sb.append(value);
+            sb.append(value.toString());
         }
-        setString(pref,key,sb.toString().replaceFirst("%%%",""));
+        setString(pref, key, sb.toString().replaceFirst("%%%", ""));
     }
 
-    private String[] getStringArray(SharedPreferences pref, String key){
-        String value = pref.getString(key,"%%%");
-        if (value.equals("%%%")){
+    private String[] getStringArray(SharedPreferences pref, String key) {
+        String value = pref.getString(key, "%%%");
+        if (value.equals("%%%")) {
             return new String[0];
         }
         return value.split("%%%");
@@ -65,6 +73,7 @@ public class AppSettings {
         private static final String PODUSERPROFILE_NAME = "podUserProfile_name";
         private static final String PODUSERPROFILE_ID = "podUserProfile_guid";
         private static final String PODDOMAIN = "podDomain";
+        private static final String PODUSERPROFILE_ASPECTS = "podUserProfile_aspects";
         private static final String IS_PROXY_ORBOT = "proxyViaOrbot";
     }
 
@@ -77,7 +86,7 @@ public class AppSettings {
     }
 
     public void setProfileId(String profileId) {
-        setString(prefPod, PREF.PODUSERPROFILE_ID,profileId);
+        setString(prefPod, PREF.PODUSERPROFILE_ID, profileId);
     }
 
 
@@ -122,15 +131,15 @@ public class AppSettings {
         setString(prefPod, PREF.PODDOMAIN, podDomain);
     }
 
-    public boolean hasPodDomain(){
+    public boolean hasPodDomain() {
         return !prefPod.getString(PREF.PODDOMAIN, "").equals("");
     }
 
-    public String[] getPreviousPodlist(){
+    public String[] getPreviousPodlist() {
         return getStringArray(prefApp, PREF.PREVIOUS_PODLIST);
     }
 
-    public void setPreviousPodlist(String[] pods){
+    public void setPreviousPodlist(String[] pods) {
         setStringArray(prefApp, PREF.PREVIOUS_PODLIST, pods);
     }
 
@@ -140,5 +149,17 @@ public class AppSettings {
 
     public void setProxyOrbot(boolean active) {
         prefApp.edit().putBoolean(PREF.IS_PROXY_ORBOT, active).commit();
+    }
+    public void setPodAspects(PodAspect[] aspects) {
+        setStringArray(prefPod, PREF.PODUSERPROFILE_ASPECTS, aspects);
+    }
+
+    public PodAspect[] getPodAspects() {
+        String[] s= getStringArray(prefPod, PREF.PODUSERPROFILE_ASPECTS);
+        PodAspect[] aspects = new PodAspect[s.length];
+        for(int i=0; i < aspects.length; i++){
+            aspects[i] = new PodAspect(s[i]);
+        }
+        return aspects;
     }
 }
