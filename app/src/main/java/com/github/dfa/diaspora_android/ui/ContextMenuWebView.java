@@ -37,9 +37,11 @@ import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.activity.MainActivity;
 import com.github.dfa.diaspora_android.task.ImageDownloadTask;
+import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
 
 import java.io.File;
 
@@ -55,6 +57,7 @@ public class ContextMenuWebView extends NestedWebView {
     public static final int ID_COPY_LINK = 12;
     public static final int ID_SHARE_LINK = 13;
     public static final int ID_SHARE_IMAGE = 14;
+    public static final int ID_OPEN_HERE = 15;
 
     private final Context context;
     private Activity parentActivity;
@@ -195,6 +198,13 @@ public class ContextMenuWebView extends NestedWebView {
                                     .getText(R.string.context_menu_share_link)));
                         }
                         break;
+
+                    //Open link in the webview
+                    case ID_OPEN_HERE:
+                        if (url != null) {
+                            loadUrlNew(url);
+                        }
+                        break;
                 }
                 return true;
             }
@@ -212,6 +222,10 @@ public class ContextMenuWebView extends NestedWebView {
                 result.getType() == HitTestResult.SRC_ANCHOR_TYPE) {
             // Menu options for a hyperlink.
             menu.setHeaderTitle(result.getExtra());
+            String url = result.getExtra();
+            if (url != null && new DiasporaUrlHelper(((App)parentActivity.getApplication()).getSettings()).isPostUrl(url)) {
+                menu.add(0, ID_OPEN_HERE, 0, context.getString(R.string.context_menu_open_here)).setOnMenuItemClickListener(handler);
+            }
             menu.add(0, ID_COPY_LINK, 0, context.getString(R.string.context_menu_copy_link)).setOnMenuItemClickListener(handler);
             menu.add(0, ID_SHARE_LINK, 0, context.getString(R.string.context_menu_share_link)).setOnMenuItemClickListener(handler);
         }
