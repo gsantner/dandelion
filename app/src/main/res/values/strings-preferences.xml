@@ -46,6 +46,7 @@
 
     <!-- More -->
     <string name="pref_catkey__category_more" translatable="false">pref_catkey__category_more</string>
+    <string name="pref_key__post_link_context_menu_enabled" translatable="false">pref_key__post_link_context_menu_enabled</string>
     <string name="pref_key__logging_spam_enabled" translatable="false">pref_key__logging_spam_enabled</string>
     <string name="pref_key__logging_enabled" translatable="false">pref_key__logging_enabled</string>
 
@@ -118,6 +119,9 @@
     <string name="pref_desc__append_shared_via_app">Append a reference to this app ("shared by…") to shared texts</string>
 
     <!-- More -->
+    <string name="pref_title__post_link_context_menu_enabled">Context menu for post links</string>
+    <string name="pref_desc__post_link_context_menu_enabled">Open context menu for post links with short press</string>
+
     <string name="pref_title__sub_logging" translatable="false">@string/about_activity__title_debug_info</string>
     <string name="pref_desc__sub_logging" translatable="false">@string/fragment_debug__section_log</string>
 

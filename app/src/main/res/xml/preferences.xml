@@ -152,6 +152,12 @@
         android:key="@string/pref_catkey__category_more"
         android:title="@string/pref_cat__more">
 
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__post_link_context_menu_enabled"
+            android:title="@string/pref_title__post_link_context_menu_enabled"
+            android:summary="@string/pref_desc__post_link_context_menu_enabled"/>
+
         <PreferenceScreen
             android:summary="@string/pref_desc__sub_logging"
             android:title="@string/pref_title__sub_logging">

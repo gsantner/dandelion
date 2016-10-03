@@ -260,6 +260,10 @@ public class AppSettings {
         return getBoolean(prefApp, R.string.pref_key__chrome_custom_tabs_enabled, true);
     }
 
+    public boolean isPostContextMenuEnabled() {
+        return getBoolean(prefApp, R.string.pref_key__post_link_context_menu_enabled, false);
+    }
+
     public boolean isLoggingEnabled() {
         return getBoolean(prefApp, R.string.pref_key__logging_enabled, true);
     }

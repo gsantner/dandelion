@@ -27,6 +27,7 @@ import android.webkit.WebViewClient;
 
 import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.activity.MainActivity;
+import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
 
 public class CustomWebViewClient extends WebViewClient {
     private final App app;
@@ -43,6 +44,10 @@ public class CustomWebViewClient extends WebViewClient {
             Intent i = new Intent(MainActivity.ACTION_OPEN_EXTERNAL_URL);
             i.putExtra(MainActivity.EXTRA_URL, url);
             LocalBroadcastManager.getInstance(app.getApplicationContext()).sendBroadcast(i);
+            return true;
+        } else if (app.getSettings().isPostContextMenuEnabled()
+                && new DiasporaUrlHelper(app.getSettings()).isPostUrl(url)) {
+            view.showContextMenu();
             return true;
         }
         return false;

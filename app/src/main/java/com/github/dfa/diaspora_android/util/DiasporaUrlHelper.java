@@ -23,6 +23,8 @@ import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.AppSettings;
 import com.github.dfa.diaspora_android.data.PodAspect;
 
+import java.util.regex.Pattern;
+
 /**
  * Helper class that provides easy access to specific urls related to diaspora
  * Created by vanitasvitae on 10.08.16.
@@ -50,6 +52,8 @@ public class DiasporaUrlHelper {
     public static final String SUBURL_ASPECTS = "/aspects";
     public static final String SUBURL_STATISTICS = "/statistics";
     public static final String URL_BLANK = "about:blank";
+
+    public static final Pattern NUMBERS_ONLY_PATTERN = Pattern.compile("^\\d+$");
 
     public DiasporaUrlHelper(AppSettings settings) {
         this.settings = settings;
@@ -236,5 +240,16 @@ public class DiasporaUrlHelper {
         } catch (Exception ignored) {
         }
         return app.getString(R.string.aspects);
+    }
+
+    public boolean isPostUrl(String url) {
+        if (url.startsWith(getPodUrl() + SUBURL_POSTS)) {
+            String path = url.substring((getPodUrl() + SUBURL_POSTS).length());
+            if (NUMBERS_ONLY_PATTERN.matcher(path).matches()) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
