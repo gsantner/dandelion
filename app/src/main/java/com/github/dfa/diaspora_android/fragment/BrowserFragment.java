@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -55,6 +56,7 @@ public class BrowserFragment extends CustomFragment {
     public static final String TAG = "com.github.dfa.diaspora_android.BrowserFragment";
 
     protected View rootLayout;
+    protected SwipeRefreshLayout swipeRefreshLayout;
     protected ContextMenuWebView webView;
     protected ProgressBar progressBar;
     protected AppSettings appSettings;
@@ -88,6 +90,17 @@ public class BrowserFragment extends CustomFragment {
 
         if(this.progressBar == null) {
             this.progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
+        }
+
+        if(this.swipeRefreshLayout == null) {
+            this.swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh);
+            this.swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                @Override
+                public void onRefresh() {
+                    webView.reload();
+                    BrowserFragment.this.swipeRefreshLayout.setRefreshing(false);
+                }
+            });
         }
 
         if (appSettings.isProxyEnabled()) {
