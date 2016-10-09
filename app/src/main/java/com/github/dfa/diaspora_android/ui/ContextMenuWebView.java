@@ -226,7 +226,6 @@ public class ContextMenuWebView extends WebView {
     @Override
     public void loadUrl(String url) {
         super.loadUrl(url);
-
         // Don't spam intents ;)
         if (!lasLoadUrl.equals(url)) {
             Intent updateActivityTitleIntent = new Intent(MainActivity.ACTION_UPDATE_TITLE_FROM_URL);

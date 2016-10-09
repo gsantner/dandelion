@@ -30,6 +30,7 @@ import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.activity.MainActivity;
 import com.github.dfa.diaspora_android.data.AppSettings;
 import com.github.dfa.diaspora_android.ui.ContextMenuWebView;
+import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
 import com.github.dfa.diaspora_android.webview.CustomWebViewClient;
 import com.github.dfa.diaspora_android.webview.ProgressBarWebChromeClient;
 import com.github.dfa.diaspora_android.util.AppLog;
@@ -62,6 +63,7 @@ public class BrowserFragment extends CustomFragment {
     protected AppSettings appSettings;
     protected CustomWebViewClient webViewClient;
     protected WebSettings webSettings;
+    protected DiasporaUrlHelper urls;
 
     protected String pendingUrl;
 
@@ -81,6 +83,7 @@ public class BrowserFragment extends CustomFragment {
 
         if(this.appSettings == null) {
             this.appSettings = ((App) getActivity().getApplication()).getSettings();
+            this.urls = new DiasporaUrlHelper(appSettings);
         }
 
         if(this.webView == null) {
@@ -97,7 +100,9 @@ public class BrowserFragment extends CustomFragment {
             this.swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
                 public void onRefresh() {
-                    webView.reload();
+                    if(webView.getUrl() != null && !webView.getUrl().equals(urls.getNewPostUrl())) {
+                        webView.reload();
+                    }
                     BrowserFragment.this.swipeRefreshLayout.setRefreshing(false);
                 }
             });
@@ -118,7 +123,6 @@ public class BrowserFragment extends CustomFragment {
         }
 
         webView.setParentActivity(getActivity());
-
         this.setRetainInstance(true);
     }
 
