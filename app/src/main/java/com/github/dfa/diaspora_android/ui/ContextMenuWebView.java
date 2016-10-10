@@ -35,6 +35,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.util.AttributeSet;
 import android.view.ContextMenu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.Toast;
 
 import com.github.dfa.diaspora_android.R;
@@ -48,7 +49,7 @@ import java.io.File;
  * or open with another browser
  */
 @SuppressWarnings("deprecation")
-public class ContextMenuWebView extends NestedWebView {
+public class ContextMenuWebView extends WebView {
 
     public static final int ID_SAVE_IMAGE = 10;
     public static final int ID_IMAGE_EXTERNAL_BROWSER = 11;
@@ -225,7 +226,6 @@ public class ContextMenuWebView extends NestedWebView {
     @Override
     public void loadUrl(String url) {
         super.loadUrl(url);
-
         // Don't spam intents ;)
         if (!lasLoadUrl.equals(url)) {
             Intent updateActivityTitleIntent = new Intent(MainActivity.ACTION_UPDATE_TITLE_FROM_URL);

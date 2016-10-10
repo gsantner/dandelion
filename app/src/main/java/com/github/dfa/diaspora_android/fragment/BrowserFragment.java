@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -29,6 +30,7 @@ import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.activity.MainActivity;
 import com.github.dfa.diaspora_android.data.AppSettings;
 import com.github.dfa.diaspora_android.ui.ContextMenuWebView;
+import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
 import com.github.dfa.diaspora_android.webview.CustomWebViewClient;
 import com.github.dfa.diaspora_android.webview.ProgressBarWebChromeClient;
 import com.github.dfa.diaspora_android.util.AppLog;
@@ -55,11 +57,13 @@ public class BrowserFragment extends CustomFragment {
     public static final String TAG = "com.github.dfa.diaspora_android.BrowserFragment";
 
     protected View rootLayout;
+    protected SwipeRefreshLayout swipeRefreshLayout;
     protected ContextMenuWebView webView;
     protected ProgressBar progressBar;
     protected AppSettings appSettings;
     protected CustomWebViewClient webViewClient;
     protected WebSettings webSettings;
+    protected DiasporaUrlHelper urls;
 
     protected String pendingUrl;
 
@@ -79,6 +83,7 @@ public class BrowserFragment extends CustomFragment {
 
         if(this.appSettings == null) {
             this.appSettings = ((App) getActivity().getApplication()).getSettings();
+            this.urls = new DiasporaUrlHelper(appSettings);
         }
 
         if(this.webView == null) {
@@ -88,6 +93,19 @@ public class BrowserFragment extends CustomFragment {
 
         if(this.progressBar == null) {
             this.progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
+        }
+
+        if(this.swipeRefreshLayout == null) {
+            this.swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh);
+            this.swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                @Override
+                public void onRefresh() {
+                    if(webView.getUrl() != null && !webView.getUrl().equals(urls.getNewPostUrl())) {
+                        webView.reload();
+                    }
+                    BrowserFragment.this.swipeRefreshLayout.setRefreshing(false);
+                }
+            });
         }
 
         if (appSettings.isProxyEnabled()) {
@@ -105,7 +123,6 @@ public class BrowserFragment extends CustomFragment {
         }
 
         webView.setParentActivity(getActivity());
-
         this.setRetainInstance(true);
     }
 
