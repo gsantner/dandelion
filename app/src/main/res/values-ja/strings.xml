@@ -19,6 +19,7 @@
   <string name="mentions">メンション</string>
   <string name="public_">公開</string>
   <string name="search">検索</string>
+  <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <string name="title_activity_pods">ポッドを選択</string>
   <string name="filter_hint">ポッドのドメインを入力</string>
