@@ -13,6 +13,7 @@
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <!-- Themes -->
+  <!-- Notifications dropdown -->
   <!-- Font size -->
   <string name="pref_title__font_size">Rozmiar czcionki</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
