@@ -19,6 +19,7 @@
   <string name="mentions">Menciones</string>
   <string name="public_">Público</string>
   <string name="search">Búsqueda</string>
+  <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <string name="title_activity_pods">Seleccionar Pod</string>
   <string name="filter_hint">Introduce el dominio del Pod</string>
