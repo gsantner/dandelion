@@ -19,6 +19,7 @@
   <string name="mentions">Vermeldingen</string>
   <string name="public_">Openbaar</string>
   <string name="search">Zoeken</string>
+  <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <string name="title_activity_pods">Selecteer Pod</string>
   <string name="filter_hint">Voer pod domein</string>
