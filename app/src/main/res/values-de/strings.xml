@@ -23,6 +23,7 @@
   <string name="title_activity_pods">Pod auswählen</string>
   <string name="filter_hint">Pod-Adresse eingeben</string>
   <string name="confirm_url">Pod-Adresse bestätigen</string>
+  <string name="search_for_pod">Pods durchsuchen&#8230;</string>
   <string name="podlist_source_note">Anmerkung: Die Podliste wird aus den sicheren Pods, die bei  https://podupti.me gelistet sind generiert.</string>
   <string name="valid_pod">Bitte eine gültige Pod-Adresse (Url) eingeben</string>
   <string name="podlist_error">Fehler: Konnte die Podliste nicht abfragen!</string>
@@ -69,4 +70,9 @@
 nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - Diaspora. Im Bereich Berechtigungen kannst dann die entsprechende Einstellung vornehmen.</string>
   <string name="permission_denied">Berechtigung verweigert.</string>
   <string name="permission_granted_try_again">Berechtigung erteilt. Bitte versuche es erneut.</string>
+  <string name="podselection__custom_pod">Benutzerdefinierter Pod</string>
+  <string name="pod_name">Pod Name</string>
+  <string name="http_protocol">Protokoll</string>
+  <string name="pod_address">Pod Adresse</string>
+  <string name="missing_value">Fehlender Wert</string>
 </resources>
