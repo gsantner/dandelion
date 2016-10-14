@@ -16,6 +16,7 @@
   <string name="pref_desc__sub_nav_slider">നാവിഗേഷൻ ഡ്രാവറിൽ കാണേണ്ട എൻട്രികൾ നിയന്ത്രിക്കൂ</string>
   <string name="pref_cat__visibility_nav_items">ഇനത്തിന്റെ കാഴ്ച</string>
   <!-- Themes -->
+  <!-- Notifications dropdown -->
   <!-- Font size -->
   <string name="pref_title__font_size">ഫോണ്ട് സൈസ്</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
