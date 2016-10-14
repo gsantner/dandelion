@@ -23,6 +23,7 @@
   <string name="title_activity_pods">Selectionnez un Pod</string>
   <string name="filter_hint">Entrez le nom de domaine du pod</string>
   <string name="confirm_url">Confirmez l\'url du pod</string>
+  <string name="search_for_pod">Recherche de Pod&#8230;</string>
   <string name="podlist_source_note">Note : la liste est générée à partir de la liste des pods sécurisés depuis https://podupti.me. Vous pouvez entrer l\'url d\'un pod non listé.</string>
   <string name="valid_pod">Veuillez entrer un nom de domaine valide</string>
   <string name="podlist_error">Erreur : impossible de récupérer la liste des pods !</string>
@@ -64,4 +65,8 @@
   <string name="permissions_image">Vous devez autoriser \"Modifier ou supprimer le contenu de la carte Sd \" pour sauvegarder/téléverser les images. Ensuite, vous devriez        fermer l\'application ou redémarrer votre téléphone. Si vous n\'avez pas autorisé l\'accès à l\'espace de stockage mais que vous souhaitez sauvegarder des images        ultérieurement, vous pouvez donner la permission plus tard. Veuillez ouvrir : Paramètres - applications -        Diaspora. Dans la section Autorisations, vous pouvez autoriser \"Modifier ou supprimer le contenu de la carte Sd \".</string>
   <string name="permission_denied">Permission refusée.</string>
   <string name="permission_granted_try_again">Permission accordée. Veuillez réessayer.</string>
+  <string name="pod_name">Nom du Pod</string>
+  <string name="http_protocol">Protocole</string>
+  <string name="pod_address">Adresse du Pod</string>
+  <string name="missing_value">Valeur manquante</string>
 </resources>
