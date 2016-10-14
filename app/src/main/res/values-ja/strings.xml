@@ -20,6 +20,9 @@
   <string name="public_">公開</string>
   <string name="search">検索</string>
   <!-- Notifications dropdown menu -->
+  <string name="notifications__all">すべての通知</string>
+  <string name="notifications__liked">いいね！</string>
+  <string name="notifications__reshared">リシェア</string>
   <!-- Pod Activity -->
   <string name="title_activity_pods">ポッドを選択</string>
   <string name="filter_hint">ポッドのドメインを入力</string>
@@ -65,4 +68,9 @@
   <string name="permissions_image">画像を保存/アップロードするために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後で画像を保存したい場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - Diaspora を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
   <string name="permission_denied">アクセスが拒否されました。</string>
   <string name="permission_granted_try_again">アクセスを許可しました。もう一度やり直してください。</string>
+  <string name="podselection__custom_pod">カスタム ポッド</string>
+  <string name="pod_name">ポッド名</string>
+  <string name="http_protocol">プロトコル</string>
+  <string name="pod_address">ポッドのアドレス</string>
+  <string name="missing_value">値がありません</string>
 </resources>
