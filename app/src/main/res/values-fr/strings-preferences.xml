@@ -21,6 +21,7 @@
   <string name="pref_desc__primary_color">Couleur des barres d\'outils</string>
   <string name="pref_title__accent_color">Couleur secondaire</string>
   <string name="pref_desc__accent_color">Couleur de la barre de progression</string>
+  <!-- Notifications dropdown -->
   <!-- Font size -->
   <string name="pref_title__font_size">Taille de la police</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
