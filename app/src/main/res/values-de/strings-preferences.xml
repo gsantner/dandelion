@@ -16,6 +16,12 @@
   <string name="pref_desc__sub_nav_slider">Konfiguration der Sichtbarkeit von Einträgen im Navigation-Slider</string>
   <string name="pref_cat__visibility_nav_items">Sichtbarkeit der Einträge</string>
   <!-- Themes -->
+  <string name="pref_title__themes">Farbschema</string>
+  <string name="pref_desc__themes">Einstellungen des Farbdesigns</string>
+  <string name="pref_title__primary_color">Primärfarbe</string>
+  <string name="pref_desc__primary_color">Färbung der Werkzeugleisten</string>
+  <string name="pref_title__accent_color">Akzentfarbe</string>
+  <string name="pref_desc__accent_color">Färbung der Details</string>
   <!-- Font size -->
   <string name="pref_title__font_size">Schriftgröße</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
@@ -23,8 +29,13 @@
   <string name="pref_title__load_images">Lade Bilder</string>
   <string name="pref_desc__load_images">Deaktiviere das Laden von Bildern, um den Datenverbrauch zu verringern</string>
   <!-- Proxy -->
+  <string name="pref_title__http_proxy_load_tor_preset">Tor Voreinstellungen laden</string>
+  <string name="pref_desc__http_proxy_load_tor_preset">Proxy Einstellungen für Tor (Orbot) HTTP Proxy laden</string>
   <string name="pref_title__sub_proxy">Proxy</string>
   <string name="pref_title__proxy_enabled">Aktiviere Netzwerkproxy</string>
+  <string name="pref_desc__http_proxy_enabled">Nutze einen Proxyserver, um Firewalls zu umgehen.\nDie App muss neu gestartet werden</string>
+  <string name="pref_title__http_proxy_host">Host</string>
+  <string name="pref_title__http_proxy_port">Port</string>
   <!-- Chrome custom tabs -->
   <string name="pref_title__chrome_custom_tabs_enabled">Chrome Custom Tabs</string>
   <string name="pref_desc__chrome_custom_tabs_enabled">Externe Links mit Chrome Custom Tabs öffnen. Chromium oder Google Chrome muss für dieses Feature installiert sein.\nWICHTIGER HINWEIS: Chrome Custom Tabs verwenden die konfigurierten Proxy-Server nicht!</string>
