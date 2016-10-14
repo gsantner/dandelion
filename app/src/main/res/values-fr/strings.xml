@@ -20,6 +20,7 @@
   <string name="public_">Publique</string>
   <string name="search">Rechercher</string>
   <!-- Notifications dropdown menu -->
+  <string name="notifications__all">Toutes les notifications</string>
   <!-- Pod Activity -->
   <string name="title_activity_pods">Selectionnez un Pod</string>
   <string name="filter_hint">Entrez le nom de domaine du pod</string>
