@@ -36,6 +36,7 @@
   <string name="pref_desc__http_proxy_load_tor_preset">Carica le impostazioni del proxy per il proxy HTTP di Tor (Orbot)</string>
   <string name="pref_title__sub_proxy">Proxy</string>
   <string name="pref_title__proxy_enabled">Attiva proxy</string>
+  <string name="pref_desc__http_proxy_enabled">Usa il proxy con i dati di Diaspora per eludere i firewall.\nPotrebbe essere necessario il riavvio</string>
   <string name="pref_title__http_proxy_host">Host</string>
   <string name="pref_title__http_proxy_port">Porta</string>
   <!-- Chrome custom tabs -->
