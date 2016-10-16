@@ -15,4 +15,9 @@
 
 
     <dimen name="textsize_badge_count">11sp</dimen>
+
+    <dimen name="card_corner_radius">5dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="card_spacing">10dp</dimen>
+    <dimen name="card_margin_horizontal">5dp</dimen>
 </resources>

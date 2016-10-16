@@ -19,19 +19,31 @@
  */
 package com.github.dfa.diaspora_android.util.theming;
 
+import android.content.res.ColorStateList;
+import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.CompoundButtonCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.ActionMenuView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.github.dfa.diaspora_android.App;
+import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.AppSettings;
+import com.github.dfa.diaspora_android.util.AppLog;
 
 /**
  * Singleton that can be used to color views
@@ -67,7 +79,9 @@ public class ThemeHelper {
 
     public static void updateCheckBoxColor(CheckBox checkBox) {
         if (checkBox != null) {
-            checkBox.setHighlightColor(getInstance().appSettings.getAccentColor());
+            int states[][] = {{android.R.attr.state_checked}, {}};
+            int colors[] = {ThemeHelper.getAccentColor(), getNeutralGreyColor()};
+            CompoundButtonCompat.setButtonTintList(checkBox, new ColorStateList(states, colors));
         }
     }
 
@@ -82,12 +96,26 @@ public class ThemeHelper {
         if (textView != null) {
             textView.setHighlightColor(getInstance().appSettings.getAccentColor());
             textView.setLinkTextColor(getInstance().appSettings.getAccentColor());
+        } else {
+            Log.d("ThemeHelper", "TextView is null!");
+        }
+    }
+
+    public static void updateTitleColor(TextView textView) {
+        if(textView != null) {
+            textView.setTextColor(getInstance().appSettings.getAccentColor());
         }
     }
 
     public static void updateToolbarColor(Toolbar toolbar) {
         if (toolbar != null) {
             toolbar.setBackgroundColor(getInstance().appSettings.getPrimaryColor());
+        }
+    }
+
+    public static void setToolbarColor(Toolbar toolbar, int color) {
+        if(toolbar != null) {
+            toolbar.setBackgroundColor(color);
         }
     }
 
@@ -115,15 +143,36 @@ public class ThemeHelper {
         return ColorPalette.getObscuredColor(getPrimaryColor());
     }
 
-    public static void updateActionBarColor(ActionBar actionBar) {
-        if (actionBar != null) {
-            actionBar.setBackgroundDrawable(new ColorDrawable(getInstance().appSettings.getPrimaryColor()));
-        }
+    public static int getNeutralGreyColor() {
+        return ContextCompat.getColor(getInstance().appSettings.getApplicationContext(), R.color.md_grey_800);
     }
 
     public static void updateProgressBarColor(ProgressBar progressBar) {
         if (progressBar != null && progressBar.getProgressDrawable() != null) {
             progressBar.getProgressDrawable().setColorFilter(getAccentColor(), PorterDuff.Mode.SRC_IN);
         }
+    }
+
+    public static void updateAccentColorPreview(ImageView imageView) {
+        if(imageView != null) {
+            Drawable circle = imageView.getDrawable();
+            if(circle != null) {
+                circle.setColorFilter(getAccentColor(), PorterDuff.Mode.SRC_ATOP);
+                imageView.setImageDrawable(circle);
+            }
+        }
+    }
+
+    public static void updatePrimaryColorPreview(ImageView imageView) {
+        if(imageView != null) {
+            Drawable circle = imageView.getDrawable();
+            if(circle != null) {
+                circle.setColorFilter(getPrimaryColor(), PorterDuff.Mode.SRC_ATOP);
+            }
+        }
+    }
+
+    public static void setViewEnabled(View v, boolean enabled) {
+        v.setBackgroundColor(getInstance().appSettings.getApplicationContext().getResources().getColor(enabled ? R.color.white : R.color.layout_disabled));
     }
 }

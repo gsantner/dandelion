@@ -116,7 +116,7 @@ public class AboutActivity extends ThemedActivity
     }
 
     @Override
-    protected void applyColorToViews() {
+    public void applyColorToViews() {
         ThemeHelper.updateToolbarColor(toolbar);
         ThemeHelper.updateTabLayoutColor(tabLayout);
         ThemeHelper.setPrimaryColorAsBackground(linearLayout);

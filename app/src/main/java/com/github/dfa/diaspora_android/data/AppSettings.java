@@ -111,6 +111,10 @@ public class AppSettings {
         return getBoolean(prefApp, R.string.pref_key__load_images, true);
     }
 
+    public void setLoadImages(boolean b) {
+        setBool(prefApp, R.string.pref_key__load_images, b);
+    }
+
     public int getMinimumFontSize() {
         switch (getString(prefApp, R.string.pref_key__font_size, "")) {
             case "huge":
@@ -123,6 +127,37 @@ public class AppSettings {
                 setString(prefApp, R.string.pref_key__font_size, "normal");
                 return 8;
         }
+    }
+
+    public String getMinimumFontSizeString() {
+        String[] values = context.getResources().getStringArray(R.array.pref_entries_values__font_size);
+        String[] titles = context.getResources().getStringArray(R.array.pref_entries__font_size);
+        String current = getString(prefApp, R.string.pref_key__font_size, "normal");
+        for(int i=0; i<values.length; i++) {
+            if(values[i].equals(current)) {
+                return titles[i];
+            }
+        }
+        return titles[0];
+    }
+
+    public void setMinimumFontSize(int size) {
+        switch (size) {
+            case 20:
+                setString(prefApp, R.string.pref_key__font_size, "huge");
+                break;
+            case 16:
+                setString(prefApp, R.string.pref_key__font_size, "large");
+                break;
+            default:
+                setString(prefApp, R.string.pref_key__font_size, "normal");
+        }
+    }
+
+    public void setMinimumFontSizeIndex(int index) {
+        if(index == 0) setMinimumFontSize(8);
+        else if(index == 1) setMinimumFontSize(16);
+        else setMinimumFontSize(20);
     }
 
     public String getAvatarUrl() {
@@ -222,6 +257,10 @@ public class AppSettings {
         return getBoolean(prefApp, R.string.pref_key__append_shared_via_app, true);
     }
 
+    public void setAppendSharedViaApp(boolean b) {
+        setBool(prefApp, R.string.pref_key__append_shared_via_app, b);
+    }
+
     @SuppressLint("CommitPrefEdits")
     public void setProxyEnabled(boolean enabled) {
         //commit instead of apply because the app is likely to be killed before apply is called.
@@ -291,56 +330,112 @@ public class AppSettings {
         return getBoolean(prefApp, R.string.pref_key__intellihide_toolbars, true);
     }
 
+    public void setIntellihideToolbars(boolean b) {
+        setBool(prefApp, R.string.pref_key__intellihide_toolbars, b);
+    }
+
     public boolean isChromeCustomTabsEnabled() {
         return getBoolean(prefApp, R.string.pref_key__chrome_custom_tabs_enabled, true);
+    }
+
+    public void setChromeCustomTabsEnabled(boolean b) {
+        setBool(prefApp, R.string.pref_key__chrome_custom_tabs_enabled, b);
     }
 
     public boolean isLoggingEnabled() {
         return getBoolean(prefApp, R.string.pref_key__logging_enabled, true);
     }
 
+    public void setLoggingEnabled(boolean b) {
+        setBool(prefApp, R.string.pref_key__logging_enabled, b);
+    }
+
     public boolean isLoggingSpamEnabled() {
         return getBoolean(prefApp, R.string.pref_key__logging_spam_enabled, false);
+    }
+
+    public void setLoggingSpamEnabled(boolean b) {
+        setBool(prefApp, R.string.pref_key__logging_spam_enabled, b);
     }
 
     public boolean isVisibleInNavExit() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__exit, false);
     }
 
+    public void setVisibleInNavExit(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__exit, b);
+    }
+
     public boolean isVisibleInNavHelp_license() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__help_license, true);
+    }
+
+    public void setVisibleInNavHelp_license(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__help_license, b);
     }
 
     public boolean isVisibleInNavPublic_activities() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__public_activities, false);
     }
 
+    public void setVisibleInNavPublic_activities(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__public_activities, b);
+    }
+
     public boolean isVisibleInNavMentions() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__mentions, false);
+    }
+
+    public void setVisibleInNavMentions(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__mentions, b);
     }
 
     public boolean isVisibleInNavCommented() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__commented, true);
     }
 
+    public void setVisibleInNavCommented(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__commented, b);
+    }
+
     public boolean isVisibleInNavLiked() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__liked, true);
+    }
+
+    public void setVisibleInNavLiked(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__liked, b);
     }
 
     public boolean isVisibleInNavActivities() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__activities, true);
     }
 
+    public void setVisibleInNavActivities(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__activities, b);
+    }
+
     public boolean isVisibleInNavAspects() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__aspects, true);
+    }
+
+    public void setVisibleInNavAspects(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__aspects, b);
     }
 
     public boolean isVisibleInNavFollowed_tags() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__followed_tags, true);
     }
 
+    public void setVisibleInNavFollowedTags(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__followed_tags, b);
+    }
+
     public boolean isVisibleInNavProfile() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__profile, false);
+    }
+
+    public void setVisibleInNavProfile(boolean b) {
+        setBool(prefApp, R.string.pref_key__visibility_nav__profile, b);
     }
 
     public void setPrimaryColorSettings(int base, int shade) {
@@ -375,7 +470,11 @@ public class AppSettings {
         return getInt(prefApp, R.string.pref_key__accent_color_shade, context.getResources().getColor(R.color.accent));
     }
 
-    public boolean isExtendedNotificationsActivated() {
+    public boolean isExtendedNotifications() {
         return getBoolean(prefApp, R.string.pref_key__extended_notifications, false);
+    }
+
+    public void setExtendedNotifications(boolean b) {
+        setBool(prefApp, R.string.pref_key__extended_notifications, b);
     }
 }

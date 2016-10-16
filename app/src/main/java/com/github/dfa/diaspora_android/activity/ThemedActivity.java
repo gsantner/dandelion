@@ -49,7 +49,7 @@ public abstract class ThemedActivity extends AppCompatActivity {
         applyColorToViews();
     }
 
-    protected abstract void applyColorToViews();
+    public abstract void applyColorToViews();
 
     /**
      * Update color of the status bar

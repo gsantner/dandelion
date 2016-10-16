@@ -70,6 +70,7 @@ import com.github.dfa.diaspora_android.listener.WebUserProfileChangedListener;
 import com.github.dfa.diaspora_android.receiver.OpenExternalLinkReceiver;
 import com.github.dfa.diaspora_android.receiver.UpdateTitleReceiver;
 import com.github.dfa.diaspora_android.ui.BadgeDrawable;
+import com.github.dfa.diaspora_android.ui.ContextMenuWebView;
 import com.github.dfa.diaspora_android.ui.IntellihideToolbarActivityListener;
 import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.CustomTabHelpers.CustomTabActivityHelper;
@@ -434,7 +435,14 @@ public class MainActivity extends ThemedActivity
             showFragment(getFragment(PodSelectionFragment.TAG));
         } else if (ACTION_CLEAR_CACHE.equals(action)) {
             AppLog.v(this, "Clear WebView cache");
-            ((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView().clearCache(true);
+            openDiasporaUrl(urls.getStreamUrl());
+            ContextMenuWebView wv = ((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView();
+            if(wv != null) {
+                wv.clearCache(true);
+            } else {
+                AppLog.e(this, "WebView is null!");
+            }
+
         } else if (Intent.ACTION_SEND.equals(action) && type != null) {
             switch (type) {
                 case "text/plain":
@@ -578,7 +586,7 @@ public class MainActivity extends ThemedActivity
                 ///Hide bottom toolbar
                 toolbarBottom.setVisibility(View.GONE);
             } else {
-                getMenuInflater().inflate(appSettings.isExtendedNotificationsActivated() ?
+                getMenuInflater().inflate(appSettings.isExtendedNotifications() ?
                         R.menu.main__menu_top__notifications_dropdown : R.menu.main__menu_top, menu);
                 getMenuInflater().inflate(R.menu.main__menu_bottom, toolbarBottom.getMenu());
                 top.onCreateBottomOptionsMenu(toolbarBottom.getMenu(), getMenuInflater());
@@ -621,7 +629,7 @@ public class MainActivity extends ThemedActivity
         AppLog.i(this, "onOptionsItemSelected()");
         switch (item.getItemId()) {
             case R.id.action_notifications: {
-                if(appSettings.isExtendedNotificationsActivated()) {
+                if(appSettings.isExtendedNotifications()) {
                     return true;
                 }
                 //Otherwise we execute the action of action_notifications_all
@@ -1079,7 +1087,7 @@ public class MainActivity extends ThemedActivity
     }
 
     @Override
-    protected void applyColorToViews() {
+    public void applyColorToViews() {
         ThemeHelper.updateToolbarColor(toolbarTop);
         ThemeHelper.updateActionMenuViewColor(toolbarBottom);
         navDrawerLayout.setBackgroundColor(appSettings.getPrimaryColor());
