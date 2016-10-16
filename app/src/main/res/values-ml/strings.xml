@@ -19,6 +19,7 @@
   <string name="mentions">പരാമർശങ്ങൾ</string>
   <string name="public_">പരസ്യമായ</string>
   <string name="search">തിരയുക</string>
+  <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <string name="title_activity_pods">പോഡ് തിരഞ്ഞെടുക്കുക</string>
   <string name="filter_hint">പോഡ് അഡ്രസ് രേഖപ്പെടുത്തുക</string>

@@ -15,6 +15,7 @@
   <string name="pref_title__sub_nav_slider">Navigatie Slider</string>
   <string name="pref_cat__visibility_nav_items">Item Zichtbaarheid</string>
   <!-- Themes -->
+  <!-- Notifications dropdown -->
   <!-- Font size -->
   <string name="pref_title__font_size">Lettergrootte</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->

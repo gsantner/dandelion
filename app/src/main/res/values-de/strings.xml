@@ -19,6 +19,7 @@
   <string name="mentions">Erwähnungen</string>
   <string name="public_">Öffentliche Aktivitäten</string>
   <string name="search">Suchen</string>
+  <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <string name="title_activity_pods">Pod auswählen</string>
   <string name="filter_hint">Pod-Adresse eingeben</string>

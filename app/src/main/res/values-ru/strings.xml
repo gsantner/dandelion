@@ -19,6 +19,7 @@
   <string name="mentions">Упоминания</string>
   <string name="public_">Публичные</string>
   <string name="search">Поиск</string>
+  <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <string name="title_activity_pods">Выберите под</string>
   <string name="filter_hint">Введите адрес пода</string>

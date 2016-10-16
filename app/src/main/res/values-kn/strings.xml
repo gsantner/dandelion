@@ -9,6 +9,7 @@
   <string name="liked">ಇಷ್ಟವಾದ</string>
   <string name="public_">ಸಾರ್ವಜನಿಕ</string>
   <string name="search">ಹುಡುಕಿ</string>
+  <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <string name="title_activity_pods">ಪೋಡ್ ಆಯ್ಕೆಮಾಡಿಕೊಳ್ಳಿ</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->

@@ -16,6 +16,15 @@
   <string name="pref_desc__sub_nav_slider">ナビゲーションドロワー内のエントリーの表示を制御します</string>
   <string name="pref_cat__visibility_nav_items">アイテムの表示</string>
   <!-- Themes -->
+  <string name="pref_title__themes">テーマと色</string>
+  <string name="pref_desc__themes">アプリ全体で使用される色を制御します</string>
+  <string name="pref_title__primary_color">プライマリ色</string>
+  <string name="pref_desc__primary_color">ツールバーの色</string>
+  <string name="pref_title__accent_color">アクセント色</string>
+  <string name="pref_desc__accent_color">プログレスバーの色</string>
+  <!-- Notifications dropdown -->
+  <string name="pref_title__extended_notifications">拡張通知</string>
+  <string name="pref_desc__extended_notifications">通知のカテゴリーを示すドロップダウン・メニューで通知ベルを拡張します</string>
   <!-- Font size -->
   <string name="pref_title__font_size">フォントサイズ</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
@@ -47,8 +56,8 @@
   <string name="pref_desc__clear_cache">WebView のキャッシュをクリアします</string>
   <string name="pref_desc__intellihide_toolbars">スクロールの間、自動的に上部と下部のツールバーを非表示にします</string>
   <string name="pref_title__intellihide_toolbars">Intellihide ツールバー</string>
-  <string name="pref_title__append_shared_via_app">共有方法の通知を追加</string>
-  <string name="pref_desc__append_shared_via_app">共有テキストに、このアプリへの参照 (\"&#8230;で共有\") を追加します</string>
+  <string name="pref_title__append_shared_via_app">シェア方法の通知を追加</string>
+  <string name="pref_desc__append_shared_via_app">シェアしたテキストに、このアプリへの参照 (\"&#8230;でシェア\") を追加します</string>
   <!-- More -->
   <!-- Recently added - Please move to right section-->
 </resources>
