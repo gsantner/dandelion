@@ -1,3 +1,21 @@
+/*
+    This file is part of the Diaspora for Android.
+
+    Diaspora for Android is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Diaspora for Android is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with the Diaspora for Android.
+
+    If not, see <http://www.gnu.org/licenses/>.
+ */
 package com.github.dfa.diaspora_android.fragment;
 
 import android.os.Bundle;
@@ -7,7 +25,6 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -156,6 +173,46 @@ public class SettingsFragment__NavigationSlider extends ThemedSettingsFragment {
             case R.id.settings_activity__navigation_slider_activities_checkbox:
                 checkboxActivities.setChecked(!getAppSettings().isVisibleInNavActivities());
                 getAppSettings().setVisibleInNavActivities(!getAppSettings().isVisibleInNavActivities());
+                break;
+            case R.id.settings_activity__navigation_slider_aspects:
+            case R.id.settings_activity__navigation_slider_aspects_checkbox:
+                checkboxAspects.setChecked(!getAppSettings().isVisibleInNavAspects());
+                getAppSettings().setVisibleInNavAspects(!getAppSettings().isVisibleInNavAspects());
+                break;
+            case R.id.settings_activity__navigation_slider_commented:
+            case R.id.settings_activity__navigation_slider_commented_checkbox:
+                checkboxCommented.setChecked(!getAppSettings().isVisibleInNavCommented());
+                getAppSettings().setVisibleInNavCommented(!getAppSettings().isVisibleInNavCommented());
+                break;
+            case R.id.settings_activity__navigation_slider_exit:
+            case R.id.settings_activity__navigation_slider_exit_checkbox:
+                checkboxExit.setChecked(!getAppSettings().isVisibleInNavExit());
+                getAppSettings().setVisibleInNavExit(!getAppSettings().isVisibleInNavExit());
+                break;
+            case R.id.settings_activity__navigation_slider_followed:
+            case R.id.settings_activity__navigation_slider_followed_checkbox:
+                checkboxFollowed.setChecked(!getAppSettings().isVisibleInNavFollowed_tags());
+                getAppSettings().setVisibleInNavFollowedTags(!getAppSettings().isVisibleInNavFollowed_tags());
+                break;
+            case R.id.settings_activity__navigation_slider_liked:
+            case R.id.settings_activity__navigation_slider_liked_checkbox:
+                checkboxLiked.setChecked(!getAppSettings().isVisibleInNavLiked());
+                getAppSettings().setVisibleInNavLiked(!getAppSettings().isVisibleInNavLiked());
+                break;
+            case R.id.settings_activity__navigation_slider_mentions:
+            case R.id.settings_activity__navigation_slider_mentions_checkbox:
+                checkboxMentions.setChecked(!getAppSettings().isVisibleInNavMentions());
+                getAppSettings().setVisibleInNavMentions(!getAppSettings().isVisibleInNavMentions());
+                break;
+            case R.id.settings_activity__navigation_slider_profile:
+            case R.id.settings_activity__navigation_slider_profile_checkbox:
+                checkboxProfile.setChecked(!getAppSettings().isVisibleInNavProfile());
+                getAppSettings().setVisibleInNavProfile(!getAppSettings().isVisibleInNavProfile());
+                break;
+            case R.id.settings_activity__navigation_slider_public:
+            case R.id.settings_activity__navigation_slider_public_checkbox:
+                checkboxPublic.setChecked(!getAppSettings().isVisibleInNavPublic_activities());
+                getAppSettings().setVisibleInNavPublic_activities(!getAppSettings().isVisibleInNavPublic_activities());
                 break;
         }
     }
