@@ -34,11 +34,6 @@
             android:theme="@style/DiasporaLight.NoActionBar"/>
 
         <activity
-            android:name=".activity.SettingsActivity2"
-            android:label="Debug"
-            android:theme="@style/DiasporaLight.NoActionBar"/>
-
-        <activity
             android:name=".activity.MainActivity"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustResize"
