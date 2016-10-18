@@ -22,6 +22,11 @@
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">Toutes les notifications</string>
   <string name="notifications__also_commented">Aussi commenté</string>
+  <string name="notifications__comment_on_post">Commentaires sur posts</string>
+  <string name="notifications__liked">Aimés</string>
+  <string name="notifications__mentioned">Mentionnés</string>
+  <string name="notifications__reshared">Repartagés</string>
+  <string name="notifications__started_sharing">A commencé à partager</string>
   <!-- Pod Activity -->
   <string name="title_activity_pods">Selectionnez un Pod</string>
   <string name="filter_hint">Entrez le nom de domaine du pod</string>
@@ -68,6 +73,7 @@
   <string name="permissions_image">Vous devez autoriser \"Modifier ou supprimer le contenu de la carte Sd \" pour sauvegarder/téléverser les images. Ensuite, vous devriez        fermer l\'application ou redémarrer votre téléphone. Si vous n\'avez pas autorisé l\'accès à l\'espace de stockage mais que vous souhaitez sauvegarder des images        ultérieurement, vous pouvez donner la permission plus tard. Veuillez ouvrir : Paramètres - applications -        Diaspora. Dans la section Autorisations, vous pouvez autoriser \"Modifier ou supprimer le contenu de la carte Sd \".</string>
   <string name="permission_denied">Permission refusée.</string>
   <string name="permission_granted_try_again">Permission accordée. Veuillez réessayer.</string>
+  <string name="podselection__custom_pod">Pod personnalisé</string>
   <string name="pod_name">Nom du Pod</string>
   <string name="http_protocol">Protocole</string>
   <string name="pod_address">Adresse du Pod</string>
