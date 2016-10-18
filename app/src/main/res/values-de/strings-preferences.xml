@@ -23,6 +23,7 @@
   <string name="pref_title__accent_color">Akzentfarbe</string>
   <string name="pref_desc__accent_color">Färbung der Details</string>
   <!-- Notifications dropdown -->
+  <string name="pref_title__extended_notifications">Erweiterte Benachrichtigungen</string>
   <!-- Font size -->
   <string name="pref_title__font_size">Schriftgröße</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
