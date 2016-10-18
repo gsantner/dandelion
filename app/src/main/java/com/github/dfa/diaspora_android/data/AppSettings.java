@@ -21,6 +21,7 @@ import android.content.SharedPreferences;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod.DiasporaPodUrl;
+import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.ProxyHandler;
 
 import org.json.JSONException;
@@ -310,12 +311,7 @@ public class AppSettings {
      * @return proxy port
      */
     public int getProxyPort() {
-        try {
-            return Integer.parseInt(getString(prefApp, R.string.pref_key__http_proxy_port, "0"));
-        } catch (Exception e) {
-            setString(prefApp, R.string.pref_key__http_proxy_port, "0");
-            return 0;
-        }
+        return getInt(prefApp, R.string.pref_key__http_proxy_port, 0);
     }
 
     public void setProxyHttpPort(int value) {
