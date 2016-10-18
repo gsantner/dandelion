@@ -21,6 +21,12 @@
   <string name="search">Suchen</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">Alle Benachrichtigungen</string>
+  <string name="notifications__also_commented">Auch kommentiert</string>
+  <string name="notifications__comment_on_post">Einen Beitrag kommentiert</string>
+  <string name="notifications__liked">Gefällt</string>
+  <string name="notifications__mentioned">Erwähnt</string>
+  <string name="notifications__reshared">Weitergesagt</string>
+  <string name="notifications__started_sharing">Angefangen zu teilen</string>
   <!-- Pod Activity -->
   <string name="title_activity_pods">Pod auswählen</string>
   <string name="filter_hint">Pod-Adresse eingeben</string>
