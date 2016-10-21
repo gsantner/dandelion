@@ -21,7 +21,6 @@ import android.content.SharedPreferences;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod.DiasporaPodUrl;
-import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.ProxyHandler;
 
 import org.json.JSONException;
@@ -76,24 +75,24 @@ public class AppSettings {
         setString(pref, keyRessourceId, sb.toString().replaceFirst("%%%", ""));
     }
 
-    private String[] getStringArray(SharedPreferences pref, int keyRessourceId) {
-        String value = pref.getString(context.getString(keyRessourceId), "%%%");
+    private String[] getStringArray(SharedPreferences pref, int keyResourceId) {
+        String value = pref.getString(context.getString(keyResourceId), "%%%");
         if (value.equals("%%%")) {
             return new String[0];
         }
         return value.split("%%%");
     }
 
-    private String getString(SharedPreferences pref, int ressourceId, String defaultValue) {
-        return pref.getString(context.getString(ressourceId), defaultValue);
+    private String getString(SharedPreferences pref, int resourceId, String defaultValue) {
+        return pref.getString(context.getString(resourceId), defaultValue);
     }
 
-    private boolean getBoolean(SharedPreferences pref, int ressourceId, boolean defaultValue) {
-        return pref.getBoolean(context.getString(ressourceId), defaultValue);
+    private boolean getBoolean(SharedPreferences pref, int resourceId, boolean defaultValue) {
+        return pref.getBoolean(context.getString(resourceId), defaultValue);
     }
 
-    private int getInt(SharedPreferences pref, int ressourceId, int defaultValue) {
-        return pref.getInt(context.getString(ressourceId), defaultValue);
+    private int getInt(SharedPreferences pref, int resourceId, int defaultValue) {
+        return pref.getInt(context.getString(resourceId), defaultValue);
     }
 
 
@@ -277,21 +276,6 @@ public class AppSettings {
         return getBoolean(prefApp, R.string.pref_key__http_proxy_enabled, false);
     }
 
-    public boolean wasProxyEnabled() {
-        return getBoolean(prefApp, R.string.pref_key__proxy_was_enabled, false);
-    }
-
-    /**
-     * Needed in order to determine, whether the proxy has just been disabled (trigger app restart)
-     * or if proxy was disabled before (do not restart app)
-     *
-     * @param b new value
-     */
-    @SuppressLint("CommitPrefEdits")
-    public void setProxyWasEnabled(boolean b) {
-        prefApp.edit().putBoolean(context.getString(R.string.pref_key__proxy_was_enabled), b).commit();
-    }
-
     /**
      * Default value: ""
      *
@@ -434,12 +418,12 @@ public class AppSettings {
         setBool(prefApp, R.string.pref_key__visibility_nav__profile, b);
     }
 
-    public void setPrimaryColorSettings(int base, int shade) {
+    public void setPrimaryColorPickerSettings(int base, int shade) {
         setInt(prefApp, R.string.pref_key__primary_color_base, base);
         setInt(prefApp, R.string.pref_key__primary_color_shade, shade);
     }
 
-    public int[] getPrimaryColorSettings() {
+    public int[] getPrimaryColorPickerSettings() {
         return new int[]{
                 getInt(prefApp, R.string.pref_key__primary_color_base, context.getResources().getColor(R.color.md_blue_500)),
                 getInt(prefApp, R.string.pref_key__primary_color_shade, context.getResources().getColor(R.color.primary))
@@ -450,12 +434,12 @@ public class AppSettings {
         return getInt(prefApp, R.string.pref_key__primary_color_shade, context.getResources().getColor(R.color.primary));
     }
 
-    public void setAccentColorSettings(int base, int shade) {
+    public void setAccentColorPickerSettings(int base, int shade) {
         setInt(prefApp, R.string.pref_key__accent_color_base, base);
         setInt(prefApp, R.string.pref_key__accent_color_shade, shade);
     }
 
-    public int[] getAccentColorSettings() {
+    public int[] getAccentColorPickerSettings() {
         return new int[]{
                 getInt(prefApp, R.string.pref_key__accent_color_base, context.getResources().getColor(R.color.md_deep_orange_500)),
                 getInt(prefApp, R.string.pref_key__accent_color_shade, context.getResources().getColor(R.color.accent))

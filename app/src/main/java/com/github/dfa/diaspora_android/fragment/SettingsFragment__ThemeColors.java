@@ -144,7 +144,7 @@ public class SettingsFragment__ThemeColors extends ThemedSettingsFragment {
 
         title.setText(type == 1 ? R.string.pref_title__primary_color : R.string.pref_title__accent_color);
         title.setTextColor(getResources().getColor(R.color.white));
-        final int[] current = (type == 1 ? appSettings.getPrimaryColorSettings() : appSettings.getAccentColorSettings());
+        final int[] current = (type == 1 ? appSettings.getPrimaryColorPickerSettings() : appSettings.getAccentColorPickerSettings());
         base.setColors((type == 1 ? ColorPalette.getBaseColors(context) : ColorPalette.getAccentColors(context)));
         base.setSelectedColor(current[0]);
         shade.setColors(ColorPalette.getColors(context, current[0]));
@@ -178,13 +178,13 @@ public class SettingsFragment__ThemeColors extends ThemedSettingsFragment {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (type == 1) {
-                            appSettings.setPrimaryColorSettings(base.getColor(), shade.getColor());
+                            appSettings.setPrimaryColorPickerSettings(base.getColor(), shade.getColor());
                             if (Build.VERSION.SDK_INT >= 21) {
                                 getActivity().getWindow().setStatusBarColor(ThemeHelper.getPrimaryDarkColor());
                             }
                             ((ThemedActivity) getActivity()).applyColorToViews();
                         } else {
-                            appSettings.setAccentColorSettings(base.getColor(), shade.getColor());
+                            appSettings.setAccentColorPickerSettings(base.getColor(), shade.getColor());
                         }
                         applyColorToViews();
                         applySettingsToViews();

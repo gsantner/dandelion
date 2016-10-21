@@ -106,10 +106,6 @@ public class SettingsFragment__NavigationSlider extends ThemedSettingsFragment {
     @BindView(R.id.settings_activity__navigation_slider_public_checkbox)
     protected CheckBox checkboxPublic;
 
-
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         AppLog.d(this, "onCreateView()");

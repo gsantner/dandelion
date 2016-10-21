@@ -18,6 +18,7 @@
  */
 package com.github.dfa.diaspora_android.fragment;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -89,6 +90,7 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
         optionProxyOrbotPreset.setVisibility(getAppSettings().isProxyEnabled() ? View.VISIBLE : View.GONE);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void applySettingsToViews() {
         checkboxProxyActivated.setChecked(getAppSettings().isProxyEnabled());
@@ -108,6 +110,7 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
         optionProxyOrbotPreset.setOnClickListener(this);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -171,6 +174,7 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
         }).setNegativeButton(android.R.string.cancel, null).show();
     }
 
+    @SuppressLint("SetTextI18n")
     protected void showProxyPortDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         final EditText input = (EditText) getLayoutInflater(null).inflate(R.layout.settings_activity__dialog_proxy, null, false);
