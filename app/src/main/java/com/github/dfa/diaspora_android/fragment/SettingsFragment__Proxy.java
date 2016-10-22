@@ -85,20 +85,20 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
     protected void applyColorToViews() {
         ThemeHelper.updateTitleColor(titleProxy);
         ThemeHelper.updateCheckBoxColor(checkboxProxyActivated);
-        optionProxyHost.setVisibility(getAppSettings().isProxyEnabled() ? View.VISIBLE : View.GONE);
-        optionProxyPort.setVisibility(getAppSettings().isProxyEnabled() ? View.VISIBLE : View.GONE);
-        optionProxyOrbotPreset.setVisibility(getAppSettings().isProxyEnabled() ? View.VISIBLE : View.GONE);
+        optionProxyHost.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
+        optionProxyPort.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
+        optionProxyOrbotPreset.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
     }
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void applySettingsToViews() {
-        checkboxProxyActivated.setChecked(getAppSettings().isProxyEnabled());
-        optionProxyHost.setEnabled(getAppSettings().isProxyEnabled());
-        hintProxyHost.setText(getAppSettings().getProxyHost());
-        optionProxyPort.setEnabled(getAppSettings().isProxyEnabled());
-        hintProxyPort.setText(""+getAppSettings().getProxyPort());
-        optionProxyOrbotPreset.setEnabled(getAppSettings().isProxyEnabled());
+        checkboxProxyActivated.setChecked(getAppSettings().isProxyHttpEnabled());
+        optionProxyHost.setEnabled(getAppSettings().isProxyHttpEnabled());
+        hintProxyHost.setText(getAppSettings().getProxyHttpHost());
+        optionProxyPort.setEnabled(getAppSettings().isProxyHttpEnabled());
+        hintProxyPort.setText(""+getAppSettings().getProxyHttpPort());
+        optionProxyOrbotPreset.setEnabled(getAppSettings().isProxyHttpEnabled());
     }
 
     @Override
@@ -116,15 +116,15 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
         switch (view.getId()) {
             case R.id.settings_activity__proxy_activated:
             case R.id.settings_activity__proxy_activated_checkbox:
-                boolean proxyEnabled = !getAppSettings().isProxyEnabled();
+                boolean proxyEnabled = !getAppSettings().isProxyHttpEnabled();
                 checkboxProxyActivated.setChecked(proxyEnabled);
-                getAppSettings().setProxyEnabled(proxyEnabled);
+                getAppSettings().setProxyHttpEnabled(proxyEnabled);
                 optionProxyHost.setEnabled(proxyEnabled);
                 optionProxyPort.setEnabled(proxyEnabled);
                 optionProxyOrbotPreset.setEnabled(proxyEnabled);
-                optionProxyHost.setVisibility(getAppSettings().isProxyEnabled() ? View.VISIBLE : View.GONE);
-                optionProxyPort.setVisibility(getAppSettings().isProxyEnabled() ? View.VISIBLE : View.GONE);
-                optionProxyOrbotPreset.setVisibility(getAppSettings().isProxyEnabled() ? View.VISIBLE : View.GONE);
+                optionProxyHost.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
+                optionProxyPort.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
+                optionProxyOrbotPreset.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
                 break;
             case R.id.settings_activity__proxy_host:
                 showProxyHostDialog();
@@ -162,7 +162,7 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         final EditText input = (EditText) getLayoutInflater(null).inflate(R.layout.settings_activity__dialog_proxy, null, false);
         input.setInputType(InputType.TYPE_CLASS_TEXT);
-        input.setText(getAppSettings().getProxyHost());
+        input.setText(getAppSettings().getProxyHttpHost());
         ThemeHelper.updateEditTextColor(input);
         builder.setTitle(R.string.pref_title__http_proxy_host)
                 .setView(input).setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
@@ -179,7 +179,7 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         final EditText input = (EditText) getLayoutInflater(null).inflate(R.layout.settings_activity__dialog_proxy, null, false);
         input.setInputType(InputType.TYPE_CLASS_NUMBER);
-        input.setText(""+getAppSettings().getProxyPort());
+        input.setText(""+getAppSettings().getProxyHttpPort());
         ThemeHelper.updateEditTextColor(input);
         builder.setTitle(R.string.pref_title__http_proxy_port)
                 .setView(input).setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
