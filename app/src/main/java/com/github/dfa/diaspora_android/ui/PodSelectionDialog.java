@@ -21,7 +21,9 @@ import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.AppSettings;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod.DiasporaPodUrl;
+import com.github.dfa.diaspora_android.fragment.ThemedAppCompatDialogFragment;
 import com.github.dfa.diaspora_android.util.ProxyHandler;
+import com.github.dfa.diaspora_android.util.theming.ThemeHelper;
 
 import org.json.JSONException;
 
@@ -35,7 +37,7 @@ import butterknife.OnItemSelected;
 /**
  * Created by gsantner (https://gsantner.github.io) on 06.10.16.
  */
-public class PodSelectionDialog extends AppCompatDialogFragment {
+public class PodSelectionDialog extends ThemedAppCompatDialogFragment {
     public static final String TAG = "com.github.dfa.diaspora_android.PodSelectionDialog";
 
     public static interface PodSelectionDialogResultListener {
@@ -65,7 +67,7 @@ public class PodSelectionDialog extends AppCompatDialogFragment {
     @BindView(R.id.podselection__dialog__edit_podaddress)
     EditText editPodAddress;
 
-    @BindView(R.id.podselection__dialog__edit_podname)
+    @BindView(R.id.podselection__dialog__edit_pod_name)
     EditText editPodName;
 
     @BindView(R.id.podselection__dialog__radiogroup_protocol)
@@ -82,6 +84,15 @@ public class PodSelectionDialog extends AppCompatDialogFragment {
 
     @BindView(R.id.podselection__dialog__text_torpreset)
     TextView textTorPreset;
+
+    @BindView(R.id.podselection__dialog__text_pod_name)
+    TextView textPodName;
+
+    @BindView(R.id.podselection__dialog__text_pod_address)
+    TextView textPodAddress;
+
+    @BindView(R.id.podselection__dialog__text_protocol)
+    TextView textProtocol;
 
     private PodSelectionDialogResultListener resultListener;
     private View root;
@@ -112,9 +123,29 @@ public class PodSelectionDialog extends AppCompatDialogFragment {
             spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinnerProfile.setAdapter(spinnerAdapter);
         }
-
+        applyColorsToViews();
         builder.setView(root);
         return builder.create();
+    }
+
+    protected void applyColorsToViews() {
+        ThemeHelper.getInstance(app.getSettings());
+
+        ThemeHelper.updateTitleColor(textPodAddress);
+        ThemeHelper.updateTitleColor(textPodName);
+        ThemeHelper.updateTitleColor(textProfile);
+        ThemeHelper.updateTitleColor(textProtocol);
+        ThemeHelper.updateTitleColor(textTorPreset);
+
+        ThemeHelper.updateEditTextColor(editPodAddress);
+        ThemeHelper.updateEditTextColor(editPodName);
+        ThemeHelper.updateCheckBoxColor(checkboxTorPreset);
+        ThemeHelper.updateRadioGroupColor(radiogrpProtocol);
+    }
+
+    @Override
+    protected AppSettings getAppSettings() {
+        return app.getSettings();
     }
 
     @OnItemSelected(R.id.podselection__dialog__spinner_profile)

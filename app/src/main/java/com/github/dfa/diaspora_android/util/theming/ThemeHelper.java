@@ -20,30 +20,27 @@
 package com.github.dfa.diaspora_android.util.theming;
 
 import android.content.res.ColorStateList;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.CompoundButtonCompat;
-import android.support.v7.app.ActionBar;
 import android.support.v7.widget.ActionMenuView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.AppSettings;
-import com.github.dfa.diaspora_android.util.AppLog;
 
 /**
  * Singleton that can be used to color views
@@ -74,6 +71,9 @@ public class ThemeHelper {
     public static void updateEditTextColor(EditText editText) {
         if (editText != null) {
             editText.setHighlightColor(getInstance().appSettings.getAccentColor());
+            if(Build.VERSION.SDK_INT >= 21) {
+                editText.getBackground().mutate().setColorFilter(getAccentColor(), PorterDuff.Mode.SRC_ATOP);
+            }
         }
     }
 
@@ -154,11 +154,23 @@ public class ThemeHelper {
     }
 
     public static void updateAccentColorPreview(ImageView imageView) {
-        if(imageView != null) {
+        if (imageView != null) {
             Drawable circle = imageView.getDrawable();
-            if(circle != null) {
+            if (circle != null) {
                 circle.setColorFilter(getAccentColor(), PorterDuff.Mode.SRC_ATOP);
                 imageView.setImageDrawable(circle);
+            }
+        }
+    }
+
+    public static void updateRadioGroupColor(RadioGroup radioGroup) {
+        if(radioGroup != null && Build.VERSION.SDK_INT >= 21) {
+            for (int i = 0; i < radioGroup.getChildCount(); ++i) {
+                RadioButton btn = ((RadioButton) radioGroup.getChildAt(i));
+                btn.setButtonTintList(new ColorStateList(
+                        new int[][]{ new int[]{-android.R.attr.state_enabled}, new int[]{android.R.attr.state_enabled} },
+                        new int[] { Color.BLACK ,ThemeHelper.getAccentColor() }));
+                btn.invalidate();
             }
         }
     }

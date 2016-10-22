@@ -30,6 +30,7 @@
             android:visibility="gone" />
 
         <TextView
+            android:id="@+id/podselection__dialog__text_pod_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_horizontal_margin_half"
@@ -37,7 +38,7 @@
             android:textAppearance="@style/AppTheme.TextAppearance.Caption" />
 
         <EditText
-            android:id="@+id/podselection__dialog__edit_podname"
+            android:id="@+id/podselection__dialog__edit_pod_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/activity_horizontal_margin_half"
@@ -48,6 +49,7 @@
             tools:text="Geraspora" />
 
         <TextView
+            android:id="@+id/podselection__dialog__text_pod_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_horizontal_margin_half"
@@ -66,6 +68,7 @@
             tools:text="pod.geraspora.de" />
 
         <TextView
+            android:id="@+id/podselection__dialog__text_protocol"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_horizontal_margin_half"

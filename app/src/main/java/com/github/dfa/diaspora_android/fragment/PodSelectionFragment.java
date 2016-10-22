@@ -22,6 +22,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -51,6 +52,7 @@ import com.github.dfa.diaspora_android.ui.PodSelectionDialog;
 import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
 import com.github.dfa.diaspora_android.util.Helpers;
+import com.github.dfa.diaspora_android.util.theming.ThemeHelper;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -66,7 +68,7 @@ import butterknife.OnClick;
  * Created by vanitas on 01.10.16.
  */
 
-public class PodSelectionFragment extends CustomFragment implements SearchView.OnQueryTextListener, PodSelectionDialog.PodSelectionDialogResultListener {
+public class PodSelectionFragment extends ThemedFragment implements SearchView.OnQueryTextListener, PodSelectionDialog.PodSelectionDialogResultListener {
     public static final String TAG = "com.github.dfa.diaspora_android.PodSelectionFragment";
 
     @BindView(R.id.podselection__fragment__listpods)
@@ -154,6 +156,11 @@ public class PodSelectionFragment extends CustomFragment implements SearchView.O
             }
         }
     };
+
+    @Override
+    protected void applyColorToViews() {
+        /* Not really anything to do. Maybe later */
+    }
 
     @Override
     public void onResume() {
