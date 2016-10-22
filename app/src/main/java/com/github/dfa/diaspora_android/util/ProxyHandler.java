@@ -58,14 +58,14 @@ public class ProxyHandler {
         StrictMode.ThreadPolicy old = StrictMode.getThreadPolicy();
         StrictMode.ThreadPolicy tmp = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(tmp);
-        if (appSettings.isProxyEnabled()) {
+        if (appSettings.isProxyHttpEnabled()) {
             //Update NetCipher
-            NetCipher.setProxy(appSettings.getProxyHost(), appSettings.getProxyPort());
+            NetCipher.setProxy(appSettings.getProxyHttpHost(), appSettings.getProxyHttpPort());
             //Update webviews
             for (WebView wv : webViews) {
                 if (wv != null) {
                     try {
-                        WebkitProxy.setProxy(MainActivity.class.getName(), context.getApplicationContext(), wv, appSettings.getProxyHost(), appSettings.getProxyPort());
+                        WebkitProxy.setProxy(MainActivity.class.getName(), context.getApplicationContext(), wv, appSettings.getProxyHttpHost(), appSettings.getProxyHttpPort());
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -89,10 +89,10 @@ public class ProxyHandler {
         StrictMode.ThreadPolicy old = StrictMode.getThreadPolicy();
         StrictMode.ThreadPolicy tmp = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(tmp);
-        if (appSettings.isProxyEnabled()) {
+        if (appSettings.isProxyHttpEnabled()) {
             if (wv != null) {
                 try {
-                    WebkitProxy.setProxy(MainActivity.class.getName(), context.getApplicationContext(), wv, appSettings.getProxyHost(), appSettings.getProxyPort());
+                    WebkitProxy.setProxy(MainActivity.class.getName(), context.getApplicationContext(), wv, appSettings.getProxyHttpHost(), appSettings.getProxyHttpPort());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

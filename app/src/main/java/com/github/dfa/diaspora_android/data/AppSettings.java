@@ -262,7 +262,7 @@ public class AppSettings {
     }
 
     @SuppressLint("CommitPrefEdits")
-    public void setProxyEnabled(boolean enabled) {
+    public void setProxyHttpEnabled(boolean enabled) {
         //commit instead of apply because the app is likely to be killed before apply is called.
         prefApp.edit().putBoolean(context.getString(R.string.pref_key__http_proxy_enabled), enabled).commit();
     }
@@ -272,7 +272,7 @@ public class AppSettings {
      *
      * @return whether proxy is enabled or not
      */
-    public boolean isProxyEnabled() {
+    public boolean isProxyHttpEnabled() {
         return getBoolean(prefApp, R.string.pref_key__http_proxy_enabled, false);
     }
 
@@ -281,7 +281,7 @@ public class AppSettings {
      *
      * @return proxy host
      */
-    public String getProxyHost() {
+    public String getProxyHttpHost() {
         return getString(prefApp, R.string.pref_key__http_proxy_host, "");
     }
 
@@ -294,8 +294,14 @@ public class AppSettings {
      *
      * @return proxy port
      */
-    public int getProxyPort() {
-        return getInt(prefApp, R.string.pref_key__http_proxy_port, 0);
+    public int getProxyHttpPort() {
+        try {
+            return getInt(prefApp, R.string.pref_key__http_proxy_port, 0);
+        } catch(Exception _anything){
+            //TODO: Backward Compatibility for older versions. REMOVE after App v1.7.0
+            setInt(prefApp, R.string.pref_key__http_proxy_port, 0);
+            return 0;
+        }
     }
 
     public void setProxyHttpPort(int value) {
@@ -303,7 +309,7 @@ public class AppSettings {
     }
 
     public ProxyHandler.ProxySettings getProxySettings() {
-        return new ProxyHandler.ProxySettings(isProxyEnabled(), getProxyHost(), getProxyPort());
+        return new ProxyHandler.ProxySettings(isProxyHttpEnabled(), getProxyHttpHost(), getProxyHttpPort());
     }
 
     public boolean isIntellihideToolbars() {
