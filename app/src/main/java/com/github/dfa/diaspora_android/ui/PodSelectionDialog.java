@@ -170,7 +170,6 @@ public class PodSelectionDialog extends AppCompatDialogFragment {
             if(pod.getPodUrl().getHost().endsWith(".onion") && checkboxTorPreset.isChecked()){
                 AppSettings settings = app.getSettings();
                 settings.setProxyHttpEnabled(true);
-                settings.setProxyWasEnabled(false);
                 settings.setProxyHttpPort(8118);
                 settings.setProxyHttpHost("127.0.0.1");
                 ProxyHandler.getInstance().updateProxySettings(getContext());
