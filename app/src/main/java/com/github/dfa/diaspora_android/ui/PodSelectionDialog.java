@@ -10,14 +10,18 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
+import com.github.dfa.diaspora_android.data.AppSettings;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod.DiasporaPodUrl;
+import com.github.dfa.diaspora_android.util.ProxyHandler;
 
 import org.json.JSONException;
 
@@ -73,15 +77,23 @@ public class PodSelectionDialog extends AppCompatDialogFragment {
     @BindView(R.id.podselection__dialog__spinner_profile)
     Spinner spinnerProfile;
 
+    @BindView(R.id.podselection__dialog__check_torpreset)
+    CheckBox checkboxTorPreset;
+
+    @BindView(R.id.podselection__dialog__text_torpreset)
+    TextView textTorPreset;
+
     private PodSelectionDialogResultListener resultListener;
     private View root;
     private DiasporaPod pod = new DiasporaPod();
+    private App app;
 
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
+        app = (App) getActivity().getApplication();
 
         // Bind UI
         root = inflater.inflate(R.layout.podselection__dialog, null);
@@ -100,7 +112,6 @@ public class PodSelectionDialog extends AppCompatDialogFragment {
             spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinnerProfile.setAdapter(spinnerAdapter);
         }
-
 
         builder.setView(root);
         return builder.create();
@@ -122,6 +133,18 @@ public class PodSelectionDialog extends AppCompatDialogFragment {
         editPodAddress.setText(url1.getHost());
         radiogrpProtocol.check(url1.getProtocol().equals("https")
                 ? R.id.podselection__dialog__radio_https : R.id.podselection__dialog__radio_http);
+
+        // Tor
+        boolean isOnionUrl = url1.getHost().endsWith(".onion");
+        setUiVisible(textTorPreset, isOnionUrl);
+        setUiVisible(checkboxTorPreset, isOnionUrl);
+        checkboxTorPreset.setChecked(isOnionUrl);
+    }
+
+    public void setUiVisible(View view, boolean visible) {
+        if (view != null) {
+            view.setVisibility(visible ? View.VISIBLE : View.GONE);
+        }
     }
 
 
@@ -142,11 +165,22 @@ public class PodSelectionDialog extends AppCompatDialogFragment {
             pod.setName(editPodName.getText().toString());
             pod.getPodUrls().clear();
             pod.getPodUrls().add(podUrl);
+
+            // Load Tor preset
+            if(pod.getPodUrl().getHost().endsWith(".onion") && checkboxTorPreset.isChecked()){
+                AppSettings settings = app.getSettings();
+                settings.setProxyHttpEnabled(true);
+                settings.setProxyWasEnabled(false);
+                settings.setProxyHttpPort(8118);
+                settings.setProxyHttpHost("127.0.0.1");
+                ProxyHandler.getInstance().updateProxySettings(getContext());
+            }
+
             getDialog().dismiss();
-            publishResult(POSITIVE_PRESSED);
+            publishResult(true);
         } else {
             getDialog().cancel();
-            publishResult(POSITIVE_PRESSED);
+            publishResult(false);
         }
     }
 

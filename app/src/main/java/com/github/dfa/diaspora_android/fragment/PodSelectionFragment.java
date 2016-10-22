@@ -251,7 +251,7 @@ public class PodSelectionFragment extends CustomFragment implements SearchView.O
 
             MainActivity mainActivity = (MainActivity) getActivity();
             DiasporaUrlHelper urlHelper = new DiasporaUrlHelper(appSettings);
-            mainActivity.invalidateOptionsMenu();
+            mainActivity.onPodSelectionDialogResult(pod, accepted);
             mainActivity.openDiasporaUrl(urlHelper.getSignInUrl());
         }
     }

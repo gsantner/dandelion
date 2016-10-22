@@ -245,6 +245,8 @@
                 <data android:host="diaspora.softwarelivre.org" android:scheme="https" />
                 <data android:host="confetticake.club" android:scheme="https" />
                 <data android:host="diaspora.mike-jones.me.uk" android:scheme="https" />
+                <data android:host="diaspote.org" android:scheme="https" />
+                <data android:host="diaspora.zone" android:scheme="https" />
                 <!--@@@ PODLIST END-->
             </intent-filter>
 

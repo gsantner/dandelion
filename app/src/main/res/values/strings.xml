@@ -28,6 +28,7 @@
     <string name="mentions">Mentions</string>
     <string name="public_">Public</string>
     <string name="search">Search</string>
+    <string name="tor" translatable="false">Tor</string>
 
     <!-- Notifications dropdown menu -->
     <string name="notifications__all">All Notifications</string>

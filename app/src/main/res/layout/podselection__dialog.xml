@@ -95,6 +95,24 @@
                 android:text="https" />
         </RadioGroup>
 
+        <TextView
+            android:id="@+id/podselection__dialog__text_torpreset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+            android:text="@string/tor"
+            android:textAppearance="@style/AppTheme.TextAppearance.Caption"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/podselection__dialog__check_torpreset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+            android:text="@string/pref_title__http_proxy_load_tor_preset"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:visibility="gone" />
+
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -39,14 +39,13 @@ public class DiasporaStreamWebChromeClient extends FileUploadWebChromeClient {
     @Override
     public void onProgressChanged(WebView wv, int progress) {
         super.onProgressChanged(wv, progress);
-        if (progress > 10 && progress <= 60) {
+        WebHelper.optimizeMobileSiteLayout(wv);
+
+        if (progress > 0 && progress <= 85) {
             WebHelper.getUserProfile(wv);
-            WebHelper.optimizeMobileSiteLayout(wv);
         }
 
         if (progress > 60) {
-            WebHelper.optimizeMobileSiteLayout(wv);
-
             String textToBeShared = sharedTextCallback.getSharedText();
             if (textToBeShared != null) {
                 AppLog.d(this, "Share text into webView");

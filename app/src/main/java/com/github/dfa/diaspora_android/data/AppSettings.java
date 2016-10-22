@@ -299,8 +299,8 @@ public class AppSettings {
             return getInt(prefApp, R.string.pref_key__http_proxy_port, 0);
         } catch(Exception _anything){
             //TODO: Backward Compatibility for older versions. REMOVE after App v1.7.0
-            setInt(prefApp, R.string.pref_key__http_proxy_port, 0);
-            return 0;
+            String str = getString(prefApp, R.string.pref_key__http_proxy_port, "0");
+            return Integer.parseInt(str);
         }
     }
 
@@ -417,7 +417,7 @@ public class AppSettings {
     }
 
     public boolean isVisibleInNavProfile() {
-        return getBoolean(prefApp, R.string.pref_key__visibility_nav__profile, false);
+        return getBoolean(prefApp, R.string.pref_key__visibility_nav__profile, true);
     }
 
     public void setVisibleInNavProfile(boolean b) {
