@@ -145,7 +145,11 @@ public class PodSelectionDialog extends ThemedAppCompatDialogFragment {
 
     @Override
     protected AppSettings getAppSettings() {
-        return app.getSettings();
+        if(isAdded()) {
+            return ((App) getActivity().getApplication()).getSettings();
+        } else {
+            return new AppSettings(getContext().getApplicationContext());
+        }
     }
 
     @OnItemSelected(R.id.podselection__dialog__spinner_profile)
