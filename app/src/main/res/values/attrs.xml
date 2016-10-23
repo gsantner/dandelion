@@ -27,4 +27,10 @@
         <attr name="defaultInt" format="string" />
         <attr name="showValueInSummary" />
     </declare-styleable>
+
+    <declare-styleable name="ThemedPreference">
+        <attr name="titleText" />
+        <attr name="summaryText" />
+        <attr name="prefKey" />
+    </declare-styleable>
 </resources>

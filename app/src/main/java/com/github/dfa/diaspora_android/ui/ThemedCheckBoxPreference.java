@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
  * Created by vanitas on 23.10.16.
  */
 
-public class ThemedCheckBoxPreference extends RelativeLayout implements ThemedPreference<Boolean> {
+public class ThemedCheckBoxPreference extends RelativeLayout implements ThemedPreferenceObject<Boolean> {
 
     @BindView(R.id.preference__themed_checkbox__title)
     protected TextView title;

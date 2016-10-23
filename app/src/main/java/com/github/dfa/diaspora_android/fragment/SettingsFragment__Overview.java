@@ -28,12 +28,12 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.activity.MainActivity;
+import com.github.dfa.diaspora_android.ui.ThemedPreference;
 import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
 import com.github.dfa.diaspora_android.util.theming.ThemeHelper;
@@ -53,50 +53,47 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
     @BindView(R.id.settings_activity__header_appearance)
     protected TextView titleAppearance;
 
-    @BindView(R.id.settings_activity__theme_colors)
-    protected LinearLayout optionThemeColors;
+    @BindView(R.id.settings_activity__themes)
+    protected ThemedPreference optionThemes;
 
     @BindView(R.id.settings_activity__navigation_slider)
-    protected LinearLayout optionNavigationSlider;
+    protected ThemedPreference optionNavigationSlider;
 
     @BindView(R.id.settings_activity__font_size)
-    protected LinearLayout optionFontSize;
-
-    @BindView(R.id.settings_activity__font_size_hint)
-    protected TextView hintFontSize;
+    protected ThemedPreference optionFontSize;
 
     //Pod Settings
     @BindView(R.id.settings_activity__header_pod_settings)
     protected TextView titlePodSettings;
 
     @BindView(R.id.settings_activity__personal_settings)
-    protected LinearLayout optionPersonalSettings;
+    protected ThemedPreference optionPersonalSettings;
 
     @BindView(R.id.settings_activity__manage_tags)
-    protected LinearLayout optionManageTags;
+    protected ThemedPreference optionManageTags;
 
     @BindView(R.id.settings_activity__manage_contacts)
-    protected LinearLayout optionManageContacts;
+    protected ThemedPreference optionManageContacts;
 
     @BindView(R.id.settings_activity__change_account)
-    protected LinearLayout optionChangeAccount;
+    protected ThemedPreference optionChangeAccount;
 
     //Network
     @BindView(R.id.settings_activity__header_network)
     protected TextView titleNetwork;
 
     @BindView(R.id.settings_activity__clear_cache)
-    protected LinearLayout optionClearCache;
+    protected ThemedPreference optionClearCache;
 
     @BindView(R.id.settings_activity__proxy_settings)
-    protected LinearLayout optionProxySettings;
+    protected ThemedPreference optionProxySettings;
 
     //More
     @BindView(R.id.settings_activity__header_more)
     protected TextView titleMore;
 
     @BindView(R.id.settings_activity__debugging)
-    LinearLayout optionDebugging;
+    protected ThemedPreference optionDebugging;
 
     protected DiasporaUrlHelper urls;
 
@@ -115,12 +112,12 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
     }
 
     protected void applySettingsToViews() {
-        hintFontSize.setText(getAppSettings().getMinimumFontSizeString());
+        optionFontSize.setSummaryText(getAppSettings().getMinimumFontSizeString());
     }
 
     protected void setOnClickListenersOnViews() {
         /** Appearance */
-        optionThemeColors.setOnClickListener(this);
+        optionThemes.setOnClickListener(this);
         optionNavigationSlider.setOnClickListener(this);
         optionFontSize.setOnClickListener(this);
         /** Pod Settings */
@@ -157,7 +154,7 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 getAppSettings().setMinimumFontSizeIndex(i);
-                hintFontSize.setText(getAppSettings().getMinimumFontSizeString());
+                optionFontSize.setSummaryText(getAppSettings().getMinimumFontSizeString());
                 dialog.dismiss();
             }
         });
@@ -181,9 +178,11 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
 
     @Override
     public void onClick(View view) {
+        AppLog.d(this, "Click!");
         switch (view.getId()) {
             /** Appearance */
-            case R.id.settings_activity__theme_colors:
+            case R.id.settings_activity__themes:
+                AppLog.d(this, "Themes!");
                 getFragmentManager().beginTransaction()
                         .addToBackStack(null)
                         .replace(R.id.settings__fragment_container, new SettingsFragment__ThemeColors(), SettingsFragment__ThemeColors.TAG).commit();

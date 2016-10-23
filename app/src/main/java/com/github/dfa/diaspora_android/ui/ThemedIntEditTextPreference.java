@@ -24,7 +24,7 @@ import butterknife.ButterKnife;
  * Created by vanitas on 23.10.16.
  */
 
-public class ThemedIntEditTextPreference extends LinearLayout implements ThemedPreference<Integer> {
+public class ThemedIntEditTextPreference extends LinearLayout implements ThemedPreferenceObject<Integer> {
     @BindView(R.id.preference__themed_edittext_title)
     protected TextView title;
     @BindView(R.id.preference__themed_edittext_summary)

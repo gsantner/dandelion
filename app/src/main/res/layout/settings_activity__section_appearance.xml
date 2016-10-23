@@ -13,67 +13,31 @@
         android:text="@string/pref_cat__visuals"/>
 
     <!-- Themes 'n Colors -->
-    <LinearLayout
-        android:id="@+id/settings_activity__theme_colors"
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__themes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:clickable="true">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:text="@string/pref_title__themes"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pref_desc__themes"/>
-    </LinearLayout>
+        app:titleText="@string/pref_title__themes"
+        app:summaryText="@string/pref_desc__themes" />
 
     <!-- Navigation Slider Items -->
-    <LinearLayout
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
         android:id="@+id/settings_activity__navigation_slider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:clickable="true">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:text="@string/pref_title__sub_nav_slider"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pref_desc__sub_nav_slider"/>
-    </LinearLayout>
+        app:titleText="@string/pref_title__sub_nav_slider"
+        app:summaryText="@string/pref_desc__sub_nav_slider"/>
 
     <!-- Font size -->
-    <LinearLayout
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
         android:id="@+id/settings_activity__font_size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:clickable="true">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:text="@string/pref_title__font_size"/>
-        <TextView
-            android:id="@+id/settings_activity__font_size_hint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
+        app:titleText="@string/pref_title__font_size"/>
 
     <!-- Intellihide toolbars -->
     <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+        android:id="@+id/settings_activity__intellihide_toolbars"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:titleText="@string/pref_title__intellihide_toolbars"
@@ -83,6 +47,7 @@
 
     <!-- Dropdown Notifications -->
     <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+        android:id="@+id/settings_activity__dropdown_notifications"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:titleText="@string/pref_title__extended_notifications"
@@ -92,6 +57,7 @@
 
     <!-- Share reference to app -->
     <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+        android:id="@+id/settings_activity__append_reference"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:titleText="@string/pref_title__append_shared_via_app"
@@ -101,6 +67,7 @@
 
     <!-- Chrome custom tabs -->
     <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+        android:id="@+id/settings_activity__custom_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:titleText="@string/pref_title__chrome_custom_tabs_enabled"
