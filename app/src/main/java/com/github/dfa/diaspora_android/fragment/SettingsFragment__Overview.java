@@ -235,6 +235,7 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
                                     }
                                 })
                         .show();
+                break;
             }
             /** Network */
             case R.id.settings_activity__clear_cache: {

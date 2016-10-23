@@ -19,7 +19,7 @@
         app:titleText="@string/pref_title__load_images"
         app:summaryText="@string/pref_desc__load_images"
         app:prefKey="@string/pref_key__load_images"
-        app:defaultValue="true" />
+        app:defaultBoolean="true" />
 
     <!-- Clear cache -->
     <LinearLayout

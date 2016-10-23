@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/nav_profile"
                     app:prefKey="@string/pref_key__visibility_nav__profile"
-                    app:defaultValue="true"/>
+                    app:defaultBoolean="true"/>
 
                 <!-- Followed Tags -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -44,7 +44,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/nav_followed_tags"
                     app:prefKey="@string/pref_key__visibility_nav__followed_tags"
-                    app:defaultValue="true"/>
+                    app:defaultBoolean="true"/>
 
                 <!-- Aspects -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -52,7 +52,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/nav_aspects"
                     app:prefKey="@string/pref_key__visibility_nav__aspects"
-                    app:defaultValue="true"/>
+                    app:defaultBoolean="true"/>
 
                 <!-- Activities -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/nav_activities"
                     app:prefKey="@string/pref_key__visibility_nav__activities"
-                    app:defaultValue="false"/>
+                    app:defaultBoolean="false"/>
 
                 <!-- Liked -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -68,7 +68,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/nav_liked"
                     app:prefKey="@string/pref_key__visibility_nav__liked"
-                    app:defaultValue="true"/>
+                    app:defaultBoolean="true"/>
 
                 <!-- Commented -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/nav_commented"
                     app:prefKey="@string/pref_key__visibility_nav__commented"
-                    app:defaultValue="true"/>
+                    app:defaultBoolean="true"/>
 
                 <!-- Mentions -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/nav_mentions"
                     app:prefKey="@string/pref_key__visibility_nav__mentions"
-                    app:defaultValue="false"/>
+                    app:defaultBoolean="false"/>
 
                 <!-- Public Activities -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/nav_public_activities"
                     app:prefKey="@string/pref_key__visibility_nav__public_activities"
-                    app:defaultValue="false"/>
+                    app:defaultBoolean="false"/>
 
                 <!-- Exit -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/action_exit_app"
                     app:prefKey="@string/pref_key__visibility_nav__exit"
-                    app:defaultValue="false"/>
+                    app:defaultBoolean="false"/>
 
                 <!-- About -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -108,7 +108,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/nav_help_license"
                     app:prefKey="@string/pref_key__visibility_nav__help_license"
-                    app:defaultValue="true"/>
+                    app:defaultBoolean="true"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>

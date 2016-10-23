@@ -21,8 +21,7 @@
         <TextView
             android:id="@+id/preference__themed_checkbox__summary"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minHeight="0dp"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
     <CheckBox
         android:id="@+id/preference__themed_checkbox__checkbox"

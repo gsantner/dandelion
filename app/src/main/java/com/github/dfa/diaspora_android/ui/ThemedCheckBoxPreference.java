@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
  * Created by vanitas on 23.10.16.
  */
 
-public class ThemedCheckBoxPreference extends RelativeLayout {
+public class ThemedCheckBoxPreference extends RelativeLayout implements ThemedPreference<Boolean> {
 
     @BindView(R.id.preference__themed_checkbox__title)
     protected TextView title;
@@ -76,7 +76,7 @@ public class ThemedCheckBoxPreference extends RelativeLayout {
                 titleText = a.getString(R.styleable.ThemedCheckBoxPreference_titleText);
                 summaryText = a.getString(R.styleable.ThemedCheckBoxPreference_summaryText);
                 prefKey = a.getString(R.styleable.ThemedCheckBoxPreference_prefKey);
-                defaultValue = a.getBoolean(R.styleable.ThemedCheckBoxPreference_defaultValue, false);
+                defaultValue = a.getBoolean(R.styleable.ThemedCheckBoxPreference_defaultBoolean, false);
             } catch (Exception e) {
                 AppLog.e(this, "There was an error loading attributes.");
             } finally {
@@ -91,11 +91,11 @@ public class ThemedCheckBoxPreference extends RelativeLayout {
             if(summaryText == null || summaryText.equals("")) {
                 summary.setVisibility(GONE);
             }
-            setChecked(appSettings.getThemedCheckboxPreferenceBoolean(this));
+            setChecked(appSettings.getThemedCheckboxPreferenceValue(this));
             checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                    appSettings.setThemedCheckboxPreferenceBoolean(ThemedCheckBoxPreference.this, b);
+                    appSettings.setThemedCheckboxPreferenceValue(ThemedCheckBoxPreference.this, b);
                     if(externalOnCheckedChangedListener != null) {
                         externalOnCheckedChangedListener.onCheckedChanged(compoundButton, b);
                     }
@@ -130,7 +130,17 @@ public class ThemedCheckBoxPreference extends RelativeLayout {
         return this.prefKey;
     }
 
-    public boolean getDefaultValue() {
+    public Boolean getDefaultValue() {
         return this.defaultValue;
+    }
+
+    @Override
+    public Boolean getValue() {
+        return appSettings.getThemedCheckboxPreferenceValue(this);
+    }
+
+    @Override
+    public void setValue(Boolean value) {
+        appSettings.setThemedCheckboxPreferenceValue(this, value);
     }
 }

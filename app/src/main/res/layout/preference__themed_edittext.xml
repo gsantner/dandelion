@@ -5,8 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_marginBottom="@dimen/activity_vertical_margin"
-    android:layout_marginTop="@dimen/activity_vertical_margin"
-    android:clickable="true">
+    android:layout_marginTop="@dimen/activity_vertical_margin">
     <TextView
         android:id="@+id/preference__themed_edittext_title"
         android:layout_width="wrap_content"

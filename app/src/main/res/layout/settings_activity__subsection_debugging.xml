@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/pref_title__logging_enabled"
                     app:prefKey="@string/pref_key__logging_enabled"
-                    app:defaultValue="true"/>
+                    app:defaultBoolean="true"/>
 
                 <!-- Verbose debugging -->
                 <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     app:titleText="@string/pref_title__logging_spam_enabled"
                     app:prefKey="@string/pref_key__logging_spam_enabled"
-                    app:defaultValue="true"/>
+                    app:defaultBoolean="true"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>

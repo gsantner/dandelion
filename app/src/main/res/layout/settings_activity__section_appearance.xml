@@ -79,7 +79,7 @@
         app:titleText="@string/pref_title__intellihide_toolbars"
         app:summaryText="@string/pref_desc__intellihide_toolbars"
         app:prefKey="@string/pref_key__intellihide_toolbars"
-        app:defaultValue="true" />
+        app:defaultBoolean="true" />
 
     <!-- Dropdown Notifications -->
     <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -88,7 +88,7 @@
         app:titleText="@string/pref_title__extended_notifications"
         app:summaryText="@string/pref_desc__extended_notifications"
         app:prefKey="@string/pref_key__extended_notifications"
-        app:defaultValue="false" />
+        app:defaultBoolean="false" />
 
     <!-- Share reference to app -->
     <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -97,7 +97,7 @@
         app:titleText="@string/pref_title__append_shared_via_app"
         app:summaryText="@string/pref_desc__append_shared_via_app"
         app:prefKey="@string/pref_key__append_shared_via_app"
-        app:defaultValue="true" />
+        app:defaultBoolean="true" />
 
     <!-- Chrome custom tabs -->
     <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
@@ -106,5 +106,5 @@
         app:titleText="@string/pref_title__chrome_custom_tabs_enabled"
         app:summaryText="@string/pref_desc__chrome_custom_tabs_enabled"
         app:prefKey="@string/pref_key__chrome_custom_tabs_enabled"
-        app:defaultValue="true" />
+        app:defaultBoolean="true" />
 </LinearLayout>

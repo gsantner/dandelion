@@ -22,6 +22,8 @@ import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod.DiasporaPodUrl;
 import com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference;
+import com.github.dfa.diaspora_android.ui.ThemedIntEditTextPreference;
+import com.github.dfa.diaspora_android.ui.ThemedStringEditTextPreference;
 import com.github.dfa.diaspora_android.util.ProxyHandler;
 
 import org.json.JSONException;
@@ -465,12 +467,27 @@ public class AppSettings {
         setBool(prefApp, R.string.pref_key__extended_notifications, b);
     }
 
-    public boolean getThemedCheckboxPreferenceBoolean(ThemedCheckBoxPreference t) {
+    public boolean getThemedCheckboxPreferenceValue(ThemedCheckBoxPreference t) {
         return prefApp.getBoolean(t.getPrefKey(), t.getDefaultValue());
-        //return getBoolean(prefApp, t.getPrefKey(), t.getDefaultValue());
     }
 
-    public void setThemedCheckboxPreferenceBoolean(ThemedCheckBoxPreference t, boolean b) {
+    public void setThemedCheckboxPreferenceValue(ThemedCheckBoxPreference t, boolean b) {
         prefApp.edit().putBoolean(t.getPrefKey(), b).apply();
+    }
+
+    public String getThemedStringEditTextPreferenceValue(ThemedStringEditTextPreference t) {
+        return prefApp.getString(t.getPrefKey(), t.getDefaultValue());
+    }
+
+    public void setThemedStringEditTextPreferenceValue(ThemedStringEditTextPreference t, String value) {
+        prefApp.edit().putString(t.getPrefKey(), value).apply();
+    }
+
+    public int getThemedIntEditTextPreferenceValue(ThemedIntEditTextPreference t) {
+        return prefApp.getInt(t.getPrefKey(), t.getDefaultValue());
+    }
+
+    public void setThemedIntEditTextPreferenceValue(ThemedIntEditTextPreference t, int value) {
+        prefApp.edit().putInt(t.getPrefKey(), value).apply();
     }
 }

@@ -36,49 +36,27 @@
                     app:titleText="@string/pref_title__proxy_enabled"
                     app:summaryText="@string/pref_desc__http_proxy_enabled"
                     app:prefKey="@string/pref_key__http_proxy_enabled"
-                    app:defaultValue="false" />
+                    app:defaultBoolean="false" />
 
                 <!-- Host -->
-                <LinearLayout
+                <com.github.dfa.diaspora_android.ui.ThemedStringEditTextPreference
                     android:id="@+id/settings_activity__proxy_host"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/pref_title__http_proxy_host"/>
-                    <TextView
-                        android:id="@+id/settings_activity__proxy_host_hint"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fix me!"/>
-                </LinearLayout>
+                    app:titleText="@string/pref_title__http_proxy_host"
+                    app:showValueInSummary="true"
+                    app:defaultString=""
+                    app:prefKey="@string/pref_key__http_proxy_host"/>
 
                 <!-- Port -->
-                <LinearLayout
+                <com.github.dfa.diaspora_android.ui.ThemedIntEditTextPreference
                     android:id="@+id/settings_activity__proxy_port"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/pref_title__http_proxy_port"/>
-                    <TextView
-                        android:id="@+id/settings_activity__proxy_port_hint"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fix me!"/>
-                </LinearLayout>
+                    app:titleText="@string/pref_title__http_proxy_port"
+                    app:showValueInSummary="true"
+                    app:defaultInt="0"
+                    app:prefKey="@string/pref_key__http_proxy_port"/>
 
                 <!-- Orbot Preset -->
                 <RelativeLayout
