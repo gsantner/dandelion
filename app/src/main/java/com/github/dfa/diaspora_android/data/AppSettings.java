@@ -21,6 +21,7 @@ import android.content.SharedPreferences;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod.DiasporaPodUrl;
+import com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference;
 import com.github.dfa.diaspora_android.util.ProxyHandler;
 
 import org.json.JSONException;
@@ -462,5 +463,14 @@ public class AppSettings {
 
     public void setExtendedNotifications(boolean b) {
         setBool(prefApp, R.string.pref_key__extended_notifications, b);
+    }
+
+    public boolean getThemedCheckboxPreferenceBoolean(ThemedCheckBoxPreference t) {
+        return prefApp.getBoolean(t.getPrefKey(), t.getDefaultValue());
+        //return getBoolean(prefApp, t.getPrefKey(), t.getDefaultValue());
+    }
+
+    public void setThemedCheckboxPreferenceBoolean(ThemedCheckBoxPreference t, boolean b) {
+        prefApp.edit().putBoolean(t.getPrefKey(), b).apply();
     }
 }

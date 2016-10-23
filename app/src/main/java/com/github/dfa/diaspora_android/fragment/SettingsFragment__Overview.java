@@ -64,7 +64,7 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
     @BindView(R.id.settings_activity__font_size)
     protected LinearLayout optionFontSize;
 
-    @BindView(R.id.settings_activity__intellihide_toolbars)
+    //@BindView(R.id.settings_activity__intellihide_toolbars)
     protected RelativeLayout optionIntellihideToolbars;
 
     @BindView(R.id.settings_activity__extended_notifications)
@@ -79,7 +79,7 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
     @BindView(R.id.settings_activity__font_size_hint)
     protected TextView hintFontSize;
 
-    @BindView(R.id.settings_activity__intellihide_toolbars_checkbox)
+    //@BindView(R.id.settings_activity__intellihide_toolbars_checkbox)
     protected CheckBox checkboxIntellihide;
 
     @BindView(R.id.settings_activity__extended_notifications_checkbox)
@@ -148,7 +148,7 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
 
     protected void applySettingsToViews() {
         hintFontSize.setText(getAppSettings().getMinimumFontSizeString());
-        checkboxIntellihide.setChecked(getAppSettings().isIntellihideToolbars());
+        //checkboxIntellihide.setChecked(getAppSettings().isIntellihideToolbars());
         checkboxExtendedNotifications.setChecked(getAppSettings().isExtendedNotifications());
         checkboxAppendSharedViaApp.setChecked(getAppSettings().isAppendSharedViaApp());
         checkboxCustomTabs.setChecked(getAppSettings().isChromeCustomTabsEnabled());
@@ -160,8 +160,8 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
         optionThemeColors.setOnClickListener(this);
         optionNavigationSlider.setOnClickListener(this);
         optionFontSize.setOnClickListener(this);
-        optionIntellihideToolbars.setOnClickListener(this);
-        checkboxIntellihide.setOnClickListener(this);
+        //optionIntellihideToolbars.setOnClickListener(this);
+        //checkboxIntellihide.setOnClickListener(this);
         optionExtendedNotifications.setOnClickListener(this);
         checkboxExtendedNotifications.setOnClickListener(this);
         optionAppendSharedViaApp.setOnClickListener(this);
@@ -192,7 +192,7 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
         ThemeHelper.updateTitleColor(titleNetwork);
         ThemeHelper.updateTitleColor(titleMore);
         //Checkboxes
-        ThemeHelper.updateCheckBoxColor(checkboxIntellihide);
+        //ThemeHelper.updateCheckBoxColor(checkboxIntellihide);
         ThemeHelper.updateCheckBoxColor(checkboxExtendedNotifications);
         ThemeHelper.updateCheckBoxColor(checkboxAppendSharedViaApp);
         ThemeHelper.updateCheckBoxColor(checkboxCustomTabs);
@@ -248,11 +248,11 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
             case R.id.settings_activity__font_size:
                 showFontSizeDialog();
                 break;
-            case R.id.settings_activity__intellihide_toolbars:
-            case R.id.settings_activity__intellihide_toolbars_checkbox:
-                checkboxIntellihide.setChecked(!getAppSettings().isIntellihideToolbars());
-                getAppSettings().setIntellihideToolbars(!getAppSettings().isIntellihideToolbars());
-                break;
+            //case R.id.settings_activity__intellihide_toolbars:
+            //case R.id.settings_activity__intellihide_toolbars_checkbox:
+            //    checkboxIntellihide.setChecked(!getAppSettings().isIntellihideToolbars());
+            //    getAppSettings().setIntellihideToolbars(!getAppSettings().isIntellihideToolbars());
+            //    break;
             case R.id.settings_activity__extended_notifications:
             case R.id.settings_activity__extended_notifications_checkbox:
                 checkboxExtendedNotifications.setChecked(!getAppSettings().isExtendedNotifications());

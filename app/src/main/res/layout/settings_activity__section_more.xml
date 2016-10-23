@@ -29,5 +29,4 @@
             android:layout_height="wrap_content"
             android:text="@string/pref_desc__sub_logging"/>
     </LinearLayout>
-
 </LinearLayout>

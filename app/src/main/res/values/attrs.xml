@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ThemedCheckBoxPreference">
+        <attr name="titleText" format="string" />
+        <attr name="summaryText" format="string" />
+        <attr name="prefKey" format="string" />
+        <attr name="defaultValue" format="boolean" />
+    </declare-styleable>
+</resources>
