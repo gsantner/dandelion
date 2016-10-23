@@ -28,13 +28,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.github.dfa.diaspora_android.R;
+import com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference;
 import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.theming.ThemeHelper;
 
@@ -52,11 +53,8 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
     @BindView(R.id.settings_activity__header_network__proxy)
     protected TextView titleProxy;
 
-    @BindView(R.id.settings_activity__proxy_activated)
-    protected RelativeLayout optionProxyActivated;
-
-    @BindView(R.id.settings_activity__proxy_activated_checkbox)
-    protected CheckBox checkboxProxyActivated;
+    @BindView(R.id.settings_activity__proxy_enabled)
+    protected ThemedCheckBoxPreference checkboxProxyEna;
 
     @BindView(R.id.settings_activity__proxy_host)
     protected LinearLayout optionProxyHost;
@@ -84,7 +82,6 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
     @Override
     protected void applyColorToViews() {
         ThemeHelper.updateTitleColor(titleProxy);
-        ThemeHelper.updateCheckBoxColor(checkboxProxyActivated);
         optionProxyHost.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
         optionProxyPort.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
         optionProxyOrbotPreset.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
@@ -93,7 +90,6 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
     @SuppressLint("SetTextI18n")
     @Override
     protected void applySettingsToViews() {
-        checkboxProxyActivated.setChecked(getAppSettings().isProxyHttpEnabled());
         optionProxyHost.setEnabled(getAppSettings().isProxyHttpEnabled());
         hintProxyHost.setText(getAppSettings().getProxyHttpHost());
         optionProxyPort.setEnabled(getAppSettings().isProxyHttpEnabled());
@@ -103,8 +99,17 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
 
     @Override
     protected void setOnClickListenersOnViews() {
-        optionProxyActivated.setOnClickListener(this);
-        checkboxProxyActivated.setOnClickListener(this);
+        checkboxProxyEna.setOnCheckedChangedListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                optionProxyHost.setEnabled(b);
+                optionProxyPort.setEnabled(b);
+                optionProxyOrbotPreset.setEnabled(b);
+                optionProxyHost.setVisibility(b ? View.VISIBLE : View.GONE);
+                optionProxyPort.setVisibility(b ? View.VISIBLE : View.GONE);
+                optionProxyOrbotPreset.setVisibility(b ? View.VISIBLE : View.GONE);
+            }
+        });
         optionProxyHost.setOnClickListener(this);
         optionProxyPort.setOnClickListener(this);
         optionProxyOrbotPreset.setOnClickListener(this);
@@ -114,18 +119,6 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.settings_activity__proxy_activated:
-            case R.id.settings_activity__proxy_activated_checkbox:
-                boolean proxyEnabled = !getAppSettings().isProxyHttpEnabled();
-                checkboxProxyActivated.setChecked(proxyEnabled);
-                getAppSettings().setProxyHttpEnabled(proxyEnabled);
-                optionProxyHost.setEnabled(proxyEnabled);
-                optionProxyPort.setEnabled(proxyEnabled);
-                optionProxyOrbotPreset.setEnabled(proxyEnabled);
-                optionProxyHost.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
-                optionProxyPort.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
-                optionProxyOrbotPreset.setVisibility(getAppSettings().isProxyHttpEnabled() ? View.VISIBLE : View.GONE);
-                break;
             case R.id.settings_activity__proxy_host:
                 showProxyHostDialog();
                 break;

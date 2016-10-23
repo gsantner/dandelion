@@ -31,234 +31,84 @@
                 <!-- Entries -->
 
                 <!-- Profile -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_profile"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/nav_profile"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_profile_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_profile_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/nav_profile"
+                    app:prefKey="@string/pref_key__visibility_nav__profile"
+                    app:defaultValue="true"/>
 
                 <!-- Followed Tags -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_followed"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/nav_followed_tags"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_followed_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_followed_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/nav_followed_tags"
+                    app:prefKey="@string/pref_key__visibility_nav__followed_tags"
+                    app:defaultValue="true"/>
 
                 <!-- Aspects -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_aspects"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/nav_aspects"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_aspects_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_aspects_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/nav_aspects"
+                    app:prefKey="@string/pref_key__visibility_nav__aspects"
+                    app:defaultValue="true"/>
 
                 <!-- Activities -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_activities"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/nav_activities"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_activities_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_activities_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/nav_activities"
+                    app:prefKey="@string/pref_key__visibility_nav__activities"
+                    app:defaultValue="false"/>
 
                 <!-- Liked -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_liked"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/nav_liked"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_liked_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_liked_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/nav_liked"
+                    app:prefKey="@string/pref_key__visibility_nav__liked"
+                    app:defaultValue="true"/>
 
                 <!-- Commented -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_commented"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/nav_commented"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_commented_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_commented_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/nav_commented"
+                    app:prefKey="@string/pref_key__visibility_nav__commented"
+                    app:defaultValue="true"/>
 
                 <!-- Mentions -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_mentions"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/nav_mentions"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_mentions_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_mentions_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/nav_mentions"
+                    app:prefKey="@string/pref_key__visibility_nav__mentions"
+                    app:defaultValue="false"/>
 
                 <!-- Public Activities -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_public"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/nav_public_activities"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_public_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_public_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/nav_public_activities"
+                    app:prefKey="@string/pref_key__visibility_nav__public_activities"
+                    app:defaultValue="false"/>
 
                 <!-- Exit -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_exit"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/action_exit_app"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_exit_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_exit_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/action_exit_app"
+                    app:prefKey="@string/pref_key__visibility_nav__exit"
+                    app:defaultValue="false"/>
 
                 <!-- About -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__navigation_slider_about"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/card_spacing"
-                    android:clickable="true">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:text="@string/nav_help_license"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/settings_activity__navigation_slider_about_checkbox"/>
-                    <CheckBox
-                        android:id="@+id/settings_activity__navigation_slider_about_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/nav_help_license"
+                    app:prefKey="@string/pref_key__visibility_nav__help_license"
+                    app:defaultValue="true"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>

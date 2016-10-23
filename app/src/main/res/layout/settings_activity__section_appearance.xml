@@ -79,134 +79,32 @@
         app:titleText="@string/pref_title__intellihide_toolbars"
         app:summaryText="@string/pref_desc__intellihide_toolbars"
         app:prefKey="@string/pref_key__intellihide_toolbars"
-        app:defaultValue="true"/>
-    
-    <!--<RelativeLayout
-        android:id="@+id/settings_activity__intellihide_toolbars"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:clickable="true">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toStartOf="@+id/settings_activity__intellihide_toolbars_checkbox">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:text="@string/pref_title__intellihide_toolbars"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pref_desc__intellihide_toolbars"/>
-        </LinearLayout>
-        <CheckBox
-            android:id="@+id/settings_activity__intellihide_toolbars_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
-    -->
-
+        app:defaultValue="true" />
 
     <!-- Dropdown Notifications -->
-    <RelativeLayout
-        android:id="@+id/settings_activity__extended_notifications"
+    <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:clickable="true">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toStartOf="@+id/settings_activity__extended_notifications_checkbox">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:text="@string/pref_title__extended_notifications"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pref_desc__extended_notifications"/>
-        </LinearLayout>
-        <CheckBox
-            android:id="@+id/settings_activity__extended_notifications_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
+        app:titleText="@string/pref_title__extended_notifications"
+        app:summaryText="@string/pref_desc__extended_notifications"
+        app:prefKey="@string/pref_key__extended_notifications"
+        app:defaultValue="false" />
 
     <!-- Share reference to app -->
-    <RelativeLayout
-        android:id="@+id/settings_activity__append_shared_via_app"
+    <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:clickable="true">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toStartOf="@+id/settings_activity__append_shared_via_app_checkbox">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:text="@string/pref_title__append_shared_via_app"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pref_desc__append_shared_via_app"/>
-        </LinearLayout>
-        <CheckBox
-            android:id="@+id/settings_activity__append_shared_via_app_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
+        app:titleText="@string/pref_title__append_shared_via_app"
+        app:summaryText="@string/pref_desc__append_shared_via_app"
+        app:prefKey="@string/pref_key__append_shared_via_app"
+        app:defaultValue="true" />
 
     <!-- Chrome custom tabs -->
-    <RelativeLayout
-        android:id="@+id/settings_activity__chrome_custom_tabs"
+    <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:clickable="true">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toStartOf="@+id/settings_activity__chrome_custom_tabs_checkbox">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:text="@string/pref_title__chrome_custom_tabs_enabled"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pref_desc__chrome_custom_tabs_enabled"/>
-        </LinearLayout>
-        <CheckBox
-            android:id="@+id/settings_activity__chrome_custom_tabs_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
+        app:titleText="@string/pref_title__chrome_custom_tabs_enabled"
+        app:summaryText="@string/pref_desc__chrome_custom_tabs_enabled"
+        app:prefKey="@string/pref_key__chrome_custom_tabs_enabled"
+        app:defaultValue="true" />
 </LinearLayout>

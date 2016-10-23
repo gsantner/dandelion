@@ -28,10 +28,8 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.github.dfa.diaspora_android.R;
@@ -64,32 +62,8 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
     @BindView(R.id.settings_activity__font_size)
     protected LinearLayout optionFontSize;
 
-    //@BindView(R.id.settings_activity__intellihide_toolbars)
-    protected RelativeLayout optionIntellihideToolbars;
-
-    @BindView(R.id.settings_activity__extended_notifications)
-    protected RelativeLayout optionExtendedNotifications;
-
-    @BindView(R.id.settings_activity__append_shared_via_app)
-    protected RelativeLayout optionAppendSharedViaApp;
-
-    @BindView(R.id.settings_activity__chrome_custom_tabs)
-    protected RelativeLayout optionCustomTabs;
-
     @BindView(R.id.settings_activity__font_size_hint)
     protected TextView hintFontSize;
-
-    //@BindView(R.id.settings_activity__intellihide_toolbars_checkbox)
-    protected CheckBox checkboxIntellihide;
-
-    @BindView(R.id.settings_activity__extended_notifications_checkbox)
-    protected CheckBox checkboxExtendedNotifications;
-
-    @BindView(R.id.settings_activity__append_shared_via_app_checkbox)
-    protected CheckBox checkboxAppendSharedViaApp;
-
-    @BindView(R.id.settings_activity__chrome_custom_tabs_checkbox)
-    protected CheckBox checkboxCustomTabs;
 
     //Pod Settings
     @BindView(R.id.settings_activity__header_pod_settings)
@@ -111,17 +85,11 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
     @BindView(R.id.settings_activity__header_network)
     protected TextView titleNetwork;
 
-    @BindView(R.id.settings_activity__load_images)
-    protected RelativeLayout optionLoadImages;
-
     @BindView(R.id.settings_activity__clear_cache)
     protected LinearLayout optionClearCache;
 
     @BindView(R.id.settings_activity__proxy_settings)
     protected LinearLayout optionProxySettings;
-
-    @BindView(R.id.settings_activity__load_images_checkbox)
-    protected CheckBox checkboxLoadImages;
 
     //More
     @BindView(R.id.settings_activity__header_more)
@@ -148,11 +116,6 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
 
     protected void applySettingsToViews() {
         hintFontSize.setText(getAppSettings().getMinimumFontSizeString());
-        //checkboxIntellihide.setChecked(getAppSettings().isIntellihideToolbars());
-        checkboxExtendedNotifications.setChecked(getAppSettings().isExtendedNotifications());
-        checkboxAppendSharedViaApp.setChecked(getAppSettings().isAppendSharedViaApp());
-        checkboxCustomTabs.setChecked(getAppSettings().isChromeCustomTabsEnabled());
-        checkboxLoadImages.setChecked(getAppSettings().isLoadImages());
     }
 
     protected void setOnClickListenersOnViews() {
@@ -160,22 +123,12 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
         optionThemeColors.setOnClickListener(this);
         optionNavigationSlider.setOnClickListener(this);
         optionFontSize.setOnClickListener(this);
-        //optionIntellihideToolbars.setOnClickListener(this);
-        //checkboxIntellihide.setOnClickListener(this);
-        optionExtendedNotifications.setOnClickListener(this);
-        checkboxExtendedNotifications.setOnClickListener(this);
-        optionAppendSharedViaApp.setOnClickListener(this);
-        checkboxAppendSharedViaApp.setOnClickListener(this);
-        optionCustomTabs.setOnClickListener(this);
-        checkboxCustomTabs.setOnClickListener(this);
         /** Pod Settings */
         optionPersonalSettings.setOnClickListener(this);
         optionManageTags.setOnClickListener(this);
         optionManageContacts.setOnClickListener(this);
         optionChangeAccount.setOnClickListener(this);
         /** Network */
-        optionLoadImages.setOnClickListener(this);
-        checkboxLoadImages.setOnClickListener(this);
         optionClearCache.setOnClickListener(this);
         optionProxySettings.setOnClickListener(this);
         /** More */
@@ -191,12 +144,6 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
         ThemeHelper.updateTitleColor(titlePodSettings);
         ThemeHelper.updateTitleColor(titleNetwork);
         ThemeHelper.updateTitleColor(titleMore);
-        //Checkboxes
-        //ThemeHelper.updateCheckBoxColor(checkboxIntellihide);
-        ThemeHelper.updateCheckBoxColor(checkboxExtendedNotifications);
-        ThemeHelper.updateCheckBoxColor(checkboxAppendSharedViaApp);
-        ThemeHelper.updateCheckBoxColor(checkboxCustomTabs);
-        ThemeHelper.updateCheckBoxColor(checkboxLoadImages);
     }
 
     protected void showFontSizeDialog() {
@@ -248,26 +195,6 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
             case R.id.settings_activity__font_size:
                 showFontSizeDialog();
                 break;
-            //case R.id.settings_activity__intellihide_toolbars:
-            //case R.id.settings_activity__intellihide_toolbars_checkbox:
-            //    checkboxIntellihide.setChecked(!getAppSettings().isIntellihideToolbars());
-            //    getAppSettings().setIntellihideToolbars(!getAppSettings().isIntellihideToolbars());
-            //    break;
-            case R.id.settings_activity__extended_notifications:
-            case R.id.settings_activity__extended_notifications_checkbox:
-                checkboxExtendedNotifications.setChecked(!getAppSettings().isExtendedNotifications());
-                getAppSettings().setExtendedNotifications(!getAppSettings().isExtendedNotifications());
-                break;
-            case R.id.settings_activity__append_shared_via_app:
-            case R.id.settings_activity__append_shared_via_app_checkbox:
-                checkboxAppendSharedViaApp.setChecked(!getAppSettings().isAppendSharedViaApp());
-                getAppSettings().setAppendSharedViaApp(!getAppSettings().isAppendSharedViaApp());
-                break;
-            case R.id.settings_activity__chrome_custom_tabs:
-            case R.id.settings_activity__chrome_custom_tabs_checkbox:
-                checkboxCustomTabs.setChecked(!getAppSettings().isChromeCustomTabsEnabled());
-                getAppSettings().setChromeCustomTabsEnabled(!getAppSettings().isChromeCustomTabsEnabled());
-                break;
             /** Pod Settings */
             case R.id.settings_activity__personal_settings: {
                 Intent intent = new Intent(getActivity(), MainActivity.class);
@@ -310,11 +237,6 @@ public class SettingsFragment__Overview extends ThemedSettingsFragment {
                         .show();
             }
             /** Network */
-            case R.id.settings_activity__load_images:
-            case R.id.settings_activity__load_images_checkbox:
-                checkboxLoadImages.setChecked(!getAppSettings().isLoadImages());
-                getAppSettings().setLoadImages(!getAppSettings().isLoadImages());
-                break;
             case R.id.settings_activity__clear_cache: {
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 intent.setAction(MainActivity.ACTION_CLEAR_CACHE);

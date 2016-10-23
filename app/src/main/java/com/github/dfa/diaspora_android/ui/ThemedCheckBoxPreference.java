@@ -2,9 +2,7 @@ package com.github.dfa.diaspora_android.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Rect;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -14,6 +12,7 @@ import android.widget.TextView;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.AppSettings;
 import com.github.dfa.diaspora_android.util.AppLog;
+import com.github.dfa.diaspora_android.util.theming.ThemeHelper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,6 +33,8 @@ public class ThemedCheckBoxPreference extends RelativeLayout {
 
     protected String prefKey;
     protected boolean defaultValue;
+    protected AppSettings appSettings;
+    protected CompoundButton.OnCheckedChangeListener externalOnCheckedChangedListener;
 
     public ThemedCheckBoxPreference(Context context) {
         super(context);
@@ -51,6 +52,7 @@ public class ThemedCheckBoxPreference extends RelativeLayout {
     }
 
     protected void init(Context context, AttributeSet attrs) {
+        appSettings = new AppSettings(context.getApplicationContext());
         View.inflate(context, R.layout.preference__themed_checkbox, this);
         ButterKnife.bind(this);
         setDescendantFocusability(FOCUS_BLOCK_DESCENDANTS);
@@ -63,14 +65,13 @@ public class ThemedCheckBoxPreference extends RelativeLayout {
 
         // Assign custom attributes
         if (attrs != null) {
+            String titleText = "";
+            String summaryText = "";
+
             TypedArray a = context.getTheme().obtainStyledAttributes(
                     attrs,
                     R.styleable.ThemedCheckBoxPreference,
                     0, 0);
-
-            String titleText = "";
-            String summaryText = "";
-
             try {
                 titleText = a.getString(R.styleable.ThemedCheckBoxPreference_titleText);
                 summaryText = a.getString(R.styleable.ThemedCheckBoxPreference_summaryText);
@@ -82,18 +83,31 @@ public class ThemedCheckBoxPreference extends RelativeLayout {
                 a.recycle();
             }
 
-            final AppSettings appSettings = new AppSettings(context);
-
             setTitleText(titleText);
+            if(titleText == null || titleText.equals("")) {
+                title.setVisibility(GONE);
+            }
             setSummaryText(summaryText);
+            if(summaryText == null || summaryText.equals("")) {
+                summary.setVisibility(GONE);
+            }
             setChecked(appSettings.getThemedCheckboxPreferenceBoolean(this));
-            setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                     appSettings.setThemedCheckboxPreferenceBoolean(ThemedCheckBoxPreference.this, b);
+                    if(externalOnCheckedChangedListener != null) {
+                        externalOnCheckedChangedListener.onCheckedChanged(compoundButton, b);
+                    }
                 }
             });
+            applyColor();
         }
+    }
+
+    public void applyColor() {
+        ThemeHelper.getInstance(appSettings);
+        ThemeHelper.updateCheckBoxColor(checkBox);
     }
 
     public void setTitleText(String text) {
@@ -108,9 +122,8 @@ public class ThemedCheckBoxPreference extends RelativeLayout {
         checkBox.setChecked(checked);
     }
 
-
-    public void setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener listener) {
-        checkBox.setOnCheckedChangeListener(listener);
+    public void setOnCheckedChangedListener(CompoundButton.OnCheckedChangeListener listener) {
+        externalOnCheckedChangedListener = listener;
     }
 
     public String getPrefKey() {

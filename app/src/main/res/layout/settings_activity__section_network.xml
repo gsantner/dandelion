@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/activity_horizontal_margin_half">
     <TextView
@@ -11,36 +13,13 @@
         android:text="@string/pref_cat__network"/>
 
     <!-- Load images -->
-    <RelativeLayout
-        android:id="@+id/settings_activity__load_images"
+    <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:clickable="true">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toStartOf="@+id/settings_activity__load_images_checkbox">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:text="@string/pref_title__load_images"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pref_desc__load_images"/>
-        </LinearLayout>
-        <CheckBox
-            android:id="@+id/settings_activity__load_images_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"/>
-    </RelativeLayout>
+        app:titleText="@string/pref_title__load_images"
+        app:summaryText="@string/pref_desc__load_images"
+        app:prefKey="@string/pref_key__load_images"
+        app:defaultValue="true" />
 
     <!-- Clear cache -->
     <LinearLayout

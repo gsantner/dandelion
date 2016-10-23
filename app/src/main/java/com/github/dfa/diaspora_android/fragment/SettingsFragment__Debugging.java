@@ -46,18 +46,6 @@ public class SettingsFragment__Debugging extends ThemedSettingsFragment {
     @BindView(R.id.settings_activity__header_more__debugging)
     protected TextView titleDebugging;
 
-    @BindView(R.id.settings_activity__debugging_activated)
-    protected RelativeLayout optionDebuggingActivated;
-
-    @BindView(R.id.settings_activity__debugging_activated_checkbox)
-    protected CheckBox checkboxDebuggingActivated;
-
-    @BindView(R.id.settings_activity__debugging_verbose)
-    protected RelativeLayout optionDebuggingVerbose;
-
-    @BindView(R.id.settings_activity__debugging_verbose_checkbox)
-    protected CheckBox checkboxDebuggingVerbose;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         AppLog.d(this, "onCreateView()");
@@ -69,22 +57,14 @@ public class SettingsFragment__Debugging extends ThemedSettingsFragment {
     @Override
     protected void applyColorToViews() {
         ThemeHelper.updateTitleColor(titleDebugging);
-        ThemeHelper.updateCheckBoxColor(checkboxDebuggingActivated);
-        ThemeHelper.updateCheckBoxColor(checkboxDebuggingVerbose);
     }
 
     @Override
     protected void applySettingsToViews() {
-        checkboxDebuggingActivated.setChecked(getAppSettings().isLoggingEnabled());
-        checkboxDebuggingVerbose.setChecked(getAppSettings().isLoggingSpamEnabled());
     }
 
     @Override
     protected void setOnClickListenersOnViews() {
-        optionDebuggingActivated.setOnClickListener(this);
-        checkboxDebuggingActivated.setOnClickListener(this);
-        optionDebuggingVerbose.setOnClickListener(this);
-        checkboxDebuggingVerbose.setOnClickListener(this);
     }
 
     @Override
@@ -105,16 +85,7 @@ public class SettingsFragment__Debugging extends ThemedSettingsFragment {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.settings_activity__debugging_activated:
-            case R.id.settings_activity__debugging_activated_checkbox:
-                checkboxDebuggingActivated.setChecked(!getAppSettings().isLoggingEnabled());
-                getAppSettings().setLoggingEnabled(!getAppSettings().isLoggingEnabled());
-                break;
-            case R.id.settings_activity__debugging_verbose:
-            case R.id.settings_activity__debugging_verbose_checkbox:
-                checkboxDebuggingVerbose.setChecked(!getAppSettings().isLoggingSpamEnabled());
-                getAppSettings().setLoggingSpamEnabled(!getAppSettings().isLoggingSpamEnabled());
-                break;
+
         }
     }
 }

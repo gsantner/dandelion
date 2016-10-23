@@ -177,13 +177,13 @@ public class SettingsFragment__ThemeColors extends ThemedSettingsFragment {
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if (type == 1) {
+                        if (type == 1) {    //Primary Color
                             appSettings.setPrimaryColorPickerSettings(base.getColor(), shade.getColor());
                             if (Build.VERSION.SDK_INT >= 21) {
                                 getActivity().getWindow().setStatusBarColor(ThemeHelper.getPrimaryDarkColor());
                             }
                             ((ThemedActivity) getActivity()).applyColorToViews();
-                        } else {
+                        } else {            //Accent Color
                             appSettings.setAccentColorPickerSettings(base.getColor(), shade.getColor());
                         }
                         applyColorToViews();

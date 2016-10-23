@@ -29,36 +29,14 @@
                     android:text="@string/pref_title__sub_proxy"/>
 
                 <!-- Proxy Enabled -->
-                <RelativeLayout
-                    android:id="@+id/settings_activity__proxy_activated"
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:id="@+id/settings_activity__proxy_enabled"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:clickable="true">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_toStartOf="@+id/settings_activity__proxy_activated_checkbox">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:text="@string/pref_title__proxy_enabled"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/pref_desc__http_proxy_enabled"/>
-                    </LinearLayout>
-                    <CheckBox
-                        android:id="@+id/settings_activity__proxy_activated_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
+                    app:titleText="@string/pref_title__proxy_enabled"
+                    app:summaryText="@string/pref_desc__http_proxy_enabled"
+                    app:prefKey="@string/pref_key__http_proxy_enabled"
+                    app:defaultValue="false" />
 
                 <!-- Host -->
                 <LinearLayout
