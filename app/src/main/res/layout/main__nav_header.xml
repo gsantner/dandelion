@@ -3,7 +3,6 @@
     android:id="@+id/nav_drawer"
     android:layout_width="wrap_content"
     android:layout_height="110dp"
-    android:background="@color/colorPrimary"
     android:gravity="bottom"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">

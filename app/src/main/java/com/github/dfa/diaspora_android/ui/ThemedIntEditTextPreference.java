@@ -78,7 +78,7 @@ public class ThemedIntEditTextPreference extends LinearLayout implements ThemedP
 
             AppLog.d(this, "ShowValueInSummary: "+showValueInSummary + " port: "+appSettings.getProxyHttpPort());
             setTitleText(titleText);
-            setSummaryText(showValueInSummary ? ""+appSettings.getThemedIntEditTextPreferenceValue(this) : summaryText);
+            setSummaryText(showValueInSummary ? Integer.toString(appSettings.getThemedIntEditTextPreferenceValue(this)) : summaryText);
             setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -93,7 +93,7 @@ public class ThemedIntEditTextPreference extends LinearLayout implements ThemedP
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         final EditText dialogLayout = (EditText) LayoutInflater.from(context).inflate(R.layout.settings_activity__dialog_proxy, null, false);
         dialogLayout.setInputType(InputType.TYPE_CLASS_NUMBER);
-        dialogLayout.setText(""+appSettings.getThemedIntEditTextPreferenceValue(this));
+        dialogLayout.setText(Integer.toString(appSettings.getThemedIntEditTextPreferenceValue(this)));
         builder.setTitle(title)
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
@@ -140,7 +140,7 @@ public class ThemedIntEditTextPreference extends LinearLayout implements ThemedP
     public void setValue(Integer value) {
         appSettings.setThemedIntEditTextPreferenceValue(this, value);
         if(showValueInSummary) {
-            setSummaryText(""+value);
+            setSummaryText(Integer.toString(value));
         }
     }
 

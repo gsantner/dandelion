@@ -24,21 +24,22 @@ import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 
 public class HashtagProvider extends ContentProvider {
 
     @Override
-    public int delete(Uri arg0, String arg1, String[] arg2) {
+    public int delete(@NonNull Uri arg0, String arg1, String[] arg2) {
         return 0;
     }
 
     @Override
-    public String getType(Uri arg0) {
+    public String getType(@NonNull Uri arg0) {
         return "vnd.android.cursor.item/vnd.cc.tag";
     }
 
     @Override
-    public Uri insert(Uri arg0, ContentValues arg1) {
+    public Uri insert(@NonNull Uri arg0, ContentValues arg1) {
         return null;
     }
 
@@ -48,13 +49,13 @@ public class HashtagProvider extends ContentProvider {
     }
 
     @Override
-    public Cursor query(Uri arg0, String[] arg1, String arg2, String[] arg3,
+    public Cursor query(@NonNull Uri arg0, String[] arg1, String arg2, String[] arg3,
                         String arg4) {
         return null;
     }
 
     @Override
-    public int update(Uri arg0, ContentValues arg1, String arg2, String[] arg3) {
+    public int update(@NonNull Uri arg0, ContentValues arg1, String arg2, String[] arg3) {
         return 0;
     }
 }

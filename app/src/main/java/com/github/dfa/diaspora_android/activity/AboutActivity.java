@@ -69,7 +69,7 @@ public class AboutActivity extends ThemedActivity
     private ViewPager mViewPager;
 
     @BindView(R.id.about__appbar)
-    AppBarLayout appBarLayout;
+    protected AppBarLayout appBarLayout;
 
     @BindView(R.id.main__topbar)
     protected Toolbar toolbar;
@@ -87,7 +87,11 @@ public class AboutActivity extends ThemedActivity
         ButterKnife.bind(this);
 
         setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_arrow_back_white_24px));
+        if(Build.VERSION.SDK_INT >= 21) {
+            toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_arrow_back_white_24px, getTheme()));
+        } else {
+            toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_arrow_back_white_24px));
+        }
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -231,9 +235,8 @@ public class AboutActivity extends ThemedActivity
         }
 
         public String getContributorsHtml(Context context) {
-            String text = Helpers.readTextfileFromRawRessource(context, R.raw.contributors,
+            return Helpers.readTextfileFromRawRessource(context, R.raw.contributors,
                     "<font color='" + accentColor + "'><b>*</b></font> ", "<br>");
-            return text;
         }
 
         public String getMaintainersHtml(Context context) {
@@ -245,9 +248,8 @@ public class AboutActivity extends ThemedActivity
         }
 
         public String getLicenseHtml(Context context) {
-            String text = Helpers.readTextfileFromRawRessource(context, R.raw.license,
+            return Helpers.readTextfileFromRawRessource(context, R.raw.license,
                     "", "").replace("\n\n", "<br><br>");
-            return text;
         }
 
         public String getLicense3dPartyHtml(Context context) {

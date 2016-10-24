@@ -15,7 +15,8 @@
 
         <provider
             android:name="com.github.dfa.diaspora_android.data.HashtagProvider"
-            android:authorities="com.github.dfa.diaspora_android.mainactivity" />
+            android:authorities="com.github.dfa.diaspora_android.mainactivity"
+            android:exported="false"/>
 
         <service
             android:name="com.github.dfa.diaspora_android.task.GetPodsService"

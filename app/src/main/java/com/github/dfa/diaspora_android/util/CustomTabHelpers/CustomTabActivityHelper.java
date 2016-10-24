@@ -94,7 +94,7 @@ public class CustomTabActivityHelper {
     /**
      * Register a Callback to be called when connected or disconnected from the Custom Tabs Service
      *
-     * @param connectionCallback
+     * @param connectionCallback connectionCallback
      */
     public void setConnectionCallback(ConnectionCallback connectionCallback) {
         this.mConnectionCallback = connectionCallback;
@@ -130,10 +130,14 @@ public class CustomTabActivityHelper {
     }
 
     public boolean mayLaunchUrl(Uri uri, Bundle extras, List<Bundle> otherLikelyBundles) {
-        if (mClient == null) return false;
+        if (mClient == null) {
+            return false;
+        }
 
         CustomTabsSession session = getSession();
-        if (session == null) return false;
+        if (session == null) {
+            return false;
+        }
 
         return session.mayLaunchUrl(uri, extras, otherLikelyBundles);
     }

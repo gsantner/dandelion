@@ -85,7 +85,7 @@ public class Helpers {
 
     public static String readTextfileFromRawRessource(Context context, int rawRessourceId, String linePrefix, String linePostfix) {
         StringBuilder sb = new StringBuilder();
-        String line = "";
+        String line;
         BufferedReader br = null;
         linePrefix = linePrefix == null ? "" : linePrefix;
         linePostfix = linePostfix == null ? "" : linePostfix;

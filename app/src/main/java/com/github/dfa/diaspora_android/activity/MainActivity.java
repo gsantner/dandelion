@@ -442,18 +442,28 @@ public class MainActivity extends ThemedActivity
         } else if (ACTION_CHANGE_ACCOUNT.equals(action)) {
             AppLog.v(this, "Reset pod data and  show PodSelectionFragment");
             appSettings.setPod(null);
-            app.resetPodData(((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView());
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    app.resetPodData(((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView());
+                }
+            });
             showFragment(getFragment(PodSelectionFragment.TAG));
         } else if (ACTION_CLEAR_CACHE.equals(action)) {
             AppLog.v(this, "Clear WebView cache");
             showFragment(getFragment(DiasporaStreamFragment.TAG));
-            ContextMenuWebView wv = ((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView();
-            if(wv != null) {
-                AppLog.d(this, "clearing...");
-                wv.clearCache(true);
-            } else {
-                AppLog.e(this, "WebView is null!");
-            }
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    ContextMenuWebView wv = ((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView();
+                    if(wv != null) {
+                        AppLog.d(this, "clearing...");
+                        wv.clearCache(true);
+                    } else {
+                        AppLog.e(this, "WebView is null!");
+                    }
+                }
+            });
         } else if (Intent.ACTION_SEND.equals(action) && type != null) {
             switch (type) {
                 case "text/plain":
@@ -750,7 +760,7 @@ public class MainActivity extends ThemedActivity
                 if (WebHelper.isOnline(MainActivity.this)) {
                     final InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
-                    View layout = getLayoutInflater().inflate(R.layout.ui__dialog_search__people_tags, null, false);
+                    View layout = getLayoutInflater().inflate(R.layout.ui__dialog_search__people_tags, this.appBarLayout, false);
                     final EditText input = (EditText) layout.findViewById(R.id.dialog_search__input);
                     final DialogInterface.OnClickListener clickListener = new DialogInterface.OnClickListener() {
                         @Override

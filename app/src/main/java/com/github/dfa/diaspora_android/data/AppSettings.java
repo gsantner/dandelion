@@ -17,6 +17,7 @@ package com.github.dfa.diaspora_android.data;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.Build;
 
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
@@ -434,13 +435,21 @@ public class AppSettings {
 
     public int[] getPrimaryColorPickerSettings() {
         return new int[]{
-                getInt(prefApp, R.string.pref_key__primary_color_base, context.getResources().getColor(R.color.md_blue_500)),
-                getInt(prefApp, R.string.pref_key__primary_color_shade, context.getResources().getColor(R.color.primary))
+                getInt(prefApp, R.string.pref_key__primary_color_base, getColor(R.color.md_blue_500)),
+                getInt(prefApp, R.string.pref_key__primary_color_shade, getColor(R.color.primary))
         };
     }
 
     public int getPrimaryColor() {
-        return getInt(prefApp, R.string.pref_key__primary_color_shade, context.getResources().getColor(R.color.primary));
+        return getInt(prefApp, R.string.pref_key__primary_color_shade, getColor(R.color.primary));
+    }
+
+    private int getColor(int id) {
+        if(Build.VERSION.SDK_INT >= 23) {
+            return context.getResources().getColor(id, context.getTheme());
+        } else {
+            return context.getResources().getColor(id);
+        }
     }
 
     public void setAccentColorPickerSettings(int base, int shade) {
@@ -450,13 +459,13 @@ public class AppSettings {
 
     public int[] getAccentColorPickerSettings() {
         return new int[]{
-                getInt(prefApp, R.string.pref_key__accent_color_base, context.getResources().getColor(R.color.md_deep_orange_500)),
-                getInt(prefApp, R.string.pref_key__accent_color_shade, context.getResources().getColor(R.color.accent))
+                getInt(prefApp, R.string.pref_key__accent_color_base, getColor(R.color.md_deep_orange_500)),
+                getInt(prefApp, R.string.pref_key__accent_color_shade, getColor(R.color.accent))
         };
     }
 
     public int getAccentColor() {
-        return getInt(prefApp, R.string.pref_key__accent_color_shade, context.getResources().getColor(R.color.accent));
+        return getInt(prefApp, R.string.pref_key__accent_color_shade, getColor(R.color.accent));
     }
 
     public boolean isExtendedNotifications() {
