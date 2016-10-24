@@ -446,14 +446,14 @@ public class MainActivity extends ThemedActivity
             showFragment(getFragment(PodSelectionFragment.TAG));
         } else if (ACTION_CLEAR_CACHE.equals(action)) {
             AppLog.v(this, "Clear WebView cache");
-            openDiasporaUrl(urls.getStreamUrl());
+            showFragment(getFragment(DiasporaStreamFragment.TAG));
             ContextMenuWebView wv = ((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView();
             if(wv != null) {
+                AppLog.d(this, "clearing...");
                 wv.clearCache(true);
             } else {
                 AppLog.e(this, "WebView is null!");
             }
-
         } else if (Intent.ACTION_SEND.equals(action) && type != null) {
             switch (type) {
                 case "text/plain":
@@ -891,7 +891,7 @@ public class MainActivity extends ThemedActivity
             AppLog.v(this, "Set shared text; Subject: \"" + escapedSubject + "\" Body: \"" + escapedBody + "\"");
             textToBeShared = "**" + escapedSubject + "** " + escapedBody;
         } else {
-            AppLog.v(this, "Set shared text; Subject: \"" + sharedSubject + "\" Body: \"" + sharedBody + "\"");
+            AppLog.v(this, "Set shared text; Subject: \"null\" Body: \"" + sharedBody + "\"");
             textToBeShared = escapedBody;
         }
     }
@@ -1104,7 +1104,7 @@ public class MainActivity extends ThemedActivity
     /**
      * Set the string that will be shared into the new-post-editor
      *
-     * @param textToBeShared
+     * @param textToBeShared text that the user wants to share in the post editor
      */
     public void setTextToBeShared(String textToBeShared) {
         this.textToBeShared = textToBeShared;
