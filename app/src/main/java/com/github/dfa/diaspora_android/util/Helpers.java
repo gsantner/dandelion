@@ -27,6 +27,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.Snackbar;
+import android.util.DisplayMetrics;
 import android.view.View;
 
 import com.github.dfa.diaspora_android.R;
@@ -148,5 +149,10 @@ public class Helpers {
             Snackbar.make(anchor, R.string.no_internet, Snackbar.LENGTH_LONG).show();
         }
         return !isOnline;
+    }
+
+    public static int dpToPx(Context context, int dp) {
+        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+        return Math.round(dp * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
     }
 }

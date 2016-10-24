@@ -8,13 +8,16 @@ import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.AppSettings;
 import com.github.dfa.diaspora_android.util.AppLog;
+import com.github.dfa.diaspora_android.util.Helpers;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -92,6 +95,14 @@ public class ThemedStringEditTextPreference extends LinearLayout implements Them
         final EditText dialogLayout = (EditText) LayoutInflater.from(context).inflate(R.layout.settings_activity__dialog_proxy, null, false);
         dialogLayout.setInputType(InputType.TYPE_CLASS_TEXT);
         dialogLayout.setText(appSettings.getThemedStringEditTextPreferenceValue(this));
+        dialogLayout.setSingleLine();
+        FrameLayout container = new FrameLayout(context);
+        FrameLayout.LayoutParams params = new  FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        int marginHoriz = Helpers.dpToPx(context, (int) context.getResources().getDimension(R.dimen.activity_horizontal_margin_half));
+        params.leftMargin = marginHoriz;
+        params.rightMargin = marginHoriz;
+        dialogLayout.setLayoutParams(params);
+        container.addView(dialogLayout);
         builder.setTitle(title)
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
@@ -102,7 +113,7 @@ public class ThemedStringEditTextPreference extends LinearLayout implements Them
                         }
                     }
                 }).setNegativeButton(android.R.string.cancel, null)
-                .setView(dialogLayout)
+                .setView(container)
                 .show();
     }
 
