@@ -56,7 +56,6 @@ public class StatisticsFetchTask extends AsyncTask<Void, Void, Void> {
 
     @Override
     protected Void doInBackground(Void... params) {
-        String extractedProfileData = null;
         final CookieManager cookieManager = app.getCookieManager();
         String cookies = cookieManager.getCookie(urls.getPodUrl());
 

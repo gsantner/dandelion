@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin_half">
+    <TextView
+        android:id="@+id/settings_activity__header_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:text="@string/pref_cat__network"/>
+
+    <!-- Load images -->
+    <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+        android:id="@+id/settings_activity__load_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__load_images"
+        app:summaryText="@string/pref_desc__load_images"
+        app:prefKey="@string/pref_key__load_images"
+        app:defaultBoolean="true" />
+
+    <!-- Clear cache -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__clear_cache"
+        app:summaryText="@string/pref_desc__clear_cache" />
+
+    <!-- Proxy Settings -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__proxy_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__sub_proxy"
+        app:summaryText="@string/pref_desc__sub_proxy"/>
+
+</LinearLayout>

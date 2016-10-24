@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Proxy -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_spacing"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_horizontal_margin_half">
+                <TextView
+                    android:id="@+id/settings_activity__header_appearance__nav_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="@string/pref_title__sub_nav_slider"/>
+
+                <!-- Entries -->
+
+                <!-- Profile -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/nav_profile"
+                    app:prefKey="@string/pref_key__visibility_nav__profile"
+                    app:defaultBoolean="true"/>
+
+                <!-- Followed Tags -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/nav_followed_tags"
+                    app:prefKey="@string/pref_key__visibility_nav__followed_tags"
+                    app:defaultBoolean="true"/>
+
+                <!-- Aspects -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/nav_aspects"
+                    app:prefKey="@string/pref_key__visibility_nav__aspects"
+                    app:defaultBoolean="true"/>
+
+                <!-- Activities -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/nav_activities"
+                    app:prefKey="@string/pref_key__visibility_nav__activities"
+                    app:defaultBoolean="false"/>
+
+                <!-- Liked -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/nav_liked"
+                    app:prefKey="@string/pref_key__visibility_nav__liked"
+                    app:defaultBoolean="true"/>
+
+                <!-- Commented -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/nav_commented"
+                    app:prefKey="@string/pref_key__visibility_nav__commented"
+                    app:defaultBoolean="true"/>
+
+                <!-- Mentions -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/nav_mentions"
+                    app:prefKey="@string/pref_key__visibility_nav__mentions"
+                    app:defaultBoolean="false"/>
+
+                <!-- Public Activities -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/nav_public_activities"
+                    app:prefKey="@string/pref_key__visibility_nav__public_activities"
+                    app:defaultBoolean="false"/>
+
+                <!-- Exit -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/action_exit_app"
+                    app:prefKey="@string/pref_key__visibility_nav__exit"
+                    app:defaultBoolean="false"/>
+
+                <!-- About -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/nav_help_license"
+                    app:prefKey="@string/pref_key__visibility_nav__help_license"
+                    app:defaultBoolean="true"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

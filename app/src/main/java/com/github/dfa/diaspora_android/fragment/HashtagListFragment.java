@@ -105,18 +105,18 @@ public class HashtagListFragment extends CustomFragment {
         private String[] followedTagsList;
         private View.OnClickListener itemClickListener;
 
-        public static class ViewHolder extends RecyclerView.ViewHolder {
+        static class ViewHolder extends RecyclerView.ViewHolder {
             // each data item is just a string in this case
             public TextView title;
 
-            public ViewHolder(View v) {
+            ViewHolder(View v) {
                 super(v);
                 title = (TextView) v.findViewById(R.id.recycler_view__list_item__text);
             }
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
-        public FollowedTagsAdapter(String[] tags, View.OnClickListener itemClickListener) {
+        FollowedTagsAdapter(String[] tags, View.OnClickListener itemClickListener) {
             this.followedTagsList = tags;
             this.itemClickListener = itemClickListener;
         }

@@ -25,6 +25,7 @@ import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.WebHelper;
 
 /**
+ * WebChromeClient for DiasporaStreams
  * Created by vanitas on 26.09.16.
  */
 

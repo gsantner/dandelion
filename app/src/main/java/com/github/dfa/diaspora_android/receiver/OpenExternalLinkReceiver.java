@@ -53,7 +53,7 @@ public class OpenExternalLinkReceiver extends BroadcastReceiver {
 
         AppLog.v(this, "OpenExternalLinkReceiver.onReceive(): url");
 
-        Uri url = null;
+        Uri url;
         try {
             String sUrl = receiveIntent.getStringExtra(MainActivity.EXTRA_URL);
             url = Uri.parse(sUrl);

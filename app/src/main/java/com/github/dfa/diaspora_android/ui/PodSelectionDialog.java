@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatDialogFragment;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,12 +34,13 @@ import butterknife.OnClick;
 import butterknife.OnItemSelected;
 
 /**
+ * Dialog that lets the user chose a pod
  * Created by gsantner (https://gsantner.github.io) on 06.10.16.
  */
 public class PodSelectionDialog extends ThemedAppCompatDialogFragment {
     public static final String TAG = "com.github.dfa.diaspora_android.PodSelectionDialog";
 
-    public static interface PodSelectionDialogResultListener {
+    public interface PodSelectionDialogResultListener {
         void onPodSelectionDialogResult(DiasporaPod pod, boolean accepted);
     }
 
@@ -118,8 +118,8 @@ public class PodSelectionDialog extends ThemedAppCompatDialogFragment {
             textProfile.setVisibility(View.VISIBLE);
             spinnerProfile.setVisibility(View.VISIBLE);
             String[] podUrlss = new String[podUrls.size()];
-            for (int i = 0; i < podUrls.size(); podUrlss[i] = podUrls.get(i++).getBaseUrl()) ;
-            ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, podUrlss);
+            //for (int i = 0; i < podUrls.size(); podUrlss[i] = podUrls.get(i++).getBaseUrl()) ;
+            ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, podUrlss);
             spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinnerProfile.setAdapter(spinnerAdapter);
         }
@@ -131,11 +131,11 @@ public class PodSelectionDialog extends ThemedAppCompatDialogFragment {
     protected void applyColorsToViews() {
         ThemeHelper.getInstance(app.getSettings());
 
-        textPodAddress.setTextColor(ThemeHelper.getAccentColor());
-        textPodName.setTextColor(ThemeHelper.getAccentColor());
-        textProfile.setTextColor(ThemeHelper.getAccentColor());
-        textProtocol.setTextColor(ThemeHelper.getAccentColor());
-        textTorPreset.setTextColor(ThemeHelper.getAccentColor());
+        ThemeHelper.updateTitleColor(textPodAddress);
+        ThemeHelper.updateTitleColor(textPodName);
+        ThemeHelper.updateTitleColor(textProfile);
+        ThemeHelper.updateTitleColor(textProtocol);
+        ThemeHelper.updateTitleColor(textTorPreset);
 
         ThemeHelper.updateEditTextColor(editPodAddress);
         ThemeHelper.updateEditTextColor(editPodName);
@@ -205,7 +205,6 @@ public class PodSelectionDialog extends ThemedAppCompatDialogFragment {
             if(pod.getPodUrl().getHost().endsWith(".onion") && checkboxTorPreset.isChecked()){
                 AppSettings settings = app.getSettings();
                 settings.setProxyHttpEnabled(true);
-                settings.setProxyWasEnabled(false);
                 settings.setProxyHttpPort(8118);
                 settings.setProxyHttpHost("127.0.0.1");
                 ProxyHandler.getInstance().updateProxySettings(getContext());

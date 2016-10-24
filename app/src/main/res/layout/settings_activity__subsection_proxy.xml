@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Proxy -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_spacing"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_horizontal_margin_half">
+                <TextView
+                    android:id="@+id/settings_activity__header_network__proxy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="@string/pref_title__sub_proxy"/>
+
+                <!-- Proxy Enabled -->
+                <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+                    android:id="@+id/settings_activity__proxy_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/pref_title__proxy_enabled"
+                    app:summaryText="@string/pref_desc__http_proxy_enabled"
+                    app:prefKey="@string/pref_key__http_proxy_enabled"
+                    app:defaultBoolean="false" />
+
+                <!-- Host -->
+                <com.github.dfa.diaspora_android.ui.ThemedStringEditTextPreference
+                    android:id="@+id/settings_activity__proxy_host"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/pref_title__http_proxy_host"
+                    app:showValueInSummary="true"
+                    app:defaultString=""
+                    app:prefKey="@string/pref_key__http_proxy_host"/>
+
+                <!-- Port -->
+                <com.github.dfa.diaspora_android.ui.ThemedIntEditTextPreference
+                    android:id="@+id/settings_activity__proxy_port"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/pref_title__http_proxy_port"
+                    app:showValueInSummary="true"
+                    app:defaultInt="0"
+                    app:prefKey="@string/pref_key__http_proxy_port"/>
+
+                <!-- Orbot Preset -->
+                <com.github.dfa.diaspora_android.ui.ThemedPreference
+                    android:id="@+id/settings_activity__proxy_orbot_preset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleText="@string/pref_title__http_proxy_load_tor_preset"
+                    app:summaryText="@string/pref_desc__http_proxy_load_tor_preset"
+                    app:image="@drawable/tor_onion"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

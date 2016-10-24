@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin_half">
+    <TextView
+        android:id="@+id/settings_activity__header_pod_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:text="@string/pref_cat__pod_settings"/>
+
+    <!-- Personal Settings -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__personal_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__personal_settings"
+        app:summaryText="@string/pref_desc__personal_settings"/>
+
+    <!-- Manage tags -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__manage_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__manage_tags"
+        app:summaryText="@string/pref_desc__manage_tags"/>
+
+    <!-- Manage Contacts -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__manage_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__manage_contacts"
+        app:summaryText="@string/pref_desc__manage_contacts"/>
+
+    <!-- Change Account -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__change_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__change_account"
+        app:summaryText="@string/pref_desc__change_account"/>
+
+</LinearLayout>

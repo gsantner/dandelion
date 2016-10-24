@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin_half">
+    <TextView
+        android:id="@+id/settings_activity__header_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:text="@string/pref_cat__more"/>
+
+    <!-- Debugging -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__debugging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__sub_logging"
+        app:summaryText="@string/pref_desc__sub_logging" />
+</LinearLayout>

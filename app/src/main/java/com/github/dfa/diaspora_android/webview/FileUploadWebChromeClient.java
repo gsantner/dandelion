@@ -24,6 +24,7 @@ import android.webkit.WebView;
 import android.widget.ProgressBar;
 
 /**
+ * WebChromeClient that supports uploading images
  * Created by vanitas on 26.09.16.
  */
 
@@ -33,11 +34,6 @@ public class FileUploadWebChromeClient extends ProgressBarWebChromeClient {
     public FileUploadWebChromeClient(WebView webView, ProgressBar progressBar, FileUploadCallback fileUploadCallback) {
         super(webView, progressBar);
         this.fileUploadCallback = fileUploadCallback;
-    }
-
-    @Override
-    public void onProgressChanged(WebView wv, int progress) {
-        super.onProgressChanged(wv, progress);
     }
 
     //For Android 4.1/4.2 only. DO NOT REMOVE!

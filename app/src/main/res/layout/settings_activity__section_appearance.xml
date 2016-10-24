@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin_half">
+    <TextView
+        android:id="@+id/settings_activity__header_appearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:text="@string/pref_cat__visuals"/>
+
+    <!-- Themes 'n Colors -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__themes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__themes"
+        app:summaryText="@string/pref_desc__themes" />
+
+    <!-- Navigation Slider Items -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__navigation_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__sub_nav_slider"
+        app:summaryText="@string/pref_desc__sub_nav_slider"/>
+
+    <!-- Font size -->
+    <com.github.dfa.diaspora_android.ui.ThemedPreference
+        android:id="@+id/settings_activity__font_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__font_size"/>
+
+    <!-- Intellihide toolbars -->
+    <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+        android:id="@+id/settings_activity__intellihide_toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__intellihide_toolbars"
+        app:summaryText="@string/pref_desc__intellihide_toolbars"
+        app:prefKey="@string/pref_key__intellihide_toolbars"
+        app:defaultBoolean="true" />
+
+    <!-- Dropdown Notifications -->
+    <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+        android:id="@+id/settings_activity__dropdown_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__extended_notifications"
+        app:summaryText="@string/pref_desc__extended_notifications"
+        app:prefKey="@string/pref_key__extended_notifications"
+        app:defaultBoolean="false" />
+
+    <!-- Share reference to app -->
+    <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+        android:id="@+id/settings_activity__append_reference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__append_shared_via_app"
+        app:summaryText="@string/pref_desc__append_shared_via_app"
+        app:prefKey="@string/pref_key__append_shared_via_app"
+        app:defaultBoolean="true" />
+
+    <!-- Chrome custom tabs -->
+    <com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference
+        android:id="@+id/settings_activity__custom_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/pref_title__chrome_custom_tabs_enabled"
+        app:summaryText="@string/pref_desc__chrome_custom_tabs_enabled"
+        app:prefKey="@string/pref_key__chrome_custom_tabs_enabled"
+        app:defaultBoolean="true" />
+</LinearLayout>

@@ -28,6 +28,7 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
+import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 
 import com.github.dfa.diaspora_android.R;
@@ -67,7 +68,7 @@ public class BadgeDrawable extends Drawable {
     }
 
     @Override
-    public void draw(Canvas canvas) {
+    public void draw(@NonNull Canvas canvas) {
         if (!shouldDraw) {
             return;
         }

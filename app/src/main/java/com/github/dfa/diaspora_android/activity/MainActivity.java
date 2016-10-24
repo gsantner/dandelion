@@ -25,6 +25,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
 import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -71,6 +72,7 @@ import com.github.dfa.diaspora_android.listener.WebUserProfileChangedListener;
 import com.github.dfa.diaspora_android.receiver.OpenExternalLinkReceiver;
 import com.github.dfa.diaspora_android.receiver.UpdateTitleReceiver;
 import com.github.dfa.diaspora_android.ui.BadgeDrawable;
+import com.github.dfa.diaspora_android.ui.ContextMenuWebView;
 import com.github.dfa.diaspora_android.ui.IntellihideToolbarActivityListener;
 import com.github.dfa.diaspora_android.ui.PodSelectionDialog;
 import com.github.dfa.diaspora_android.util.AppLog;
@@ -440,11 +442,28 @@ public class MainActivity extends ThemedActivity
         } else if (ACTION_CHANGE_ACCOUNT.equals(action)) {
             AppLog.v(this, "Reset pod data and  show PodSelectionFragment");
             appSettings.setPod(null);
-            app.resetPodData(((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView());
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    app.resetPodData(((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView());
+                }
+            });
             showFragment(getFragment(PodSelectionFragment.TAG));
         } else if (ACTION_CLEAR_CACHE.equals(action)) {
             AppLog.v(this, "Clear WebView cache");
-            ((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView().clearCache(true);
+            showFragment(getFragment(DiasporaStreamFragment.TAG));
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    ContextMenuWebView wv = ((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView();
+                    if(wv != null) {
+                        AppLog.d(this, "clearing...");
+                        wv.clearCache(true);
+                    } else {
+                        AppLog.e(this, "WebView is null!");
+                    }
+                }
+            });
         } else if (Intent.ACTION_SEND.equals(action) && type != null) {
             switch (type) {
                 case "text/plain":
@@ -529,6 +548,11 @@ public class MainActivity extends ThemedActivity
     }
 
     @Override
+    public AssetManager getAssets() {
+        return getResources().getAssets();
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
         customTabActivityHelper.bindCustomTabsService(this);
@@ -588,7 +612,7 @@ public class MainActivity extends ThemedActivity
                 ///Hide bottom toolbar
                 toolbarBottom.setVisibility(View.GONE);
             } else {
-                getMenuInflater().inflate(appSettings.isExtendedNotificationsActivated() ?
+                getMenuInflater().inflate(appSettings.isExtendedNotifications() ?
                         R.menu.main__menu_top__notifications_dropdown : R.menu.main__menu_top, menu);
                 getMenuInflater().inflate(R.menu.main__menu_bottom, toolbarBottom.getMenu());
                 top.onCreateBottomOptionsMenu(toolbarBottom.getMenu(), getMenuInflater());
@@ -631,7 +655,7 @@ public class MainActivity extends ThemedActivity
         AppLog.i(this, "onOptionsItemSelected()");
         switch (item.getItemId()) {
             case R.id.action_notifications: {
-                if(appSettings.isExtendedNotificationsActivated()) {
+                if(appSettings.isExtendedNotifications()) {
                     return true;
                 }
                 //Otherwise we execute the action of action_notifications_all
@@ -736,7 +760,7 @@ public class MainActivity extends ThemedActivity
                 if (WebHelper.isOnline(MainActivity.this)) {
                     final InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
-                    View layout = getLayoutInflater().inflate(R.layout.ui__dialog_search__people_tags, null, false);
+                    View layout = getLayoutInflater().inflate(R.layout.ui__dialog_search__people_tags, this.appBarLayout, false);
                     final EditText input = (EditText) layout.findViewById(R.id.dialog_search__input);
                     final DialogInterface.OnClickListener clickListener = new DialogInterface.OnClickListener() {
                         @Override
@@ -877,7 +901,7 @@ public class MainActivity extends ThemedActivity
             AppLog.v(this, "Set shared text; Subject: \"" + escapedSubject + "\" Body: \"" + escapedBody + "\"");
             textToBeShared = "**" + escapedSubject + "** " + escapedBody;
         } else {
-            AppLog.v(this, "Set shared text; Subject: \"" + sharedSubject + "\" Body: \"" + sharedBody + "\"");
+            AppLog.v(this, "Set shared text; Subject: \"null\" Body: \"" + sharedBody + "\"");
             textToBeShared = escapedBody;
         }
     }
@@ -1090,14 +1114,14 @@ public class MainActivity extends ThemedActivity
     /**
      * Set the string that will be shared into the new-post-editor
      *
-     * @param textToBeShared
+     * @param textToBeShared text that the user wants to share in the post editor
      */
     public void setTextToBeShared(String textToBeShared) {
         this.textToBeShared = textToBeShared;
     }
 
     @Override
-    protected void applyColorToViews() {
+    public void applyColorToViews() {
         ThemeHelper.updateToolbarColor(toolbarTop);
         ThemeHelper.updateActionMenuViewColor(toolbarBottom);
         navDrawerLayout.setBackgroundColor(appSettings.getPrimaryColor());

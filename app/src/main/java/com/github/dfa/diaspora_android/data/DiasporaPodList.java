@@ -1,5 +1,7 @@
 package com.github.dfa.diaspora_android.data;
 
+import android.support.annotation.NonNull;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -280,13 +282,11 @@ public class DiasporaPodList implements Iterable<DiasporaPodList.DiasporaPod>, S
         }
 
         @Override
-        public int compareTo(DiasporaPod otherPod) {
-            if (otherPod != null) {
-                List<DiasporaPodUrl> myPodUrls = getPodUrls();
-                List<DiasporaPodUrl> otherPodUrls = otherPod.getPodUrls();
-                if (!myPodUrls.isEmpty() && !otherPodUrls.isEmpty()) {
-                    return myPodUrls.get(0).getHost().compareTo(otherPodUrls.get(0).getHost());
-                }
+        public int compareTo(@NonNull DiasporaPod otherPod) {
+            List<DiasporaPodUrl> myPodUrls = getPodUrls();
+            List<DiasporaPodUrl> otherPodUrls = otherPod.getPodUrls();
+            if (!myPodUrls.isEmpty() && !otherPodUrls.isEmpty()) {
+                return myPodUrls.get(0).getHost().compareTo(otherPodUrls.get(0).getHost());
             }
             return name.compareTo(otherPod.getName());
         }
@@ -406,7 +406,7 @@ public class DiasporaPodList implements Iterable<DiasporaPodList.DiasporaPod>, S
             /**
              * Get the base url
              *
-             * @return
+             * @return baseUrl
              */
             public String getBaseUrl() {
                 return protocol + "://" + host + (isPortNeeded() ? port : "");

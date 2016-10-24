@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="titleText" format="string" />
+    <attr name="summaryText" format="string" />
+    <attr name="prefKey" format="string" />
+    <attr name="showValueInSummary" format="boolean" />
+
+    <declare-styleable name="ThemedCheckBoxPreference">
+        <attr name="titleText" />
+        <attr name="summaryText" />
+        <attr name="prefKey" />
+        <attr name="defaultBoolean" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ThemedStringEditTextPreference">
+        <attr name="titleText" />
+        <attr name="summaryText" />
+        <attr name="prefKey" />
+        <attr name="defaultString" format="string" />
+        <attr name="showValueInSummary" />
+    </declare-styleable>
+
+    <declare-styleable name="ThemedIntEditTextPreference">
+        <attr name="titleText" />
+        <attr name="summaryText" />
+        <attr name="prefKey" />
+        <attr name="defaultInt" format="string" />
+        <attr name="showValueInSummary" />
+    </declare-styleable>
+
+    <declare-styleable name="ThemedPreference">
+        <attr name="titleText" />
+        <attr name="summaryText" />
+        <attr name="prefKey" />
+        <attr name="image" format="reference" />
+    </declare-styleable>
+</resources>
