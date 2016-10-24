@@ -62,10 +62,7 @@ public class ThemedIntEditTextPreference extends LinearLayout implements ThemedP
             String titleText = "";
             String summaryText = "";
 
-            TypedArray a = context.obtainStyledAttributes(
-                    attrs,
-                    R.styleable.ThemedIntEditTextPreference,
-                    defStyle, 0);
+            TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ThemedIntEditTextPreference, defStyle, 0);
             try {
                 titleText = a.getString(R.styleable.ThemedIntEditTextPreference_titleText);
                 summaryText = a.getString(R.styleable.ThemedIntEditTextPreference_summaryText);

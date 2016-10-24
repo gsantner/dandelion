@@ -24,8 +24,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.github.dfa.diaspora_android.R;
@@ -40,7 +38,7 @@ import butterknife.ButterKnife;
  * Created by vanitas on 16.10.16.
  */
 
-public class SettingsFragment__NavigationSlider extends ThemedFragment {
+public class SettingsFragment__NavigationSlider extends ThemedSettingsFragment {
     public static final String TAG = "com.github.dfa.diaspora_android.SettingsFragment__NavigationSlider";
 
     @BindView(R.id.settings_activity__header_appearance__nav_slider)
@@ -72,5 +70,17 @@ public class SettingsFragment__NavigationSlider extends ThemedFragment {
     @Override
     public boolean onBackPressed() {
         return false;
+    }
+
+    @Override
+    protected void applySettingsToViews() {
+    }
+
+    @Override
+    protected void setOnClickListenersOnViews() {
+    }
+
+    @Override
+    public void onClick(View view) {
     }
 }

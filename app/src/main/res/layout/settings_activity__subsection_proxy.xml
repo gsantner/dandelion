@@ -59,38 +59,13 @@
                     app:prefKey="@string/pref_key__http_proxy_port"/>
 
                 <!-- Orbot Preset -->
-                <RelativeLayout
+                <com.github.dfa.diaspora_android.ui.ThemedPreference
                     android:id="@+id/settings_activity__proxy_orbot_preset"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="@dimen/activity_vertical_margin"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:clickable="true">
-                    <ImageView
-                        android:id="@+id/settings_activity__proxy_orbot_preset_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/tor_onion"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_toEndOf="@+id/settings_activity__proxy_orbot_preset_image">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:text="@string/pref_title__http_proxy_load_tor_preset"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/pref_desc__http_proxy_load_tor_preset"/>
-                    </LinearLayout>
-                </RelativeLayout>
+                    app:titleText="@string/pref_title__http_proxy_load_tor_preset"
+                    app:summaryText="@string/pref_desc__http_proxy_load_tor_preset"
+                    app:image="@drawable/tor_onion"/>
 
             </LinearLayout>
         </android.support.v7.widget.CardView>

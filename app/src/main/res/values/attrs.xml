@@ -32,5 +32,6 @@
         <attr name="titleText" />
         <attr name="summaryText" />
         <attr name="prefKey" />
+        <attr name="image" format="reference" />
     </declare-styleable>
 </resources>

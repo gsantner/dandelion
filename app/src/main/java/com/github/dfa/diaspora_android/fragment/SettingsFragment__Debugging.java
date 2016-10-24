@@ -24,8 +24,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.github.dfa.diaspora_android.R;
@@ -84,8 +82,6 @@ public class SettingsFragment__Debugging extends ThemedSettingsFragment {
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
 
-        }
     }
 }

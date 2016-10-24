@@ -62,10 +62,7 @@ public class ThemedStringEditTextPreference extends LinearLayout implements Them
             String titleText = "";
             String summaryText = "";
 
-            TypedArray a = context.obtainStyledAttributes(
-                    attrs,
-                    R.styleable.ThemedStringEditTextPreference,
-                    defStyle, 0);
+            TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ThemedStringEditTextPreference, defStyle, 0);
             try {
                 titleText = a.getString(R.styleable.ThemedStringEditTextPreference_titleText);
                 summaryText = a.getString(R.styleable.ThemedStringEditTextPreference_summaryText);

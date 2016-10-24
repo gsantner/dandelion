@@ -1,6 +1,7 @@
 package com.github.dfa.diaspora_android.ui;
 
 /**
+ * Basic methods a ThemedPreference class should implement
  * Created by vanitas on 23.10.16.
  */
 

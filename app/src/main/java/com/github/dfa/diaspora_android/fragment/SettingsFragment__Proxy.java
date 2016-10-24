@@ -19,23 +19,20 @@
 package com.github.dfa.diaspora_android.fragment;
 
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
-import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.ui.ThemedCheckBoxPreference;
 import com.github.dfa.diaspora_android.ui.ThemedIntEditTextPreference;
+import com.github.dfa.diaspora_android.ui.ThemedPreference;
 import com.github.dfa.diaspora_android.ui.ThemedStringEditTextPreference;
 import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.theming.ThemeHelper;
@@ -64,7 +61,7 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
     protected ThemedIntEditTextPreference editTextProxyPort;
 
     @BindView(R.id.settings_activity__proxy_orbot_preset)
-    protected RelativeLayout optionProxyOrbotPreset;
+    protected ThemedPreference optionProxyOrbotPreset;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -83,7 +80,6 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
     @Override
     protected void applySettingsToViews() {
         boolean enabled = getAppSettings().isProxyHttpEnabled();
-
         editTextProxyHost.setVisibility(enabled ? View.VISIBLE : View.GONE);
         editTextProxyHost.setEnabled(enabled);
         editTextProxyPort.setVisibility(enabled ? View.VISIBLE : View.GONE);
@@ -112,6 +108,7 @@ public class SettingsFragment__Proxy extends ThemedSettingsFragment {
                 AppLog.d(this, "Clicked: Proxy Preset");
                 editTextProxyHost.setValue("localhost");
                 editTextProxyPort.setValue(8118);
+                Toast.makeText(getContext(), R.string.toast__proxy_orbot_preset_set, Toast.LENGTH_SHORT).show();
                 break;
         }
     }

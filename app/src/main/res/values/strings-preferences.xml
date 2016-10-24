@@ -112,6 +112,7 @@
     <string name="pref_title__http_proxy_port">Port</string>
     <string name="HTTP" translatable="false">HTTP</string>
     <string name="SOCKS5" translatable="false">SOCKS5</string>
+    <string name="toast__proxy_orbot_preset_set">Orbot proxy settings applied</string>
 
 
     <!-- Chrome custom tabs -->

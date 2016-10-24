@@ -2,9 +2,11 @@ package com.github.dfa.diaspora_android.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.github.dfa.diaspora_android.R;
@@ -18,12 +20,14 @@ import butterknife.ButterKnife;
  * Created by vanitas on 23.10.16.
  */
 
-public class ThemedPreference extends LinearLayout implements ThemedPreferenceObject<Void> {
+public class ThemedPreference extends RelativeLayout implements ThemedPreferenceObject<Void> {
 
     @BindView(R.id.preference__themed_preference_title)
     protected TextView title;
     @BindView(R.id.preference__themed_preference_summary)
     protected TextView summary;
+    @BindView(R.id.preference__themed_preference_image)
+    protected ImageView image;
 
     protected String prefKey;
 
@@ -48,11 +52,13 @@ public class ThemedPreference extends LinearLayout implements ThemedPreferenceOb
         if (attrs != null) {
             String titleText = "";
             String summaryText = "";
+            Drawable imageDrawable = null;
             TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ThemedPreference, defStyle, 0);
             try {
                 titleText = a.getString(R.styleable.ThemedPreference_titleText);
                 summaryText = a.getString(R.styleable.ThemedPreference_summaryText);
                 prefKey = a.getString(R.styleable.ThemedPreference_prefKey);
+                imageDrawable = a.getDrawable(R.styleable.ThemedPreference_image);
             } catch (Exception e) {
                 AppLog.e(this, "There was an error loading attributes.");
             } finally {
@@ -60,6 +66,7 @@ public class ThemedPreference extends LinearLayout implements ThemedPreferenceOb
             }
             setTitleText(titleText);
             setSummaryText(summaryText);
+            setImageDrawable(imageDrawable);
         }
     }
 
@@ -85,6 +92,16 @@ public class ThemedPreference extends LinearLayout implements ThemedPreferenceOb
             summary.setVisibility(GONE);
         } else {
             summary.setVisibility(VISIBLE);
+        }
+    }
+
+    public void setImageDrawable(Drawable drawable) {
+        if(drawable != null) {
+            image.setImageDrawable(drawable);
+            image.setVisibility(VISIBLE);
+        } else {
+            image.setImageDrawable(null);
+            image.setVisibility(GONE);
         }
     }
 

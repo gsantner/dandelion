@@ -38,20 +38,20 @@ public class ThemedCheckBoxPreference extends RelativeLayout implements ThemedPr
 
     public ThemedCheckBoxPreference(Context context) {
         super(context);
-        init(context, null);
+        init(context, null, 0);
     }
 
     public ThemedCheckBoxPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init(context, attrs);
+        init(context, attrs, 0);
     }
 
     public ThemedCheckBoxPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        init(context, attrs);
+        init(context, attrs, defStyle);
     }
 
-    protected void init(Context context, AttributeSet attrs) {
+    protected void init(Context context, AttributeSet attrs, int defStyle) {
         appSettings = new AppSettings(context.getApplicationContext());
         View.inflate(context, R.layout.preference__themed_checkbox, this);
         ButterKnife.bind(this);
@@ -68,10 +68,7 @@ public class ThemedCheckBoxPreference extends RelativeLayout implements ThemedPr
             String titleText = "";
             String summaryText = "";
 
-            TypedArray a = context.getTheme().obtainStyledAttributes(
-                    attrs,
-                    R.styleable.ThemedCheckBoxPreference,
-                    0, 0);
+            TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.ThemedCheckBoxPreference, defStyle, 0);
             try {
                 titleText = a.getString(R.styleable.ThemedCheckBoxPreference_titleText);
                 summaryText = a.getString(R.styleable.ThemedCheckBoxPreference_summaryText);
