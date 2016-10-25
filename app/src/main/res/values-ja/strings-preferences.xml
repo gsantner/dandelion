@@ -60,4 +60,5 @@
   <string name="pref_desc__append_shared_via_app">シェアしたテキストに、このアプリへの参照 (\"&#8230;でシェア\") を追加します</string>
   <!-- More -->
   <!-- Recently added - Please move to right section-->
+  <!-- Sorry -->
 </resources>
