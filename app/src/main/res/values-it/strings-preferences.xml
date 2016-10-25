@@ -45,7 +45,6 @@
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Impostazioni personali</string>
   <string name="pref_desc__personal_settings">Apri le impostazioni del tuo account Diaspora</string>
-  <string name="pref_title__manage_contacts">Contatti</string>
   <string name="pref_desc__manage_contacts">Gestisci il tuo elenco di contatti</string>
   <string name="pref_title__manage_tags">Gestisci hashtag</string>
   <string name="pref_desc__manage_tags">Aggiungi ed elimina gli hashtag che stai seguendo</string>
