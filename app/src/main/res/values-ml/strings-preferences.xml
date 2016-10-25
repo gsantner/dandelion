@@ -28,7 +28,6 @@
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">സ്വകാര്യ സജ്ജീകരണങ്ങൾ</string>
-  <string name="pref_title__manage_contacts">ബന്ധങ്ങൾ</string>
   <string name="pref_desc__manage_contacts">ബന്ധങ്ങളുടെ ക്രമം നിയന്ത്രികൂ</string>
   <string name="pref_title__manage_tags">ഹാഷ്ടാഗുകളെ നിയന്ത്രിക്കൂ</string>
   <string name="pref_desc__manage_tags">താങ്കൾ പിന്തുടരുന്ന ഹാഷ്ടാഗുകളെ ചേർക്കുകയോ നീക്കുകയോ ചെയ്യൂ</string>
