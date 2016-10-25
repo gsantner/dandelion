@@ -28,7 +28,6 @@
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Личные настройки</string>
-  <string name="pref_title__manage_contacts">Контакты</string>
   <string name="pref_desc__manage_contacts">Управление списком контактов</string>
   <string name="pref_title__manage_tags">Управление хэштегами</string>
   <string name="pref_desc__manage_tags">Добавление и удаление хэштегов, на которые вы подписаны</string>
