@@ -28,7 +28,6 @@
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Configurações pessoais</string>
-  <string name="pref_title__manage_contacts">Contatos</string>
   <string name="pref_desc__manage_contacts">Gerenciar sua lista de contatos</string>
   <string name="pref_title__manage_tags">Gerenciar Hashtags</string>
   <string name="pref_desc__manage_tags">Adicionar ou excluir as hashtags que você está seguindo</string>
