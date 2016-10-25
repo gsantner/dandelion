@@ -27,7 +27,6 @@
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Persoonlijke instellingen</string>
-  <string name="pref_title__manage_contacts">Contacten</string>
   <string name="pref_desc__manage_contacts">Uw lijst met contactpersonen beheren</string>
   <string name="pref_title__manage_tags">Beheren van Hashtags</string>
   <string name="pref_desc__manage_tags">Toevoegen en verwijderen van de hashtags die u volgt</string>
