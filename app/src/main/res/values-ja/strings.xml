@@ -19,6 +19,7 @@
   <string name="mentions">メンション</string>
   <string name="public_">公開</string>
   <string name="search">検索</string>
+  <string name="contacts">連絡先</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">すべての通知</string>
   <string name="notifications__also_commented">コメントもしました</string>
