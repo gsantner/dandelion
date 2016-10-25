@@ -19,6 +19,7 @@
   <string name="mentions">Mentions</string>
   <string name="public_">Publique</string>
   <string name="search">Rechercher</string>
+  <string name="contacts">Contacts</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">Toutes les notifications</string>
   <string name="notifications__also_commented">Aussi commenté</string>
