@@ -17,22 +17,4 @@
   <string name="fragment_debug__pod_domain">ポッドドメイン: %1$s</string>
   <string name="fragment_debug__toast_log_copied">デバッグログをクリップボードにコピーしました</string>
   <string name="fragment_license__3rd_party_libs_title">使用したサードパーティ ライブラリー</string>
-  <!-- About (large amount of text) -->
-  <string name="fragment_about__about_content">
-DiasporaForAndroid は、ダイアスポラ ソーシャル ネットワークを閲覧するためのコンパニオン アプリです。ソーシャル体験に便利なツールバーや Tor のようなプロキシ サーバーのサポートのような追加機能があります。&lt;br&gt;&lt;br&gt;
-
-ダイアスポラは、投稿の書式にマークダウンを使用します。詳細は&lt;br&gt;
-https://wiki.diasporafoundation.org/Markdown_reference_guide &lt;br&gt; &lt;br&gt;
-
-DiasporaForAndroid は自由に無料で開発され、ダイアスポラ プロジェクトの考えをフォローしています。&lt;br&gt;
-Github でソースコードを見つけることができます: &lt;br&gt;
-https://github.com/Diaspora-for-Android/diaspora-android &lt;br&gt; &lt;br&gt;
-
-何か問題に直面したり、提案がある場合は、上記のリンクで私たちのバグトラッカーを使用できます。
-またダイアスポラにハッシュタグ #DFAQ で質問を投稿することもできます。&lt;br&gt; &lt;br&gt;
-このアプリがあなたの言語で利用可能できませんか? Crowdin.com で私たちのプロジェクトを確認して、翻訳を手伝ってください!&lt;br&gt;
-https://crowdin.com/project/diaspora-for-android &lt;br&gt; &lt;br&gt;
-
-また気軽に #DiasporaForAndroid について友達に教えてください!</string>
-  <!-- Lorem ipsum -->
 </resources>

@@ -17,22 +17,4 @@
   <string name="fragment_debug__pod_domain">Dominio pod: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Log di debug copiato negli appunti</string>
   <string name="fragment_license__3rd_party_libs_title">Librerie di terze parti usate</string>
-  <!-- About (large amount of text) -->
-  <string name="fragment_about__about_content">
-DiasporaForAndroid è la tua app per navigare sul social network Diaspora. Aggiunge funzioni, come un\'utile barra di navigazione e il supporto ai server proxy come la rete Tor, alla tua esperienza social. &lt;br&gt;&lt;br&gt;
-
-        Diaspora usa la sintassi Markdown per formattare i post. Puoi trovare maggiori informazioni su&lt;br&gt;
-        https://wiki.diasporafoundation.org/Markdown_reference_guide/it &lt;br&gt; &lt;br&gt;
-
-        DiasporaForAndroid è sviluppato liberamente e segue le idee del progetto Diaspora. &lt;br&gt;
-        Puoi trovare il codice sorgente su Github: &lt;br&gt;
-        https://github.com/Diaspora-for-Android/diaspora-android &lt;br&gt; &lt;br&gt;
-
-        Se trovi qualsiasi problema o hai dei suggerimenti puoi usare il nostro bug tracker al link sopraccitato.
-        Alternativamente puoi postare la tua domanda con l\'hashtag #DFAQ su Diaspora. &lt;br&gt; &lt;br&gt;
-        Quest\'app non è tradotta nella tua lingua? Visita il nostro progetto su Crowdin e aiuta la traduzione!&lt;br&gt;
-        https://crowdin.com/project/diaspora-for-android &lt;br&gt; &lt;br&gt;
-
-        Sentiti poi libero di parlare ai tuoi amici di #DiasporaForAndroid!</string>
-  <!-- Lorem ipsum -->
 </resources>
