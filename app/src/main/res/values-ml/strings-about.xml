@@ -9,7 +9,7 @@
   <string name="fragment_debug__section_pod">ഡയസ്പോറ പോഡ്</string>
   <string name="fragment_debug__app_version">പ്രയോഗത്തിന്റെ പതിപ്പ്:%1$s</string>
   <string name="fragment_debug__package_name">പാക്കേജിന്റെ പേര്:%1$s</string>
-  <string name="fragment_debug__pod_domain">പോഡിന്റെ അഡ്രസ്:%1$s</string>
+  <string name="fragment_debug__pod_profile_url">പോഡിന്റെ അഡ്രസ്:%1$s</string>
   <string name="fragment_license__3rd_party_libs_title">മൂന്നാം കക്ഷി ലൈബ്രറികൾ ഉപയോഗിച്ചിട്ടുണ്ട്</string>
   <!-- About (large amount of text) -->
   <!-- Lorem ipsum -->

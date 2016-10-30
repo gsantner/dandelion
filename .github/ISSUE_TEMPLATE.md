@@ -1,11 +1,12 @@
 #### General information
 
-* **Device:** eg Nexus 5
-* **Android Version:** eg Android 6.0.1
-* **Pod:** eg pod.geraspora.de
-* **Diaspora pod version:** eg 0.5.99.0-p9bd2337c  (can be found on the bottom)
-* **App source:** F-Droid, self build (latest HEAD)
-* **App version:** eg 0.1.5, or commit
+
+* **Device:**   <!-- eg Nexus 5 -->
+* **Android Version:**  <!--eg Android 6.0.1 -->
+* **App version:**  <!-- See in About -> Debug. eg 0.1.5, or commit -->
+* **App source:**  <!--F-Droid, self build (latest HEAD)  -- Can be left blank if not related -->
+* **Pod:** <!--eg pod.geraspora.de -- Can be left blank if not related -->
+* **Diaspora pod version:** <!--eg 0.5.99.0-p9bd2337c  (can be found on the bottom)  -- Can be left blank if not related -->
 
 
 <!--

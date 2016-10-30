@@ -8,7 +8,7 @@
   <string name="fragment_debug__section_app">Aplicação</string>
   <string name="fragment_debug__section_pod">Diaspora Pod</string>
   <string name="fragment_debug__app_version">Versão do App: %1$s</string>
-  <string name="fragment_debug__pod_domain">Vagem de domínio: %1$s</string>
+  <string name="fragment_debug__pod_profile_url">Vagem de domínio: %1$s</string>
   <!-- About (large amount of text) -->
   <!-- Lorem ipsum -->
 </resources>

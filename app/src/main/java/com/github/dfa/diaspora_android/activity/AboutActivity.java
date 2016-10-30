@@ -355,7 +355,10 @@ public class AboutActivity extends ThemedActivity
         @BindView(R.id.fragment_debug__device_name)
         TextView deviceName;
 
-        @BindView(R.id.fragment_debug__pod_domain)
+        @BindView(R.id.fragment_debug__account_profile_name)
+        TextView podName;
+
+        @BindView(R.id.fragment_debug__account_profile_domain)
         TextView podDomain;
 
         @BindView(R.id.fragment_debug__log_box)
@@ -397,9 +400,9 @@ public class AboutActivity extends ThemedActivity
 
                     osVersion.setText(getString(R.string.fragment_debug__android_version, Build.VERSION.RELEASE));
                     deviceName.setText(getString(R.string.fragment_debug__device_name, Build.MANUFACTURER + " " + Build.MODEL));
-                    podDomain.setText(getString(R.string.fragment_debug__pod_domain, urls.getPodUrl()));
                     if (app.getSettings().getPod() != null) {
-                        podDomain.setText(getString(R.string.fragment_debug__pod_domain, app.getSettings().getPod().getName()));
+                        podDomain.setText(getString(R.string.fragment_debug__pod_profile_url, app.getSettings().getPod().getPodUrl()));
+                        podName.setText(getString(R.string.fragment_debug__pod_profile_name, app.getSettings().getPod().getName()));
                     }
 
                 } catch (PackageManager.NameNotFoundException e) {

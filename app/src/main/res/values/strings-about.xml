@@ -20,7 +20,8 @@
     <string name="fragment_debug__android_version">Android Version: %1$s</string>
     <string name="fragment_debug__device_name">Device Name: %1$s</string>
     <string name="fragment_debug__app_codename">Codename: %1$s</string>
-    <string name="fragment_debug__pod_domain">Pod Domain: %1$s</string>
+    <string name="fragment_debug__pod_profile_name">Pod Profile Name: %1$s</string>
+    <string name="fragment_debug__pod_profile_url">Pod Domain: %1$s</string>
     <string name="fragment_debug__toast_log_copied">Debug log copied to clipboard</string>
     <string name="fragment_license__3rd_party_libs_title">Used 3rd Party Libraries</string>
 

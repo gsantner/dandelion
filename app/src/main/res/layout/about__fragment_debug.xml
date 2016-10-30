@@ -64,7 +64,12 @@
             android:text="@string/fragment_debug__section_pod" />
 
         <TextView
-            android:id="@+id/fragment_debug__pod_domain"
+            android:id="@+id/fragment_debug__account_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fragment_debug__account_profile_domain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
