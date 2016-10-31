@@ -14,7 +14,7 @@
   <string name="fragment_debug__package_name">Название пакета: %1$s</string>
   <string name="fragment_debug__android_version">Версия Android: %1$s</string>
   <string name="fragment_debug__device_name">Имя устройства: %1$s</string>
-  <string name="fragment_debug__app_codename">Код версии: %1$s</string>
+  <string name="fragment_debug__app_codename">Кодовое имя: %1$s</string>
   <string name="fragment_debug__pod_profile_name">Имя профиля пода: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Домен пода: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Журнал отладки скопирован в буфер обмена</string>
