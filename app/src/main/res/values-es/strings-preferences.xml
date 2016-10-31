@@ -35,8 +35,17 @@
   <string name="pref_title__load_images">Cargar imágenes</string>
   <string name="pref_desc__load_images">Desactivar la carga de de imágenes a datos móviles seguros</string>
   <!-- Proxy -->
+  <string name="pref_title__http_proxy_load_tor_preset">Cargar Tor predeterminado</string>
+  <string name="pref_desc__http_proxy_load_tor_preset">Cargar la configuración del proxy de Tor (Orbot) HTTP Proxy</string>
+  <string name="pref_title__sub_proxy">Proxy</string>
   <string name="pref_title__proxy_enabled">Activar Proxy</string>
+  <string name="pref_desc__http_proxy_enabled">Tráfico del proxy de Diaspora evadiendo el cortafuegos.\nPuede requerir reiniciar. Puede no funcionar en algunos teléfonos.</string>
+  <string name="pref_title__http_proxy_host">Host</string>
+  <string name="pref_title__http_proxy_port">Puerto</string>
+  <string name="toast__proxy_disabled__restart_required">La aplicación necesita reiniciar para deshabilitar el uso de proxy</string>
+  <string name="toast__proxy_orbot_preset_loaded">Cargado proxy Orbot predeterminado</string>
   <!-- Chrome custom tabs -->
+  <string name="pref_title__chrome_custom_tabs_enabled">Barras personalizadas Chrome</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Configuración personal</string>
   <string name="pref_desc__manage_contacts">Administrar tu lista de contactos</string>
