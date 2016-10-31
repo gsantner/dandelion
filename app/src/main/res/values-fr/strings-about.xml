@@ -14,7 +14,6 @@
   <string name="fragment_debug__package_name">Nom du paquet : %1$s</string>
   <string name="fragment_debug__android_version">Version Android : %1$s</string>
   <string name="fragment_debug__device_name">Nom de l\'appareil : %1$s</string>
-  <string name="fragment_debug__pod_domain">Adresse du pod : %1$s</string>
   <string name="fragment_debug__toast_log_copied">Journal de débogage copié dans le presse-papiers</string>
   <string name="fragment_license__3rd_party_libs_title">Bibliothèques tierces utilisées</string>
   <!-- About (large amount of text) -->
