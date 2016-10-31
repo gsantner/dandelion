@@ -28,6 +28,9 @@
   <!-- Font size -->
   <string name="pref_title__font_size">Размер шрифта</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
+  <string name="font_size_normal">Нормальный</string>
+  <string name="font_size_large">Крупный</string>
+  <string name="font_size_huge">Огромный</string>
   <!-- Load images -->
   <string name="pref_title__load_images">Загрузка изображений</string>
   <string name="pref_desc__load_images">Отключить загрузку изображений для экономии трафика</string>
@@ -39,6 +42,8 @@
   <string name="pref_desc__http_proxy_enabled">Проксировать трафик Диаспоры для обхода брандмауэров.\nМожет потребоваться перезапуск</string>
   <string name="pref_title__http_proxy_host">Хост</string>
   <string name="pref_title__http_proxy_port">Порт</string>
+  <string name="toast__proxy_disabled__restart_required">Приложению необходимо перезапуститься, чтобы отключить использование прокси</string>
+  <string name="toast__proxy_orbot_preset_loaded">Пресет прокси Orbot загружен</string>
   <!-- Chrome custom tabs -->
   <string name="pref_title__chrome_custom_tabs_enabled">Chrome Custom Tabs</string>
   <string name="pref_desc__chrome_custom_tabs_enabled">Открывать внешние ссылки с помощью Chrome Custom Tabs. Для этого должен быть установлен Chromium или Google Chrome. \nВАЖНОЕ ЗАМЕЧАНИЕ: Chrome Custom Tabs не использует настройки прокси-серверов!</string>
