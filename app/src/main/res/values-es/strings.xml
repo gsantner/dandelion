@@ -45,7 +45,7 @@
   <string name="nav_help_license">Sobre | Ayuda</string>
   <string name="nav_followed_tags">Etiquetas seguidas</string>
   <string name="nav_public_activities">Actividad pública</string>
-  <string name="share__share_link_as_text">Compartir link como texto</string>
+  <string name="share__share_link_as_text">Compartir enlace como texto</string>
   <string name="share__share_screenshot">Compartir captura de pantalla de la página web</string>
   <string name="share__take_screenshot">Tomar captura de pantalla de la página web</string>
   <string name="share__toast_saved_image_to_location">Guardar imagen en</string>
@@ -59,7 +59,7 @@
   <string name="action_share_dotdotdot">Compartir&#8230;</string>
   <string name="search_alert_tag">Por etiquetas</string>
   <string name="search_alert_people">Por personas</string>
-  <string name="search_alert_bypeople_validate_needsomedata">Por favor añade un nombre</string>
+  <string name="search_alert_bypeople_validate_needsomedata">Por favor, añade un nombre</string>
   <string name="context_menu_share_link">Compartir la dirección del enlace</string>
   <string name="context_menu_save_image">Guardar imagen</string>
   <string name="context_menu_share_image">Compartir imagen</string>
