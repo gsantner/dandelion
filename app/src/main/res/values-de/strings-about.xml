@@ -14,24 +14,23 @@
   <string name="fragment_debug__package_name">Paketname: %1$s</string>
   <string name="fragment_debug__android_version">Android Version: %1$s</string>
   <string name="fragment_debug__device_name">Gerätename: %1$s</string>
-  <string name="fragment_debug__pod_domain">Pod-Adresse: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Debug-Protokoll in Zwischenablage kopiert</string>
   <string name="fragment_license__3rd_party_libs_title">Verwendete Drittanbieter-Bibliotheken</string>
   <!-- About (large amount of text) -->
   <string name="fragment_about__about_content">
-        DiasporaForAndroid ist dein Begleiter auf deinen Streifzügen durch das soziale Netzwerk Diaspora. Er bietet dir zusätzliche Features wie nützliche Toolbars und Unterstützung für Proxyserver wie etwa das Tornetzwerk. &lt;br>&lt;br>
+        DiasporaForAndroid ist dein Begleiter auf deinen Streifzügen durch das soziale Netzwerk Diaspora. Er bietet dir zusätzliche Features wie nützliche Toolbars und Unterstützung für Proxyserver wie etwa das Tornetzwerk. &lt;br&gt;&lt;br&gt;
 
-        Diaspora benutzt Markdown-Formatierung für deine Beiträge. Weitere Informationen dazu findest du auf&lt;br>
-        https://wiki.diasporafoundation.org/Markdown_reference_guide &lt;br> &lt;br>
+        Diaspora benutzt Markdown-Formatierung für deine Beiträge. Weitere Informationen dazu findest du auf&lt;br&gt;
+        https://wiki.diasporafoundation.org/Markdown_reference_guide &lt;br&gt; &lt;br&gt;
 
-        DiasporaForAndroid wird frei wie in Freiheit entwickelt und folgt den Ideen des Diaspora Projektes. &lt;br>
-        Den Quellcode findest du auf Github: &lt;br>
-        https://github.com/Diaspora-for-Android/diaspora-android &lt;br> &lt;br>
+        DiasporaForAndroid wird frei wie in Freiheit entwickelt und folgt den Ideen des Diaspora Projektes. &lt;br&gt;
+        Den Quellcode findest du auf Github: &lt;br&gt;
+        https://github.com/Diaspora-for-Android/diaspora-android &lt;br&gt; &lt;br&gt;
 
         Wenn du auf Probleme stößt oder Vorschläge hast, nutze den Bugtracker (siehe Link oben).
-        Alternativ kannst du deine Frage auch mit dem Hashtag #DFAQ auf Diaspora posten.&lt;br> &lt;br>
-        Die App ist nicht in deiner Sprache verfügbar? Hilf mit und übersetze die App auf Crowdin.com!&lt;br>
-        https://crowdin.com/project/diaspora-for-android &lt;br> &lt;br>
+        Alternativ kannst du deine Frage auch mit dem Hashtag #DFAQ auf Diaspora posten.&lt;br&gt; &lt;br&gt;
+        Die App ist nicht in deiner Sprache verfügbar? Hilf mit und übersetze die App auf Crowdin.com!&lt;br&gt;
+        https://crowdin.com/project/diaspora-for-android &lt;br&gt; &lt;br&gt;
 
         Wenn du Lust hast erzähle doch deinen Freunden von #DiasporaForAndroid!</string>
   <!-- Lorem ipsum -->
