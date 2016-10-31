@@ -16,18 +16,35 @@
   <string name="pref_desc__sub_nav_slider">Управление видимостью записей в ящике навигации</string>
   <string name="pref_cat__visibility_nav_items">Видимость элемента</string>
   <!-- Themes -->
+  <string name="pref_title__themes">Тема и цвета</string>
+  <string name="pref_desc__themes">Выбор цветов используемых в приложении</string>
+  <string name="pref_title__primary_color">Основной цвет</string>
+  <string name="pref_desc__primary_color">Цвет панелей инструментов</string>
+  <string name="pref_title__accent_color">Акцентирующий цвет</string>
+  <string name="pref_desc__accent_color">Цвет индикатора загрузки</string>
   <!-- Notifications dropdown -->
+  <string name="pref_title__extended_notifications">Расширенные уведомления</string>
+  <string name="pref_desc__extended_notifications">Показывать выпадающее меню с категориями уведомлений при нажатии на иконку уведомлений</string>
   <!-- Font size -->
   <string name="pref_title__font_size">Размер шрифта</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
   <!-- Load images -->
   <string name="pref_title__load_images">Загрузка изображений</string>
-  <string name="pref_desc__load_images">Отключить загрузку изображений для экономии траффика</string>
+  <string name="pref_desc__load_images">Отключить загрузку изображений для экономии трафика</string>
   <!-- Proxy -->
+  <string name="pref_title__http_proxy_load_tor_preset">Загрузить шаблон конфигурации Tor</string>
+  <string name="pref_desc__http_proxy_load_tor_preset">Загрузить настройки прокси для Tor (Orbot)</string>
+  <string name="pref_title__sub_proxy">Прокси</string>
   <string name="pref_title__proxy_enabled">Использовать прокси</string>
+  <string name="pref_desc__http_proxy_enabled">Проксировать трафик Диаспоры для обхода брандмауэров.\nМожет потребоваться перезапуск</string>
+  <string name="pref_title__http_proxy_host">Хост</string>
+  <string name="pref_title__http_proxy_port">Порт</string>
   <!-- Chrome custom tabs -->
+  <string name="pref_title__chrome_custom_tabs_enabled">Chrome Custom Tabs</string>
+  <string name="pref_desc__chrome_custom_tabs_enabled">Открывать внешние ссылки с помощью Chrome Custom Tabs. Для этого должен быть установлен Chromium или Google Chrome. \nВАЖНОЕ ЗАМЕЧАНИЕ: Chrome Custom Tabs не использует настройки прокси-серверов!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Личные настройки</string>
+  <string name="pref_desc__personal_settings">Открыть настройки аккаунта Диаспоры</string>
   <string name="pref_desc__manage_contacts">Управление списком контактов</string>
   <string name="pref_title__manage_tags">Управление хэштегами</string>
   <string name="pref_desc__manage_tags">Добавление и удаление хэштегов, на которые вы подписаны</string>
