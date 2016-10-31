@@ -7,7 +7,7 @@
   <!-- PodProfile -->
   <!-- More -->
   <!-- Category Titles -->
-  <string name="pref_cat__visuals">Aspecto</string>
+  <string name="pref_cat__visuals">Apariencia</string>
   <string name="pref_cat__network">Red</string>
   <string name="pref_cat__pod_settings">Ajustes del Pod</string>
   <!-- Visuals -->
@@ -52,12 +52,12 @@
   <string name="pref_desc__personal_settings">Abrir la configuración de tu cuenta de Diaspora</string>
   <string name="pref_desc__manage_contacts">Administrar tu lista de contactos</string>
   <string name="pref_title__manage_tags">Administrar Etiquetas</string>
-  <string name="pref_desc__manage_tags">Agregar y eliminar la etiqueta que estas siguendo</string>
+  <string name="pref_desc__manage_tags">Agregar y eliminar las etiquetas que estas siguiendo</string>
   <string name="pref_title__change_account">Cambiar cuenta</string>
   <string name="pref_desc__change_account">Borrar datos de la sesión local y cambiar a otro pod/cuenta de Diaspora</string>
-  <string name="pref_warning__change_account">Esto borrará todas las cookies y datos de la sesión. ¡Realmente deseas cambiar tu cuenta?</string>
+  <string name="pref_warning__change_account">Esto borrará todas las cookies y datos de la sesión. ¿Realmente deseas cambiar tu cuenta?</string>
   <string name="pref_title__clear_cache">Limpiar caché</string>
-  <string name="pref_desc__clear_cache">Limpiar cache de WebView</string>
+  <string name="pref_desc__clear_cache">Borrar caché de vista Web</string>
   <string name="pref_desc__intellihide_toolbars">Ocultar barras de herramientas superior e inferior automáticamente mientras se desplaza</string>
   <string name="pref_title__intellihide_toolbars">Barras de herramientas Intellihide</string>
   <string name="pref_title__append_shared_via_app">Añadir compartido por aviso</string>
