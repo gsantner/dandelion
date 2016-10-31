@@ -16,10 +16,21 @@
   <string name="pref_desc__sub_nav_slider">Control de visibilidad de las entradas en el cajón de navegación</string>
   <string name="pref_cat__visibility_nav_items">Elemento visibilidad</string>
   <!-- Themes -->
+  <string name="pref_title__themes">Tema y Colores</string>
+  <string name="pref_desc__themes">Control de colores que se utilizan en la aplicación</string>
+  <string name="pref_title__primary_color">Color primario</string>
+  <string name="pref_desc__primary_color">Color de las barras de herramientas</string>
+  <string name="pref_title__accent_color">Color de Énfasis</string>
+  <string name="pref_desc__accent_color">Color de la barra de progreso</string>
   <!-- Notifications dropdown -->
+  <string name="pref_title__extended_notifications">Notificaciones extendidas</string>
+  <string name="pref_desc__extended_notifications">Extender la campana de notificaciones con un menú desplegable que muestra categorías de notificación</string>
   <!-- Font size -->
   <string name="pref_title__font_size">Tamaño de letra</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
+  <string name="font_size_normal">Tamaño normal</string>
+  <string name="font_size_large">Tamaño grande</string>
+  <string name="font_size_huge">Tamaño enorme</string>
   <!-- Load images -->
   <string name="pref_title__load_images">Cargar imágenes</string>
   <string name="pref_desc__load_images">Desactivar la carga de de imágenes a datos móviles seguros</string>
