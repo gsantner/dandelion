@@ -22,7 +22,7 @@
   <string name="contacts">Contactos</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">Todas las notificaciones</string>
-  <string name="notifications__also_commented">Tambien Comentado</string>
+  <string name="notifications__also_commented">También Comentado</string>
   <string name="notifications__comment_on_post">Comentar en Publicación</string>
   <string name="notifications__liked">Gustado</string>
   <string name="notifications__mentioned">Mencionado</string>
@@ -33,7 +33,7 @@
   <string name="filter_hint">Introduce el dominio del Pod</string>
   <string name="confirm_url">Confirma la url del Pod</string>
   <string name="search_for_pod">Buscar por Pod&#8230;</string>
-  <string name="podlist_source_note">Nota: La lista de Pods esta integrada por Pods seguros enlistados en https://podupti.me. Puedes ingresar en el campo de edición cualquier Pod no enlistado.</string>
+  <string name="podlist_source_note">Nota: La lista de Pods esta integrada por Pods seguros listados en https://podupti.me. Puedes ingresar en el campo de edición cualquier Pod no listado.</string>
   <string name="valid_pod">Por favor, introduce un nombre de dominio válido</string>
   <string name="podlist_error">Error: ¡No se pudo recuperar la lista de pods!</string>
   <string name="no_internet">Lo sentimos, debe estar conectado a internet para continuar</string>
