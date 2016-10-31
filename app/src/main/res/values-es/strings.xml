@@ -19,11 +19,20 @@
   <string name="mentions">Menciones</string>
   <string name="public_">Público</string>
   <string name="search">Búsqueda</string>
+  <string name="contacts">Contactos</string>
   <!-- Notifications dropdown menu -->
+  <string name="notifications__all">Todas las notificaciones</string>
+  <string name="notifications__also_commented">Tambien Comentado</string>
+  <string name="notifications__comment_on_post">Comentar en Publicación</string>
+  <string name="notifications__liked">Gustado</string>
+  <string name="notifications__mentioned">Mencionado</string>
+  <string name="notifications__reshared">Recompartido</string>
+  <string name="notifications__started_sharing">Empezado Compartir</string>
   <!-- Pod Activity -->
   <string name="title_activity_pods">Seleccionar Pod</string>
   <string name="filter_hint">Introduce el dominio del Pod</string>
   <string name="confirm_url">Confirma la url del Pod</string>
+  <string name="search_for_pod">Buscar por Pod&#8230;</string>
   <string name="podlist_source_note">Nota: La lista de Pods esta integrada por Pods seguros enlistados en https://podupti.me. Puedes ingresar en el campo de edición cualquier Pod no enlistado.</string>
   <string name="valid_pod">Por favor, introduce un nombre de dominio válido</string>
   <string name="podlist_error">Error: ¡No se pudo recuperar la lista de pods!</string>
@@ -32,6 +41,8 @@
   <string name="confirm_pod">¿Realmente desea usar\nhttps://%1$s\ncomo su Pod de Diaspora?</string>
   <string name="confirm_exit">¿Desea salir?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
+  <string name="nav_menu_more">Más</string>
+  <string name="nav_help_license">Sobre | Ayuda</string>
   <string name="nav_followed_tags">Etiquetas seguidas</string>
   <string name="nav_public_activities">Actividad pública</string>
   <string name="share__share_link_as_text">Compartir link como texto</string>

@@ -14,6 +14,9 @@
   <string name="fragment_debug__package_name">Paketname: %1$s</string>
   <string name="fragment_debug__android_version">Android Version: %1$s</string>
   <string name="fragment_debug__device_name">Gerätename: %1$s</string>
+  <string name="fragment_debug__app_codename">Codename: %1$s</string>
+  <string name="fragment_debug__pod_profile_name">Pod Profil Name: %1$s</string>
+  <string name="fragment_debug__pod_profile_url">Pod Domain: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Debug-Protokoll in Zwischenablage kopiert</string>
   <string name="fragment_license__3rd_party_libs_title">Verwendete Drittanbieter-Bibliotheken</string>
   <!-- About (large amount of text) -->
