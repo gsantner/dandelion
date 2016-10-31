@@ -14,7 +14,6 @@
   <string name="fragment_debug__package_name">パッケージ名: %1$s</string>
   <string name="fragment_debug__android_version">Android バージョン: %1$s</string>
   <string name="fragment_debug__device_name">デバイス名: %1$s</string>
-  <string name="fragment_debug__pod_domain">ポッドドメイン: %1$s</string>
   <string name="fragment_debug__toast_log_copied">デバッグログをクリップボードにコピーしました</string>
   <string name="fragment_license__3rd_party_libs_title">使用したサードパーティ ライブラリー</string>
   <!-- About (large amount of text) -->
