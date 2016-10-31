@@ -46,8 +46,10 @@
   <string name="toast__proxy_orbot_preset_loaded">Cargado proxy Orbot predeterminado</string>
   <!-- Chrome custom tabs -->
   <string name="pref_title__chrome_custom_tabs_enabled">Barras personalizadas Chrome</string>
+  <string name="pref_desc__chrome_custom_tabs_enabled">Abrir vínculos externos con barras personalizadas de Chrome. Chromium o Google Chrome deben estar instalados para utilizar esta característica. \nNOTA IMPORTANTE: ¡ las barras personalizadas de Chrome no usan servidores proxy configurados!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Configuración personal</string>
+  <string name="pref_desc__personal_settings">Abrir la configuración de tu cuenta de Diaspora</string>
   <string name="pref_desc__manage_contacts">Administrar tu lista de contactos</string>
   <string name="pref_title__manage_tags">Administrar Etiquetas</string>
   <string name="pref_desc__manage_tags">Agregar y eliminar la etiqueta que estas siguendo</string>
