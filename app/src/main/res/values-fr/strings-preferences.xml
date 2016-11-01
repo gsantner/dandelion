@@ -45,7 +45,6 @@
   <string name="toast__proxy_disabled__restart_required">L\'application a besoin d\'être redémarrée pour désactiver l\'usage du proxy</string>
   <string name="toast__proxy_orbot_preset_loaded">Préréglages proxy Orbot chargés</string>
   <!-- Chrome custom tabs -->
-  <string name="pref_title__chrome_custom_tabs_enabled">Onglets personnalisés de Chrome</string>
   <string name="pref_desc__chrome_custom_tabs_enabled">Ouvrir les liens externes avec les onglets personnalisés de Chrome. Chomium ou Google Chrome doit être installé pour cette fonctionnalité. \nNOTE IMPORTANTE : les onglets personnalisés de Chrome n\'utilisent pas les serveurs proxy configurés !</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Paramètres personnels</string>
