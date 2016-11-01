@@ -45,7 +45,7 @@
   <string name="toast__proxy_disabled__restart_required">La aplicación necesita reiniciar para deshabilitar el uso de proxy</string>
   <string name="toast__proxy_orbot_preset_loaded">Cargado proxy Orbot predeterminado</string>
   <!-- Chrome custom tabs -->
-  <string name="pref_title__chrome_custom_tabs_enabled">Barras personalizadas Chrome</string>
+  <string name="pref_title__chrome_custom_tabs_enabled">Chrome Custom Tabs</string>
   <string name="pref_desc__chrome_custom_tabs_enabled">Abrir vínculos externos con barras personalizadas de Chrome. Chromium o Google Chrome deben estar instalados para utilizar esta característica. \nNOTA IMPORTANTE: ¡ las barras personalizadas de Chrome no usan servidores proxy configurados!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Configuración personal</string>
