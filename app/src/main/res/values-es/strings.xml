@@ -76,7 +76,6 @@
   <string name="permission_granted_try_again">Permiso concedido. Por favor, inténtelo de nuevo.</string>
   <string name="podselection__custom_pod">Pod personalizado</string>
   <string name="pod_name">Nombre de Pod</string>
-  <string name="http_protocol">Protocolo</string>
   <string name="pod_address">Dirección de Pod</string>
   <string name="missing_value">Valor ausente</string>
 </resources>
