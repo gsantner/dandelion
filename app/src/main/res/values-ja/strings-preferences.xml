@@ -45,7 +45,6 @@
   <string name="toast__proxy_disabled__restart_required">プロキシの使用を無効にするには、アプリを再起動する必要があります</string>
   <string name="toast__proxy_orbot_preset_loaded">Orbot プロキシのプリセットを読み込みました</string>
   <!-- Chrome custom tabs -->
-  <string name="pref_title__chrome_custom_tabs_enabled">Chrome カスタムタブ</string>
   <string name="pref_desc__chrome_custom_tabs_enabled">Chrome のカスタム タブで外部リンクを開きます。この機能は Chromium または Google Chrome をインストールする必要があります。\n重要な注意: Chrome のカスタム タブは構成されているプロキシ サーバーを使用しません!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">個人用設定</string>
