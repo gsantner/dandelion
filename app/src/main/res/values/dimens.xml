@@ -16,4 +16,10 @@
 
     <dimen name="textsize_badge_count">11sp</dimen>
     <dimen name="color_picker_circle_size">30dp</dimen>
+
+    <dimen name="card_view__margin__start_end">16dp</dimen>
+    <dimen name="card_view__margin__top_bottom">8dp</dimen>
+    <dimen name="card_view__margin__top_bottom_double">16dp</dimen>
+    <dimen name="card_view__elevation">5dp</dimen>
+    <dimen name="card_view__corner_radius">5dp</dimen>
 </resources>

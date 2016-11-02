@@ -24,6 +24,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -48,6 +49,7 @@ import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.listener.IntellihideToolbarActivityListener;
 import com.github.dfa.diaspora_android.ui.HtmlTextView;
+import com.github.dfa.diaspora_android.ui.theme.CustomFragment;
 import com.github.dfa.diaspora_android.ui.theme.ThemeHelper;
 import com.github.dfa.diaspora_android.ui.theme.ThemedActivity;
 import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
@@ -170,6 +172,9 @@ public class AboutActivity extends ThemedActivity
         @BindView(R.id.fragment_about__app_codename)
         protected TextView txtAppCodename;
 
+        @BindView(R.id.fragment_about__spread_the_word)
+        protected HtmlTextView txtSpreadTheWord;
+
         public AboutFragment() {
         }
 
@@ -198,7 +203,14 @@ public class AboutActivity extends ThemedActivity
 
         @Override
         protected void applyColorToViews() {
-
+            ThemeHelper.getInstance(getAppSettings());
+            int colorBtn = ThemeHelper.getAccentColor();
+            ThemeHelper.updateButtonColor(btnIssueTracker, colorBtn);
+            ThemeHelper.updateButtonColor(btnMarkdown, colorBtn);
+            ThemeHelper.updateButtonColor(btnSourceCode, colorBtn);
+            ThemeHelper.updateButtonColor(btnSpreadTheWord, colorBtn);
+            ThemeHelper.updateButtonColor(btnTranslate, colorBtn);
+            ThemeHelper.updateTextViewLinkColor(txtSpreadTheWord);
         }
 
         @Override
@@ -337,6 +349,37 @@ public class AboutActivity extends ThemedActivity
         }
     }
 
+    public static class ChangelogFragment extends CustomFragment {
+        public static final String TAG = "com.github.dfa.diaspora_android.AboutActivity.ChangelogFragment";
+
+        @BindView(R.id.fragment_changelog__content)
+        protected TextView textChangelogContent;
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.about__fragment_changelog, container, false);
+            ButterKnife.bind(this, rootView);
+            final Context context = rootView.getContext();
+            textChangelogContent.setText(Helpers.readTextfileFromRawRessource(context, R.raw.changelog, "", ""));
+            return rootView;
+        }
+
+        @Override
+        public String getFragmentTag() {
+            return TAG;
+        }
+
+        @Override
+        public void onCreateBottomOptionsMenu(Menu menu, MenuInflater inflater) {
+            /* Nothing to do */
+        }
+
+        @Override
+        public boolean onBackPressed() {
+            return false;
+        }
+    }
+
     /**
      * Fragment that shows debug information like app version, pod version...
      */
@@ -421,8 +464,13 @@ public class AboutActivity extends ThemedActivity
 
         @Override
         public void update(Observable observable, Object o) {
-            if (logBox != null) {
-                logBox.setText(AppLog.Log.getLogBuffer());
+            if (isAdded() && logBox != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        logBox.setText(AppLog.Log.getLogBuffer());
+                    }
+                });
             }
         }
     }
@@ -444,6 +492,8 @@ public class AboutActivity extends ThemedActivity
                     return new AboutFragment();
                 case 1: //License
                     return new LicenseFragment();
+                case 2: //Changelog
+                    return new ChangelogFragment();
                 case 3: //Debug
                 default:
                     return new DebugFragment();
@@ -452,8 +502,8 @@ public class AboutActivity extends ThemedActivity
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 4 total pages.
+            return 4;
         }
 
         @Override
@@ -464,6 +514,8 @@ public class AboutActivity extends ThemedActivity
                 case 1:
                     return getString(R.string.about_activity__title_about_license);
                 case 2:
+                    return getString(R.string.fragment_changelog__changelog);
+                case 3:
                     return getString(R.string.about_activity__title_debug_info);
             }
             return null;

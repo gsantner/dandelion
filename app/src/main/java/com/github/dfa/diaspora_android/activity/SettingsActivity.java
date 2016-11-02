@@ -307,11 +307,13 @@ public class SettingsActivity extends ThemedActivity {
             shade.setColors(ColorPalette.getColors(context, current[0]));
             shade.setSelectedColor(current[1]);
             titleBackground.setBackgroundColor(shade.getColor());
+            title.setTextColor(ThemeHelper.getTextColorFromBackgroundColor(shade.getColor()));
             base.setOnColorChangedListener(new OnColorChangedListener() {
                 @Override
                 public void onColorChanged(int i) {
                     shade.setColors(ColorPalette.getColors(context, i));
                     titleBackground.setBackgroundColor(i);
+                    title.setTextColor(ThemeHelper.getTextColorFromBackgroundColor(i));
                     if (i == current[0]) {
                         shade.setSelectedColor(current[1]);
                         titleBackground.setBackgroundColor(shade.getColor());
@@ -324,6 +326,7 @@ public class SettingsActivity extends ThemedActivity {
                 @Override
                 public void onColorChanged(int i) {
                     titleBackground.setBackgroundColor(i);
+                    title.setTextColor(ThemeHelper.getTextColorFromBackgroundColor(i));
                 }
             });
 

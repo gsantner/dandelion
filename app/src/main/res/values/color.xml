@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/md_blue_650</color>
-    <color name="colorPrimaryDark">@color/md_blue_750</color>
-    <color name="colorAccent">@color/md_deep_orange_650</color>
+    <color name="color_primary">@color/md_blue_650</color>
+    <color name="color_primary_dark">@color/md_blue_750</color>
+    <color name="color_accent">@color/md_deep_orange_650</color>
 
     <!-- Colors from Palette -->
     <color name="primary">@color/md_blue_650</color>
@@ -17,7 +17,7 @@
 
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
-    <color name="actvitiy_white">#eeeeee</color>
+    <color name="activity_white">#eeeeee</color>
     <color name="transparent_black">#c4000000</color>
     <color name="alternate_row_color">@color/md_grey_200</color>
 

@@ -54,7 +54,7 @@ public class BadgeDrawable extends Drawable {
         badgeBackground.setAntiAlias(true);
         badgeBackground.setStyle(Paint.Style.FILL);
         badgeStroke = new Paint();
-        badgeStroke.setColor(ContextCompat.getColor(context.getApplicationContext(), R.color.colorPrimaryDark));
+        badgeStroke.setColor(ContextCompat.getColor(context.getApplicationContext(), R.color.color_primary_dark));
         badgeStroke.setAntiAlias(true);
         badgeStroke.setStyle(Paint.Style.FILL);
 

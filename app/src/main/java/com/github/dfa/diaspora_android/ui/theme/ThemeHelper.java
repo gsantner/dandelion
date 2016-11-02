@@ -29,6 +29,7 @@ import android.support.v4.widget.CompoundButtonCompat;
 import android.support.v7.widget.ActionMenuView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -84,8 +85,13 @@ public class ThemeHelper {
 
     public static void updateTabLayoutColor(TabLayout tabLayout) {
         if (tabLayout != null) {
-            tabLayout.setBackgroundColor(getInstance().appSettings.getPrimaryColor());
-            tabLayout.setSelectedTabIndicatorColor(getInstance().appSettings.getAccentColor());
+            tabLayout.setBackgroundColor(getPrimaryColor());
+            tabLayout.setSelectedTabIndicatorColor(getAccentColor());
+            int selectedColor = getTextColorFromBackgroundColor(getPrimaryColor());
+            int normalColor = selectedColor == Color.WHITE ?
+                    tabLayout.getContext().getResources().getColor(R.color.md_grey_300) :
+                    tabLayout.getContext().getResources().getColor(R.color.md_grey_700);
+            tabLayout.setTabTextColors(normalColor, selectedColor);
         }
     }
 
@@ -105,6 +111,7 @@ public class ThemeHelper {
     public static void updateToolbarColor(Toolbar toolbar) {
         if (toolbar != null) {
             toolbar.setBackgroundColor(getInstance().appSettings.getPrimaryColor());
+            toolbar.setTitleTextColor(getTextColorFromBackgroundColor(getInstance().appSettings.getPrimaryColor()));
         }
     }
 
@@ -150,7 +157,23 @@ public class ThemeHelper {
         }
     }
 
+    public static void updateButtonColor(Button button, int color) {
+        if(button != null) {
+            button.getBackground().setColorFilter(color, PorterDuff.Mode.MULTIPLY);
+            button.setTextColor(getTextColorFromBackgroundColor(color));
+        }
+    }
+
     public static int getNeutralGreyColor() {
         return ContextCompat.getColor(getInstance().appSettings.getApplicationContext(), R.color.md_grey_800);
+    }
+
+    public static int getTextColorFromBackgroundColor(int backgroundColor) {
+        int med = (Color.red(backgroundColor) + Color.green(backgroundColor) + Color.blue(backgroundColor)) / 3;
+        return med < 128 ? Color.WHITE : Color.BLACK;
+    }
+
+    public static boolean darkDrawables() {
+        return getTextColorFromBackgroundColor(getInstance().appSettings.getPrimaryColor()) == Color.BLACK;
     }
 }

@@ -116,8 +116,8 @@
     <string name="pref_desc__http_proxy_enabled">Proxy Diaspora\'s traffic to circumvent firewalls.\nMay require restart. This might not work on some phones.</string>
     <string name="pref_title__http_proxy_host">Host</string>
     <string name="pref_title__http_proxy_port">Port</string>
-    <string name="HTTP" translatable="false">HTTP</string>
-    <string name="SOCKS5" translatable="false">SOCKS5</string>
+    <string name="http" translatable="false">HTTP</string>
+    <string name="socks5" translatable="false">SOCKS5</string>
     <string name="toast__proxy_disabled__restart_required">App needs to restart to disable proxy usage</string>
     <string name="toast__proxy_orbot_preset_loaded">Orbot proxy preset loaded</string>
 
