@@ -1111,6 +1111,8 @@ public class MainActivity extends ThemedActivity
         ThemeHelper.updateActionMenuViewColor(toolbarBottom);
         navDrawerLayout.setBackgroundColor(appSettings.getPrimaryColor());
         navProfilePictureArea.setBackgroundColor(appSettings.getPrimaryColor());
+        navheaderTitle.setTextColor(ThemeHelper.getTextColorFromBackgroundColor(ThemeHelper.getPrimaryColor()));
+        navheaderDescription.setTextColor(ThemeHelper.getTextColorFromBackgroundColor(ThemeHelper.getPrimaryColor()));
     }
 
     @Override

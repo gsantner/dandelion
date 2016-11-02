@@ -59,37 +59,37 @@ public class AppLog {
      */
     public static void v(Object source, String _text) {
         if (isLoggingEnabled()) {
-            Log.v(getLogPrefix(source), _text);
+            Log.v(source != null? getLogPrefix(source) : "null", _text);
         }
     }
 
     public static void i(Object source, String _text) {
         if (isLoggingEnabled()) {
-            Log.i(getLogPrefix(source), _text);
+            Log.i(source != null? getLogPrefix(source) : "null", _text);
         }
     }
 
     public static void d(Object source, String _text) {
         if (isLoggingEnabled()) {
-            Log.d(getLogPrefix(source), _text);
+            Log.d(source != null? getLogPrefix(source) : "null", _text);
         }
     }
 
     public static void e(Object source, String _text) {
         if (isLoggingEnabled()) {
-            Log.e(getLogPrefix(source), _text);
+            Log.e(source != null? getLogPrefix(source) : "null", _text);
         }
     }
 
     public static void w(Object source, String _text) {
         if (isLoggingEnabled()) {
-            Log.w(getLogPrefix(source), _text);
+            Log.w(source != null? getLogPrefix(source) : "null", _text);
         }
     }
 
     public static void spam(Object source, String _text) {
         if (isLoggingEnabled() && isLoggingSpamEnabled()) {
-            Log.v(getLogPrefix(source), _text);
+            Log.v(source != null? getLogPrefix(source) : "null", _text);
         }
     }
 

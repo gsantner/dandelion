@@ -27,23 +27,28 @@
 
 
     <!-- About (large amount of text) -->
-    <string name="fragment_about__about_content">
-        DiasporaForAndroid is your companion app for browsing the Diaspora social network. It adds features like useful toolbars and support for proxy servers like the Tor Network to your social experience. &lt;br>&lt;br>
+    <string name="fragment_about__about_the_app">
+        DiasporaForAndroid is your companion app for browsing the Diaspora social network. It adds features like useful toolbars and support for proxy servers like the Tor Network to your social experience.</string>
+    <string name="fragment_about__about_markdown">Diaspora uses Markdown to format posts.</string>
+    <string name="fragment_about__learn_more">Learn more!</string>
+    <string name="fragment_about__about_markdown_link" translatable="false">https://wiki.diasporafoundation.org/Markdown_reference_guide></string>
+    <string name="fragment_about__contribute">Contribute</string>
+    <string name="fragment_about__about_development">DiasporaForAndroid is developed free as in freedom and follows the ideas of the Diaspora project. If you want to contribute, go ahead! We greatly appreciate any kind of help!</string>
+    <string name="fragment_about__about_source_at_github">Get the source code!</string>
+    <string name="fragment_about__github_repo_link" translatable="false">https://github.com/Diaspora-for-Android/diaspora-android</string>
+    <string name="fragment_about__about_issues">DiasporaForAndroid is still in development, so if you have suggestions or any kind of feedback, please let us know! (You can use our bug tracker)</string>
+    <string name="fragment_about__issue_tracker">To the bug tracker!</string>
+    <string name="fragment_about__github_issue_link">https://github.com/Diaspora-for-Android/diaspora-android/issues</string>
+    <string name="fragment_about__missing_translations">This app is not available in your language? Why don\'t you help us by translating it?</string>
+    <string name="fragment_about__translations">Let me translate!</string>
+    <string name="fragment_about__translations_link" translatable="false">https://crowdin.com/project/diaspora-for-android/invite</string>
+    <string name="fragment_about__tell_your_friends">Also feel free to tell your friends about #DiasporaForAndroid!</string>
+    <string name="fragment_about__spread_the_word">Spread the word!</string>
+    <string name="fragment_about__share_app_text">Hey! Check out #DiasporaForAndroid! %1$s</string>
+    <string name="fragment_about__fdroid_link" translatable="false">https://f-droid.org/app/com.github.dfa.diaspora_android</string>
 
-        Diaspora uses Markdown to format posts. You can find more information at&lt;br>
-        https://diasporafoundation.org/formatting &lt;br> &lt;br>
-
-        DiasporaForAndroid is developed free as in freedom and follows the ideas of the Diaspora project. &lt;br>
-        You can find the source code on Github: &lt;br>
-        https://github.com/Diaspora-for-Android/diaspora-android &lt;br> &lt;br>
-
-        If you face any problems or if you have suggestions, you can use our bug tracker at the link above.
-        Alternatively you can post your question with the hashtag #DFAQ on Diaspora. &lt;br> &lt;br>
-        This app is not available in your language? Check out our project on Crowdin.com and help to translate it!&lt;br>
-        https://crowdin.com/project/diaspora-for-android &lt;br> &lt;br>
-
-        Also feel free to tell your friends about #DiasporaForAndroid!</string>
-
+    <!-- Changelog -->
+    <string name="fragment_changelog__changelog">Changelog</string>
     <!-- Lorem ipsum -->
     <string name="lorem_ipsum" translatable="false">Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?</string>
 </resources>

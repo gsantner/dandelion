@@ -2,7 +2,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
         android:key="@string/pref_key__title__proxy"
-        android:title="@string/HTTP">
+        android:title="@string/http">
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="false"
             android:key="@string/pref_key__http_proxy_enabled"

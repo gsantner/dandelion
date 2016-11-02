@@ -1,10 +1,11 @@
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
     tools:context="com.github.dfa.diaspora_android.activity.AboutActivity$AboutFragment">
 
     <LinearLayout
@@ -12,34 +13,140 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!--Vertical padding-->
-        <android.support.v4.widget.Space
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/activity_vertical_margin" />
-
-        <TextView
-            android:id="@+id/fragment_about__app_name"
-            style="@android:style/TextAppearance.DeviceDefault.Large"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/diaspora_for_android"
-            android:textAlignment="center" />
+            android:layout_marginTop="@dimen/card_view__margin__top_bottom_double"
+            android:layout_marginBottom="@dimen/card_view__margin__top_bottom"
+            android:layout_marginStart="@dimen/card_view__margin__start_end"
+            android:layout_marginEnd="@dimen/card_view__margin__start_end"
+            card_view:cardElevation="@dimen/card_view__elevation"
+            card_view:cardCornerRadius="@dimen/card_view__corner_radius">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/activity_horizontal_margin_half">
 
-        <TextView
-            android:id="@+id/fragment_about__app_version"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/fragment_about__app_name"
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diaspora_for_android"/>
 
-        <android.support.v4.widget.Space
-            android:layout_width="match_parent"
-            android:layout_height="16dp" />
+                <TextView
+                    android:id="@+id/fragment_about__app_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_debug__app_version"/>
 
-        <com.github.dfa.diaspora_android.ui.HtmlTextView
-            android:id="@+id/fragment_about__about_text"
-            style="@android:style/TextAppearance.DeviceDefault.Small"
+                <TextView
+                    android:id="@+id/fragment_about__app_codename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_debug__app_codename"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/fragment_about__about_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_about__about_the_app"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_about__about_markdown"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <Button
+                    android:id="@+id/fragment_about__markdown_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:text="@string/fragment_about__learn_more"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:linksClickable="true"
-            android:text="@string/fragment_about__about_content" />
+            android:layout_marginTop="@dimen/card_view__margin__top_bottom"
+            android:layout_marginBottom="@dimen/card_view__margin__top_bottom_double"
+            android:layout_marginStart="@dimen/card_view__margin__start_end"
+            android:layout_marginEnd="@dimen/card_view__margin__start_end"
+            card_view:cardElevation="@dimen/card_view__elevation"
+            card_view:cardCornerRadius="@dimen/card_view__corner_radius">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/activity_horizontal_margin_half">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:text="@string/fragment_about__contribute"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:text="@string/fragment_about__about_development"/>
+
+                <Button
+                    android:id="@+id/fragment_about__source_code_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/fragment_about__about_source_at_github"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:text="@string/fragment_about__about_issues"/>
+                <Button
+                    android:id="@+id/fragment_about__issue_tracker_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/fragment_about__issue_tracker"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:text="@string/fragment_about__missing_translations"/>
+                <Button
+                    android:id="@+id/fragment_about__translate_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/fragment_about__translations"
+                    android:layout_marginBottom="8dp"/>
+                <com.github.dfa.diaspora_android.ui.HtmlTextView
+                    android:id="@+id/fragment_about__spread_the_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:text="@string/fragment_about__tell_your_friends"
+                    android:linksClickable="true"/>
+                <Button
+                    android:id="@+id/fragment_about__spread_the_word_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/fragment_about__spread_the_word"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

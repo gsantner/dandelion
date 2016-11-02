@@ -39,7 +39,7 @@
             android:id="@+id/main__bottombar"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/colorPrimary"
+            android:background="@color/color_primary"
             android:theme="@style/BottomToolbarMenuOverflowStyle"
             app:layout_scrollFlags="scroll|enterAlways|snap"
             app:popupTheme="@style/Theme.AppCompat.NoActionBar" />
