@@ -11,6 +11,7 @@ android {
         targetSdkVersion 24
         versionCode 8
         versionName "0.1.6-next"
+        setProperty("archivesBaseName", "diasporaAndroid__${versionName}__")
 
         vectorDrawables.useSupportLibrary=true
     }
@@ -23,13 +24,6 @@ android {
 
     lintOptions {
         disable 'MissingTranslation'
-    }
-
-    applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            output.outputFile = new File(
-                    output.outputFile.parent, "diasporaAndroid__${variant.versionName}__.apk")
-        }
     }
 }
 

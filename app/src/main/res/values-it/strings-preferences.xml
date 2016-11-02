@@ -40,7 +40,6 @@
   <string name="pref_title__http_proxy_host">Host</string>
   <string name="pref_title__http_proxy_port">Porta</string>
   <!-- Chrome custom tabs -->
-  <string name="pref_title__chrome_custom_tabs_enabled">Schede personalizzate di Chrome</string>
   <string name="pref_desc__chrome_custom_tabs_enabled">Apri collegamenti esterni con le schede personalizzate di Chrome. Chromium o Google Chrome devono essere installati per questa funzione. \nNOTA IMPORTANTE: le schede personalizzate di Chrome non usano i server proxy configurabili!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Impostazioni personali</string>

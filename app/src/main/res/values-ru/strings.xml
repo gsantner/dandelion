@@ -19,11 +19,20 @@
   <string name="mentions">Упоминания</string>
   <string name="public_">Публичные</string>
   <string name="search">Поиск</string>
+  <string name="contacts">Контакты</string>
   <!-- Notifications dropdown menu -->
+  <string name="notifications__all">Все уведомления</string>
+  <string name="notifications__also_commented">Также прокомментировали</string>
+  <string name="notifications__comment_on_post">Комментарий к записи</string>
+  <string name="notifications__liked">Понравилось</string>
+  <string name="notifications__mentioned">Упомянули</string>
+  <string name="notifications__reshared">Поделились</string>
+  <string name="notifications__started_sharing">Добавили вас</string>
   <!-- Pod Activity -->
   <string name="title_activity_pods">Выберите под</string>
   <string name="filter_hint">Введите адрес пода</string>
   <string name="confirm_url">Подтвердите URL пода</string>
+  <string name="search_for_pod">Поиска пода&#8230;</string>
   <string name="podlist_source_note">Примечание: список подов формируется на основании списка безопасных подов с https://podupti.me. Вы можете ввести в поле для ввода любой под не из списка.</string>
   <string name="valid_pod">Пожалуйста, введите корректное имя домена</string>
   <string name="podlist_error">Ошибка: не удалось получить список подов!</string>
@@ -32,6 +41,8 @@
   <string name="confirm_pod">Вы действительно хотите использовать\nhttps://%1$s\nв качестве вашего пода в Диаспоре?</string>
   <string name="confirm_exit">Вы действительно хотите выйти?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
+  <string name="nav_menu_more">Дополнительно</string>
+  <string name="nav_help_license">Информация | Помощь</string>
   <string name="nav_followed_tags">Отслеживаемые хэштеги</string>
   <string name="nav_public_activities">Публичная активность</string>
   <string name="share__share_link_as_text">Разместить ссылку как текст</string>
@@ -63,4 +74,9 @@
   <string name="permissions_image">Необходимо предоставить «Разрешение на доступ к хранилищу» для сохранения изображений. После этого вы должны полностью закрыть приложение или перезагрузите телефон. Если вы не разрешаете доступ к хранилищу, но хотите сохранять изображения позже, можно предоставить разрешение позднее. Затем откройте: Системные настройки  - приложения - Диаспора. В разделе разрешения можно предоставить «разрешение на запись в хранилище».</string>
   <string name="permission_denied">В разрешении отказано.</string>
   <string name="permission_granted_try_again">Разрешение получено. Пожалуйста, попробуйте еще раз.</string>
+  <string name="podselection__custom_pod">Произвольный под</string>
+  <string name="pod_name">Название пода</string>
+  <string name="http_protocol">Протокол</string>
+  <string name="pod_address">Адрес пода</string>
+  <string name="missing_value">Значение отсутствует</string>
 </resources>

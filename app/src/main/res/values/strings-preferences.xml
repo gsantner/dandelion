@@ -123,7 +123,7 @@
 
 
     <!-- Chrome custom tabs -->
-    <string name="pref_title__chrome_custom_tabs_enabled">Chrome Custom Tabs</string>
+    <string name="pref_title__chrome_custom_tabs_enabled" translatable="false">Chrome Custom Tabs</string>
     <string name="pref_desc__chrome_custom_tabs_enabled">Open external links with Chrome Custom Tabs. Chromium or Google Chrome needs to be installed in order to use this feature. \nIMPORTANT NOTE: Chrome Custom Tabs do not use configured proxy servers!</string>
 
     <!-- Diaspora Settings -->

@@ -1273,7 +1273,14 @@
       "name": "userzap.de",
       "mainLangs": ["de"],
       "id": 12816
+    },
+    {
+      "score": 0,
+      "podUrls": [{"host": "share.naturalnews.com"}],
+      "name": "share.naturalnews.com",
+      "mainLangs": ["en"],
+      "id": 12817
     }
   ],
-  "timestamp": 1477614583946
+  "timestamp": 1478036915038
 }

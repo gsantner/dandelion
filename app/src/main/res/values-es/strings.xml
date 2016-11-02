@@ -19,12 +19,21 @@
   <string name="mentions">Menciones</string>
   <string name="public_">Público</string>
   <string name="search">Búsqueda</string>
+  <string name="contacts">Contactos</string>
   <!-- Notifications dropdown menu -->
+  <string name="notifications__all">Todas las notificaciones</string>
+  <string name="notifications__also_commented">También Comentado</string>
+  <string name="notifications__comment_on_post">Comentar en Publicación</string>
+  <string name="notifications__liked">Gustado</string>
+  <string name="notifications__mentioned">Mencionado</string>
+  <string name="notifications__reshared">Recompartido</string>
+  <string name="notifications__started_sharing">Empezado Compartir</string>
   <!-- Pod Activity -->
   <string name="title_activity_pods">Seleccionar Pod</string>
   <string name="filter_hint">Introduce el dominio del Pod</string>
   <string name="confirm_url">Confirma la url del Pod</string>
-  <string name="podlist_source_note">Nota: La lista de Pods esta integrada por Pods seguros enlistados en https://podupti.me. Puedes ingresar en el campo de edición cualquier Pod no enlistado.</string>
+  <string name="search_for_pod">Buscar por Pod&#8230;</string>
+  <string name="podlist_source_note">Nota: La lista de Pods esta integrada por Pods seguros listados en https://podupti.me. Puedes ingresar en el campo de edición cualquier Pod no listado.</string>
   <string name="valid_pod">Por favor, introduce un nombre de dominio válido</string>
   <string name="podlist_error">Error: ¡No se pudo recuperar la lista de pods!</string>
   <string name="no_internet">Lo sentimos, debe estar conectado a internet para continuar</string>
@@ -32,9 +41,11 @@
   <string name="confirm_pod">¿Realmente desea usar\nhttps://%1$s\ncomo su Pod de Diaspora?</string>
   <string name="confirm_exit">¿Desea salir?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
+  <string name="nav_menu_more">Más</string>
+  <string name="nav_help_license">Sobre | Ayuda</string>
   <string name="nav_followed_tags">Etiquetas seguidas</string>
   <string name="nav_public_activities">Actividad pública</string>
-  <string name="share__share_link_as_text">Compartir link como texto</string>
+  <string name="share__share_link_as_text">Compartir enlace como texto</string>
   <string name="share__share_screenshot">Compartir captura de pantalla de la página web</string>
   <string name="share__take_screenshot">Tomar captura de pantalla de la página web</string>
   <string name="share__toast_saved_image_to_location">Guardar imagen en</string>
@@ -48,7 +59,7 @@
   <string name="action_share_dotdotdot">Compartir&#8230;</string>
   <string name="search_alert_tag">Por etiquetas</string>
   <string name="search_alert_people">Por personas</string>
-  <string name="search_alert_bypeople_validate_needsomedata">Por favor añade un nombre</string>
+  <string name="search_alert_bypeople_validate_needsomedata">Por favor, añade un nombre</string>
   <string name="context_menu_share_link">Compartir la dirección del enlace</string>
   <string name="context_menu_save_image">Guardar imagen</string>
   <string name="context_menu_share_image">Compartir imagen</string>
@@ -60,6 +71,12 @@
   <string name="all_tags">Todas las etiquetas</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">Debe conceder \"Permiso de Almacenamiento de Información\" para guardar capturas de pantalla. Después debe cerrar completamente la aplicación o reiniciar el teléfono. Si usted no permite el acceso al almacenamiento pero desea utilizar la función de captura de pantalla en un momento posterior, puede conceder el permiso más adelante. Por favor vaya a: ajustes del sistema - aplicaciones - Diaspora. En la sección de permisos puede conceder el \"permiso de almacenamiento de escritura\".</string>
+  <string name="permissions_image">Debe conceder \"Permiso de acceso al almacenamiento\" para guardar imágenes. Después, debe cerrar completamente la aplicación o reiniciar el aparato. Si usted no permite el almacenamiento  pero quiere guardar imágenes en otro momento, puede conceder el permiso más tarde.  Por favor abra: ajustes del sistema -aplicaciones- Diaspora. En la sección de permisos puede conceder el \"permiso de almacenamiento de escritura\".</string>
   <string name="permission_denied">Permiso denegado.</string>
   <string name="permission_granted_try_again">Permiso concedido. Por favor, inténtelo de nuevo.</string>
+  <string name="podselection__custom_pod">Pod personalizado</string>
+  <string name="pod_name">Nombre de Pod</string>
+  <string name="http_protocol">Protocolo</string>
+  <string name="pod_address">Dirección de Pod</string>
+  <string name="missing_value">Valor ausente</string>
 </resources>

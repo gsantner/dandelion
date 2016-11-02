@@ -43,7 +43,7 @@
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">Mehr</string>
   <string name="nav_help_license">Über | Hilfe</string>
-  <string name="nav_followed_tags">Verfolgte Tags</string>
+  <string name="nav_followed_tags">Tags</string>
   <string name="nav_public_activities">Öffentliche Aktivitäten</string>
   <string name="share__share_link_as_text">Link als Text teilen</string>
   <string name="share__share_screenshot">Bildschirmfoto teilen</string>

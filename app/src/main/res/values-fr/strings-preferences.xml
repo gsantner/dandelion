@@ -28,6 +28,9 @@
   <!-- Font size -->
   <string name="pref_title__font_size">Taille de la police</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
+  <string name="font_size_normal">Normal</string>
+  <string name="font_size_large">Large</string>
+  <string name="font_size_huge">Très grand</string>
   <!-- Load images -->
   <string name="pref_title__load_images">Charger les images</string>
   <string name="pref_desc__load_images">Désactiver le chargements des images pour préserver la data mobile</string>
@@ -39,8 +42,9 @@
   <string name="pref_desc__http_proxy_enabled">Proxy pour diaspora pour contourner les pare-feux.\nPeut nécessiter un redémarrage</string>
   <string name="pref_title__http_proxy_host">Hôte</string>
   <string name="pref_title__http_proxy_port">Port</string>
+  <string name="toast__proxy_disabled__restart_required">L\'application a besoin d\'être redémarrée pour désactiver l\'usage du proxy</string>
+  <string name="toast__proxy_orbot_preset_loaded">Préréglages proxy Orbot chargés</string>
   <!-- Chrome custom tabs -->
-  <string name="pref_title__chrome_custom_tabs_enabled">Onglets personnalisés de Chrome</string>
   <string name="pref_desc__chrome_custom_tabs_enabled">Ouvrir les liens externes avec les onglets personnalisés de Chrome. Chomium ou Google Chrome doit être installé pour cette fonctionnalité. \nNOTE IMPORTANTE : les onglets personnalisés de Chrome n\'utilisent pas les serveurs proxy configurés !</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Paramètres personnels</string>

@@ -28,6 +28,9 @@
   <!-- Font size -->
   <string name="pref_title__font_size">フォントサイズ</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
+  <string name="font_size_normal">標準</string>
+  <string name="font_size_large">大</string>
+  <string name="font_size_huge">巨大</string>
   <!-- Load images -->
   <string name="pref_title__load_images">画像の読み込み</string>
   <string name="pref_desc__load_images">安全なモバイルデータのため、画像の読み込みを無効にします</string>
@@ -39,8 +42,9 @@
   <string name="pref_desc__http_proxy_enabled">Diaspora の通信をプロキシして、ファイアウォールに回避します。\n再起動が必要になることがあります</string>
   <string name="pref_title__http_proxy_host">ホスト</string>
   <string name="pref_title__http_proxy_port">ポート</string>
+  <string name="toast__proxy_disabled__restart_required">プロキシの使用を無効にするには、アプリを再起動する必要があります</string>
+  <string name="toast__proxy_orbot_preset_loaded">Orbot プロキシのプリセットを読み込みました</string>
   <!-- Chrome custom tabs -->
-  <string name="pref_title__chrome_custom_tabs_enabled">Chrome カスタムタブ</string>
   <string name="pref_desc__chrome_custom_tabs_enabled">Chrome のカスタム タブで外部リンクを開きます。この機能は Chromium または Google Chrome をインストールする必要があります。\n重要な注意: Chrome のカスタム タブは構成されているプロキシ サーバーを使用しません!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">個人用設定</string>

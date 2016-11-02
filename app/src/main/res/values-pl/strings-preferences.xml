@@ -12,25 +12,55 @@
   <string name="pref_cat__pod_settings">Ustawienia poda</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
+  <string name="pref_title__sub_nav_slider">Pasek nawigacji</string>
+  <string name="pref_desc__sub_nav_slider">Wybierz elementy widoczne w pasku nawigacji</string>
+  <string name="pref_cat__visibility_nav_items">Widoczność elementu</string>
   <!-- Themes -->
+  <string name="pref_title__themes">Motywy i kolory</string>
+  <string name="pref_desc__themes">Ustaw których kolorów ma używać aplikacja</string>
+  <string name="pref_title__primary_color">Kolor podstawowy</string>
+  <string name="pref_desc__primary_color">Kolor pasków narzędzi</string>
+  <string name="pref_title__accent_color">Kolor dodatkowy</string>
+  <string name="pref_desc__accent_color">Kolor paska postępu</string>
   <!-- Notifications dropdown -->
+  <string name="pref_title__extended_notifications">Rozszerzone powiadomienia</string>
+  <string name="pref_desc__extended_notifications">Dodaj do ikony powiadomień menu wyboru kategorii powiadomień</string>
   <!-- Font size -->
   <string name="pref_title__font_size">Rozmiar czcionki</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
+  <string name="font_size_normal">Normalny</string>
+  <string name="font_size_large">Duży</string>
+  <string name="font_size_huge">Bardzo duży</string>
   <!-- Load images -->
-  <string name="pref_title__load_images">Załaduj obrazy</string>
+  <string name="pref_title__load_images">Wczytuj obrazy</string>
+  <string name="pref_desc__load_images">Wyłącz wczytywanie obrazków by oszczędzać transfer</string>
   <!-- Proxy -->
+  <string name="pref_title__http_proxy_load_tor_preset">Wczytaj domyślną konfigurację Tora</string>
+  <string name="pref_desc__http_proxy_load_tor_preset">Wczytaj ustawienia proxy HTTP Tora (Orbot)</string>
+  <string name="pref_title__sub_proxy">Serwer proxy</string>
   <string name="pref_title__proxy_enabled">Włącz serwer Proxy</string>
+  <string name="pref_desc__http_proxy_enabled">Przesyłaj ruch Diaspory przez proxy by ominąć zapory sieciowe.\nMoże wymagać restartu. Może nie działać na niektórych urządzeniach.</string>
+  <string name="pref_title__http_proxy_host">Host</string>
+  <string name="pref_title__http_proxy_port">Port</string>
+  <string name="toast__proxy_disabled__restart_required">Aplikacja musi zostać zrestartowana by wyłączyć proxy</string>
+  <string name="toast__proxy_orbot_preset_loaded">Domyślna konfiguracja Orbota została wczytana</string>
   <!-- Chrome custom tabs -->
+  <string name="pref_desc__chrome_custom_tabs_enabled">Otwieraj odnośniki zewnętrzne za pomocą Chrome Custom Tabs. Musisz posiadać zainstalowane Chrome lub Chromium. \nWAŻNA UWAGA: Chrome Custom Tabs nie używa serwerów proxy ustawionych w tej aplikacji!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Ustawienia osobiste</string>
+  <string name="pref_desc__personal_settings">Otwórz ustawienia Twojego konta na Diasporze</string>
   <string name="pref_desc__manage_contacts">Zarządzanie listą kontaktów</string>
-  <string name="pref_title__manage_tags">Zarządzanie znacznikami</string>
+  <string name="pref_title__manage_tags">Zarządzanie tagami</string>
+  <string name="pref_desc__manage_tags">Dodaj i usuń tagi z listy śledzonych</string>
   <string name="pref_title__change_account">Zmień konto</string>
   <string name="pref_desc__change_account">Skasuj dane sesji lokalnej i przełącz się do innego poda diaspory/konta</string>
+  <string name="pref_warning__change_account">Operacja spowoduje usunięcie wszystkich ciasteczek i danych sesji. Jesteś pewny, że chcesz zmienić konto?</string>
   <string name="pref_title__clear_cache">Wyczyść pamięć podręczną</string>
   <string name="pref_desc__clear_cache">Wyczyść pamięć podręczną WebView</string>
   <string name="pref_desc__intellihide_toolbars">Automatycznie ukryj paski narzędzi na górze i na dole podczas przewijania</string>
+  <string name="pref_title__intellihide_toolbars">Autoukrywanie pasków narzędzi</string>
+  <string name="pref_title__append_shared_via_app">Informacja o użytej aplikacji</string>
+  <string name="pref_desc__append_shared_via_app">Dodawaj do wpisów informację o użytej aplikacji (\"udostępniono za pomocą&#8230;\")</string>
   <!-- More -->
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->

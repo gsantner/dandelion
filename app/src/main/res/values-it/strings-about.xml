@@ -14,7 +14,6 @@
   <string name="fragment_debug__package_name">Nome pacchetto: %1$s</string>
   <string name="fragment_debug__android_version">Versione Android: %1$s</string>
   <string name="fragment_debug__device_name">Nome dispositivo: %1$s</string>
-  <string name="fragment_debug__pod_profile_url">Dominio pod: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Log di debug copiato negli appunti</string>
   <string name="fragment_license__3rd_party_libs_title">Librerie di terze parti usate</string>
 </resources>

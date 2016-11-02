@@ -28,6 +28,9 @@
   <!-- Font size -->
   <string name="pref_title__font_size">Schriftgröße</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
+  <string name="font_size_normal">Normal</string>
+  <string name="font_size_large">Groß</string>
+  <string name="font_size_huge">Größer</string>
   <!-- Load images -->
   <string name="pref_title__load_images">Lade Bilder</string>
   <string name="pref_desc__load_images">Deaktiviere das Laden von Bildern, um den Datenverbrauch zu verringern</string>
@@ -39,8 +42,9 @@
   <string name="pref_desc__http_proxy_enabled">Nutze einen Proxyserver, um Firewalls zu umgehen.\nDie App muss neu gestartet werden</string>
   <string name="pref_title__http_proxy_host">Host</string>
   <string name="pref_title__http_proxy_port">Port</string>
+  <string name="toast__proxy_disabled__restart_required">App muss neu gestartet werden um den Proxy zu deaktivieren</string>
+  <string name="toast__proxy_orbot_preset_loaded">Orbot Proxy Preset geladen</string>
   <!-- Chrome custom tabs -->
-  <string name="pref_title__chrome_custom_tabs_enabled">Chrome Custom Tabs</string>
   <string name="pref_desc__chrome_custom_tabs_enabled">Externe Links mit Chrome Custom Tabs öffnen. Chromium oder Google Chrome muss für dieses Feature installiert sein.\nWICHTIGER HINWEIS: Chrome Custom Tabs verwenden die konfigurierten Proxy-Server nicht!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Persönliche Einstellungen</string>

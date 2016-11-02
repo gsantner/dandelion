@@ -485,6 +485,10 @@ public class MainActivity extends ThemedActivity
             /* TODO: Implement and add filter to manifest */
             return;
         }
+        //Catch split screen recreation
+        if(action.equals(Intent.ACTION_MAIN) && getTopFragment() != null) {
+            return;
+        }
 
         if (loadUrl != null) {
             navDrawer.closeDrawers();
