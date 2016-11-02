@@ -7,7 +7,7 @@
   <string name="about_activity__title_debug_info">Depurando</string>
   <string name="fragment_debug__section_app">Aplicación</string>
   <string name="fragment_debug__section_device">Dispositivo</string>
-  <string name="fragment_debug__section_pod">Pod de Diáspora</string>
+  <string name="fragment_debug__section_pod">Pod de Diaspora</string>
   <string name="fragment_debug__section_log">Depurar registro</string>
   <string name="fragment_debug__section_log_spam">Depurar registro (Detallado)</string>
   <string name="fragment_debug__app_version">Versión aplicación:%1$s</string>
@@ -17,6 +17,8 @@
   <string name="fragment_debug__app_codename">Nombre clave: %1$s</string>
   <string name="fragment_debug__pod_profile_name">Nombre de perfil del pod: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Dominio del pod:%1$s</string>
+  <string name="fragment_debug__toast_log_copied">Registro de depuración copiado al portapapeles</string>
+  <string name="fragment_license__3rd_party_libs_title">Usadas bibliotecas de terceros</string>
   <!-- About (large amount of text) -->
   <!-- Lorem ipsum -->
 </resources>
