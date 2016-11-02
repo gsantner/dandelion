@@ -464,6 +464,10 @@ public class AboutActivity extends ThemedActivity
 
         @Override
         public void update(Observable observable, Object o) {
+            updateLog();
+        }
+
+        private synchronized void updateLog() {
             if (isAdded() && logBox != null) {
                 getActivity().runOnUiThread(new Runnable() {
                     @Override
