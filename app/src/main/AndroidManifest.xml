@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.dfa.diaspora_android">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.github.dfa.diaspora_android"
+    tools:ignore="GoogleAppIndexingWarning">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +17,8 @@
 
         <provider
             android:name="com.github.dfa.diaspora_android.service.HashtagContentProvider"
-            android:authorities="com.github.dfa.diaspora_android.mainactivity" />
+            android:authorities="com.github.dfa.diaspora_android.mainactivity"
+            android:exported="false"/>
 
         <service
             android:name="com.github.dfa.diaspora_android.service.FetchPodsService"

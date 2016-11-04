@@ -1,6 +1,7 @@
 package com.github.dfa.diaspora_android.ui;
 
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,6 +10,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
@@ -93,6 +95,12 @@ public class PodSelectionDialog extends ThemedAppCompatDialogFragment {
     @BindView(R.id.podselection__dialog__text_protocol)
     TextView textProtocol;
 
+    @BindView(R.id.podselection__dialog__btn_ok)
+    Button btnOk;
+
+    @BindView(R.id.podselection__dialog__btn_cancel)
+    Button btnCancel;
+
     private PodSelectionDialogResultListener resultListener;
     private View root;
     private DiasporaPod pod = new DiasporaPod();
@@ -100,6 +108,7 @@ public class PodSelectionDialog extends ThemedAppCompatDialogFragment {
 
     @NonNull
     @Override
+    @SuppressLint("InflateParams")
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
@@ -135,6 +144,8 @@ public class PodSelectionDialog extends ThemedAppCompatDialogFragment {
         textProfile.setTextColor(ThemeHelper.getAccentColor());
         textProtocol.setTextColor(ThemeHelper.getAccentColor());
         textTorPreset.setTextColor(ThemeHelper.getAccentColor());
+        btnOk.setTextColor(ThemeHelper.getAccentColor());
+        btnCancel.setTextColor(ThemeHelper.getAccentColor());
 
         ThemeHelper.updateEditTextColor(editPodAddress);
         ThemeHelper.updateEditTextColor(editPodName);

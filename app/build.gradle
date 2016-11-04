@@ -97,19 +97,6 @@ task copyRepoFiles(type: Copy) {
     }
 }
 
-<<<<<<< HEAD
-def downloadFile(filePath, url, downloadIfExists ) {
-    def f = new File(filePath)
-    if (f.exists() && downloadIfExists){
-        f.delete();
-    }
-    if (!f.exists()) {
-        new URL(url).withInputStream{ i -> f.withOutputStream{ it << i }}
-    }
-}
-
-tasks.copyRepoFiles.execute()
-=======
 // Downloads a file
 def downloadFile(filePath, url, downloadIfExists) {
     def f = new File(filePath)
@@ -120,4 +107,3 @@ def downloadFile(filePath, url, downloadIfExists) {
 }
 
 tasks.copyRepoFiles.execute()
->>>>>>> master

@@ -1,5 +1,6 @@
 package com.github.dfa.diaspora_android.activity;
 
+import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.FragmentTransaction;
@@ -284,6 +285,7 @@ public class SettingsActivity extends ThemedActivity {
          *
          * @param type 1 -> Primary Color, 2 -> Accent Color
          */
+        @SuppressLint("InflateParams")
         public void showColorPickerDialog(final int type) {
             final AppSettings appSettings = ((App) getActivity().getApplication()).getSettings();
             final Context context = getActivity();
