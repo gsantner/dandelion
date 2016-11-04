@@ -20,5 +20,7 @@
   <string name="fragment_debug__toast_log_copied">Tekst naar klembord gekopieerd</string>
   <string name="fragment_license__3rd_party_libs_title">Gebruikte bibliotheken van derden</string>
   <!-- About (large amount of text) -->
+  <string name="fragment_about__about_content">
+DiasporaForAndroid is uw behulpzame app voor het bladeren door het sociale netwerk van Diaspora. Het voegt functies toe zoals nuttige werkbalken en ondersteuning voor proxyservers zoals het Tor Network aan uw sociale ervaring. &lt; Br &gt;&lt; br &gt; Diaspora maakt gebruik van Markdown voor het opmaken van berichten. U vindt meer informatie bij &lt; br &gt; https://diasporafoundation.org/formatting &lt; br &gt;&lt; br &gt; DiasporaForAndroid is vrije software als in het is in vrijheid ontwikkeld en volgt de ideeën van het Diaspora-project &lt; Br &gt; kunt u de broncode op Github: &lt; br &gt; https://github.com/Diaspora-for-Android/diaspora-android &lt; br &gt;&lt; br &gt; wanneer u tegen eventuele problemen aanloopt of als u suggesties hebt, u onze bug tracker op de bovenstaande link kunt.         Als alternatief kunt u uw vraag met de hashtag #DFAQ op Diaspora plaatsen. &lt; Br &gt;&lt; br &gt; deze app niet beschikbaar in uw taal? Check ons project op Crowdin.com en help mee met vertalen! &lt; br &gt; https://crowdin.com/project/diaspora-for-android &lt; br &gt;&lt; br &gt;  voel je ook vrij om je vrienden vertellen over #DiasporaForAndroid!</string>
   <!-- Lorem ipsum -->
 </resources>
