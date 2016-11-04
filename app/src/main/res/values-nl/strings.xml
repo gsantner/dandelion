@@ -19,11 +19,20 @@
   <string name="mentions">Vermeldingen</string>
   <string name="public_">Openbaar</string>
   <string name="search">Zoeken</string>
+  <string name="contacts">Contacten</string>
   <!-- Notifications dropdown menu -->
+  <string name="notifications__all">Alle meldingen</string>
+  <string name="notifications__also_commented">Heeft ook gereageerd</string>
+  <string name="notifications__comment_on_post">Reactie op bericht</string>
+  <string name="notifications__liked">Leuk gevonden</string>
+  <string name="notifications__mentioned">Vermeldingen</string>
+  <string name="notifications__reshared">Opnieuw gedeeld</string>
+  <string name="notifications__started_sharing">Begonnen te delen</string>
   <!-- Pod Activity -->
   <string name="title_activity_pods">Selecteer Pod</string>
   <string name="filter_hint">Voer pod domein</string>
   <string name="confirm_url">Bevestigen pod url</string>
+  <string name="search_for_pod">Zoek Pod&#8230;</string>
   <string name="podlist_source_note">Opmerking: De podlijst is gevuld met beveiligde pods vermeld op https://podupti.me. U kunt in het bewerk veld elke pod invullen die niet in de lijst staat.</string>
   <string name="valid_pod">Voer een geldige domeinnaam in</string>
   <string name="podlist_error">Fout: Kan niet de podlijst ophalen!</string>
@@ -32,6 +41,8 @@
   <string name="confirm_pod">Wilt u echt \nhttps://%1$s\n als uw Diaspora pod gebruiken?</string>
   <string name="confirm_exit">Wilt u afsluiten?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
+  <string name="nav_menu_more">Meer</string>
+  <string name="nav_help_license">Over | Help</string>
   <string name="nav_followed_tags">Gevolgde Tags</string>
   <string name="nav_public_activities">Publieke activiteiten</string>
   <string name="share__share_link_as_text">Link delen als tekst</string>
@@ -59,6 +70,13 @@
   <string name="unable_to_load_image">Niet in staat om afbeelding te laden</string>
   <string name="all_tags">Alle tags</string>
   <!-- Permissions -->
+  <string name="permissions_screenshot">U moet machtegingen aan \"Access Storage Permission\" geven om screenshots op te slaan. Daarna moet u de app volledig afsluiten of de telefoon opnieuw opstarten. Als u geen toestemming aan opslag wil geven maar screenshot functie later wil gebruiken, kunt u de toestemming later geven. Open dan: systemsettings - apps - Diaspora. In de machtegings sectie kunt u machtegingen geven aan \"write storage permission\".</string>
+  <string name="permissions_image">U moet machtigingen aan \"Access Storage Permission\" geven om screenshots op te slaan. Daarna moet u de app volledig afsluiten of de telefoon opnieuw opstarten. Als u geen toestemming aan opslag wilt geven maar screenshot functie later wilt gebruiken, kunt u de toestemming later geven. Open dan: system settings - apps - Diaspora. In de machtigingssectie kunt u machtigingen geven aan \"write storage permission\".</string>
   <string name="permission_denied">Toestemming geweigerd.</string>
   <string name="permission_granted_try_again">Toestemming verleend. Probeer het opnieuw.</string>
+  <string name="podselection__custom_pod">Aangepaste Pod</string>
+  <string name="pod_name">Naam van de Pod</string>
+  <string name="http_protocol">Protocol</string>
+  <string name="pod_address">Pod-adres</string>
+  <string name="missing_value">Ontbrekende waarde</string>
 </resources>
