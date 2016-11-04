@@ -13,16 +13,31 @@
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Navigatie Slider</string>
+  <string name="pref_desc__sub_nav_slider">Bepalen zichtbaarheid van vermeldingen in de navigatie-lade</string>
   <string name="pref_cat__visibility_nav_items">Item Zichtbaarheid</string>
   <!-- Themes -->
+  <string name="pref_title__themes">Thema en kleuren</string>
+  <string name="pref_desc__themes">Bepalen welke kleuren worden gebruikt in de app</string>
+  <string name="pref_title__primary_color">Primaire kleur</string>
+  <string name="pref_desc__primary_color">Kleur van de werkbalken</string>
+  <string name="pref_title__accent_color">Accentkleur</string>
+  <string name="pref_desc__accent_color">Kleur van de voortgangsbalk</string>
   <!-- Notifications dropdown -->
+  <string name="pref_title__extended_notifications">Uitgebreide meldingen</string>
+  <string name="pref_desc__extended_notifications">Uitbreiden van de bel van de meldingen met een dropdown menu dat kennisgeving Categorieën toont</string>
   <!-- Font size -->
   <string name="pref_title__font_size">Lettergrootte</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
+  <string name="font_size_normal">Normaal</string>
+  <string name="font_size_large">Groot</string>
+  <string name="font_size_huge">Grootst</string>
   <!-- Load images -->
   <string name="pref_title__load_images">Afbeeldingen laden</string>
   <string name="pref_desc__load_images">Afbeelding laden uitschakelen om mobiele data te besparen</string>
   <!-- Proxy -->
+  <string name="pref_title__http_proxy_load_tor_preset">Tor Voorinstelling laden</string>
+  <string name="pref_desc__http_proxy_load_tor_preset">Laden van de proxy-instellingen voor HTTP-Proxy Tor (Orbot)</string>
+  <string name="pref_title__sub_proxy">Proxy</string>
   <string name="pref_title__proxy_enabled">Proxy inschakelen</string>
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
