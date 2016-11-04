@@ -397,6 +397,7 @@ public class MainActivity extends ThemedActivity
         navMenu.findItem(R.id.nav_profile).setVisible(appSettings.isVisibleInNavProfile());
         navMenu.findItem(R.id.nav_public).setVisible(appSettings.isVisibleInNavPublic_activities());
         navMenu.findItem(R.id.nav_stream).setVisible(true);
+        navMenu.findItem(R.id.nav_reports).setVisible(appSettings.isVisibleInNavReports());
 
 
         // Hide whole group (for logged in use) if no pod was selected
@@ -1027,8 +1028,8 @@ public class MainActivity extends ThemedActivity
                 } else {
                     snackbarNoInternet.show();
                 }
-                break;
             }
+            break;
 
             case R.id.nav_public: {
                 if (WebHelper.isOnline(MainActivity.this)) {
@@ -1036,14 +1037,24 @@ public class MainActivity extends ThemedActivity
                 } else {
                     snackbarNoInternet.show();
                 }
-                break;
             }
+            break;
+
+            case R.id.nav_reports: {
+                AppLog.d(this, "NAV_REPORTS!");
+                if(WebHelper.isOnline(MainActivity.this)) {
+                    openDiasporaUrl(urls.getReportsUrl());
+                } else {
+                    snackbarNoInternet.show();
+                }
+            }
+            break;
 
             case R.id.nav_exit: {
                 moveTaskToBack(true);
                 finish();
-                break;
             }
+            break;
 
             case R.id.nav_settings: {
                 startActivity(new Intent(this, SettingsActivity.class));

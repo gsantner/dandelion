@@ -60,6 +60,7 @@ public class DiasporaUrlHelper {
     public static final String SUBURL_NOTIFICATIONS_MENTIONED = "/notifications?type=mentioned";
     public static final String SUBURL_NOTIFICATIONS_RESHARED = "/notifications?type=reshared";
     public static final String SUBURL_NOTIFICATIONS_STARTED_SHARING = "/notifications?type=started_sharing";
+    public static final String SUBURL_REPORTS = "/reports";
 
     public DiasporaUrlHelper(AppSettings settings) {
         this.settings = settings;
@@ -271,6 +272,16 @@ public class DiasporaUrlHelper {
      */
     public String getManageContactsUrl() {
         return getPodUrl() + SUBURL_MANAGE_CONTACTS;
+    }
+
+    /**
+     * Return a url that points to the report page of the pod.
+     * Note: Only admins/moderators do have access to that url.
+     *
+     * @return https://(pod-domain.tld)/reports
+     */
+    public String getReportsUrl() {
+        return getPodUrl() + SUBURL_REPORTS;
     }
 
     public String getSuburlNotificationsAlsoCommentedUrl() {
