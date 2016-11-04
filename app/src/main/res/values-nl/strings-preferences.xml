@@ -48,7 +48,7 @@
   <string name="pref_desc__chrome_custom_tabs_enabled">Open externe links met Chrome aangepaste tabbladen. Chromium of Google Chrome moet worden geïnstalleerd voor deze functie. \nLET OP: Chrome aangepaste tabbladen maakt geen gebruik van geconfigureerde proxyservers!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Persoonlijke instellingen</string>
-  <string name="pref_desc__personal_settings">Open uw accountinstellingen van diaspora</string>
+  <string name="pref_desc__personal_settings">Open uw accountinstellingen van diaspora*</string>
   <string name="pref_desc__manage_contacts">Uw lijst met contactpersonen beheren</string>
   <string name="pref_title__manage_tags">Beheren van Hashtags</string>
   <string name="pref_desc__manage_tags">Toevoegen en verwijderen van de hashtags die u volgt</string>
