@@ -39,9 +39,16 @@
   <string name="pref_desc__http_proxy_load_tor_preset">Laden van de proxy-instellingen voor HTTP-Proxy Tor (Orbot)</string>
   <string name="pref_title__sub_proxy">Proxy</string>
   <string name="pref_title__proxy_enabled">Proxy inschakelen</string>
+  <string name="pref_desc__http_proxy_enabled">Proxy Diaspora-verkeer om firewalls te omzeilen. \nVereist mogelijk app herstart. Dit kan op sommige telefoons niet werken.</string>
+  <string name="pref_title__http_proxy_host">Host</string>
+  <string name="pref_title__http_proxy_port">Poort</string>
+  <string name="toast__proxy_disabled__restart_required">App moet opnieuw opstarten om het gebruik van de proxy uit te schakelen</string>
+  <string name="toast__proxy_orbot_preset_loaded">Orbot proxy-voorinstelling geladen</string>
   <!-- Chrome custom tabs -->
+  <string name="pref_desc__chrome_custom_tabs_enabled">Open externe links met Chrome aangepaste tabbladen. Chromium of Google Chrome moet worden geïnstalleerd voor deze functie. \nLET OP: Chrome aangepaste tabbladen maakt geen gebruik van geconfigureerde proxyservers!</string>
   <!-- Diaspora Settings -->
   <string name="pref_title__personal_settings">Persoonlijke instellingen</string>
+  <string name="pref_desc__personal_settings">Open uw accountinstellingen van diaspora</string>
   <string name="pref_desc__manage_contacts">Uw lijst met contactpersonen beheren</string>
   <string name="pref_title__manage_tags">Beheren van Hashtags</string>
   <string name="pref_desc__manage_tags">Toevoegen en verwijderen van de hashtags die u volgt</string>
