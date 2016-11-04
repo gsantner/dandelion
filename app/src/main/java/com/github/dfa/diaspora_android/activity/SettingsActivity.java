@@ -131,9 +131,9 @@ public class SettingsActivity extends ThemedActivity {
     @Override
     public void onBackPressed() {
         ThemedPreferenceFragment top = getTopFragment();
-        if(top != null && top.getFragmentTag().equals(SettingsFragmentProxy.TAG)) {
+        if (top != null && top.getFragmentTag().equals(SettingsFragmentProxy.TAG)) {
             ProxyHandler.ProxySettings newProxySettings = getAppSettings().getProxySettings();
-            if(oldProxySettings.isEnabled() && !newProxySettings.isEnabled()) {
+            if (oldProxySettings.isEnabled() && !newProxySettings.isEnabled()) {
                 Toast.makeText(this, R.string.toast__proxy_disabled__restart_required, Toast.LENGTH_LONG).show();
             }
         }

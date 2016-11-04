@@ -70,6 +70,7 @@
     <string name="nav_followed_tags">Followed Tags</string>
     <string name="nav_public_activities">Public activities</string>
     <string name="nav_contacts" translatable="false">@string/contacts</string>
+    <string name="nav_reports">Report</string>
 
     <string name="share__share_link_as_text">Share link as text</string>
     <string name="share__share_screenshot">Share screenshot of webpage</string>

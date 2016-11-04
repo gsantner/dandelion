@@ -130,6 +130,7 @@ public class BrowserFragment extends ThemedFragment {
         webSettings.setAllowFileAccess(false);
         webSettings.setUseWideViewPort(true);
         webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUserAgentString("Mozilla/5.0 (Linux; U; Android 4.4.4; Nexus 5 Build/KTU84P) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30");
         webSettings.setDomStorageEnabled(true);
         webSettings.setMinimumFontSize(appSettings.getMinimumFontSize());
         webSettings.setLoadsImagesAutomatically(appSettings.isLoadImages());

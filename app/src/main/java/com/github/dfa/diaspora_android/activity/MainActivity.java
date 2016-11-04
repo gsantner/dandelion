@@ -34,7 +34,6 @@ import android.support.customtabs.CustomTabsSession;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.GravityCompat;
@@ -398,6 +397,7 @@ public class MainActivity extends ThemedActivity
         navMenu.findItem(R.id.nav_profile).setVisible(appSettings.isVisibleInNavProfile());
         navMenu.findItem(R.id.nav_public).setVisible(appSettings.isVisibleInNavPublic_activities());
         navMenu.findItem(R.id.nav_stream).setVisible(true);
+        navMenu.findItem(R.id.nav_reports).setVisible(appSettings.isVisibleInNavReports());
 
 
         // Hide whole group (for logged in use) if no pod was selected
@@ -462,7 +462,7 @@ public class MainActivity extends ThemedActivity
                 @Override
                 public void run() {
                     ContextMenuWebView wv = ((DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG)).getWebView();
-                    if(wv != null) {
+                    if (wv != null) {
                         wv.clearCache(true);
                     }
                 }
@@ -486,7 +486,7 @@ public class MainActivity extends ThemedActivity
             return;
         }
         //Catch split screen recreation
-        if(action.equals(Intent.ACTION_MAIN) && getTopFragment() != null) {
+        if (action.equals(Intent.ACTION_MAIN) && getTopFragment() != null) {
             return;
         }
 
@@ -581,7 +581,7 @@ public class MainActivity extends ThemedActivity
         LocalBroadcastManager.getInstance(this).registerReceiver(brOpenExternalLink, new IntentFilter(ACTION_OPEN_EXTERNAL_URL));
         invalidateOptionsMenu();
         this.appSettings = getAppSettings();
-        if(appSettings.isIntellihideToolbars()) {
+        if (appSettings.isIntellihideToolbars()) {
             enableToolbarHiding();
         } else {
             disableToolbarHiding();
@@ -1028,8 +1028,8 @@ public class MainActivity extends ThemedActivity
                 } else {
                     snackbarNoInternet.show();
                 }
-                break;
             }
+            break;
 
             case R.id.nav_public: {
                 if (WebHelper.isOnline(MainActivity.this)) {
@@ -1037,14 +1037,24 @@ public class MainActivity extends ThemedActivity
                 } else {
                     snackbarNoInternet.show();
                 }
-                break;
             }
+            break;
+
+            case R.id.nav_reports: {
+                AppLog.d(this, "NAV_REPORTS!");
+                if(WebHelper.isOnline(MainActivity.this)) {
+                    openDiasporaUrl(urls.getReportsUrl());
+                } else {
+                    snackbarNoInternet.show();
+                }
+            }
+            break;
 
             case R.id.nav_exit: {
                 moveTaskToBack(true);
                 finish();
-                break;
             }
+            break;
 
             case R.id.nav_settings: {
                 startActivity(new Intent(this, SettingsActivity.class));

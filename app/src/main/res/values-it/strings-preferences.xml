@@ -28,6 +28,9 @@
   <!-- Font size -->
   <string name="pref_title__font_size">Dimensione font</string>
   <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
+  <string name="font_size_normal">Normale</string>
+  <string name="font_size_large">Grosso</string>
+  <string name="font_size_huge">Immenso</string>
   <!-- Load images -->
   <string name="pref_title__load_images">Carica immagini</string>
   <string name="pref_desc__load_images">Disabilita il caricamento delle immagini per risparmiare la rete dati</string>
@@ -39,6 +42,8 @@
   <string name="pref_desc__http_proxy_enabled">Usa il proxy con i dati di Diaspora per eludere i firewall.\nPotrebbe essere necessario il riavvio</string>
   <string name="pref_title__http_proxy_host">Host</string>
   <string name="pref_title__http_proxy_port">Porta</string>
+  <string name="toast__proxy_disabled__restart_required">App è necessario riavviare per disattivare l\'utilizzo del proxy</string>
+  <string name="toast__proxy_orbot_preset_loaded">Orbot proxy preset caricato</string>
   <!-- Chrome custom tabs -->
   <string name="pref_desc__chrome_custom_tabs_enabled">Apri collegamenti esterni con le schede personalizzate di Chrome. Chromium o Google Chrome devono essere installati per questa funzione. \nNOTA IMPORTANTE: le schede personalizzate di Chrome non usano i server proxy configurabili!</string>
   <!-- Diaspora Settings -->

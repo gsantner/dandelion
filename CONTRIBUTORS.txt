@@ -11,5 +11,7 @@
 Abhijith Balan (abhijithb21 AT openmailbox DOT org): Malayalam translation
 Airon90 (https://diasp.eu/u/airon90): Italian translation
 Gaukler Faun (https://github.com/scoute-dich): Diaspora Native WebApp additions
-Martín Vukovic (martinvukovic@protonmail.com): Diaspora Native WebApp
+Martín Vukovic (martinvukovic AT protonmail DOT com): Diaspora Native WebApp
+Nacho Fernández (nacho_f AT joindiaspora DOT com): Spanish translation
+pskosinski (email AT pskosinski DOT pl): Polish translation
 SansPseudoFix (https://github.com/SansPseudoFix): French translation

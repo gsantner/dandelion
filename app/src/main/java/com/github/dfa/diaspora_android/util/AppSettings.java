@@ -19,9 +19,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.github.dfa.diaspora_android.R;
+import com.github.dfa.diaspora_android.data.DiasporaAspect;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod.DiasporaPodUrl;
-import com.github.dfa.diaspora_android.data.DiasporaAspect;
 import com.github.dfa.diaspora_android.web.ProxyHandler;
 
 import org.json.JSONException;
@@ -329,7 +329,7 @@ public class AppSettings {
     }
 
     public boolean isLoggingEnabled() {
-        return getBoolean(prefApp, R.string.pref_key__logging_enabled, true);
+        return getBoolean(prefApp, R.string.pref_key__logging_enabled, false);
     }
 
     public boolean isLoggingSpamEnabled() {
@@ -378,6 +378,10 @@ public class AppSettings {
 
     public boolean isVisibleInNavContacts() {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__contacts, false);
+    }
+
+    public boolean isVisibleInNavReports() {
+        return getBoolean(prefApp, R.string.pref_key__visibility_nav__reports, false);
     }
 
     public void setPrimaryColorSettings(int base, int shade) {

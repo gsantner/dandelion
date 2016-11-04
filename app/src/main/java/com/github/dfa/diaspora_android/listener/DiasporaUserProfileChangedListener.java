@@ -27,29 +27,33 @@ import com.github.dfa.diaspora_android.data.DiasporaUserProfile;
 public interface DiasporaUserProfileChangedListener {
     /**
      * Called when the DiasporaUserProfile name changed
+     *
      * @param diasporaUserProfile The profile
-     * @param name The new name
+     * @param name                The new name
      */
     void onUserProfileNameChanged(DiasporaUserProfile diasporaUserProfile, String name);
 
     /**
      * Called when the DiasporaUserProfile avatarUrl changed
+     *
      * @param diasporaUserProfile The profile
-     * @param avatarUrl The new name
+     * @param avatarUrl           The new name
      */
     void onUserProfileAvatarChanged(DiasporaUserProfile diasporaUserProfile, String avatarUrl);
 
     /**
      * Called when the DiasporaUserProfile notificationCount changed
+     *
      * @param diasporaUserProfile The profile
-     * @param notificationCount The new notificationCount
+     * @param notificationCount   The new notificationCount
      */
     void onNotificationCountChanged(DiasporaUserProfile diasporaUserProfile, int notificationCount);
 
     /**
      * Called when the DiasporaUserProfile unreadMessageCount changed
+     *
      * @param diasporaUserProfile The profile
-     * @param unreadMessageCount The new unreadMessageCount
+     * @param unreadMessageCount  The new unreadMessageCount
      */
     void onUnreadMessageCountChanged(DiasporaUserProfile diasporaUserProfile, int unreadMessageCount);
 }

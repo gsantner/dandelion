@@ -9,11 +9,11 @@ android {
         applicationId "com.github.dfa.diaspora_android"
         minSdkVersion 17
         targetSdkVersion 24
-        versionCode 8
-        versionName "0.1.6-next"
+        versionCode 10
+        versionName "0.2.0-next"
         setProperty("archivesBaseName", "diasporaAndroid__${versionName}__")
 
-        vectorDrawables.useSupportLibrary=true
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -27,10 +27,10 @@ android {
     }
 }
 
+// Additional repositories
 repositories {
     maven {
-        //Color picker
-        url  "http://dl.bintray.com/dasar/maven"
+        url "http://dl.bintray.com/dasar/maven"   //Color picker
     }
 }
 
@@ -44,23 +44,32 @@ dependencies {
 
     // Android standard libs
     compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:design:24.1.0' //Don't update. Broken up to 24.2.1
+    compile 'com.android.support:design:24.1.0' //Don't update. Broken up to 25.0.0
     compile 'com.android.support:support-v4:24.2.1'
-    compile "com.android.support:customtabs:24.2.1"
+    compile 'com.android.support:customtabs:24.2.1'
 
     // More libraries
     compile 'com.jakewharton:butterknife:8.0.1'
     compile 'info.guardianproject.netcipher:netcipher:2.0.0-alpha1'
     compile 'info.guardianproject.netcipher:netcipher-webkit:2.0.0-alpha1'
-    compile(group: 'uz.shift', name: 'colorpicker', version: '0.5', ext: 'aar') //Color picker
+    compile(group: 'uz.shift', name: 'colorpicker', version: '0.5', ext: 'aar')
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
 }
 
+//  #####################
+//  Groovy Coding Area
+//  #####################
+final String RAW_DIR = "app/src/main/res/raw"
+final String[] ROOT_TO_RAW_COPYFILES = ["README.md", "LICENSE.md", "CHANGELOG.md", "CONTRIBUTORS.txt"]
+final String PODLIST_URL = 'https://raw.githubusercontent.com/Diaspora-for-Android/diaspora-android-extras/master/podList/podlist.json'
+final String PODLIST_PATH = "${RAW_DIR}/podlist.json"
 
+// Called before building
 task copyRepoFiles(type: Copy) {
-    String[] copyFiles = ["README.md", "LICENSE.md", "CHANGELOG.md"]
-    from rootProject.files(copyFiles)
-    into 'src/main/res/raw'
+
+    // Copy files over to raw dir
+    from rootProject.files(ROOT_TO_RAW_COPYFILES)
+    into RAW_DIR.replaceFirst("app/", "")
     rename { String fileName ->
         fileName.replace(fileName, fileName.toLowerCase())
     }
@@ -76,5 +85,39 @@ task copyRepoFiles(type: Copy) {
         }
     }
 
+    // Download PodList
+    downloadFile(PODLIST_PATH, PODLIST_URL, false)
+
+    // Application variants
+    android.applicationVariants.all { v ->
+        // Do if we build in release (signed apk) mode
+        if (v.buildType.name == "release") {
+            downloadFile(PODLIST_PATH, PODLIST_URL, true)
+        }
+    }
 }
+
+<<<<<<< HEAD
+def downloadFile(filePath, url, downloadIfExists ) {
+    def f = new File(filePath)
+    if (f.exists() && downloadIfExists){
+        f.delete();
+    }
+    if (!f.exists()) {
+        new URL(url).withInputStream{ i -> f.withOutputStream{ it << i }}
+    }
+}
+
 tasks.copyRepoFiles.execute()
+=======
+// Downloads a file
+def downloadFile(filePath, url, downloadIfExists) {
+    def f = new File(filePath)
+    f.exists() && downloadIfExists && f.delete();
+    if (!f.exists()) {
+        new URL(url).withInputStream { i -> f.withOutputStream { it << i } }
+    }
+}
+
+tasks.copyRepoFiles.execute()
+>>>>>>> master

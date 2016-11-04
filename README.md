@@ -41,6 +41,3 @@ Diaspora for Android requires access to the Internet and to external storage to 
 ## Maintainers
 - gsantner ([GitHub](https://github.com/gsantner), [Web](https://gsantner.github.io), [diaspora*](https://pod.geraspora.de/people/d1cbdd70095301341e834860008dbc6c))  
 - vanitasvitae ([GitHub](https://github.com/vanitasvitae), [Diaspora](https://pod.geraspora.de/people/bbd7af90fbec013213e34860008dbc6c))
-
-## Acknowledgements
-- We took some inspiration and code from [LeafPic](https://github.com/HoraApps/LeafPic), big thanks to Donald Shtjefni and the LeafPic Team!
