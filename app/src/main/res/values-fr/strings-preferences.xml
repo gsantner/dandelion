@@ -15,6 +15,9 @@
   <string name="pref_title__sub_nav_slider">Barre de défilement</string>
   <string name="pref_desc__sub_nav_slider">Contrôles de la visibilité des entrées dans le volet de navigation</string>
   <string name="pref_cat__visibility_nav_items">Visibilité de l’élément</string>
+  <string name="pref_cat__visibility_nav_items__user">Utilisateur</string>
+  <string name="pref_cat__visibility_nav_items__general">Général</string>
+  <string name="pref_cat__visibility_nav_items__admin">Admin</string>
   <!-- Themes -->
   <string name="pref_title__themes">Thème et couleurs</string>
   <string name="pref_desc__themes">Contrôler les couleurs utilisées pour l\'application</string>
