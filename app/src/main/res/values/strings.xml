@@ -9,11 +9,9 @@
 
 
     <!-- Application -->
-    <string name="prefix_https" translatable="false">https://</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="reload">Reload</string>
-    <string name="new_notifications">Unread notification. Want to read it?</string>
 
     <!-- Common Words -->
     <string name="settings">Settings</string>
@@ -42,17 +40,10 @@
 
 
     <!-- Pod Activity -->
-    <string name="title_activity_pods">Select Pod</string>
-    <string name="filter_hint">Enter pod domain</string>
-    <string name="confirm_url">Confirm pod url</string>
-    <string name="search_for_pod">Search for Pod…</string>
-    <string name="podlist_source_note">Note: The podlist is populated by secure pods listed on https://podupti.me. You can enter in the edit field any pod not listed.</string>
-    <string name="valid_pod">Please enter a valid domain name</string>
     <string name="podlist_error">Error: Could not retrieve list of pods!</string>
 
     <string name="no_internet">Sorry, you must be connected to the Internet to proceed</string>
     <string name="confirmation">Confirmation</string>
-    <string name="confirm_pod">Do you really want to use\nhttps://%1$s\nas your Diaspora Pod?</string>
     <string name="confirm_exit">Do you want to exit?</string>
 
 
@@ -64,7 +55,6 @@
     <string name="nav_activities" translatable="false">@string/activities</string>
     <string name="nav_aspects" translatable="false">@string/aspects</string>
     <string name="nav_profile" translatable="false">@string/profile</string>
-    <string name="nav_settings" translatable="false">@string/settings</string>
     <string name="nav_menu_more">More</string>
     <string name="nav_help_license">About | Help</string>
     <string name="nav_followed_tags">Followed Tags</string>
@@ -101,9 +91,7 @@
 
 
     <!-- More from MainActivity -->
-    <string name="toast_set_proxy_failed">Warning: Could not set network proxy…</string>
     <string name="unable_to_load_image">Unable to load image</string>
-    <string name="all_tags">All tags</string>
 
     <!-- Permissions -->
     <string name="permissions_screenshot">You must grant \"Access Storage Permission\" to save screenshots. After that you should

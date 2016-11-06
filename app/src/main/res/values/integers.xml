@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="fade_time">1300</integer>
-    <integer name="splash_delay">1500</integer>
 </resources>
