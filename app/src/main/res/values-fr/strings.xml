@@ -45,6 +45,7 @@
   <string name="nav_help_license">A propos | Aide</string>
   <string name="nav_followed_tags">Hashtags suivis</string>
   <string name="nav_public_activities">Activités publiques</string>
+  <string name="nav_reports">Signalements</string>
   <string name="share__share_link_as_text">Partager le lien comme texte</string>
   <string name="share__share_screenshot">Partager la capture d\'écran d\'un site web</string>
   <string name="share__take_screenshot">Prendre une capture d\'écran d\'un site web</string>
