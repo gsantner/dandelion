@@ -45,6 +45,7 @@
     <string name="pref_key__visibility_nav__followed_tags" translatable="false">pref_key__visibility_nav__followed_tags</string>
     <string name="pref_key__visibility_nav__profile" translatable="false">pref_key__visibility_nav__profile</string>
     <string name="pref_key__visibility_nav__contacts" translatable="false">pref_key__visibility_nav__contacts</string>
+    <string name="pref_key__visibility_nav__reports" translatable="false">pref_key__visibility_nav__reports</string>
 
     <!-- PodProfile -->
     <string name="pref_key__podprofile_avatar_url" translatable="false">podUserProfile_avatar</string>
@@ -74,6 +75,9 @@
     <string name="pref_title__sub_nav_slider">Navigation Slider</string>
     <string name="pref_desc__sub_nav_slider">Control visibility of entries in the navigation drawer</string>
     <string name="pref_cat__visibility_nav_items">Item visibility</string>
+    <string name="pref_cat__visibility_nav_items__user">User</string>
+    <string name="pref_cat__visibility_nav_items__general">General</string>
+    <string name="pref_cat__visibility_nav_items__admin">Admin</string>
 
     <!-- Themes -->
     <string name="pref_title__themes">Theme and Colors</string>

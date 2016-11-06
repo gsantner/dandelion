@@ -53,6 +53,7 @@ public class DiasporaUrlHelper {
     public static final String SUBURL_MANAGE_TAGS = "/tag_followings/manage";
     public static final String SUBURL_SIGN_IN = "/users/sign_in";
     public static final String SUBURL_MANAGE_CONTACTS = "/contacts";
+    public static final String SUBURL_REPORTS = "/reports";
     public static final String URL_BLANK = "about:blank";
     public static final String SUBURL_NOTIFICATIONS_ALSO_COMMENTED = "/notifications?type=also_commented";
     public static final String SUBURL_NOTIFICATIONS_COMMENT_ON_POST = "/notifications?type=comment_on_post";
@@ -235,6 +236,16 @@ public class DiasporaUrlHelper {
      */
     public String getStatisticsUrl() {
         return getPodUrl() + SUBURL_STATISTICS;
+    }
+
+    /**
+     * Return an Url that points to the reports page of a the configured pod.
+     * Note: This url is only useful/visible for podmins and moderators.
+     *
+     * @return https://(pod-domain.tld)/reports
+     */
+    public String getReportsUrl() {
+        return getPodUrl() + SUBURL_REPORTS;
     }
 
     /**

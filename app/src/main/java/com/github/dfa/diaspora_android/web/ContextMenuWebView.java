@@ -114,6 +114,7 @@ public class ContextMenuWebView extends NestedWebView {
                                         + System.currentTimeMillis() + ".png");
                                 request.setDestinationUri(Uri.fromFile(destinationFile));
                                 ((DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE)).enqueue(request);
+
                                 Toast.makeText(context, context.getText(R.string.share__toast_saved_image_to_location) + " " +
                                         destinationFile.getAbsolutePath(), Toast.LENGTH_LONG).show();
                             }
