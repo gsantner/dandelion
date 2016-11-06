@@ -4,7 +4,7 @@
   <!-- App - AppName specific -->
   <string name="shared_by_diaspora_android">*[gedeeld door #DiasporaForAndroid]*</string>
   <!-- Application -->
-  <string name="reload">Opnieuw laden</string>
+  <string name="reload">Herladen</string>
   <string name="new_notifications">Ongelezen bericht. Wilt u het lezen?</string>
   <!-- Common Words -->
   <string name="settings">Instellingen</string>
