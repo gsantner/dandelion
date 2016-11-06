@@ -19,7 +19,6 @@
 
         <!-- APP SECTION -->
         <TextView
-            android:id="@+id/fragment_debug__section_app"
             style="@android:style/TextAppearance.DeviceDefault.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +36,6 @@
 
         <!-- DEVICE SECTION -->
         <TextView
-            android:id="@+id/fragment_debug__section_device"
             style="@android:style/TextAppearance.DeviceDefault.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,7 +54,6 @@
 
         <!-- POD SECTION -->
         <TextView
-            android:id="@+id/fragment_debug__section_pod"
             style="@android:style/TextAppearance.DeviceDefault.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +72,6 @@
 
         <!-- LOG SECTION -->
         <TextView
-            android:id="@+id/fragment_debug__section_log"
             style="@android:style/TextAppearance.DeviceDefault.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

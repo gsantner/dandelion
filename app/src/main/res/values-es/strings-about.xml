@@ -14,7 +14,6 @@
   <string name="fragment_debug__package_name">Nombre del paquete: %1$s</string>
   <string name="fragment_debug__android_version">Versión de Android: %1$s</string>
   <string name="fragment_debug__device_name">Nombre del dispositivo: %1$s</string>
-  <string name="fragment_debug__app_codename">Nombre clave: %1$s</string>
   <string name="fragment_debug__pod_profile_name">Nombre de perfil del pod: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Dominio del pod:%1$s</string>
   <string name="fragment_debug__toast_log_copied">Registro de depuración copiado al portapapeles</string>

@@ -5,13 +5,10 @@
     <string name="pref_key__current_pod_0" translatable="false">pref_key__current_pod_0</string>
     <string name="pref_key__font_size" translatable="false">pref_key_font_size</string>
     <string name="pref_key__intellihide_toolbars" translatable="false">pref_key_intellihide_toolbars</string>
-    <string name="pref_catkey__pod_settings" translatable="false">pref_key_category_pod_settings</string>
-    <string name="pref_catkey__category_visuals" translatable="false">pref_key_category_visuals</string>
     <string name="pref_key__personal_settings" translatable="false">pref_key_personal_settings</string>
     <string name="pref_key__manage_tags" translatable="false">pref_key_manage_tags</string>
     <string name="pref_key__manage_contacts" translatable="false">pref_key_manage_contacts</string>
     <string name="pref_key__change_account" translatable="false">pref_key_change_account</string>
-    <string name="pref_catkey__network" translatable="false">pref_key_category_network</string>
     <string name="pref_key__load_images" translatable="false">pref_key_load_images</string>
     <string name="pref_key__clear_cache" translatable="false">pref_key_clear_cache</string>
     <string name="pref_key__chrome_custom_tabs_enabled" translatable="false">pref_key__chrome_custom_tabs_enabled</string>
@@ -33,7 +30,6 @@
     <string name="pref_key__proxy_was_enabled" translatable="false">wasProxyEnabled</string>
 
     <!-- Navigiation Slider -->
-    <string name="pref_catkey__visibility_nav" translatable="false">pref_catkey__visibility_navslider</string>
     <string name="pref_key__visibility_nav__exit" translatable="false">pref_key__visibility_navslider__exit</string>
     <string name="pref_key__visibility_nav__help_license" translatable="false">pref_key__visibility_nav__help_license</string>
     <string name="pref_key__visibility_nav__public_activities" translatable="false">pref_key__visibility_nav__public_activities</string>
@@ -58,7 +54,6 @@
     <string name="pref_key__podprofile_notification_count" translatable="false">podUserProfile_NotificationCount</string>
 
     <!-- More -->
-    <string name="pref_catkey__category_more" translatable="false">pref_catkey__category_more</string>
     <string name="pref_key__logging_spam_enabled" translatable="false">pref_key__logging_spam_enabled</string>
     <string name="pref_key__logging_enabled" translatable="false">pref_key__logging_enabled</string>
     <string name="pref_key__wipe_settings" translatable="false">pref_key__wipe_settings</string>
@@ -71,9 +66,9 @@
 
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="pref_cat__visibility_nav_items">Item Visibility</string>
     <string name="pref_title__sub_nav_slider">Navigation Slider</string>
     <string name="pref_desc__sub_nav_slider">Control visibility of entries in the navigation drawer</string>
-    <string name="pref_cat__visibility_nav_items">Item visibility</string>
 
     <!-- Themes -->
     <string name="pref_title__themes">Theme and Colors</string>
@@ -118,7 +113,6 @@
     <string name="pref_title__http_proxy_host">Host</string>
     <string name="pref_title__http_proxy_port">Port</string>
     <string name="HTTP" translatable="false">HTTP</string>
-    <string name="SOCKS5" translatable="false">SOCKS5</string>
     <string name="toast__proxy_disabled__restart_required">App needs to restart to disable proxy usage</string>
     <string name="toast__proxy_orbot_preset_loaded">Orbot proxy preset loaded</string>
 
@@ -171,7 +165,6 @@
     <string name="pref_key__title__network" translatable="false">pref_key__title__network</string>
     <string name="pref_key__title__more" translatable="false">pref_key__title__more</string>
     <string name="pref_key__title__debugging" translatable="false">pref_key__title__debugging</string>
-    <string name="pref_key__title__visibility_nav" translatable="false">pref_key__title__visibility_nav</string>
     <string name="pref_key__title__proxy" translatable="false">pref_key__title__proxy</string>
     <string name="pref_key__title__themes" translatable="false">pref_key__title__themes</string>
 

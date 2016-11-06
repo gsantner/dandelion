@@ -2,7 +2,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
 <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
-    android:key="@string/pref_key__title__visibility_nav"
     android:title="@string/pref_cat__visibility_nav_items">
 
     <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference

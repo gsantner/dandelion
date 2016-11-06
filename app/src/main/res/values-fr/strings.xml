@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[partagé via #DiasporaForAndroid]*</string>
   <!-- Application -->
   <string name="reload">Rafraîchir</string>
-  <string name="new_notifications">Notifications non lues. Lire ?</string>
   <!-- Common Words -->
   <string name="settings">Paramètres</string>
   <string name="notifications">Notifications</string>
@@ -29,16 +28,9 @@
   <string name="notifications__reshared">Repartagés</string>
   <string name="notifications__started_sharing">A commencé à partager</string>
   <!-- Pod Activity -->
-  <string name="title_activity_pods">Selectionnez un Pod</string>
-  <string name="filter_hint">Entrez le nom de domaine du pod</string>
-  <string name="confirm_url">Confirmez l\'url du pod</string>
-  <string name="search_for_pod">Recherche de Pod&#8230;</string>
-  <string name="podlist_source_note">Note : la liste est générée à partir de la liste des pods sécurisés depuis https://podupti.me. Vous pouvez entrer l\'url d\'un pod non listé.</string>
-  <string name="valid_pod">Veuillez entrer un nom de domaine valide</string>
   <string name="podlist_error">Erreur : impossible de récupérer la liste des pods !</string>
   <string name="no_internet">Désolé, vous devez être connecté à Internet pour continuer</string>
   <string name="confirmation">Confirmation</string>
-  <string name="confirm_pod">Voulez-vous vraiment utiliser\nhttps://%1$s\ncomme pod Diaspora ?</string>
   <string name="confirm_exit">Souhaitez-vous quitter ?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">Plus</string>
@@ -66,9 +58,7 @@
   <string name="context_menu_open_external_browser">Ouvrir dans un navigateur externe&#8230;</string>
   <string name="context_menu_copy_link">Copier le lien dans le presse-papier</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">Attention: connexion au proxy impossible&#8230;</string>
   <string name="unable_to_load_image">Impossible de récupérer l\'image</string>
-  <string name="all_tags">Tout Tags</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">Vous devez autoriser \"Modifier ou supprimer le contenu de la carte Sd \" pour sauvegarder les captures d\'écrans. Ensuite, vous devriez fermer l\'application ou redémarrer votre téléphone. Si vous n\'avez pas autorisé l\'accès à l\'espace de stockage mais que vous souhaitez utiliser la fonctionnalité de prise de capture d\'écran plus tard, vous pouvez donner la permission plus tard. Veuillez ouvrir : Paramètres - applications - Diaspora. Dans la section Autorisations, vous pouvez autoriser \"Modifier ou supprimer le contenu de la carte Sd \".</string>
   <string name="permissions_image">Vous devez autoriser \"Modifier ou supprimer le contenu de la carte Sd \" pour sauvegarder/téléverser les images. Ensuite, vous devriez        fermer l\'application ou redémarrer votre téléphone. Si vous n\'avez pas autorisé l\'accès à l\'espace de stockage mais que vous souhaitez sauvegarder des images        ultérieurement, vous pouvez donner la permission plus tard. Veuillez ouvrir : Paramètres - applications -        Diaspora. Dans la section Autorisations, vous pouvez autoriser \"Modifier ou supprimer le contenu de la carte Sd \".</string>

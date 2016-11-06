@@ -11,7 +11,6 @@
   <string name="search">ಹುಡುಕಿ</string>
   <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
-  <string name="title_activity_pods">ಪೋಡ್ ಆಯ್ಕೆಮಾಡಿಕೊಳ್ಳಿ</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="new_post">ಹೊಸ ಪೊಸ್ಟ್</string>
   <string name="action_go_to_top">ಮೇಲಕ್ಕೆ ಹೋಗಿ</string>
@@ -21,6 +20,5 @@
   <string name="context_menu_share_image">ಚಿತ್ರವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ</string>
   <string name="context_menu_copy_link">ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಕೊಂಡಿಯನ್ನು ನಕಲಿಸಿ</string>
   <!-- More from MainActivity -->
-  <string name="all_tags">ಎಲ್ಲಾ ಟ್ಯಾಗ್‌ಗಳು</string>
   <!-- Permissions -->
 </resources>

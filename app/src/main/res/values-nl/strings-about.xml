@@ -14,7 +14,6 @@
   <string name="fragment_debug__package_name">Pakket-naam: %1$s</string>
   <string name="fragment_debug__android_version">Android-versie: %1$s</string>
   <string name="fragment_debug__device_name">Toestelnaam: %1$s</string>
-  <string name="fragment_debug__app_codename">Versienaam: %1$s</string>
   <string name="fragment_debug__pod_profile_name">Pod Profielnaam: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Pod-domein: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Tekst naar klembord gekopieerd</string>

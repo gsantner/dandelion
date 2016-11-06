@@ -14,7 +14,6 @@
   <string name="fragment_debug__package_name">Nazwa pakietu: %1$s</string>
   <string name="fragment_debug__android_version">Wersja systemu Android: %1$s</string>
   <string name="fragment_debug__device_name">Nazwa urządzenia: %1$s</string>
-  <string name="fragment_debug__app_codename">Nazwa kodowa: %1$s</string>
   <string name="fragment_debug__pod_profile_name">Alias Poda: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Domena Poda: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Log debugowania został skopiowany do schowka</string>

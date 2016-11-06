@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[compartilhado por #DiasporaForAndroid]*</string>
   <!-- Application -->
   <string name="reload">Atualizar</string>
-  <string name="new_notifications">Notificação não lida. Quer ler?</string>
   <!-- Common Words -->
   <string name="settings">Opções</string>
   <string name="notifications">Notificações</string>
@@ -21,15 +20,9 @@
   <string name="search">Buscar</string>
   <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
-  <string name="title_activity_pods">Selecione o Pod</string>
-  <string name="filter_hint">Insira o domínio do Pod</string>
-  <string name="confirm_url">Confirme a URL do Pod</string>
-  <string name="podlist_source_note">OBS: A lista de pods é gerada por pods seguros do https://podupti.me. Você pode adicionar qualquer pod não listado.</string>
-  <string name="valid_pod">Por favor insira um nome de domínio válido</string>
   <string name="podlist_error">Erro: Não conseguimos recuperar a lista de pods!</string>
   <string name="no_internet">Desculpe, que você deve estar conectado à Internet para prosseguir</string>
   <string name="confirmation">Confirmação</string>
-  <string name="confirm_pod">Você realmente quer usar\nhttps://%1$s\no seu Pod diáspora?</string>
   <string name="confirm_exit">Deseja sair?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_followed_tags">Tags selecionadas</string>
@@ -55,9 +48,7 @@
   <string name="context_menu_open_external_browser">Abrir em navegador externo&#8230;</string>
   <string name="context_menu_copy_link">Copiar link para área de transferência</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">Aviso: Não foi possível definir proxy de rede&#8230;</string>
   <string name="unable_to_load_image">Não é possível carregar a imagem</string>
-  <string name="all_tags">Todas as tags</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">Você deve conceder \"Permissão de armazenamento\" para salvar screenshots. Depois disso você deve fechar o app completamente ou reiniciar o telefone. Se você não permitir o acesso de armazenamento, mas deseja usar a função de captura de tela em um momento posterior, você pode conceder a permissão mais tarde. Por favor, abra: configurações - aplicativos - Diaspora. Na seção permissões, você pode conceder a permissão de armazenamento \"gravar\".</string>
   <string name="permissions_image">Você deve conceder \"Permissão de armazenamento\" para salvar imagens. Depois disso você deve fechar o app completamente ou reiniciar o telefone. Se você não permitir o acesso de armazenamento, mas deseja salvar imagens em um momento posterior, você pode conceder a permissão mais tarde. Por favor, abra: configurações - aplicativos - Diaspora. Na seção permissões, você pode conceder a permissão de armazenamento \"gravar\".</string>

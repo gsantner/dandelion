@@ -336,7 +336,7 @@ public class AboutActivity extends ThemedActivity
                     PackageInfo pInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
                     AppSettings appSettings = ((App) getActivity().getApplication()).getSettings();
                     DiasporaUrlHelper urls = new DiasporaUrlHelper(appSettings);
-                    packageName.setText(pInfo.packageName);
+                    packageName.setText(getString(R.string.fragment_debug__package_name, pInfo.packageName));
                     appVersion.setText(getString(R.string.fragment_debug__app_version, pInfo.versionName + " (" + pInfo.versionCode + ")"));
 
                     osVersion.setText(getString(R.string.fragment_debug__android_version, Build.VERSION.RELEASE));

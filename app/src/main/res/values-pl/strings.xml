@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[udostępnione za pomocą #DiasporaForAndroid]*</string>
   <!-- Application -->
   <string name="reload">Odśwież</string>
-  <string name="new_notifications">Nieprzeczytane powiadomienia. Chcesz je przeczytać?</string>
   <!-- Common Words -->
   <string name="settings">Ustawienia</string>
   <string name="notifications">Powiadomienia</string>
@@ -29,16 +28,9 @@
   <string name="notifications__reshared">Powtórzenia</string>
   <string name="notifications__started_sharing">Zaczęli się z Tobą dzielić</string>
   <!-- Pod Activity -->
-  <string name="title_activity_pods">Wybierz Pod</string>
-  <string name="filter_hint">Wprowadź domenę poda</string>
-  <string name="confirm_url">Potwierdzić adres url poda</string>
-  <string name="search_for_pod">Wyszukaj Pod&#8230;</string>
-  <string name="podlist_source_note">Uwaga: Na liście znajdują się Pody dodane do https://podupti.me i wspierające bezpieczne połączenia. Możesz także podać adres jakiegokolwiek innego Poda.</string>
-  <string name="valid_pod">Wprowadź prawidłową nazwę domeny</string>
   <string name="podlist_error">Błąd: Nie można pobrać listy podów!</string>
   <string name="no_internet">Przepraszam, musisz być podłączony do Internetu, aby kontynuować</string>
   <string name="confirmation">Potwierdzenie</string>
-  <string name="confirm_pod">Czy naprawdę chcesz używać\nhttps://%1$s \njako Twój Pod Diaspory?</string>
   <string name="confirm_exit">Czy chcesz zakończyć?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">Więcej</string>
@@ -66,9 +58,7 @@
   <string name="context_menu_open_external_browser">Otwórz w zewnętrznej przeglądarce&#8230;</string>
   <string name="context_menu_copy_link">Skopiuj adres odnośnika do schowka</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">Ostrzeżenie: Nie udało się ustawić proxy&#8230;</string>
   <string name="unable_to_load_image">Nie udało się wczytać obrazu</string>
-  <string name="all_tags">Wszystkie tagi</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">By móc zapisywać zrzuty ekranu musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - Diaspora. W sekcji uprawnień zaznacz \"Pamięć\".</string>
   <string name="permissions_image">By móc zapisywać/wysyłać obrazy musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - Diaspora. W sekcji uprawnień zaznacz \"Pamięć\".</string>

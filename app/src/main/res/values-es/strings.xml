@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[compartido vía #DiasporaForAndroid]*</string>
   <!-- Application -->
   <string name="reload">Recargar</string>
-  <string name="new_notifications">Notificación sin leer. ¿Quieres leerla?</string>
   <!-- Common Words -->
   <string name="settings">Configuración</string>
   <string name="notifications">Notificaciones</string>
@@ -29,16 +28,9 @@
   <string name="notifications__reshared">Recompartido</string>
   <string name="notifications__started_sharing">Empezado Compartir</string>
   <!-- Pod Activity -->
-  <string name="title_activity_pods">Seleccionar Pod</string>
-  <string name="filter_hint">Introduce el dominio del Pod</string>
-  <string name="confirm_url">Confirma la url del Pod</string>
-  <string name="search_for_pod">Buscar por Pod&#8230;</string>
-  <string name="podlist_source_note">Nota: La lista de Pods esta integrada por Pods seguros listados en https://podupti.me. Puedes ingresar en el campo de edición cualquier Pod no listado.</string>
-  <string name="valid_pod">Por favor, introduce un nombre de dominio válido</string>
   <string name="podlist_error">Error: ¡No se pudo recuperar la lista de pods!</string>
   <string name="no_internet">Lo sentimos, debe estar conectado a internet para continuar</string>
   <string name="confirmation">Confirmación</string>
-  <string name="confirm_pod">¿Realmente desea usar\nhttps://%1$s\ncomo su Pod de Diaspora?</string>
   <string name="confirm_exit">¿Desea salir?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">Más</string>
@@ -66,9 +58,7 @@
   <string name="context_menu_open_external_browser">Abrir en un navegador externo&#8230;</string>
   <string name="context_menu_copy_link">Copiar dirección al portapapeles</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">Advertencia: No se pudo establecer proxy de la red</string>
   <string name="unable_to_load_image">No se pudo cargar la imagen</string>
-  <string name="all_tags">Todas las etiquetas</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">Debe conceder \"Permiso de Almacenamiento de Información\" para guardar capturas de pantalla. Después debe cerrar completamente la aplicación o reiniciar el teléfono. Si usted no permite el acceso al almacenamiento pero desea utilizar la función de captura de pantalla en un momento posterior, puede conceder el permiso más adelante. Por favor vaya a: ajustes del sistema - aplicaciones - Diaspora. En la sección de permisos puede conceder el \"permiso de almacenamiento de escritura\".</string>
   <string name="permissions_image">Debe conceder \"Permiso de acceso al almacenamiento\" para guardar imágenes. Después, debe cerrar completamente la aplicación o reiniciar el aparato. Si usted no permite el almacenamiento  pero quiere guardar imágenes en otro momento, puede conceder el permiso más tarde.  Por favor abra: ajustes del sistema -aplicaciones- Diaspora. En la sección de permisos puede conceder el \"permiso de almacenamiento de escritura\".</string>

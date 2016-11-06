@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[condiviso con #DiasporaForAndroid]*</string>
   <!-- Application -->
   <string name="reload">Ricarica</string>
-  <string name="new_notifications">C\'è una notifica non letta. La vuoi leggere?</string>
   <!-- Common Words -->
   <string name="settings">Impostazioni</string>
   <string name="notifications">Notifiche</string>
@@ -29,16 +28,9 @@
   <string name="notifications__reshared">Ha ricondiviso</string>
   <string name="notifications__started_sharing">Ha iniziato a condividere con te</string>
   <!-- Pod Activity -->
-  <string name="title_activity_pods">Seleziona pod</string>
-  <string name="filter_hint">Inserisci dominio del pod</string>
-  <string name="confirm_url">Conferma URL del pod</string>
-  <string name="search_for_pod">Ricerca per pod&#8230;</string>
-  <string name="podlist_source_note">Nota: l\'elenco dei pod sicuri si trova su https://podupti.me. Si può inserire nel relativo campo qualsiasi pod non presente nell\'elenco.</string>
-  <string name="valid_pod">Inserisci un dominio valido</string>
   <string name="podlist_error">Errore: impossibile ottenere la lista dei pod!</string>
   <string name="no_internet">Devi essere connesso ad internet per proseguire</string>
   <string name="confirmation">Conferma</string>
-  <string name="confirm_pod">Vuoi veramente usare\nhttps://%1$s\ncome tuo pod di Diaspora?</string>
   <string name="confirm_exit">Vuoi veramente uscire?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">Altro</string>
@@ -66,9 +58,7 @@
   <string name="context_menu_open_external_browser">Apri nel browser&#8230;</string>
   <string name="context_menu_copy_link">Copia link negli appunti</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">Attenzione: impossibile impostare proxy di rete&#8230;</string>
   <string name="unable_to_load_image">Impossibile caricare immagine</string>
-  <string name="all_tags">Tutti i tag</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">Devi garantire il permesso di accesso alla memoria per poter salvare gli screenshot. Dopodiché devi
         chiudere completamente l\'app o riavviare il dispositivo. Se non permetti l\'accesso alla memoria ma vuoi usare la 

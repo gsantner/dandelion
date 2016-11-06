@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[ #DiasporaForAndroid ഉപയോഗിച്ച് ഷെയർ ചെയ്തത്]*</string>
   <!-- Application -->
   <string name="reload">റീലോഡ്</string>
-  <string name="new_notifications">വായിക്കാത്ത അറിയിപ്പുകളുണ്ട്. വായിക്കുന്നുവോ?</string>
   <!-- Common Words -->
   <string name="settings">സജ്ജീകരണങ്ങൾ</string>
   <string name="notifications">അറിയിപ്പുകൾ</string>
@@ -21,15 +20,9 @@
   <string name="search">തിരയുക</string>
   <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
-  <string name="title_activity_pods">പോഡ് തിരഞ്ഞെടുക്കുക</string>
-  <string name="filter_hint">പോഡ് അഡ്രസ് രേഖപ്പെടുത്തുക</string>
-  <string name="confirm_url">പോഡ് അഡ്രസ് ഉറപ്പാക്കുക</string>
-  <string name="podlist_source_note">അറിയിപ്പ് : പോഡുകളുടെ ലിസ്റ്റ്  https://podupti.me യിൽ നിന്നാണ്‌ ലഭിക്കുന്നത്. തിരുത്തൽ വരുത്താനുള്ളയിടത്തിൽ മറ്റു പോഡുകളുടെ അഡ്രസ് നൽകാം.</string>
-  <string name="valid_pod">ശരിയായ ഒരു അഡ്രസ് നൽകുക</string>
   <string name="podlist_error">തെറ്റ്: പോഡുകളുടെ ലിസ്റ്റ് ലഭിക്കുന്നില്ല!</string>
   <string name="no_internet">ക്ഷമിക്കണം, തുടരുവാൻ ഇൻറർനെറ്റുമായി ബന്ധപ്പെട്ടിരിക്കണം</string>
   <string name="confirmation">ഉറപ്പിക്കൽ</string>
-  <string name="confirm_pod">\nhttps://%1$s\nനിങ്ങളുടെ ഡയാസ്പൊറ പോഡായി ഉപയോഗിക്കണമെന്ന് ഉറപ്പാണോ?</string>
   <string name="confirm_exit">പുറത്തേക്കു പോകണമോ?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">കൂടുതൽ</string>
@@ -57,9 +50,7 @@
   <string name="context_menu_open_external_browser">പുറമേയുള്ള ബ്രൗസറിൽ തുറക്കുക&#8230;</string>
   <string name="context_menu_copy_link">ലിങ്ക് അഡ്രസ് ക്ലിപ്ബോർഡിലേക്ക് കോപ്പി ചെയ്യുക</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">മുന്നറിയിപ്പ്: നെറ്റ്‌വർക്ക് പ്രോക്സി സെറ്റ് ചെയ്യാൻ കഴിഞ്ഞില്ല&#8230;</string>
   <string name="unable_to_load_image">ചിത്രം ലോഡ്‌ ചെയ്യാൻ കഴിയുന്നില്ല</string>
-  <string name="all_tags">എല്ലാ ടാഗുകളും</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">സ്‌ക്രീനിന്റെ ചിത്രങ്ങൾ സൂക്ഷിക്കാൻ താങ്കൾ \"സ്റ്റോറേജിൽ പ്രവേശിക്കാനുള്ള അനുവാദം\" നൽകണം. അതിനുശേഷം താങ്കൾ        പ്രയോഗത്തെ പൂർണമായും നിർത്തുകയോ മൊബൈൽ റീസ്റ്റാർട്ട് ചെയ്യുകയോ വേണം. സ്റ്റോറേജിൽ പ്രവേശിക്കാനുള്ള അനുവാദം നൽകാതെ        മറ്റൊരവസരത്തിൽ സ്‌ക്രീനിന്റെ ചിത്രത്തങ്ങൾ സൂക്ഷിക്കാൻ താങ്കൾക്ക് അപ്പോൾ അനുവാദം നൽകാം. ഇതിനായി സജ്ജീകരണങ്ങളിലെ പ്രയോഗങ്ങളിൽ നിന്ന്        ഡയസ്പോറ തിരഞ്ഞെടുക്കുക. എന്നിട്ട്‌ അനുവാദങ്ങളിൽ \"റൈറ്റ് സ്റ്റോറേജ് അനുവാദം\" നൽകുക.</string>
   <string name="permissions_image">ചിത്രങ്ങൾ സൂക്ഷിക്കാൻ താങ്കൾ \"സ്റ്റോറേജിൽ പ്രവേശിക്കാനുള്ള അനുവാദം\" നൽകണം. അതിനുശേഷം താങ്കൾ        പ്രയോഗത്തെ പൂർണമായും നിർത്തുകയോ മൊബൈൽ റീസ്റ്റാർട്ട് ചെയ്യുകയോ വേണം. സ്റ്റോറേജിൽ പ്രവേശിക്കാനുള്ള അനുവാദം നൽകാതെ        മറ്റൊരവസരത്തിൽ ചിത്രത്തങ്ങൾ സൂക്ഷിക്കാൻ താങ്കൾക്ക് അപ്പോൾ അനുവാദം നൽകാം. ഇതിനായി സജ്ജീകരണങ്ങളിലെ പ്രയോഗങ്ങളിൽ നിന്ന്        ഡയസ്പോറ തിരഞ്ഞെടുക്കുക. എന്നിട്ട്‌ അനുവാദങ്ങളിൽ \"റൈറ്റ് സ്റ്റോറേജ് അനുവാദം\" നൽകുക.</string>
