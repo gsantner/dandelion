@@ -62,6 +62,9 @@
   <string name="pref_title__append_shared_via_app">Ajoutez \"partagé via …\" aux partages</string>
   <string name="pref_desc__append_shared_via_app">Ajoutez une référence à l\'application (« partagée via &#8230;\") aux textes partagés</string>
   <!-- More -->
+  <string name="pref_title__sub_miscelaneous">Divers</string>
+  <string name="pref_title__wipe_settings">Réinitialisation complète</string>
+  <string name="pref_desc__wipe_settings">Effacer localement tous les réglages relatifs à l\'application et déconnexion de tous les comptes</string>
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->
 </resources>
