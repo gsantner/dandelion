@@ -62,6 +62,10 @@
   <string name="pref_title__append_shared_via_app">Aggiungi avviso dell\'app</string>
   <string name="pref_desc__append_shared_via_app">Aggiunge un riferimento a quest\'app (\"Condiviso da&#8230;\") nei testi condivisi</string>
   <!-- More -->
+  <string name="pref_title__sub_miscelaneous">Vario</string>
+  <string name="pref_title__wipe_settings">Reset completo</string>
+  <string name="pref_desc__wipe_settings">Elimina localmente tutte le impostazioni relative all\'app e disconnette da tutti gli account</string>
+  <string name="dialog_content__wipe_settings">Questo cancellerà tutte le impostazioni dell\'app che sono state cambiate ai loro valori predefiniti e ti disconnetterà da tutti i pod. Le immagini scaricate non verranno toccate. Sei sicuro di voler procedere?</string>
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->
 </resources>
