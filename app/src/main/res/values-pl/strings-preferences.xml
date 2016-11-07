@@ -33,7 +33,7 @@
   <string name="font_size_huge">Bardzo duży</string>
   <!-- Load images -->
   <string name="pref_title__load_images">Wczytuj obrazy</string>
-  <string name="pref_desc__load_images">Wyłącz wczytywanie obrazków by oszczędzać transfer</string>
+  <string name="pref_desc__load_images">Odznacz by wyłączyć wczytywanie obrazów, np. w celu oszczędzania transferu</string>
   <!-- Proxy -->
   <string name="pref_title__http_proxy_load_tor_preset">Wczytaj domyślną konfigurację Tora</string>
   <string name="pref_desc__http_proxy_load_tor_preset">Wczytaj ustawienia proxy HTTP Tora (Orbot)</string>
