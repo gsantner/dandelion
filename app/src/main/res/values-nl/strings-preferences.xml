@@ -15,6 +15,9 @@
   <string name="pref_title__sub_nav_slider">Navigatie Slider</string>
   <string name="pref_desc__sub_nav_slider">Bepalen zichtbaarheid van vermeldingen in de navigatie-lade</string>
   <string name="pref_cat__visibility_nav_items">Item Zichtbaarheid</string>
+  <string name="pref_cat__visibility_nav_items__user">Gebruiker</string>
+  <string name="pref_cat__visibility_nav_items__general">Algemeen</string>
+  <string name="pref_cat__visibility_nav_items__admin">Beheer</string>
   <!-- Themes -->
   <string name="pref_title__themes">Thema en kleuren</string>
   <string name="pref_desc__themes">Bepalen welke kleuren worden gebruikt in de app</string>
@@ -62,6 +65,10 @@
   <string name="pref_title__append_shared_via_app">Gedeeld-via-aankondiging toevoegen</string>
   <string name="pref_desc__append_shared_via_app">Een verwijzing naar dit app (\"gedeeld door&#8230;\") toevoegen aan gedeelde teksten</string>
   <!-- More -->
+  <string name="pref_title__sub_miscelaneous">Overig</string>
+  <string name="pref_title__wipe_settings">Volledige reset</string>
+  <string name="pref_desc__wipe_settings">Verwijder alle lokale app-instellingen en log uit alle accounts</string>
+  <string name="dialog_content__wipe_settings">Dit zal al uw app-instellingen terugzetten naar de standaardwaarden en u uitloggen van alle pods. Gedownloade afbeeldingen blijven bewaard. Weet u zeker dat u wilt doorgaan?</string>
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->
 </resources>
