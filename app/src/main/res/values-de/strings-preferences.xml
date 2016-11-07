@@ -15,6 +15,9 @@
   <string name="pref_title__sub_nav_slider">Navigations Slider</string>
   <string name="pref_desc__sub_nav_slider">Konfiguration der Sichtbarkeit von Einträgen im Navigation-Slider</string>
   <string name="pref_cat__visibility_nav_items">Sichtbarkeit der Einträge</string>
+  <string name="pref_cat__visibility_nav_items__user">Nutzer</string>
+  <string name="pref_cat__visibility_nav_items__general">Generelles</string>
+  <string name="pref_cat__visibility_nav_items__admin">Administrator</string>
   <!-- Themes -->
   <string name="pref_title__themes">Farbschema</string>
   <string name="pref_desc__themes">Einstellungen des Farbdesigns</string>
@@ -62,6 +65,10 @@
   <string name="pref_title__append_shared_via_app">Verweise auf App</string>
   <string name="pref_desc__append_shared_via_app">Füge beim Teilen von Texten einen Verweis auf diese App an (\"geteilt durch&#8230;\")</string>
   <!-- More -->
+  <string name="pref_title__sub_miscelaneous">Verschiedenes</string>
+  <string name="pref_title__wipe_settings">Zurücksetzen</string>
+  <string name="pref_desc__wipe_settings">Setze alle Einstellungen der Anwendung zurück und melde alle Konten ab</string>
+  <string name="dialog_content__wipe_settings">Dies wird alle geänderten Einstellungen der Anwendung auf die Standardwerte zurücksetzen und alle Konten abmelden. Deine heruntergeladenen Medien bleiben unberührt. Bist du sicher, dass du fortfahren willst?</string>
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->
 </resources>
