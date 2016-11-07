@@ -15,6 +15,9 @@
   <string name="pref_title__sub_nav_slider">Pasek nawigacji</string>
   <string name="pref_desc__sub_nav_slider">Wybierz elementy widoczne w pasku nawigacji</string>
   <string name="pref_cat__visibility_nav_items">Widoczność elementu</string>
+  <string name="pref_cat__visibility_nav_items__user">Użytkownik</string>
+  <string name="pref_cat__visibility_nav_items__general">Ogólne</string>
+  <string name="pref_cat__visibility_nav_items__admin">Administracja</string>
   <!-- Themes -->
   <string name="pref_title__themes">Motywy i kolory</string>
   <string name="pref_desc__themes">Ustaw jakich kolorów ma używać aplikacja</string>
@@ -62,6 +65,8 @@
   <string name="pref_title__append_shared_via_app">Informacja o użytej aplikacji</string>
   <string name="pref_desc__append_shared_via_app">Dodawaj do wpisów informację o użytej aplikacji (\"udostępniono za pomocą&#8230;\")</string>
   <!-- More -->
+  <string name="pref_title__sub_miscelaneous">Różne</string>
+  <string name="pref_title__wipe_settings">Całkowity restart</string>
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->
 </resources>
