@@ -68,7 +68,7 @@
   <string name="pref_title__sub_miscelaneous">Прочее</string>
   <string name="pref_title__wipe_settings">Полный сброс</string>
   <string name="pref_desc__wipe_settings">Локально стереть все параметры, относящиеся к приложению и выйти из всех учётных записей</string>
-  <string name="dialog_content__wipe_settings">Это сбросит все изменённые параметры приложения к значениям по умолчанию и выйдет из аккаунтов на всех подах. Ваши загруженные изображения останутся нетронутыми. Вы уверены, что хотите продолжить?</string>
+  <string name="dialog_content__wipe_settings">Это сбросит все изменённые параметры приложения на значения по умолчанию и выйдет из аккаунтов на всех подах. Ваши загруженные изображения останутся нетронутыми. Вы уверены, что хотите продолжить?</string>
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->
 </resources>
