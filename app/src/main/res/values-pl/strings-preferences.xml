@@ -67,6 +67,8 @@
   <!-- More -->
   <string name="pref_title__sub_miscelaneous">Różne</string>
   <string name="pref_title__wipe_settings">Całkowity restart</string>
+  <string name="pref_desc__wipe_settings">Wyczyść wszystkie lokalne ustawienia aplikacji i wyloguj ze wszystkich kont</string>
+  <string name="dialog_content__wipe_settings">Ta operacja przywróci wszystkie zmodyfikowane przez Ciebie ustawienia aplikacji do ich domyślnych wartości i wyloguje Cię ze wszystkich Podów. Na pewno chcesz to zrobić?</string>
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->
 </resources>
