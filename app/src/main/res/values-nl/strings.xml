@@ -45,6 +45,7 @@
   <string name="nav_help_license">Over | Help</string>
   <string name="nav_followed_tags">Gevolgde Tags</string>
   <string name="nav_public_activities">Publieke activiteiten</string>
+  <string name="nav_reports">Meldingen</string>
   <string name="share__share_link_as_text">Link delen als tekst</string>
   <string name="share__share_screenshot">Screenshot van de webpagina delen</string>
   <string name="share__take_screenshot">Neem screenshot van de webpagina</string>
