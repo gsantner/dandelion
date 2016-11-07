@@ -45,6 +45,7 @@
   <string name="nav_help_license">Информация | Помощь</string>
   <string name="nav_followed_tags">Отслеживаемые хэштеги</string>
   <string name="nav_public_activities">Публичная активность</string>
+  <string name="nav_reports">Отчёты</string>
   <string name="share__share_link_as_text">Разместить ссылку как текст</string>
   <string name="share__share_screenshot">Разместить экранный снимок страницы</string>
   <string name="share__take_screenshot">Сделать экранный снимок страницы</string>
