@@ -45,6 +45,7 @@
   <string name="nav_help_license">Über | Hilfe</string>
   <string name="nav_followed_tags">Tags</string>
   <string name="nav_public_activities">Öffentliche Aktivitäten</string>
+  <string name="nav_reports">Meldungen</string>
   <string name="share__share_link_as_text">Link als Text teilen</string>
   <string name="share__share_screenshot">Bildschirmfoto teilen</string>
   <string name="share__take_screenshot">Bildschirmfoto speichern</string>
