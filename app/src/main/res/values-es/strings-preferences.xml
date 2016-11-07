@@ -15,6 +15,9 @@
   <string name="pref_title__sub_nav_slider">Control deslizante de navegación</string>
   <string name="pref_desc__sub_nav_slider">Control de visibilidad de las entradas en el cajón de navegación</string>
   <string name="pref_cat__visibility_nav_items">Elemento visibilidad</string>
+  <string name="pref_cat__visibility_nav_items__user">Usuario</string>
+  <string name="pref_cat__visibility_nav_items__general">General</string>
+  <string name="pref_cat__visibility_nav_items__admin">Administrador</string>
   <!-- Themes -->
   <string name="pref_title__themes">Tema y Colores</string>
   <string name="pref_desc__themes">Control de colores que se utilizan en la aplicación</string>
@@ -62,6 +65,8 @@
   <string name="pref_title__append_shared_via_app">Añadir compartido por aviso</string>
   <string name="pref_desc__append_shared_via_app">Agregar una referencia a esta aplicación (\"compartida por&#8230;\") a los textos compartidos</string>
   <!-- More -->
+  <string name="pref_title__sub_miscelaneous">Diverso</string>
+  <string name="pref_title__wipe_settings">Reinicio completo</string>
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->
 </resources>
