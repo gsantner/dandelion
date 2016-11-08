@@ -45,6 +45,7 @@
   <string name="nav_help_license">概要 |ヘルプ</string>
   <string name="nav_followed_tags">フォロー済タグ</string>
   <string name="nav_public_activities">公開アクティビティ</string>
+  <string name="nav_reports">報告</string>
   <string name="share__share_link_as_text">テキストとしてリンクをシェア</string>
   <string name="share__share_screenshot">Web ページのスクリーン ショットをシェア</string>
   <string name="share__take_screenshot">Web ページのスクリーン ショットを撮る</string>
