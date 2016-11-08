@@ -16,6 +16,7 @@
   <string name="fragment_debug__pod_profile_name">Pod alias : %1$s</string>
   <string name="fragment_debug__pod_profile_url">Adresse du pod : %1$s</string>
   <string name="fragment_debug__toast_log_copied">Journal de débogage copié dans le presse-papiers</string>
+  <string name="fragment_about__about_text">DiasporaForAndroid est votre application compagnon pour naviguer sur le réseau social diaspora*. Il ajoute des fonctionnalités telles que des barres d’outils utiles et la prise en charge pour les serveurs proxy comme le réseau Tor à votre expérience sociale.</string>
   <string name="fragment_about__contribute">Contribuez au code !</string>
   <string name="fragment_about__contribute_text">DiasporaForAndroid est libre, et suit les idées du projet diaspora*. Si vous voulez contribuer, allez-y ! Actuellement, nous sommes une toute petite équipe, donc nous apprécierions tout type d\'aide !</string>
   <string name="fragment_about__contribute_button">Obtenir la source</string>
