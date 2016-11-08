@@ -15,6 +15,9 @@
   <string name="pref_title__sub_nav_slider">ナビゲーション スライダー</string>
   <string name="pref_desc__sub_nav_slider">ナビゲーションドロワー内のエントリーの表示を制御します</string>
   <string name="pref_cat__visibility_nav_items">アイテムの表示</string>
+  <string name="pref_cat__visibility_nav_items__user">ユーザー</string>
+  <string name="pref_cat__visibility_nav_items__general">一般</string>
+  <string name="pref_cat__visibility_nav_items__admin">管理</string>
   <!-- Themes -->
   <string name="pref_title__themes">テーマと色</string>
   <string name="pref_desc__themes">アプリ全体で使用される色を制御します</string>
@@ -62,6 +65,10 @@
   <string name="pref_title__append_shared_via_app">シェア方法の通知を追加</string>
   <string name="pref_desc__append_shared_via_app">シェアしたテキストに、このアプリへの参照 (\"&#8230;でシェア\") を追加します</string>
   <!-- More -->
+  <string name="pref_title__sub_miscelaneous">その他</string>
+  <string name="pref_title__wipe_settings">完全なリセット</string>
+  <string name="pref_desc__wipe_settings">すべてのアカウントから、アプリとログアウトに関連するすべての設定をローカルで消去します</string>
+  <string name="dialog_content__wipe_settings">これはアプリの変更された設定をすべてデフォルトにリセットして、すべてのポッドからログアウトします。ダウンロードした画像はそのまま残ります。続行してもよろしいですか?</string>
   <!-- Recently added - Please move to right section-->
   <!-- Sorry -->
 </resources>
