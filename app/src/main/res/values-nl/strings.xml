@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[gedeeld door #DiasporaForAndroid]*</string>
   <!-- Application -->
   <string name="reload">Herladen</string>
-  <string name="new_notifications">Ongelezen bericht. Wilt u het lezen?</string>
   <!-- Common Words -->
   <string name="settings">Instellingen</string>
   <string name="notifications">Meldingen</string>
@@ -29,16 +28,9 @@
   <string name="notifications__reshared">Opnieuw gedeeld</string>
   <string name="notifications__started_sharing">Begonnen te delen</string>
   <!-- Pod Activity -->
-  <string name="title_activity_pods">Selecteer Pod</string>
-  <string name="filter_hint">Voer pod domein</string>
-  <string name="confirm_url">Bevestigen pod url</string>
-  <string name="search_for_pod">Zoek Pod&#8230;</string>
-  <string name="podlist_source_note">Opmerking: De podlijst is gevuld met beveiligde pods vermeld op https://podupti.me. U kunt in het bewerk veld elke pod invullen die niet in de lijst staat.</string>
-  <string name="valid_pod">Voer een geldige domeinnaam in</string>
   <string name="podlist_error">Fout: Kan niet de podlijst ophalen!</string>
   <string name="no_internet">Sorry, u moet verbinding met internet hebben om verder te gaan</string>
   <string name="confirmation">Bevestiging</string>
-  <string name="confirm_pod">Wilt u echt \nhttps://%1$s\n als uw Diaspora pod gebruiken?</string>
   <string name="confirm_exit">Wilt u afsluiten?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">Meer</string>
@@ -67,9 +59,7 @@
   <string name="context_menu_open_external_browser">Geopend in externe browser&#8230;</string>
   <string name="context_menu_copy_link">Link-adres kopiëren naar Klembord</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">Waarschuwing: Kan niet netwerk proxy instellen&#8230;</string>
   <string name="unable_to_load_image">Niet in staat om afbeelding te laden</string>
-  <string name="all_tags">Alle tags</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">U moet machtegingen aan \"Access Storage Permission\" geven om screenshots op te slaan. Daarna moet u de app volledig afsluiten of de telefoon opnieuw opstarten. Als u geen toestemming aan opslag wil geven maar screenshot functie later wil gebruiken, kunt u de toestemming later geven. Open dan: systemsettings - apps - Diaspora. In de machtegings sectie kunt u machtegingen geven aan \"write storage permission\".</string>
   <string name="permissions_image">U moet machtigingen aan \"Access Storage Permission\" geven om screenshots op te slaan. Daarna moet u de app volledig afsluiten of de telefoon opnieuw opstarten. Als u geen toestemming aan opslag wilt geven maar screenshot functie later wilt gebruiken, kunt u de toestemming later geven. Open dan: system settings - apps - Diaspora. In de machtigingssectie kunt u machtigingen geven aan \"write storage permission\".</string>
