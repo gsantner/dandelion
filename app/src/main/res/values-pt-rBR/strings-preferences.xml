@@ -14,7 +14,6 @@
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Controle deslizante de navegação</string>
   <string name="pref_desc__sub_nav_slider">Visibilidade do controle de entradas na gaveta de navegação</string>
-  <string name="pref_cat__visibility_nav_items">Visibilidade de item</string>
   <!-- Themes -->
   <!-- Notifications dropdown -->
   <!-- Font size -->
