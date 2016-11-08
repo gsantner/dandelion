@@ -16,7 +16,6 @@
   <string name="fragment_debug__pod_profile_name">Pod Profil Name: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Pod Domain: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Debug-Protokoll in Zwischenablage kopiert</string>
-  <string name="fragment_about__about_text">DiasporaForAndroid ist dein Begleiter auf deinen Streifzügen durch das soziale Netzwerk diaspora*. Es bietet dir zusätzliche Funktionen wie nützliche Werkzeugleisten und Unterstützung für Proxyserver wie das Tor-Netzwerk.</string>
   <string name="fragment_about__contribute">Mach mit!</string>
   <string name="fragment_about__contribute_text">DiasporaForAndroid wird frei wie in Freiheit entwickelt und folgt den Ideen des diaspora* Projektes. Wenn du mithelfen willst, nur zu! Wir sind momentan nur ein sehr kleines Team und sind froh über jede Unterstützung!</string>
   <string name="fragment_about__contribute_button">Zum Quellcode</string>
