@@ -16,7 +16,21 @@
   <string name="fragment_debug__pod_profile_name">Pod Profil Name: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Pod Domain: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Debug-Protokoll in Zwischenablage kopiert</string>
+  <string name="fragment_about__contribute_button">Zum Quellcode</string>
+  <string name="fragment_about__translate">Übersetze die App!</string>
+  <string name="fragment_about__translate_text">Die Anwendung ist nicht in deiner Sprache verfügbar? Das kannst du ändern! Warum hilfst du uns nicht, indem du übersetzt? Wir benutzen die Plattform crowdin, um es jedem zu ermöglichen, die App zu übersetzen.</string>
+  <string name="fragment_about__translate_button">Ich möchte übersetzen</string>
+  <string name="fragment_about__feedback">Feedback geben!</string>
+  <string name="fragment_about__feedback_text">DiasporaForAndroid befindet sich noch in Entwicklung, wenn du also Vorschläge oder etwas anderes auf dem Herzen hast besuche doch unseren Bug Tracker und lass es uns wissen!</string>
+  <string name="fragment_about__feedback_button">Fehler melden</string>
+  <string name="fragment_about__spread_the_word">Anderen davon erzählen!</string>
+  <string name="fragment_about__spread_the_word_text">Erzähl deiner Familie und deinen Freunden von diaspora* und #DiasporaForAndroid! Warum bloggst du nicht über deine Erfahrungen mit der App? Wir würden gerne davon erfahren!</string>
+  <string name="fragment_about__spread_the_word_button">Weitersagen</string>
+  <string name="fragment_about__spread_the_word_share_text">Hey! Probier mal #DiasporaForAndroid! %1$s</string>
   <!-- License & help (large amount of text) -->
+  <string name="fragment_license__maintainers">Entwickler</string>
+  <string name="fragment_license__maintainers_text">Diese Anwendung wird momentan entwickelt und betreut von &lt;br&gt;&lt;br&gt;%1$s</string>
+  <string name="fragment_license__contributors">Mitwirkende</string>
   <string name="fragment_license__contributors_thank_you">%1$s&lt;br&gt;&lt;br&gt;Vielen Dank!</string>
   <string name="fragment_license__license">Lizenz</string>
   <string name="fragment_license__license_button">GNU GPLv3+ Lizenz</string>
