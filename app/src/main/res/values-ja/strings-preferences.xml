@@ -14,7 +14,6 @@
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">ナビゲーション スライダー</string>
   <string name="pref_desc__sub_nav_slider">ナビゲーションドロワー内のエントリーの表示を制御します</string>
-  <string name="pref_cat__visibility_nav_items">アイテムの表示</string>
   <string name="pref_cat__visibility_nav_items__user">ユーザー</string>
   <string name="pref_cat__visibility_nav_items__general">一般</string>
   <string name="pref_cat__visibility_nav_items__admin">管理</string>
