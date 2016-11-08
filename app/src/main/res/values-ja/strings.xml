@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[#DiasporaForAndroid でシェア]*</string>
   <!-- Application -->
   <string name="reload">再読み込み</string>
-  <string name="new_notifications">未読の通知。読みますか?</string>
   <!-- Common Words -->
   <string name="settings">設定</string>
   <string name="notifications">通知</string>
@@ -29,16 +28,9 @@
   <string name="notifications__reshared">リシェアしました</string>
   <string name="notifications__started_sharing">シェアを始めました</string>
   <!-- Pod Activity -->
-  <string name="title_activity_pods">ポッドを選択</string>
-  <string name="filter_hint">ポッドのドメインを入力</string>
-  <string name="confirm_url">ポッドの URL を確認</string>
-  <string name="search_for_pod">ポッドの検索&#8230;</string>
-  <string name="podlist_source_note">注意: ポットリストは、https://podupti.me に記載されているセキュリティで保護されたポッドが表示されます。表示されていないポッドを編集フィールドに入力することができます。</string>
-  <string name="valid_pod">有効なドメインを入力してください</string>
   <string name="podlist_error">エラー: ポッドのリストを取得できませんでした!</string>
   <string name="no_internet">申し訳ありません。続行するにはインターネットに接続する必要があります</string>
   <string name="confirmation">確認</string>
-  <string name="confirm_pod">Diaspora のポッドとして\nhttps://%1$s\nを使用してもよろしいですか?</string>
   <string name="confirm_exit">終了しますか?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">さらに</string>
@@ -67,9 +59,7 @@
   <string name="context_menu_open_external_browser">外部ブラウザーで開く&#8230;</string>
   <string name="context_menu_copy_link">リンクアドレスをクリップボードへコピー</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">警告: ネットワーク プロキシを設定できませんでした&#8230;</string>
   <string name="unable_to_load_image">画像を読み込むことができません</string>
-  <string name="all_tags">すべてのタグ</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">スクリーン ショットを保存するために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後でスクリーン ショット機能を使用する場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - Diaspora を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
   <string name="permissions_image">画像を保存/アップロードするために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後で画像を保存したい場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - Diaspora を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
