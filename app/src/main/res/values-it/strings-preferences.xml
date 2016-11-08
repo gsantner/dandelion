@@ -14,7 +14,6 @@
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Menù di navigazione</string>
   <string name="pref_desc__sub_nav_slider">Controlla la visibilità degli elementi nel menù di navigazione</string>
-  <string name="pref_cat__visibility_nav_items">Visibilità degli elementi</string>
   <string name="pref_cat__visibility_nav_items__user">Utente</string>
   <string name="pref_cat__visibility_nav_items__general">Generali</string>
   <string name="pref_cat__visibility_nav_items__admin">Amministrazione</string>
