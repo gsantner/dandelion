@@ -14,7 +14,6 @@
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">നാവിഗേഷൻ സ്ലൈഡർ</string>
   <string name="pref_desc__sub_nav_slider">നാവിഗേഷൻ ഡ്രാവറിൽ കാണേണ്ട എൻട്രികൾ നിയന്ത്രിക്കൂ</string>
-  <string name="pref_cat__visibility_nav_items">ഇനത്തിന്റെ കാഴ്ച</string>
   <!-- Themes -->
   <!-- Notifications dropdown -->
   <!-- Font size -->
