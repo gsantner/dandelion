@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[geteilt durch #DiasporaForAndroid]*</string>
   <!-- Application -->
   <string name="reload">Aktualisieren</string>
-  <string name="new_notifications">Ungelesene Benachrichtigung. Lesen?</string>
   <!-- Common Words -->
   <string name="settings">Einstellungen</string>
   <string name="notifications">Benachrichtigungen</string>
@@ -29,16 +28,9 @@
   <string name="notifications__reshared">Weitergesagt</string>
   <string name="notifications__started_sharing">Angefangen zu teilen</string>
   <!-- Pod Activity -->
-  <string name="title_activity_pods">Pod auswählen</string>
-  <string name="filter_hint">Pod-Adresse eingeben</string>
-  <string name="confirm_url">Pod-Adresse bestätigen</string>
-  <string name="search_for_pod">Pods durchsuchen&#8230;</string>
-  <string name="podlist_source_note">Anmerkung: Die Podliste wird aus den sicheren Pods, die bei  https://podupti.me gelistet sind generiert.</string>
-  <string name="valid_pod">Bitte eine gültige Pod-Adresse (Url) eingeben</string>
   <string name="podlist_error">Fehler: Konnte die Podliste nicht abfragen!</string>
   <string name="no_internet">Entschuldigung, du musst mit dem Internet verbunden sein, um fortzufahren.</string>
   <string name="confirmation">Bestätigung</string>
-  <string name="confirm_pod">Möchtest du wirklich \nhttps://%1$s\nals deinen Diaspora Pod auswählen?</string>
   <string name="confirm_exit">Möchtest du die App verlassen?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">Mehr</string>
@@ -67,9 +59,7 @@
   <string name="context_menu_open_external_browser">In externem Browser öffnen&#8230;</string>
   <string name="context_menu_copy_link">Linkadresse kopieren</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">Warnung: Proxy konnte nicht aktiviert werden&#8230;</string>
   <string name="unable_to_load_image">Konnte Bild nicht laden…</string>
-  <string name="all_tags">Alle Tags</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">Du musst der App Zugriff auf den Gerätespeicher gewähren, damit das Bildschirmfoto
         gespeichert werden kann. Danach solltest du die Anwendung komplett schließen oder das Gerät neu starten.
