@@ -5,7 +5,6 @@
   <string name="shared_by_diaspora_android">*[опубликовано из #DiasporaForAndroid]*</string>
   <!-- Application -->
   <string name="reload">Перезагрузить</string>
-  <string name="new_notifications">Непрочитанное уведомление. Хотите прочитать его?</string>
   <!-- Common Words -->
   <string name="settings">Настройки</string>
   <string name="notifications">Уведомления</string>
@@ -29,16 +28,9 @@
   <string name="notifications__reshared">Поделились</string>
   <string name="notifications__started_sharing">Добавили вас</string>
   <!-- Pod Activity -->
-  <string name="title_activity_pods">Выберите под</string>
-  <string name="filter_hint">Введите адрес пода</string>
-  <string name="confirm_url">Подтвердите URL пода</string>
-  <string name="search_for_pod">Поиска пода&#8230;</string>
-  <string name="podlist_source_note">Примечание: список подов формируется на основании списка безопасных подов с https://podupti.me. Вы можете ввести в поле для ввода любой под не из списка.</string>
-  <string name="valid_pod">Пожалуйста, введите корректное имя домена</string>
   <string name="podlist_error">Ошибка: не удалось получить список подов!</string>
   <string name="no_internet">Извините, вы должны быть подключены к Интернету, чтобы продолжить</string>
   <string name="confirmation">Подтверждение</string>
-  <string name="confirm_pod">Вы действительно хотите использовать\nhttps://%1$s\nв качестве вашего пода в Диаспоре?</string>
   <string name="confirm_exit">Вы действительно хотите выйти?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="nav_menu_more">Дополнительно</string>
@@ -67,9 +59,7 @@
   <string name="context_menu_open_external_browser">Открыть во внешнем браузере&#8230;</string>
   <string name="context_menu_copy_link">Копировать адрес ссылки в буфер обмена</string>
   <!-- More from MainActivity -->
-  <string name="toast_set_proxy_failed">Предупреждение: Не удалось установить сетевой прокси&#8230;</string>
   <string name="unable_to_load_image">Не удается загрузить изображение</string>
-  <string name="all_tags">Все теги</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">Необходимо предоставить «Разрешение на доступ к хранилищу» для сохранения скриншотов. После этого вы должны полностью закрыть приложение или перезагрузите телефон. Если вы не разрешаете доступ к хранилищу, но хотите использовать функцию скриншотов позже, можно предоставить разрешение позднее. Затем откройте: Системные настройки  - приложения - Диаспора. В разделе разрешения можно предоставить «разрешение на запись в хранилище».</string>
   <string name="permissions_image">Необходимо предоставить «Разрешение на доступ к хранилищу» для сохранения изображений. После этого вы должны полностью закрыть приложение или перезагрузите телефон. Если вы не разрешаете доступ к хранилищу, но хотите сохранять изображения позже, можно предоставить разрешение позднее. Затем откройте: Системные настройки  - приложения - Диаспора. В разделе разрешения можно предоставить «разрешение на запись в хранилище».</string>
