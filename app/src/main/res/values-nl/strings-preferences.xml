@@ -14,7 +14,6 @@
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Navigatie Slider</string>
   <string name="pref_desc__sub_nav_slider">Bepalen zichtbaarheid van vermeldingen in de navigatie-lade</string>
-  <string name="pref_cat__visibility_nav_items">Item Zichtbaarheid</string>
   <string name="pref_cat__visibility_nav_items__user">Gebruiker</string>
   <string name="pref_cat__visibility_nav_items__general">Algemeen</string>
   <string name="pref_cat__visibility_nav_items__admin">Beheer</string>
