@@ -17,4 +17,8 @@
   <string name="fragment_debug__pod_profile_url">Dominio pod: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Log di debug copiato negli appunti</string>
   <!-- License & help (large amount of text) -->
+  <string name="fragment_license__contributors">Contributori</string>
+  <string name="fragment_license__license">Licenza</string>
+  <string name="fragment_license__misc">Miscellaneo</string>
+  <string name="fragment_license__misc_leafpic_button">Dimmi di più</string>
 </resources>
