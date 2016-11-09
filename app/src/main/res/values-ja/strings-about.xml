@@ -16,5 +16,18 @@
   <string name="fragment_debug__pod_profile_name">ポッドプロファイル名: %1$s</string>
   <string name="fragment_debug__pod_profile_url">ポッドドメイン: %1$s</string>
   <string name="fragment_debug__toast_log_copied">デバッグログをクリップボードにコピーしました</string>
+  <string name="fragment_about__about_text">DiasporaForAndroid は、ソーシャル ネットワーク diaspora* をブラウジングするためのコンパニオン アプリです。便利なツールバーや Tor のようなプロキシ サーバーのサポートなどの機能を追加して、ソーシャル体験することができます。</string>
+  <string name="fragment_about__contribute">コードを貢献!</string>
+  <string name="fragment_about__contribute_text">DiasporaForAndroid は自由にフリーで開発され、diaspora* プロジェクトのアイデアをフォローしています。貢献したい場合は、どうぞ! 現在私たちは、非常に小規模なチームなので、あらゆる種類の支援に感謝申し上げます!</string>
+  <string name="fragment_about__contribute_button">ソースを取得</string>
+  <string name="fragment_about__translate">アプリを翻訳!</string>
+  <string name="fragment_about__translate_text">アプリがお使いの言語で利用できませんか? それを変更することができます! 翻訳して私たちを支援しませんか? Crowdin プラットフォームを使用して、誰でもアプリケーションを翻訳できるようにしています。</string>
+  <string name="fragment_about__translate_button">翻訳させてください</string>
+  <string name="fragment_about__feedback">フィードバックする!</string>
+  <string name="fragment_about__feedback_text">DiasporaForAndroid はまだ開発中なので、提案や何かフィードバックがあれば、私たちのバグ追跡システムにご連絡ください!</string>
+  <string name="fragment_about__feedback_button">バグを報告</string>
+  <string name="fragment_about__spread_the_word">みんなに広めよう!</string>
+  <string name="fragment_about__spread_the_word_text">diaspora* と #DiasporaForAndroid について家族や友人に広めてください! あなたの体験についてブログしませんか? 私たちにあなたからの話を聞かせてください!</string>
+  <string name="fragment_about__spread_the_word_button">アプリを共有</string>
   <!-- License & help (large amount of text) -->
 </resources>
