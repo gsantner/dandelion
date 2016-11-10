@@ -69,4 +69,5 @@
   <string name="pref_desc__wipe_settings">Verwijder alle lokale app-instellingen en log uit alle accounts</string>
   <string name="dialog_content__wipe_settings">Dit zal al uw app-instellingen terugzetten naar de standaardwaarden en u uitloggen van alle pods. Gedownloade afbeeldingen blijven bewaard. Weet u zeker dat u wilt doorgaan?</string>
   <!-- Recently added - Please move to right section-->
+  <!-- Sorry -->
 </resources>

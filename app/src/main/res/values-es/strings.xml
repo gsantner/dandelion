@@ -9,7 +9,7 @@
   <string name="settings">Configuración</string>
   <string name="notifications">Notificaciones</string>
   <string name="conversations">Conversaciones</string>
-  <string name="stream">Entrada</string>
+  <string name="stream">Portada</string>
   <string name="profile">Perfíl</string>
   <string name="aspects">Aspectos</string>
   <string name="activities">Actividades</string>
@@ -71,4 +71,3 @@
   <string name="pod_address">Dirección de Pod</string>
   <string name="missing_value">Valor ausente</string>
 </resources>
-

@@ -69,4 +69,5 @@
   <string name="pref_desc__wipe_settings">Effacer localement tous les réglages relatifs à l\'application et déconnexion de tous les comptes</string>
   <string name="dialog_content__wipe_settings">Ceci va réinitialiser tous les changements à leurs valeurs par défaut et vous déconnecter de tous les pods. Vos images téléchargées resteront intactes. Êtes-vous sûr de vouloir continuer ?</string>
   <!-- Recently added - Please move to right section-->
+  <!-- Sorry -->
 </resources>

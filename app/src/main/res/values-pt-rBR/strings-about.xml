@@ -8,6 +8,5 @@
   <string name="fragment_debug__section_pod">Diaspora Pod</string>
   <string name="fragment_debug__app_version">Versão do App: %1$s</string>
   <string name="fragment_debug__android_version">Versão do Android: %1$s</string>
-  <!-- About (large amount of text) -->
-  <!-- Lorem ipsum -->
+  <!-- License & help (large amount of text) -->
 </resources>

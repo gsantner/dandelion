@@ -69,4 +69,5 @@
   <string name="pref_desc__wipe_settings">Setze alle Einstellungen der Anwendung zurück und melde alle Konten ab</string>
   <string name="dialog_content__wipe_settings">Dies wird alle geänderten Einstellungen der Anwendung auf die Standardwerte zurücksetzen und alle Konten abmelden. Deine heruntergeladenen Medien bleiben unberührt. Bist du sicher, dass du fortfahren willst?</string>
   <!-- Recently added - Please move to right section-->
+  <!-- Sorry -->
 </resources>

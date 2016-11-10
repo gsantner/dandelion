@@ -69,4 +69,5 @@
   <string name="pref_desc__wipe_settings">Elimina localmente tutte le impostazioni relative all\'app e disconnette da tutti gli account</string>
   <string name="dialog_content__wipe_settings">Questo cancellerà tutte le impostazioni dell\'app che sono state cambiate ai loro valori predefiniti e ti disconnetterà da tutti i pod. Le immagini scaricate non verranno toccate. Sei sicuro di voler procedere?</string>
   <!-- Recently added - Please move to right section-->
+  <!-- Sorry -->
 </resources>

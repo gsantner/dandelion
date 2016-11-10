@@ -69,4 +69,5 @@
   <string name="pref_desc__wipe_settings">すべてのアカウントから、アプリとログアウトに関連するすべての設定をローカルで消去します</string>
   <string name="dialog_content__wipe_settings">これはアプリの変更された設定をすべてデフォルトにリセットして、すべてのポッドからログアウトします。ダウンロードした画像はそのまま残ります。続行してもよろしいですか?</string>
   <!-- Recently added - Please move to right section-->
+  <!-- Sorry -->
 </resources>

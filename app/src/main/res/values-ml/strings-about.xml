@@ -7,4 +7,5 @@
   <string name="fragment_debug__section_app">അപ്ലിക്കേഷന്‍</string>
   <string name="fragment_debug__section_pod">ഡയസ്പോറ പോഡ്</string>
   <string name="fragment_debug__app_version">പ്രയോഗത്തിന്റെ പതിപ്പ്:%1$s</string>
+  <!-- License & help (large amount of text) -->
 </resources>

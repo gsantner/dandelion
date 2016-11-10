@@ -69,4 +69,5 @@
   <string name="pref_desc__wipe_settings">Borrar localmente toda la configuración relacionada con la aplicación y cerrar sesión en todas las cuentas</string>
   <string name="dialog_content__wipe_settings">Esto restablecerá todas las modificaciones en la configuración a sus valores predeterminados y se desconectará de todos los pods. Las imágenes descargadas permanecerán intactas. ¿Está seguro de que desea continuar?</string>
   <!-- Recently added - Please move to right section-->
+  <!-- Sorry -->
 </resources>

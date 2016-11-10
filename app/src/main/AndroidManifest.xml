@@ -210,6 +210,8 @@
                 <data android:host="diaspote.org" android:scheme="https" />
                 <data android:host="diaspora.zone" android:scheme="https" />
                 <data android:host="pod.userzap.de" android:scheme="https" />
+                <data android:host="www.vodeoo.com" android:scheme="https" />
+                <data android:host="debian.tonyuk.online" android:scheme="https" />
                 <!--@@@ PODLIST END-->
             </intent-filter>
 

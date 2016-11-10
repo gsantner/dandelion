@@ -16,6 +16,5 @@
   <string name="fragment_debug__pod_profile_name">Имя профиля пода: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Домен пода: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Журнал отладки скопирован в буфер обмена</string>
-    <!-- About (large amount of text) -->
-  <!-- Lorem ipsum -->
+  <!-- License & help (large amount of text) -->
 </resources>
