@@ -35,11 +35,8 @@
   <string name="fragment_license__maintainers_text">現在、このアプリは以下の人によって開発およびメンテナンスされています &lt;br&gt;&lt;br&gt;%1$s</string>
   <string name="fragment_license__contributors">貢献者</string>
   <string name="fragment_license__contributors_thank_you">%1$s&lt;br&gt;&lt;br&gt;ありがとうございます!</string>
-  <string name="fragment_license__license">ライセンス</string>
   <string name="fragment_license__license_button">GNU GPLv3+ ライセンス</string>
-  <string name="fragment_license__thirdparty_libs">サードパーティ製ライブラリー</string>
   <string name="fragment_license__thirdparty_libs_text">以下のライブラリーが使用されます:</string>
-  <string name="fragment_license__misc">その他</string>
   <string name="fragment_license__misc_leafpic">LeafPic からいくつかのインスピレーションとコードを得ました。チェックしてみてください。同様のフリーソフトウェアです!</string>
   <string name="fragment_license__misc_leafpic_button">さらに詳しく</string>
 </resources>
