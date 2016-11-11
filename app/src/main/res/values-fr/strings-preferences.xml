@@ -4,6 +4,8 @@
   <!-- Key Names (Untranslatable) -->
   <!-- Themes -->
   <!-- Operability -->
+  <string name="pref_title__topbar_stream_shortcut">La barre du haut charge le flux</string>
+  <string name="pref_desc__topbar_stream_shortcut">Cliquez sur un espace vide sur la barre du haut pour ouvrir le flux</string>
   <!-- Navigiation Slider -->
   <!-- PodProfile -->
   <!-- More -->
@@ -11,6 +13,7 @@
   <string name="pref_cat__visuals">Apparence</string>
   <string name="pref_cat__network">Paramètres du réseau</string>
   <string name="pref_cat__pod_settings">Paramètres du pod</string>
+  <string name="pref_cat__operability">Opérabilité</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Barre de défilement</string>
