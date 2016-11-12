@@ -4,6 +4,8 @@
   <!-- Key Names (Untranslatable) -->
   <!-- Themes -->
   <!-- Operability -->
+  <string name="pref_title__topbar_stream_shortcut">Barra de herramientas superior carga la portada</string>
+  <string name="pref_desc__topbar_stream_shortcut">Haga clic en un espacio vacío en la barra de herramientas superior para abrir portada</string>
   <!-- Navigiation Slider -->
   <!-- PodProfile -->
   <!-- More -->
