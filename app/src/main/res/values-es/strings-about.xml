@@ -36,6 +36,7 @@
   <string name="fragment_license__contributors">Colaboradores</string>
   <string name="fragment_license__contributors_thank_you">¡%1$s &lt; br &gt;&lt; br &gt; Gracias!</string>
   <string name="fragment_license__license_button">Licencia GNU GPLv3 +</string>
+  <string name="fragment_license__thirdparty_libs">Bibliotecas de terceros</string>
   <string name="fragment_license__thirdparty_libs_text">Se utilizan las siguientes bibliotecas:</string>
   <string name="fragment_license__misc_leafpic">Tomamos algo de inspiración y código de LeafPic. ¡Venga, tomad prestado, es software libre también!</string>
   <string name="fragment_license__misc_leafpic_button">Saber más</string>
