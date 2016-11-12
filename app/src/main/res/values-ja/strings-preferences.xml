@@ -4,6 +4,7 @@
   <!-- Key Names (Untranslatable) -->
   <!-- Themes -->
   <!-- Operability -->
+  <string name="pref_desc__topbar_stream_shortcut">上部ツールバーの空白部分をクリックして、ストリームを開きます。</string>
   <!-- Navigiation Slider -->
   <!-- PodProfile -->
   <!-- More -->
