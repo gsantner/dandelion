@@ -4,6 +4,7 @@
   <!-- Key Names (Untranslatable) -->
   <!-- Themes -->
   <!-- Operability -->
+  <string name="pref_title__topbar_stream_shortcut">上部ツールバーでストリームを読み込み</string>
   <string name="pref_desc__topbar_stream_shortcut">上部ツールバーの空白部分をクリックして、ストリームを開きます。</string>
   <!-- Navigiation Slider -->
   <!-- PodProfile -->
@@ -12,6 +13,7 @@
   <string name="pref_cat__visuals">外観</string>
   <string name="pref_cat__network">ネットワーク</string>
   <string name="pref_cat__pod_settings">ポッドの設定</string>
+  <string name="pref_cat__operability">操作性</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">ナビゲーション スライダー</string>
