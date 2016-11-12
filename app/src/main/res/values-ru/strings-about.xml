@@ -26,5 +26,8 @@
   <string name="fragment_about__feedback">Оставьте отзыв!</string>
   <string name="fragment_about__feedback_text">DiasporaForAndroid всё ещё находится в разработке, так что, если у вас есть предложения или пожелания, пожалуйста, воспользуйтесь нашим трекером ошибок, чтобы сообщить нам об этом!</string>
   <string name="fragment_about__feedback_button">Сообщить об ошибках</string>
+  <string name="fragment_about__spread_the_word">Расскажите друзьям!</string>
+  <string name="fragment_about__spread_the_word_text">Расскажите вашим друзьям и семье о Диаспоре* и #DiasporaForAndroid! Почему бы вам не разместить запись о вашем опыте в блоге? Мы будем рады услышать об этом!</string>
+  <string name="fragment_about__spread_the_word_button">Рассказать о приложении</string>
   <!-- License & help (large amount of text) -->
 </resources>
