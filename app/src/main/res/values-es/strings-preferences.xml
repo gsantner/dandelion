@@ -13,6 +13,7 @@
   <string name="pref_cat__visuals">Apariencia</string>
   <string name="pref_cat__network">Red</string>
   <string name="pref_cat__pod_settings">Ajustes del Pod</string>
+  <string name="pref_cat__operability">Operatividad</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Control deslizante de navegación</string>
