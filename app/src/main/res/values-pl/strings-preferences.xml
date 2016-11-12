@@ -13,6 +13,7 @@
   <string name="pref_cat__visuals">Wygląd</string>
   <string name="pref_cat__network">Sieć</string>
   <string name="pref_cat__pod_settings">Ustawienia poda</string>
+  <string name="pref_cat__operability">Obsługa</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Pasek nawigacji</string>
