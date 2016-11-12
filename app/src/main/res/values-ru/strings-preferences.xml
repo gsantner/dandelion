@@ -13,6 +13,7 @@
   <string name="pref_cat__visuals">Внешний вид</string>
   <string name="pref_cat__network">Сеть</string>
   <string name="pref_cat__pod_settings">Настройки пода</string>
+  <string name="pref_cat__operability">Работоспособность</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Слайдер навигации</string>
