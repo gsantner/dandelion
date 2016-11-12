@@ -4,6 +4,8 @@
   <!-- Key Names (Untranslatable) -->
   <!-- Themes -->
   <!-- Operability -->
+  <string name="pref_title__topbar_stream_shortcut">Górny pasek narzędzi wczytuje strumień</string>
+  <string name="pref_desc__topbar_stream_shortcut">By otworzyć strumień kliknij na pustą przestrzeń w górnym pasku narzędziowym</string>
   <!-- Navigiation Slider -->
   <!-- PodProfile -->
   <!-- More -->
