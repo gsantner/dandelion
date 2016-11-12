@@ -16,5 +16,10 @@
   <string name="fragment_debug__pod_profile_name">Имя профиля пода: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Домен пода: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Журнал отладки скопирован в буфер обмена</string>
+  <string name="fragment_about__about_text">DiasporaForAndroid - это приложение-компаньон для социальной сети Диаспора*. Приложение добавляет такие функции как полезные панели инструментов и поддержку прокси-серверов (таких как Tor).</string>
+  <string name="fragment_about__contribute">Сделайте свой вклад!</string>
+  <string name="fragment_about__contribute_text">DiasporaForAndroid разрабатывается как свободное ПО и следует идеям проекта Диаспора*. Если вы хотите помочь - вперёд! В настоящее время мы является очень небольшой командой, поэтому мы высоко ценим любые виды помощи!</string>
+  <string name="fragment_about__contribute_button">Получить исходный код</string>
+  <string name="fragment_about__translate">Переведите приложение!</string>
   <!-- License & help (large amount of text) -->
 </resources>
