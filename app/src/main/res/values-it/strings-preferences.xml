@@ -4,6 +4,8 @@
   <!-- Key Names (Untranslatable) -->
   <!-- Themes -->
   <!-- Operability -->
+  <string name="pref_title__topbar_stream_shortcut">La barra superiore apre lo stream</string>
+  <string name="pref_desc__topbar_stream_shortcut">Premi su uno spazio vuoto nella barra degli strumenti superiore per aprire lo stream</string>
   <!-- Navigiation Slider -->
   <!-- PodProfile -->
   <!-- More -->
@@ -11,6 +13,7 @@
   <string name="pref_cat__visuals">Aspetto</string>
   <string name="pref_cat__network">Rete</string>
   <string name="pref_cat__pod_settings">Impostazioni pod</string>
+  <string name="pref_cat__operability">Operabilità</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Menù di navigazione</string>
