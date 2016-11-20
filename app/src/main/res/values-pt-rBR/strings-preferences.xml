@@ -23,6 +23,7 @@
   <!-- Load images -->
   <string name="pref_title__load_images">Carregar imagens</string>
   <string name="pref_desc__load_images">Desabilitar o carregamento de imagens para economizar seus créditos</string>
+  <!-- Rotate Screen -->
   <!-- Proxy -->
   <string name="pref_title__proxy_enabled">Habilitar o Proxy</string>
   <!-- Chrome custom tabs -->
