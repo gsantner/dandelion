@@ -37,6 +37,7 @@
   <!-- Load images -->
   <string name="pref_title__load_images">Afbeeldingen laden</string>
   <string name="pref_desc__load_images">Afbeelding laden uitschakelen om mobiele data te besparen</string>
+  <!-- Rotate Screen -->
   <!-- Proxy -->
   <string name="pref_title__http_proxy_load_tor_preset">Tor Voorinstelling laden</string>
   <string name="pref_desc__http_proxy_load_tor_preset">Laden van de proxy-instellingen voor HTTP-Proxy Tor (Orbot)</string>
