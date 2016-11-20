@@ -40,6 +40,7 @@
   <!-- Load images -->
   <string name="pref_title__load_images">Charger les images</string>
   <string name="pref_desc__load_images">Désactiver le chargements des images pour préserver la data mobile</string>
+  <!-- Rotate Screen -->
   <!-- Proxy -->
   <string name="pref_title__http_proxy_load_tor_preset">Charger la pré-configuration Tor</string>
   <string name="pref_desc__http_proxy_load_tor_preset">Charger les paramètres proxy pour Tor (Orbot) HTTP Proxy</string>
