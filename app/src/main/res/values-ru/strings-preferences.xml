@@ -40,6 +40,7 @@
   <!-- Load images -->
   <string name="pref_title__load_images">Загрузка изображений</string>
   <string name="pref_desc__load_images">Отключить загрузку изображений для экономии трафика</string>
+  <!-- Rotate Screen -->
   <!-- Proxy -->
   <string name="pref_title__http_proxy_load_tor_preset">Загрузить шаблон конфигурации Tor</string>
   <string name="pref_desc__http_proxy_load_tor_preset">Загрузить настройки прокси для Tor (Orbot)</string>
