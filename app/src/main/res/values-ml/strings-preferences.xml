@@ -23,6 +23,7 @@
   <!-- Load images -->
   <string name="pref_title__load_images">ചിത്രങ്ങൾ കാണിക്കണമോ</string>
   <string name="pref_desc__load_images">മൊബൈൽ ഡാറ്റ ഉപഭോഗം കുറയ്ക്കാനായി ചിത്രങ്ങൾ ലോഡ് ചെയ്യാതിരിക്കുക</string>
+  <!-- Rotate Screen -->
   <!-- Proxy -->
   <string name="pref_title__proxy_enabled">പ്രോക്സി അനുവദിക്കൂ</string>
   <!-- Chrome custom tabs -->
