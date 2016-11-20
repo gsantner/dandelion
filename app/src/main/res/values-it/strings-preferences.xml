@@ -40,6 +40,7 @@
   <!-- Load images -->
   <string name="pref_title__load_images">Carica immagini</string>
   <string name="pref_desc__load_images">Disabilita il caricamento delle immagini per risparmiare la rete dati</string>
+  <!-- Rotate Screen -->
   <!-- Proxy -->
   <string name="pref_title__http_proxy_load_tor_preset">Carica i valori predefiniti di Tor</string>
   <string name="pref_desc__http_proxy_load_tor_preset">Carica le impostazioni del proxy per il proxy HTTP di Tor (Orbot)</string>
