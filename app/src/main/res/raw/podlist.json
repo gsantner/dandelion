@@ -331,13 +331,6 @@
     },
     {
       "score": 20,
-      "podUrls": [{"host": "diaspora.punkbeer.me"}],
-      "name": "punkbeer.me",
-      "mainLangs": [],
-      "id": 44751
-    },
-    {
-      "score": 20,
       "podUrls": [{"host": "diaspora.raven-ip.com"}],
       "name": "raven-ip.com",
       "mainLangs": [],
