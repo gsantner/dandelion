@@ -170,20 +170,7 @@ public class AppSettings {
         setString(prefPod, R.string.pref_key__podprofile_name, name);
     }
 
-
-    // TODO: Remove legacy at some time ;)
-    private void upgradeLegacyPoddomain() {
-        String legacy = getString(prefPod, R.string.pref_key__poddomain_legacy, "");
-        if (!legacy.equals("")) {
-            DiasporaPod pod = new DiasporaPod();
-            pod.setName(legacy);
-            pod.getPodUrls().add(new DiasporaPodUrl().setHost(legacy));
-            setPod(pod);
-        }
-    }
-
     public DiasporaPod getPod() {
-        upgradeLegacyPoddomain();
         if (currentPod0Cached == null) {
             String pref = getString(prefPod, R.string.pref_key__current_pod_0, "");
 
@@ -206,7 +193,6 @@ public class AppSettings {
     }
 
     public boolean hasPod() {
-        upgradeLegacyPoddomain();
         return !getString(prefPod, R.string.pref_key__current_pod_0, "").equals("");
     }
 
