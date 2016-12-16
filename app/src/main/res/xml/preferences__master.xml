@@ -68,7 +68,7 @@
             android:icon="@drawable/ic_touch_app_black_24px"/>
 
         <ListPreference
-            android:defaultValue="@string/rotation_val_auto"
+            android:defaultValue="@string/rotation_val_system"
             android:key="@string/pref_key__screen_rotation"
             android:title="@string/pref_title__screen_rotation"
             android:summary="@string/pref_desc__screen_rotation"

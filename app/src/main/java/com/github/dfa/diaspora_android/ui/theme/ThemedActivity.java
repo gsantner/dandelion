@@ -79,13 +79,16 @@ public abstract class ThemedActivity extends AppCompatActivity {
     }
 
     protected void updateScreenRotation() {
-        String rotation = getAppSettings().getScreenRotation();
-        if (rotation.equals(getString(R.string.rotation_val_auto))) {
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
-        } else if (rotation.equals(getString(R.string.rotation_val_portrait))) {
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
-        } else {
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+        String setting = getAppSettings().getScreenRotation();
+        int rotation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED;  // Default (system settings)
+
+        if (setting.equals(getString(R.string.rotation_val_sensor))) {
+            rotation = ActivityInfo.SCREEN_ORIENTATION_SENSOR;
+        } else if (setting.equals(getString(R.string.rotation_val_portrait))) {
+            rotation =ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT;
+        } else if (setting.equals(getString(R.string.rotation_val_landscape))) {
+            rotation = ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE;
         }
+        setRequestedOrientation(rotation);
     }
 }

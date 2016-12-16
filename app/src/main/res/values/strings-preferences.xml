@@ -113,25 +113,30 @@
     <string name="pref_title__load_images">Load images</string>
     <string name="pref_desc__load_images">Toggle image loading to eg. safe mobile data</string>
 
-    <!-- Rotate Screen -->
+    <!-- Screen rotation -->
     <string name="pref_title__screen_rotation">Screen rotation</string>
     <string name="pref_desc__screen_rotation">Control automatic screen rotation</string>
-    <string name="rotation_val_auto" translatable="false">auto</string>
+    <string name="rotation_val_system" translatable="false">auto</string>
+    <string name="rotation_val_sensor" translatable="false">sensor</string>
     <string name="rotation_val_portrait" translatable="false">portrait</string>
     <string name="rotation_val_landscape" translatable="false">landscape</string>
-    <string name="rotation_auto">Automatic</string>
+    <string name="rotation_system">Default</string>
+    <string name="rotation_sensor">Sensor\n(ignore system settings)</string>
     <string name="rotation_portrait">Portrait</string>
     <string name="rotation_landscape">Landscape</string>
     <array name="pref_entries_values__screen_rotation" translatable="false">
-        <item>@string/rotation_val_auto</item>
+        <item>@string/rotation_val_system</item>
+        <item>@string/rotation_val_sensor</item>
         <item>@string/rotation_val_portrait</item>
         <item>@string/rotation_val_landscape</item>
     </array>
     <array name="pref_entries__screen_rotation" translatable="false">
-        <item>@string/rotation_auto</item>
+        <item>@string/rotation_system</item>
+        <item>@string/rotation_sensor</item>
         <item>@string/rotation_portrait</item>
         <item>@string/rotation_landscape</item>
     </array>
+
     <!-- Proxy -->
     <string name="pref_title__http_proxy_load_tor_preset">Load Tor Preset</string>
     <string name="pref_desc__http_proxy_load_tor_preset">Load proxy settings for Tor (Orbot) HTTP Proxy</string>
