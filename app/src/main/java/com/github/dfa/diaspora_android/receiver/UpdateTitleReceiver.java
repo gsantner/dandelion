@@ -74,8 +74,14 @@ public class UpdateTitleReceiver extends BroadcastReceiver {
                 setTitle(R.string.nav_mentions);
             } else if (subUrl.startsWith(DiasporaUrlHelper.SUBURL_PUBLIC)) {
                 setTitle(R.string.public_);
+            } else if (urls.getManageContactsUrl().equals(url)) {
+                setTitle(R.string.contacts);
+            } else if (urls.getManageTagsUrl().equals(url)) {
+                setTitle(R.string.pref_title__manage_tags);
             } else if (urls.isAspectUrl(url)) {
                 setTitle(urls.getAspectNameFromUrl(url, app));
+            } else if (urls.getReportsUrl().equals(url)) {
+                setTitle(R.string.nav_reports);
             }
         } else {
             AppLog.spam(this, "onReceive()- Invalid url: " + url);

@@ -30,18 +30,27 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Environment;
+import android.os.StrictMode;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.AttributeSet;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.activity.MainActivity;
 import com.github.dfa.diaspora_android.service.ImageDownloadTask;
+import com.github.dfa.diaspora_android.service.SaveImageTask;
+import com.github.dfa.diaspora_android.util.AppLog;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * Subclass of WebView which adds a context menu for long clicks on images or links to share, save
@@ -107,17 +116,9 @@ public class ContextMenuWebView extends NestedWebView {
                             }
                         }
                         if (writeToStoragePermitted) {
-                            if (url != null) {
-                                Uri source = Uri.parse(url);
-                                DownloadManager.Request request = new DownloadManager.Request(source);
-                                File destinationFile = new File(Environment.getExternalStorageDirectory() + "/Pictures/Diaspora/"
-                                        + System.currentTimeMillis() + ".png");
-                                request.setDestinationUri(Uri.fromFile(destinationFile));
-                                ((DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE)).enqueue(request);
-
-                                Toast.makeText(context, context.getText(R.string.share__toast_saved_image_to_location) + " " +
-                                        destinationFile.getAbsolutePath(), Toast.LENGTH_LONG).show();
-                            }
+                            SaveImageTask saveTask = new SaveImageTask();
+                            saveTask.setContext(context);
+                            saveTask.execute(url);
                         }
                     }
                     break;
