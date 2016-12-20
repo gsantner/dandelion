@@ -1,5 +1,15 @@
+# v0.2.2
+- Move "toggle mobile/deskop" to nav-slider
+- Reduce messages sent via broadcast
+- Allow to jump to last visited page on stream
+- New language: Hungarian
+- FIX NullPtr in shared text methods
+- FIX #117 - Reset NavHeader on change account, reset web profile
+- FIX #92 Roation settings
+- FIX #111 Remove legacy code
+
 # v0.2.1
-- App name changed to **dandelion\***
+- App name changed to **dandelion***
 - Rotation options
 - Top toolbar loads screen again (toggleable in settings)
 - Fixed overlapping fragments

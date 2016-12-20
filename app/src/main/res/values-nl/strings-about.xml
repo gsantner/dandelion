@@ -15,7 +15,7 @@
   <string name="fragment_debug__app_codename">Versienaam: %1$s</string>
   <string name="fragment_debug__pod_profile_name">Pod Profielnaam: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Pod-domein: %1$s</string>
-  <string name="fragment_debug__toast_log_copied">Tekst naar klembord gekopieerd</string>
+  <string name="fragment_debug__toast_log_copied">Debug log naar klembord gekopieerd</string>
   <string name="fragment_about__about_text">dandelion* is de app die je helpt bij het bladeren in het diaspora* sociale netwerk. Functies als handige werkbalken en ondersteuning voor proxyservers als het Tor Network dragen bij aan een fijne gebruikerservaring.</string>
   <string name="fragment_about__contribute">Code bijdragen!</string>
   <string name="fragment_about__contribute_text">dandelion* wordt vrij ontwikkeld als in Vrijheid en naar de ideeën van het diaspora*-project. Als je wilt bijdragen, ga je gang! Momenteel zijn we een klein team, dus we waarderen elk beetje steun!</string>
@@ -38,6 +38,6 @@
   <string name="fragment_license__license_button">GNU GPLv3+ Licentie</string>
   <string name="fragment_license__thirdparty_libs">3rd Party Bibliotheken</string>
   <string name="fragment_license__thirdparty_libs_text">De volgende bibliotheken zijn gebruikt:</string>
-  <string name="fragment_license__misc_leafpic">We zijn geïnspireerd door en namen code over van LeafPic. Bekijk het eens, het is ook vrije software!</string>
+  <string name="fragment_license__misc_leafpic">We zijn geïnspireerd door LeafPic en lenen er code van. Ga kijken, deze vrije software is het proberen waard!</string>
   <string name="fragment_license__misc_leafpic_button">Ik wil graag meer weten</string>
 </resources>

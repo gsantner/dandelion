@@ -43,6 +43,8 @@
   <!-- Screen rotation -->
   <string name="pref_title__screen_rotation">Rotazione dello schermo</string>
   <string name="pref_desc__screen_rotation">Controlla la rotazione automatica dello schermo</string>
+  <string name="rotation_system">Predefinito</string>
+  <string name="rotation_sensor">Sensore\n(ignora le impostazioni di sistema)</string>
   <string name="rotation_portrait">Verticale</string>
   <string name="rotation_landscape">Orizzontale</string>
   <!-- Proxy -->

@@ -66,7 +66,7 @@
         nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - Diaspora. Im Bereich Berechtigungen kannst
         dann die entsprechende Einstellung vornehmen.</string>
   <string name="permissions_image">Du musst der App Zugriff auf den Gerätespeicher gewähren, damit Bilder gespeichert oder hochgeladen werden können. Danach solltest du die Anwendung komplett schließen oder das Telefon neu starten. Wenn du den Zugriff verweigerst und die Funktion später doch nutzen willst, kannst du die Berechtigung
-nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - Diaspora. Im Bereich Berechtigungen kannst dann die entsprechende Einstellung vornehmen.</string>
+nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - dandelion*. Im Bereich Berechtigungen kannst dann die entsprechende Einstellung vornehmen.</string>
   <string name="permission_denied">Berechtigung verweigert.</string>
   <string name="permission_granted_try_again">Berechtigung erteilt. Bitte versuche es erneut.</string>
   <string name="podselection__custom_pod">Benutzerdefinierter Pod</string>
@@ -74,4 +74,5 @@ nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - Diaspora. Im
   <string name="http_protocol">Protokoll</string>
   <string name="pod_address">Pod Adresse</string>
   <string name="missing_value">Fehlender Wert</string>
+  <string name="jump_to_last_visited_timestamp_in_stream">Zuletzt besuchte Seite im Stream aufrufen?</string>
 </resources>

@@ -127,11 +127,6 @@ public class DiasporaStreamFragment extends BrowserFragment {
                 }
             }
 
-            case R.id.action_toggle_desktop_page: {
-                loadUrl(urls.getToggleMobileUrl());
-                return true;
-            }
-
             case R.id.action_go_to_top: {
                 ObjectAnimator anim = ObjectAnimator.ofInt(webView, "scrollY", webView.getScrollY(), 0);
                 anim.setDuration(400);

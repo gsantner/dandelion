@@ -47,6 +47,7 @@
     <string name="pref_key__visibility_nav__profile" translatable="false">pref_key__visibility_nav__profile</string>
     <string name="pref_key__visibility_nav__contacts" translatable="false">pref_key__visibility_nav__contacts</string>
     <string name="pref_key__visibility_nav__reports" translatable="false">pref_key__visibility_nav__reports</string>
+    <string name="pref_key__visibility_nav__toggle_mobile_desktop" translatable="false">pref_key__visibility_nav__toggle_mobile_desktop</string>
 
     <!-- PodProfile -->
     <string name="pref_key__podprofile_avatar_url" translatable="false">podUserProfile_avatar</string>

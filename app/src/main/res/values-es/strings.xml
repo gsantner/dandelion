@@ -61,7 +61,7 @@
   <string name="unable_to_load_image">No se pudo cargar la imagen</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">Debe conceder \"Permiso de Almacenamiento de Información\" para guardar capturas de pantalla. Después debe cerrar completamente la aplicación o reiniciar el teléfono. Si usted no permite el acceso al almacenamiento pero desea utilizar la función de captura de pantalla en un momento posterior, puede conceder el permiso más adelante. Por favor vaya a: ajustes del sistema - aplicaciones - Diaspora. En la sección de permisos puede conceder el \"permiso de almacenamiento de escritura\".</string>
-  <string name="permissions_image">Debe conceder \"Permiso de acceso al almacenamiento\" para guardar imágenes. Después, debe cerrar completamente la aplicación o reiniciar el aparato. Si usted no permite el almacenamiento  pero quiere guardar imágenes en otro momento, puede conceder el permiso más tarde.  Por favor abra: ajustes del sistema -aplicaciones- Diaspora. En la sección de permisos puede conceder el \"permiso de almacenamiento de escritura\".</string>
+  <string name="permissions_image">Debe conceder \"Permiso de acceso al almacenamiento\" para guardar imágenes. Después, debe cerrar completamente la aplicación o reiniciar el aparato. Si usted no permite el almacenamiento  pero quiere guardar imágenes en otro momento, puede conceder el permiso más tarde.  Por favor abra: ajustes del sistema -aplicaciones- dandelion*. En la sección de permisos puede conceder el \"permiso de almacenamiento de escritura\".</string>
   <string name="permission_denied">Permiso denegado.</string>
   <string name="permission_granted_try_again">Permiso concedido. Por favor, inténtelo de nuevo.</string>
   <string name="podselection__custom_pod">Pod personalizado</string>
@@ -69,4 +69,5 @@
   <string name="http_protocol">Protocolo</string>
   <string name="pod_address">Dirección de Pod</string>
   <string name="missing_value">Valor ausente</string>
+  <string name="jump_to_last_visited_timestamp_in_stream">¿Saltar a la última página visitada?</string>
 </resources>

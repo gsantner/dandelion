@@ -29,13 +29,4 @@
         android:title="@string/action_go_to_top"
         app:showAsAction="always" />
 
-
-    <!-- overflow menu -->
-    <item
-        android:id="@+id/action_toggle_desktop_page"
-        android:icon="@drawable/ic_sync_white_48px"
-        android:orderInCategory="700"
-        android:title="@string/action_toggle_desktop_page"
-        app:showAsAction="never" />
-
 </menu>

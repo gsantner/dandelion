@@ -43,6 +43,8 @@
   <!-- Screen rotation -->
   <string name="pref_title__screen_rotation">Orientacja ekranu</string>
   <string name="pref_desc__screen_rotation">Wybierz pożądaną orientację ekranu</string>
+  <string name="rotation_system">Domyślne</string>
+  <string name="rotation_sensor">Czujnik\n(ignoruj ustawienia systemowe)</string>
   <string name="rotation_portrait">Pionowa</string>
   <string name="rotation_landscape">Pozioma</string>
   <!-- Proxy -->

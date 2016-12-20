@@ -10,7 +10,7 @@ android {
         minSdkVersion 17
         targetSdkVersion 24
         versionCode 12
-        versionName "0.2.1-next"
+        versionName "0.2.2"
         setProperty("archivesBaseName", "dandelion__${versionName}__")
 
         vectorDrawables.useSupportLibrary = true

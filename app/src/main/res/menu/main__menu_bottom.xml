@@ -19,11 +19,4 @@
         android:title="@string/action_compose_new_post"
         app:showAsAction="always" />
 
-    <!-- overflow menu -->
-    <item
-        android:id="@+id/action_exit"
-        android:orderInCategory="600"
-        android:title="@string/action_exit_app"
-        app:showAsAction="never" />
-
 </menu>

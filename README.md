@@ -9,7 +9,7 @@
 # dandelion\*
 FORMERLY KNOWN AS DIASPORA-FOR-ANDROID
 
-This is an unofficial webview based client for the community-run, distributed social network **[Diaspora*](https://diasporafoundation.org/)**. It's currently under development and should be used with that in mind. Please submit any bugs you might find.  
+This is an unofficial webview based client for the community-run, distributed social network **[diaspora*](https://diasporafoundation.org/)**. It's currently under development and should be used with that in mind. Please submit any bugs you might find.  
 
 - Download ([F-Droid](https://f-droid.org/repository/browse/?fdid=com.github.dfa.diaspora_android), [Release Archive](https://github.com/Diaspora-for-Android/dandelion/releases))
 - Watch [Changelog](https://github.com/Diaspora-for-Android/dandelion/blob/master/CHANGELOG.md)
@@ -41,4 +41,4 @@ dandelion\* requires access to the Internet and to external storage to be able t
 
 ## Maintainers
 - gsantner ([GitHub](https://github.com/gsantner), [Web](https://gsantner.github.io), [diaspora*](https://pod.geraspora.de/people/d1cbdd70095301341e834860008dbc6c))  
-- vanitasvitae ([GitHub](https://github.com/vanitasvitae), [Diaspora](https://pod.geraspora.de/people/bbd7af90fbec013213e34860008dbc6c))
+- vanitasvitae ([GitHub](https://github.com/vanitasvitae), [diaspora*](https://pod.geraspora.de/people/bbd7af90fbec013213e34860008dbc6c))

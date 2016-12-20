@@ -68,6 +68,11 @@
     <item android:title="@string/nav_menu_more">
         <menu>
             <item
+                android:id="@+id/nav_toggle_desktop_page"
+                android:icon="@drawable/ic_sync_white_48px"
+                android:title="@string/action_toggle_desktop_page" />
+
+            <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_settings_black_48px"
                 android:title="@string/settings" />

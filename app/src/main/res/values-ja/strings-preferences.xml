@@ -43,6 +43,8 @@
   <!-- Screen rotation -->
   <string name="pref_title__screen_rotation">画面の回転</string>
   <string name="pref_desc__screen_rotation">画面の回転を自動でコントロール</string>
+  <string name="rotation_system">デフォルト</string>
+  <string name="rotation_sensor">センサー\n(システムの設定を無視)</string>
   <string name="rotation_portrait">顔写真</string>
   <string name="rotation_landscape">風景</string>
   <!-- Proxy -->

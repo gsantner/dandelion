@@ -43,6 +43,8 @@
   <!-- Screen rotation -->
   <string name="pref_title__screen_rotation">Поворот экрана</string>
   <string name="pref_desc__screen_rotation">Контролировать автоматический поворот экрана</string>
+  <string name="rotation_system">По умолчанию</string>
+  <string name="rotation_sensor">Сенсор\n(игнорировать системные настройки)</string>
   <string name="rotation_portrait">Вертикальная ориентация</string>
   <string name="rotation_landscape">Горизонтальная ориентация</string>
   <!-- Proxy -->

@@ -67,7 +67,7 @@
   <string name="permissions_image">Devi garantire il permesso di accesso alla memoria per poter salvare e caricare le immagini. Dopodiché devi
         chiudere completamente l\'app o riavviare il dispositivo. Se non permetti l\'accesso alla memoria ma vuoi 
         salvare le immagini più avanti, puoi garantire il permesso successivamente. Vai su: Impostazioni - App -
-        Diaspora. Nella sezione dei permessi puoi garantire il permesso per la scrittura sul dispositivo.</string>
+        dandelion*. Nella sezione dei permessi puoi garantire il permesso per la scrittura sul dispositivo.</string>
   <string name="permission_denied">Permesso negato.</string>
   <string name="permission_granted_try_again">Permesso garantito. Si prega di riprovare.</string>
   <string name="podselection__custom_pod">Pod personalizzato</string>
@@ -75,4 +75,5 @@
   <string name="http_protocol">Protocollo</string>
   <string name="pod_address">Indirizzo del pod</string>
   <string name="missing_value">Valore mancante</string>
+  <string name="jump_to_last_visited_timestamp_in_stream">Salta all\'ultima pagina visitata nello stream?</string>
 </resources>

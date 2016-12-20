@@ -413,6 +413,7 @@ public class MainActivity extends ThemedActivity
         navMenu.findItem(R.id.nav_public).setVisible(appSettings.isVisibleInNavPublic_activities());
         navMenu.findItem(R.id.nav_stream).setVisible(true);
         navMenu.findItem(R.id.nav_reports).setVisible(appSettings.isVisibleInNavReports());
+        navMenu.findItem(R.id.nav_toggle_desktop_page).setVisible(appSettings.isVisibleToggleMobileDesktop());
 
 
         // Hide whole group (for logged in use) if no pod was selected
@@ -769,12 +770,6 @@ public class MainActivity extends ThemedActivity
                 }
             }
 
-            case R.id.action_exit: {
-                moveTaskToBack(true);
-                finish();
-                return true;
-            }
-
             case R.id.action_compose: {
                 if (WebHelper.isOnline(MainActivity.this)) {
                     openDiasporaUrl(urls.getNewPostUrl());
@@ -1073,6 +1068,11 @@ public class MainActivity extends ThemedActivity
                 } else {
                     snackbarNoInternet.show();
                 }
+            }
+            break;
+
+            case R.id.nav_toggle_desktop_page: {
+                openDiasporaUrl(urls.getToggleMobileUrl());
             }
             break;
 

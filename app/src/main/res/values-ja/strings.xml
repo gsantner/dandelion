@@ -61,7 +61,7 @@
   <string name="unable_to_load_image">画像を読み込むことができません</string>
   <!-- Permissions -->
   <string name="permissions_screenshot">スクリーン ショットを保存するために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後でスクリーン ショット機能を使用する場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - Diaspora を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
-  <string name="permissions_image">画像を保存/アップロードするために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後で画像を保存したい場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - Diaspora を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
+  <string name="permissions_image">画像を保存/アップロードするために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後で画像を保存したい場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - dandelion* を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
   <string name="permission_denied">アクセスが拒否されました。</string>
   <string name="permission_granted_try_again">アクセスを許可しました。もう一度やり直してください。</string>
   <string name="podselection__custom_pod">カスタム ポッド</string>
@@ -69,4 +69,5 @@
   <string name="http_protocol">プロトコル</string>
   <string name="pod_address">ポッドのアドレス</string>
   <string name="missing_value">値がありません</string>
+  <string name="jump_to_last_visited_timestamp_in_stream">ストリームの最後に訪れたページに移動しますか?</string>
 </resources>

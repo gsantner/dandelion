@@ -404,6 +404,10 @@ public class AppSettings {
         return getBoolean(prefApp, R.string.pref_key__visibility_nav__reports, false);
     }
 
+    public boolean isVisibleToggleMobileDesktop() {
+        return getBoolean(prefApp, R.string.pref_key__visibility_nav__toggle_mobile_desktop, false);
+    }
+
     public boolean isTopbarStreamShortcutEnabled() {
         return getBoolean(prefApp, R.string.pref_key__topbar_stream_shortcut, false);
     }
