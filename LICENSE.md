@@ -13,6 +13,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see https://www.gnu.org/licenses/.
 
+If you want to publish dandelion\* in an app store, you have to change the app name (dandelion\*), packange name & launcher icon (blue). See "7. Additional Terms" of GPL. You also have to provide the modifications in source code somewhere online for free. This is explicitly not about building the app and sharing with some friends, it's about app stores. F-Droid is explicitly allowed to publish as dandelion\*. The reason is, that most app stores allow an app id just once, which would block our uploads if somebody else uploaded. Also, we want to keep control on where the app is published, and want to make sure there is no malware in it.
+
 
 # Miscellaneous
 
