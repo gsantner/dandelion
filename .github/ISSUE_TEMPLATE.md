@@ -38,7 +38,7 @@ Upload screenshots via drag&drop if needed and apply resizing:
 
 #### Debug output
 
-Please post the output of adb logcat. The log should begin with the start of Diaspora for Android and include all the steps it takes to reproduce the problem.
+Please post the output of adb logcat. The log should begin with the start of dandelion* and include all the steps it takes to reproduce the problem.
 IMPORTANT: In-App debug log must be activated and the app restarted first!
 
 ````

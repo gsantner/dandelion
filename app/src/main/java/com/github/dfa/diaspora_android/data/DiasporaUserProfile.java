@@ -1,18 +1,18 @@
 /*
-    This file is part of the Diaspora for Android.
+    This file is part of the dandelion*.
 
-    Diaspora for Android is free software: you can redistribute it and/or modify
+    dandelion* is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Diaspora for Android is distributed in the hope that it will be useful,
+    dandelion* is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with the Diaspora for Android.
+    along with the dandelion*.
 
     If not, see <http://www.gnu.org/licenses/>.
  */
@@ -32,7 +32,7 @@ import org.json.JSONObject;
 
 /**
  * User profile
- * Created by gsantner (https://gsantner.github.io/) on 24.03.16.  Part of Diaspora for Android.
+ * Created by gsantner (https://gsantner.github.io/) on 24.03.16.  Part of dandelion*.
  */
 public class DiasporaUserProfile {
     private static final int MINIMUM_USERPROFILE_LOAD_TIMEDIFF = 5000;
