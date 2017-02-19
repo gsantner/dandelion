@@ -1,12 +1,11 @@
 #### General information
 
 
-* **Device:**   <!-- eg Nexus 5 -->
-* **Android Version:**  <!--eg Android 6.0.1 -->
-* **App version:**  <!-- See in About -> Debug. eg 0.1.5, or commit -->
-* **App source:**  <!--F-Droid, self build (latest HEAD) Can be left blank if not related -->
-* **Pod:**  <!--eg pod.geraspora.de Can be left blank if not related -->
-* **Diaspora pod version:**  <!--eg 0.5.99.0-p9bd2337c  (can be found on the bottom) Can be left blank if not related -->
+* **Android Device:**
+* **Android API Version:** 
+* **App version:**
+* **App source:**
+* **Pod version:**
 
 
 <!--
@@ -15,7 +14,7 @@ I have:
 - At least version 0.2.0 installed, see About-> Debug. If it is not visible you have an very old version, and 
   your issue will be closed.
 - searched open and closed issues for duplicates
-- read <https://github.com/Diaspora-for-Android/diaspora-android/blob/master/CONTRIBUTING.md>
+- read <https://github.com/Diaspora-for-Android/dandelion/blob/master/CONTRIBUTING.md>
 - not submitted translations - see [Crowdin](https://crowdin.com/project/diaspora-for-android/invite)  
 -->
 

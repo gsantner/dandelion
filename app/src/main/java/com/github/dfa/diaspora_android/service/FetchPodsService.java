@@ -41,7 +41,7 @@ import info.guardianproject.netcipher.NetCipher;
 public class FetchPodsService extends Service {
     public static final String EXTRA_PODLIST = "pods";
     public static final String MESSAGE_PODS_RECEIVED = "com.github.dfa.diaspora.podsreceived";
-    public static final String PODDY_PODLIST_URL = "https://raw.githubusercontent.com/Diaspora-for-Android/diaspora-android/master/app/src/main/res/raw/podlist.json";
+    public static final String PODDY_PODLIST_URL = "https://raw.githubusercontent.com/Diaspora-for-Android/dandelion/master/app/src/main/res/raw/podlist.json";
 
     public FetchPodsService() {
     }
