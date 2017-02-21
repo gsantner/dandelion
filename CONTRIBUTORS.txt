@@ -16,5 +16,5 @@ Nacho Fernández (nacho_f AT joindiaspora DOT com): Spanish translation
 Naofumi Fukue (https://github.com/naofum): Japanese translation
 pskosinski (email AT pskosinski DOT pl): Polish translation
 SansPseudoFix (https://github.com/SansPseudoFix): French translation
-secitem (https://pod.geraspora.de/u/secitem): Czech translation
+secitem (secitem AT tuta DOT io): Czech translation
 Zsolt Szakács (maxigaz AT diaspora DOT zone): Hungarian translation
