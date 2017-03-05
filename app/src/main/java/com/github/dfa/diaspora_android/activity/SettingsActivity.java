@@ -152,8 +152,8 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
     }
 
     @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {
-        if (s.equals(getString(R.string.pref_key__screen_rotation))) {
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (key.equals(getString(R.string.pref_key__screen_rotation))) {
             this.updateScreenRotation();
         }
     }

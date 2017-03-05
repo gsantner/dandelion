@@ -42,7 +42,7 @@
   <string name="share__take_screenshot">Bildschirmfoto speichern</string>
   <string name="share__toast_saved_image_to_location">Speichere Bild als</string>
   <string name="share__toast_screenshot">Bildschirmfoto wird gespeichert unter:</string>
-  <string name="share__toast_link_address_copied">Linkadresse kopiert &#8230;</string>
+  <string name="share__toast_link_address_copied">Link-Adresse kopiert &#8230;</string>
   <string name="new_post">Neuer Beitrag</string>
   <string name="action_go_to_top">Nach oben scrollen</string>
   <string name="action_search_by_tags_or_persons">Suche nach Tags oder Personen…</string>
@@ -52,12 +52,12 @@
   <string name="search_alert_tag">nach Tags</string>
   <string name="search_alert_people">nach Personen</string>
   <string name="search_alert_bypeople_validate_needsomedata">Füge einen Namen ein.</string>
-  <string name="context_menu_share_link">Linkadresse teilen</string>
+  <string name="context_menu_share_link">Link-Adresse teilen</string>
   <string name="context_menu_save_image">Bild speichern</string>
   <string name="context_menu_share_image">Bild teilen</string>
   <string name="context_menu_open_external_browser">In externem Browser öffnen&#8230;</string>
-  <string name="context_menu_copy_link">Linkadresse kopieren</string>
-  <string name="context_menu_copy_image_link">Bildadresse in die Zwischenablage kopieren</string>
+  <string name="context_menu_copy_link">Link-Adresse kopieren</string>
+  <string name="context_menu_copy_image_link">Bild-Adresse kopieren</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Konnte Bild nicht laden…</string>
   <!-- Permissions -->

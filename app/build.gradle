@@ -6,12 +6,8 @@ android {
     buildToolsVersion "24.0.3"
 
     defaultConfig {
-        applicationId "com.github.dfa.diaspora_android"
         minSdkVersion 17
         targetSdkVersion 24
-        versionCode 13
-        versionName "0.2.3"
-        setProperty("archivesBaseName", "dandelion__${versionName}__")
 
         vectorDrawables.useSupportLibrary = true
     }
@@ -26,6 +22,9 @@ android {
         flavorDandelion {
             applicationId "com.github.dfa.diaspora_android"
             manifestPlaceholders = [appName: "dandelion*"]
+            versionCode 13
+            versionName "0.2.3"
+            setProperty("archivesBaseName", "dandelion__${versionName}__")
         }
 
         flavorSecondlion {

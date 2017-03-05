@@ -28,20 +28,21 @@
         <activity
             android:name="com.github.dfa.diaspora_android.activity.SettingsActivity"
             android:launchMode="singleInstance"
-            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:configChanges="keyboardHidden|locale|orientation|screenSize"
             android:theme="@style/DiasporaLight.NoActionBar"
             android:label="@string/settings" />
 
         <activity
             android:name="com.github.dfa.diaspora_android.activity.AboutActivity"
             android:label="@string/about_activity__title_about_app"
+            android:configChanges="locale"
             android:theme="@style/DiasporaLight.NoActionBar"/>
 
         <activity
             android:name="com.github.dfa.diaspora_android.activity.MainActivity"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustResize"
-            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:configChanges="keyboardHidden|locale|orientation|screenSize"
             android:theme="@style/DiasporaLight.NoActionBar"
             android:label="${appName}">
 
@@ -68,6 +69,10 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
+
+                <!-- Additional allowed services -->
+                <data android:host="dia.so" android:scheme="https" />
 
                 <!--@@@ PODLIST START-->
                 <data android:host="joindiaspora.com" android:scheme="https" />

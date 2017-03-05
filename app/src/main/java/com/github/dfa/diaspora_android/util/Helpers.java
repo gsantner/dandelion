@@ -27,8 +27,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.Snackbar;
+import android.text.TextUtils;
 import android.view.View;
 
+import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.web.WebHelper;
 
@@ -83,6 +85,16 @@ public class Helpers {
                 storageDir.getAbsolutePath()      /* directory */
         );
     }
+
+    public static Locale getLocaleByAndroidCode(String code) {
+        if (!TextUtils.isEmpty(code)) {
+            return code.contains("-r")
+                    ? new Locale(code.substring(0, 2), code.substring(4, 6)) // de-rAT
+                    : new Locale(code); // de
+        }
+        return Locale.getDefault();
+    }
+
 
     public static String readTextfileFromRawRessource(Context context, int rawRessourceId, String linePrefix, String linePostfix) {
         StringBuilder sb = new StringBuilder();

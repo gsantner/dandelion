@@ -18,8 +18,8 @@
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Navigations Slider</string>
   <string name="pref_desc__sub_nav_slider">Konfiguration der Sichtbarkeit von Einträgen im Navigation-Slider</string>
-  <string name="pref_cat__visibility_nav_items__user">Nutzer</string>
-  <string name="pref_cat__visibility_nav_items__general">Generelles</string>
+  <string name="pref_cat__visibility_nav_items__user">Benutzer</string>
+  <string name="pref_cat__visibility_nav_items__general">Allgemeines</string>
   <string name="pref_cat__visibility_nav_items__admin">Administrator</string>
   <!-- Themes -->
   <string name="pref_title__themes">Farbschema</string>

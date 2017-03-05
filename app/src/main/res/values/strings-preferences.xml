@@ -3,6 +3,7 @@
     <!-- Key Names (Untranslatable) -->
     <string name="pref_key__current_pod_0" translatable="false">pref_key__current_pod_0</string>
     <string name="pref_key__font_size" translatable="false">pref_key_font_size</string>
+    <string name="pref_key__language" translatable="false">pref_key__language</string>
     <string name="pref_key__intellihide_toolbars" translatable="false">pref_key_intellihide_toolbars</string>
     <string name="pref_key__personal_settings" translatable="false">pref_key_personal_settings</string>
     <string name="pref_key__manage_tags" translatable="false">pref_key_manage_tags</string>
@@ -93,7 +94,12 @@
     <string name="pref_title__extended_notifications">Extended Notifications</string>
     <string name="pref_desc__extended_notifications">Extend the notifications bell with a dropdown menu that shows notification categories</string>
 
+    <string name="pref_desc__language">Change language of this app. Restart app for changes to take affect</string>
+    <string name="pref_title__language">Language</string>
+    <string name="language_system">System language</string>
+
     <!-- Font size -->
+    <string name="pref_desc__font_size">Control text size of the WebView</string>
     <string name="pref_title__font_size">Font size</string>
     <array name="pref_entries__font_size" translatable="false">
         <item>@string/font_size_normal</item>
@@ -179,7 +185,7 @@
     <string name="pref_title__intellihide_toolbars">Intellihide Toolbars</string>
 
     <string name="pref_title__append_shared_via_app">Append shared-by-notice</string>
-    <string name="pref_desc__append_shared_via_app">Append a reference to this app ("shared by…") to shared texts</string>
+    <string name="pref_desc__append_shared_via_app">Append a reference to this app to shared texts: [via #dandelion]</string>
 
     <!-- More -->
     <string name="pref_title__sub_logging" translatable="false">@string/about_activity__title_debug_info</string>

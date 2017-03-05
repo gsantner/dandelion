@@ -21,6 +21,7 @@ package com.github.dfa.diaspora_android.ui.theme;
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
 import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +29,9 @@ import android.support.v7.app.AppCompatActivity;
 import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.util.AppSettings;
+import com.github.dfa.diaspora_android.util.Helpers;
+
+import java.util.Locale;
 
 /**
  * Activity that supports color schemes
@@ -44,6 +48,7 @@ public abstract class ThemedActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         ThemeHelper.getInstance(getAppSettings());
+        updateLanguage();
         updateStatusBarColor();
         updateRecentAppColor();
         applyColorToViews();
@@ -90,5 +95,13 @@ public abstract class ThemedActivity extends AppCompatActivity {
             rotation = ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE;
         }
         setRequestedOrientation(rotation);
+    }
+
+    public void updateLanguage() {
+        AppSettings appSettings = getAppSettings();
+        Locale locale = Helpers.getLocaleByAndroidCode(appSettings.getLanguage());
+        Configuration config = appSettings.getApplicationContext().getResources().getConfiguration();
+        config.locale = locale != null ? locale : Locale.getDefault();
+        appSettings.getApplicationContext().getResources().updateConfiguration(config, null);
     }
 }

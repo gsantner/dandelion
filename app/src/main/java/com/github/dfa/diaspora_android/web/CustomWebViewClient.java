@@ -26,10 +26,11 @@ import android.webkit.WebViewClient;
 
 import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.activity.MainActivity;
+import com.github.dfa.diaspora_android.data.DiasporaPodList;
 
 public class CustomWebViewClient extends WebViewClient {
     private final App app;
-    private String lastLoadUrl ="";
+    private String lastLoadUrl = "";
 
     public CustomWebViewClient(App app, WebView webView) {
         this.app = app;
@@ -37,13 +38,18 @@ public class CustomWebViewClient extends WebViewClient {
 
     //Open non-diaspora links in customtab/external browser
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        if (!url.contains(app.getSettings().getPod().getPodUrl().getHost())) {
+        String host = app.getSettings().getPod().getPodUrl().getHost();
+
+        if (url.startsWith("https://" + host)
+                || url.startsWith("http://" + host)
+                || url.startsWith("https://dia.so/")) {
+            return false;
+        } else {
             Intent i = new Intent(MainActivity.ACTION_OPEN_EXTERNAL_URL);
             i.putExtra(MainActivity.EXTRA_URL, url);
             LocalBroadcastManager.getInstance(app.getApplicationContext()).sendBroadcast(i);
             return true;
         }
-        return false;
     }
 
     public void onPageFinished(WebView view, String url) {
@@ -51,14 +57,17 @@ public class CustomWebViewClient extends WebViewClient {
 
         final CookieManager cookieManager = app.getCookieManager();
         String cookies = cookieManager.getCookie(url);
-        //Log.d(this, "All the cookies in a string:" + cookies);
+        DiasporaPodList.DiasporaPod pod = app.getSettings().getPod();
 
         if (cookies != null) {
             cookieManager.setCookie(url, cookies);
-            cookieManager.setCookie(app.getSettings().getPod().getPodUrl().getBaseUrl(), cookies);
-            //for (String c : cookies.split(";")) {
-            //AppLog.d(this, "Cookie: " + c.split("=")[0] + " Value:" + c.split("=")[1]);
-            //}
+            if (pod != null && pod.getPodUrl() != null) {
+                cookieManager.setCookie(pod.getPodUrl().getBaseUrl(), cookies);
+                cookieManager.setCookie(".dia.so", "pod=" + pod.getPodUrl().getHost());
+            }
+            for (String c : cookies.split(";")) {
+                //AppLog.d(this, "Cookie: " + c.split("=")[0] + " Value:" + c.split("=")[1]);
+            }
             //new ProfileFetchTask(app).execute();
         }
     }

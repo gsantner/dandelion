@@ -430,6 +430,14 @@ public class AppSettings {
         setLong(prefPod, R.string.pref_key__podprofile_last_stream_position, timestamp);
     }
 
+    public void setLanguage(String value){
+        setString(prefApp, R.string.pref_key__language, value);
+    }
+
+    public String getLanguage(){
+        return getString(prefApp, R.string.pref_key__language, "");
+    }
+
     public void setPrimaryColorSettings(int base, int shade) {
         setInt(prefApp, R.string.pref_key__primary_color_base, base);
         setInt(prefApp, R.string.pref_key__primary_color_shade, shade);
