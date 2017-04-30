@@ -19,6 +19,7 @@
   <string name="search">Поиск</string>
   <string name="contacts">Контакты</string>
   <string name="changelog">История изменений</string>
+  <string name="statistics">Статистика</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">Все уведомления</string>
   <string name="notifications__also_commented">Также прокомментировали</string>

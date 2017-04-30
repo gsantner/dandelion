@@ -1,3 +1,10 @@
+### v0.2.6 (2017-04-30)
+- Fixed #156 #158 #159
+- Added chinese traditional language
+- Added NavSlider option: Statistics
+- Changed shared-by-notice text
+- Fix bottom bar hint text background color (Fix #157)
+
 ### v0.2.5 (2017-04-10)
 - Introduce minimalistic Markdown Parser
 - Show LICENSE at first start

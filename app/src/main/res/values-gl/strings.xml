@@ -19,6 +19,7 @@
   <string name="search">Buscar</string>
   <string name="contacts">Contactos</string>
   <string name="changelog">Cambios</string>
+  <string name="statistics">Estatísticas</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">Todas as notificacións</string>
   <string name="notifications__also_commented">Tamén comentadas</string>

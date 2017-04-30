@@ -19,6 +19,7 @@
   <string name="search">搜尋</string>
   <string name="contacts">聯絡人</string>
   <string name="changelog">更新紀錄</string>
+  <string name="statistics">統計資料</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">全部的通知</string>
   <string name="notifications__also_commented">其他留言</string>

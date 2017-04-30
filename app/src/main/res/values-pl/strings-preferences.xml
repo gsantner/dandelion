@@ -17,7 +17,7 @@
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <string name="pref_title__sub_nav_slider">Pasek nawigacji</string>
-  <string name="pref_desc__sub_nav_slider">Wybierz elementy widoczne w pasku nawigacji</string>
+  <string name="pref_desc__sub_nav_slider">Wybierz elementy widoczne w panelu nawigacyjnym</string>
   <string name="pref_cat__visibility_nav_items__user">Użytkownik</string>
   <string name="pref_cat__visibility_nav_items__general">Ogólne</string>
   <string name="pref_cat__visibility_nav_items__admin">Administracja</string>
@@ -70,8 +70,8 @@
   <string name="pref_title__manage_tags">Zarządzanie tagami</string>
   <string name="pref_desc__manage_tags">Przestań śledzić wybrane tagi</string>
   <string name="pref_title__change_account">Zmień konto</string>
-  <string name="pref_desc__change_account">Skasuj dane sesji lokalnej i przełącz się do innego poda diaspora*/konta</string>
-  <string name="pref_warning__change_account">Operacja spowoduje usunięcie wszystkich ciasteczek i danych sesji. Jesteś pewny, że chcesz zmienić konto?</string>
+  <string name="pref_desc__change_account">Skasuj dane lokalnej sesji i przełącz się na inne konto diaspory*</string>
+  <string name="pref_warning__change_account">Operacja spowoduje usunięcie wszystkich ciasteczek i danych sesji. Jesteś pewny, że chcesz przełączyć na inne konto?</string>
   <string name="pref_title__clear_cache">Wyczyść pamięć podręczną</string>
   <string name="pref_desc__clear_cache">Wyczyść pamięć podręczną WebView</string>
   <string name="pref_desc__intellihide_toolbars">Automatycznie ukryj paski narzędzi na górze i na dole podczas przewijania</string>

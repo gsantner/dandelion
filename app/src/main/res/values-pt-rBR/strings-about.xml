@@ -5,8 +5,13 @@
   <string name="about_activity__title_about_license">Licença</string>
   <string name="about_activity__title_debug_info">Depurando</string>
   <string name="fragment_debug__section_app">Aplicação</string>
+  <string name="fragment_debug__section_device">Dispositivo</string>
   <string name="fragment_debug__section_pod">diaspora* Pod</string>
+  <string name="fragment_debug__section_log">Histórico de Depuração</string>
+  <string name="fragment_debug__section_log_spam">Histórico de depuração (detalhado)</string>
   <string name="fragment_debug__app_version">Versão do App: %1$s</string>
   <string name="fragment_debug__android_version">Versão do Android: %1$s</string>
+  <string name="fragment_debug__device_name">Nome do dispositivo: %1$s</string>
+  <string name="fragment_debug__pod_profile_url">Domínio do Pod: %1$s</string>
   <!-- License & help (large amount of text) -->
 </resources>

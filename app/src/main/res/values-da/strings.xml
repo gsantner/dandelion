@@ -3,10 +3,35 @@
 <resources>
   <!-- App - AppName specific -->
   <!-- Application -->
+  <string name="reload">Genindlæs</string>
   <!-- Common Words -->
+  <string name="settings">Indstillinger</string>
+  <string name="notifications">Notifikationer</string>
+  <string name="conversations">Samtaler</string>
+  <string name="stream">Strøm</string>
+  <string name="profile">Profil</string>
+  <string name="aspects">Aspekter</string>
+  <string name="activities">Aktiviteter</string>
+  <string name="liked">Synes om</string>
+  <string name="commented">Kommenteret</string>
+  <string name="mentions">Omtalelser</string>
+  <string name="public_">Offentlig</string>
+  <string name="search">Søg</string>
+  <string name="contacts">Kontakter</string>
+  <string name="changelog">Ændringslog</string>
+  <string name="statistics">Statistik</string>
   <!-- Notifications dropdown menu -->
+  <string name="notifications__all">Alle notifikationer</string>
+  <string name="notifications__also_commented">Kommenterede også</string>
+  <string name="notifications__comment_on_post">Kommenter på opslag</string>
+  <string name="notifications__liked">Syntes om</string>
+  <string name="notifications__mentioned">Nævnte</string>
+  <string name="notifications__reshared">Gendelte</string>
   <!-- Pod Activity -->
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
+  <string name="context_menu_share_image">Del billede</string>
+  <string name="context_menu_open_external_browser">Åben i ekstern browser&#8230;</string>
+  <string name="context_menu_copy_link">Kopier link-adresse til udklipsholder</string>
   <!-- More from MainActivity -->
   <!-- Permissions -->
 </resources>

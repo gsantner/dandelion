@@ -19,8 +19,11 @@
   <string name="search">검색</string>
   <string name="contacts">연락처</string>
   <string name="changelog">변경사항</string>
+  <string name="statistics">상태</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">모든 알림</string>
+  <string name="notifications__also_commented">다른 코멘트</string>
+  <string name="notifications__comment_on_post">게시물에 댓글 달기</string>
   <string name="notifications__liked">좋아하는</string>
   <string name="notifications__mentioned">멘션한</string>
   <string name="notifications__reshared">재공유</string>

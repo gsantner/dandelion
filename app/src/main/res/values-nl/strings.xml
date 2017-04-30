@@ -19,6 +19,7 @@
   <string name="search">Zoeken</string>
   <string name="contacts">Contacten</string>
   <string name="changelog">Aanpassingen</string>
+  <string name="statistics">Statistieken</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">Alle meldingen</string>
   <string name="notifications__also_commented">Heeft ook gereageerd</string>

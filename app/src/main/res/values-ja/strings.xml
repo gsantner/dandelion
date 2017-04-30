@@ -19,6 +19,7 @@
   <string name="search">検索</string>
   <string name="contacts">連絡先</string>
   <string name="changelog">変更履歴</string>
+  <string name="statistics">統計情報</string>
   <!-- Notifications dropdown menu -->
   <string name="notifications__all">すべての通知</string>
   <string name="notifications__also_commented">コメントもしました</string>
