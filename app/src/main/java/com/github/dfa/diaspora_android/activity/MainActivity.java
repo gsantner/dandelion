@@ -548,6 +548,8 @@ public class MainActivity extends ThemedActivity
         } else if (Intent.ACTION_SEND_MULTIPLE.equals(action) && type != null) {
             /* TODO: Implement and add filter to manifest */
             return;
+        }  else if ("app_shortcut".equals(action)) {
+            openDiasporaUrl(urls.getNewPostUrl());
         }
         //Catch split screen recreation
         if (action != null && action.equals(Intent.ACTION_MAIN) && getTopFragment() != null) {

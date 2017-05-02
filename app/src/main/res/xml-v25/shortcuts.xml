@@ -1,0 +1,22 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="shortcut_new_post"
+        android:enabled="true"
+        android:icon="@drawable/qc_post_plus"
+        android:shortcutShortLabel="@string/new_post"
+        android:shortcutLongLabel="@string/new_post"
+        android:shortcutDisabledMessage="@string/new_post">
+        <intent
+            android:action="app_shortcut"
+            android:targetPackage="com.github.dfa.diaspora_android"
+            android:targetClass="com.github.dfa.diaspora_android.activity.MainActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list is what the user sees when they
+             launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+</shortcuts>
+        
+

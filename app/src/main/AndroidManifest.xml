@@ -54,6 +54,7 @@
 
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+                <action android:name="app_shortcut" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
             </intent-filter>
@@ -226,6 +227,9 @@
                 <data android:host="pod.mew.cat" android:scheme="https" />
                 <!--@@@ PODLIST END-->
             </intent-filter>
+
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
 
         </activity>
 
