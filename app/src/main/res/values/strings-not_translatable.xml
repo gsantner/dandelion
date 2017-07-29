@@ -1,0 +1,142 @@
+<resources>
+    <!-- App - AppName specific -->
+    <string name="dandelion" translatable="false">dandelion*</string>
+    <string name="app_subtitle" translatable="false">Your companion app for browsing diaspora*</string>
+    <string name="shared_via_app" translatable="false">
+        \n\n\n_________________________\n
+        **Tags:** #dandelíon  \n\n
+        *via [dandelion*](/people?q=dandelion00%40diasp.org) client / [GitHub](https://github.com/Diaspora-for-Android/dandelion)*</string>
+
+
+    <string name="tor" translatable="false">Tor</string>
+
+
+    <string name="action_compose_new_post" translatable="false">@string/new_post</string>
+    <string name="search_alert_title" translatable="false">@string/search</string>
+    <string name="http" translatable="false">http</string>
+    <string name="https" translatable="false">https</string>
+
+
+    <string name="not_implemented" translatable="false">not_implemented</string>
+    <string name="donate__bitcoin_id" translatable="false">@string/not_implemented</string>
+    <string name="donate__bitcoin_message" translatable="false">@string/not_implemented</string>
+    <string name="donate__bitcoin_amount" translatable="false">@string/not_implemented</string>
+    <string name="donate__bitcoin_url" translatable="false">@string/not_implemented</string>
+
+    <!-- Rotation values -->
+    <string name="rotation_val_system" translatable="false">auto</string>
+    <string name="rotation_val_sensor" translatable="false">sensor</string>
+    <string name="rotation_val_portrait" translatable="false">portrait</string>
+    <string name="rotation_val_landscape" translatable="false">landscape</string>
+
+    <!-- Nav -->
+    <string name="nav_stream" translatable="false">@string/stream</string>
+    <string name="nav_liked" translatable="false">@string/liked</string>
+    <string name="nav_commented" translatable="false">@string/commented</string>
+    <string name="nav_mentions" translatable="false">@string/mentions</string>
+    <string name="nav_activities" translatable="false">@string/activities</string>
+    <string name="nav_aspects" translatable="false">@string/aspects</string>
+    <string name="nav_profile" translatable="false">@string/profile</string>
+    <string name="nav_statistics" translatable="false">@string/statistics</string>
+    <string name="nav_contacts" translatable="false">@string/contacts</string>
+
+    <!--
+    Pref keys
+    -->
+    <string name="pref_cat__more" translatable="false">@string/nav_menu_more</string>
+    <string name="pref_key__current_pod_0" translatable="false">pref_key__current_pod_0</string>
+    <string name="pref_key__font_size" translatable="false">pref_key_font_size</string>
+    <string name="pref_key__language" translatable="false">pref_key__language</string>
+    <string name="pref_key__intellihide_toolbars" translatable="false">pref_key_intellihide_toolbars</string>
+    <string name="pref_key__personal_settings" translatable="false">pref_key_personal_settings</string>
+    <string name="pref_key__manage_tags" translatable="false">pref_key_manage_tags</string>
+    <string name="pref_key__manage_contacts" translatable="false">pref_key_manage_contacts</string>
+    <string name="pref_key__change_account" translatable="false">pref_key_change_account</string>
+    <string name="pref_key__load_images" translatable="false">pref_key_load_images</string>
+    <string name="pref_key__clear_cache" translatable="false">pref_key_clear_cache</string>
+    <string name="pref_key__chrome_custom_tabs_enabled" translatable="false">pref_key__chrome_custom_tabs_enabled</string>
+    <string name="pref_key__http_proxy_load_tor_preset" translatable="false">pref_key__http_proxy_load_tor_preset</string>
+    <string name="pref_key__extended_notifications" translatable="false">pref_key__extended_notifications</string>
+    <string name="pref_key__topbar_stream_shortcut" translatable="false">pref_key__topbar_stream_shortcut</string>
+    <string name="pref_key__app_first_start" translatable="false">pref_key__app_first_start</string>
+    <string name="pref_key__app_first_start_current_version" translatable="false">pref_key__app_first_start_current_version</string>
+
+    <!-- Themes -->
+    <string name="pref_key__primary_color__amoled_mode" translatable="false">pref_key__primary_color__amoled_mode</string>
+    <string name="pref_key__primary_color__preference_click" translatable="false">@string/pref_key__primary_color_shade</string>
+    <string name="pref_key__primary_color_base" translatable="false">pref_key_primary_color_base</string>
+    <string name="pref_key__primary_color_shade" translatable="false">pref_key_primary_color_shade</string>
+    <string name="pref_key__accent_color__preference_click" translatable="false">@string/pref_key__accent_color_shade</string>
+    <string name="pref_key__accent_color_base" translatable="false">pref_key_accent_color_base</string>
+    <string name="pref_key__accent_color_shade" translatable="false">pref_key_accent_color_shade</string>
+
+    <string name="pref_key__append_shared_via_app" translatable="false">pref_key_append_shared_via_app</string>
+    <string name="pref_key__http_proxy_enabled" translatable="false">pref_key_proxy_enabled</string>
+    <string name="pref_key__http_proxy_host" translatable="false">pref_key_proxy_host</string>
+    <string name="pref_key__http_proxy_port" translatable="false">pref_key_proxy_port</string>
+    <string name="pref_key__proxy_was_enabled" translatable="false">wasProxyEnabled</string>
+
+
+    <!-- Navigation Slider -->
+    <string name="pref_key__screen_rotation" translatable="false">pref_key__screen_rotation</string>
+    <string name="pref_key__visibility_nav__exit" translatable="false">pref_key__visibility_navslider__exit</string>
+    <string name="pref_key__visibility_nav__help_license" translatable="false">pref_key__visibility_nav__help_license</string>
+    <string name="pref_key__visibility_nav__public_activities" translatable="false">pref_key__visibility_nav__public_activities</string>
+    <string name="pref_key__visibility_nav__mentions" translatable="false">pref_key__visibility_nav__mentions</string>
+    <string name="pref_key__visibility_nav__commented" translatable="false">pref_key__visibility_nav__commented</string>
+    <string name="pref_key__visibility_nav__liked" translatable="false">pref_key__visibility_nav__liked</string>
+    <string name="pref_key__visibility_nav__activities" translatable="false">pref_key__visibility_nav__activities</string>
+    <string name="pref_key__visibility_nav__aspects" translatable="false">pref_key__visibility_nav__aspects</string>
+    <string name="pref_key__visibility_nav__followed_tags" translatable="false">pref_key__visibility_nav__followed_tags</string>
+    <string name="pref_key__visibility_nav__profile" translatable="false">pref_key__visibility_nav__profile</string>
+    <string name="pref_key__visibility_nav__contacts" translatable="false">pref_key__visibility_nav__contacts</string>
+    <string name="pref_key__visibility_nav__reports" translatable="false">pref_key__visibility_nav__reports</string>
+    <string name="pref_key__visibility_nav__statistics" translatable="false">pref_key__visibility_nav__statistics</string>
+    <string name="pref_key__visibility_nav__toggle_mobile_desktop" translatable="false">pref_key__visibility_nav__toggle_mobile_desktop</string>
+
+    <!-- PodProfile -->
+    <string name="pref_key__podprofile_avatar_url" translatable="false">pref_key__podprofile_avatar_url</string>
+    <string name="pref_key__podprofile_name" translatable="false">pref_key__podprofile_name</string>
+    <string name="pref_key__podprofile_id" translatable="false">pref_key__podprofile_id</string>
+    <string name="pref_key__podprofile_aspects" translatable="false">pref_key__podprofile_aspects</string>
+    <string name="pref_key__podprofile_aspects_favs" translatable="false">pref_key__podprofile_aspects_favs</string>
+    <string name="pref_key__podprofile_followed_tags" translatable="false">pref_key__podprofile_followed_tags</string>
+    <string name="pref_key__podprofile_followed_tags_favs" translatable="false">pref_key__podprofile_followed_tags_favs</string>
+    <string name="pref_key__podprofile_unread_message_count" translatable="false">pref_key__podprofile_unread_message_count</string>
+    <string name="pref_key__podprofile_notification_count" translatable="false">pref_key__podprofile_notification_count</string>
+    <string name="pref_key__podprofile_last_stream_position" translatable="false">pref_key__podprofile_last_stream_position</string>
+    <string name="pref_title__manage_contacts" translatable="false">@string/contacts</string>
+
+    <!-- More -->
+    <string name="pref_key__logging_spam_enabled" translatable="false">pref_key__logging_spam_enabled</string>
+    <string name="pref_key__logging_enabled" translatable="false">pref_key__logging_enabled</string>
+    <string name="pref_key__wipe_settings" translatable="false">pref_key__wipe_settings</string>
+    <string name="pref_title__sub_logging" translatable="false">@string/about_activity__title_debug_info</string>
+    <string name="pref_desc__sub_logging" translatable="false">@string/fragment_debug__section_log</string>
+    <string name="pref_title__logging_enabled" translatable="false">@string/fragment_debug__section_log</string>
+    <string name="pref_title__logging_spam_enabled" translatable="false">@string/fragment_debug__section_log_spam</string>
+
+    <!-- Network -->
+    <string name="pref_desc__sub_proxy" translatable="false">@string/pref_desc__http_proxy_enabled</string>
+    <string name="HTTP" translatable="false">HTTP</string>
+    <string name="pref_title__chrome_custom_tabs_enabled" translatable="false">Chrome Custom Tabs</string>
+
+
+    <!-- Recently added - Please move to right section-->
+    <!-- Sorry -->
+    <string name="pref_key__title__appearance" translatable="false">pref_key__title__appearance</string>
+    <string name="pref_key__title__pod_settings" translatable="false">pref_key__title__pod_settings</string>
+    <string name="pref_key__title__network" translatable="false">pref_key__title__network</string>
+    <string name="pref_key__title__more" translatable="false">pref_key__title__more</string>
+    <string name="pref_key__title__debugging" translatable="false">pref_key__title__debugging</string>
+    <string name="pref_key__title__proxy" translatable="false">pref_key__title__proxy</string>
+    <string name="pref_key__title__themes" translatable="false">pref_key__title__themes</string>
+
+
+    <string name="pref_key__cat_themes" translatable="false">pref_key__cat_themes</string>
+    <string name="pref_key__cat_nav_slider" translatable="false">pref_key__cat_nav_slider</string>
+    <string name="pref_key__cat_proxy" translatable="false">pref_key__cat_proxy</string>
+    <string name="pref_key__cat_debugging" translatable="false">pref_key__cat_debugging</string>
+
+    <string name="pref_key__adblock_enable" translatable="false">pref_key__adblock_enable</string>
+</resources>

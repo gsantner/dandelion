@@ -1,15 +1,4 @@
 <resources>
-    <!-- App - AppName specific -->
-    <string name="dandelion" translatable="false">dandelion*</string>
-    <string name="diaspora" translatable="false">diaspora*</string>
-    <string name="diaspora_for_android" translatable="false">Diaspora for Android</string>
-    <string name="app_hashtag" translatable="false">#dandelion</string>
-    <string name="app_subtitle" translatable="false">Your companion app for browsing diaspora*</string>
-    <string name="shared_via_app" translatable="false">
-        \n\n\n_________________________\n
-        **Tags:** #dandelíon  \n\n
-        *via [dandelion*](/people?q=dandelion00%40diasp.org) client / [GitHub](https://github.com/Diaspora-for-Android/dandelion)*</string>
-
     <!-- Application -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -31,7 +20,6 @@
     <string name="contacts">Contacts</string>
     <string name="changelog">Changelog</string>
     <string name="statistics">Statistics</string>
-    <string name="tor" translatable="false">Tor</string>
 
     <!-- Notifications dropdown menu -->
     <string name="notifications__all">All Notifications</string>
@@ -52,19 +40,10 @@
 
 
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_stream" translatable="false">@string/stream</string>
-    <string name="nav_liked" translatable="false">@string/liked</string>
-    <string name="nav_commented" translatable="false">@string/commented</string>
-    <string name="nav_mentions" translatable="false">@string/mentions</string>
-    <string name="nav_activities" translatable="false">@string/activities</string>
-    <string name="nav_aspects" translatable="false">@string/aspects</string>
-    <string name="nav_profile" translatable="false">@string/profile</string>
-    <string name="nav_statistics" translatable="false">@string/statistics</string>
     <string name="nav_menu_more">More</string>
     <string name="nav_help_license">About | Help</string>
     <string name="nav_followed_tags">Followed Tags</string>
     <string name="nav_public_activities">Public activities</string>
-    <string name="nav_contacts" translatable="false">@string/contacts</string>
     <string name="nav_reports">Reports</string>
 
     <string name="share__share_link_as_text">Share link as text</string>
@@ -78,13 +57,11 @@
     <string name="new_post">New post</string>
     <string name="action_go_to_top">Go to top</string>
     <string name="action_search_by_tags_or_persons">Search by tags or persons</string>
-    <string name="action_compose_new_post" translatable="false">@string/new_post</string>
     <string name="action_exit_app">Exit app</string>
     <string name="action_toggle_desktop_page">Toggle mobile/desktop view</string>
     <string name="action_share_dotdotdot">Share…</string>
 
 
-    <string name="search_alert_title" translatable="false">@string/search</string>
     <string name="search_alert_tag">by tags</string>
     <string name="search_alert_people">by people</string>
     <string name="search_alert_bypeople_validate_needsomedata">Please add a name</string>
@@ -114,15 +91,7 @@
     <string name="podselection__custom_pod">Custom Pod</string>
     <string name="pod_name">Pod name</string>
     <string name="http_protocol">Protocol</string>
-    <string name="http" translatable="false">http</string>
-    <string name="https" translatable="false">https</string>
     <string name="pod_address">Pod address</string>
     <string name="missing_value">Missing value</string>
     <string name="jump_to_last_visited_timestamp_in_stream">Jump to last visited page in stream?</string>
-
-    <string name="not_implemented" translatable="false">not_implemented</string>
-    <string name="donate__bitcoin_id" translatable="false">@string/not_implemented</string>
-    <string name="donate__bitcoin_message" translatable="false">@string/not_implemented</string>
-    <string name="donate__bitcoin_amount" translatable="false">@string/not_implemented</string>
-    <string name="donate__bitcoin_url" translatable="false">@string/not_implemented</string>
 </resources>

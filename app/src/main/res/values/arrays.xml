@@ -31,4 +31,31 @@
         <item>Czech (Čeština)</item>
         <item>Swedish (Svenska)</item>
     </string-array>
+
+
+    <array name="pref_entries__font_size" translatable="false">
+        <item>@string/font_size_normal</item>
+        <item>@string/font_size_large</item>
+        <item>@string/font_size_huge</item>
+    </array>
+    <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
+    <array name="pref_entries_values__font_size" translatable="false">
+        <item>normal</item>
+        <item>large</item>
+        <item>huge</item>
+    </array>
+
+
+    <array name="pref_entries_values__screen_rotation" translatable="false">
+        <item>@string/rotation_val_system</item>
+        <item>@string/rotation_val_sensor</item>
+        <item>@string/rotation_val_portrait</item>
+        <item>@string/rotation_val_landscape</item>
+    </array>
+    <array name="pref_entries__screen_rotation" translatable="false">
+        <item>@string/rotation_system</item>
+        <item>@string/rotation_sensor</item>
+        <item>@string/rotation_portrait</item>
+        <item>@string/rotation_landscape</item>
+    </array>
 </resources>

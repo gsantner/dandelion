@@ -1,5 +1,6 @@
 ### v1.0.1
 - Update SimpleMarkdownParser
+- Move untranslatable strings
 
 ### v1.0.0 (2017-06-14)
 - Added AMOLED mode

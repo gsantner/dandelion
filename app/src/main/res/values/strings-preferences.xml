@@ -1,81 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Key Names (Untranslatable) -->
-    <string name="pref_key__current_pod_0" translatable="false">pref_key__current_pod_0</string>
-    <string name="pref_key__font_size" translatable="false">pref_key_font_size</string>
-    <string name="pref_key__language" translatable="false">pref_key__language</string>
-    <string name="pref_key__intellihide_toolbars" translatable="false">pref_key_intellihide_toolbars</string>
-    <string name="pref_key__personal_settings" translatable="false">pref_key_personal_settings</string>
-    <string name="pref_key__manage_tags" translatable="false">pref_key_manage_tags</string>
-    <string name="pref_key__manage_contacts" translatable="false">pref_key_manage_contacts</string>
-    <string name="pref_key__change_account" translatable="false">pref_key_change_account</string>
-    <string name="pref_key__load_images" translatable="false">pref_key_load_images</string>
-    <string name="pref_key__clear_cache" translatable="false">pref_key_clear_cache</string>
-    <string name="pref_key__chrome_custom_tabs_enabled" translatable="false">pref_key__chrome_custom_tabs_enabled</string>
-    <string name="pref_key__http_proxy_load_tor_preset" translatable="false">pref_key__http_proxy_load_tor_preset</string>
-    <string name="pref_key__extended_notifications" translatable="false">pref_key__extended_notifications</string>
-    <string name="pref_key__topbar_stream_shortcut" translatable="false">pref_key__topbar_stream_shortcut</string>
-    <string name="pref_key__app_first_start" translatable="false">pref_key__app_first_start</string>
-    <string name="pref_key__app_first_start_current_version" translatable="false">pref_key__app_first_start_current_version</string>
-
-    <!-- Themes -->
-    <string name="pref_key__primary_color__amoled_mode" translatable="false">pref_key__primary_color__amoled_mode</string>
-    <string name="pref_key__primary_color__preference_click" translatable="false">@string/pref_key__primary_color_shade</string>
-    <string name="pref_key__primary_color_base" translatable="false">pref_key_primary_color_base</string>
-    <string name="pref_key__primary_color_shade" translatable="false">pref_key_primary_color_shade</string>
-    <string name="pref_key__accent_color__preference_click" translatable="false">@string/pref_key__accent_color_shade</string>
-    <string name="pref_key__accent_color_base" translatable="false">pref_key_accent_color_base</string>
-    <string name="pref_key__accent_color_shade" translatable="false">pref_key_accent_color_shade</string>
-
-    <string name="pref_key__append_shared_via_app" translatable="false">pref_key_append_shared_via_app</string>
-    <string name="pref_key__http_proxy_enabled" translatable="false">pref_key_proxy_enabled</string>
-    <string name="pref_key__http_proxy_host" translatable="false">pref_key_proxy_host</string>
-    <string name="pref_key__http_proxy_port" translatable="false">pref_key_proxy_port</string>
-    <string name="pref_key__proxy_was_enabled" translatable="false">wasProxyEnabled</string>
 
     <!-- Operability -->
     <string name="pref_title__topbar_stream_shortcut">Top toolbar loads stream</string>
     <string name="pref_desc__topbar_stream_shortcut">Click an empty space in the top toolbar to open the stream</string>
-    <string name="pref_key__screen_rotation" translatable="false">pref_key__screen_rotation</string>
 
-    <!-- Navigiation Slider -->
-    <string name="pref_key__visibility_nav__exit" translatable="false">pref_key__visibility_navslider__exit</string>
-    <string name="pref_key__visibility_nav__help_license" translatable="false">pref_key__visibility_nav__help_license</string>
-    <string name="pref_key__visibility_nav__public_activities" translatable="false">pref_key__visibility_nav__public_activities</string>
-    <string name="pref_key__visibility_nav__mentions" translatable="false">pref_key__visibility_nav__mentions</string>
-    <string name="pref_key__visibility_nav__commented" translatable="false">pref_key__visibility_nav__commented</string>
-    <string name="pref_key__visibility_nav__liked" translatable="false">pref_key__visibility_nav__liked</string>
-    <string name="pref_key__visibility_nav__activities" translatable="false">pref_key__visibility_nav__activities</string>
-    <string name="pref_key__visibility_nav__aspects" translatable="false">pref_key__visibility_nav__aspects</string>
-    <string name="pref_key__visibility_nav__followed_tags" translatable="false">pref_key__visibility_nav__followed_tags</string>
-    <string name="pref_key__visibility_nav__profile" translatable="false">pref_key__visibility_nav__profile</string>
-    <string name="pref_key__visibility_nav__contacts" translatable="false">pref_key__visibility_nav__contacts</string>
-    <string name="pref_key__visibility_nav__reports" translatable="false">pref_key__visibility_nav__reports</string>
-    <string name="pref_key__visibility_nav__statistics" translatable="false">pref_key__visibility_nav__statistics</string>
-    <string name="pref_key__visibility_nav__toggle_mobile_desktop" translatable="false">pref_key__visibility_nav__toggle_mobile_desktop</string>
-
-    <!-- PodProfile -->
-    <string name="pref_key__podprofile_avatar_url" translatable="false">pref_key__podprofile_avatar_url</string>
-    <string name="pref_key__podprofile_name" translatable="false">pref_key__podprofile_name</string>
-    <string name="pref_key__podprofile_id" translatable="false">pref_key__podprofile_id</string>
-    <string name="pref_key__podprofile_aspects" translatable="false">pref_key__podprofile_aspects</string>
-    <string name="pref_key__podprofile_aspects_favs" translatable="false">pref_key__podprofile_aspects_favs</string>
-    <string name="pref_key__podprofile_followed_tags" translatable="false">pref_key__podprofile_followed_tags</string>
-    <string name="pref_key__podprofile_followed_tags_favs" translatable="false">pref_key__podprofile_followed_tags_favs</string>
-    <string name="pref_key__podprofile_unread_message_count" translatable="false">pref_key__podprofile_unread_message_count</string>
-    <string name="pref_key__podprofile_notification_count" translatable="false">pref_key__podprofile_notification_count</string>
-    <string name="pref_key__podprofile_last_stream_position" translatable="false">pref_key__podprofile_last_stream_position</string>
-
-    <!-- More -->
-    <string name="pref_key__logging_spam_enabled" translatable="false">pref_key__logging_spam_enabled</string>
-    <string name="pref_key__logging_enabled" translatable="false">pref_key__logging_enabled</string>
-    <string name="pref_key__wipe_settings" translatable="false">pref_key__wipe_settings</string>
 
     <!-- Category Titles -->
     <string name="pref_cat__visuals">Appearance</string>
     <string name="pref_cat__network">Network</string>
     <string name="pref_cat__pod_settings">Pod settings</string>
-    <string name="pref_cat__more" translatable="false">@string/nav_menu_more</string>
     <string name="pref_cat__operability">Operability</string>
 
     <!-- Visuals -->
@@ -107,17 +42,6 @@
     <!-- Font size -->
     <string name="pref_desc__font_size">Control text size of the WebView</string>
     <string name="pref_title__font_size">Font size</string>
-    <array name="pref_entries__font_size" translatable="false">
-        <item>@string/font_size_normal</item>
-        <item>@string/font_size_large</item>
-        <item>@string/font_size_huge</item>
-    </array>
-    <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
-    <array name="pref_entries_values__font_size" translatable="false">
-        <item>normal</item>
-        <item>large</item>
-        <item>huge</item>
-    </array>
     <string name="font_size_normal">Normal</string>
     <string name="font_size_large">Large</string>
     <string name="font_size_huge">Huge</string>
@@ -129,51 +53,29 @@
     <!-- Screen rotation -->
     <string name="pref_title__screen_rotation">Screen rotation</string>
     <string name="pref_desc__screen_rotation">Control automatic screen rotation</string>
-    <string name="rotation_val_system" translatable="false">auto</string>
-    <string name="rotation_val_sensor" translatable="false">sensor</string>
-    <string name="rotation_val_portrait" translatable="false">portrait</string>
-    <string name="rotation_val_landscape" translatable="false">landscape</string>
     <string name="rotation_system">Default</string>
     <string name="rotation_sensor">Sensor\n(ignore system settings)</string>
     <string name="rotation_portrait">Portrait</string>
     <string name="rotation_landscape">Landscape</string>
-    <array name="pref_entries_values__screen_rotation" translatable="false">
-        <item>@string/rotation_val_system</item>
-        <item>@string/rotation_val_sensor</item>
-        <item>@string/rotation_val_portrait</item>
-        <item>@string/rotation_val_landscape</item>
-    </array>
-    <array name="pref_entries__screen_rotation" translatable="false">
-        <item>@string/rotation_system</item>
-        <item>@string/rotation_sensor</item>
-        <item>@string/rotation_portrait</item>
-        <item>@string/rotation_landscape</item>
-    </array>
 
     <!-- Proxy -->
     <string name="pref_title__http_proxy_load_tor_preset">Load Tor Preset</string>
     <string name="pref_desc__http_proxy_load_tor_preset">Load proxy settings for Tor (Orbot) HTTP Proxy</string>
     <string name="pref_title__sub_proxy">Proxy</string>
-    <string name="pref_desc__sub_proxy" translatable="false">@string/pref_desc__http_proxy_enabled</string>
     <string name="pref_title__proxy_enabled">Enable Proxy</string>
     <string name="pref_desc__http_proxy_enabled">Proxy dandelion*\'s traffic to circumvent firewalls.\nMay require restart. This might not work on some phones.</string>
     <string name="pref_title__http_proxy_host">Host</string>
     <string name="pref_title__http_proxy_port">Port</string>
-    <string name="HTTP" translatable="false">HTTP</string>
-    <string name="SOCKS5" translatable="false">SOCKS5</string>
     <string name="toast__proxy_disabled__restart_required">App needs to restart to disable proxy usage</string>
     <string name="toast__proxy_orbot_preset_loaded">Orbot proxy preset loaded</string>
 
 
     <!-- Chrome custom tabs -->
-    <string name="pref_title__chrome_custom_tabs_enabled" translatable="false">Chrome Custom Tabs</string>
     <string name="pref_desc__chrome_custom_tabs_enabled">Open external links with Chrome Custom Tabs. Chromium or Google Chrome needs to be installed in order to use this feature. \nIMPORTANT NOTE: Chrome Custom Tabs do not use configured proxy servers!</string>
 
     <!-- Diaspora Settings -->
     <string name="pref_title__personal_settings">Personal settings</string>
     <string name="pref_desc__personal_settings">Open your diaspora* account settings</string>
-
-    <string name="pref_title__manage_contacts" translatable="false">@string/contacts</string>
     <string name="pref_desc__manage_contacts">Manage your contact list</string>
 
     <string name="pref_title__manage_tags">Manage Hashtags</string>
@@ -194,35 +96,13 @@
     <string name="pref_desc__append_shared_via_app">Append a reference to this app to shared texts: [via #dandelion]</string>
 
     <!-- More -->
-    <string name="pref_title__sub_logging" translatable="false">@string/about_activity__title_debug_info</string>
-    <string name="pref_desc__sub_logging" translatable="false">@string/fragment_debug__section_log</string>
     <string name="pref_title__sub_miscelaneous">Miscellaneous</string>
-
-    <string name="pref_title__logging_enabled" translatable="false">@string/fragment_debug__section_log</string>
-    <string name="pref_title__logging_spam_enabled" translatable="false">@string/fragment_debug__section_log_spam</string>
 
     <string name="pref_title__wipe_settings">Full Reset</string>
     <string name="pref_desc__wipe_settings">Locally wipe all settings related to the app and log out from all accounts</string>
 
     <string name="dialog_content__wipe_settings">This will reset all changed settings of the app to their default values and log you out from all pods. Your downloaded images will stay untouched. Are you sure you want to proceed?</string>
 
-    <!-- Recently added - Please move to right section-->
-    <!-- Sorry -->
-    <string name="pref_key__title__appearance" translatable="false">pref_key__title__appearance</string>
-    <string name="pref_key__title__pod_settings" translatable="false">pref_key__title__pod_settings</string>
-    <string name="pref_key__title__network" translatable="false">pref_key__title__network</string>
-    <string name="pref_key__title__more" translatable="false">pref_key__title__more</string>
-    <string name="pref_key__title__debugging" translatable="false">pref_key__title__debugging</string>
-    <string name="pref_key__title__proxy" translatable="false">pref_key__title__proxy</string>
-    <string name="pref_key__title__themes" translatable="false">pref_key__title__themes</string>
-
-
-    <string name="pref_key__cat_themes" translatable="false">pref_key__cat_themes</string>
-    <string name="pref_key__cat_nav_slider" translatable="false">pref_key__cat_nav_slider</string>
-    <string name="pref_key__cat_proxy" translatable="false">pref_key__cat_proxy</string>
-    <string name="pref_key__cat_debugging" translatable="false">pref_key__cat_debugging</string>
-
-    <string name="pref_key__adblock_enable" translatable="false">pref_key__adblock_enable</string>
     <string name="pref_desc__adblock_enable">Enable basic AdBlocker. Ads may be included e.g. in embedded views</string>
     <string name="pref_title__adblock_enable">Block advertisements</string>
 </resources>
