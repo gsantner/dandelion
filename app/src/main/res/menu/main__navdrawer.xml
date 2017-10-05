@@ -73,6 +73,10 @@
             android:icon="@drawable/ic_cancel_black_48px"
             android:title="@string/action_exit_app"
             android:visible="false" />
+
+        <item
+            android:id="@+id/nav_shortcut"
+            android:title="@string/nav_add_shortcut" />
     </group>
 
     <group android:checkableBehavior="none">
@@ -91,9 +95,6 @@
             android:icon="@drawable/ic_info_black_48px"
             android:title="@string/nav_help_license" />
 
-        <item
-            android:id="@+id/nav_shortcut"
-            android:title="@string/nav_add_shortcut" />
     </group>
 
 </menu>

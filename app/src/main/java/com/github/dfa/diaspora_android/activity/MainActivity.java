@@ -1161,11 +1161,12 @@ public class MainActivity extends ThemedActivity
 
             case R.id.nav_shortcut: {
                 Intent shortcutIntent = new Intent(MainActivity.this, MainActivity.class);
-                shortcutIntent.setAction(Intent.ACTION_MAIN);
+                shortcutIntent.setAction(Intent.ACTION_VIEW);
+                shortcutIntent.setData(Uri.parse(urls.getStreamUrl()));
                 // The intent responsible for creating the shortcut
                 Intent intent = new Intent();
                 intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
-                intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, getString(R.string.app_name));
+                intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, _appSettings.getPod().getName());
                 intent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(MainActivity.this, R.drawable.ic_launcher));
                 // To install shortcut
                 intent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
