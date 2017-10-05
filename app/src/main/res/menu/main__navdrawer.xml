@@ -90,6 +90,10 @@
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_info_black_48px"
             android:title="@string/nav_help_license" />
+
+        <item
+            android:id="@+id/nav_shortcut"
+            android:title="@string/nav_add_shortcut" />
     </group>
 
 </menu>
