@@ -1158,6 +1158,23 @@ public class MainActivity extends ThemedActivity
                 startActivity(new Intent(MainActivity.this, AboutActivity.class));
             }
             break;
+
+            case R.id.nav_shortcut: {
+                Intent shortcutIntent = new Intent(MainActivity.this, MainActivity.class);
+                shortcutIntent.setAction(Intent.ACTION_VIEW);
+                shortcutIntent.setData(Uri.parse(urls.getStreamUrl()));
+                // The intent responsible for creating the shortcut
+                Intent intent = new Intent();
+                intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
+                intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, _appSettings.getPod().getName());
+                intent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(MainActivity.this, R.drawable.ic_launcher));
+                // To install shortcut
+                intent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+                sendBroadcast(intent);
+                // Notify user of the shortcut created
+                Snackbar.make(fragmentContainer, R.string.shortcut_created, Snackbar.LENGTH_LONG).show();
+            }
+            break;
         }
 
         navDrawer.closeDrawer(GravityCompat.START);

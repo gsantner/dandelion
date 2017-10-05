@@ -96,4 +96,6 @@
     <string name="jump_to_last_visited_timestamp_in_stream">Jump to last visited page in stream?</string>
     <string name="pref_summary__is_statusbar_hidden">Hide statusbar at main view</string>
     <string name="pref_title__is_statusbar_hidden">Hide statusbar</string>
+    <string name="nav_add_shortcut">Add Launcher Shortcut</string>
+    <string name="shortcut_created">Shortcut Created</string>
 </resources>
