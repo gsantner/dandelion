@@ -29,7 +29,7 @@
   <string name="notifications__started_sharing">Zaczęli się z Tobą dzielić</string>
   <!-- Pod Activity -->
   <string name="podlist_error">Błąd: Nie udało się pobrać listy podów!</string>
-  <string name="no_internet">Przykro mi, by kontynuować musisz mieć połączenie z Internetem</string>
+  <string name="no_internet">Przykro mi, lecz by kontynuować, musisz mieć połączenie z Internetem</string>
   <string name="confirmation">Potwierdzenie</string>
   <string name="confirm_exit">Czy chcesz wyjść?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
@@ -62,8 +62,8 @@
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Nie udało się wczytać obrazu</string>
   <!-- Permissions -->
-  <string name="permissions_screenshot">By móc zapisywać zrzuty ekranu musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - dandelion*. W sekcji uprawnień zaznacz \"Pamięć\".</string>
-  <string name="permissions_image">By móc zapisywać/wysyłać obrazy musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - dandelion*. W sekcji uprawnień zaznacz \"Pamięć\".</string>
+  <string name="permissions_screenshot">Aby móc zapisywać zrzuty ekranu, musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz, powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - dandelion*. W sekcji uprawnień zaznacz \"Pamięć\".</string>
+  <string name="permissions_image">Aby móc zapisywać/wysyłać obrazy, musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz, powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - dandelion*. W sekcji uprawnień zaznacz \"Pamięć\".</string>
   <string name="permission_denied">Odmowa dostępu.</string>
   <string name="permission_granted_try_again">Dostęp przyznany. Spróbuj ponownie.</string>
   <string name="podselection__custom_pod">Pod spoza listy</string>
