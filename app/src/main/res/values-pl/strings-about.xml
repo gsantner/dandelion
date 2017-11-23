@@ -16,9 +16,9 @@
   <string name="fragment_debug__pod_profile_name">Alias Poda: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Domena Poda: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Log debugowania został skopiowany do schowka</string>
-  <string name="fragment_about__about_text">dandelion* to Twój cyfrowy towarzysz umożliwiający korzystanie z sieci społecznościowej diaspora*. Aplikacja posiada użyteczne paski narzędzi oraz obsługę serwerów proxy takich jak Tor, by korzystanie z diaspory* było jeszcze przyjemniejsze.</string>
+  <string name="fragment_about__about_text">dandelion* to Twój cyfrowy towarzysz umożliwiający korzystanie z sieci społecznościowej diaspora*. Aplikacja posiada użyteczne paski narzędzi oraz obsługę serwerów proxy takich jak Tor, aby korzystanie z diaspory* było jeszcze przyjemniejsze.</string>
   <string name="fragment_about__contribute">Wesprzyj nas kodem!</string>
-  <string name="fragment_about__contribute_text">dandelion* to wolne, w sensie wolności, oprogramowanie, zgodne z ideami projektu diaspora*. Jeśli chcesz nam pomóc w rozwoju, zapraszamy! Jesteśmy bardzo małym zespołem i bardzo doceniamy każdą formę pomocy!</string>
+  <string name="fragment_about__contribute_text">dandelion* to wolne, w sensie wolności, oprogramowanie, zgodne z ideami projektu diaspora*. Jeśli chcesz nam pomóc w rozwoju, zapraszamy! Jesteśmy bardzo małym zespołem i ogromnie doceniamy każdą formę pomocy!</string>
   <string name="fragment_about__contribute_button">Pobierz kod źródłowy</string>
   <string name="fragment_about__translate">Przetłumacz aplikację!</string>
   <string name="fragment_about__translate_text">Aplikacja nie jest dostępna w Twoim języku? Możesz to zmienić, pomagając nam w tłumaczeniu! Dzięki platformie crowdin każdy może pomóc w tłumaczeniu aplikacji.</string>
@@ -27,7 +27,7 @@
   <string name="fragment_about__feedback_text">dandelion* jest ciągle w fazie rozwoju, więc jeśli masz jakiekolwiek sugestie lub chciałbyś podzielić się swoją opinią zrób to za pomocą naszego systemu zgłaszania błędów!</string>
   <string name="fragment_about__feedback_button">Zgłoś błąd</string>
   <string name="fragment_about__spread_the_word">Powiedz innym o aplikacji!</string>
-  <string name="fragment_about__spread_the_word_text">Powiedz swoim znajomym i rodzinie o diaspora* oraz #dandelion! Dlaczego miałbyś nie opisać swoich doświadczeń na blogu? Byłoby nam miło usłyszeć co masz do powiedzenia!</string>
+  <string name="fragment_about__spread_the_word_text">Powiedz swoim znajomym i rodzinie o diaspora* oraz #dandelion! Dlaczego miałbyś nie opisać swoich doświadczeń na blogu? Byłoby nam miło usłyszeć, co masz do powiedzenia!</string>
   <string name="fragment_about__spread_the_word_button">Udostępnij aplikację</string>
   <string name="fragment_about__spread_the_word_share_text">Cześć! Wypróbuj #dandelion! %1$s</string>
   <!-- License & help (large amount of text) -->
@@ -37,7 +37,7 @@
   <string name="fragment_license__contributors_thank_you">%1$s&lt;br&gt;&lt;br&gt;Wielkie dzięki!</string>
   <string name="fragment_license__license_button">Licencja GNU GPLv3+</string>
   <string name="fragment_license__thirdparty_libs">Biblioteki zewnętrzne</string>
-  <string name="fragment_license__thirdparty_libs_text">Następujące biblioteki zewnętrzne zostały użyte:</string>
+  <string name="fragment_license__thirdparty_libs_text">Zostały użyte następujące biblioteki zewnętrzne:</string>
   <string name="fragment_license__misc_leafpic">Zaczerpnęliśmy kilka pomysłów oraz trochę kodu z aplikacji LeafPic. Wypróbuj ją, to także wolne oprogramowanie!</string>
   <string name="fragment_license__misc_leafpic_button">Chcę wiedzieć więcej</string>
 </resources>

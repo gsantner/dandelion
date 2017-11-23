@@ -4,7 +4,7 @@
   <!-- Key Names (Untranslatable) -->
   <!-- Operability -->
   <string name="pref_title__topbar_stream_shortcut">Górny pasek narzędzi wczytuje strumień</string>
-  <string name="pref_desc__topbar_stream_shortcut">By otworzyć strumień kliknij na pustą przestrzeń w górnym pasku narzędziowym</string>
+  <string name="pref_desc__topbar_stream_shortcut">Aby otworzyć strumień, kliknij na pustą przestrzeń w górnym pasku narzędziowym</string>
   <!-- Category Titles -->
   <string name="pref_cat__visuals">Wygląd</string>
   <string name="pref_cat__network">Sieć</string>
@@ -19,17 +19,17 @@
   <string name="pref_cat__visibility_nav_items__admin">Administracja</string>
   <!-- Themes -->
   <string name="pref_title__themes">Motywy i kolory</string>
-  <string name="pref_desc__themes">Ustaw jakich kolorów ma używać aplikacja</string>
+  <string name="pref_desc__themes">Ustaw, jakich kolorów ma używać aplikacja</string>
   <string name="pref_title__primary_color">Kolor podstawowy</string>
   <string name="pref_desc__primary_color">Kolor pasków narzędzi</string>
   <string name="pref_title__accent_color">Kolor dodatkowy</string>
   <string name="pref_desc__accent_color">Kolor paska postępu</string>
   <string name="pref_title__primary_color__amoled_mode">Tryb AMOLED</string>
-  <string name="pref_desc__primary_color__amoled_mode">Nadpisz kolory w wielu częściach aplikacji używając czarnego przyjaznego dla ekranów AMOLED. By zobaczyć zmiany musisz zrestartować aplikację. By przeglądać diasporę* w ciemności musisz także aktywować Ciemny (Dark) motyw. Opcję tę znajdziesz w ustawieniach Twojego konta diaspory*.</string>
+  <string name="pref_desc__primary_color__amoled_mode">Nadpisz kolory w wielu częściach aplikacji, używając czarnego przyjaznego dla ekranów AMOLED. Aby zobaczyć zmiany, musisz zrestartować aplikację. Żeby przeglądać diasporę* w ciemności, musisz także aktywować Ciemny (Dark) motyw. Opcję tę znajdziesz w ustawieniach Twojego konta diaspory*.</string>
   <!-- Notifications dropdown -->
   <string name="pref_title__extended_notifications">Rozszerzone powiadomienia</string>
   <string name="pref_desc__extended_notifications">Dodaj do ikony powiadomień menu wyboru kategorii powiadomień</string>
-  <string name="pref_desc__language">Zmień język aplikacji. Uruchom ponownie aplikację by zobaczyć zmianę</string>
+  <string name="pref_desc__language">Zmień język aplikacji. Uruchom ponownie aplikację, aby zobaczyć zmiany</string>
   <string name="pref_title__language">Język</string>
   <string name="language_system">Język systemowy</string>
   <!-- Font size -->
@@ -40,11 +40,11 @@
   <string name="font_size_huge">Bardzo duży</string>
   <!-- Load images -->
   <string name="pref_title__load_images">Wczytuj obrazy</string>
-  <string name="pref_desc__load_images">Odznacz by wyłączyć wczytywanie obrazów, np. w celu oszczędzania transferu</string>
+  <string name="pref_desc__load_images">Odznacz, aby wyłączyć wczytywanie obrazów, np. w celu oszczędzania transferu</string>
   <!-- Screen rotation -->
   <string name="pref_title__screen_rotation">Orientacja ekranu</string>
   <string name="pref_desc__screen_rotation">Wybierz pożądaną orientację ekranu</string>
-  <string name="rotation_system">Domyślne</string>
+  <string name="rotation_system">Domyślna</string>
   <string name="rotation_sensor">Czujnik\n(ignoruj ustawienia systemowe)</string>
   <string name="rotation_portrait">Pionowa</string>
   <string name="rotation_landscape">Pozioma</string>
@@ -53,10 +53,10 @@
   <string name="pref_desc__http_proxy_load_tor_preset">Wczytaj ustawienia proxy HTTP Tora (Orbot)</string>
   <string name="pref_title__sub_proxy">Serwer proxy</string>
   <string name="pref_title__proxy_enabled">Używaj proxy</string>
-  <string name="pref_desc__http_proxy_enabled">Przesyłaj ruch dandelion* przez proxy by ominąć zapory sieciowe.\nMoże wymagać restartu. Może nie działać na niektórych urządzeniach.</string>
+  <string name="pref_desc__http_proxy_enabled">Przesyłaj ruch dandelion* przez proxy, aby ominąć zapory sieciowe.\nMoże wymagać restartu. Może nie działać na niektórych urządzeniach.</string>
   <string name="pref_title__http_proxy_host">Host</string>
   <string name="pref_title__http_proxy_port">Port</string>
-  <string name="toast__proxy_disabled__restart_required">Aplikacja musi zostać zrestartowana by wyłączyć proxy</string>
+  <string name="toast__proxy_disabled__restart_required">Aplikacja musi zostać zrestartowana, aby wyłączyć proxy</string>
   <string name="toast__proxy_orbot_preset_loaded">Domyślna konfiguracja Orbota została wczytana</string>
   <!-- Chrome custom tabs -->
   <string name="pref_desc__chrome_custom_tabs_enabled">Otwieraj odnośniki zewnętrzne za pomocą Chrome Custom Tabs. Musisz posiadać zainstalowane Chrome lub Chromium. \nWAŻNA UWAGA: Chrome Custom Tabs nie używa serwerów proxy ustawionych w tej aplikacji!</string>
