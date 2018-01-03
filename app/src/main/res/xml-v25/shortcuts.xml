@@ -1,0 +1,73 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="sc_new_post"
+        android:enabled="true"
+        android:icon="@drawable/sc_edit"
+        android:shortcutShortLabel="@string/new_post"
+        android:shortcutLongLabel="@string/new_post"
+        android:shortcutDisabledMessage="@string/new_post">
+        <intent
+            android:action="sc_new_post"
+            android:targetPackage="com.github.dfa.diaspora_android"
+            android:targetClass="com.github.dfa.diaspora_android.activity.MainActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the fragments is what the user sees when they
+             launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="sc_activities"
+        android:enabled="true"
+        android:icon="@drawable/sc_history"
+        android:shortcutShortLabel="@string/activities"
+        android:shortcutLongLabel="@string/activities"
+        android:shortcutDisabledMessage="@string/activities">
+        <intent
+            android:action="sc_activities"
+            android:targetPackage="com.github.dfa.diaspora_android"
+            android:targetClass="com.github.dfa.diaspora_android.activity.MainActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the fragments is what the user sees when they
+             launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="sc_aspects"
+        android:enabled="true"
+        android:icon="@drawable/sc_aspects"
+        android:shortcutShortLabel="@string/aspects"
+        android:shortcutLongLabel="@string/aspects"
+        android:shortcutDisabledMessage="@string/aspects">
+        <intent
+            android:action="sc_aspects"
+            android:targetPackage="com.github.dfa.diaspora_android"
+            android:targetClass="com.github.dfa.diaspora_android.activity.MainActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the fragments is what the user sees when they
+             launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="sc_nav_followed_tags"
+        android:enabled="true"
+        android:icon="@drawable/sc_tags"
+        android:shortcutShortLabel="@string/nav_followed_tags"
+        android:shortcutLongLabel="@string/nav_followed_tags"
+        android:shortcutDisabledMessage="@string/nav_followed_tags">
+        <intent
+            android:action="sc_nav_followed_tags"
+            android:targetPackage="com.github.dfa.diaspora_android"
+            android:targetClass="com.github.dfa.diaspora_android.activity.MainActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the fragments is what the user sees when they
+             launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+</shortcuts>
+        
+
