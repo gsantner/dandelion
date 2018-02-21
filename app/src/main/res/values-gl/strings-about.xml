@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 1º modificación en github-->
+<!-- editado con nano -->
 <resources>
   <string name="about_activity__title_about_app">Sobre</string>
   <string name="about_activity__title_about_license">Licenza</string>
@@ -12,7 +12,7 @@
   <string name="fragment_debug__app_version">Versión da App: %1$s</string>
   <string name="fragment_debug__android_version">Versión Android: %1$s</string>
   <string name="fragment_debug__device_name">Nome do dispositivo: %1$s</string>
-  <string name="fragment_debug__app_codename">Sobrenome: %1$s</string>
+  <string name="fragment_debug__app_codename">Alcume: %1$s</string>
   <string name="fragment_debug__pod_profile_name">Nome do perfil do nodo: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Dominio do nodo: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Ficheiro de depuración copiado ao portapapeis</string>
