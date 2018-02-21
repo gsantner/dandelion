@@ -9,10 +9,10 @@
   <string name="fragment_debug__section_pod">Nodo diaspora*</string>
   <string name="fragment_debug__section_log">Rexistro de depuración</string>
   <string name="fragment_debug__section_log_spam">Rexistro de depuración (polo miúdo)</string>
-  <string name="fragment_debug__app_version">Versión da App: %1$s</string>
+  <string name="fragment_debug__app_version">Versión do App: %1$s</string>
   <string name="fragment_debug__android_version">Versión Android: %1$s</string>
   <string name="fragment_debug__device_name">Nome do dispositivo: %1$s</string>
-  <string name="fragment_debug__app_codename">Sobrenome: %1$s</string>
+  <string name="fragment_debug__app_codename">Alcume: %1$s</string>
   <string name="fragment_debug__pod_profile_name">Nome do perfil do nodo: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Dominio do nodo: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Ficheiro de depuración copiado ao portapapeis</string>
