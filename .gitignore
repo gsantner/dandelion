@@ -5,6 +5,10 @@ tmp/
 *.tmp
 *.bak
 *.log
+######
+## sobre cómo enviar as traducións ####
+traducir.md
+###
 
 ################
 ### Intellij ###
