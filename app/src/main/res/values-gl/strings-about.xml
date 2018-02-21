@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 1º modificación en github-->
+<!-- editado con nano -->
 <resources>
   <string name="about_activity__title_about_app">Sobre</string>
   <string name="about_activity__title_about_license">Licenza</string>

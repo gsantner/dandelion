@@ -549,6 +549,18 @@ public class MainActivity extends ThemedActivity
         } else if (Intent.ACTION_SEND_MULTIPLE.equals(action) && type != null) {
             /* TODO: Implement and add filter to manifest */
             return;
+        } else if ("sc_new_post".equals(action)) {
+            openDiasporaUrl(urls.getNewPostUrl());
+            return;
+        } else if ("sc_nav_followed_tags".equals(action)) {
+            showFragment(getFragment(TagListFragment.TAG));
+            return;
+        } else if ("sc_aspects".equals(action)) {
+            showFragment(getFragment(AspectListFragment.TAG));
+            return;
+        } else if ("sc_activities".equals(action)) {
+            openDiasporaUrl(urls.getActivityUrl());
+            return;
         }
         //Catch split screen recreation
         if (action != null && action.equals(Intent.ACTION_MAIN) && getTopFragment() != null) {

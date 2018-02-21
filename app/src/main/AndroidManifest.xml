@@ -57,7 +57,14 @@
             android:theme="@style/DiasporaLight.NoActionBar"
             android:windowSoftInputMode="adjustResize">
 
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+
             <intent-filter>
+                <action android:name="sc_new_post" />
+                <action android:name="sc_nav_followed_tags" />
+                <action android:name="sc_aspects" />
+                <action android:name="sc_activities" />
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

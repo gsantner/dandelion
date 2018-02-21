@@ -18,8 +18,8 @@ android {
         buildConfigField "String", "GITHASH", "\"${getGitHash()}\""
 
         applicationId "com.github.dfa.diaspora_android"
-        versionName "1.0.8"
-        versionCode 28
+        versionName "1.1.0"
+        versionCode 29
 
 
         vectorDrawables.useSupportLibrary = true

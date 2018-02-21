@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- actualizado en github -->
+<!-- Editado con nano -->
 <resources>
   <!-- Key Names (Untranslatable) -->
   <!-- Operability -->
@@ -33,7 +33,7 @@
   <string name="pref_title__language">Idioma</string>
   <string name="language_system">Idioma do sistema</string>
   <!-- Font size -->
-  <string name="pref_desc__font_size">Estableza o tamaño do texto na VistaWeb</string>
+  <string name="pref_desc__font_size">Estableza o tamaño do texto na Vista Web</string>
   <string name="pref_title__font_size">Tamaño do texto</string>
   <string name="font_size_normal">Normal</string>
   <string name="font_size_large">Grande</string>

@@ -1,17 +1,18 @@
 <b>dandelion*</b> is a client for the community-run, distributed social network diaspora*.
-<br/>It adds useful features to your networking experience:
-<br/>
-<br/>⚡ Quick access to most diaspora* features
-<br/>👉 Share content to and from the app
-<br/>🌎 Proxy support
-<br/>📰 In-app-browser to view articles
-<br/>🎨 Customizeable colors
-<br/>🌆 Night/AMOLED mode
-<br/>🈴 Localized in many languages
-<br/>✔️ Allows system independent language
-<br/>
-<br/>
+It adds useful features to your networking experience:
+
+⚡ Quick access to most diaspora* features
+👉 Share content to and from the app
+🌎 Proxy support
+📰 In-app-browser to view articles
+🎨 Customizeable colors
+🌆 Night/AMOLED mode
+🈴 Localized in many languages
+✔️ Allows system independent language
+
+
 <b>Support the project:</b>
-<br/> ✋ <a href="https://crowdin.com/projects/gsantner">Translate</a>
-<br/> ✋ <a href="https://matrix.to/#/#dandelion:matrix.org">Join discussion on Matrix</a>
-<br/> ✋ <a href="https://github.com/diaspora-for-android/dandelion#contributions">More information about contributions</a>
+ ✋ <a href="https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fdiaspora-for-android%2Fdandelion.git">Translate using Stringlate</a>
+ ✋ <a href="https://matrix.to/#/#dandelion:matrix.org">Join discussion on Matrix</a>
+ ✋ <a href="https://github.com/diaspora-for-android/dandelion#contributions">More information about contributions</a>
+ ✋ <a href="http://gsantner.net/supportme?ref=dandelion&source=fdroid">Support main developer</a>

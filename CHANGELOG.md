@@ -1,3 +1,9 @@
+### v1.1.0
+- Added: App shortcuts (Android 7+)
+- Updated: podlist
+- More supported languages
+- File sharing fixes
+
 ### v1.0.8
 - Modified: Navigation - Merge bottom toolbar into top
 - Updated: Build for Android O/27
