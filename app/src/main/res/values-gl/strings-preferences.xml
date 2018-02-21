@@ -12,7 +12,7 @@
   <string name="pref_cat__operability">Operabilidade</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
-  <string name="pref_title__sub_nav_slider">Deslizador para navegar</string>
+  <string name="pref_title__sub_nav_slider">Cadro de navegación</string>
   <string name="pref_desc__sub_nav_slider">Controle a visibiidade das entradas no cadro de navegación</string>
   <string name="pref_cat__visibility_nav_items__user">Usuaria</string>
   <string name="pref_cat__visibility_nav_items__general">Xeral</string>
