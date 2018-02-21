@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 1º modificación en github-->
+<!-- editado con nano -->
 <resources>
   <string name="about_activity__title_about_app">Sobre</string>
   <string name="about_activity__title_about_license">Licenza</string>
@@ -9,10 +9,10 @@
   <string name="fragment_debug__section_pod">Nodo diaspora*</string>
   <string name="fragment_debug__section_log">Rexistro de depuración</string>
   <string name="fragment_debug__section_log_spam">Rexistro de depuración (polo miúdo)</string>
-  <string name="fragment_debug__app_version">Versión da App: %1$s</string>
+  <string name="fragment_debug__app_version">Versión do App: %1$s</string>
   <string name="fragment_debug__android_version">Versión Android: %1$s</string>
   <string name="fragment_debug__device_name">Nome do dispositivo: %1$s</string>
-  <string name="fragment_debug__app_codename">Sobrenome: %1$s</string>
+  <string name="fragment_debug__app_codename">Alcume: %1$s</string>
   <string name="fragment_debug__pod_profile_name">Nome do perfil do nodo: %1$s</string>
   <string name="fragment_debug__pod_profile_url">Dominio do nodo: %1$s</string>
   <string name="fragment_debug__toast_log_copied">Ficheiro de depuración copiado ao portapapeis</string>
@@ -20,7 +20,7 @@
   <string name="fragment_about__contribute">Contribúa ao código!</string>
   <string name="fragment_about__contribute_text">dandelion* é desenvolto libre, libre de Liberdade, e segue o espíritu que marca o proxecto diaspora*. Se quere contribuír, adiante! Por agora somos un equipo pequeno, así que agradecemos calquer tipo de axuda!</string>
   <string name="fragment_about__contribute_button">Obteña as fontes</string>
-  <string name="fragment_about__translate">Traduza a app!</string>
+  <string name="fragment_about__translate">Traduza o app!</string>
   <string name="fragment_about__translate_text">Non está o aplicativo no seu idioma? Pode cambiar eso! Por qué non nos axuda traducíndoa? Utilizamos a plataforma github para que calquera poida traducir a app.</string>
   <string name="fragment_about__translate_button">Deixame traducir</string>
   <string name="fragment_about__feedback">Qué lle parece!</string>
