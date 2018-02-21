@@ -49,13 +49,8 @@
   <string name="action_exit_app">Saír do app</string>
   <string name="action_toggle_desktop_page">Vista móbil/escritorio</string>
   <string name="action_share_dotdotdot">Compartir&#8230;</string>
-<<<<<<< HEAD
   <string name="search_alert_tag">Etiquetas</string>
   <string name="search_alert_people">Persoas</string>
-=======
-  <string name="search_alert_tag">etiquetas</string>
-  <string name="search_alert_people">persoas</string>
->>>>>>> gl-translation
   <string name="search_alert_bypeople_validate_needsomedata">Por favor engada un nome</string>
   <string name="context_menu_share_link">Compartir ligazón</string>
   <string name="context_menu_save_image">Gardar imaxe</string>
