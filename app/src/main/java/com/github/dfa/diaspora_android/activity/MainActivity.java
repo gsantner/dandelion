@@ -693,10 +693,10 @@ public class MainActivity extends ThemedActivity
             }
         }
 
-        final boolean darkBg = ContextUtils.get().shouldColorOnTopBeLight(AppSettings.get().getPrimaryColor());
-        ContextUtils.get()
-                .tintMenuItems(menu, true, ContextCompat.getColor(this, darkBg ? R.color.white : R.color.black))
-                .setSubMenuIconsVisiblity(menu, true);
+        ContextUtils cu = ContextUtils.get();
+        final boolean darkBg = cu.get().shouldColorOnTopBeLight(AppSettings.get().getPrimaryColor());
+        cu.tintMenuItems(menu, true, ContextCompat.getColor(this, darkBg ? R.color.white : R.color.black));
+        cu.setSubMenuIconsVisiblity(menu, true);
 
         return true;
     }
