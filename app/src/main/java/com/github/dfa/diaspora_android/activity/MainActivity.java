@@ -71,10 +71,10 @@ import com.github.dfa.diaspora_android.receiver.OpenExternalLinkReceiver;
 import com.github.dfa.diaspora_android.receiver.UpdateTitleReceiver;
 import com.github.dfa.diaspora_android.ui.BadgeDrawable;
 import com.github.dfa.diaspora_android.ui.PodSelectionDialog;
-import com.github.dfa.diaspora_android.ui.theme.CustomFragment;
 import com.github.dfa.diaspora_android.ui.theme.ThemeHelper;
 import com.github.dfa.diaspora_android.ui.theme.ThemedActivity;
 import com.github.dfa.diaspora_android.ui.theme.ThemedAlertDialogBuilder;
+import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
 import com.github.dfa.diaspora_android.util.ActivityUtils;
 import com.github.dfa.diaspora_android.util.AndroidBug5497Workaround;
 import com.github.dfa.diaspora_android.util.AppLog;
@@ -199,7 +199,7 @@ public class MainActivity extends ThemedActivity
         brOpenExternalLink = new OpenExternalLinkReceiver(this);
         brSetTitle = new UpdateTitleReceiver(app, urls, new UpdateTitleReceiver.TitleCallback() {
             public void setTitle(String url, int resId) {
-                CustomFragment top = getTopFragment();
+                ThemedFragment top = getTopFragment();
                 if (top != null && top.getFragmentTag().equals(DiasporaStreamFragment.TAG)) {
                     MainActivity.this.setTitle(resId);
                     showLastVisitedTimestampMessageIfNeeded(url);
@@ -207,7 +207,7 @@ public class MainActivity extends ThemedActivity
             }
 
             public void setTitle(String url, String title) {
-                CustomFragment top = getTopFragment();
+                ThemedFragment top = getTopFragment();
                 if (top != null && top.getFragmentTag().equals(DiasporaStreamFragment.TAG)) {
                     MainActivity.this.setTitle(title);
                 }
@@ -292,15 +292,15 @@ public class MainActivity extends ThemedActivity
     }
 
     /**
-     * Get an instance of the CustomFragment with the tag fragmentTag.
+     * Get an instance of the ThemedFragment with the tag fragmentTag.
      * If there was no instance so far, create a new one and add it to the FragmentManagers pool.
      * If there is no Fragment with the corresponding Tag, return the top fragment.
      *
      * @param fragmentTag tag
      * @return corresponding Fragment
      */
-    protected CustomFragment getFragment(String fragmentTag) {
-        CustomFragment fragment = (CustomFragment) fm.findFragmentByTag(fragmentTag);
+    protected ThemedFragment getFragment(String fragmentTag) {
+        ThemedFragment fragment = (ThemedFragment) fm.findFragmentByTag(fragmentTag);
         if (fragment != null) {
             return fragment;
         } else {
@@ -358,9 +358,9 @@ public class MainActivity extends ThemedActivity
      *
      * @param fragment Fragment to show
      */
-    protected void showFragment(CustomFragment fragment) {
+    protected void showFragment(ThemedFragment fragment) {
         AppLog.v(this, "showFragment()");
-        CustomFragment currentTop = (CustomFragment) fm.findFragmentById(R.id.fragment_container);
+        ThemedFragment currentTop = (ThemedFragment) fm.findFragmentById(R.id.fragment_container);
         if (currentTop == null || !currentTop.getFragmentTag().equals(fragment.getFragmentTag())) {
             AppLog.v(this, "Fragment was not visible. Replace it.");
             fm.beginTransaction().addToBackStack(null).replace(R.id.fragment_container, fragment, fragment.getFragmentTag()).commit();
@@ -591,8 +591,8 @@ public class MainActivity extends ThemedActivity
      *
      * @return top fragment or null if there is none displayed
      */
-    private CustomFragment getTopFragment() {
-        return (CustomFragment) fm.findFragmentById(R.id.fragment_container);
+    private ThemedFragment getTopFragment() {
+        return (ThemedFragment) fm.findFragmentById(R.id.fragment_container);
     }
 
     /**
@@ -605,7 +605,7 @@ public class MainActivity extends ThemedActivity
             navDrawer.closeDrawer(navView);
             return;
         }
-        CustomFragment top = getTopFragment();
+        ThemedFragment top = getTopFragment();
         if (top != null) {
             AppLog.v(this, "Top Fragment is not null");
             if (!top.onBackPressed()) {
@@ -683,7 +683,7 @@ public class MainActivity extends ThemedActivity
         //Clear the menus
         menu.clear();
 
-        CustomFragment top = getTopFragment();
+        ThemedFragment top = getTopFragment();
         if (top != null) {
             if (!top.getFragmentTag().equals(PodSelectionFragment.TAG)) {
                 cache = _appSettings.isExtendedNotificationsActivated();

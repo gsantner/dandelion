@@ -16,7 +16,7 @@
 
     If not, see <http://www.gnu.org/licenses/>.
  */
-package com.github.dfa.diaspora_android.ui.theme;
+package net.gsantner.opoc.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -28,7 +28,7 @@ import android.support.v4.app.Fragment;
 
 public abstract class CustomFragment extends Fragment {
 
-    public static final String TAG = "com.github.dfa.diaspora_android.ui.theme.CustomFragment";
+    public static final String TAG = "net.gsantner.opoc.activity.CustomFragment";
 
     /**
      * We have an optionsMenu
@@ -55,9 +55,5 @@ public abstract class CustomFragment extends Fragment {
      * @return did we react to the back press?
      */
     public abstract boolean onBackPressed();
-
-    public boolean isAllowedIntellihide() {
-        return true;
-    }
 }
 
