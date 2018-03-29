@@ -26,7 +26,7 @@ import com.github.dfa.diaspora_android.data.DiasporaAspect;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.web.ProxyHandler;
 
-import net.gsantner.opoc.util.AppSettingsBase;
+import net.gsantner.opoc.preference.SharedPreferencesPropertyBackend;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,7 +38,7 @@ import java.util.List;
  * Created by gsantner (http://gsantner.net/) on 20.03.16. Part of dandelion*.
  */
 @SuppressWarnings("ConstantConditions")
-public class AppSettings extends AppSettingsBase {
+public class AppSettings extends SharedPreferencesPropertyBackend {
     private final SharedPreferences _prefPod;
     private DiasporaPod currentPod0Cached;
 
