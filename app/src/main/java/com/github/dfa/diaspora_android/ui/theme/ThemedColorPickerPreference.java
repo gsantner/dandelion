@@ -38,7 +38,7 @@ public class ThemedColorPickerPreference extends Preference implements Themeable
     @Override
     protected void onBindView(View view) {
         super.onBindView(view);
-        colorPreview = (ImageView) view.findViewById(android.R.id.icon);
+        colorPreview = view.findViewById(android.R.id.icon);
         setColors();
     }
 

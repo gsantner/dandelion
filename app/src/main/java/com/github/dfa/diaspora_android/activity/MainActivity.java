@@ -835,7 +835,7 @@ public class MainActivity extends ThemedActivity
                     final InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
                     @SuppressLint("InflateParams") View layout = getLayoutInflater().inflate(R.layout.ui__dialog_search__people_tags, null, false);
-                    final EditText input = (EditText) layout.findViewById(R.id.dialog_search__input);
+                    final EditText input = layout.findViewById(R.id.dialog_search__input);
                     input.setMaxLines(1);
                     input.setSingleLine(true);
                     ThemeHelper.updateEditTextColor(input);

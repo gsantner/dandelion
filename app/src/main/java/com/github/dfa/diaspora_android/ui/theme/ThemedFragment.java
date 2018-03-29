@@ -21,14 +21,14 @@ package com.github.dfa.diaspora_android.ui.theme;
 import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.util.AppSettings;
 
-import net.gsantner.opoc.activity.CustomFragment;
+import net.gsantner.opoc.activity.GsFragmentBase;
 
 /**
  * Fragment that supports color schemes
  * Created by vanitas on 06.10.16.
  */
 
-public abstract class ThemedFragment extends CustomFragment {
+public abstract class ThemedFragment extends GsFragmentBase {
     protected AppSettings getAppSettings() {
         return ((App) getActivity().getApplication()).getSettings();
     }

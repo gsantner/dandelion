@@ -22,6 +22,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -68,13 +69,12 @@ public class AspectListFragment extends ThemedFragment implements OnSomethingCli
     protected DiasporaUrlHelper urls;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        AppLog.d(this, "onCreateView()");
-        return inflater.inflate(R.layout.recycler_list__fragment, container, false);
+    protected int getLayoutResId() {
+        return R.layout.recycler_list__fragment;
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
         app = (App) getActivity().getApplication();

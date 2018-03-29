@@ -92,16 +92,14 @@ public class PodSelectionFragment extends ThemedFragment implements SearchView.O
     private String filterString = "";
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        AppLog.d(this, "onCreateView()");
-        View view = inflater.inflate(R.layout.podselection__fragment, container, false);
-        ButterKnife.bind(this, view);
-        return view;
+    protected int getLayoutResId() {
+        return R.layout.podselection__fragment;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ButterKnife.bind(this, view);
         app = (App) getActivity().getApplication();
         appSettings = app.getSettings();
 
@@ -204,7 +202,7 @@ public class PodSelectionFragment extends ThemedFragment implements SearchView.O
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
-                TextView textView = (TextView) view.findViewById(android.R.id.text1);
+                TextView textView = view.findViewById(android.R.id.text1);
                 textView.setTextColor(appSettings.isAmoledColorMode() ? Color.GRAY : Color.BLACK);
                 return view;
             }

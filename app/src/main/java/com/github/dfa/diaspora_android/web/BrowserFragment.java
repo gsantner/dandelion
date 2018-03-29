@@ -64,7 +64,6 @@ import java.util.Locale;
 public class BrowserFragment extends ThemedFragment {
     public static final String TAG = "com.github.dfa.diaspora_android.BrowserFragment";
 
-    protected View rootLayout;
     protected ContextMenuWebView webView;
     protected ProgressBar progressBar;
     protected AppSettings appSettings;
@@ -74,17 +73,10 @@ public class BrowserFragment extends ThemedFragment {
     protected String pendingUrl;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        AppLog.d(this, "onCreateView()");
-        if (rootLayout == null) {
-            LayoutInflater inflater1 = inflater.cloneInContext(new MutableContextWrapper(getContext()));
-            rootLayout = inflater1.inflate(R.layout.browser__fragment, container, false);
-        } else {
-            MutableContextWrapper context = (MutableContextWrapper) rootLayout.getContext();
-            context.setBaseContext(getContext());
-        }
-        return rootLayout;
+    protected int getLayoutResId() {
+        return R.layout.browser__fragment;
     }
+
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
@@ -96,7 +88,7 @@ public class BrowserFragment extends ThemedFragment {
         }
 
         if (this.webView == null) {
-            this.webView = (ContextMenuWebView) view.findViewById(R.id.webView);
+            this.webView = view.findViewById(R.id.webView);
             getActivity().runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -108,7 +100,7 @@ public class BrowserFragment extends ThemedFragment {
         }
 
         if (this.progressBar == null) {
-            this.progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
+            this.progressBar = view.findViewById(R.id.progressBar);
         }
 
         if (pendingUrl != null) {
@@ -125,8 +117,8 @@ public class BrowserFragment extends ThemedFragment {
     public void onDestroyView() {
         super.onDestroyView();
 
-        if (getRetainInstance() && rootLayout.getParent() instanceof ViewGroup) {
-            ((ViewGroup) rootLayout.getParent()).removeView(rootLayout);
+        if (getRetainInstance() && getView() != null && getView().getParent() instanceof ViewGroup) {
+            ((ViewGroup) getView().getParent()).removeView(getView());
         }
     }
 

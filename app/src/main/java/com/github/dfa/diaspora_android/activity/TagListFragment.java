@@ -67,9 +67,8 @@ public class TagListFragment extends ThemedFragment implements OnSomethingClickL
     protected DiasporaUrlHelper urls;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        AppLog.d(this, "onCreateView()");
-        return inflater.inflate(R.layout.recycler_list__fragment, container, false);
+    protected int getLayoutResId() {
+        return R.layout.recycler_list__fragment;
     }
 
     @Override
