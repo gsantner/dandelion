@@ -100,6 +100,7 @@ public class ContextMenuWebView extends NestedWebView {
                                                                 MainActivity.REQUEST_CODE__ACCESS_EXTERNAL_STORAGE);
                                                 }
                                             })
+                                            .setCancelable(false)
                                             .setNegativeButton(context.getText(android.R.string.no), null)
                                             .show();
                                 }
