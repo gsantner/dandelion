@@ -1,3 +1,7 @@
+### v1.1.2
+- Fix: loading non-pod links outside customtab/external browser
+- Fix: webview-js dialog not dismissing correctly
+
 ### v1.1.0
 - Added: App shortcuts (Android 7+)
 - Updated: podlist
