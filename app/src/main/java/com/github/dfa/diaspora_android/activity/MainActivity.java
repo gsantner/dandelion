@@ -338,12 +338,23 @@ public class MainActivity extends ThemedActivity
      *
      * @param url URL to load in the DiasporaStreamFragment
      */
-    public void openDiasporaUrl(String url) {
+    public void openDiasporaUrl(final String url) {
         AppLog.v(this, "openDiasporaUrl()");
-        DiasporaStreamFragment streamFragment = (DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG);
-        showFragment(streamFragment);
-        showLastVisitedTimestampMessageIfNeeded(url);
-        streamFragment.loadUrl(url);
+        if (url.startsWith(_appSettings.getPod().getPodUrl().getBaseUrl()) && !url.startsWith("https://dia.so/")) {
+            DiasporaStreamFragment streamFragment = (DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG);
+            showFragment(streamFragment);
+            showLastVisitedTimestampMessageIfNeeded(url);
+            streamFragment.loadUrl(url);
+        } else {
+            toolbarTop.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent i = new Intent(ACTION_OPEN_EXTERNAL_URL);
+                    i.putExtra(EXTRA_URL, url);
+                    LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(i);
+                }
+            }, 1000);
+        }
     }
 
     public void showLastVisitedTimestampMessageIfNeeded(String url) {

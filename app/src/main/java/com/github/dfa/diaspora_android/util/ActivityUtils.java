@@ -77,10 +77,11 @@ public class ActivityUtils extends net.gsantner.opoc.util.ActivityUtils {
 
     /**
      * This method creates file sharing uri by using FileProvider
+     *
      * @return
      */
-    public static Uri getFileSharingUri(Context context,File file) {
+    public static Uri getFileSharingUri(Context context, File file) {
 
-        return FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID,file);
+        return FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID, file);
     }
 }

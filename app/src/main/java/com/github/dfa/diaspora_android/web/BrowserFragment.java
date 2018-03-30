@@ -30,7 +30,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
@@ -222,7 +221,7 @@ public class BrowserFragment extends ThemedFragment {
         // Only show share intent when Action Share Screenshot was selected
         if (hasToShareScreenshot) {
 
-            Uri bmpUri = ActivityUtils.getFileSharingUri(getContext(),new File(fileSaveDirectory, fileSaveName));
+            Uri bmpUri = ActivityUtils.getFileSharingUri(getContext(), new File(fileSaveDirectory, fileSaveName));
 
             Intent sharingIntent = new Intent(Intent.ACTION_SEND);
             sharingIntent.setType("image/jpeg");

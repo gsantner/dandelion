@@ -19,10 +19,7 @@
 package com.github.dfa.diaspora_android.ui.theme;
 
 import android.annotation.TargetApi;
-import android.app.ActivityManager;
 import android.content.pm.ActivityInfo;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 

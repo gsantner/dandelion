@@ -46,7 +46,7 @@ public class AppSettings extends SharedPreferencesPropertyBackend {
         return new AppSettings(App.get());
     }
 
-    private AppSettings(Context context) {
+    public AppSettings(Context context) {
         super(context);
         _prefPod = _context.getSharedPreferences("pod0", Context.MODE_PRIVATE);
     }

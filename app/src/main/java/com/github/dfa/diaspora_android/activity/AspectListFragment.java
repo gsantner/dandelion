@@ -37,7 +37,6 @@ import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.DiasporaAspect;
 import com.github.dfa.diaspora_android.listener.OnSomethingClickListener;
 import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
-import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.AppSettings;
 import com.github.dfa.diaspora_android.util.ContextUtils;
 import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;

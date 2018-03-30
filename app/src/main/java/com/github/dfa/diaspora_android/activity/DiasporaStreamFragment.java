@@ -325,21 +325,30 @@ public class DiasporaStreamFragment extends BrowserFragment {
         @SuppressWarnings("unused")
         @JavascriptInterface
         public void setUserProfile(final String webMessage) throws JSONException {
-            App app = ((App) getActivity().getApplication());
-            final DiasporaUserProfile pup = app.getDiasporaUserProfile();
-            if (pup.isRefreshNeeded()) {
-                try {
-                    // Try to very fail-safe check if user information gets really loaded from correct pod
-                    if (!webView.getUrl().startsWith(app.getSettings().getPod().getPodUrl().getBaseUrl())) {
-                        return;
-                    }
-                } catch (Exception ignored) {
-                }
-                AppLog.v(this, "DiasporaUserProfile needs refresh; Try to parse JSON");
-                pup.parseJson(webMessage);
-                getActivity().runOnUiThread(new Runnable() {
+            final Activity activity = getActivity();
+            if (activity != null) {
+                activity.runOnUiThread(new Runnable() {
+                    @Override
                     public void run() {
-                        pup.analyzeUrl(webView.getUrl());
+                        App app = ((App) activity.getApplication());
+                        final DiasporaUserProfile pup = app.getDiasporaUserProfile();
+                        if (pup.isRefreshNeeded()) {
+                            try {
+                                // Try to very fail-safe check if user information gets really loaded from correct pod
+                                if (!webView.getUrl().startsWith(app.getSettings().getPod().getPodUrl().getBaseUrl())) {
+                                    return;
+                                }
+                            } catch (Exception ignored) {
+                                return;
+                            }
+                            AppLog.v(this, "DiasporaUserProfile needs refresh; Try to parse JSON");
+                            pup.parseJson(webMessage);
+                            getActivity().runOnUiThread(new Runnable() {
+                                public void run() {
+                                    pup.analyzeUrl(webView.getUrl());
+                                }
+                            });
+                        }
                     }
                 });
             }
