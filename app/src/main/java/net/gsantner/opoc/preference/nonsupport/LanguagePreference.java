@@ -48,8 +48,8 @@ package net.gsantner.opoc.preference.nonsupport;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.Nullable;
 import android.preference.ListPreference;
+import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 

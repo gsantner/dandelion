@@ -108,7 +108,7 @@ public class CustomTabsHelper {
             sPackageNameToUse = CHROMIUM;
         } else if (packagesSupportingCustomTabs.contains(FENNEC)) {
             sPackageNameToUse = FENNEC;
-        }else if (packagesSupportingCustomTabs.contains(KLAR)) {
+        } else if (packagesSupportingCustomTabs.contains(KLAR)) {
             sPackageNameToUse = KLAR;
         }
         return sPackageNameToUse;

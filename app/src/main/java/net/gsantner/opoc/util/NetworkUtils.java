@@ -53,11 +53,16 @@ public class NetworkUtils {
     }
 
     public static boolean downloadFile(final URL url, final File outFile, final Callback.a1<Float> progressCallback) {
+        return downloadFile(url, outFile, null, progressCallback);
+    }
+
+    public static boolean downloadFile(final URL url, final File outFile, HttpURLConnection connection, final Callback.a1<Float> progressCallback) {
         InputStream input = null;
         OutputStream output = null;
-        HttpURLConnection connection = null;
         try {
-            connection = (HttpURLConnection) url.openConnection();
+            if (connection == null) {
+                connection = (HttpURLConnection) url.openConnection();
+            }
             connection.connect();
             input = connection.getInputStream();
 
