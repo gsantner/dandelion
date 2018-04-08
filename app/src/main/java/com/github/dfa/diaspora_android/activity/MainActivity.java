@@ -333,19 +333,26 @@ public class MainActivity extends ThemedActivity
      */
     public void openDiasporaUrl(final String url) {
         AppLog.v(this, "openDiasporaUrl()");
-        if (url.startsWith(_appSettings.getPod().getPodUrl().getBaseUrl()) && !url.startsWith("https://dia.so/")) {
+        if (url != null && url.startsWith("http://127.0.0.1")) {
+            // This URL seems to be called somehow, but it doesn't make sense ;)
+            toolbarTop.postDelayed(() -> {
+                Intent i = new Intent(ACTION_OPEN_EXTERNAL_URL);
+                i.putExtra(EXTRA_URL, "https://github.com/Diaspora-for-Android/dandelion/blob/master/README.md");
+                LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(i);
+            }, 1000);
+            return;
+        }
+        if (_appSettings.getPod() != null && _appSettings.getPod().getPodUrl() != null && _appSettings.getPod().getPodUrl().getBaseUrl() != null
+                && url.startsWith(_appSettings.getPod().getPodUrl().getBaseUrl()) && !url.startsWith("https://dia.so/")) {
             DiasporaStreamFragment streamFragment = (DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG);
             showFragment(streamFragment);
             showLastVisitedTimestampMessageIfNeeded(url);
             streamFragment.loadUrl(url);
         } else {
-            toolbarTop.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    Intent i = new Intent(ACTION_OPEN_EXTERNAL_URL);
-                    i.putExtra(EXTRA_URL, url);
-                    LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(i);
-                }
+            toolbarTop.postDelayed(() -> {
+                Intent i = new Intent(ACTION_OPEN_EXTERNAL_URL);
+                i.putExtra(EXTRA_URL, url);
+                LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(i);
             }, 1000);
         }
     }
