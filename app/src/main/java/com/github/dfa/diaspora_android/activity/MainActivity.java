@@ -229,23 +229,16 @@ public class MainActivity extends ThemedActivity
             }
         }
 
-        // Show first start dialog
+        // Show first start / update dialog
         try {
-            SimpleMarkdownParser mdParser = SimpleMarkdownParser.get().setDefaultSmpFilter(SimpleMarkdownParser.FILTER_ANDROID_TEXTVIEW);
-            if (_appSettings.isAppFirstStart()) {
-                mdParser.parse(
-                        getResources().openRawResource(R.raw.license), "");
-                String html = mdParser.getHtml()
-                        + "<br/><br/><br/>"
-                        + "<h1>" + getString(R.string.fragment_license__thirdparty_libs) + "</h1>"
-                        + mdParser.parse(getResources().openRawResource(R.raw.license_third_party), "");
-                html = mdParser.setHtml(html).removeMultiNewlines().getHtml();
-                ActivityUtils.get(this).showDialogWithHtmlTextView(R.string.about_activity__title_about_license, html);
-                _appSettings.isAppCurrentVersionFirstStart();
-            } else if (_appSettings.isAppCurrentVersionFirstStart()) {
-                SimpleMarkdownParser smp = new SimpleMarkdownParser().parse(
-                        getResources().openRawResource(R.raw.changelog), "");
-                ActivityUtils.get(this).showDialogWithHtmlTextView(R.string.changelog, smp.getHtml());
+            if (_appSettings.isAppCurrentVersionFirstStart(true)) {
+                SimpleMarkdownParser smp = SimpleMarkdownParser.get().setDefaultSmpFilter(SimpleMarkdownParser.FILTER_ANDROID_TEXTVIEW);
+                String html = "";
+                html += smp.parse(getString(R.string.copyright_license_text_official).replace("\n", "  \n"), "").getHtml();
+                html += "<br/><br/><br/><big><big>" + getString(R.string.changelog) + "</big></big><br/>" + smp.parse(getResources().openRawResource(R.raw.changelog), "", SimpleMarkdownParser.FILTER_ANDROID_TEXTVIEW, SimpleMarkdownParser.FILTER_CHANGELOG).getHtml();
+                html += "<br/><br/><br/><big><big>" + getString(R.string.licenses) + "</big></big><br/>" + smp.parse(getResources().openRawResource(R.raw.licenses_3rd_party), "").getHtml();
+                ActivityUtils _au = new ActivityUtils(this);
+                _au.showDialogWithHtmlTextView(R.string.licenses, html);
             }
         } catch (IOException e) {
             e.printStackTrace();

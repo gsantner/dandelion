@@ -21,7 +21,7 @@ import java.util.Locale;
 
 @SuppressWarnings({"WeakerAccess", "unused", "SameParameterValue"})
 public class ActivityUtils extends net.gsantner.opoc.util.ActivityUtils {
-    protected ActivityUtils(Activity activity) {
+    public ActivityUtils(Activity activity) {
         super(activity);
     }
 

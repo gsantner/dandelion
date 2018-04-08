@@ -263,7 +263,7 @@ public class AboutActivity extends ThemedActivity
             contributors.setTextFormatted(getString(R.string.fragment_license__contributors_thank_you,
                     ContextUtils.get().loadMarkdownForTextViewFromRaw(R.raw.contributors, "")));
             thirdPartyLibs.setTextFormatted(
-                    ContextUtils.get().loadMarkdownForTextViewFromRaw(R.raw.license_third_party, ""));
+                    ContextUtils.get().loadMarkdownForTextViewFromRaw(R.raw.licenses_3rd_party, ""));
         }
 
         @OnClick({R.id.fragment_license__leafpic_button, R.id.fragment_license__license_button})

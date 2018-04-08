@@ -367,9 +367,11 @@ public class AppSettings extends SharedPreferencesPropertyBackend {
         return value;
     }
 
-    public boolean isAppCurrentVersionFirstStart() {
+    public boolean isAppCurrentVersionFirstStart(boolean doSet) {
         int value = getInt(R.string.pref_key__app_first_start_current_version, -1);
-        setInt(R.string.pref_key__app_first_start_current_version, BuildConfig.VERSION_CODE);
+        if (doSet) {
+            setInt(R.string.pref_key__app_first_start_current_version, BuildConfig.VERSION_CODE);
+        }
         return value != BuildConfig.VERSION_CODE && !BuildConfig.IS_TEST_BUILD;
     }
 
