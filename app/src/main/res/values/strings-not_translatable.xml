@@ -5,7 +5,7 @@
     <string name="shared_via_app" translatable="false">
         \n\n\n_________________________\n
         **Tags:** #dandelíon  \n\n
-        *via [dandelion*](/people?q=dandelion00%40diasp.org) client / [GitHub](https://github.com/Diaspora-for-Android/dandelion)*</string>
+        *via [dandelion*](/people?q=dandelion00%40diasp.org) client [(Source)](https://github.com/Diaspora-for-Android/dandelion)*</string>
 
 
     <string name="tor" translatable="false">Tor</string>
