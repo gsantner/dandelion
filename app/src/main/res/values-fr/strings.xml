@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">Enregistrer l\'image</string>
   <string name="context_menu_share_image">Partager l\'image</string>
   <string name="context_menu_open_external_browser">Ouvrir dans un navigateur externe&#8230;</string>
-  <string name="context_menu_copy_link">Copier le lien dans le presse-papier</string>
+  <string name="copy_link_to_clipboard">Copier le lien dans le presse-papier</string>
   <string name="context_menu_copy_image_link">Copier le lien de l\'image dans le presse-papiers</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Impossible de récupérer l\'image</string>

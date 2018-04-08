@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">Zapisz obraz</string>
   <string name="context_menu_share_image">Udostępnij obraz</string>
   <string name="context_menu_open_external_browser">Otwórz w zewnętrznej przeglądarce&#8230;</string>
-  <string name="context_menu_copy_link">Skopiuj adres odnośnika do schowka</string>
+  <string name="copy_link_to_clipboard">Skopiuj adres odnośnika do schowka</string>
   <string name="context_menu_copy_image_link">Skopiuj adres obrazu do schowka</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Nie udało się wczytać obrazu</string>

@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">画像を保存</string>
   <string name="context_menu_share_image">画像をシェア</string>
   <string name="context_menu_open_external_browser">外部ブラウザーで開く&#8230;</string>
-  <string name="context_menu_copy_link">リンクアドレスをクリップボードへコピー</string>
+  <string name="copy_link_to_clipboard">リンクアドレスをクリップボードへコピー</string>
   <string name="context_menu_copy_image_link">画像のアドレスをクリップボードへコピー</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">画像を読み込むことができません</string>

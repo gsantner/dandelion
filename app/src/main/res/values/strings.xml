@@ -70,7 +70,7 @@
     <string name="context_menu_save_image">Save image</string>
     <string name="context_menu_share_image">Share image</string>
     <string name="context_menu_open_external_browser">Open in external browser…</string>
-    <string name="context_menu_copy_link">Copy link address to clipboard</string>
+    <string name="copy_link_to_clipboard">Copy link address to clipboard</string>
     <string name="context_menu_copy_image_link">Copy image address to clipboard</string>
 
 
@@ -98,4 +98,5 @@
     <string name="pref_title__is_statusbar_hidden">Hide statusbar</string>
     <string name="pref_summary__show_title">Show title in the main view</string>
     <string name="pref_title__show_title">Show title</string>
+    <string name="launcher_shortcut">Launcher shortcut</string>
 </resources>

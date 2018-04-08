@@ -71,7 +71,7 @@
   <string name="context_menu_save_image">Sarva s\'immàgine</string>
   <string name="context_menu_share_image">Cumpartzi s\'immàgine</string>
   <string name="context_menu_open_external_browser">Aberi in un\'esploradore (browser) esternu…</string>
-  <string name="context_menu_copy_link">Còpia su ligàmenes in sos apuntos</string>
+  <string name="copy_link_to_clipboard">Còpia su ligàmenes in sos apuntos</string>
   <string name="context_menu_copy_image_link">Còpia s\'indiritzu de s\'immàgine in sos apuntos</string>
 
 

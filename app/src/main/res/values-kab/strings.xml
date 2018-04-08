@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">Sekles tugna</string>
   <string name="context_menu_share_image">Bḍu tugna</string>
   <string name="context_menu_open_external_browser">Ldi deg iminig azɣaray&#8230;</string>
-  <string name="context_menu_copy_link">Nɣel aseɣwen ɣef afus</string>
+  <string name="copy_link_to_clipboard">Nɣel aseɣwen ɣef afus</string>
   <string name="context_menu_copy_image_link">Nɣel tugna ɣef afus</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Ur izmir ara ad d-isali tugna</string>

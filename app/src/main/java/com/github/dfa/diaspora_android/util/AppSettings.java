@@ -18,6 +18,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Environment;
 
 import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.BuildConfig;
@@ -31,6 +32,7 @@ import net.gsantner.opoc.preference.SharedPreferencesPropertyBackend;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -373,6 +375,11 @@ public class AppSettings extends SharedPreferencesPropertyBackend {
             setInt(R.string.pref_key__app_first_start_current_version, BuildConfig.VERSION_CODE);
         }
         return value != BuildConfig.VERSION_CODE && !BuildConfig.IS_TEST_BUILD;
+    }
+
+    public File getAppSaveDirectory() {
+        return new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/dandelion");
+
     }
 
     public long getLastVisitedPositionInStream() {

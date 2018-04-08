@@ -230,7 +230,7 @@ public class ContextMenuWebView extends NestedWebView {
                 result.getType() == HitTestResult.SRC_ANCHOR_TYPE) {
             // Menu options for a hyperlink.
             menu.setHeaderTitle(result.getExtra());
-            menu.add(0, ID_COPY_LINK, 0, context.getString(R.string.context_menu_copy_link)).setOnMenuItemClickListener(handler);
+            menu.add(0, ID_COPY_LINK, 0, context.getString(R.string.copy_link_to_clipboard)).setOnMenuItemClickListener(handler);
             menu.add(0, ID_SHARE_LINK, 0, context.getString(R.string.context_menu_share_link)).setOnMenuItemClickListener(handler);
         }
     }

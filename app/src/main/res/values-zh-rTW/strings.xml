@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">儲存圖片</string>
   <string name="context_menu_share_image">分享圖片</string>
   <string name="context_menu_open_external_browser">用外部瀏覽器開啟&#8230;</string>
-  <string name="context_menu_copy_link">將連結網址複製到剪貼簿</string>
+  <string name="copy_link_to_clipboard">將連結網址複製到剪貼簿</string>
   <string name="context_menu_copy_image_link">將圖片網址複製到剪貼簿</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">無法載入圖片</string>

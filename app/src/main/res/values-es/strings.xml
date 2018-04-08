@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">Guardar imagen</string>
   <string name="context_menu_share_image">Compartir imagen</string>
   <string name="context_menu_open_external_browser">Abrir en navegador externo&#8230;</string>
-  <string name="context_menu_copy_link">Copiar dirección del enlace al portapapeles</string>
+  <string name="copy_link_to_clipboard">Copiar dirección del enlace al portapapeles</string>
   <string name="context_menu_copy_image_link">Copiar dirección de imagen al portapapeles</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">No se pudo cargar la imagen</string>

@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">Afbeelding opslaan</string>
   <string name="context_menu_share_image">Deel afbeelding</string>
   <string name="context_menu_open_external_browser">Geopend in externe browser&#8230;</string>
-  <string name="context_menu_copy_link">Link-adres kopiëren naar Klembord</string>
+  <string name="copy_link_to_clipboard">Link-adres kopiëren naar Klembord</string>
   <string name="context_menu_copy_image_link">Afbeelding kopiëren naar Klembord</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Niet in staat om afbeelding te laden</string>

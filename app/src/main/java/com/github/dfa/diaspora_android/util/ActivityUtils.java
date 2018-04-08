@@ -81,7 +81,6 @@ public class ActivityUtils extends net.gsantner.opoc.util.ActivityUtils {
      * @return
      */
     public static Uri getFileSharingUri(Context context, File file) {
-
         return FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID, file);
     }
 }

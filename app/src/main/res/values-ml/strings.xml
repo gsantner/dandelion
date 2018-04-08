@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">ചിത്രം സംരക്ഷിക്കുക</string>
   <string name="context_menu_share_image">ചിത്രം പങ്കുവയ്ക്കുക</string>
   <string name="context_menu_open_external_browser">പുറമെയുള്ള ബ്രൗസറിൽ തുറക്കുക&#8230;</string>
-  <string name="context_menu_copy_link">ലിങ്ക് വിലാസം ക്ലിപ്ബോർഡിലേക്ക് പകർത്തുക</string>
+  <string name="copy_link_to_clipboard">ലിങ്ക് വിലാസം ക്ലിപ്ബോർഡിലേക്ക് പകർത്തുക</string>
   <string name="context_menu_copy_image_link">ചിത്രത്തിന്റെ വിലാസം ക്ലിപ്ബോർഡിലേക്ക് പകർത്തുക</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">ചിത്രം ലോഡ് ചെയ്യാൻ സാധിക്കുന്നില്ല</string>

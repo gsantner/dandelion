@@ -18,18 +18,9 @@
  */
 package com.github.dfa.diaspora_android.web;
 
-import android.Manifest;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.MutableContextWrapper;
-import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
@@ -38,21 +29,10 @@ import android.widget.ProgressBar;
 
 import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
-import com.github.dfa.diaspora_android.activity.MainActivity;
 import com.github.dfa.diaspora_android.ui.theme.ThemeHelper;
 import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
-import com.github.dfa.diaspora_android.util.ActivityUtils;
 import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.AppSettings;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 /**
  * Fragment with a webView and a ProgressBar.
@@ -153,96 +133,6 @@ public class BrowserFragment extends ThemedFragment {
             webSettings.setMinimumFontSize(appSettings.getMinimumFontSize());
             webSettings.setLoadsImagesAutomatically(appSettings.isLoadImages());
         }
-    }
-
-    @SuppressWarnings("ResultOfMethodCallIgnored")
-    protected boolean makeScreenshotOfWebView(boolean hasToShareScreenshot) {
-        AppLog.i(this, "StreamFragment.makeScreenshotOfWebView()");
-        if (android.os.Build.VERSION.SDK_INT >= 23) {
-            int hasWRITE_EXTERNAL_STORAGE = getActivity().checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-            if (hasWRITE_EXTERNAL_STORAGE != PackageManager.PERMISSION_GRANTED) {
-                if (!shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-                    new AlertDialog.Builder(getContext())
-                            .setMessage(R.string.permissions_screenshot)
-                            .setNegativeButton(android.R.string.no, null)
-                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    if (android.os.Build.VERSION.SDK_INT >= 23)
-                                        requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                                                MainActivity.REQUEST_CODE_ASK_PERMISSIONS);
-                                }
-                            })
-                            .show();
-                    return false;
-                }
-                requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                        MainActivity.REQUEST_CODE_ASK_PERMISSIONS);
-                return false;
-            }
-        }
-
-        Date dateNow = new Date();
-        DateFormat dateFormat = new SimpleDateFormat("yy_MM_dd--HH_mm_ss", Locale.getDefault());
-        File fileSaveDirectory = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/Diaspora");
-
-        String fileSaveName = hasToShareScreenshot ? ".DfA_share.jpg" : String.format("DfA_%s.jpg", dateFormat.format(dateNow));
-        if (!fileSaveDirectory.exists()) {
-            if (!fileSaveDirectory.mkdirs()) {
-                AppLog.w(this, "Could not mkdir " + fileSaveDirectory.getAbsolutePath());
-            }
-        }
-
-        if (!hasToShareScreenshot) {
-            Snackbar.make(webView, getString(R.string.share__toast_screenshot) + " " + fileSaveName, Snackbar.LENGTH_LONG).show();
-        }
-
-        Bitmap bitmap;
-        webView.setDrawingCacheEnabled(true);
-        bitmap = Bitmap.createBitmap(webView.getDrawingCache());
-        webView.setDrawingCacheEnabled(false);
-
-        OutputStream bitmapWriter = null;
-        try {
-            bitmapWriter = new FileOutputStream(new File(fileSaveDirectory, fileSaveName));
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 85, bitmapWriter);
-            bitmapWriter.flush();
-            bitmap.recycle();
-        } catch (Exception e) {
-            return false;
-        } finally {
-            if (bitmapWriter != null) {
-                try {
-                    bitmapWriter.close();
-                } catch (IOException _ignSaveored) {/* Nothing */}
-            }
-        }
-
-        // Only show share intent when Action Share Screenshot was selected
-        if (hasToShareScreenshot) {
-
-            Uri bmpUri = ActivityUtils.getFileSharingUri(getContext(), new File(fileSaveDirectory, fileSaveName));
-
-            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
-            sharingIntent.setType("image/jpeg");
-            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, webView.getTitle());
-            sharingIntent.putExtra(Intent.EXTRA_TEXT, webView.getUrl());
-            sharingIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            sharingIntent.putExtra(Intent.EXTRA_STREAM, bmpUri);
-
-            PackageManager pm = getActivity().getPackageManager();
-
-            if (sharingIntent.resolveActivity(pm) != null) {
-                startActivity(Intent.createChooser(sharingIntent, getString(R.string.action_share_dotdotdot)));
-            }
-        } else {
-            // Broadcast that this file is indexable
-            File file = new File(fileSaveDirectory, fileSaveName);
-            Uri uri = Uri.fromFile(file);
-            Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri);
-            getActivity().sendBroadcast(intent);
-        }
-        return true;
     }
 
     @Override
