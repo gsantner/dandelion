@@ -36,7 +36,7 @@ public class ThemedPreferenceCategory extends PreferenceCategory implements Them
     @Override
     protected View onCreateView(ViewGroup parent) {
         View rootLayout = super.onCreateView(parent);
-        this.titleTextView = (TextView) rootLayout.findViewById(android.R.id.title);
+        this.titleTextView = rootLayout.findViewById(android.R.id.title);
         setColors();
         return rootLayout;
     }

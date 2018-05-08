@@ -1,3 +1,13 @@
+### v1.1.3
+- Improve sharing *a lot*, add support for multiple filetypes
+- Support for downloading GIFs ;)
+- Rework screenshot saving and sharing; add new share options:
+- Merge license and changelog dialog on first start
+
+### v1.1.2
+- Fix: loading non-pod links outside customtab/external browser
+- Fix: webview-js dialog not dismissing correctly
+
 ### v1.1.0
 - Added: App shortcuts (Android 7+)
 - Updated: podlist

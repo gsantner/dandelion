@@ -71,10 +71,10 @@ import com.github.dfa.diaspora_android.receiver.OpenExternalLinkReceiver;
 import com.github.dfa.diaspora_android.receiver.UpdateTitleReceiver;
 import com.github.dfa.diaspora_android.ui.BadgeDrawable;
 import com.github.dfa.diaspora_android.ui.PodSelectionDialog;
-import com.github.dfa.diaspora_android.ui.theme.CustomFragment;
 import com.github.dfa.diaspora_android.ui.theme.ThemeHelper;
 import com.github.dfa.diaspora_android.ui.theme.ThemedActivity;
 import com.github.dfa.diaspora_android.ui.theme.ThemedAlertDialogBuilder;
+import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
 import com.github.dfa.diaspora_android.util.ActivityUtils;
 import com.github.dfa.diaspora_android.util.AndroidBug5497Workaround;
 import com.github.dfa.diaspora_android.util.AppLog;
@@ -199,7 +199,7 @@ public class MainActivity extends ThemedActivity
         brOpenExternalLink = new OpenExternalLinkReceiver(this);
         brSetTitle = new UpdateTitleReceiver(app, urls, new UpdateTitleReceiver.TitleCallback() {
             public void setTitle(String url, int resId) {
-                CustomFragment top = getTopFragment();
+                ThemedFragment top = getTopFragment();
                 if (top != null && top.getFragmentTag().equals(DiasporaStreamFragment.TAG)) {
                     MainActivity.this.setTitle(resId);
                     showLastVisitedTimestampMessageIfNeeded(url);
@@ -207,7 +207,7 @@ public class MainActivity extends ThemedActivity
             }
 
             public void setTitle(String url, String title) {
-                CustomFragment top = getTopFragment();
+                ThemedFragment top = getTopFragment();
                 if (top != null && top.getFragmentTag().equals(DiasporaStreamFragment.TAG)) {
                     MainActivity.this.setTitle(title);
                 }
@@ -229,23 +229,16 @@ public class MainActivity extends ThemedActivity
             }
         }
 
-        // Show first start dialog
+        // Show first start / update dialog
         try {
-            SimpleMarkdownParser mdParser = SimpleMarkdownParser.get().setDefaultSmpFilter(SimpleMarkdownParser.FILTER_ANDROID_TEXTVIEW);
-            if (_appSettings.isAppFirstStart()) {
-                mdParser.parse(
-                        getResources().openRawResource(R.raw.license), "");
-                String html = mdParser.getHtml()
-                        + "<br/><br/><br/>"
-                        + "<h1>" + getString(R.string.fragment_license__thirdparty_libs) + "</h1>"
-                        + mdParser.parse(getResources().openRawResource(R.raw.license_third_party), "");
-                html = mdParser.setHtml(html).removeMultiNewlines().getHtml();
-                ActivityUtils.get(this).showDialogWithHtmlTextView(R.string.about_activity__title_about_license, html);
-                _appSettings.isAppCurrentVersionFirstStart();
-            } else if (_appSettings.isAppCurrentVersionFirstStart()) {
-                SimpleMarkdownParser smp = new SimpleMarkdownParser().parse(
-                        getResources().openRawResource(R.raw.changelog), "");
-                ActivityUtils.get(this).showDialogWithHtmlTextView(R.string.changelog, smp.getHtml());
+            if (_appSettings.isAppCurrentVersionFirstStart(true)) {
+                SimpleMarkdownParser smp = SimpleMarkdownParser.get().setDefaultSmpFilter(SimpleMarkdownParser.FILTER_ANDROID_TEXTVIEW);
+                String html = "";
+                html += smp.parse(getString(R.string.copyright_license_text_official).replace("\n", "  \n"), "").getHtml();
+                html += "<br/><br/><br/><big><big>" + getString(R.string.changelog) + "</big></big><br/>" + smp.parse(getResources().openRawResource(R.raw.changelog), "", SimpleMarkdownParser.FILTER_ANDROID_TEXTVIEW, SimpleMarkdownParser.FILTER_CHANGELOG).getHtml();
+                html += "<br/><br/><br/><big><big>" + getString(R.string.licenses) + "</big></big><br/>" + smp.parse(getResources().openRawResource(R.raw.licenses_3rd_party), "").getHtml();
+                ActivityUtils _au = new ActivityUtils(this);
+                _au.showDialogWithHtmlTextView(R.string.licenses, html);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -292,15 +285,15 @@ public class MainActivity extends ThemedActivity
     }
 
     /**
-     * Get an instance of the CustomFragment with the tag fragmentTag.
+     * Get an instance of the ThemedFragment with the tag fragmentTag.
      * If there was no instance so far, create a new one and add it to the FragmentManagers pool.
      * If there is no Fragment with the corresponding Tag, return the top fragment.
      *
      * @param fragmentTag tag
      * @return corresponding Fragment
      */
-    protected CustomFragment getFragment(String fragmentTag) {
-        CustomFragment fragment = (CustomFragment) fm.findFragmentByTag(fragmentTag);
+    protected ThemedFragment getFragment(String fragmentTag) {
+        ThemedFragment fragment = (ThemedFragment) fm.findFragmentByTag(fragmentTag);
         if (fragment != null) {
             return fragment;
         } else {
@@ -338,12 +331,30 @@ public class MainActivity extends ThemedActivity
      *
      * @param url URL to load in the DiasporaStreamFragment
      */
-    public void openDiasporaUrl(String url) {
+    public void openDiasporaUrl(final String url) {
         AppLog.v(this, "openDiasporaUrl()");
-        DiasporaStreamFragment streamFragment = (DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG);
-        showFragment(streamFragment);
-        showLastVisitedTimestampMessageIfNeeded(url);
-        streamFragment.loadUrl(url);
+        if (url != null && url.startsWith("http://127.0.0.1")) {
+            // This URL seems to be called somehow, but it doesn't make sense ;)
+            toolbarTop.postDelayed(() -> {
+                Intent i = new Intent(ACTION_OPEN_EXTERNAL_URL);
+                i.putExtra(EXTRA_URL, "https://github.com/Diaspora-for-Android/dandelion/blob/master/README.md");
+                LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(i);
+            }, 1000);
+            return;
+        }
+        if (_appSettings.getPod() != null && _appSettings.getPod().getPodUrl() != null && _appSettings.getPod().getPodUrl().getBaseUrl() != null
+                && url.startsWith(_appSettings.getPod().getPodUrl().getBaseUrl()) && !url.startsWith("https://dia.so/")) {
+            DiasporaStreamFragment streamFragment = (DiasporaStreamFragment) getFragment(DiasporaStreamFragment.TAG);
+            showFragment(streamFragment);
+            showLastVisitedTimestampMessageIfNeeded(url);
+            streamFragment.loadUrl(url);
+        } else {
+            toolbarTop.postDelayed(() -> {
+                Intent i = new Intent(ACTION_OPEN_EXTERNAL_URL);
+                i.putExtra(EXTRA_URL, url);
+                LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(i);
+            }, 1000);
+        }
     }
 
     public void showLastVisitedTimestampMessageIfNeeded(String url) {
@@ -358,9 +369,9 @@ public class MainActivity extends ThemedActivity
      *
      * @param fragment Fragment to show
      */
-    protected void showFragment(CustomFragment fragment) {
+    protected void showFragment(ThemedFragment fragment) {
         AppLog.v(this, "showFragment()");
-        CustomFragment currentTop = (CustomFragment) fm.findFragmentById(R.id.fragment_container);
+        ThemedFragment currentTop = (ThemedFragment) fm.findFragmentById(R.id.fragment_container);
         if (currentTop == null || !currentTop.getFragmentTag().equals(fragment.getFragmentTag())) {
             AppLog.v(this, "Fragment was not visible. Replace it.");
             fm.beginTransaction().addToBackStack(null).replace(R.id.fragment_container, fragment, fragment.getFragmentTag()).commit();
@@ -591,8 +602,8 @@ public class MainActivity extends ThemedActivity
      *
      * @return top fragment or null if there is none displayed
      */
-    private CustomFragment getTopFragment() {
-        return (CustomFragment) fm.findFragmentById(R.id.fragment_container);
+    private ThemedFragment getTopFragment() {
+        return (ThemedFragment) fm.findFragmentById(R.id.fragment_container);
     }
 
     /**
@@ -605,7 +616,7 @@ public class MainActivity extends ThemedActivity
             navDrawer.closeDrawer(navView);
             return;
         }
-        CustomFragment top = getTopFragment();
+        ThemedFragment top = getTopFragment();
         if (top != null) {
             AppLog.v(this, "Top Fragment is not null");
             if (!top.onBackPressed()) {
@@ -683,7 +694,7 @@ public class MainActivity extends ThemedActivity
         //Clear the menus
         menu.clear();
 
-        CustomFragment top = getTopFragment();
+        ThemedFragment top = getTopFragment();
         if (top != null) {
             if (!top.getFragmentTag().equals(PodSelectionFragment.TAG)) {
                 cache = _appSettings.isExtendedNotificationsActivated();
@@ -693,10 +704,10 @@ public class MainActivity extends ThemedActivity
             }
         }
 
-        final boolean darkBg = ContextUtils.get().shouldColorOnTopBeLight(AppSettings.get().getPrimaryColor());
-        ContextUtils.get()
-                .tintMenuItems(menu, true, ContextCompat.getColor(this, darkBg ? R.color.white : R.color.black))
-                .setSubMenuIconsVisiblity(menu, true);
+        ContextUtils cu = ContextUtils.get();
+        final boolean darkBg = cu.get().shouldColorOnTopBeLight(AppSettings.get().getPrimaryColor());
+        cu.tintMenuItems(menu, true, ContextCompat.getColor(this, darkBg ? R.color.white : R.color.black));
+        cu.setSubMenuIconsVisiblity(menu, true);
 
         return true;
     }
@@ -835,7 +846,7 @@ public class MainActivity extends ThemedActivity
                     final InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
                     @SuppressLint("InflateParams") View layout = getLayoutInflater().inflate(R.layout.ui__dialog_search__people_tags, null, false);
-                    final EditText input = (EditText) layout.findViewById(R.id.dialog_search__input);
+                    final EditText input = layout.findViewById(R.id.dialog_search__input);
                     input.setMaxLines(1);
                     input.setSingleLine(true);
                     ThemeHelper.updateEditTextColor(input);

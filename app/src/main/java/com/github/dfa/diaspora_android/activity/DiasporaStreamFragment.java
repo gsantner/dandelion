@@ -25,6 +25,7 @@ import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -39,8 +40,10 @@ import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import com.github.dfa.diaspora_android.App;
+import com.github.dfa.diaspora_android.BuildConfig;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.DiasporaUserProfile;
 import com.github.dfa.diaspora_android.ui.theme.ThemedAlertDialogBuilder;
@@ -53,10 +56,14 @@ import com.github.dfa.diaspora_android.web.DiasporaStreamWebChromeClient;
 import com.github.dfa.diaspora_android.web.FileUploadWebChromeClient;
 import com.github.dfa.diaspora_android.web.WebHelper;
 
+import net.gsantner.opoc.util.PermissionChecker;
+import net.gsantner.opoc.util.ShareUtil;
+
 import org.json.JSONException;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * Fragment that displays the Stream of the diaspora* user
@@ -97,6 +104,9 @@ public class DiasporaStreamFragment extends BrowserFragment {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.stream__menu_top, menu);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            menu.findItem(R.id.action_share_pdf).setVisible(true);
+        }
 
         final boolean darkBg = ContextUtils.get().shouldColorOnTopBeLight(AppSettings.get().getPrimaryColor());
         ContextUtils.get().tintMenuItems(menu, true, ContextCompat.getColor(getActivity(), darkBg ? R.color.white : R.color.black));
@@ -118,6 +128,8 @@ public class DiasporaStreamFragment extends BrowserFragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         AppLog.d(this, "StreamFragment.onOptionsItemSelected()");
+        ShareUtil shu = new ShareUtil(getContext()).setFileProviderAuthority(BuildConfig.APPLICATION_ID);
+        PermissionChecker permc = new PermissionChecker(getActivity());
         switch (item.getItemId()) {
             case R.id.action_reload: {
                 if (WebHelper.isOnline(getContext())) {
@@ -144,13 +156,47 @@ public class DiasporaStreamFragment extends BrowserFragment {
                 return true;
             }
 
+            case R.id.action_share_pdf: {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                    shu.createPdf(webView, "dandelion-" + ShareUtil.SDF_SHORT.format(new Date()));
+                }
+                return true;
+            }
+
+            case R.id.action_share_link_to_clipboard: {
+                shu.setClipboard(webView.getUrl());
+                Toast.makeText(getContext(), R.string.share__toast_link_address_copied, Toast.LENGTH_SHORT).show();
+                return true;
+            }
+
+            case R.id.action_create_launcher_shortcut: {
+                if (webView.getUrl() != null) {
+                    Intent intent = new Intent(getContext(), MainActivity.class);
+                    intent.setAction(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(webView.getUrl()));
+                    shu.createLauncherDesktopShortcut(intent, R.drawable.ic_launcher, webView.getTitle());
+                }
+                return true;
+            }
+
             case R.id.action_take_screenshot: {
-                makeScreenshotOfWebView(false);
+                if (permc.doIfExtStoragePermissionGranted(getString(R.string.permissions_screenshot))) {
+                    File fileSaveDirectory = appSettings.getAppSaveDirectory();
+                    if (permc.mkdirIfStoragePermissionGranted(fileSaveDirectory)) {
+                        Bitmap bmp = ShareUtil.getBitmapFromWebView(webView);
+                        String filename = "dandelion-" + ShareUtil.SDF_SHORT.format(new Date()) + ".jpg";
+                        _cu.writeImageToFileJpeg(new File(fileSaveDirectory, filename), bmp);
+                        Snackbar.make(webView, getString(R.string.share__toast_screenshot)
+                                + " " + filename, Snackbar.LENGTH_LONG).show();
+                    }
+                }
                 return true;
             }
 
             case R.id.action_share_screenshot: {
-                makeScreenshotOfWebView(true);
+                if (permc.doIfExtStoragePermissionGranted(getString(R.string.permissions_screenshot))) {
+                    shu.shareImage(ShareUtil.getBitmapFromWebView(webView), Bitmap.CompressFormat.JPEG);
+                }
                 return true;
             }
         }
@@ -325,21 +371,30 @@ public class DiasporaStreamFragment extends BrowserFragment {
         @SuppressWarnings("unused")
         @JavascriptInterface
         public void setUserProfile(final String webMessage) throws JSONException {
-            App app = ((App) getActivity().getApplication());
-            final DiasporaUserProfile pup = app.getDiasporaUserProfile();
-            if (pup.isRefreshNeeded()) {
-                try {
-                    // Try to very fail-safe check if user information gets really loaded from correct pod
-                    if (!webView.getUrl().startsWith(app.getSettings().getPod().getPodUrl().getBaseUrl())) {
-                        return;
-                    }
-                } catch (Exception ignored) {
-                }
-                AppLog.v(this, "DiasporaUserProfile needs refresh; Try to parse JSON");
-                pup.parseJson(webMessage);
-                getActivity().runOnUiThread(new Runnable() {
+            final Activity activity = getActivity();
+            if (activity != null) {
+                activity.runOnUiThread(new Runnable() {
+                    @Override
                     public void run() {
-                        pup.analyzeUrl(webView.getUrl());
+                        App app = ((App) activity.getApplication());
+                        final DiasporaUserProfile pup = app.getDiasporaUserProfile();
+                        if (pup.isRefreshNeeded()) {
+                            try {
+                                // Try to very fail-safe check if user information gets really loaded from correct pod
+                                if (!webView.getUrl().startsWith(app.getSettings().getPod().getPodUrl().getBaseUrl())) {
+                                    return;
+                                }
+                            } catch (Exception ignored) {
+                                return;
+                            }
+                            AppLog.v(this, "DiasporaUserProfile needs refresh; Try to parse JSON");
+                            pup.parseJson(webMessage);
+                            getActivity().runOnUiThread(new Runnable() {
+                                public void run() {
+                                    pup.analyzeUrl(webView.getUrl());
+                                }
+                            });
+                        }
                     }
                 });
             }

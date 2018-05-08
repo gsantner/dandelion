@@ -46,9 +46,9 @@
     <string name="fragment_license__maintainers_text">This app is currently being developed and maintained by &lt;br>&lt;br>%1$s</string>
     <string name="fragment_license__contributors">Contributors</string>
     <string name="fragment_license__contributors_thank_you">%1$s&lt;br>&lt;br>Thank you!</string>
-    <string name="fragment_license__license" translatable="false">@string/about_activity__title_about_license</string>
-    <string name="fragment_license__license_text" translatable="false">
-        Copyright © 2015-2017
+    <string name="licenses" translatable="false">@string/about_activity__title_about_license</string>
+    <string name="copyright_license_text_official" translatable="false">
+        Copyright © 2015-2018
         \nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
         \n
         \nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.

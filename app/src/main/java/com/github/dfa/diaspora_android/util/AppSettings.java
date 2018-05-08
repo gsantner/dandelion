@@ -18,6 +18,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Environment;
 
 import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.BuildConfig;
@@ -26,11 +27,12 @@ import com.github.dfa.diaspora_android.data.DiasporaAspect;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.web.ProxyHandler;
 
-import net.gsantner.opoc.util.AppSettingsBase;
+import net.gsantner.opoc.preference.SharedPreferencesPropertyBackend;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -38,7 +40,7 @@ import java.util.List;
  * Created by gsantner (http://gsantner.net/) on 20.03.16. Part of dandelion*.
  */
 @SuppressWarnings("ConstantConditions")
-public class AppSettings extends AppSettingsBase {
+public class AppSettings extends SharedPreferencesPropertyBackend {
     private final SharedPreferences _prefPod;
     private DiasporaPod currentPod0Cached;
 
@@ -46,7 +48,7 @@ public class AppSettings extends AppSettingsBase {
         return new AppSettings(App.get());
     }
 
-    private AppSettings(Context context) {
+    public AppSettings(Context context) {
         super(context);
         _prefPod = _context.getSharedPreferences("pod0", Context.MODE_PRIVATE);
     }
@@ -367,10 +369,17 @@ public class AppSettings extends AppSettingsBase {
         return value;
     }
 
-    public boolean isAppCurrentVersionFirstStart() {
+    public boolean isAppCurrentVersionFirstStart(boolean doSet) {
         int value = getInt(R.string.pref_key__app_first_start_current_version, -1);
-        setInt(R.string.pref_key__app_first_start_current_version, BuildConfig.VERSION_CODE);
+        if (doSet) {
+            setInt(R.string.pref_key__app_first_start_current_version, BuildConfig.VERSION_CODE);
+        }
         return value != BuildConfig.VERSION_CODE && !BuildConfig.IS_TEST_BUILD;
+    }
+
+    public File getAppSaveDirectory() {
+        return new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/dandelion");
+
     }
 
     public long getLastVisitedPositionInStream() {

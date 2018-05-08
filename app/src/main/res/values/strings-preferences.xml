@@ -71,7 +71,7 @@
 
 
     <!-- Chrome custom tabs -->
-    <string name="pref_desc__chrome_custom_tabs_enabled">Open external links with Chrome Custom Tabs. Chromium or Google Chrome needs to be installed in order to use this feature. \nIMPORTANT NOTE: Chrome Custom Tabs do not use configured proxy servers!</string>
+    <string name="pref_desc__chrome_custom_tabs_enabled">Open external links with Chrome Custom Tabs. Chromium, Firefox or Google Chrome needs to be installed in order to use this feature. \nIMPORTANT NOTE: Chrome Custom Tabs do not use configured proxy servers!</string>
 
     <!-- Diaspora Settings -->
     <string name="pref_title__personal_settings">Personal settings</string>

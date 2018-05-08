@@ -315,8 +315,8 @@ public class DiasporaPodList implements Iterable<DiasporaPodList.DiasporaPod>, S
         }
 
         /*
-        * Getter & Setter
-        */
+         * Getter & Setter
+         */
         public List<DiasporaPodUrl> getPodUrls() {
             return _podUrls;
         }

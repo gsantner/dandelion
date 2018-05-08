@@ -1,25 +1,27 @@
 #### General information
-<!-- App version can be e.g. v0.1.1
-     System e.g. Android 7.0.1, Nexus 5X
-     Pod e.g. pod.geraspora.de, v0.7.1.1 -->
-
-<!--
-I have:
-
-- At least version 1.0.6 installed, see About-> Debug. If it is not visible you have an very old version, and 
-  your issue will be closed.
-- searched open and closed issues for duplicates
-- read <https://github.com/Diaspora-for-Android/dandelion/blob/master/CONTRIBUTING.md>
-- not submitted translations - see [Crowdin](https://crowdin.com/project/diaspora-for-android/invite)  
--->
 
 * **App version:** 
 * **System:** 
 * **Pod:**
 
 #### Description
-What this is about, what happens and how. What needs to be done for it to happen.
 
 
 #### Log
-<!-- adb logcat -s com.github.dfa.diaspora_android -->
+
+<!--
+  Look for already reported issues before posting!
+  Also take a look at documentation and wiki, or write in the project chat.
+
+  App version: The version of the app installed and the installation source. Example: v0.3.5 F-Droid
+               Please keep in mind that only the latest downloadable version is supported and that there are no backports to older versions.
+  System:      Information about where the app is running. Give all details you know, but at least the Android OS version.
+               Example: Android 8.0.1, Nexus 5, LineageOS
+
+  Description:
+  What this is about, what happens and what is expected to happen. What needs to be done for it to happen.
+  If a crash is happening a log is needed. Screenshots or demonstration videos are always helpful too.
+
+  About logging:
+  https://gsantner.net/android-contribution-guide/?packageid=com.github.dfa.diaspora_android&name=dandelion&web=https://github.com/diaspora-for-android/dandelion#logcat
+-->

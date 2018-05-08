@@ -22,6 +22,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -36,7 +37,6 @@ import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.data.DiasporaAspect;
 import com.github.dfa.diaspora_android.listener.OnSomethingClickListener;
 import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
-import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.AppSettings;
 import com.github.dfa.diaspora_android.util.ContextUtils;
 import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
@@ -68,13 +68,12 @@ public class AspectListFragment extends ThemedFragment implements OnSomethingCli
     protected DiasporaUrlHelper urls;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        AppLog.d(this, "onCreateView()");
-        return inflater.inflate(R.layout.recycler_list__fragment, container, false);
+    protected int getLayoutResId() {
+        return R.layout.recycler_list__fragment;
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
         app = (App) getActivity().getApplication();
@@ -167,7 +166,7 @@ public class AspectListFragment extends ThemedFragment implements OnSomethingCli
             final DiasporaAspect aspect = aspectList[position];
             holder.title.setText(aspect.name);
             if (position % 2 == 1) {
-                holder.root.setBackgroundColor(isAmoledColorMode ? Color.BLACK : ContextUtils.get().color(R.color.alternate_row_color));
+                holder.root.setBackgroundColor(isAmoledColorMode ? Color.BLACK : ContextUtils.get().rcolor(R.color.alternate_row_color));
                 holder.title.setTextColor(isAmoledColorMode ? Color.GRAY : Color.BLACK);
             } else {
                 holder.root.setBackgroundColor(isAmoledColorMode ? Color.BLACK : Color.WHITE);

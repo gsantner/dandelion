@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">Bild speichern</string>
   <string name="context_menu_share_image">Bild teilen</string>
   <string name="context_menu_open_external_browser">In externem Browser öffnen&#8230;</string>
-  <string name="context_menu_copy_link">Link-Adresse kopieren</string>
+  <string name="copy_link_to_clipboard">Link-Adresse kopieren</string>
   <string name="context_menu_copy_image_link">Bild-Adresse kopieren</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Konnte Bild nicht laden…</string>

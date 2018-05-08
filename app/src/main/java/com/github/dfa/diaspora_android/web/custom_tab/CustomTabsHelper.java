@@ -41,6 +41,9 @@ public class CustomTabsHelper {
     static final String BETA_PACKAGE = "com.chrome.beta";
     static final String DEV_PACKAGE = "com.chrome.dev";
     static final String LOCAL_PACKAGE = "com.google.android.apps.chrome";
+    static final String CHROMIUM = "org.chromium.chrome";
+    static final String FENNEC = "org.mozilla.fennec_fdroid";
+    static final String KLAR = "org.mozilla.klar";
     private static final String EXTRA_CUSTOM_TABS_KEEP_ALIVE =
             "android.support.customtabs.extra.KEEP_ALIVE";
 
@@ -101,6 +104,12 @@ public class CustomTabsHelper {
             sPackageNameToUse = DEV_PACKAGE;
         } else if (packagesSupportingCustomTabs.contains(LOCAL_PACKAGE)) {
             sPackageNameToUse = LOCAL_PACKAGE;
+        } else if (packagesSupportingCustomTabs.contains(CHROMIUM)) {
+            sPackageNameToUse = CHROMIUM;
+        } else if (packagesSupportingCustomTabs.contains(FENNEC)) {
+            sPackageNameToUse = FENNEC;
+        } else if (packagesSupportingCustomTabs.contains(KLAR)) {
+            sPackageNameToUse = KLAR;
         }
         return sPackageNameToUse;
     }
@@ -137,6 +146,6 @@ public class CustomTabsHelper {
      * @return All possible chrome package names that provide custom tabs feature.
      */
     public static String[] getPackages() {
-        return new String[]{"", STABLE_PACKAGE, BETA_PACKAGE, DEV_PACKAGE, LOCAL_PACKAGE};
+        return new String[]{"", STABLE_PACKAGE, BETA_PACKAGE, DEV_PACKAGE, LOCAL_PACKAGE, CHROMIUM, FENNEC, KLAR};
     }
 }

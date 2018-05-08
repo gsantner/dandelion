@@ -30,7 +30,7 @@
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="context_menu_share_image">Del billede</string>
   <string name="context_menu_open_external_browser">Åben i ekstern browser&#8230;</string>
-  <string name="context_menu_copy_link">Kopier link-adresse til udklipsholder</string>
+  <string name="copy_link_to_clipboard">Kopier link-adresse til udklipsholder</string>
   <!-- More from MainActivity -->
   <!-- Permissions -->
 </resources>

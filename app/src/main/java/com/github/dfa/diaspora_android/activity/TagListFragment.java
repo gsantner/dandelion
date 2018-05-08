@@ -35,7 +35,6 @@ import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.R;
 import com.github.dfa.diaspora_android.listener.OnSomethingClickListener;
 import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
-import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.AppSettings;
 import com.github.dfa.diaspora_android.util.ContextUtils;
 import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
@@ -67,9 +66,8 @@ public class TagListFragment extends ThemedFragment implements OnSomethingClickL
     protected DiasporaUrlHelper urls;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        AppLog.d(this, "onCreateView()");
-        return inflater.inflate(R.layout.recycler_list__fragment, container, false);
+    protected int getLayoutResId() {
+        return R.layout.recycler_list__fragment;
     }
 
     @Override
@@ -166,7 +164,7 @@ public class TagListFragment extends ThemedFragment implements OnSomethingClickL
             final String tag = followedTagsList[position];
             holder.title.setText(tag);
             if (position % 2 == 1) {
-                holder.root.setBackgroundColor(isAmoledColorMode ? Color.BLACK : ContextUtils.get().color(R.color.alternate_row_color));
+                holder.root.setBackgroundColor(isAmoledColorMode ? Color.BLACK : ContextUtils.get().rcolor(R.color.alternate_row_color));
                 holder.title.setTextColor(isAmoledColorMode ? Color.GRAY : Color.BLACK);
             } else {
                 holder.root.setBackgroundColor(isAmoledColorMode ? Color.BLACK : Color.WHITE);

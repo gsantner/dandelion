@@ -18,7 +18,6 @@
  */
 package com.github.dfa.diaspora_android.web;
 
-import android.content.DialogInterface;
 import android.webkit.JsResult;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
@@ -65,20 +64,13 @@ public class DiasporaStreamWebChromeClient extends FileUploadWebChromeClient {
         ThemedAlertDialogBuilder builder = new ThemedAlertDialogBuilder(view.getContext(), AppSettings.get());
         builder.setTitle(view.getContext().getString(R.string.confirmation))
                 .setMessage(message)
-                .setPositiveButton(android.R.string.ok,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                result.confirm();
-                            }
-                        })
-                .setNegativeButton(android.R.string.cancel,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                result.cancel();
-                            }
-                        })
-                .create()
-                .show();
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> result.confirm())
+                .setNegativeButton(android.R.string.cancel, (dialog, which) -> result.cancel())
+                .setOnCancelListener(dialog -> {
+                    result.cancel();
+                    dialog.dismiss();
+                })
+                .create().show();
         return true;
     }
 

@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">Spara bild</string>
   <string name="context_menu_share_image">Dela bild</string>
   <string name="context_menu_open_external_browser">Öppna i en extern webbläsare&#8230;</string>
-  <string name="context_menu_copy_link">Kopiera länkadress</string>
+  <string name="copy_link_to_clipboard">Kopiera länkadress</string>
   <string name="context_menu_copy_image_link">Kopiera bildadressen</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Kunde inte ladda bilden</string>

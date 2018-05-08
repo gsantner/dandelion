@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">Kép mentése</string>
   <string name="context_menu_share_image">Kép megosztása</string>
   <string name="context_menu_open_external_browser">Megnyitás külső böngészőben&#8230;</string>
-  <string name="context_menu_copy_link">Link címének másolása a vágólapra</string>
+  <string name="copy_link_to_clipboard">Link címének másolása a vágólapra</string>
   <string name="context_menu_copy_image_link">Kép címének másolása a vágólapra</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Nem lehet betölteni a képet</string>

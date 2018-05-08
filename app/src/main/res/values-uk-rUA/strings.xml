@@ -57,7 +57,7 @@
   <string name="context_menu_save_image">Зберегти зображення</string>
   <string name="context_menu_share_image">Поділитися зображенням</string>
   <string name="context_menu_open_external_browser">Відкрити у зовнішньому браузері&#8230;</string>
-  <string name="context_menu_copy_link">Копіювати адресу посилання у буфер обміну</string>
+  <string name="copy_link_to_clipboard">Копіювати адресу посилання у буфер обміну</string>
   <string name="context_menu_copy_image_link">Копіювати зображення у буфер обміну</string>
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">Не вдалося завантажити зображення</string>
