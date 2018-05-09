@@ -76,4 +76,7 @@
   <string name="pref_title__is_statusbar_hidden">Cacher la barre de statut</string>
   <string name="pref_summary__show_title">Afficher le titre dans la vue principale</string>
   <string name="pref_title__show_title">Afficher le titre</string>
+  <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+  <string name="navigation_drawer_close">Fermer le tiroir de navigation</string>
+  <string name="launcher_shortcut">Raccourci de l\'écran d\'accueil</string>
 </resources>
