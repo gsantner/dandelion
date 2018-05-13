@@ -21,9 +21,9 @@ import java.io.File;
 
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class PermissionChecker {
-    private static final int CODE_PERMISSION_EXTERNAL_STORAGE = 4000;
+    protected static final int CODE_PERMISSION_EXTERNAL_STORAGE = 4000;
 
-    private Activity _activity;
+    protected Activity _activity;
 
     public PermissionChecker(Activity activity) {
         _activity = activity;

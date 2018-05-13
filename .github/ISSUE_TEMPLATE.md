@@ -23,5 +23,5 @@
   If a crash is happening a log is needed. Screenshots or demonstration videos are always helpful too.
 
   About logging:
-  https://gsantner.net/android-contribution-guide/?packageid=com.github.dfa.diaspora_android&name=dandelion&web=https://github.com/diaspora-for-android/dandelion#logcat
+  https://gsantner.net/android-contribution-guide/?packageid=com.github.dfa.diaspora_android&name=dandelion&web=https://github.com/gsantner/dandelion#logcat
 -->

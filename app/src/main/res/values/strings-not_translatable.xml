@@ -6,7 +6,7 @@
     <string name="shared_via_app" translatable="false">
         \n\n\n_________________________\n
         **Tags:** #dandelíon  \n\n
-        *via [dandelion*](/people?q=dandelion00%40diasp.org) client [(Source)](https://github.com/Diaspora-for-Android/dandelion)*</string>
+        *via [dandelion*](/people?q=dandelion00%40diasp.org) client [(Source)](https://github.com/gsantner/dandelion)*</string>
 
 
     <string name="tor" translatable="false">Tor</string>
@@ -29,9 +29,9 @@
     <string name="fragment_licesen__misc_leafpic_link" translatable="false">https://github.com/HoraApps/LeafPic</string>
     <string name="fragment_about__fdroid_link" translatable="false">https://f-droid.org/repository/browse/?fdid=com.github.dfa.diaspora_android</string>
     <string name="fragment_about__about" translatable="false">@string/app_name</string>
-    <string name="fragment_about__contribute_link" translatable="false">https://github.com/Diaspora-for-Android/dandelion</string>
-    <string name="fragment_about__translate_link" translatable="false">https://crowdin.com/project/diaspora-for-android/invite</string>
-    <string name="fragment_About__feedback_link" translatable="false">https://github.com/Diaspora-for-Android/dandelion/issues</string>
+    <string name="fragment_about__contribute_link" translatable="false">https://github.com/gsantner/dandelion</string>
+    <string name="fragment_about__translate_link" translatable="false">https://crowdin.com/project/gsantner/invite</string>
+    <string name="fragment_About__feedback_link" translatable="false">https://github.com/gsantner/dandelion/issues</string>
 
 
 

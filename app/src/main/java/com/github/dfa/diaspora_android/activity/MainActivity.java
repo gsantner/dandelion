@@ -337,7 +337,7 @@ public class MainActivity extends ThemedActivity
             // This URL seems to be called somehow, but it doesn't make sense ;)
             toolbarTop.postDelayed(() -> {
                 Intent i = new Intent(ACTION_OPEN_EXTERNAL_URL);
-                i.putExtra(EXTRA_URL, "https://github.com/Diaspora-for-Android/dandelion/blob/master/README.md");
+                i.putExtra(EXTRA_URL, "https://github.com/gsantner/dandelion/blob/master/README.md");
                 LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(i);
             }, 1000);
             return;
