@@ -1,0 +1,102 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.github.dfa.diaspora_android.activity.AboutActivity$DebugFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Vertical padding-->
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_vertical_margin" />
+
+        <!-- APP SECTION -->
+        <TextView
+            android:id="@+id/fragment_debug__section_app"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_debug__section_app" />
+
+        <TextView
+            android:id="@+id/fragment_debug__package_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fragment_debug__app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- DEVICE SECTION -->
+        <TextView
+            android:id="@+id/fragment_debug__section_device"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/fragment_debug__section_device" />
+
+        <TextView
+            android:id="@+id/fragment_debug__android_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fragment_debug__device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- POD SECTION -->
+        <TextView
+            android:id="@+id/fragment_debug__section_pod"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/fragment_debug__section_pod" />
+
+        <TextView
+            android:id="@+id/fragment_debug__account_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fragment_debug__account_profile_domain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- LOG SECTION -->
+        <TextView
+            android:id="@+id/fragment_debug__section_log"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/fragment_debug__section_log" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fragment_debug__log_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:longClickable="true" />
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

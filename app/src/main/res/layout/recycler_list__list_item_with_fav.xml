@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycler_view__list_item__root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/recycler_view__list_item__divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/recycler_view__list_item__text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/recycler_view__list_item__divider"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="12dp"
+        android:layout_toStartOf="@+id/recycler_view__list_item__favourite"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/primary_text"
+        tools:text="Very much text" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/recycler_view__list_item__favourite"
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/recycler_view__list_item__divider"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="12dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_star_border_black_48px" />
+
+</RelativeLayout>

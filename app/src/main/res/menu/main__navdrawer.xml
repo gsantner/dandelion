@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/nav_group__pod"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_stream"
+            android:icon="@drawable/ic_stream"
+            android:title="@string/nav_stream" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_48px"
+            android:title="@string/nav_profile" />
+
+        <item
+            android:id="@+id/nav_followed_tags"
+            android:icon="@drawable/ic_local_offer_black_48px"
+            android:title="@string/nav_followed_tags" />
+        <item
+            android:id="@+id/nav_aspects"
+            android:icon="@drawable/ic_group_black_48px"
+            android:title="@string/nav_aspects" />
+
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_contacts_black_24px"
+            android:title="@string/nav_contacts" />
+
+        <item
+            android:id="@+id/nav_activities"
+            android:icon="@drawable/ic_history_black_48px"
+            android:title="@string/nav_activities" />
+
+        <item
+            android:id="@+id/nav_liked"
+            android:icon="@drawable/ic_favorite_black_48px"
+            android:title="@string/nav_liked" />
+
+        <item
+            android:id="@+id/nav_commented"
+            android:icon="@drawable/ic_format_align_left_black_48px"
+            android:title="@string/nav_commented" />
+
+        <item
+            android:id="@+id/nav_mentions"
+            android:icon="@drawable/ic_atsign"
+            android:title="@string/nav_mentions" />
+
+        <item
+            android:id="@+id/nav_public"
+            android:icon="@drawable/ic_public_black_48px"
+            android:title="@string/nav_public_activities" />
+
+        <item
+            android:id="@+id/nav_dandelion"
+            android:icon="@drawable/ic_person_black_24px"
+            android:title="@string/dandelion" />
+
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_timeline_black_48px"
+            android:title="@string/nav_statistics" />
+
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_report_black_48px"
+            android:title="@string/nav_reports" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_cancel_black_48px"
+            android:title="@string/action_exit_app"
+            android:visible="false" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_toggle_desktop_page"
+            android:icon="@drawable/ic_sync_white_48px"
+            android:title="@string/action_toggle_desktop_page" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_48px"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_black_48px"
+            android:title="@string/nav_help_license" />
+    </group>
+
+</menu>

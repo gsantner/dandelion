@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- User -->
+    <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
+        android:title="@string/pref_cat__visibility_nav_items__user">
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__visibility_nav__profile"
+            android:title="@string/nav_profile"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__visibility_nav__followed_tags"
+            android:title="@string/nav_followed_tags"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__visibility_nav__aspects"
+            android:title="@string/nav_aspects"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__visibility_nav__contacts"
+            android:title="@string/nav_contacts" />
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__visibility_nav__activities"
+            android:title="@string/nav_activities"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__visibility_nav__liked"
+            android:title="@string/nav_liked"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__visibility_nav__commented"
+            android:title="@string/nav_commented"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__visibility_nav__mentions"
+            android:title="@string/nav_mentions"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__visibility_nav__public_activities"
+            android:title="@string/nav_public_activities"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__visibility_nav__dandelion_account"
+            android:title="@string/dandelion"/>
+
+    </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
+
+
+    <!-- General -->
+    <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
+        android:title="@string/pref_cat__visibility_nav_items__general">
+
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__visibility_nav__exit"
+            android:title="@string/action_exit_app"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__visibility_nav__toggle_mobile_desktop"
+            android:title="@string/action_toggle_desktop_page"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__visibility_nav__help_license"
+            android:title="@string/nav_help_license"/>
+
+    </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
+
+
+    <!-- Admin -->
+    <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
+        android:title="@string/pref_cat__visibility_nav_items__admin">
+
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__visibility_nav__reports"
+            android:title="@string/nav_reports"/>
+
+        <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__visibility_nav__statistics"
+            android:title="@string/nav_statistics"/>
+
+    </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
+</PreferenceScreen>

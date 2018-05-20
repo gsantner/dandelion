@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarStyle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/podselection__dialog__text_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/profile"
+            android:textAppearance="@style/AppTheme.TextAppearance.Caption"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/podselection__dialog__spinner_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/podselection__dialog__text_pod_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+            android:text="@string/pod_name"
+            android:textAppearance="@style/AppTheme.TextAppearance.Caption" />
+
+        <EditText
+            android:id="@+id/podselection__dialog__edit_pod_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+            android:ems="10"
+            android:hint="@string/pod_name"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Geraspora" />
+
+        <TextView
+            android:id="@+id/podselection__dialog__text_pod_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+            android:text="@string/pod_address"
+            android:textAppearance="@style/AppTheme.TextAppearance.Caption" />
+
+        <EditText
+            android:id="@+id/podselection__dialog__edit_podaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+            android:ems="10"
+            android:hint="@string/pod_address"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="pod.geraspora.de" />
+
+        <TextView
+            android:id="@+id/podselection__dialog__text_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+            android:text="@string/http_protocol"
+            android:textAppearance="@style/AppTheme.TextAppearance.Caption" />
+
+        <RadioGroup
+            android:id="@+id/podselection__dialog__radiogroup_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+            android:checkedButton="@+id/podselection__dialog__radio_https"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/podselection__dialog__radio_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/http" />
+
+            <RadioButton
+                android:id="@+id/podselection__dialog__radio_https"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/https" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/podselection__dialog__text_torpreset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+            android:text="@string/tor"
+            android:textAppearance="@style/AppTheme.TextAppearance.Caption"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/podselection__dialog__check_torpreset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+            android:text="@string/pref_title__http_proxy_load_tor_preset"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/podselection__dialog__btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@android:string/cancel" />
+
+            <Button
+                android:id="@+id/podselection__dialog__btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@android:string/ok" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

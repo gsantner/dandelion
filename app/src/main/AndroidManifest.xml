@@ -1,64 +1,807 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.baumann.diaspora">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.github.dfa.diaspora_android"
+    tools:ignore="GoogleAppIndexingWarning">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
     <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:name="com.github.dfa.diaspora_android.App"
+        android:allowBackup="false"
+        android:icon="${appIcon}"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/DiasporaLight">
+
+        <provider
+            android:name="com.github.dfa.diaspora_android.service.HashtagContentProvider"
+            android:authorities="${applicationId}.mainactivity"
+            android:exported="false" />
+
+        <!--File provider for sharing files-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+        <service
+            android:name="com.github.dfa.diaspora_android.service.FetchPodsService"
+            android:enabled="true"
+            android:exported="false" />
+
         <activity
-            android:name=".SplashActivity"
+            android:name="com.github.dfa.diaspora_android.activity.SettingsActivity"
+            android:configChanges="keyboardHidden|locale|orientation|screenSize"
+            android:label="@string/settings"
             android:launchMode="singleInstance"
-            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/DiasporaLight.NoActionBar" />
+
+        <activity
+            android:name="com.github.dfa.diaspora_android.activity.AboutActivity"
+            android:configChanges="locale"
+            android:label="@string/about_activity__title_about_app"
+            android:theme="@style/DiasporaLight.NoActionBar" />
+
+        <activity
+            android:name="com.github.dfa.diaspora_android.activity.MainActivity"
+            android:configChanges="keyboardHidden|locale|orientation|screenSize"
+            android:icon="${appIcon}"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:launchMode="singleTop"
+            android:theme="@style/DiasporaLight.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+
             <intent-filter>
+                <action android:name="sc_new_post" />
+                <action android:name="sc_nav_followed_tags" />
+                <action android:name="sc_aspects" />
+                <action android:name="sc_activities" />
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".PodsActivity"
-            android:launchMode="singleInstance"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/title_activity_pods"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:launchMode="singleInstance"
-            android:windowSoftInputMode="adjustResize"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="@string/diaspora">
-        </activity>
 
-        <activity
-            android:name=".ShareActivity"
-            android:launchMode="singleInstance"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/new_post"
-            android:screenOrientation="portrait" >
-            <intent-filter android:label="@string/diaspora"
-                android:icon="@drawable/ic_launcher">
+            <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
             </intent-filter>
+
+            <!-- Hashtag click intent from HtmlTextViews -->
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.cc.tag" />
+            </intent-filter>
+
+            <!-- Intent from Web Browser / Mail / IM / Clickable Link -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+
+                <!-- Additional allowed services -->
+                <data
+                    android:host="dia.so"
+                    android:scheme="https" />
+
+                <!--@@@ PODLIST START-->
+                <data
+                    android:host="joindiaspora.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diasporaaqmjixh5.onion"
+                    android:scheme="http" />
+                <data
+                    android:host="pod.geraspora.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diasporgc3d32vv4.onion"
+                    android:scheme="https" />
+                <data
+                    android:host="framasphere.org"
+                    android:scheme="https" />
+                <data
+                    android:host="nerdpol.ch"
+                    android:scheme="https" />
+                <data
+                    android:host="despora.de"
+                    android:scheme="https" />
+                <data
+                    android:host="sechat.org"
+                    android:scheme="https" />
+                <data
+                    android:host="sechatqpscuj2npx.onion"
+                    android:scheme="http" />
+                <data
+                    android:host="berdaguermontes.eu"
+                    android:scheme="https" />
+                <data
+                    android:host="berlinspora.de"
+                    android:scheme="https" />
+                <data
+                    android:host="community.kanalinseln.de"
+                    android:scheme="https" />
+                <data
+                    android:host="d.consumium.org"
+                    android:scheme="https" />
+                <data
+                    android:host="dia.manuelbichler.at"
+                    android:scheme="https" />
+                <data
+                    android:host="dia.myocastor.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diapod.net"
+                    android:scheme="https" />
+                <data
+                    android:host="diapod.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.ca"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.cz"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.eu"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.eu.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.nl"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspod.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora-fr.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.alfter.us"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.bohramt.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.com.ar"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.deadhexagon.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.digi-merc.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.dorf-post.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.espiritolivre.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.horwood.biz"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.hzsogood.net"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.kapper.net"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.koehn.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.kosebamse.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.lebarjack.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.microdata.co.uk"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.moosje.nl"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.net.gr"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.permutationsofchaos.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.pimpmypony.eu"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.pingupod.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.podzimek.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.poleni.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.psyco.fr"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.raven-ip.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.retrodigital.net"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.soh.re"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.subsignal.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.trash-talk.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.u4u.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.unixcorn.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diasporabr.com.br"
+                    android:scheme="https" />
+                <data
+                    android:host="diasporabrazil.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diasporapr.tk"
+                    android:scheme="https" />
+                <data
+                    android:host="diasporing.ch"
+                    android:scheme="https" />
+                <data
+                    android:host="distributed.chat"
+                    android:scheme="https" />
+                <data
+                    android:host="espora.com.es"
+                    android:scheme="https" />
+                <data
+                    android:host="espora.social"
+                    android:scheme="https" />
+                <data
+                    android:host="failure.net"
+                    android:scheme="https" />
+                <data
+                    android:host="flokk.no"
+                    android:scheme="https" />
+                <data
+                    android:host="freehuman.fr"
+                    android:scheme="https" />
+                <data
+                    android:host="iliketoast.net"
+                    android:scheme="https" />
+                <data
+                    android:host="jons.gr"
+                    android:scheme="https" />
+                <data
+                    android:host="kapok.se"
+                    android:scheme="https" />
+                <data
+                    android:host="karmasphe.re"
+                    android:scheme="https" />
+                <data
+                    android:host="laba.mba"
+                    android:scheme="https" />
+                <data
+                    android:host="liberdade.digital"
+                    android:scheme="https" />
+                <data
+                    android:host="librenet.co.za"
+                    android:scheme="https" />
+                <data
+                    android:host="librenet.gr"
+                    android:scheme="https" />
+                <data
+                    android:host="misamigos.online"
+                    android:scheme="https" />
+                <data
+                    android:host="mondiaspora.net"
+                    android:scheme="https" />
+                <data
+                    android:host="networkwizard.de"
+                    android:scheme="https" />
+                <data
+                    android:host="nx-pod.de"
+                    android:scheme="https" />
+                <data
+                    android:host="pe.spbstu.ru"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.4ray.co"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.8n1.org"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.alterworld.info"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.asap-soft.com"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.cannyfoxx.me"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.cyberdungeon.de"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.dapor.net"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.datenknoten.me"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.diaspora.software"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.dirkomatik.de"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.disroot.org"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.gedankenausbruch.com"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.gleisnetze.de"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.goodsharing.at"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.hashtagueule.fr"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.hoizi.net"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.itabs.nl"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.jpope.org"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.liebeleu.de"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.nomorestars.com"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.orkz.net"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.ponk.pink"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.promedol.com"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.psynet.su"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.roocita.com"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.sertelon.fr"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.storel.li"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.tchncs.de"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.thomasdalichow.de"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.volt.io"
+                    android:scheme="https" />
+                <data
+                    android:host="podbay.net"
+                    android:scheme="https" />
+                <data
+                    android:host="poddery.com"
+                    android:scheme="https" />
+                <data
+                    android:host="podricing.pw"
+                    android:scheme="https" />
+                <data
+                    android:host="pubpod.alqualonde.org"
+                    android:scheme="https" />
+                <data
+                    android:host="revreso.de"
+                    android:scheme="https" />
+                <data
+                    android:host="ruhrspora.de"
+                    android:scheme="https" />
+                <data
+                    android:host="russiandiaspora.org"
+                    android:scheme="https" />
+                <data
+                    android:host="shrekislove.us"
+                    android:scheme="https" />
+                <data
+                    android:host="social.acclaro.digital"
+                    android:scheme="https" />
+                <data
+                    android:host="social.baldr.io"
+                    android:scheme="https" />
+                <data
+                    android:host="social.daxbau.net"
+                    android:scheme="https" />
+                <data
+                    android:host="social.elaon.de"
+                    android:scheme="https" />
+                <data
+                    android:host="social.lanham.id.au"
+                    android:scheme="https" />
+                <data
+                    android:host="social.mbuto.me"
+                    android:scheme="https" />
+                <data
+                    android:host="socializer.cc"
+                    android:scheme="https" />
+                <data
+                    android:host="spora.zone"
+                    android:scheme="https" />
+                <data
+                    android:host="subvillage.de"
+                    android:scheme="https" />
+                <data
+                    android:host="sysad.org"
+                    android:scheme="https" />
+                <data
+                    android:host="teki.be"
+                    android:scheme="https" />
+                <data
+                    android:host="therealtalk.org"
+                    android:scheme="https" />
+                <data
+                    android:host="thinkopen.net"
+                    android:scheme="https" />
+                <data
+                    android:host="tippentappen.de"
+                    android:scheme="https" />
+                <data
+                    android:host="whatsnewz.com"
+                    android:scheme="https" />
+                <data
+                    android:host="wk3.org"
+                    android:scheme="https" />
+                <data
+                    android:host="www.datataffel.dk"
+                    android:scheme="https" />
+                <data
+                    android:host="www.diasporaix.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.hofud.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.softwarelivre.org"
+                    android:scheme="https" />
+                <data
+                    android:host="confetticake.club"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspote.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.zone"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.userzap.de"
+                    android:scheme="https" />
+                <data
+                    android:host="www.vodeoo.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.punkbeer.me"
+                    android:scheme="https" />
+                <data
+                    android:host="ingtech.net"
+                    android:scheme="https" />
+                <data
+                    android:host="mmkr.co"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.kneedrag.org"
+                    android:scheme="https" />
+                <data
+                    android:host="spyurk.am"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.mew.cat"
+                    android:scheme="https" />
+                <data
+                    android:host="dfhz.tk"
+                    android:scheme="https" />
+                <data
+                    android:host="netiz.in"
+                    android:scheme="https" />
+                <data
+                    android:host="pod1.orobouros.net"
+                    android:scheme="https" />
+                <data
+                    android:host="witchcraft.ml"
+                    android:scheme="https" />
+                <data
+                    android:host="libellula.criptica.org"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.datamol.org"
+                    android:scheme="https" />
+                <data
+                    android:host="social.berdaguermontes.eu"
+                    android:scheme="https" />
+                <data
+                    android:host="mh8.lat-clan.fr"
+                    android:scheme="https" />
+                <data
+                    android:host="dp.lumy.me"
+                    android:scheme="https" />
+                <data
+                    android:host="social.souvenirfromlife.fr"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.mokrynskyi.com"
+                    android:scheme="https" />
+                <data
+                    android:host="hub.transition-regensburg.de"
+                    android:scheme="https" />
+                <data
+                    android:host="co.zy.lc"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.treefish.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.bke.ro"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.sd.vc"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.cxx.rocks"
+                    android:scheme="https" />
+                <data
+                    android:host="social.homenet.org"
+                    android:scheme="https" />
+                <data
+                    android:host="social.cigliola.com"
+                    android:scheme="https" />
+                <data
+                    android:host="friaspora.tk"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.lasserh.dk"
+                    android:scheme="https" />
+                <data
+                    android:host="hubz.tk"
+                    android:scheme="https" />
+                <data
+                    android:host="hubzilla.kosebamse.com"
+                    android:scheme="https" />
+                <data
+                    android:host="driaans.nl"
+                    android:scheme="https" />
+                <data
+                    android:host="dispersio.us"
+                    android:scheme="https" />
+                <data
+                    android:host="go.lookbehind.eu"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.ot-si.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.crossfamilyweb.com"
+                    android:scheme="https" />
+                <data
+                    android:host="hub.aoeu.me"
+                    android:scheme="https" />
+                <data
+                    android:host="dia.pwn.ninja"
+                    android:scheme="https" />
+                <data
+                    android:host="3ogsbs3vuvapgg37.onion.to"
+                    android:scheme="https" />
+                <data
+                    android:host="hubz.secretlair.me"
+                    android:scheme="https" />
+                <data
+                    android:host="got.noip.me"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.bitcast.info"
+                    android:scheme="https" />
+                <data
+                    android:host="f.tschlotfeldt.de"
+                    android:scheme="https" />
+                <data
+                    android:host="hubloq.net"
+                    android:scheme="https" />
+                <data
+                    android:host="hubzilla.kneedrag.org"
+                    android:scheme="https" />
+                <data
+                    android:host="gesichtsbu.ch"
+                    android:scheme="https" />
+                <data
+                    android:host="hubzi.fraengii.de"
+                    android:scheme="https" />
+                <data
+                    android:host="friendica.narf.ssji.net"
+                    android:scheme="https" />
+                <data
+                    android:host="durohr.de"
+                    android:scheme="https" />
+                <data
+                    android:host="0kcg.com"
+                    android:scheme="https" />
+                <data
+                    android:host="aegibson.me"
+                    android:scheme="https" />
+                <data
+                    android:host="redmatrix.us"
+                    android:scheme="https" />
+                <data
+                    android:host="15o2.de"
+                    android:scheme="https" />
+                <data
+                    android:host="upt.social"
+                    android:scheme="https" />
+                <data
+                    android:host="friendica.bohrshouse.com"
+                    android:scheme="https" />
+                <data
+                    android:host="hubzilla.site"
+                    android:scheme="https" />
+                <data
+                    android:host="hubzilla.zavb.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.aeriesguard.com"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.cornify.de"
+                    android:scheme="https" />
+                <data
+                    android:host="hochminuseins.net"
+                    android:scheme="https" />
+                <data
+                    android:host="thecrimsontint.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.clubelek.fr"
+                    android:scheme="https" />
+                <data
+                    android:host="teamhubzilla.org"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.schlimme.net"
+                    android:scheme="https" />
+                <data
+                    android:host="www.wiwiec.com"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.danletard.de"
+                    android:scheme="https" />
+                <data
+                    android:host="libertypod.com"
+                    android:scheme="https" />
+                <data
+                    android:host="hubzilla.pskosinski.pl"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.juvenesco.eu"
+                    android:scheme="https" />
+                <data
+                    android:host="pirati.ca"
+                    android:scheme="https" />
+                <data
+                    android:host="diasp.sk"
+                    android:scheme="https" />
+                <data
+                    android:host="f.libreden.net"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.mausdompteur.de"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.raitisoja.com"
+                    android:scheme="https" />
+                <data
+                    android:host="squeet.me"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.kakise.xyz"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.diasporacaribe.org"
+                    android:scheme="https" />
+                <data
+                    android:host="hub.feder8.ru"
+                    android:scheme="https" />
+                <data
+                    android:host="hubzilla.a-zwenkau.de"
+                    android:scheme="https" />
+                <data
+                    android:host="social.punkbeer.me"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.sapient.fun"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.phantasie.cc"
+                    android:scheme="https" />
+                <data
+                    android:host="diaspora.masharih.me"
+                    android:scheme="https" />
+                <data
+                    android:host="hub.mariovavti.com"
+                    android:scheme="https" />
+                <data
+                    android:host="social.patur.in"
+                    android:scheme="https" />
+                <data
+                    android:host="jeroenpraat.nl"
+                    android:scheme="https" />
+                <data
+                    android:host="grindcore.ch"
+                    android:scheme="https" />
+                <data
+                    android:host="pod.vixiv.net"
+                    android:scheme="https" />
+                <data
+                    android:host="social.deuxfleurs.fr"
+                    android:scheme="https" />
+                <data
+                    android:host="parlementum.net"
+                    android:scheme="https" />
+                <data
+                    android:host="villianbook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="frolix8.asia"
+                    android:scheme="https" />
+                <data
+                    android:host="hub.vilarejo.pro.br"
+                    android:scheme="https" />
+                <data
+                    android:host="social.vixiv.net"
+                    android:scheme="https" />
+                <!--@@@ PODLIST END-->
+            </intent-filter>
+
         </activity>
 
-        <service
-            android:name=".services.GetPodsService"
-            android:enabled="true"
-            android:exported="false" >
-        </service>
-
     </application>
+
 </manifest>

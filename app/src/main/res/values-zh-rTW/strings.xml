@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application -->
+    <string name="reload">重新下載</string>
+    <!-- Common Words -->
+    <string name="settings">設定</string>
+    <string name="notifications">通知</string>
+    <string name="conversations">對話</string>
+    <string name="stream">流水帳</string>
+    <string name="profile">個人檔案</string>
+    <string name="aspects">社交面</string>
+    <string name="activities">活動</string>
+    <string name="liked">按過讚</string>
+    <string name="commented">留言</string>
+    <string name="mentions">指指點點</string>
+    <string name="public_">公開</string>
+    <string name="search">搜尋</string>
+    <string name="contacts">聯絡人</string>
+    <string name="changelog">更新紀錄</string>
+    <string name="statistics">統計資料</string>
+    <!-- Notifications dropdown menu -->
+    <string name="notifications__all">全部的通知</string>
+    <string name="notifications__also_commented">其他留言</string>
+    <string name="notifications__comment_on_post">貼文被留言</string>
+    <string name="notifications__liked">被按讚</string>
+    <string name="notifications__mentioned">被指指點點</string>
+    <string name="notifications__reshared">被分享</string>
+    <string name="notifications__started_sharing">開始分享</string>
+    <!-- Pod Activity -->
+    <string name="podlist_error">錯誤: 無法取得豆莢列表！</string>
+    <string name="no_internet">抱歉，要有網路連線才能繼續</string>
+    <string name="confirmation">確認</string>
+    <string name="confirm_exit">確定要退出嗎？</string>
+    <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="nav_menu_more">再來</string>
+    <string name="nav_help_license">說明 | 幫助</string>
+    <string name="nav_followed_tags">追蹤中的標籤</string>
+    <string name="nav_public_activities">公開活動</string>
+    <string name="nav_reports">回報</string>
+    <string name="share__share_link_as_text">分享連結文字</string>
+    <string name="share__share_screenshot">分享網頁截圖</string>
+    <string name="share__take_screenshot">產生網路截圖</string>
+    <string name="share__toast_saved_image_to_location">圖片儲存為</string>
+    <string name="share__toast_screenshot">截圖儲存為:</string>
+    <string name="share__toast_link_address_copied">已經複製了連結網址&#8230;</string>
+    <string name="new_post">新增貼文</string>
+    <string name="action_go_to_top">回到最上面</string>
+    <string name="action_search_by_tags_or_persons">找人或標籤</string>
+    <string name="action_exit_app">退出應用程式</string>
+    <string name="action_toggle_desktop_page">切換行動/桌上型版面</string>
+    <string name="action_share_dotdotdot">分享&#8230;</string>
+    <string name="search_alert_tag">找標籤</string>
+    <string name="search_alert_people">找人</string>
+    <string name="search_alert_bypeople_validate_needsomedata">請輸入名稱</string>
+    <string name="context_menu_share_link">分享連結網址</string>
+    <string name="context_menu_save_image">儲存圖片</string>
+    <string name="context_menu_share_image">分享圖片</string>
+    <string name="context_menu_open_external_browser">用外部瀏覽器開啟&#8230;</string>
+    <string name="copy_link_to_clipboard">將連結網址複製到剪貼簿</string>
+    <string name="context_menu_copy_image_link">將圖片網址複製到剪貼簿</string>
+    <!-- More from MainActivity -->
+    <string name="unable_to_load_image">無法載入圖片</string>
+    <!-- Permissions -->
+    <string name="permissions_screenshot">必須要給予應用程式「儲存空間」的權限，才能儲存畫面截圖。給予後應該要將應用程式完全結束，或是將裝置重新啟動。如果你現在沒給權限，之後才想要使用截圖功能，還是可以重給權限。作法是：先打開「設定」—應用程式—dandelion*，在「權限」的地方切換是否給予「儲存空間」權限。</string>
+    <string name="permissions_image">必須要給予應用程式「儲存空間」的權限，才能儲存或上傳圖片。給予後應該要將應用程式完全結束，或是將裝置重新啟動。如果你現在沒給權限，之後才想要儲存圖片，還是可以重給權限。作法是：先打開「設定」—應用程式—dandelion*，在「權限」的地方切換是否給予「儲存空間」權限。</string>
+    <string name="permission_denied">權限被拒絕了。</string>
+    <string name="permission_granted_try_again">取得權限了。請再重試一次。</string>
+    <string name="podselection__custom_pod">自選豆莢</string>
+    <string name="pod_name">豆莢名稱</string>
+    <string name="http_protocol">網路協定</string>
+    <string name="pod_address">豆莢網址</string>
+    <string name="missing_value">沒有填值</string>
+    <string name="jump_to_last_visited_timestamp_in_stream">回到最近瀏覽的流水帳頁面嗎？</string>
+    <string name="pref_summary__is_statusbar_hidden">隱藏主畫面中的狀態列</string>
+    <string name="pref_title__is_statusbar_hidden">隱藏狀態列</string>
+    <string name="pref_summary__show_title">在主畫面中顯示標題列</string>
+    <string name="pref_title__show_title">顯示標題列</string>
+
+    <string name="about_activity__title_about_app">說明</string>
+    <string name="about_activity__title_about_license">授權條款</string>
+    <string name="about_activity__title_debug_info">除錯</string>
+    <string name="fragment_debug__section_app">應用程式</string>
+    <string name="fragment_debug__section_device">裝置</string>
+    <string name="fragment_debug__section_pod">diaspora* 豆莢</string>
+    <string name="fragment_debug__section_log">除錯紀錄</string>
+    <string name="fragment_debug__section_log_spam">除錯紀錄(詳細版)</string>
+    <string name="fragment_debug__app_version">應用程式版本: %1$s</string>
+    <string name="fragment_debug__android_version">Android 版本: %1$s</string>
+    <string name="fragment_debug__device_name">裝置名稱: %1$s</string>
+    <string name="fragment_debug__app_codename">代號: %1$s</string>
+    <string name="fragment_debug__pod_profile_name">豆莢設定名稱: %1$s</string>
+    <string name="fragment_debug__pod_profile_url">豆莢網址: %1$s</string>
+    <string name="fragment_debug__toast_log_copied">已經複製除錯紀錄到剪貼簿了</string>
+    <string name="fragment_about__about_text">dandelion* (蒲公英*) 是你瀏覽 diaspora* 社交網站的好朋友。它讓你的體驗增加了好用的工具列，並且支援像是 Tor 之類的代理伺服器服務。</string>
+    <string name="fragment_about__contribute">貢獻程式碼！</string>
+    <string name="fragment_about__contribute_text">dandelion* 是自由軟體開發專案，並且追隨 diaspora* 專案的信念。想要貢獻你的心力嗎？那就來吧！目前我們還只是個很小的團隊，任何形式的幫忙都會讓我們足感心！</string>
+    <string name="fragment_about__contribute_button">取得源碼</string>
+    <string name="fragment_about__translate">翻譯應用程式！</string>
+    <string name="fragment_about__translate_text">應用程式沒有你使用語言的版本嗎？你可以改變現狀！何不來幫忙我們翻譯呢？我們使用 crowdin 平台，好讓每個人都能夠參與應用程式的翻譯工作。</string>
+    <string name="fragment_about__translate_button">我來翻譯</string>
+    <string name="fragment_about__feedback">意見回饋！</string>
+    <string name="fragment_about__feedback_text">dandelion* 還在開發階段，所以如果你有任何建議，或是有其他的意見要回饋，請使用我們的臭蟲追蹤網站來讓我們知道！</string>
+    <string name="fragment_about__feedback_button">回報臭蟲</string>
+    <string name="fragment_about__spread_the_word">報給人知！</string>
+    <string name="fragment_about__spread_the_word_text">告訴你的朋友和家人有 #dandelion 這個好東西！何不部落格一下你的使用經驗呢？我們期待聽聽你的故事！</string>
+    <string name="fragment_about__spread_the_word_button">分享應用程式</string>
+    <string name="fragment_about__spread_the_word_share_text">哇！看看 #dandelion 這套應用程式！ %1$s</string>
+    <!-- License & help (large amount of text) -->
+    <string name="fragment_license__maintainers">維護人員</string>
+    <string name="fragment_license__maintainers_text">目前這套應用程式是由以下人員開發與維護： &lt;br&gt;&lt;br&gt;%1$s</string>
+    <string name="fragment_license__contributors">貢獻人</string>
+    <string name="fragment_license__contributors_thank_you">%1$s&lt;br&gt;&lt;br&gt;感謝你們！</string>
+    <string name="fragment_license__license_button">GNU GPLv3+ 授權條款</string>
+    <string name="fragment_license__thirdparty_libs">第三方程式庫</string>
+    <string name="fragment_license__thirdparty_libs_text">我們使用了下列程式庫：</string>
+    <string name="fragment_license__misc_leafpic">我們從 LeafPic 應用程式得到一些啟發以及程式碼。去看看吧，它也是自由軟體喔！</string>
+    <string name="fragment_license__misc_leafpic_button">再多說一些</string>
+
+    <!-- Key Names (Untranslatable) -->
+    <!-- Operability -->
+    <string name="pref_title__topbar_stream_shortcut">上方工具列可載入流水帳</string>
+    <string name="pref_desc__topbar_stream_shortcut">可以點上方工具列的空白區域來進入流水帳</string>
+    <!-- Category Titles -->
+    <string name="pref_cat__visuals">外觀</string>
+    <string name="pref_cat__network">網路</string>
+    <string name="pref_cat__pod_settings">豆莢設定</string>
+    <string name="pref_cat__operability">操作</string>
+    <!-- Visuals -->
+    <!-- Navigiation Slider -->
+    <string name="pref_title__sub_nav_slider">側邊導覽選單</string>
+    <string name="pref_desc__sub_nav_slider">控制側邊導覽選單中顯示的項目</string>
+    <string name="pref_cat__visibility_nav_items__user">使用者</string>
+    <string name="pref_cat__visibility_nav_items__general">平常</string>
+    <string name="pref_cat__visibility_nav_items__admin">管理員</string>
+    <!-- Themes -->
+    <string name="pref_title__themes">佈景主題和色彩</string>
+    <string name="pref_desc__themes">控制應用程式使用的顏色</string>
+    <string name="pref_title__primary_color">主要顏色</string>
+    <string name="pref_desc__primary_color">工具列使用的顏色</string>
+    <string name="pref_title__accent_color">強調顏色</string>
+    <string name="pref_desc__accent_color">進度條使用的顏色</string>
+    <string name="pref_title__primary_color__amoled_mode">AMOLED 顯示模式</string>
+    <string name="pref_desc__primary_color__amoled_mode">在應用程式中使用適合 AMOLED 螢幕的黑色來顯示。改變這項設定後需要重開應用程式。另外你還需要使用色彩主題 Dark 才會有深色的版面，請到你的 diaspora* 帳號設定頁面修改。</string>
+    <!-- Notifications dropdown -->
+    <string name="pref_title__extended_notifications">延伸型通知</string>
+    <string name="pref_desc__extended_notifications">將通知鈴伸展成為顯示通知類別的下拉式選單</string>
+    <string name="pref_desc__language">更改應用程式使用的語言。要重新開啟應用程式才會生效</string>
+    <string name="pref_title__language">語言</string>
+    <string name="language_system">系統設定語言</string>
+    <!-- Font size -->
+    <string name="pref_desc__font_size">控制網頁視圖中的文字大小</string>
+    <string name="pref_title__font_size">字型大小</string>
+    <string name="font_size_normal">一般</string>
+    <string name="font_size_large">較大</string>
+    <string name="font_size_huge">超大</string>
+    <!-- Load images -->
+    <string name="pref_title__load_images">載入圖片</string>
+    <string name="pref_desc__load_images">切換是否要載入圖片，以節省行動資料流量等等</string>
+    <!-- Screen rotation -->
+    <string name="pref_title__screen_rotation">畫面旋轉</string>
+    <string name="pref_desc__screen_rotation">控制畫面自動旋轉功能</string>
+    <string name="rotation_system">系統預設</string>
+    <string name="rotation_sensor">感應\n(忽略系統設定)</string>
+    <string name="rotation_portrait">直向</string>
+    <string name="rotation_landscape">横向</string>
+    <!-- Proxy -->
+    <string name="pref_title__http_proxy_load_tor_preset">載入 Tor 的預設值</string>
+    <string name="pref_desc__http_proxy_load_tor_preset">載入使用 Tor (Orbot) HTTP 代理伺服器的設定</string>
+    <string name="pref_title__sub_proxy">代理伺服器</string>
+    <string name="pref_title__proxy_enabled">啓用代理伺服器</string>
+    <string name="pref_desc__http_proxy_enabled">讓 dandelion* 透用代理伺服器連網來避開防火牆。\n設定後可能需要重新啟動。某些手機上可能會沒有作用。</string>
+    <string name="pref_title__http_proxy_host">主機</string>
+    <string name="pref_title__http_proxy_port">通訊埠</string>
+    <string name="toast__proxy_disabled__restart_required">應用程式要重新啟動以停止使用代理伺服器</string>
+    <string name="toast__proxy_orbot_preset_loaded">已經載入 Orbot 的代理伺服器設定了</string>
+    <!-- Chrome custom tabs -->
+    <string name="pref_desc__chrome_custom_tabs_enabled">使用 Chrome Custom Tabs 開啟外部連結。必須要安裝 Chromium 或是 Google Chrome 才能使用這個功能。
+\n請留意：Chrome Custom Tabs 不會使用應用程式設定的代理伺服器！</string>
+    <!-- Diaspora Settings -->
+    <string name="pref_title__personal_settings">個人設定</string>
+    <string name="pref_desc__personal_settings">打開你的 diaspora* 帳號設定頁面</string>
+    <string name="pref_desc__manage_contacts">管理聯絡人清單</string>
+    <string name="pref_title__manage_tags">管理雜湊標籤</string>
+    <string name="pref_desc__manage_tags">停止追蹤目前正在追蹤中的雜湊標籤</string>
+    <string name="pref_title__change_account">更換帳號</string>
+    <string name="pref_desc__change_account">刪除本機連線 session 資料，並改用另外一個 diaspora* 豆莢或帳號</string>
+    <string name="pref_warning__change_account">將要清除所有的 cookie 和 session 資料。確定真的要切換帳號嗎？</string>
+    <string name="pref_title__clear_cache">清除快取資料</string>
+    <string name="pref_desc__clear_cache">清除網頁視圖的快取資料</string>
+    <string name="pref_desc__intellihide_toolbars">當捲動畫面時，自動隱藏上下兩邊的工具列</string>
+    <string name="pref_title__intellihide_toolbars">自動隱藏工具列</string>
+    <string name="pref_title__append_shared_via_app">分享時附加應用程式標記</string>
+    <string name="pref_desc__append_shared_via_app">在分享的文字之後附加以下應用程式標記: [via #dandelion]</string>
+    <!-- More -->
+    <string name="pref_title__sub_miscelaneous">其他</string>
+    <string name="pref_title__wipe_settings">完全重置</string>
+    <string name="pref_desc__wipe_settings">將本機上此應用程式的設定全部刪掉，並將所有帳號都登出</string>
+    <string name="dialog_content__wipe_settings">將要重設此應用程式的所有設定為預設值，並登出你在所有豆莢的帳號。不過不會變動已經下載了的圖片。確定要繼續嗎？</string>
+    <string name="pref_desc__adblock_enable">開啟基本的廣告封鎖器。廣告可能會出現在嵌入式視圖之類的地方。</string>
+    <string name="pref_title__adblock_enable">廣告封鎖</string>
+</resources>

@@ -1,0 +1,74 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.github.dfa.diaspora_android.activity.MainActivity"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/action_conversations"
+        android:icon="@drawable/ic_mail_white_48px__layer"
+        android:title="@string/conversations"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/ic_notifications_white_48px__layer"
+        android:title="@string/notifications"
+        app:showAsAction="always" />
+
+    <item
+        android:visible="false"
+        android:id="@+id/action_notifications_extended"
+        android:icon="@drawable/ic_notifications_white_48px__layer"
+        android:title="@string/notifications"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_notifications_all"
+                android:icon="@drawable/ic_dashboard_black_48px"
+                android:title="@string/notifications__all" />
+
+            <item
+                android:id="@+id/action_notifications_also_commented"
+                android:icon="@drawable/ic_question_answer_black_48px"
+                android:title="@string/notifications__also_commented" />
+
+            <item
+                android:id="@+id/action_notifications_comment_on_post"
+                android:icon="@drawable/ic_comment_black_48px"
+                android:title="@string/notifications__comment_on_post" />
+
+            <item
+                android:id="@+id/action_notifications_liked"
+                android:icon="@drawable/ic_thumb_up_black_48px"
+                android:title="@string/notifications__liked" />
+
+            <item
+                android:id="@+id/action_notifications_mentioned"
+                android:icon="@drawable/ic_person_pin_black_48px"
+                android:title="@string/notifications__mentioned" />
+
+            <item
+                android:id="@+id/action_notifications_reshared"
+                android:icon="@drawable/ic_repeat_black_48px"
+                android:title="@string/notifications__reshared" />
+            <item
+                android:id="@+id/action_notifications_started_sharing"
+                android:icon="@drawable/ic_person_add_black_48px"
+                android:title="@string/notifications__started_sharing" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white_48px"
+        android:title="@string/action_search_by_tags_or_persons"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_compose"
+        android:icon="@drawable/ic_mode_edit_white_48px"
+        android:title="@string/action_compose_new_post"
+        app:showAsAction="always" />
+
+</menu>

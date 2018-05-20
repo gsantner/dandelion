@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Logging -->
+    <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
+        android:key="@string/pref_key__title__debugging"
+        android:title="@string/pref_title__sub_logging">
+
+        <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__logging_enabled"
+            android:title="@string/pref_title__logging_enabled"/>
+        <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__logging_spam_enabled"
+            android:title="@string/pref_title__logging_spam_enabled"
+            android:dependency="@string/pref_key__logging_enabled"/>
+    </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
+
+
+    <!-- Miscellaneous -->
+    <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
+        android:title="@string/pref_title__sub_miscelaneous">
+
+        <Preference
+            android:key="@string/pref_key__wipe_settings"
+            android:title="@string/pref_title__wipe_settings"
+            android:summary="@string/pref_desc__wipe_settings" />
+
+    </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
+</PreferenceScreen>

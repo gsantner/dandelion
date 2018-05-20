@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/podselection__action_search"
+        android:icon="@drawable/ic_search_white_48px"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/action_reload"
+        android:icon="@drawable/ic_refresh_white_48px"
+        android:orderInCategory="100"
+        android:title="@string/reload"
+        app:showAsAction="ifRoom" />
+</menu>

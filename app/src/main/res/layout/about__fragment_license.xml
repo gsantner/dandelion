@@ -1,0 +1,214 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    tools:context="com.github.dfa.diaspora_android.activity.AboutActivity$LicenseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Maintainers -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            style="?android:attr/buttonBarStyle"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin_half">
+
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_license__maintainers"/>
+
+                <com.github.dfa.diaspora_android.ui.HtmlTextView
+                    android:id="@+id/fragment_license__maintainers_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_license__maintainers_text"
+                    android:layout_marginBottom="8dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Contributors -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            style="?android:attr/buttonBarStyle"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin_half">
+
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_license__contributors"
+                    android:layout_marginBottom="8dp"/>
+
+                <com.github.dfa.diaspora_android.ui.HtmlTextView
+                    android:id="@+id/fragment_license__contributors_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- License -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            style="?android:attr/buttonBarStyle"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin_half">
+
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/licenses"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/copyright_license_text_official"/>
+
+                <Button
+                    android:id="@+id/fragment_license__license_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:text="@string/fragment_license__license_button"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Third Party Libraries -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            style="?android:attr/buttonBarStyle"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin_half">
+
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_license__thirdparty_libs"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_license__thirdparty_libs_text"/>
+
+                <com.github.dfa.diaspora_android.ui.HtmlTextView
+                    android:id="@+id/fragment_license__thirdparty_libs_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Miscellaneous -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            style="?android:attr/buttonBarStyle"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_half"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin_half">
+
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_license__misc"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_license__misc_leafpic"/>
+
+                <Button
+                    android:id="@+id/fragment_license__leafpic_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:text="@string/fragment_license__misc_leafpic_button"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
