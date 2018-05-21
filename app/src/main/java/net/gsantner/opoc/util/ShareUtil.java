@@ -183,6 +183,22 @@ public class ShareUtil {
     }
 
     /**
+     * Open a View intent for given file
+     *
+     * @param file The file to share
+     */
+    public void viewFileInOtherApp(File file, @Nullable String type) {
+        Uri fileUri = FileProvider.getUriForFile(_context, getFileProviderAuthority(), file);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.putExtra(Intent.EXTRA_STREAM, fileUri);
+        intent.setData(fileUri);
+        intent.putExtra(EXTRA_FILEPATH, file.getAbsolutePath());
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        intent.setDataAndType(fileUri, type);
+        showChooser(intent, null);
+    }
+
+    /**
      * Share the given bitmap with given format
      *
      * @param bitmap Image
@@ -397,7 +413,7 @@ public class ShareUtil {
         String tmps;
         String fileStr;
 
-        if ((Intent.ACTION_VIEW.equals(action) || Intent.ACTION_EDIT.equals(action))) {
+        if ((Intent.ACTION_VIEW.equals(action) || Intent.ACTION_EDIT.equals(action)) || Intent.ACTION_SEND.equals(action)) {
             // Markor, S.M.T FileManager
             if (receivingIntent.hasExtra((tmps = EXTRA_FILEPATH))) {
                 return new File(receivingIntent.getStringExtra(tmps));
@@ -449,6 +465,10 @@ public class ShareUtil {
                         }
                     }
                 }
+            }
+            fileUri = receivingIntent.getParcelableExtra(Intent.EXTRA_STREAM);
+            if (fileUri != null && !TextUtils.isEmpty(tmps = fileUri.getPath()) && tmps.startsWith("/") && (tmpf = new File(tmps)).exists()) {
+                return tmpf;
             }
         }
         return null;

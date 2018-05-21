@@ -13,7 +13,7 @@ import java.util.List;
 
 
 /**
- * Created by gsantner (http://gsantner.net/ on 30.09.16.
+ * Created by gsantner (https://gsantner.net/ on 30.09.16.
  * DiasporaPodList  - List container for DiasporaPod's, with methods to merge with other DiasporaPodLists
  * DiasporaPod      - Data container for a Pod, can include N DiasporaPodUrl's
  * DiasporaPodUrl   - A Url of an DiasporaPod

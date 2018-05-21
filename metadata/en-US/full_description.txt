@@ -14,5 +14,5 @@ It adds useful features to your networking experience:
  ✋ <a href="https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion.git&mail=gro.xobliam@@rentnasg">Translate using Stringlate</a>
  ✋ <a href="https://matrix.to/#/#dandelion:matrix.org">Join discussion on Matrix</a>
  ✋ <a href="https://github.com/gsantner/dandelion#contributions">More information about contributions</a>
- ✋ <a href="https://gsantner.net/android-contribution-guide/?packageid=com.github.dfa.diaspora_android&name=dandelion&web=https://github.com/gsantner/dandelion">Android Contribution Guide (gsantner blog)</a>
- ✋ <a href="http://gsantner.net/supportme?ref=dandelion&source=fdroid">Support main developer</a>
+ ✋ <a href="https://gsantner.net/android-contribution-guide/?packageid=com.github.dfa.diaspora_android&name=dandelion&web=https://github.com/gsantner/dandelion&source=fdroid">Android Contribution Guide (gsantner blog)</a>
+ ✋ <a href="https://gsantner.net/supportme?project=dandelion&source=fdroid">Support main developer</a>
