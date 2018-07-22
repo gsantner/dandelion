@@ -431,8 +431,6 @@ public class MainActivity extends ThemedActivity
                     app.getAvatarImageLoader().startImageDownload(navheaderImage, avatarUrl);
                 }
             }
-        } else if (BuildConfig.IS_TEST_BUILD) {
-            navheaderImage.setImageResource(R.drawable.ic_launcher_test);
         }
         updateNavigationViewEntryVisibilities();
     }

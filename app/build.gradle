@@ -24,8 +24,6 @@ android {
 
 
         vectorDrawables.useSupportLibrary = true
-        resValue 'string', 'app_name', "dandelion*"
-        manifestPlaceholders = [appIcon: "@drawable/ic_launcher"]
     }
 
     compileOptions {
@@ -55,10 +53,12 @@ android {
             buildConfigField "boolean", "IS_GPLAY_BUILD", "true"
         }*/
 
+        flavorDandelior {
+            applicationId "net.gsantner.dandelior"
+        }
+
         flavorTest {
-            applicationId "com.github.dfa.secondlion"
-            resValue 'string', 'app_name', "secondlion*"
-            manifestPlaceholders = [appIcon: "@drawable/ic_launcher_test"]
+            applicationId "net.gsantner.secondlion"
             versionCode = Integer.parseInt(new Date().format('yyMMdd'))
             versionName = new Date().format('yyMMdd')
             buildConfigField "boolean", "IS_TEST_BUILD", "true"
