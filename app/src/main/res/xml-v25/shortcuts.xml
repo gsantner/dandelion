@@ -35,14 +35,14 @@
     </shortcut>
 
     <shortcut
-        android:shortcutId="sc_aspects"
+        android:shortcutId="sc_contacts"
         android:enabled="true"
         android:icon="@drawable/sc_aspect"
-        android:shortcutShortLabel="@string/aspects"
-        android:shortcutLongLabel="@string/aspects"
-        android:shortcutDisabledMessage="@string/aspects">
+        android:shortcutShortLabel="@string/contacts"
+        android:shortcutLongLabel="@string/contacts"
+        android:shortcutDisabledMessage="@string/contacts">
         <intent
-            android:action="sc_aspects"
+            android:action="sc_contacts"
             android:targetPackage="com.github.dfa.diaspora_android"
             android:targetClass="com.github.dfa.diaspora_android.activity.MainActivity" />
         <!-- If your shortcut is associated with multiple intents, include them
@@ -52,14 +52,14 @@
     </shortcut>
 
     <shortcut
-        android:shortcutId="sc_nav_followed_tags"
+        android:shortcutId="sc_tags"
         android:enabled="true"
         android:icon="@drawable/sc_tags"
-        android:shortcutShortLabel="@string/nav_followed_tags"
-        android:shortcutLongLabel="@string/nav_followed_tags"
-        android:shortcutDisabledMessage="@string/nav_followed_tags">
+        android:shortcutShortLabel="@string/tags"
+        android:shortcutLongLabel="@string/tags"
+        android:shortcutDisabledMessage="@string/tags">
         <intent
-            android:action="sc_nav_followed_tags"
+            android:action="sc_tags"
             android:targetPackage="com.github.dfa.diaspora_android"
             android:targetClass="com.github.dfa.diaspora_android.activity.MainActivity" />
         <!-- If your shortcut is associated with multiple intents, include them

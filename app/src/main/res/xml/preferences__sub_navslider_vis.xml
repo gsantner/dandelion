@@ -42,8 +42,8 @@
             android:title="@string/nav_public_activities"/>
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="false"
-            android:key="@string/pref_key__visibility_nav__dandelion_account"
-            android:title="@string/dandelion"/>
+            android:key="@string/pref_key__visibility_nav__gsantner_account"
+            android:title="@string/gsantner"/>
 
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 

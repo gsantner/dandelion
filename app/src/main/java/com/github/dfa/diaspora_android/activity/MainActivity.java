@@ -36,6 +36,7 @@ import android.support.customtabs.CustomTabsSession;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
@@ -61,8 +62,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.dfa.diaspora_android.App;
-import com.github.dfa.diaspora_android.BuildConfig;
 import com.github.dfa.diaspora_android.R;
+import com.github.dfa.diaspora_android.data.DiasporaAspect;
 import com.github.dfa.diaspora_android.data.DiasporaPodList;
 import com.github.dfa.diaspora_android.data.DiasporaUserProfile;
 import com.github.dfa.diaspora_android.listener.DiasporaUserProfileChangedListener;
@@ -71,6 +72,7 @@ import com.github.dfa.diaspora_android.receiver.OpenExternalLinkReceiver;
 import com.github.dfa.diaspora_android.receiver.UpdateTitleReceiver;
 import com.github.dfa.diaspora_android.ui.BadgeDrawable;
 import com.github.dfa.diaspora_android.ui.PodSelectionDialog;
+import com.github.dfa.diaspora_android.ui.SearchOrCustomTextDialogCreator;
 import com.github.dfa.diaspora_android.ui.theme.ThemeHelper;
 import com.github.dfa.diaspora_android.ui.theme.ThemedActivity;
 import com.github.dfa.diaspora_android.ui.theme.ThemedAlertDialogBuilder;
@@ -306,14 +308,6 @@ public class MainActivity extends ThemedActivity
                     BrowserFragment bf = new BrowserFragment();
                     fm.beginTransaction().add(bf, fragmentTag).commit();
                     return bf;
-                case TagListFragment.TAG:
-                    TagListFragment hlf = new TagListFragment();
-                    fm.beginTransaction().add(hlf, fragmentTag).commit();
-                    return hlf;
-                case AspectListFragment.TAG:
-                    AspectListFragment alf = new AspectListFragment();
-                    fm.beginTransaction().add(alf, fragmentTag).commit();
-                    return alf;
                 case PodSelectionFragment.TAG:
                     PodSelectionFragment psf = new PodSelectionFragment();
                     fm.beginTransaction().add(psf, fragmentTag).commit();
@@ -370,6 +364,13 @@ public class MainActivity extends ThemedActivity
      * @param fragment Fragment to show
      */
     protected void showFragment(ThemedFragment fragment) {
+        if (PodSelectionFragment.TAG.equals(fragment.getTag())) {
+            Fragment fragment1 = fm.findFragmentByTag(DiasporaStreamFragment.TAG);
+            if (fragment1 != null) {
+                new net.gsantner.opoc.util.ContextUtils(this).restartApp(MainActivity.class);
+            }
+        }
+
         AppLog.v(this, "showFragment()");
         ThemedFragment currentTop = (ThemedFragment) fm.findFragmentById(R.id.fragment_container);
         if (currentTop == null || !currentTop.getFragmentTag().equals(fragment.getFragmentTag())) {
@@ -457,7 +458,7 @@ public class MainActivity extends ThemedActivity
         navMenu.findItem(R.id.nav_statistics).setVisible(_appSettings.isVisibleInNavStatistics());
         navMenu.findItem(R.id.nav_reports).setVisible(_appSettings.isVisibleInNavReports());
         navMenu.findItem(R.id.nav_toggle_desktop_page).setVisible(_appSettings.isVisibleInNavToggleMobileDesktop());
-        navMenu.findItem(R.id.nav_dandelion).setVisible(_appSettings.isVisibleInNavDandelionAccount());
+        navMenu.findItem(R.id.nav_product_support).setVisible(_appSettings.isVisibleInNavGsantnerAccount());
 
 
         // Hide whole group (for logged in use) if no pod was selected
@@ -561,14 +562,16 @@ public class MainActivity extends ThemedActivity
         } else if ("sc_new_post".equals(action)) {
             openDiasporaUrl(urls.getNewPostUrl());
             return;
-        } else if ("sc_nav_followed_tags".equals(action)) {
-            showFragment(getFragment(TagListFragment.TAG));
-            return;
-        } else if ("sc_aspects".equals(action)) {
-            showFragment(getFragment(AspectListFragment.TAG));
-            return;
         } else if ("sc_activities".equals(action)) {
             openDiasporaUrl(urls.getActivityUrl());
+            return;
+        }
+        else if ("sc_contacts".equals(action)) {
+            onNavigationItemSelected(navView.getMenu().findItem(R.id.nav_aspects));
+            return;
+        }
+        else if ("sc_tags".equals(action)) {
+            onNavigationItemSelected(navView.getMenu().findItem(R.id.nav_followed_tags));
             return;
         }
         //Catch split screen recreation
@@ -1062,12 +1065,39 @@ public class MainActivity extends ThemedActivity
             break;
 
             case R.id.nav_followed_tags: {
-                showFragment(getFragment(TagListFragment.TAG));
+                SearchOrCustomTextDialogCreator.showDiasporaTagsDialog(this, arg -> {
+                    if (arg.startsWith(SearchOrCustomTextDialogCreator.SPECIAL_PREFIX)) {
+                        arg = arg.replace(SearchOrCustomTextDialogCreator.SPECIAL_PREFIX, "").trim();
+                        if (arg.equals(getString(R.string.pref_title__manage_tags))) {
+                            openDiasporaUrl(urls.getManageTagsUrl());
+                        } else {
+                            openDiasporaUrl(urls.getAllFollowedTagsUrl());
+                        }
+                    } else {
+                        openDiasporaUrl(urls.getSearchTagsUrl(arg));
+                    }
+                });
             }
             break;
 
             case R.id.nav_aspects: {
-                showFragment(getFragment(AspectListFragment.TAG));
+                SearchOrCustomTextDialogCreator.showDiasporaAspectsDialog(this, arg -> {
+                    if (arg.startsWith(SearchOrCustomTextDialogCreator.SPECIAL_PREFIX)) {
+                        arg = arg.replace(SearchOrCustomTextDialogCreator.SPECIAL_PREFIX, "").trim();
+                        if (arg.equals(getString(R.string.pref_desc__manage_contacts))) {
+                            openDiasporaUrl(urls.getContactsUrl());
+                        } else if (arg.equals(getString(R.string.nav_profile))) {
+                            openDiasporaUrl(urls.getProfileUrl());
+                        }
+                    } else {
+                        for (DiasporaAspect daspect : _appSettings.getAspects()) {
+                            if (arg.equals(daspect.name)) {
+                                openDiasporaUrl(urls.getAspectUrl(Long.toString(daspect.id)));
+                                break;
+                            }
+                        }
+                    }
+                });
             }
             break;
 
@@ -1148,8 +1178,8 @@ public class MainActivity extends ThemedActivity
             }
             break;
 
-            case R.id.nav_dandelion: {
-                openDiasporaUrl(urls.getProfileUrl("48b78420923501341ef3782bcb452bd5"));
+            case R.id.nav_product_support: {
+                openDiasporaUrl(urls.getProfileUrl("d1cbdd70095301341e834860008dbc6c"));
             }
             break;
 

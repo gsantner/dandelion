@@ -347,8 +347,8 @@ public class AppSettings extends SharedPreferencesPropertyBackend {
         return getBool(R.string.pref_key__visibility_nav__reports, false);
     }
 
-    public boolean isVisibleInNavDandelionAccount() {
-        return getBool(R.string.pref_key__visibility_nav__dandelion_account, false);
+    public boolean isVisibleInNavGsantnerAccount() {
+        return getBool(R.string.pref_key__visibility_nav__gsantner_account, false);
     }
 
     public boolean isVisibleInNavToggleMobileDesktop() {
