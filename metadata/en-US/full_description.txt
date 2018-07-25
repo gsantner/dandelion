@@ -10,6 +10,9 @@ It adds useful features to your networking experience:
 🈴 Localized in many languages
 ✔️ Allows system independent language
 
+Notice: For using another diaspora* account, there is a second version available caled dandelior*.
+dandelion* and dandelior* are the mostly the same, the only differencies are colors and app icon.
+
 <b>Support the project:</b>
  ✋ <a href="https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion.git&mail=gro.xobliam@@rentnasg">Translate using Stringlate</a>
  ✋ <a href="https://matrix.to/#/#dandelion:matrix.org">Join discussion on Matrix</a>
