@@ -1,74 +1,9 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <!--Editado con nano-->
 <resources>
-  <!-- Application -->
-  <string name="reload">Actualizar</string>
-  <!-- Common Words -->
-  <string name="settings">Axustes</string>
-  <string name="notifications">Notificacións</string>
-  <string name="conversations">Conversa</string>
-  <string name="stream">Fío de comentarios</string>
-  <string name="profile">Perfil</string>
-  <string name="aspects">Aspecto</string>
-  <string name="activities">Actividades</string>
-  <string name="liked">Gústame</string>
-  <string name="commented">Comentei</string>
-  <string name="mentions">Mencións</string>
-  <string name="public_">Público</string>
-  <string name="search">Buscar</string>
-  <string name="contacts">Contactos</string>
-  <string name="changelog">Rexistro de cambios</string>
-  <string name="statistics">Estatísticas</string>
-  <!-- Notifications dropdown menu -->
-  <string name="notifications__all">Todas as notificacións</string>
-  <string name="notifications__also_commented">Tamén comentado</string>
-  <string name="notifications__comment_on_post">Comentario nunha publicación</string>
-  <string name="notifications__liked">Gústame</string>
-  <string name="notifications__mentioned">Mencionado</string>
-  <string name="notifications__reshared">Compartido</string>
-  <string name="notifications__started_sharing">Comezou a compartir</string>
-  <!-- Pod Activity -->
-  <string name="podlist_error">Problema: non se obtivo a lista de nodos!</string>
-  <string name="no_internet">Desculpe, precisa unha conexión a internet para esa tarefa</string>
-  <string name="confirmation">Confirmación</string>
-  <string name="confirm_exit">Quere saír?</string>
-  <!-- Drawer, Menu, Toolbar, ContextMenu -->
-  <string name="nav_menu_more">Máis</string>
-  <string name="nav_help_license">Sobre | Axuda</string>
-  <string name="nav_followed_tags">Etiquetas seguidas</string>
-  <string name="nav_public_activities">Actividade pública</string>
-  <string name="nav_reports">Informes</string>
-  <string name="share__share_link_as_text">Compartir ligazón como texto</string>
-  <string name="share__share_screenshot">Compartir captura de páxina</string>
-  <string name="share__take_screenshot">Capturar imaxe de páxina web</string>
-  <string name="share__toast_saved_image_to_location">Gardar imaxe en</string>
-  <string name="share__toast_screenshot">Gardando captura como:</string>
-  <string name="share__toast_link_address_copied">Enderezo da ligazón copiado &#8230;</string>
-  <string name="new_post">Nova mensaxe</string>
-  <string name="action_go_to_top">Ir arriba</string>
-  <string name="action_search_by_tags_or_persons">Buscar persoas ou etiquetas</string>
-  <string name="action_exit_app">Saír do app</string>
-  <string name="action_toggle_desktop_page">Vista móbil/escritorio</string>
-  <string name="action_share_dotdotdot">Compartir&#8230;</string>
-  <string name="search_alert_tag">Etiquetas</string>
-  <string name="search_alert_people">Persoas</string>
-  <string name="search_alert_bypeople_validate_needsomedata">Por favor, engada un nome</string>
-  <string name="context_menu_share_link">Compartir ligazón</string>
-  <string name="context_menu_save_image">Gardar imaxe</string>
-  <string name="context_menu_share_image">Compartir imaxe</string>
-  <string name="context_menu_open_external_browser">Abrir nun navegador externo&#8230;</string>
-  <string name="context_menu_copy_link">Copiar ligazón ao portapapeis</string>
-  <string name="context_menu_copy_image_link">Copia enderezo da imaxe ao portapapeis</string>
-  <!-- More from MainActivity -->
-  <string name="unable_to_load_image">Non se cargou a imaxe</string>
-  <!-- Permissions -->
-  <string name="permissions_screenshot">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Despois de iso debería 
-        pechar o aplicativo ou reiniciar o dispositivo. Si non permite acceder ao almacenamento pero que utilizar máis tarde a captura de pantalla, poderá permitir entón o acceso abrindo: preferencias do sistema - apps - dandelion* no dispositivo.
-=======
-<?xml version="1.0" encoding="utf-8"?><!--Editado con nano-->
-<resources>
     <!-- Application -->
+<string name="navigation_drawer_open">Abrir cadro de navegación</string>
+<string name="navigation_drawer_close">Pechar cadro de navegación</string>
     <string name="reload">Actualizar</string>
     <!-- Common Words -->
     <string name="settings">Axustes</string>
@@ -129,10 +64,8 @@
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Non se cargou a imaxe</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Despois de iso debería
-        pechar a aplicación ou reiniciar o dispositivo. Si non permite acceder ao almacenamento pero que utilizar máis tarde a captura de pantalla, poderá permitir entón o acceso abrindo: preferencias do sistema - apps - dandelion* no dispositivo.
->>>>>>> gl-dandelion
-   Na sección de permisos pode activar o \"permiso de acceso a almacenamento\".</string>
+    <string name="permissions_screenshot">Debe permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Pode
+        pechar a aplicación ou reiniciar o dispositivo. Si non permite acceder ao almacenamento pero que utilizar máis tarde a captura de pantalla, poderá permitir posteriormente o acceso na sección de permisos do dispositivo onde pode activar o \"permiso de acceso a almacenamento\" para dandelion*.</string>
     <string name="permissions_image">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar/subir imaxes. Despois de iso debería
         pechar a aplicación ou reiniciar o dispositivo. Se non permite acceder ao almacenamento, para poder gardar imaxes posteriormente, deberá abrir: preferencias do sistema - apps - dandelion* no dispositivo.
    Na sección de permisos pode activar o \"permiso de escritura no almacenamento\".</string>
@@ -148,6 +81,7 @@
     <string name="pref_title__is_statusbar_hidden">Agochar barra de estado</string>
     <string name="pref_summary__show_title">Mostrar título na vista principal</string>
     <string name="pref_title__show_title">Mostrar título</string>
+	<string name="launcher_shortcut">Atallo do lanzador</string>
 
     <string name="about_activity__title_about_app">Sobre</string>
     <string name="about_activity__title_about_license">Licenza</string>
