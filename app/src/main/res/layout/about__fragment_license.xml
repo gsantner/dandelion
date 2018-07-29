@@ -108,14 +108,14 @@
                     style="@android:style/TextAppearance.DeviceDefault.Large"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_license__license"
+                    android:text="@string/licenses"
                     android:layout_marginBottom="8dp"/>
 
                 <TextView
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_license__license_text"/>
+                    android:text="@string/copyright_license_text_official"/>
 
                 <Button
                     android:id="@+id/fragment_license__license_button"

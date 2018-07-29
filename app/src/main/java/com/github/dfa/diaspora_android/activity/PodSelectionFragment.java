@@ -32,7 +32,6 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.SearchView;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -53,7 +52,6 @@ import com.github.dfa.diaspora_android.service.FetchPodsService;
 import com.github.dfa.diaspora_android.ui.PodSelectionDialog;
 import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
 import com.github.dfa.diaspora_android.util.ActivityUtils;
-import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.AppSettings;
 import com.github.dfa.diaspora_android.util.ContextUtils;
 import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
@@ -92,16 +90,14 @@ public class PodSelectionFragment extends ThemedFragment implements SearchView.O
     private String filterString = "";
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        AppLog.d(this, "onCreateView()");
-        View view = inflater.inflate(R.layout.podselection__fragment, container, false);
-        ButterKnife.bind(this, view);
-        return view;
+    protected int getLayoutResId() {
+        return R.layout.podselection__fragment;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ButterKnife.bind(this, view);
         app = (App) getActivity().getApplication();
         appSettings = app.getSettings();
 
@@ -177,11 +173,10 @@ public class PodSelectionFragment extends ThemedFragment implements SearchView.O
         rootView.setBackgroundColor(appSettings.isAmoledColorMode() ? Color.BLACK : Color.WHITE);
         listViewPod.setDivider(new ColorDrawable(Color.GRAY));
         listViewPod.setDividerHeight(dividerHeight);
-        if (appSettings.isAmoledColorMode()) {
-            buttonUseCustomPod.setTextColor(Color.WHITE);
-        } else {
-            buttonUseCustomPod.setTextColor(ContextUtils.get().shouldColorOnTopBeLight(appSettings.getAccentColor()) ? Color.WHITE : Color.BLACK);
-        }
+        int bgcolor = appSettings.isAmoledColorMode() ? Color.DKGRAY : appSettings.getAccentColor();
+        buttonUseCustomPod.setBackgroundColor(bgcolor);
+        buttonUseCustomPod.setTextColor(_cu.shouldColorOnTopBeLight(bgcolor) ? Color.WHITE : Color.BLACK);
+
     }
 
     @Override
@@ -204,7 +199,7 @@ public class PodSelectionFragment extends ThemedFragment implements SearchView.O
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
-                TextView textView = (TextView) view.findViewById(android.R.id.text1);
+                TextView textView = view.findViewById(android.R.id.text1);
                 textView.setTextColor(appSettings.isAmoledColorMode() ? Color.GRAY : Color.BLACK);
                 return view;
             }

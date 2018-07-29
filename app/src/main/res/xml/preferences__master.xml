@@ -17,7 +17,7 @@
             android:summary="@string/pref_desc__sub_nav_slider"
             android:title="@string/pref_title__sub_nav_slider"/>
 
-        <net.gsantner.opoc.ui.LanguagePreference
+        <net.gsantner.opoc.preference.nonsupport.LanguagePreference
             android:icon="@drawable/ic_language_black_48px"
             android:key="@string/pref_key__language"
             android:summary="@string/pref_desc__language"

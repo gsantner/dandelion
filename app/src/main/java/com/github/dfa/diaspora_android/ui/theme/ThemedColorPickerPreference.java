@@ -38,7 +38,7 @@ public class ThemedColorPickerPreference extends Preference implements Themeable
     @Override
     protected void onBindView(View view) {
         super.onBindView(view);
-        colorPreview = (ImageView) view.findViewById(android.R.id.icon);
+        colorPreview = view.findViewById(android.R.id.icon);
         setColors();
     }
 
@@ -50,7 +50,7 @@ public class ThemedColorPickerPreference extends Preference implements Themeable
             AppSettings appSettings = AppSettings.get();
             String key = getKey();
 
-            int color = ContextUtils.get().color(R.color.primary);
+            int color = ContextUtils.get().rcolor(R.color.primary);
             if ((appSettings.isKeyEqual(key, R.string.pref_key__primary_color_shade))) {
                 color = appSettings.getPrimaryColor();
             } else if ((appSettings.isKeyEqual(key, R.string.pref_key__accent_color_shade))) {

@@ -19,9 +19,7 @@
 package com.github.dfa.diaspora_android.ui.theme;
 
 import android.annotation.TargetApi;
-import android.app.ActivityManager;
 import android.content.pm.ActivityInfo;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 
@@ -69,15 +67,7 @@ public abstract class ThemedActivity extends AppCompatActivity {
      */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void updateRecentAppColor() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            BitmapDrawable drawable = ((BitmapDrawable) getDrawable(R.drawable.ic_launcher));
-            if (drawable != null) {
-                setTaskDescription(new ActivityManager.TaskDescription(
-                        getResources().getString(R.string.app_name),
-                        drawable.getBitmap(),
-                        getAppSettings().getPrimaryColor()));
-            }
-        }
+
     }
 
     protected void updateScreenRotation() {

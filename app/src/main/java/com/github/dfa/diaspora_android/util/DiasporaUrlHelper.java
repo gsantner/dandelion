@@ -230,6 +230,15 @@ public class DiasporaUrlHelper {
     }
 
     /**
+     * Return a url that queries posts for the given hashtag query
+     *
+     * @return https://(pod-domain.tld)/followed_tags
+     */
+    public String getAllFollowedTagsUrl() {
+        return getPodUrl() + SUBURL_FOLOWED_TAGS;
+    }
+
+    /**
      * Return a url that queries user accounts for query
      *
      * @param query search term

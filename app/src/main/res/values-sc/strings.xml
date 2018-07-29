@@ -1,96 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <!-- Application -->
-  <string name="navigation_drawer_open">Aberi su pannellu de nàvigu</string>
-  <string name="navigation_drawer_close">Serra su pannellu de nàvigu</string>
-  <string name="reload">Torra a carrigare</string>
+    <!-- Application -->
+    <string name="navigation_drawer_open">Aberi su pannellu de nàvigu</string>
+    <string name="navigation_drawer_close">Serra su pannellu de nàvigu</string>
+    <string name="reload">Torra a carrigare</string>
 
-  <!-- Common Words -->
-  <string name="settings">Impostatziones</string>
-  <string name="notifications">Notìficas</string>
-  <string name="conversations">Arresonos</string>
-  <string name="stream">Flussu</string>
-  <string name="profile">Profilu</string>
-  <string name="aspects">Caras</string>
-  <string name="activities">Atividades</string>
-  <string name="liked">Agradèssidas</string>
-  <string name="commented">Cummentadas</string>
-  <string name="mentions">Numenadas</string>
-  <string name="public_">Pùblicu</string>
-  <string name="search">Chirca</string>
-  <string name="contacts">Cuntatos</string>
-  <string name="changelog">Registru de sas modìficas</string>
-  <string name="statistics">Istatìsticas</string>
+    <!-- Common Words -->
+    <string name="settings">Impostatziones</string>
+    <string name="notifications">Notìficas</string>
+    <string name="conversations">Arresonos</string>
+    <string name="stream">Flussu</string>
+    <string name="profile">Profilu</string>
+    <string name="aspects">Caras</string>
+    <string name="activities">Atividades</string>
+    <string name="liked">Agradèssidas</string>
+    <string name="commented">Cummentadas</string>
+    <string name="mentions">Numenadas</string>
+    <string name="public_">Pùblicu</string>
+    <string name="search">Chirca</string>
+    <string name="contacts">Cuntatos</string>
+    <string name="changelog">Registru de sas modìficas</string>
+    <string name="statistics">Istatìsticas</string>
 
-  <!-- Notifications dropdown menu -->
-  <string name="notifications__all">Totu sas notìficas</string>
-  <string name="notifications__also_commented">Àteros cummentos</string>
-  <string name="notifications__comment_on_post">Cummentu in una publicatzione</string>
-  <string name="notifications__liked">Agradèssidas</string>
-  <string name="notifications__mentioned">Numenada</string>
-  <string name="notifications__reshared">Torrada a cumparzire</string>
-  <string name="notifications__started_sharing">At incumintzadu a cumpartzire</string>
-
-
-  <!-- Pod Activity -->
-  <string name="podlist_error">Errore: Impossìbile recuperare sa lista de sos pods!</string>
-
-  <string name="no_internet">Depes èssere connessu a ìnternet pro sighire</string>
-  <string name="confirmation">Cunfirma</string>
-  <string name="confirm_exit">Cheres essire?</string>
+    <!-- Notifications dropdown menu -->
+    <string name="notifications__all">Totu sas notìficas</string>
+    <string name="notifications__also_commented">Àteros cummentos</string>
+    <string name="notifications__comment_on_post">Cummentu in una publicatzione</string>
+    <string name="notifications__liked">Agradèssidas</string>
+    <string name="notifications__mentioned">Numenada</string>
+    <string name="notifications__reshared">Torrada a cumparzire</string>
+    <string name="notifications__started_sharing">At incumintzadu a cumpartzire</string>
 
 
-  <!-- Drawer, Menu, Toolbar, ContextMenu -->
-  <string name="nav_menu_more">Àteru</string>
-  <string name="nav_help_license">Informatziones |Agiudu</string>
-  <string name="nav_followed_tags">Etichetas sighidas</string>
-  <string name="nav_public_activities">Atividades pùblicas</string>
-  <string name="nav_reports">Sinnalatziones</string>
+    <!-- Pod Activity -->
+    <string name="podlist_error">Errore: Impossìbile recuperare sa lista de sos pods!</string>
 
-  <string name="share__share_link_as_text">Cumpartzi unu ligàmene comente testu</string>
-  <string name="share__share_screenshot">Cumpartzi s\'ischermada de sa pàgina web</string>
-  <string name="share__take_screenshot">Faghe un\'ischermada de sa pàgina web</string>
-  <string name="share__toast_saved_image_to_location">Sarbende s\'immàgine in</string>
-  <string name="share__toast_screenshot">Sarbende s\'ischermada in:</string>
-  <string name="share__toast_link_address_copied">Ligàmene copiadu…</string>
+    <string name="no_internet">Depes èssere connessu a ìnternet pro sighire</string>
+    <string name="confirmation">Cunfirma</string>
+    <string name="confirm_exit">Cheres essire?</string>
 
 
-  <string name="new_post">Publicatzione noa</string>
-  <string name="action_go_to_top">Torra a s\'incumintzu</string>
-  <string name="action_search_by_tags_or_persons">Chirca etichetas o persones</string>
-  <string name="action_exit_app">Essi dae s\'aplicatzione</string>
-  <string name="action_toggle_desktop_page">Allughe/istuda sa versione mòbile</string>
-  <string name="action_share_dotdotdot">Cumpartzi…</string>
+    <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="nav_menu_more">Àteru</string>
+    <string name="nav_help_license">Informatziones |Agiudu</string>
+    <string name="nav_followed_tags">Etichetas sighidas</string>
+    <string name="nav_public_activities">Atividades pùblicas</string>
+    <string name="nav_reports">Sinnalatziones</string>
+
+    <string name="share__share_link_as_text">Cumpartzi unu ligàmene comente testu</string>
+    <string name="share__share_screenshot">Cumpartzi s\'ischermada de sa pàgina web</string>
+    <string name="share__take_screenshot">Faghe un\'ischermada de sa pàgina web</string>
+    <string name="share__toast_saved_image_to_location">Sarbende s\'immàgine in</string>
+    <string name="share__toast_screenshot">Sarbende s\'ischermada in:</string>
+    <string name="share__toast_link_address_copied">Ligàmene copiadu…</string>
 
 
-  <string name="search_alert_tag">pro eticheta</string>
-  <string name="search_alert_people">pro persone</string>
-  <string name="search_alert_bypeople_validate_needsomedata">Pro praghere annanghe unu nùmene</string>
-
-  <string name="context_menu_share_link">Cumpartzi ligàmene</string>
-  <string name="context_menu_save_image">Sarva s\'immàgine</string>
-  <string name="context_menu_share_image">Cumpartzi s\'immàgine</string>
-  <string name="context_menu_open_external_browser">Aberi in un\'esploradore (browser) esternu…</string>
-  <string name="context_menu_copy_link">Còpia su ligàmenes in sos apuntos</string>
-  <string name="context_menu_copy_image_link">Còpia s\'indiritzu de s\'immàgine in sos apuntos</string>
+    <string name="new_post">Publicatzione noa</string>
+    <string name="action_go_to_top">Torra a s\'incumintzu</string>
+    <string name="action_search_by_tags_or_persons">Chirca etichetas o persones</string>
+    <string name="action_exit_app">Essi dae s\'aplicatzione</string>
+    <string name="action_toggle_desktop_page">Allughe/istuda sa versione mòbile</string>
+    <string name="action_share_dotdotdot">Cumpartzi…</string>
 
 
-  <!-- More from MainActivity -->
-  <string name="unable_to_load_image">Impossìbile carrigare s\'immàgine</string>
+    <string name="search_alert_tag">pro eticheta</string>
+    <string name="search_alert_people">pro persone</string>
+    <string name="search_alert_bypeople_validate_needsomedata">Pro praghere annanghe unu nùmene</string>
 
-  <!-- Permissions -->
-  <string name="permissions_screenshot">Depes frunire \"Permissu de atzessu a sa memòria\" pro sarvare sas ischermadas. A pustis dias dèpere         serrare de su totu s\'aplicatzione o torrare a allùghere su dispositivu. Si no as a frunire su permissu a sa memòria ma cheres impreare sa         funtzionalidade de ischermada, prus a tardu, l\'as a pòdere fàghere tando. Pro praghere aberi: systemsettings - apps -         dandelion*. In sa setzione pro sos permissosas a pòdere frunire su \"permissu de atzessu a sa memòria\".</string>
-  <string name="permissions_image">Depes frunire \"Permissu de atzessu a sa memòria\" pro sarvare e carrigare sas immàgines. A pustis dias dèpere         serrare de su totu s\'aplicatzione o torrare a allùghere su dispositivu. Si no as a frunire su permissu a sa memòria ma cheres impreare sa         funtzionalidade de ischermada, prus a tardu, l\'as a pòdere fàghere tando. Pro praghere aberi: systemsettings - apps -         dandelion*. In sa setzione pro sos permissosas a pòdere frunire su \"permissu de atzessu a sa memòria\".</string>
-  <string name="permission_denied">Permissu dennegadu.</string>
-  <string name="permission_granted_try_again">Permissu cuntzessu. Pro praghere torra a proare.</string>
-  <string name="podselection__custom_pod">Pod personalizadu</string>
-  <string name="pod_name">Nùmene de su pod</string>
-  <string name="http_protocol">Protocollu</string>
-  <string name="pod_address">Indiritzu de su pod</string>
-  <string name="missing_value">Valore fartante</string>
-  <string name="jump_to_last_visited_timestamp_in_stream">Brincare a s\'ùrtima pàgina visitada in su flussu?</string>
-  <string name="pref_summary__is_statusbar_hidden">Istichi sa barra de s\'istadu in sa vista printzipale</string>
-  <string name="pref_title__is_statusbar_hidden">Istichi sa barra de s\'istadu</string>
-  <string name="pref_summary__show_title">Ammustra su tìtulu in sa vista printzipale</string>
-  <string name="pref_title__show_title">Ammustra tìtulu</string>
+    <string name="context_menu_share_link">Cumpartzi ligàmene</string>
+    <string name="context_menu_save_image">Sarva s\'immàgine</string>
+    <string name="context_menu_share_image">Cumpartzi s\'immàgine</string>
+    <string name="context_menu_open_external_browser">Aberi in un\'esploradore (browser) esternu…</string>
+    <string name="copy_link_to_clipboard">Còpia su ligàmenes in sos apuntos</string>
+    <string name="context_menu_copy_image_link">Còpia s\'indiritzu de s\'immàgine in sos apuntos</string>
+
+
+    <!-- More from MainActivity -->
+    <string name="unable_to_load_image">Impossìbile carrigare s\'immàgine</string>
+
+    <!-- Permissions -->
+    <string name="permissions_screenshot">Depes frunire \"Permissu de atzessu a sa memòria\" pro sarvare sas ischermadas. A pustis dias dèpere         serrare de su totu s\'aplicatzione o torrare a allùghere su dispositivu. Si no as a frunire su permissu a sa memòria ma cheres impreare sa         funtzionalidade de ischermada, prus a tardu, l\'as a pòdere fàghere tando. Pro praghere aberi: systemsettings - apps -         dandelion*. In sa setzione pro sos permissosas a pòdere frunire su \"permissu de atzessu a sa memòria\".</string>
+    <string name="permissions_image">Depes frunire \"Permissu de atzessu a sa memòria\" pro sarvare e carrigare sas immàgines. A pustis dias dèpere         serrare de su totu s\'aplicatzione o torrare a allùghere su dispositivu. Si no as a frunire su permissu a sa memòria ma cheres impreare sa         funtzionalidade de ischermada, prus a tardu, l\'as a pòdere fàghere tando. Pro praghere aberi: systemsettings - apps -         dandelion*. In sa setzione pro sos permissosas a pòdere frunire su \"permissu de atzessu a sa memòria\".</string>
+    <string name="permission_denied">Permissu dennegadu.</string>
+    <string name="permission_granted_try_again">Permissu cuntzessu. Pro praghere torra a proare.</string>
+    <string name="podselection__custom_pod">Pod personalizadu</string>
+    <string name="pod_name">Nùmene de su pod</string>
+    <string name="http_protocol">Protocollu</string>
+    <string name="pod_address">Indiritzu de su pod</string>
+    <string name="missing_value">Valore fartante</string>
+    <string name="jump_to_last_visited_timestamp_in_stream">Brincare a s\'ùrtima pàgina visitada in su flussu?</string>
+    <string name="pref_summary__is_statusbar_hidden">Istichi sa barra de s\'istadu in sa vista printzipale</string>
+    <string name="pref_title__is_statusbar_hidden">Istichi sa barra de s\'istadu</string>
+    <string name="pref_summary__show_title">Ammustra su tìtulu in sa vista printzipale</string>
+    <string name="pref_title__show_title">Ammustra tìtulu</string>
+
+
+    <string name="about_activity__title_about_app">Informatziones</string>
+    <string name="about_activity__title_about_license">Litzèntzia</string>
+    <string name="about_activity__title_debug_info">Depuratzione dae sos errores</string>
+    <string name="fragment_debug__section_app">Aplicatzione</string>
+    <string name="fragment_debug__section_device">Dispositivu</string>
+    <string name="fragment_debug__section_pod">Pod de diaspora*</string>
+    <string name="fragment_debug__section_log">Registru de depuratzione</string>
+    <string name="fragment_debug__section_log_spam">Registru de depuratzione (a sa minuda)</string>
+    <string name="fragment_debug__app_version">Versione aplicatzione: %1$s</string>
+    <string name="fragment_debug__android_version">Versione Android: %1$s</string>
+    <string name="fragment_debug__device_name">Nùmene dispositivu: %1$s</string>
+    <string name="fragment_debug__app_codename">Nùmene còdighe: %1$s</string>
+    <string name="fragment_debug__pod_profile_name">Nùmene de profilu de su pod: %1$s</string>
+    <string name="fragment_debug__pod_profile_url">Domìniu de su pod: %1$s</string>
+    <string name="fragment_debug__toast_log_copied">Registru de depuratzione copiadu in sos apuntos</string>
+
+    <string name="fragment_about__about_text">dandelion* est s\'aplicatzione tua pro s\'esploratzione de sa retza sotziale diaspora*. Annanghet funtzionalidades comente a barras de ainas utilosas e a su suportu pro server intermediàrios (proxies) comente a sa retza Tor pro s\'esperièntzia sotziale tua.</string>
+
+    <string name="fragment_about__contribute">Contribui a su còdighe!</string>
+    <string name="fragment_about__contribute_text">dandelion* est iscvilupada liberamente e sighit sas idea de su progetu diaspora*. Si cheres contribuire, faghe·lu! In custu momentu semus unu grupu minore meda, nos diat agradare a tènnere cale si siat casta de agiudu!</string>
+    <string name="fragment_about__contribute_button">Otenne su còdighe mitza</string>
+
+    <string name="fragment_about__translate">Tradui s\'aplicatzione!</string>
+    <string name="fragment_about__translate_text">S\'aplicatzione no est disponìbile in sa limba tua? Lu podes cambiare! Proite non nos agiudas traduinde·la? Nois impreamus sa prataforma crowdin pro permìtere a totus de traduire s\'aplicatzione.</string>
+    <string name="fragment_about__translate_button">Faghe·mi traduire</string>
+
+    <string name="fragment_about__feedback">Lassa·nos s\'opinione tua!</string>
+    <string name="fragment_about__feedback_text">dandelion* est galu in isvilupu. Si tenes impòsitos o cale si siat casta de cosa da sinnalare, pro praghere, faghe·la·nos ischire impreende s\'aina de sinnalatziones de errores nostra!</string>
+    <string name="fragment_about__feedback_button">Sinnala errores</string>
+
+    <string name="fragment_about__spread_the_word">Cumpartzi sa paràula!</string>
+    <string name="fragment_about__spread_the_word_text">Faghe connòschere diaspora* e #dandelion a sos amigos e a sa familia tua! Proite no iscries carchi cosa a pitzu de sas esperièntzias tuas? Noas diat agradare meda a ischire ite nde pensas!</string>
+    <string name="fragment_about__spread_the_word_button">Cumpartzi s\'aplicatzione</string>
+    <string name="fragment_about__spread_the_word_share_text">Ei! Dae un\'ograda a #dandelion! %1$s</string>
+
+
+    <!-- License & help (large amount of text) -->
+    <string name="fragment_license__maintainers">Manutentores</string>
+    <string name="fragment_license__maintainers_text">Custa aplicatzione est beninde isvilupada e manutentada dae &lt;br&gt;&lt;br&gt;%1$s</string>
+    <string name="fragment_license__contributors">Contribuidores</string>
+    <string name="fragment_license__contributors_thank_you">%1$s&lt;br&gt;&lt;br&gt;Gràtzias!</string>
+    <string name="fragment_license__license_button">Litzèntzia GNU GPLv3+</string>
+    <string name="fragment_license__thirdparty_libs">Librerias de terzas partes</string>
+    <string name="fragment_license__thirdparty_libs_text">Sunt impreadas custas librerias:</string>
+    <string name="fragment_license__misc_leafpic">Amus pigadu ispiratzione e parte de su còdighe dae LeafPic. Abbistade·bos·lu, est fintzas cussu unu programma lìberu!</string>
+    <string name="fragment_license__misc_leafpic_button">Àteras informatziones</string>
+
+    <!-- Key Names (Untranslatable) -->
+
+    <!-- Operability -->
+    <string name="pref_title__topbar_stream_shortcut">Sa barra superiore aberit su flussu</string>
+    <string name="pref_desc__topbar_stream_shortcut">Incarca in unu tretu bòidu in sa barra superiore de sas ainas pro abèrrere su flussu</string>
+
+
+    <!-- Category Titles -->
+    <string name="pref_cat__visuals">Aparèntzia</string>
+    <string name="pref_cat__network">Retza</string>
+    <string name="pref_cat__pod_settings">Impostatziones de su pod</string>
+    <string name="pref_cat__operability">Operabilidade</string>
+
+    <!-- Visuals -->
+    <!-- Navigiation Slider -->
+    <string name="pref_title__sub_nav_slider">Menù de nàvigu</string>
+    <string name="pref_desc__sub_nav_slider">Controlla sa visibilidade de sos elementos in su menù de nàvigu</string>
+    <string name="pref_cat__visibility_nav_items__user">Impreadore</string>
+    <string name="pref_cat__visibility_nav_items__general">Generales</string>
+    <string name="pref_cat__visibility_nav_items__admin">Amministratzione</string>
+
+    <!-- Themes -->
+    <string name="pref_title__themes">Temas e colores</string>
+    <string name="pref_desc__themes">Controlla cales colores sunt impreados in s\'aplicatzione</string>
+    <string name="pref_title__primary_color">Colore primàriu</string>
+    <string name="pref_desc__primary_color">Colore de sas barras de sas ainas</string>
+    <string name="pref_title__accent_color">Colore secondàriu</string>
+    <string name="pref_desc__accent_color">Colore de sa barra de progressu</string>
+    <string name="pref_title__primary_color__amoled_mode">Modalidade AMOLED</string>
+    <string name="pref_desc__primary_color__amoled_mode">Remplasa sos colores cun su nigheddu pro ischermos AMOLED in medas tretos de s\'aplicatzione. As a dèpere torrare a allùghere s\'aplicatzione pro ativare custa impostatzione. Pro navigare in diaspora* cun su tema iscuru lu depes fintzas allùghere dae sas optziones personales de su contu de diaspora* tuo.</string>
+
+    <!-- Notifications dropdown -->
+    <string name="pref_title__extended_notifications">Notìficas ismanniadas</string>
+    <string name="pref_desc__extended_notifications">Ismànnia su butone de sas notìficas cun unu menù chi ammustrat sas categorias de sas notìficas</string>
+
+    <string name="pref_desc__language">Càmbia sa limba de custa aplicatzione. Torra·la a allùghere pro fàghere tènnere efetu a su cambiamentu</string>
+    <string name="pref_title__language">Limba</string>
+    <string name="language_system">Limba de sistema</string>
+
+    <!-- Font size -->
+    <string name="pref_desc__font_size">Controlla sa mannària de su testu de sa vista web</string>
+    <string name="pref_title__font_size">Mannària de su testu</string>
+    <string name="font_size_normal">Normale</string>
+    <string name="font_size_large">Mannu</string>
+    <string name="font_size_huge">Mannu meda</string>
+
+    <!-- Load images -->
+    <string name="pref_title__load_images">Iscàrriga sas immàgines</string>
+    <string name="pref_desc__load_images">Allughe/istuda su carrigamentu de sas immàgines pro risparmiare sos datos mòbiles</string>
+
+    <!-- Screen rotation -->
+    <string name="pref_title__screen_rotation">Rotatzione de s\'ischermu</string>
+    <string name="pref_desc__screen_rotation">Controlla sa rotatzione automàtica de s\'ischermu</string>
+    <string name="rotation_system">Predefinidu</string>
+    <string name="rotation_sensor">Sensore\n
+    (ignora sas impostatziones de sistema)</string>
+    <string name="rotation_portrait">Verticale</string>
+    <string name="rotation_landscape">Orizontale</string>
+
+    <!-- Proxy -->
+    <string name="pref_title__http_proxy_load_tor_preset">Càrriga sos valores predefinidos de Tor</string>
+    <string name="pref_desc__http_proxy_load_tor_preset">Càrriga sas impostatziones pro su sèrver intermèdiu HTTP de Tor (Orbot)</string>
+    <string name="pref_title__sub_proxy">Server intermèdiu (Proxy)</string>
+    <string name="pref_title__proxy_enabled">Abìlita unu server intermèdiu</string>
+    <string name="pref_desc__http_proxy_enabled">Faghe colare su tràficu de dandelion* in unu server intermèdiu pro isfrancare sos firewalls.\n
+    Diat pòdere èssere netzessàriu a torrare a allùghere s\'aplicatzione. Diat pòdere non funtzionare pro carchi telèfono.</string>
+    <string name="pref_title__http_proxy_host">Host</string>
+    <string name="pref_title__http_proxy_port">Ghenna</string>
+    <string name="toast__proxy_disabled__restart_required">Depes torrare a allùghere s\'aplicatzione pro istudare s\'impreu de su server intermediàriu</string>
+    <string name="toast__proxy_orbot_preset_loaded">Impostatziones de su server de Orbot carrigadas</string>
+
+
+    <!-- Chrome custom tabs -->
+    <string name="pref_desc__chrome_custom_tabs_enabled">Aberi sos ligàmenes esternos cun sas ischedas personalizadas de Chrome. Chromium o Google Chrome depent èssere installados pro lu pòdere fàghere. \n
+    NOTA DE IMPORTU: sas ischedas personalizadas de Chrome no impreant sos servers intermediàrios configurados!</string>
+
+    <!-- Diaspora Settings -->
+    <string name="pref_title__personal_settings">Impostatziones personales</string>
+    <string name="pref_desc__personal_settings">Aberi sas impostatziones de su contu de diaspora* tuo</string>
+    <string name="pref_desc__manage_contacts">Amministra sa lista de sos contatos tuos</string>
+
+    <string name="pref_title__manage_tags">Amministra sas etichetas</string>
+    <string name="pref_desc__manage_tags">Acaba·la de sighire sas etichetas sighidas</string>
+
+    <string name="pref_title__change_account">Càmbia contu</string>
+    <string name="pref_desc__change_account">Iscantzella sos datos de sa sessione locale e cola a un\'àteru contu o pod de diaspora*</string>
+    <string name="pref_warning__change_account">Custu at a iscantzellare totu sos cookies e sos datos de sa sessione. Seguru ses de chèrrere cambiare su contu tuo?</string>
+
+    <string name="pref_title__clear_cache">Iscantzella sa cache</string>
+    <string name="pref_desc__clear_cache">Iscantzella sa cache de sa vista web</string>
+
+
+    <string name="pref_desc__intellihide_toolbars">Istichi automaticamente sas barras superiores e inferiores cando ses iscurrende sa pàgina</string>
+    <string name="pref_title__intellihide_toolbars">Barras chi s\'istichint intelligentemente</string>
+
+    <string name="pref_title__append_shared_via_app">Annanghe un\'avisu de s\'aplicatzione</string>
+    <string name="pref_desc__append_shared_via_app">Annanghe unu riferimentu a custa aplicatzione a sos testos cumpartzidos: [via #dandelion]</string>
+
+    <!-- More -->
+    <string name="pref_title__sub_miscelaneous">Vàriu</string>
+
+    <string name="pref_title__wipe_settings">Reimpostatzione intrea</string>
+    <string name="pref_desc__wipe_settings">Iscantzella localmente totu sos datos relativos a s\'aplicatzione e essi dae totu sos contos</string>
+
+    <string name="dialog_content__wipe_settings">Custu at a fàghere torrare totu sas impostatziones de s\'aplicatzione a sos valores predefinidos e t\'at a fàghere essire dae totu sos pods. Sas immàgines iscarrigadas dae tie no ant a èssere tocadas. Seguru ses de chèrrere sighire?</string>
+
+    <string name="pref_desc__adblock_enable">Abìlita su blocadore de publitzidade de base. Sa publitzidade diat pòdere èssere incluida, pro esèmpiu, in sas visualizatziones incorporadas</string>
+    <string name="pref_title__adblock_enable">Bloca sa publitzidade</string>
 </resources>

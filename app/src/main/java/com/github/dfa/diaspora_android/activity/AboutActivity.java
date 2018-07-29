@@ -20,12 +20,13 @@ package com.github.dfa.diaspora_android.activity;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -157,10 +158,14 @@ public class AboutActivity extends ThemedActivity
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.about__fragment_about, container, false);
-            ButterKnife.bind(this, rootView);
+        protected int getLayoutResId() {
+            return R.layout.about__fragment_about;
+        }
+
+        @Override
+        public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+            super.onViewCreated(view, savedInstanceState);
+            ButterKnife.bind(this, view);
             if (isAdded()) {
                 try {
                     PackageInfo pInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
@@ -170,7 +175,6 @@ public class AboutActivity extends ThemedActivity
                     e.printStackTrace();
                 }
             }
-            return rootView;
         }
 
         @Override
@@ -244,10 +248,14 @@ public class AboutActivity extends ThemedActivity
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.about__fragment_license, container, false);
-            ButterKnife.bind(this, rootView);
-            final Context context = rootView.getContext();
+        protected int getLayoutResId() {
+            return R.layout.about__fragment_license;
+        }
+
+        @Override
+        public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+            super.onViewCreated(view, savedInstanceState);
+            ButterKnife.bind(this, view);
             accentColor = ContextUtils.get().colorToHexString(ThemeHelper.getAccentColor());
 
             maintainers.setTextFormatted(getString(R.string.fragment_license__maintainers_text,
@@ -255,8 +263,7 @@ public class AboutActivity extends ThemedActivity
             contributors.setTextFormatted(getString(R.string.fragment_license__contributors_thank_you,
                     ContextUtils.get().loadMarkdownForTextViewFromRaw(R.raw.contributors, "")));
             thirdPartyLibs.setTextFormatted(
-                    ContextUtils.get().loadMarkdownForTextViewFromRaw(R.raw.license_third_party, ""));
-            return rootView;
+                    ContextUtils.get().loadMarkdownForTextViewFromRaw(R.raw.licenses_3rd_party, ""));
         }
 
         @OnClick({R.id.fragment_license__leafpic_button, R.id.fragment_license__license_button})

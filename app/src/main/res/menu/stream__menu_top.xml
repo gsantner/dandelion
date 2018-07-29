@@ -15,8 +15,18 @@
                 android:id="@+id/action_take_screenshot"
                 android:title="@string/share__take_screenshot" />
             <item
+                android:id="@+id/action_share_pdf"
+                android:title="@string/pdf"
+                android:visible="false" />
+            <item
                 android:id="@+id/action_share_link"
                 android:title="@string/share__share_link_as_text" />
+            <item
+                android:id="@+id/action_share_link_to_clipboard"
+                android:title="@string/copy_link_to_clipboard" />
+            <item
+                android:id="@+id/action_create_launcher_shortcut"
+                android:title="@string/launcher_shortcut" />
         </menu>
     </item>
 

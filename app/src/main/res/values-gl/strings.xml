@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <!--Editado con nano-->
 <resources>
@@ -64,20 +65,209 @@
   <!-- Permissions -->
   <string name="permissions_screenshot">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Despois de iso debería 
         pechar o aplicativo ou reiniciar o dispositivo. Si non permite acceder ao almacenamento pero que utilizar máis tarde a captura de pantalla, poderá permitir entón o acceso abrindo: preferencias do sistema - apps - dandelion* no dispositivo.
+=======
+<?xml version="1.0" encoding="utf-8"?><!--Editado con nano-->
+<resources>
+    <!-- Application -->
+    <string name="reload">Actualizar</string>
+    <!-- Common Words -->
+    <string name="settings">Axustes</string>
+    <string name="notifications">Notificacións</string>
+    <string name="conversations">Conversa</string>
+    <string name="stream">Fío de comentarios</string>
+    <string name="profile">Perfil</string>
+    <string name="aspects">Aspecto</string>
+    <string name="activities">Actividades</string>
+    <string name="liked">Gústame</string>
+    <string name="commented">Comentei</string>
+    <string name="mentions">Mencións</string>
+    <string name="public_">Público</string>
+    <string name="search">Buscar</string>
+    <string name="contacts">Contactos</string>
+    <string name="changelog">Rexistro de cambios</string>
+    <string name="statistics">Estatísticas</string>
+    <!-- Notifications dropdown menu -->
+    <string name="notifications__all">Todas as notificacións</string>
+    <string name="notifications__also_commented">Tamén comentado</string>
+    <string name="notifications__comment_on_post">Comentario nunha publicación</string>
+    <string name="notifications__liked">Gústame</string>
+    <string name="notifications__mentioned">Mencionado</string>
+    <string name="notifications__reshared">Compartido</string>
+    <string name="notifications__started_sharing">Comezou a compartir</string>
+    <!-- Pod Activity -->
+    <string name="podlist_error">Problema: non se obtivo a lista de nodos!</string>
+    <string name="no_internet">Desculpe, precisa unha conexión a internet para esa tarefa</string>
+    <string name="confirmation">Confirmación</string>
+    <string name="confirm_exit">Quere saír?</string>
+    <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="nav_menu_more">Máis</string>
+    <string name="nav_help_license">Sobre | Axuda</string>
+    <string name="nav_followed_tags">Etiquetas seguidas</string>
+    <string name="nav_public_activities">Actividade pública</string>
+    <string name="nav_reports">Informes</string>
+    <string name="share__share_link_as_text">Compartir ligazón como texto</string>
+    <string name="share__share_screenshot">Compartir captura de páxina</string>
+    <string name="share__take_screenshot">Capturar imaxe de páxina web</string>
+    <string name="share__toast_saved_image_to_location">Gardar imaxe en</string>
+    <string name="share__toast_screenshot">Gardando captura como:</string>
+    <string name="share__toast_link_address_copied">Enderezo da ligazón copiado &#8230;</string>
+    <string name="new_post">Nova mensaxe</string>
+    <string name="action_go_to_top">Ir arriba</string>
+    <string name="action_search_by_tags_or_persons">Buscar persoas ou etiquetas</string>
+    <string name="action_exit_app">Saír do app</string>
+    <string name="action_toggle_desktop_page">Vista móbil/escritorio</string>
+    <string name="action_share_dotdotdot">Compartir&#8230;</string>
+    <string name="search_alert_tag">Etiquetas</string>
+    <string name="search_alert_people">Persoas</string>
+    <string name="search_alert_bypeople_validate_needsomedata">Por favor, engada un nome</string>
+    <string name="context_menu_share_link">Compartir ligazón</string>
+    <string name="context_menu_save_image">Gardar imaxe</string>
+    <string name="context_menu_share_image">Compartir imaxe</string>
+    <string name="context_menu_open_external_browser">Abrir nun navegador externo&#8230;</string>
+    <string name="copy_link_to_clipboard">Copiar ligazón ao portapapeis</string>
+    <string name="context_menu_copy_image_link">Copia enderezo da imaxe ao portapapeis</string>
+    <!-- More from MainActivity -->
+    <string name="unable_to_load_image">Non se cargou a imaxe</string>
+    <!-- Permissions -->
+    <string name="permissions_screenshot">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Despois de iso debería
+        pechar a aplicación ou reiniciar o dispositivo. Si non permite acceder ao almacenamento pero que utilizar máis tarde a captura de pantalla, poderá permitir entón o acceso abrindo: preferencias do sistema - apps - dandelion* no dispositivo.
+>>>>>>> gl-dandelion
    Na sección de permisos pode activar o \"permiso de acceso a almacenamento\".</string>
-  <string name="permissions_image">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar/subir imaxes. Despois de iso debería 
-        pechar o aplicativo ou reiniciar o dispositivo. Se non permite acceder ao almacenamento, para poder gardar imaxes posteriormente, deberá abrir: preferencias do sistema - apps - dandelion* no dispositivo.
+    <string name="permissions_image">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar/subir imaxes. Despois de iso debería
+        pechar a aplicación ou reiniciar o dispositivo. Se non permite acceder ao almacenamento, para poder gardar imaxes posteriormente, deberá abrir: preferencias do sistema - apps - dandelion* no dispositivo.
    Na sección de permisos pode activar o \"permiso de escritura no almacenamento\".</string>
-  <string name="permission_denied">Permiso denegado.</string>
-  <string name="permission_granted_try_again">Permiso concedido. Inténteo de novo.</string>
-  <string name="podselection__custom_pod">Nodo personalizado</string>
-  <string name="pod_name">Nome do nodo</string>
-  <string name="http_protocol">Protocolo</string>
-  <string name="pod_address">Enderezo do nodo</string>
-  <string name="missing_value">Faltan datos</string>
-  <string name="jump_to_last_visited_timestamp_in_stream">Ir a última paxina lida na conversa?</string>
-  <string name="pref_summary__is_statusbar_hidden">Agochar a barra de estado na vista principal</string>
-  <string name="pref_title__is_statusbar_hidden">Agochar barra de estado</string>
-  <string name="pref_summary__show_title">Mostrar título na vista principal</string>
-  <string name="pref_title__show_title">Mostrar título</string>
+    <string name="permission_denied">Permiso denegado.</string>
+    <string name="permission_granted_try_again">Permiso concedido. Inténteo de novo.</string>
+    <string name="podselection__custom_pod">Nodo personalizado</string>
+    <string name="pod_name">Nome do nodo</string>
+    <string name="http_protocol">Protocolo</string>
+    <string name="pod_address">Enderezo do nodo</string>
+    <string name="missing_value">Faltan datos</string>
+    <string name="jump_to_last_visited_timestamp_in_stream">Ir a última paxina lida na conversa?</string>
+    <string name="pref_summary__is_statusbar_hidden">Agochar a barra de estado na vista principal</string>
+    <string name="pref_title__is_statusbar_hidden">Agochar barra de estado</string>
+    <string name="pref_summary__show_title">Mostrar título na vista principal</string>
+    <string name="pref_title__show_title">Mostrar título</string>
+
+    <string name="about_activity__title_about_app">Sobre</string>
+    <string name="about_activity__title_about_license">Licenza</string>
+    <string name="about_activity__title_debug_info">Depurando</string>
+    <string name="fragment_debug__section_app">Aplicación</string>
+    <string name="fragment_debug__section_device">Dispositivo</string>
+    <string name="fragment_debug__section_pod">Nodo diaspora*</string>
+    <string name="fragment_debug__section_log">Rexistro de depuración</string>
+    <string name="fragment_debug__section_log_spam">Rexistro de depuración (polo miúdo)</string>
+    <string name="fragment_debug__app_version">Versión do App: %1$s</string>
+    <string name="fragment_debug__android_version">Versión Android: %1$s</string>
+    <string name="fragment_debug__device_name">Nome do dispositivo: %1$s</string>
+    <string name="fragment_debug__app_codename">Alcume: %1$s</string>
+    <string name="fragment_debug__pod_profile_name">Nome do perfil do nodo: %1$s</string>
+    <string name="fragment_debug__pod_profile_url">Dominio do nodo: %1$s</string>
+    <string name="fragment_debug__toast_log_copied">Ficheiro de depuración copiado ao portapapeis</string>
+    <string name="fragment_about__about_text">dandelion* é a súa aplicación para a rede social diaspora*. Engade características como barras de ferramentas e soporte para servidores proxy como a rede Tor para a súa experiencia social.</string>
+    <string name="fragment_about__contribute">Contribúa ao código!</string>
+    <string name="fragment_about__contribute_text">dandelion* é desenvolto libre, libre de Liberdade, e segue o espíritu que marca o proxecto diaspora*. Se quere contribuír, adiante! Por agora somos un equipo pequeno, así que agradecemos calquer tipo de axuda!</string>
+    <string name="fragment_about__contribute_button">Obteña as fontes</string>
+    <string name="fragment_about__translate">Traduza o app!</string>
+    <string name="fragment_about__translate_text">Non está a aplicación no seu idioma? Pode cambiar eso! Por qué non nos axuda traducíndoa? Utilizamos a plataforma github para que calquera poida traducir a app.</string>
+    <string name="fragment_about__translate_button">Deixame traducir</string>
+    <string name="fragment_about__feedback">Qué lle parece!</string>
+    <string name="fragment_about__feedback_text">dandelion* aínda está en desenvolvemento, asi que si ten suxerencias de calquer tipo o valoración, por favor utilice o noso xestor de erros para facérnolo saber!</string>
+    <string name="fragment_about__feedback_button">Reporte erros</string>
+    <string name="fragment_about__spread_the_word">Difunda!</string>
+    <string name="fragment_about__spread_the_word_text">Dígalle aos seus amigos e familiares que utiliza diaspora* e #dandelion! Por qué no escribir sobre a experiencia? Encantaríanos saber de vostede!</string>
+    <string name="fragment_about__spread_the_word_button">Comparta a aplicación</string>
+    <string name="fragment_about__spread_the_word_share_text">Ei!! Olla a #dandelion! %1$s</string>
+    <!-- License & help (large amount of text) -->
+    <string name="fragment_license__maintainers">Mantedores</string>
+    <string name="fragment_license__maintainers_text">Esta aplicación está a ser desenvolta e mantida por &lt;br&gt;&lt;br&gt;%1$s</string>
+    <string name="fragment_license__contributors">Contribúen</string>
+    <string name="fragment_license__contributors_thank_you">%1$s&lt;br&gt;&lt;br&gt;Grazas!</string>
+    <string name="fragment_license__license_button">Licenza GNU GPLv3+</string>
+    <string name="fragment_license__thirdparty_libs">Código de terceiras partes</string>
+    <string name="fragment_license__thirdparty_libs_text">Utilízase o seguinte código:</string>
+    <string name="fragment_license__misc_leafpic">Inspirámonos e collemos código de LeafPic. Bótalle un ollo, tamén é software libre!</string>
+    <string name="fragment_license__misc_leafpic_button">Cóntame máis</string>
+
+    <!-- Key Names (Untranslatable) -->
+    <!-- Operability -->
+    <string name="pref_title__topbar_stream_shortcut">A barra superior carga a conversa</string>
+    <string name="pref_desc__topbar_stream_shortcut">Pulse nun espazo baldeiro na barra superior para abrir a conversa</string>
+    <!-- Category Titles -->
+    <string name="pref_cat__visuals">Aparencia</string>
+    <string name="pref_cat__network">Rede</string>
+    <string name="pref_cat__pod_settings">Axustes do nodo</string>
+    <string name="pref_cat__operability">Operabilidade</string>
+    <!-- Visuals -->
+    <!-- Navigiation Slider -->
+    <string name="pref_title__sub_nav_slider">Cadro de navegación</string>
+    <string name="pref_desc__sub_nav_slider">Controle a visibiidade das entradas no cadro de navegación</string>
+    <string name="pref_cat__visibility_nav_items__user">Usuaria</string>
+    <string name="pref_cat__visibility_nav_items__general">Xeral</string>
+    <string name="pref_cat__visibility_nav_items__admin">Admin</string>
+    <!-- Themes -->
+    <string name="pref_title__themes">Decorado e cores</string>
+    <string name="pref_desc__themes">Estableza qué cores se utilizan na aplicación</string>
+    <string name="pref_title__primary_color">Cor primaria</string>
+    <string name="pref_desc__primary_color">Cor das barras de ferramentas</string>
+    <string name="pref_title__accent_color">Cor de énfase</string>
+    <string name="pref_desc__accent_color">Cor da barra de progreso</string>
+    <string name="pref_title__primary_color__amoled_mode">Modo AMOLED</string>
+    <string name="pref_desc__primary_color__amoled_mode">Sobreescribir as cores co negro dos dispositivos AMOLED en varios lugares da aplicación. Precisa reiniciar para habilitar esta preferencia. Para navegar diaspora* en modo oscuro tamén precisa activar o Decorado Oscuro, que pode atopar nos axustes personais na súa conta de diaspora*.</string>
+    <!-- Notifications dropdown -->
+    <string name="pref_title__extended_notifications">Notificacións extendidas</string>
+    <string name="pref_desc__extended_notifications">Extender a icona da campá de notificación con un menú desplegable que mostre a categoría das notificacións</string>
+    <string name="pref_desc__language">Cambiar o idioma de esta aplicación. Reinicie para que se aplique o troco</string>
+    <string name="pref_title__language">Idioma</string>
+    <string name="language_system">Idioma do sistema</string>
+    <!-- Font size -->
+    <string name="pref_desc__font_size">Estableza o tamaño do texto na Vista Web</string>
+    <string name="pref_title__font_size">Tamaño do texto</string>
+    <string name="font_size_normal">Normal</string>
+    <string name="font_size_large">Grande</string>
+    <string name="font_size_huge">Enorme</string>
+    <!-- Load images -->
+    <string name="pref_title__load_images">Cargar imaxes</string>
+    <string name="pref_desc__load_images">Xestionar a carga de imaxes por ex. para aforrar datos do móbil</string>
+    <!-- Screen rotation -->
+    <string name="pref_title__screen_rotation">Rotación da pantalla</string>
+    <string name="pref_desc__screen_rotation">Controlar a rotación automática da pantalla</string>
+    <string name="rotation_system">Por omisión</string>
+    <string name="rotation_sensor">Sensor\n(ignorar axustes do dispositivo)</string>
+    <string name="rotation_portrait">Retrato</string>
+    <string name="rotation_landscape">Paisaxe</string>
+    <!-- Proxy -->
+    <string name="pref_title__http_proxy_load_tor_preset">Cargar perfil Tor</string>
+    <string name="pref_desc__http_proxy_load_tor_preset">Cargar axustes proxy para Tor (Orbot) HTTP Proxy</string>
+    <string name="pref_title__sub_proxy">Proxy</string>
+    <string name="pref_title__proxy_enabled">Habilitar Proxy</string>
+    <string name="pref_desc__http_proxy_enabled">Proxy para o tráfico de dandelion* para saltar cortalumes.\nPodería precisar reinicio. Esto podería non funcionar en algúns móbiles.</string>
+    <string name="pref_title__http_proxy_host">Servidor</string>
+    <string name="pref_title__http_proxy_port">Porto</string>
+    <string name="toast__proxy_disabled__restart_required">Precisa reiniciar o app para deshabilitar o uso do proxy</string>
+    <string name="toast__proxy_orbot_preset_loaded">Cargadas as preferencias do proxy Orbot</string>
+    <!-- Chrome custom tabs -->
+    <string name="pref_desc__chrome_custom_tabs_enabled">Abrir ligazóns externas con Chrome Custom Tabs. Chromium ou Google Chrome ten que estar instalado para utilizar esta característica.\nIMPORTANTE: Chrome Custom Tabs non utiliza os servidores proxy configurados!</string>
+    <!-- Diaspora Settings -->
+    <string name="pref_title__personal_settings">Axustes personais</string>
+    <string name="pref_desc__personal_settings">Abrir os axustes da conta diaspora*</string>
+    <string name="pref_desc__manage_contacts">Xestione a súa lista de contactos</string>
+    <string name="pref_title__manage_tags">Xestionar etiquetas</string>
+    <string name="pref_desc__manage_tags">Deixar de seguir etiquetas que segue</string>
+    <string name="pref_title__change_account">Mudar de conta</string>
+    <string name="pref_desc__change_account">Eliminar os datos locais da sesión e cambiar a outro nodo/conta de diaspora*</string>
+    <string name="pref_warning__change_account">Esto eliminará todas as cookies e datos de sesión. Seguro que quere mudar de conta?</string>
+    <string name="pref_title__clear_cache">Limpar cache</string>
+    <string name="pref_desc__clear_cache">Limpar a cache da VistaWeb</string>
+    <string name="pref_desc__intellihide_toolbars">Agochar automáticamente as barras superior e inferior mentras desplaza</string>
+    <string name="pref_title__intellihide_toolbars">Barras de ferramentas intelixentes</string>
+    <string name="pref_title__append_shared_via_app">Engadir aviso-compartido-por</string>
+    <string name="pref_desc__append_shared_via_app">Engadir unha referencia a que foi compartido desde esta aplicación: [via #dandelion]</string>
+    <!-- More -->
+    <string name="pref_title__sub_miscelaneous">Varios</string>
+    <string name="pref_title__wipe_settings">Restablecer completamente</string>
+    <string name="pref_desc__wipe_settings">Eliminar todas os axustes locais do app e desconectar todas as contas</string>
+    <string name="dialog_content__wipe_settings">Esto restablecerá todos os axustes da aplicación ao valor por omisión e desconectarao de todos os nodos. As súas imaxes descargadas permanecerán. Seguro que quere proceder?</string>
+    <string name="pref_desc__adblock_enable">Habilitar un AdBlocker básico. Poderían verse anuncios por exemplo en vistas incrustadas</string>
+    <string name="pref_title__adblock_enable">Bloquear publicidade</string>
 </resources>

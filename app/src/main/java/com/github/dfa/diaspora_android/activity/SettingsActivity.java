@@ -305,10 +305,10 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
             final ThemedAlertDialogBuilder builder = new ThemedAlertDialogBuilder(context, appSettings);
             builder.setView(dialogLayout);
 
-            final FrameLayout titleBackground = (FrameLayout) dialogLayout.findViewById(R.id.color_picker_dialog__title_background);
-            final TextView title = (TextView) dialogLayout.findViewById(R.id.color_picker_dialog__title);
-            final LineColorPicker base = (LineColorPicker) dialogLayout.findViewById(R.id.color_picker_dialog__base_picker);
-            final LineColorPicker shade = (LineColorPicker) dialogLayout.findViewById(R.id.color_picker_dialog__shade_picker);
+            final FrameLayout titleBackground = dialogLayout.findViewById(R.id.color_picker_dialog__title_background);
+            final TextView title = dialogLayout.findViewById(R.id.color_picker_dialog__title);
+            final LineColorPicker base = dialogLayout.findViewById(R.id.color_picker_dialog__base_picker);
+            final LineColorPicker shade = dialogLayout.findViewById(R.id.color_picker_dialog__shade_picker);
 
             title.setText(type == 1 ? R.string.pref_title__primary_color : R.string.pref_title__accent_color);
             title.setTextColor(getResources().getColor(R.color.white));
@@ -483,11 +483,7 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
                         public void onClick(DialogInterface dialogInterface, int i) {
                             appSettings.resetAppSettings();
                             appSettings.resetPodSettings();
-                            Intent restartActivity = new Intent(getActivity(), MainActivity.class);
-                            PendingIntent pendingIntent = PendingIntent.getActivity(getActivity(), 12374, restartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
-                            AlarmManager mgr = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
-                            mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, pendingIntent);
-                            System.exit(0);
+                            new net.gsantner.opoc.util.ContextUtils(appSettings.getContext()).restartApp(MainActivity.class);
                         }
                     }).setNegativeButton(android.R.string.cancel, null)
                     .create().show();

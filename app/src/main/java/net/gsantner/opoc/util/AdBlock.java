@@ -1,14 +1,13 @@
-/*
- * ---------------------------------------------------------------------------- *
- * Gregor Santner <gsantner.net> wrote this file. You can do whatever
- * you want with this stuff. If we meet some day, and you think this stuff is
- * worth it, you can buy me a coke in return. Provided as is without any kind
- * of warranty. No attribution required.                  - Gregor Santner
+/*#######################################################
  *
- * License of this file: Creative Commons Zero (CC0 1.0)
- *  http://creativecommons.org/publicdomain/zero/1.0/
- * ----------------------------------------------------------------------------
- */
+ *   Maintained by Gregor Santner, 2017-
+ *   https://gsantner.net/
+ *
+ *   License: Apache 2.0
+ *  https://github.com/gsantner/opoc/#licensing
+ *  https://www.apache.org/licenses/LICENSE-2.0
+ *
+#########################################################*/
 
 /*
  * Place adblock hosts file in raw: src/main/res/raw/adblock_domains__xyz.txt

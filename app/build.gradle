@@ -14,17 +14,16 @@ android {
         targetSdkVersion version_setup_targetSdk
         buildConfigField "boolean", "IS_TEST_BUILD", "false"
         buildConfigField "boolean", "IS_GPLAY_BUILD", "false"
-        buildConfigField "String[]", "APPLICATION_LANGUAGES", "${getUsedAndroidLanguages()}"
+        buildConfigField "String[]", "DETECTED_ANDROID_LOCALES", "${findUsedAndroidLocales()}"
         buildConfigField "String", "GITHASH", "\"${getGitHash()}\""
+        resValue "string", "manifest_package_id", "com.github.dfa.diaspora_android"
 
         applicationId "com.github.dfa.diaspora_android"
-        versionName "1.1.0"
-        versionCode 29
+        versionName "1.2.0"
+        versionCode 33
 
 
         vectorDrawables.useSupportLibrary = true
-        resValue 'string', 'app_name', "dandelion*"
-        manifestPlaceholders = [appIcon: "@drawable/ic_launcher"]
     }
 
     compileOptions {
@@ -53,10 +52,13 @@ android {
         flavorGplay {
             buildConfigField "boolean", "IS_GPLAY_BUILD", "true"
         }*/
+
+        flavorDandelior {
+            applicationId "net.gsantner.dandelior"
+        }
+
         flavorTest {
-            applicationId "com.github.dfa.secondlion"
-            resValue 'string', 'app_name', "secondlion*"
-            manifestPlaceholders = [appIcon: "@drawable/ic_launcher_test"]
+            applicationId "net.gsantner.secondlion"
             versionCode = Integer.parseInt(new Date().format('yyMMdd'))
             versionName = new Date().format('yyMMdd')
             buildConfigField "boolean", "IS_TEST_BUILD", "true"

@@ -71,7 +71,7 @@ public class BadgeDrawable extends Drawable {
         Rect bounds = getBounds();
         float width = bounds.right - bounds.left;
         float height = bounds.bottom - bounds.top;
-        float oneDp = ContextUtils.get().dp2px(1);
+        float oneDp = ContextUtils.get().convertDpToPx(1);
 
         // Position the badge in the top-right quadrant of the icon.
         float radius = ((Math.max(width, height) / 2)) / 2;

@@ -59,7 +59,7 @@ public class FetchPodsService extends Service {
 }
 
 class GetPodsTask extends AsyncTask<Void, Void, DiasporaPodList> {
-    private static final String PODDY_PODLIST_URL = "https://raw.githubusercontent.com/Diaspora-for-Android/dandelion/master/app/src/main/res/raw/podlist.json";
+    private static final String PODDY_PODLIST_URL = "https://raw.githubusercontent.com/gsantner/dandelion/master/app/src/main/res/raw/podlist.json";
 
     private final Service service;
 

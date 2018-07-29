@@ -35,6 +35,7 @@ import com.github.dfa.diaspora_android.util.AppSettings;
 import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
 
 import net.gsantner.opoc.util.AdBlock;
+import net.gsantner.opoc.util.ContextUtils;
 
 public class App extends Application {
     private volatile static App app;
@@ -53,6 +54,13 @@ public class App extends Application {
         app = this;
         final Context c = getApplicationContext();
         appSettings = AppSettings.get();
+
+        String a = new ContextUtils(this).bcstr("FLAVOR", "");
+        a += "__";
+
+        if (appSettings.isAppFirstStart() && "flavorDandelior".equals(new ContextUtils(this).bcstr("FLAVOR", ""))){
+            appSettings.setAmoledColorMode(true);
+        }
 
         // Init app log
         AppLog.setLoggingEnabled(appSettings.isLoggingEnabled());

@@ -18,6 +18,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Environment;
 
 import com.github.dfa.diaspora_android.App;
 import com.github.dfa.diaspora_android.BuildConfig;
@@ -26,19 +27,20 @@ import com.github.dfa.diaspora_android.data.DiasporaAspect;
 import com.github.dfa.diaspora_android.data.DiasporaPodList.DiasporaPod;
 import com.github.dfa.diaspora_android.web.ProxyHandler;
 
-import net.gsantner.opoc.util.AppSettingsBase;
+import net.gsantner.opoc.preference.SharedPreferencesPropertyBackend;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.List;
 
 /**
  * Settings
- * Created by gsantner (http://gsantner.net/) on 20.03.16. Part of dandelion*.
+ * Created by gsantner (https://gsantner.net/) on 20.03.16. Part of dandelion*.
  */
 @SuppressWarnings("ConstantConditions")
-public class AppSettings extends AppSettingsBase {
+public class AppSettings extends SharedPreferencesPropertyBackend {
     private final SharedPreferences _prefPod;
     private DiasporaPod currentPod0Cached;
 
@@ -46,7 +48,7 @@ public class AppSettings extends AppSettingsBase {
         return new AppSettings(App.get());
     }
 
-    private AppSettings(Context context) {
+    public AppSettings(Context context) {
         super(context);
         _prefPod = _context.getSharedPreferences("pod0", Context.MODE_PRIVATE);
     }
@@ -145,7 +147,11 @@ public class AppSettings extends AppSettingsBase {
     }
 
     public void setPodAspects(DiasporaAspect[] aspects) {
-        setStringArray(R.string.pref_key__podprofile_aspects, aspects, _prefPod);
+        String[] strs = new String[aspects.length];
+        for (int i = 0; i < strs.length; i++) {
+            strs[i] = aspects[i].toShareAbleText();
+        }
+        setStringArray(R.string.pref_key__podprofile_aspects, strs, _prefPod);
     }
 
     public DiasporaAspect[] getAspects() {
@@ -341,8 +347,8 @@ public class AppSettings extends AppSettingsBase {
         return getBool(R.string.pref_key__visibility_nav__reports, false);
     }
 
-    public boolean isVisibleInNavDandelionAccount() {
-        return getBool(R.string.pref_key__visibility_nav__dandelion_account, false);
+    public boolean isVisibleInNavGsantnerAccount() {
+        return getBool(R.string.pref_key__visibility_nav__gsantner_account, false);
     }
 
     public boolean isVisibleInNavToggleMobileDesktop() {
@@ -363,10 +369,17 @@ public class AppSettings extends AppSettingsBase {
         return value;
     }
 
-    public boolean isAppCurrentVersionFirstStart() {
+    public boolean isAppCurrentVersionFirstStart(boolean doSet) {
         int value = getInt(R.string.pref_key__app_first_start_current_version, -1);
-        setInt(R.string.pref_key__app_first_start_current_version, BuildConfig.VERSION_CODE);
+        if (doSet) {
+            setInt(R.string.pref_key__app_first_start_current_version, BuildConfig.VERSION_CODE);
+        }
         return value != BuildConfig.VERSION_CODE && !BuildConfig.IS_TEST_BUILD;
+    }
+
+    public File getAppSaveDirectory() {
+        return new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/dandelion");
+
     }
 
     public long getLastVisitedPositionInStream() {
@@ -429,6 +442,9 @@ public class AppSettings extends AppSettingsBase {
 
     public boolean isAmoledColorMode() {
         return getBool(R.string.pref_key__primary_color__amoled_mode, false);
+    }
+    public void setAmoledColorMode(boolean enable) {
+        setBool(R.string.pref_key__primary_color__amoled_mode, enable);
     }
 
     public boolean isAdBlockEnabled() {

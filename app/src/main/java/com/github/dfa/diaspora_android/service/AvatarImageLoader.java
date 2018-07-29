@@ -24,6 +24,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.widget.ImageView;
 
+import net.gsantner.opoc.util.DownloadTask;
+
 import java.io.File;
 
 public class AvatarImageLoader {
@@ -52,7 +54,9 @@ public class AvatarImageLoader {
 
     public void startImageDownload(ImageView imageView, String avatarUrl) {
         if (!avatarUrl.equals("")) {
-            new ImageDownloadTask(imageView, avatarFile.getAbsolutePath()).execute(avatarUrl);
+            new DownloadTask(new File(avatarFile.getAbsolutePath()), (ok, file) -> {
+                loadToImageView(imageView);
+            }).execute(avatarUrl);
         }
     }
 }

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App - AppName specific -->
     <string name="dandelion" translatable="false">dandelion*</string>
@@ -5,9 +6,10 @@
     <string name="shared_via_app" translatable="false">
         \n\n\n_________________________\n
         **Tags:** #dandelíon  \n\n
-        *via [dandelion*](/people?q=dandelion00%40diasp.org) client / [GitHub](https://github.com/Diaspora-for-Android/dandelion)*</string>
+        *via [dandelion*](/people?q=dandelion00%40diasp.org) client [(Source)](https://github.com/gsantner/dandelion)*</string>
 
 
+    <string name="tags" translatable="false">Tags</string>
     <string name="tor" translatable="false">Tor</string>
     <string name="HTTP" translatable="false">HTTP</string>
 
@@ -15,6 +17,23 @@
     <string name="search_alert_title" translatable="false">@string/search</string>
     <string name="http" translatable="false">http</string>
     <string name="https" translatable="false">https</string>
+
+    <string name="licenses" translatable="false">@string/about_activity__title_about_license</string>
+    <string name="copyright_license_text_official" translatable="false">
+        Copyright © 2015-2018
+        \nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+        \n
+        \nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+    </string>
+    <string name="fragment_license__license_gpl_link" translatable="false">https://www.gnu.org/licenses/gpl-3.0.html</string>
+    <string name="fragment_license__misc" translatable="false">@string/pref_title__sub_miscelaneous</string>
+    <string name="fragment_licesen__misc_leafpic_link" translatable="false">https://github.com/HoraApps/LeafPic</string>
+    <string name="fragment_about__fdroid_link" translatable="false">https://f-droid.org/repository/browse/?fdid=com.github.dfa.diaspora_android</string>
+    <string name="fragment_about__about" translatable="false">@string/app_name</string>
+    <string name="fragment_about__contribute_link" translatable="false">https://github.com/gsantner/dandelion</string>
+    <string name="fragment_about__translate_link" translatable="false">https://crowdin.com/project/gsantner/invite</string>
+    <string name="fragment_About__feedback_link" translatable="false">https://github.com/gsantner/dandelion/issues</string>
+
 
 
     <string name="not_implemented" translatable="false">not_implemented</string>
@@ -98,7 +117,7 @@
     <string name="pref_key__visibility_nav__reports" translatable="false">pref_key__visibility_nav__reports</string>
     <string name="pref_key__visibility_nav__statistics" translatable="false">pref_key__visibility_nav__statistics</string>
     <string name="pref_key__visibility_nav__toggle_mobile_desktop" translatable="false">pref_key__visibility_nav__toggle_mobile_desktop</string>
-    <string name="pref_key__visibility_nav__dandelion_account" translatable="false">pref_key__visibility_nav__dandelion_account</string>
+    <string name="pref_key__visibility_nav__gsantner_account" translatable="false">pref_key__visibility_nav__gsantner_account</string>
     <string name="pref_key__podprofile_avatar_url" translatable="false">pref_key__podprofile_avatar_url</string>
     <string name="pref_key__podprofile_name" translatable="false">pref_key__podprofile_name</string>
     <string name="pref_key__podprofile_id" translatable="false">pref_key__podprofile_id</string>
@@ -127,4 +146,6 @@
     <string name="pref_key__is_overview_statusbar_hidden" translatable="false">pref_key__is_overview_statusbar_hidden</string>
     <string name="pref_key__recreate_main_activity" translatable="false">pref_key__recreate_main_activity</string>
     <string name="pref_key__show_title" translatable="false">pref_key__show_title</string>
+    <string name="pdf" translatable="false">PDF</string>
+    <string name="gsantner" translatable="false">gsantner</string>
 </resources>

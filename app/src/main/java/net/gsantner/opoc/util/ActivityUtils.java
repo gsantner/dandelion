@@ -1,14 +1,13 @@
-/*
- * ------------------------------------------------------------------------------
- * Gregor Santner <gsantner.net> wrote this. You can do whatever you want
- * with it. If we meet some day, and you think it is worth it, you can buy me a
- * coke in return. Provided as is without any kind of warranty. Do not blame or
- * sue me if something goes wrong. No attribution required.    - Gregor Santner
+/*#######################################################
  *
- * License: Creative Commons Zero (CC0 1.0)
- *  http://creativecommons.org/publicdomain/zero/1.0/
- * ----------------------------------------------------------------------------
- */
+ *   Maintained by Gregor Santner, 2016-
+ *   https://gsantner.net/
+ *
+ *   License: Apache 2.0 / Commercial
+ *  https://github.com/gsantner/opoc/#licensing
+ *  https://www.apache.org/licenses/LICENSE-2.0
+ *
+#########################################################*/
 package net.gsantner.opoc.util;
 
 import android.app.Activity;
@@ -19,6 +18,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.StringRes;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.AppCompatTextView;
 import android.text.Html;
@@ -28,6 +28,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
+import android.webkit.WebView;
 
 
 @SuppressWarnings({"WeakerAccess", "unused", "SameParameterValue", "SpellCheckingInspection"})
@@ -93,16 +94,16 @@ public class ActivityUtils extends net.gsantner.opoc.util.ContextUtils {
     }
 
     public void hideSoftKeyboard() {
-        InputMethodManager inputMethodManager = (InputMethodManager) _activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
-        if (_activity.getCurrentFocus() != null && _activity.getCurrentFocus().getWindowToken() != null) {
-            inputMethodManager.hideSoftInputFromWindow(_activity.getCurrentFocus().getWindowToken(), 0);
+        InputMethodManager imm = (InputMethodManager) _activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        if (imm != null && _activity.getCurrentFocus() != null && _activity.getCurrentFocus().getWindowToken() != null) {
+            imm.hideSoftInputFromWindow(_activity.getCurrentFocus().getWindowToken(), 0);
         }
     }
 
     public void showSoftKeyboard() {
-        InputMethodManager inputMethodManager = (InputMethodManager) _activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
-        if (_activity.getCurrentFocus() != null && _activity.getCurrentFocus().getWindowToken() != null) {
-            inputMethodManager.showSoftInput(_activity.getCurrentFocus(), InputMethodManager.SHOW_FORCED);
+        InputMethodManager imm = (InputMethodManager) _activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        if (imm != null && _activity.getCurrentFocus() != null && _activity.getCurrentFocus().getWindowToken() != null) {
+            imm.showSoftInput(_activity.getCurrentFocus(), InputMethodManager.SHOW_FORCED);
         }
     }
 
@@ -126,6 +127,16 @@ public class ActivityUtils extends net.gsantner.opoc.util.ContextUtils {
         dialog.show();
     }
 
+    public void showDialogWithRawFileInWebView(String fileInRaw, @StringRes int resTitleId) {
+        WebView wv = new WebView(_context);
+        wv.loadUrl("file:///android_res/raw/" + fileInRaw);
+        AlertDialog.Builder dialog = new AlertDialog.Builder(_context)
+                .setPositiveButton(android.R.string.ok, null)
+                .setTitle(resTitleId)
+                .setView(wv);
+        dialog.show();
+    }
+
     // Toggle with no param, else set visibility according to first bool
     public void toggleStatusbarVisibility(boolean... optionalForceVisible) {
         WindowManager.LayoutParams attrs = _activity.getWindow().getAttributes();
@@ -140,7 +151,7 @@ public class ActivityUtils extends net.gsantner.opoc.util.ContextUtils {
         _activity.getWindow().setAttributes(attrs);
     }
 
-    public void showRateOnGplayDialog() {
+    public void showGooglePlayEntryForThisApp() {
         String pkgId = "details?id=" + _activity.getPackageName();
         Intent goToMarket = new Intent(Intent.ACTION_VIEW, Uri.parse("market://" + pkgId));
         goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
@@ -151,6 +162,16 @@ public class ActivityUtils extends net.gsantner.opoc.util.ContextUtils {
         } catch (ActivityNotFoundException e) {
             _activity.startActivity(new Intent(Intent.ACTION_VIEW,
                     Uri.parse("http://play.google.com/store/apps/" + pkgId)));
+        }
+    }
+
+    public void setStatusbarColor(int color, boolean... fromRes) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if (fromRes != null && fromRes.length > 0 && fromRes[0]) {
+                color = ContextCompat.getColor(_context, color);
+            }
+
+            _activity.getWindow().setStatusBarColor(color);
         }
     }
 }
