@@ -1,1 +1,1 @@
-Client for the diaspora* social network
+diaspora* social network client
