@@ -1,3 +1,20 @@
+### v1.2.1
+**App release: dandelior**
+- Added an (rebranded) flavor of dandelion: dandelior
+- Only differenties in use are other (black) icon and AMOLED colors by default enabled
+- Already available on F-Droid
+
+**New features:**  
+- All new Aspects and Tags, using a searchable dialog
+- A new home - project blog/page: <https://gsantner.net/project/dandelion.html>
+
+**Fixed:**  
+- Sometimes the Stream went white, which is due an still (>3 years) unfixed Android Support library bug. It should not occur very often anymore due less use of fragments.
+
+**Improved:**
+- Various small tweaks
+- Updated translation files
+
 ### v1.1.3
 - Improve sharing *a lot*, add support for multiple filetypes
 - Support for downloading GIFs ;)
