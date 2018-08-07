@@ -93,6 +93,7 @@
     <string name="pref_title__is_statusbar_hidden">Istichi sa barra de s\'istadu</string>
     <string name="pref_summary__show_title">Ammustra su tìtulu in sa vista printzipale</string>
     <string name="pref_title__show_title">Ammustra tìtulu</string>
+    <string name="launcher_shortcut">Incurtzada de s\'allughidore</string>
 
 
     <string name="about_activity__title_about_app">Informatziones</string>
