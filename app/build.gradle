@@ -19,8 +19,8 @@ android {
         resValue "string", "manifest_package_id", "com.github.dfa.diaspora_android"
 
         applicationId "com.github.dfa.diaspora_android"
-        versionName "1.2.1"
-        versionCode 34
+        versionName "1.2.2"
+        versionCode 35
 
 
         vectorDrawables.useSupportLibrary = true
