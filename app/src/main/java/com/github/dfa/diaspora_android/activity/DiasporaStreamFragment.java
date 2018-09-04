@@ -152,7 +152,7 @@ public class DiasporaStreamFragment extends BrowserFragment {
                 sharingIntent.setType("text/plain");
                 sharingIntent.putExtra(Intent.EXTRA_SUBJECT, webView.getTitle());
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, webView.getUrl());
-                startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.action_share_dotdotdot)));
+                startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.share_dotdotdot)));
                 return true;
             }
 
@@ -165,7 +165,7 @@ public class DiasporaStreamFragment extends BrowserFragment {
 
             case R.id.action_share_link_to_clipboard: {
                 shu.setClipboard(webView.getUrl());
-                Toast.makeText(getContext(), R.string.share__toast_link_address_copied, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.link_adress_copied, Toast.LENGTH_SHORT).show();
                 return true;
             }
 
@@ -180,13 +180,13 @@ public class DiasporaStreamFragment extends BrowserFragment {
             }
 
             case R.id.action_take_screenshot: {
-                if (permc.doIfExtStoragePermissionGranted(getString(R.string.permissions_screenshot))) {
+                if (permc.doIfExtStoragePermissionGranted(getString(R.string.screenshot_permission__appspecific))) {
                     File fileSaveDirectory = appSettings.getAppSaveDirectory();
                     if (permc.mkdirIfStoragePermissionGranted(fileSaveDirectory)) {
                         Bitmap bmp = ShareUtil.getBitmapFromWebView(webView);
                         String filename = "dandelion-" + ShareUtil.SDF_SHORT.format(new Date()) + ".jpg";
                         _cu.writeImageToFileJpeg(new File(fileSaveDirectory, filename), bmp);
-                        Snackbar.make(webView, getString(R.string.share__toast_screenshot)
+                        Snackbar.make(webView, getString(R.string.saving_screenshot_as)
                                 + " " + filename, Snackbar.LENGTH_LONG).show();
                     }
                 }
@@ -194,7 +194,7 @@ public class DiasporaStreamFragment extends BrowserFragment {
             }
 
             case R.id.action_share_screenshot: {
-                if (permc.doIfExtStoragePermissionGranted(getString(R.string.permissions_screenshot))) {
+                if (permc.doIfExtStoragePermissionGranted(getString(R.string.screenshot_permission__appspecific))) {
                     shu.shareImage(ShareUtil.getBitmapFromWebView(webView), Bitmap.CompressFormat.JPEG);
                 }
                 return true;
@@ -293,7 +293,7 @@ public class DiasporaStreamFragment extends BrowserFragment {
                 if (hasWRITE_EXTERNAL_STORAGE != PackageManager.PERMISSION_GRANTED) {
                     if (!shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
                         new ThemedAlertDialogBuilder(getContext(), appSettings)
-                                .setMessage(R.string.permissions_image)
+                                .setMessage(R.string.image_permission_description__appspecific)
                                 .setNegativeButton(android.R.string.no, null)
                                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                     @Override

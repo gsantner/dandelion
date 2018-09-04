@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
-    <string name="navigation_drawer_open">Abra o painel de navegação</string>
-    <string name="navigation_drawer_close">Fechar painel de navegação</string>
+    <string name="open_navdrawer">Abra o painel de navegação</string>
+    <string name="close_navdrawer">Fechar painel de navegação</string>
     <string name="reload">Atualizar</string>
     <!-- Common Words -->
     <string name="settings">Configurações</string>
@@ -21,58 +21,58 @@
     <string name="changelog">Histórico de mudanças</string>
     <string name="statistics">Estatísticas</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Todas as notificações</string>
-    <string name="notifications__also_commented">Também comentado</string>
-    <string name="notifications__comment_on_post">Comentar no post</string>
-    <string name="notifications__liked">Curtidas</string>
-    <string name="notifications__mentioned">Mencionado</string>
-    <string name="notifications__reshared">Recompartilhado</string>
-    <string name="notifications__started_sharing">Começou a compartilhar</string>
+    <string name="all_notifications">Todas as notificações</string>
+    <string name="also_commented">Também comentado</string>
+    <string name="comment_on_post">Comentar no post</string>
+    <string name="deleteme_____1">Curtidas</string>
+    <string name="mentioned">Mencionado</string>
+    <string name="reshared">Recompartilhado</string>
+    <string name="started_sharing">Começou a compartilhar</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Erro: Impossível recuperar as informações dos pods!</string>
-    <string name="no_internet">Você precisa conectar à Internet para prosseguir</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Erro: Impossível recuperar as informações dos pods!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Você precisa conectar à Internet para prosseguir</string>
     <string name="confirmation">Confirmação</string>
-    <string name="confirm_exit">Deseja sair?</string>
+    <string name="do_you_want_to_exit">Deseja sair?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Mais</string>
-    <string name="nav_help_license">Sobre | Ajuda</string>
-    <string name="nav_followed_tags">Tags seguidas</string>
-    <string name="nav_public_activities">Atividades públicas</string>
-    <string name="nav_reports">Relatórios</string>
-    <string name="share__share_link_as_text">Compartilhar link como texto</string>
-    <string name="share__share_screenshot">Compartilhar uma captura de tela da página</string>
-    <string name="share__take_screenshot">Tirar uma captura de tela da página</string>
-    <string name="share__toast_saved_image_to_location">Salvar imagem para</string>
-    <string name="share__toast_screenshot">Salvar captura de tela como:</string>
-    <string name="share__toast_link_address_copied">Link copiado&#8230;</string>
+    <string name="more">Mais</string>
+    <string name="help_license">Sobre | Ajuda</string>
+    <string name="followed_tags">Tags seguidas</string>
+    <string name="public_activities">Atividades públicas</string>
+    <string name="reports">Relatórios</string>
+    <string name="share_link_as_text">Compartilhar link como texto</string>
+    <string name="share_screenshot_of_webpage">Compartilhar uma captura de tela da página</string>
+    <string name="take_screenshot_of_webpage">Tirar uma captura de tela da página</string>
+    <string name="saving_image_to">Salvar imagem para</string>
+    <string name="saving_screenshot_as">Salvar captura de tela como:</string>
+    <string name="link_adress_copied">Link copiado&#8230;</string>
     <string name="new_post">Nova postagem</string>
-    <string name="action_go_to_top">Ir para o topo</string>
-    <string name="action_search_by_tags_or_persons">Procurar por tags ou pessoas</string>
-    <string name="action_exit_app">Sair do aplicativo</string>
-    <string name="action_toggle_desktop_page">Alternar a exibição telefone/área de trabalho</string>
-    <string name="action_share_dotdotdot">Compartilhar&#8230;</string>
-    <string name="search_alert_tag">por tags</string>
-    <string name="search_alert_people">por pessoas</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Por favor, adicione um nome</string>
-    <string name="context_menu_share_link">Compartilhar endereço</string>
-    <string name="context_menu_save_image">Salvar imagem</string>
-    <string name="context_menu_share_image">Compartilhar imagem</string>
-    <string name="context_menu_open_external_browser">Abrir em navegador externo&#8230;</string>
-    <string name="copy_link_to_clipboard">Copiar endereço à área de transferência</string>
-    <string name="context_menu_copy_image_link">Copiar endereço de imagem à área de transferência</string>
+    <string name="go_to_top">Ir para o topo</string>
+    <string name="search_by_tags_or_persons__appspecific">Procurar por tags ou pessoas</string>
+    <string name="exit_app">Sair do aplicativo</string>
+    <string name="toggle_mobile_desktop_view">Alternar a exibição telefone/área de trabalho</string>
+    <string name="share_dotdotdot">Compartilhar&#8230;</string>
+    <string name="by_tags">por tags</string>
+    <string name="by_people">por pessoas</string>
+    <string name="please_add_a_name">Por favor, adicione um nome</string>
+    <string name="share_link_address">Compartilhar endereço</string>
+    <string name="save_image">Salvar imagem</string>
+    <string name="share_image">Compartilhar imagem</string>
+    <string name="open_in_external_browser">Abrir em navegador externo&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Copiar endereço à área de transferência</string>
+    <string name="copy_image_address_to_clipboard">Copiar endereço de imagem à área de transferência</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Impossível carregar a imagem</string>
     <!-- Permissions -->
     <string name="permission_denied">Permissão negada.</string>
     <string name="permission_granted_try_again">Permissão concedida. Por favor, tente novamente.</string>
-    <string name="podselection__custom_pod">Pod personalizado</string>
+    <string name="custom_pod">Pod personalizado</string>
     <string name="pod_name">Nome do pod</string>
-    <string name="http_protocol">Protocolo</string>
+    <string name="protocol">Protocolo</string>
     <string name="pod_address">Endereço do pod</string>
     <string name="missing_value">Sem dado</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Voltar para a última página visitada no fluxo?</string>
-    <string name="pref_summary__is_statusbar_hidden">Ocultar a barra de estado na janela principal</string>
-    <string name="pref_title__is_statusbar_hidden">Ocultar barra de status</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Voltar para a última página visitada no fluxo?</string>
+    <string name="hide_statusbar_in_mainview">Ocultar a barra de estado na janela principal</string>
+    <string name="hide_statusbar">Ocultar barra de status</string>
 
     <string name="about">Sobre</string>
     <string name="license">Licença</string>
@@ -90,27 +90,27 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Barra de ferramentas superior abre o fluxo</string>
-    <string name="pref_desc__topbar_stream_shortcut">Clique em um espaço vazio na barra de ferramentas superior para abrir o fluxo</string>
+    <string name="top_toolbar_loads_stream__appsp">Barra de ferramentas superior abre o fluxo</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Clique em um espaço vazio na barra de ferramentas superior para abrir o fluxo</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Aparência</string>
-    <string name="pref_cat__network">Rede</string>
-    <string name="pref_cat__pod_settings">Configurações do pod</string>
-    <string name="pref_cat__operability">Operabilidade</string>
+    <string name="appearance">Aparência</string>
+    <string name="network">Rede</string>
+    <string name="pod_settings__appspecfic">Configurações do pod</string>
+    <string name="operability">Operabilidade</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Controle deslizante de navegação</string>
-    <string name="pref_desc__sub_nav_slider">Visibilidade do controle de entradas na gaveta de navegação</string>
-    <string name="pref_cat__visibility_nav_items__user">Usuário</string>
-    <string name="pref_cat__visibility_nav_items__general">Geral</string>
-    <string name="pref_cat__visibility_nav_items__admin">Admin</string>
+    <string name="navigation_drawer">Controle deslizante de navegação</string>
+    <string name="control_visibility_of_entries_nav_drawer">Visibilidade do controle de entradas na gaveta de navegação</string>
+    <string name="user">Usuário</string>
+    <string name="general">Geral</string>
+    <string name="admin">Admin</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Tema e cores</string>
-    <string name="pref_desc__themes">Controlar quais cores são usadas em todo o aplicativo</string>
-    <string name="pref_title__primary_color">Cor principal</string>
-    <string name="pref_desc__primary_color">Cor das barras de ferramentas</string>
-    <string name="pref_title__accent_color">Cor de destaque</string>
-    <string name="pref_desc__accent_color">Cor da barra de progresso</string>
+    <string name="theme_and_colors">Tema e cores</string>
+    <string name="control_which_colors_are_used_in_app">Controlar quais cores são usadas em todo o aplicativo</string>
+    <string name="primary_colors">Cor principal</string>
+    <string name="colors_of_toolbars">Cor das barras de ferramentas</string>
+    <string name="accent_color">Cor de destaque</string>
+    <string name="color_of_progressbar">Cor da barra de progresso</string>
     <string name="amoled_mode">Modo AMOLED</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notificações estendidas</string>

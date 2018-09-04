@@ -264,7 +264,7 @@ public class MainActivity extends ThemedActivity
 
         //Setup snackbar
         snackbarExitApp = Snackbar
-                .make(fragmentContainer, R.string.confirm_exit, Snackbar.LENGTH_LONG)
+                .make(fragmentContainer, R.string.do_you_want_to_exit, Snackbar.LENGTH_LONG)
                 .setAction(android.R.string.yes, new View.OnClickListener() {
                     public void onClick(View view) {
                         finish();
@@ -273,13 +273,13 @@ public class MainActivity extends ThemedActivity
                 });
         snackbarLastVisitedTimestampInStream =
                 Snackbar.make(fragmentContainer,
-                        R.string.jump_to_last_visited_timestamp_in_stream, Snackbar.LENGTH_LONG)
+                        R.string.jump_to_last_visited_page_in_stream__appspecific, Snackbar.LENGTH_LONG)
                         .setAction(android.R.string.yes, new View.OnClickListener() {
                             public void onClick(View view) {
                                 openDiasporaUrl(urls.getStreamWithTimestampUrl(diasporaUserProfile.getLastVisitedPositionInStream()));
                             }
                         });
-        snackbarNoInternet = Snackbar.make(fragmentContainer, R.string.no_internet, Snackbar.LENGTH_LONG);
+        snackbarNoInternet = Snackbar.make(fragmentContainer, R.string.sorry_need_to_be_connected_to_internet, Snackbar.LENGTH_LONG);
 
         // Load app settings
         setupNavigationSlider();
@@ -388,7 +388,7 @@ public class MainActivity extends ThemedActivity
      */
     private void setupNavigationSlider() {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, navDrawer, toolbarTop, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, navDrawer, toolbarTop, R.string.open_navdrawer, R.string.close_navdrawer);
         navDrawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -856,7 +856,7 @@ public class MainActivity extends ThemedActivity
                         public void onClick(DialogInterface dialogInterface, int which) {
                             String query = input.getText().toString().trim().replaceAll((which == DialogInterface.BUTTON_NEGATIVE ? "\\*" : "\\#"), "");
                             if (query.equals("")) {
-                                Snackbar.make(fragmentContainer, R.string.search_alert_bypeople_validate_needsomedata, Snackbar.LENGTH_LONG).show();
+                                Snackbar.make(fragmentContainer, R.string.please_add_a_name, Snackbar.LENGTH_LONG).show();
                             } else {
                                 openDiasporaUrl(which == DialogInterface.BUTTON_NEGATIVE ? urls.getSearchPeopleUrl(query) : urls.getSearchTagsUrl(query));
                             }
@@ -868,8 +868,8 @@ public class MainActivity extends ThemedActivity
                     final AlertDialog dialog = new ThemedAlertDialogBuilder(this, _appSettings)
                             .setView(layout).setTitle(R.string.search_alert_title)
                             .setCancelable(true)
-                            .setPositiveButton(R.string.search_alert_tag, clickListener)
-                            .setNegativeButton(R.string.search_alert_people, clickListener)
+                            .setPositiveButton(R.string.by_tags, clickListener)
+                            .setNegativeButton(R.string.by_people, clickListener)
                             .create();
 
                     input.setOnEditorActionListener(new TextView.OnEditorActionListener() {

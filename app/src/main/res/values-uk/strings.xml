@@ -19,64 +19,64 @@
     <string name="changelog">Журнал змін</string>
     <string name="statistics">Статистика</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Усі сповіщення</string>
-    <string name="notifications__also_commented">Також прокоментували</string>
-    <string name="notifications__comment_on_post">Коментар до допису</string>
-    <string name="notifications__liked">Вподобано</string>
-    <string name="notifications__mentioned">Згадано</string>
-    <string name="notifications__reshared">Поширено</string>
-    <string name="notifications__started_sharing">Додано</string>
+    <string name="all_notifications">Усі сповіщення</string>
+    <string name="also_commented">Також прокоментували</string>
+    <string name="comment_on_post">Коментар до допису</string>
+    <string name="deleteme_____1">Вподобано</string>
+    <string name="mentioned">Згадано</string>
+    <string name="reshared">Поширено</string>
+    <string name="started_sharing">Додано</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Помилка: Не вдалося отримати список подів</string>
-    <string name="no_internet">На жаль, для продовження потрібне з\'єднання з інтернетом</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Помилка: Не вдалося отримати список подів</string>
+    <string name="sorry_need_to_be_connected_to_internet">На жаль, для продовження потрібне з\'єднання з інтернетом</string>
     <string name="confirmation">Підтвердження</string>
-    <string name="confirm_exit">Ви дійсно бажаєте вийти?</string>
+    <string name="do_you_want_to_exit">Ви дійсно бажаєте вийти?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Ще</string>
-    <string name="nav_help_license">Про | Допомога</string>
-    <string name="nav_followed_tags">Відстежувані мітки</string>
-    <string name="nav_public_activities">Публічна діяльність</string>
-    <string name="nav_reports">Звіти</string>
-    <string name="share__share_link_as_text">Поширити посилання як текст</string>
-    <string name="share__share_screenshot">Поширити знімок екрану веб-сторінки</string>
-    <string name="share__take_screenshot">Зробити знімок екрану веб-сторінки</string>
-    <string name="share__toast_saved_image_to_location">Збереження зображення в</string>
-    <string name="share__toast_screenshot">Збереження знімка екрану як:</string>
-    <string name="share__toast_link_address_copied">Адресу посилання скопійовано&#8230;</string>
+    <string name="more">Ще</string>
+    <string name="help_license">Про | Допомога</string>
+    <string name="followed_tags">Відстежувані мітки</string>
+    <string name="public_activities">Публічна діяльність</string>
+    <string name="reports">Звіти</string>
+    <string name="share_link_as_text">Поширити посилання як текст</string>
+    <string name="share_screenshot_of_webpage">Поширити знімок екрану веб-сторінки</string>
+    <string name="take_screenshot_of_webpage">Зробити знімок екрану веб-сторінки</string>
+    <string name="saving_image_to">Збереження зображення в</string>
+    <string name="saving_screenshot_as">Збереження знімка екрану як:</string>
+    <string name="link_adress_copied">Адресу посилання скопійовано&#8230;</string>
     <string name="new_post">Новий допис</string>
-    <string name="action_go_to_top">Перейти нагору</string>
-    <string name="action_search_by_tags_or_persons">Шукати мітки чи людей</string>
-    <string name="action_exit_app">Вийти</string>
-    <string name="action_toggle_desktop_page">Перемкнути мобільний/стаціонарний вигляд</string>
-    <string name="action_share_dotdotdot">Поширити&#8230;</string>
-    <string name="search_alert_tag">за мітками</string>
-    <string name="search_alert_people">за людьми</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Будь ласка, додайте ім\'я</string>
-    <string name="context_menu_share_link">Поширити посилання</string>
-    <string name="context_menu_save_image">Зберегти зображення</string>
-    <string name="context_menu_share_image">Поділитися зображенням</string>
-    <string name="context_menu_open_external_browser">Відкрити у зовнішньому браузері&#8230;</string>
-    <string name="copy_link_to_clipboard">Копіювати адресу посилання у буфер обміну</string>
-    <string name="context_menu_copy_image_link">Копіювати зображення у буфер обміну</string>
+    <string name="go_to_top">Перейти нагору</string>
+    <string name="search_by_tags_or_persons__appspecific">Шукати мітки чи людей</string>
+    <string name="exit_app">Вийти</string>
+    <string name="toggle_mobile_desktop_view">Перемкнути мобільний/стаціонарний вигляд</string>
+    <string name="share_dotdotdot">Поширити&#8230;</string>
+    <string name="by_tags">за мітками</string>
+    <string name="by_people">за людьми</string>
+    <string name="please_add_a_name">Будь ласка, додайте ім\'я</string>
+    <string name="share_link_address">Поширити посилання</string>
+    <string name="save_image">Зберегти зображення</string>
+    <string name="share_image">Поділитися зображенням</string>
+    <string name="open_in_external_browser">Відкрити у зовнішньому браузері&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Копіювати адресу посилання у буфер обміну</string>
+    <string name="copy_image_address_to_clipboard">Копіювати зображення у буфер обміну</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Не вдалося завантажити зображення</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Ви маєте надати право доступу до внутрішньої пам\'яті, щоб зберігати знімки екрану. Після цього треба
+    <string name="screenshot_permission__appspecific">Ви маєте надати право доступу до внутрішньої пам\'яті, щоб зберігати знімки екрану. Після цього треба
         повністю закрити застосунок або перезапустити пристрій. Якщо ви не дозволяєте доступ до пам\'яті, але хочете використовувати 
         функцію знімків екрана пізніше, ви можете надати доступ пізніше. Будь ласка, відкрийте тоді Налаштування — Програми — 
         dandelion*. У розділі дозволів ви можете надати право «доступу до запису у пам\'ять».</string>
-    <string name="permissions_image">Ви маєте надати право доступу до внутрішньої пам\'яті, щоб зберігати/вивантажувати зображення. Після цього треба
+    <string name="image_permission_description__appspecific">Ви маєте надати право доступу до внутрішньої пам\'яті, щоб зберігати/вивантажувати зображення. Після цього треба
         повністю закрити застосунок або перезапустити пристрій. Якщо ви не дозволяєте доступ до пам\'яті, але хочете зберігати зображення
         пізніше, ви можете надати доступ пізніше. Будь ласка, відкрийте тоді Налаштування — Програми — 
         dandelion*. У розділі дозволів ви можете надати право «доступу до запису у пам\'ять».</string>
     <string name="permission_denied">Доступ заборонено.</string>
     <string name="permission_granted_try_again">Доступ надано. Будь ласка, спробуйте ще раз.</string>
-    <string name="podselection__custom_pod">Власний под</string>
+    <string name="custom_pod">Власний под</string>
     <string name="pod_name">Назва поду</string>
-    <string name="http_protocol">Протокол</string>
+    <string name="protocol">Протокол</string>
     <string name="pod_address">Адреса поду</string>
     <string name="missing_value">Відсутнє значення</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Перейти на останню відвідану сторінку в потоці?</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Перейти на останню відвідану сторінку в потоці?</string>
 
     <string name="about">Про нас</string>
     <string name="license">Ліцензія</string>
@@ -120,29 +120,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Верхня панель завантажує потік</string>
-    <string name="pref_desc__topbar_stream_shortcut">Натисніть на вільному місці верхньої панелі, щоб відкрити потік</string>
+    <string name="top_toolbar_loads_stream__appsp">Верхня панель завантажує потік</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Натисніть на вільному місці верхньої панелі, щоб відкрити потік</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Вигляд</string>
-    <string name="pref_cat__network">Мережа</string>
-    <string name="pref_cat__pod_settings">Налаштування поду</string>
-    <string name="pref_cat__operability">Працездатність</string>
+    <string name="appearance">Вигляд</string>
+    <string name="network">Мережа</string>
+    <string name="pod_settings__appspecfic">Налаштування поду</string>
+    <string name="operability">Працездатність</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Повзунок навігації</string>
-    <string name="pref_desc__sub_nav_slider">Налаштування видимості дописів у меню навігації</string>
-    <string name="pref_cat__visibility_nav_items__user">Користувач</string>
-    <string name="pref_cat__visibility_nav_items__general">Загальне</string>
-    <string name="pref_cat__visibility_nav_items__admin">Адмін</string>
+    <string name="navigation_drawer">Повзунок навігації</string>
+    <string name="control_visibility_of_entries_nav_drawer">Налаштування видимості дописів у меню навігації</string>
+    <string name="user">Користувач</string>
+    <string name="general">Загальне</string>
+    <string name="admin">Адмін</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Теми і кольори</string>
-    <string name="pref_desc__themes">Налаштування кольорів, які використовуються у програмці</string>
-    <string name="pref_title__primary_color">Основний колір</string>
-    <string name="pref_desc__primary_color">Колір панелей</string>
-    <string name="pref_title__accent_color">Контрастний колір</string>
-    <string name="pref_desc__accent_color">Колір панелі прогресу</string>
+    <string name="theme_and_colors">Теми і кольори</string>
+    <string name="control_which_colors_are_used_in_app">Налаштування кольорів, які використовуються у програмці</string>
+    <string name="primary_colors">Основний колір</string>
+    <string name="colors_of_toolbars">Колір панелей</string>
+    <string name="accent_color">Контрастний колір</string>
+    <string name="color_of_progressbar">Колір панелі прогресу</string>
     <string name="amoled_mode">Режим AMOLED</string>
-    <string name="pref_desc__primary_color__amoled_mode">Замінити кольори у багатьох частинах програмки на чорний, сприядливий для AMOLED-дисплеїв. Вам треба здійснити перезавантаження, щоб це налаштування запрацювало. Щоб перекладати Діаспору* в темних тонах, Вам також треба активувати темну тему у своїх налаштуваннях обліковки Діаспори*.</string>
+    <string name="amoled_mode_description__app_specific">Замінити кольори у багатьох частинах програмки на чорний, сприядливий для AMOLED-дисплеїв. Вам треба здійснити перезавантаження, щоб це налаштування запрацювало. Щоб перекладати Діаспору* в темних тонах, Вам також треба активувати темну тему у своїх налаштуваннях обліковки Діаспори*.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Розширені сповіщення</string>
     <string name="extendend_notifications_bell_description__appspecific">Додати до дзвоника сповіщень випадне меню з категоріями сповіщень</string>

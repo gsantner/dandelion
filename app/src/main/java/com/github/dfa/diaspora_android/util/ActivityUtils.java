@@ -52,7 +52,7 @@ public class ActivityUtils extends net.gsantner.opoc.util.ActivityUtils {
     public boolean showInfoIfUserNotConnectedToInternet(View anchor) {
         boolean isOnline = WebHelper.isOnline(_context);
         if (!isOnline) {
-            showSnackBar(R.string.no_internet, true);
+            showSnackBar(R.string.sorry_need_to_be_connected_to_internet, true);
         }
         return !isOnline;
     }

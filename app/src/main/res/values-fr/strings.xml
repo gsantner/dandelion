@@ -19,64 +19,64 @@
     <string name="changelog">Nouveautés</string>
     <string name="statistics">Statistiques</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Toutes les notifications</string>
-    <string name="notifications__also_commented">Aussi commenté</string>
-    <string name="notifications__comment_on_post">Commentaires sur posts</string>
-    <string name="notifications__liked">Aimés</string>
-    <string name="notifications__mentioned">Mentionnés</string>
-    <string name="notifications__reshared">Repartagés</string>
-    <string name="notifications__started_sharing">A commencé à partager</string>
+    <string name="all_notifications">Toutes les notifications</string>
+    <string name="also_commented">Aussi commenté</string>
+    <string name="comment_on_post">Commentaires sur posts</string>
+    <string name="deleteme_____1">Aimés</string>
+    <string name="mentioned">Mentionnés</string>
+    <string name="reshared">Repartagés</string>
+    <string name="started_sharing">A commencé à partager</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Erreur : impossible de récupérer la liste des pods !</string>
-    <string name="no_internet">Désolé, vous devez être connecté à Internet pour continuer</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Erreur : impossible de récupérer la liste des pods !</string>
+    <string name="sorry_need_to_be_connected_to_internet">Désolé, vous devez être connecté à Internet pour continuer</string>
     <string name="confirmation">Vérification</string>
-    <string name="confirm_exit">Souhaitez-vous quitter ?</string>
+    <string name="do_you_want_to_exit">Souhaitez-vous quitter ?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Plus</string>
-    <string name="nav_help_license">A propos | Aide</string>
-    <string name="nav_followed_tags">Hashtags suivis</string>
-    <string name="nav_public_activities">Activités publiques</string>
-    <string name="nav_reports">Signalements</string>
-    <string name="share__share_link_as_text">Partager le lien comme texte</string>
-    <string name="share__share_screenshot">Partager la capture d\'écran d\'un site web</string>
-    <string name="share__take_screenshot">Prendre une capture d\'écran d\'un site web</string>
-    <string name="share__toast_saved_image_to_location">Enregistrer l\'image sous</string>
-    <string name="share__toast_screenshot">Enregistrer la capture d\'écran sous :</string>
-    <string name="share__toast_link_address_copied">Lien copié&#8230;</string>
+    <string name="more">Plus</string>
+    <string name="help_license">A propos | Aide</string>
+    <string name="followed_tags">Hashtags suivis</string>
+    <string name="public_activities">Activités publiques</string>
+    <string name="reports">Signalements</string>
+    <string name="share_link_as_text">Partager le lien comme texte</string>
+    <string name="share_screenshot_of_webpage">Partager la capture d\'écran d\'un site web</string>
+    <string name="take_screenshot_of_webpage">Prendre une capture d\'écran d\'un site web</string>
+    <string name="saving_image_to">Enregistrer l\'image sous</string>
+    <string name="saving_screenshot_as">Enregistrer la capture d\'écran sous :</string>
+    <string name="link_adress_copied">Lien copié&#8230;</string>
     <string name="new_post">Nouveau message</string>
-    <string name="action_go_to_top">Retour en haut</string>
-    <string name="action_search_by_tags_or_persons">Recherche par tags ou par personnes</string>
-    <string name="action_exit_app">Quitter l\'application</string>
-    <string name="action_toggle_desktop_page">Activer/désactiver la vue bureau/mobile</string>
-    <string name="action_share_dotdotdot">Partager&#8230;</string>
-    <string name="search_alert_tag">par tags</string>
-    <string name="search_alert_people">par personne</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Veuillez ajouter un nom</string>
-    <string name="context_menu_share_link">Partager un lien</string>
-    <string name="context_menu_save_image">Enregistrer l\'image</string>
-    <string name="context_menu_share_image">Partager l\'image</string>
-    <string name="context_menu_open_external_browser">Ouvrir dans un navigateur externe&#8230;</string>
-    <string name="copy_link_to_clipboard">Copier le lien dans le presse-papier</string>
-    <string name="context_menu_copy_image_link">Copier le lien de l\'image dans le presse-papiers</string>
+    <string name="go_to_top">Retour en haut</string>
+    <string name="search_by_tags_or_persons__appspecific">Recherche par tags ou par personnes</string>
+    <string name="exit_app">Quitter l\'application</string>
+    <string name="toggle_mobile_desktop_view">Activer/désactiver la vue bureau/mobile</string>
+    <string name="share_dotdotdot">Partager&#8230;</string>
+    <string name="by_tags">par tags</string>
+    <string name="by_people">par personne</string>
+    <string name="please_add_a_name">Veuillez ajouter un nom</string>
+    <string name="share_link_address">Partager un lien</string>
+    <string name="save_image">Enregistrer l\'image</string>
+    <string name="share_image">Partager l\'image</string>
+    <string name="open_in_external_browser">Ouvrir dans un navigateur externe&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Copier le lien dans le presse-papier</string>
+    <string name="copy_image_address_to_clipboard">Copier le lien de l\'image dans le presse-papiers</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Impossible de récupérer l\'image</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Vous devez autoriser \"Modifier ou supprimer le contenu de la carte Sd \" pour sauvegarder les captures d\'écrans. Ensuite, vous devriez fermer l\'application ou redémarrer votre téléphone. Si vous n\'avez pas autorisé l\'accès à l\'espace de stockage mais que vous souhaitez utiliser la fonctionnalité de prise de capture d\'écran plus tard, vous pouvez donner la permission plus tard. Veuillez ouvrir : Paramètres - applications - dandelion*. Dans la section Autorisations, vous pouvez autoriser \"Modifier ou supprimer le contenu de la carte Sd \".</string>
-    <string name="permissions_image">Vous devez autoriser \"Modifier ou supprimer le contenu de la carte Sd \" pour sauvegarder/téléverser les images. Ensuite, vous devriez        fermer l\'application ou redémarrer votre téléphone. Si vous n\'avez pas autorisé l\'accès à l\'espace de stockage mais que vous souhaitez sauvegarder des images        ultérieurement, vous pouvez donner la permission plus tard. Veuillez ouvrir : Paramètres - applications -        dandelion*. Dans la section Autorisations, vous pouvez autoriser \"Modifier ou supprimer le contenu de la carte Sd \".</string>
+    <string name="screenshot_permission__appspecific">Vous devez autoriser \"Modifier ou supprimer le contenu de la carte Sd \" pour sauvegarder les captures d\'écrans. Ensuite, vous devriez fermer l\'application ou redémarrer votre téléphone. Si vous n\'avez pas autorisé l\'accès à l\'espace de stockage mais que vous souhaitez utiliser la fonctionnalité de prise de capture d\'écran plus tard, vous pouvez donner la permission plus tard. Veuillez ouvrir : Paramètres - applications - dandelion*. Dans la section Autorisations, vous pouvez autoriser \"Modifier ou supprimer le contenu de la carte Sd \".</string>
+    <string name="image_permission_description__appspecific">Vous devez autoriser \"Modifier ou supprimer le contenu de la carte Sd \" pour sauvegarder/téléverser les images. Ensuite, vous devriez        fermer l\'application ou redémarrer votre téléphone. Si vous n\'avez pas autorisé l\'accès à l\'espace de stockage mais que vous souhaitez sauvegarder des images        ultérieurement, vous pouvez donner la permission plus tard. Veuillez ouvrir : Paramètres - applications -        dandelion*. Dans la section Autorisations, vous pouvez autoriser \"Modifier ou supprimer le contenu de la carte Sd \".</string>
     <string name="permission_denied">Permission refusée.</string>
     <string name="permission_granted_try_again">Permission accordée. Veuillez réessayer.</string>
-    <string name="podselection__custom_pod">Pod personnalisé</string>
+    <string name="custom_pod">Pod personnalisé</string>
     <string name="pod_name">Nom du Pod</string>
-    <string name="http_protocol">Protocole</string>
+    <string name="protocol">Protocole</string>
     <string name="pod_address">Adresse du Pod</string>
     <string name="missing_value">Valeur manquante</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Sauter à la dernière page visitée dans le flux ?</string>
-    <string name="pref_summary__is_statusbar_hidden">Cacher la barre de statut sur la vue principale</string>
-    <string name="pref_title__is_statusbar_hidden">Cacher la barre de statut</string>
-    <string name="pref_summary__show_title">Afficher le titre dans la vue principale</string>
-    <string name="pref_title__show_title">Afficher le titre</string>
-    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
-    <string name="navigation_drawer_close">Fermer le tiroir de navigation</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Sauter à la dernière page visitée dans le flux ?</string>
+    <string name="hide_statusbar_in_mainview">Cacher la barre de statut sur la vue principale</string>
+    <string name="hide_statusbar">Cacher la barre de statut</string>
+    <string name="show_title_in_main_view">Afficher le titre dans la vue principale</string>
+    <string name="show_title">Afficher le titre</string>
+    <string name="open_navdrawer">Ouvrir le tiroir de navigation</string>
+    <string name="close_navdrawer">Fermer le tiroir de navigation</string>
     <string name="launcher_shortcut">Raccourci de l\'écran d\'accueil</string>
 
     <string name="about">À propos</string>
@@ -121,29 +121,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">La barre du haut charge le flux</string>
-    <string name="pref_desc__topbar_stream_shortcut">Cliquez sur un espace vide sur la barre du haut pour ouvrir le flux</string>
+    <string name="top_toolbar_loads_stream__appsp">La barre du haut charge le flux</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Cliquez sur un espace vide sur la barre du haut pour ouvrir le flux</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Apparence</string>
-    <string name="pref_cat__network">Paramètres du réseau</string>
-    <string name="pref_cat__pod_settings">Paramètres du pod</string>
-    <string name="pref_cat__operability">Opérabilité</string>
+    <string name="appearance">Apparence</string>
+    <string name="network">Paramètres du réseau</string>
+    <string name="pod_settings__appspecfic">Paramètres du pod</string>
+    <string name="operability">Opérabilité</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Curseur de navigation</string>
-    <string name="pref_desc__sub_nav_slider">Visibilité de contrôle des entrées dans le volet de navigation</string>
-    <string name="pref_cat__visibility_nav_items__user">Utilisateur</string>
-    <string name="pref_cat__visibility_nav_items__general">Général</string>
-    <string name="pref_cat__visibility_nav_items__admin">Admin</string>
+    <string name="navigation_drawer">Curseur de navigation</string>
+    <string name="control_visibility_of_entries_nav_drawer">Visibilité de contrôle des entrées dans le volet de navigation</string>
+    <string name="user">Utilisateur</string>
+    <string name="general">Général</string>
+    <string name="admin">Admin</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Thème et couleurs</string>
-    <string name="pref_desc__themes">Contrôler les couleurs utilisées pour l\'application</string>
-    <string name="pref_title__primary_color">Couleur principale</string>
-    <string name="pref_desc__primary_color">Couleur des barres d\'outils</string>
-    <string name="pref_title__accent_color">Couleur secondaire</string>
-    <string name="pref_desc__accent_color">Couleur de la barre de progression</string>
+    <string name="theme_and_colors">Thème et couleurs</string>
+    <string name="control_which_colors_are_used_in_app">Contrôler les couleurs utilisées pour l\'application</string>
+    <string name="primary_colors">Couleur principale</string>
+    <string name="colors_of_toolbars">Couleur des barres d\'outils</string>
+    <string name="accent_color">Couleur secondaire</string>
+    <string name="color_of_progressbar">Couleur de la barre de progression</string>
     <string name="amoled_mode">Mode AMOLED</string>
-    <string name="pref_desc__primary_color__amoled_mode">Remplacez les couleurs avec du noir compatible avec les affichages AMOLED, sur plusieurs parties de l\'application. Pour naviguer dans diaspora* avec un affichage sombre, vous pouvez aussi utiliser le thème Dark, que vous trouverez dans vos paramètres personnels de votre compte diaspora*.</string>
+    <string name="amoled_mode_description__app_specific">Remplacez les couleurs avec du noir compatible avec les affichages AMOLED, sur plusieurs parties de l\'application. Pour naviguer dans diaspora* avec un affichage sombre, vous pouvez aussi utiliser le thème Dark, que vous trouverez dans vos paramètres personnels de votre compte diaspora*.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notifications étendues</string>
     <string name="extendend_notifications_bell_description__appspecific">Étendre la cloche de notifications avec un menu déroulant qui affiche les catégories de notification</string>

@@ -19,62 +19,62 @@
     <string name="changelog">変更履歴</string>
     <string name="statistics">統計情報</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">すべての通知</string>
-    <string name="notifications__also_commented">コメントもしました</string>
-    <string name="notifications__comment_on_post">投稿にコメント</string>
-    <string name="notifications__liked">いいね！しました</string>
-    <string name="notifications__mentioned">メンションしました</string>
-    <string name="notifications__reshared">リシェアしました</string>
-    <string name="notifications__started_sharing">シェアを始めました</string>
+    <string name="all_notifications">すべての通知</string>
+    <string name="also_commented">コメントもしました</string>
+    <string name="comment_on_post">投稿にコメント</string>
+    <string name="deleteme_____1">いいね！しました</string>
+    <string name="mentioned">メンションしました</string>
+    <string name="reshared">リシェアしました</string>
+    <string name="started_sharing">シェアを始めました</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">エラー: ポッドのリストを取得できませんでした!</string>
-    <string name="no_internet">申し訳ありません。続行するにはインターネットに接続する必要があります</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">エラー: ポッドのリストを取得できませんでした!</string>
+    <string name="sorry_need_to_be_connected_to_internet">申し訳ありません。続行するにはインターネットに接続する必要があります</string>
     <string name="confirmation">確認</string>
-    <string name="confirm_exit">終了しますか?</string>
+    <string name="do_you_want_to_exit">終了しますか?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">さらに</string>
-    <string name="nav_help_license">概要 |ヘルプ</string>
-    <string name="nav_followed_tags">フォロー済タグ</string>
-    <string name="nav_public_activities">公開アクティビティ</string>
-    <string name="nav_reports">報告</string>
-    <string name="share__share_link_as_text">テキストとしてリンクをシェア</string>
-    <string name="share__share_screenshot">Web ページのスクリーン ショットをシェア</string>
-    <string name="share__take_screenshot">Web ページのスクリーン ショットを撮る</string>
-    <string name="share__toast_saved_image_to_location">画像を保存中</string>
-    <string name="share__toast_screenshot">スクリーンショットを保存中:</string>
-    <string name="share__toast_link_address_copied">リンク アドレスをコピーしました &#8230;</string>
+    <string name="more">さらに</string>
+    <string name="help_license">概要 |ヘルプ</string>
+    <string name="followed_tags">フォロー済タグ</string>
+    <string name="public_activities">公開アクティビティ</string>
+    <string name="reports">報告</string>
+    <string name="share_link_as_text">テキストとしてリンクをシェア</string>
+    <string name="share_screenshot_of_webpage">Web ページのスクリーン ショットをシェア</string>
+    <string name="take_screenshot_of_webpage">Web ページのスクリーン ショットを撮る</string>
+    <string name="saving_image_to">画像を保存中</string>
+    <string name="saving_screenshot_as">スクリーンショットを保存中:</string>
+    <string name="link_adress_copied">リンク アドレスをコピーしました &#8230;</string>
     <string name="new_post">新しい投稿</string>
-    <string name="action_go_to_top">先頭に移動</string>
-    <string name="action_search_by_tags_or_persons">タグまたは人で検索</string>
-    <string name="action_exit_app">アプリを終了</string>
-    <string name="action_toggle_desktop_page">モバイル/デスクトップ表示の切り替え</string>
-    <string name="action_share_dotdotdot">シェア&#8230;</string>
-    <string name="search_alert_tag">タグ別</string>
-    <string name="search_alert_people">人別</string>
-    <string name="search_alert_bypeople_validate_needsomedata">名前を追加してください</string>
-    <string name="context_menu_share_link">リンク アドレスをシェア</string>
-    <string name="context_menu_save_image">画像を保存</string>
-    <string name="context_menu_share_image">画像をシェア</string>
-    <string name="context_menu_open_external_browser">外部ブラウザーで開く&#8230;</string>
-    <string name="copy_link_to_clipboard">リンクアドレスをクリップボードへコピー</string>
-    <string name="context_menu_copy_image_link">画像のアドレスをクリップボードへコピー</string>
+    <string name="go_to_top">先頭に移動</string>
+    <string name="search_by_tags_or_persons__appspecific">タグまたは人で検索</string>
+    <string name="exit_app">アプリを終了</string>
+    <string name="toggle_mobile_desktop_view">モバイル/デスクトップ表示の切り替え</string>
+    <string name="share_dotdotdot">シェア&#8230;</string>
+    <string name="by_tags">タグ別</string>
+    <string name="by_people">人別</string>
+    <string name="please_add_a_name">名前を追加してください</string>
+    <string name="share_link_address">リンク アドレスをシェア</string>
+    <string name="save_image">画像を保存</string>
+    <string name="share_image">画像をシェア</string>
+    <string name="open_in_external_browser">外部ブラウザーで開く&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">リンクアドレスをクリップボードへコピー</string>
+    <string name="copy_image_address_to_clipboard">画像のアドレスをクリップボードへコピー</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">画像を読み込むことができません</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">スクリーン ショットを保存するために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後でスクリーン ショット機能を使用する場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - dandelion* を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
-    <string name="permissions_image">画像を保存/アップロードするために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後で画像を保存したい場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - dandelion* を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
+    <string name="screenshot_permission__appspecific">スクリーン ショットを保存するために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後でスクリーン ショット機能を使用する場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - dandelion* を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
+    <string name="image_permission_description__appspecific">画像を保存/アップロードするために、\"ストレージのアクセス許可\" を付与する必要があります。その後、完全にアプリを閉じるか、携帯電話を再起動する必要があります。ストレージへのアクセスを許可しないで、後で画像を保存したい場合は、後でアクセス許可を付与することができます。その場合: システム設定 - アプリ - dandelion* を開いて、アクセス許可のセクションで、\"ストレージの書き込みアクセス許可\" を付与することができます。</string>
     <string name="permission_denied">アクセスが拒否されました。</string>
     <string name="permission_granted_try_again">アクセスを許可しました。もう一度やり直してください。</string>
-    <string name="podselection__custom_pod">カスタム ポッド</string>
+    <string name="custom_pod">カスタム ポッド</string>
     <string name="pod_name">ポッド名</string>
-    <string name="http_protocol">プロトコル</string>
+    <string name="protocol">プロトコル</string>
     <string name="pod_address">ポッドのアドレス</string>
     <string name="missing_value">値がありません</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">ストリームの最後に訪れたページに移動しますか?</string>
-    <string name="pref_summary__is_statusbar_hidden">メイン画面のステータスバーを非表示にします</string>
-    <string name="pref_title__is_statusbar_hidden">ステータスバーを非表示</string>
-    <string name="pref_summary__show_title">メインビューにタイトルを表示します</string>
-    <string name="pref_title__show_title">タイトルを表示</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">ストリームの最後に訪れたページに移動しますか?</string>
+    <string name="hide_statusbar_in_mainview">メイン画面のステータスバーを非表示にします</string>
+    <string name="hide_statusbar">ステータスバーを非表示</string>
+    <string name="show_title_in_main_view">メインビューにタイトルを表示します</string>
+    <string name="show_title">タイトルを表示</string>
 
     <string name="about">アプリについて</string>
     <string name="license">ライセンス</string>
@@ -118,29 +118,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">上部ツールバーでストリームを読み込み</string>
-    <string name="pref_desc__topbar_stream_shortcut">上部ツールバーの空白部分をクリックして、ストリームを開きます。</string>
+    <string name="top_toolbar_loads_stream__appsp">上部ツールバーでストリームを読み込み</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">上部ツールバーの空白部分をクリックして、ストリームを開きます。</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">外観</string>
-    <string name="pref_cat__network">ネットワーク</string>
-    <string name="pref_cat__pod_settings">ポッドの設定</string>
-    <string name="pref_cat__operability">操作性</string>
+    <string name="appearance">外観</string>
+    <string name="network">ネットワーク</string>
+    <string name="pod_settings__appspecfic">ポッドの設定</string>
+    <string name="operability">操作性</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">ナビゲーション スライダー</string>
-    <string name="pref_desc__sub_nav_slider">ナビゲーションドロワー内のエントリーの表示を制御します</string>
-    <string name="pref_cat__visibility_nav_items__user">ユーザー</string>
-    <string name="pref_cat__visibility_nav_items__general">一般</string>
-    <string name="pref_cat__visibility_nav_items__admin">管理</string>
+    <string name="navigation_drawer">ナビゲーション スライダー</string>
+    <string name="control_visibility_of_entries_nav_drawer">ナビゲーションドロワー内のエントリーの表示を制御します</string>
+    <string name="user">ユーザー</string>
+    <string name="general">一般</string>
+    <string name="admin">管理</string>
     <!-- Themes -->
-    <string name="pref_title__themes">テーマと色</string>
-    <string name="pref_desc__themes">アプリ全体で使用される色を制御します</string>
-    <string name="pref_title__primary_color">プライマリ色</string>
-    <string name="pref_desc__primary_color">ツールバーの色</string>
-    <string name="pref_title__accent_color">アクセント色</string>
-    <string name="pref_desc__accent_color">プログレスバーの色</string>
+    <string name="theme_and_colors">テーマと色</string>
+    <string name="control_which_colors_are_used_in_app">アプリ全体で使用される色を制御します</string>
+    <string name="primary_colors">プライマリ色</string>
+    <string name="colors_of_toolbars">ツールバーの色</string>
+    <string name="accent_color">アクセント色</string>
+    <string name="color_of_progressbar">プログレスバーの色</string>
     <string name="amoled_mode">AMOLED モード</string>
-    <string name="pref_desc__primary_color__amoled_mode">アプリの多くの部分を AMOLED フレンドリーな黒色の表示で上書きします。この設定を切り替えるには再起動する必要があります。ダイアスポラ* を暗く参照するには、ダイアスポラ* の個人アカウント設定にある、ダークテーマをアクティブにする必要があります。</string>
+    <string name="amoled_mode_description__app_specific">アプリの多くの部分を AMOLED フレンドリーな黒色の表示で上書きします。この設定を切り替えるには再起動する必要があります。ダイアスポラ* を暗く参照するには、ダイアスポラ* の個人アカウント設定にある、ダークテーマをアクティブにする必要があります。</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">拡張通知</string>
     <string name="extendend_notifications_bell_description__appspecific">通知のカテゴリーを示すドロップダウン・メニューで通知ベルを拡張します</string>

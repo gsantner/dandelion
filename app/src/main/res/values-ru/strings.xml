@@ -19,62 +19,62 @@
     <string name="changelog">История изменений</string>
     <string name="statistics">Статистика</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Все уведомления</string>
-    <string name="notifications__also_commented">Также прокомментировали</string>
-    <string name="notifications__comment_on_post">Комментарий к записи</string>
-    <string name="notifications__liked">Понравилось</string>
-    <string name="notifications__mentioned">Упомянули</string>
-    <string name="notifications__reshared">Поделились</string>
-    <string name="notifications__started_sharing">Добавили вас</string>
+    <string name="all_notifications">Все уведомления</string>
+    <string name="also_commented">Также прокомментировали</string>
+    <string name="comment_on_post">Комментарий к записи</string>
+    <string name="deleteme_____1">Понравилось</string>
+    <string name="mentioned">Упомянули</string>
+    <string name="reshared">Поделились</string>
+    <string name="started_sharing">Добавили вас</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Ошибка: Не удалось получить список подов!</string>
-    <string name="no_internet">Извините, вы должны быть подключены к Интернету, чтобы продолжить</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Ошибка: Не удалось получить список подов!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Извините, вы должны быть подключены к Интернету, чтобы продолжить</string>
     <string name="confirmation">Подтверждение</string>
-    <string name="confirm_exit">Вы хотите выйти?</string>
+    <string name="do_you_want_to_exit">Вы хотите выйти?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Дополнительно</string>
-    <string name="nav_help_license">Информация | Помощь</string>
-    <string name="nav_followed_tags">Теги</string>
-    <string name="nav_public_activities">Публичное</string>
-    <string name="nav_reports">Отчёты</string>
-    <string name="share__share_link_as_text">Поделиться ссылкой как текстом</string>
-    <string name="share__share_screenshot">Поделиться скриншотом страницы</string>
-    <string name="share__take_screenshot">Сделать скриншот страницы</string>
-    <string name="share__toast_saved_image_to_location">Сохранение изображения в</string>
-    <string name="share__toast_screenshot">Сохранение скриншота как:</string>
-    <string name="share__toast_link_address_copied">Адрес ссылки скопирован&#8230;</string>
+    <string name="more">Дополнительно</string>
+    <string name="help_license">Информация | Помощь</string>
+    <string name="followed_tags">Теги</string>
+    <string name="public_activities">Публичное</string>
+    <string name="reports">Отчёты</string>
+    <string name="share_link_as_text">Поделиться ссылкой как текстом</string>
+    <string name="share_screenshot_of_webpage">Поделиться скриншотом страницы</string>
+    <string name="take_screenshot_of_webpage">Сделать скриншот страницы</string>
+    <string name="saving_image_to">Сохранение изображения в</string>
+    <string name="saving_screenshot_as">Сохранение скриншота как:</string>
+    <string name="link_adress_copied">Адрес ссылки скопирован&#8230;</string>
     <string name="new_post">Новый пост</string>
-    <string name="action_go_to_top">В начало</string>
-    <string name="action_search_by_tags_or_persons">Искать по тегам и людям</string>
-    <string name="action_exit_app">Выйти из приложения</string>
-    <string name="action_toggle_desktop_page">Переключить мобильный вид</string>
-    <string name="action_share_dotdotdot">Поделиться&#8230;</string>
-    <string name="search_alert_tag">по тегам</string>
-    <string name="search_alert_people">по людям</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Пожалуйста, добавьте имя</string>
-    <string name="context_menu_share_link">Поделиться адресом ссылки</string>
-    <string name="context_menu_save_image">Сохранить изображение</string>
-    <string name="context_menu_share_image">Поделиться изображением</string>
-    <string name="context_menu_open_external_browser">Открыть во внешнем браузере&#8230;</string>
-    <string name="copy_link_to_clipboard">Скопировать адрес ссылки в буфер обмена</string>
-    <string name="context_menu_copy_image_link">Скопировать адрес изображения в буфер обмена</string>
+    <string name="go_to_top">В начало</string>
+    <string name="search_by_tags_or_persons__appspecific">Искать по тегам и людям</string>
+    <string name="exit_app">Выйти из приложения</string>
+    <string name="toggle_mobile_desktop_view">Переключить мобильный вид</string>
+    <string name="share_dotdotdot">Поделиться&#8230;</string>
+    <string name="by_tags">по тегам</string>
+    <string name="by_people">по людям</string>
+    <string name="please_add_a_name">Пожалуйста, добавьте имя</string>
+    <string name="share_link_address">Поделиться адресом ссылки</string>
+    <string name="save_image">Сохранить изображение</string>
+    <string name="share_image">Поделиться изображением</string>
+    <string name="open_in_external_browser">Открыть во внешнем браузере&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Скопировать адрес ссылки в буфер обмена</string>
+    <string name="copy_image_address_to_clipboard">Скопировать адрес изображения в буфер обмена</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Не удаётся загрузить изображение</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Необходимо предоставить «Разрешение на доступ к хранилищу» для сохранения скриншотов. После этого вы должны полностью закрыть приложение или перезагрузите телефон. Если вы не разрешаете доступ к хранилищу, но хотите использовать функцию скриншотов позже, можно предоставить разрешение позднее. Затем откройте: Системные настройки  - приложения - dandelion*. В разделе разрешения можно предоставить «разрешение на запись в хранилище».</string>
-    <string name="permissions_image">Необходимо предоставить «Разрешение на доступ к хранилищу» для сохранения/выгрузки изображений. После этого вам необходимо полностью закрыть приложение или перезагрузить телефон. Если вы не разрешаете доступ к хранилищу, но хотите сохранять изображения позже, можно предоставить разрешение позднее. В таком случае откройте: Системные настройки  - приложения - dandelion*. В разделе разрешений можно будет предоставить «разрешение на запись в хранилище».</string>
+    <string name="screenshot_permission__appspecific">Необходимо предоставить «Разрешение на доступ к хранилищу» для сохранения скриншотов. После этого вы должны полностью закрыть приложение или перезагрузите телефон. Если вы не разрешаете доступ к хранилищу, но хотите использовать функцию скриншотов позже, можно предоставить разрешение позднее. Затем откройте: Системные настройки  - приложения - dandelion*. В разделе разрешения можно предоставить «разрешение на запись в хранилище».</string>
+    <string name="image_permission_description__appspecific">Необходимо предоставить «Разрешение на доступ к хранилищу» для сохранения/выгрузки изображений. После этого вам необходимо полностью закрыть приложение или перезагрузить телефон. Если вы не разрешаете доступ к хранилищу, но хотите сохранять изображения позже, можно предоставить разрешение позднее. В таком случае откройте: Системные настройки  - приложения - dandelion*. В разделе разрешений можно будет предоставить «разрешение на запись в хранилище».</string>
     <string name="permission_denied">В разрешении отказано.</string>
     <string name="permission_granted_try_again">Разрешение получено. Пожалуйста, попытайтесь снова.</string>
-    <string name="podselection__custom_pod">Произвольный под</string>
+    <string name="custom_pod">Произвольный под</string>
     <string name="pod_name">Название пода</string>
-    <string name="http_protocol">Протокол</string>
+    <string name="protocol">Протокол</string>
     <string name="pod_address">Адрес пода</string>
     <string name="missing_value">Значение отсутствует</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Перейти к последней просмотренной странице в Потоке?</string>
-    <string name="pref_summary__is_statusbar_hidden">Скрыть строку состояния в главном окне</string>
-    <string name="pref_title__is_statusbar_hidden">Скрыть строку состояния</string>
-    <string name="pref_summary__show_title">Показывать заголовок на главном экране</string>
-    <string name="pref_title__show_title">Показывать заголовок</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Перейти к последней просмотренной странице в Потоке?</string>
+    <string name="hide_statusbar_in_mainview">Скрыть строку состояния в главном окне</string>
+    <string name="hide_statusbar">Скрыть строку состояния</string>
+    <string name="show_title_in_main_view">Показывать заголовок на главном экране</string>
+    <string name="show_title">Показывать заголовок</string>
 
     <string name="about">О приложении</string>
     <string name="license">Лицензия</string>
@@ -118,29 +118,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Верхняя панель инструментов загружает Поток</string>
-    <string name="pref_desc__topbar_stream_shortcut">Нажмите на пустое пространство на верхней панели инструментов, чтобы открыть Поток</string>
+    <string name="top_toolbar_loads_stream__appsp">Верхняя панель инструментов загружает Поток</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Нажмите на пустое пространство на верхней панели инструментов, чтобы открыть Поток</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Внешний вид</string>
-    <string name="pref_cat__network">Сеть</string>
-    <string name="pref_cat__pod_settings">Настройки пода</string>
-    <string name="pref_cat__operability">Работоспособность</string>
+    <string name="appearance">Внешний вид</string>
+    <string name="network">Сеть</string>
+    <string name="pod_settings__appspecfic">Настройки пода</string>
+    <string name="operability">Работоспособность</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Слайдер навигации</string>
-    <string name="pref_desc__sub_nav_slider">Управление видимостью записей в ящике навигации</string>
-    <string name="pref_cat__visibility_nav_items__user">Пользовательские</string>
-    <string name="pref_cat__visibility_nav_items__general">Общие</string>
-    <string name="pref_cat__visibility_nav_items__admin">Для администраторов</string>
+    <string name="navigation_drawer">Слайдер навигации</string>
+    <string name="control_visibility_of_entries_nav_drawer">Управление видимостью записей в ящике навигации</string>
+    <string name="user">Пользовательские</string>
+    <string name="general">Общие</string>
+    <string name="admin">Для администраторов</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Тема и цвета</string>
-    <string name="pref_desc__themes">Выбор цветов используемых в приложении</string>
-    <string name="pref_title__primary_color">Основной цвет</string>
-    <string name="pref_desc__primary_color">Цвет панелей инструментов</string>
-    <string name="pref_title__accent_color">Акцентирующий цвет</string>
-    <string name="pref_desc__accent_color">Цвет индикатора загрузки</string>
+    <string name="theme_and_colors">Тема и цвета</string>
+    <string name="control_which_colors_are_used_in_app">Выбор цветов используемых в приложении</string>
+    <string name="primary_colors">Основной цвет</string>
+    <string name="colors_of_toolbars">Цвет панелей инструментов</string>
+    <string name="accent_color">Акцентирующий цвет</string>
+    <string name="color_of_progressbar">Цвет индикатора загрузки</string>
     <string name="amoled_mode">Режим AMOLED</string>
-    <string name="pref_desc__primary_color__amoled_mode">Переопределить цвета на благоприятный для AMOLED чёрный во многих частях приложения. Вам нужно перезапустить приложение, чтобы включить эту опцию. Для просмотра диаспоры* в тёмных тонах, вам также необходимо активировать тёмную тему в настройках аккаунта.</string>
+    <string name="amoled_mode_description__app_specific">Переопределить цвета на благоприятный для AMOLED чёрный во многих частях приложения. Вам нужно перезапустить приложение, чтобы включить эту опцию. Для просмотра диаспоры* в тёмных тонах, вам также необходимо активировать тёмную тему в настройках аккаунта.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Расширенные уведомления</string>
     <string name="extendend_notifications_bell_description__appspecific">Показывать выпадающее меню с категориями уведомлений при нажатии на иконку уведомлений</string>

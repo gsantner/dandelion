@@ -19,58 +19,58 @@
     <string name="changelog">അടയാളപ്പെടുത്തിയ മാറ്റങ്ങൾ</string>
     <string name="statistics">സ്ഥിതിവിവരക്കണക്ക്</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">എല്ലാ അറിയിപ്പുകളും</string>
-    <string name="notifications__also_commented">അഭിപ്രായപ്പെട്ടു</string>
-    <string name="notifications__comment_on_post">പോസ്റ്റിൽ അഭിപ്രായപ്പെടുക</string>
-    <string name="notifications__liked">ലൈക്ക് ചെയ്തു</string>
-    <string name="notifications__mentioned">പ്രസ്താവിച്ചു</string>
-    <string name="notifications__reshared">വീണ്ടും ഷെയർ ചെയ്തു</string>
-    <string name="notifications__started_sharing">ഷെയർ ചെയ്യാൻ തുടങ്ങി</string>
+    <string name="all_notifications">എല്ലാ അറിയിപ്പുകളും</string>
+    <string name="also_commented">അഭിപ്രായപ്പെട്ടു</string>
+    <string name="comment_on_post">പോസ്റ്റിൽ അഭിപ്രായപ്പെടുക</string>
+    <string name="deleteme_____1">ലൈക്ക് ചെയ്തു</string>
+    <string name="mentioned">പ്രസ്താവിച്ചു</string>
+    <string name="reshared">വീണ്ടും ഷെയർ ചെയ്തു</string>
+    <string name="started_sharing">ഷെയർ ചെയ്യാൻ തുടങ്ങി</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">പിഴവ്: പോഡുകളുടെ പട്ടിക പുതുക്കുവാൻ കഴിയുന്നില്ല!</string>
-    <string name="no_internet">ക്ഷമിക്കുക, നിങ്ങൾക്ക് മുന്നോട്ട് പോകുവാൻ ഇന്റർനെറ്റ് ബന്ധം ആവശ്യമാണ്</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">പിഴവ്: പോഡുകളുടെ പട്ടിക പുതുക്കുവാൻ കഴിയുന്നില്ല!</string>
+    <string name="sorry_need_to_be_connected_to_internet">ക്ഷമിക്കുക, നിങ്ങൾക്ക് മുന്നോട്ട് പോകുവാൻ ഇന്റർനെറ്റ് ബന്ധം ആവശ്യമാണ്</string>
     <string name="confirmation">ഉറപ്പാക്കൽ</string>
-    <string name="confirm_exit">നിങ്ങൾക്ക് പുറത്തുകടക്കണോ?</string>
+    <string name="do_you_want_to_exit">നിങ്ങൾക്ക് പുറത്തുകടക്കണോ?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">കൂടുതൽ</string>
-    <string name="nav_help_license">അതേക്കുറിച്ചു | സഹായം</string>
-    <string name="nav_followed_tags">പിന്തുടർന്ന ടാഗുകൾ</string>
-    <string name="nav_public_activities">പൊതു പ്രവർത്തനങ്ങൾ</string>
-    <string name="nav_reports">റിപ്പോർട്ടുകൾ</string>
-    <string name="share__share_link_as_text">ലിങ്ക് ടെക്സ്റ്റായി പങ്കുവയ്ക്കുക</string>
-    <string name="share__share_screenshot">വെബ്‌പേജിന്റെ സ്ക്രീൻഷോട്ട് പങ്കുവയ്ക്കുക</string>
-    <string name="share__take_screenshot">വെബ്‌പേജിന്റെ സ്ക്രീൻഷോട്ട് എടുക്കുക</string>
-    <string name="share__toast_saved_image_to_location">ചിത്രം സംരക്ഷിക്കേണ്ട സ്ഥലം</string>
-    <string name="share__toast_screenshot">സ്ക്രീൻഷോട്ട് സംരക്ഷിക്കേണ്ട ഫോർമാറ്റ്:</string>
-    <string name="share__toast_link_address_copied">ലിങ്കിന്റെ വിലാസം പകർത്തി&#8230;</string>
+    <string name="more">കൂടുതൽ</string>
+    <string name="help_license">അതേക്കുറിച്ചു | സഹായം</string>
+    <string name="followed_tags">പിന്തുടർന്ന ടാഗുകൾ</string>
+    <string name="public_activities">പൊതു പ്രവർത്തനങ്ങൾ</string>
+    <string name="reports">റിപ്പോർട്ടുകൾ</string>
+    <string name="share_link_as_text">ലിങ്ക് ടെക്സ്റ്റായി പങ്കുവയ്ക്കുക</string>
+    <string name="share_screenshot_of_webpage">വെബ്‌പേജിന്റെ സ്ക്രീൻഷോട്ട് പങ്കുവയ്ക്കുക</string>
+    <string name="take_screenshot_of_webpage">വെബ്‌പേജിന്റെ സ്ക്രീൻഷോട്ട് എടുക്കുക</string>
+    <string name="saving_image_to">ചിത്രം സംരക്ഷിക്കേണ്ട സ്ഥലം</string>
+    <string name="saving_screenshot_as">സ്ക്രീൻഷോട്ട് സംരക്ഷിക്കേണ്ട ഫോർമാറ്റ്:</string>
+    <string name="link_adress_copied">ലിങ്കിന്റെ വിലാസം പകർത്തി&#8230;</string>
     <string name="new_post">പുതിയ പോസ്റ്റ്</string>
-    <string name="action_go_to_top">മുകളിലേക്ക് പോകുക</string>
-    <string name="action_search_by_tags_or_persons">ടാഗുകളെയോ വ്യക്തികളെയോ തിരയുക</string>
-    <string name="action_exit_app">ആപ്പിന് പുറത്തുകടക്കുക</string>
-    <string name="action_toggle_desktop_page">മൊബൈൽ/ഡെസ്ക്ടോപ്പ് വ്യൂവിലേക്ക് മാറുക</string>
-    <string name="action_share_dotdotdot">പങ്കുവയ്ക്കുക&#8230;</string>
-    <string name="search_alert_tag">ടാഗുകളെ</string>
-    <string name="search_alert_people">ആളുകളെ</string>
-    <string name="search_alert_bypeople_validate_needsomedata">പേര് ചേർക്കുക</string>
-    <string name="context_menu_share_link">ലിങ്ക് വിലാസം പങ്കുവയ്ക്കുക</string>
-    <string name="context_menu_save_image">ചിത്രം സംരക്ഷിക്കുക</string>
-    <string name="context_menu_share_image">ചിത്രം പങ്കുവയ്ക്കുക</string>
-    <string name="context_menu_open_external_browser">പുറമെയുള്ള ബ്രൗസറിൽ തുറക്കുക&#8230;</string>
-    <string name="copy_link_to_clipboard">ലിങ്ക് വിലാസം ക്ലിപ്ബോർഡിലേക്ക് പകർത്തുക</string>
-    <string name="context_menu_copy_image_link">ചിത്രത്തിന്റെ വിലാസം ക്ലിപ്ബോർഡിലേക്ക് പകർത്തുക</string>
+    <string name="go_to_top">മുകളിലേക്ക് പോകുക</string>
+    <string name="search_by_tags_or_persons__appspecific">ടാഗുകളെയോ വ്യക്തികളെയോ തിരയുക</string>
+    <string name="exit_app">ആപ്പിന് പുറത്തുകടക്കുക</string>
+    <string name="toggle_mobile_desktop_view">മൊബൈൽ/ഡെസ്ക്ടോപ്പ് വ്യൂവിലേക്ക് മാറുക</string>
+    <string name="share_dotdotdot">പങ്കുവയ്ക്കുക&#8230;</string>
+    <string name="by_tags">ടാഗുകളെ</string>
+    <string name="by_people">ആളുകളെ</string>
+    <string name="please_add_a_name">പേര് ചേർക്കുക</string>
+    <string name="share_link_address">ലിങ്ക് വിലാസം പങ്കുവയ്ക്കുക</string>
+    <string name="save_image">ചിത്രം സംരക്ഷിക്കുക</string>
+    <string name="share_image">ചിത്രം പങ്കുവയ്ക്കുക</string>
+    <string name="open_in_external_browser">പുറമെയുള്ള ബ്രൗസറിൽ തുറക്കുക&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">ലിങ്ക് വിലാസം ക്ലിപ്ബോർഡിലേക്ക് പകർത്തുക</string>
+    <string name="copy_image_address_to_clipboard">ചിത്രത്തിന്റെ വിലാസം ക്ലിപ്ബോർഡിലേക്ക് പകർത്തുക</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">ചിത്രം ലോഡ് ചെയ്യാൻ സാധിക്കുന്നില്ല</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">സ്ക്രീന്ഷോട്ടുകൾ സംരക്ഷിക്കാൻ \"സ്റ്റോറേജ് ഉപയോഗിക്കാനുള്ള അനുമതി\" നിങ്ങൾ നൽകണം. അതിനു ശേഷം ഈ ആപ്പ് പൂർണമായും അടയ്ക്കുകയോ ഉപകരണം വീണ്ടും തുടങ്ങുകയോ ചെയ്യുക. ഇനി നിങ്ങൾക്ക് സ്റ്റോറേജ് ഉപയോഗിക്കാനുള്ള അനുവാദം തരാൻ പറ്റാതിരിക്കുകയും  പക്ഷെ പിന്നീട് സ്ക്രീൻഷോട്ട്  ഉപയോഗിക്കുകയും ചെയ്യണമെങ്കിൽ, നിങ്ങൾക്ക് അനുവാദം പിന്നീട് നല്കാനാവും. അതിനായി സിസ്റ്റം ക്രമീകരണങ്ങൾ- ആപ്പുകൾ- ഡാൻഡേലിയൻ* തുറക്കുക. അതിൽ പെർമിഷൻ വിഭാഗത്തിൽ \"സ്റ്റോറേജിൽ എഴുതുവാനുള്ള അനുമതി\" നൽകുക.</string>
-    <string name="permissions_image">ചിത്രങ്ങൾ സംരക്ഷിക്കാൻ/അപ്ലോഡ് ചെയ്യാൻ \"സ്റ്റോറേജ് ഉപയോഗിക്കാനുള്ള അനുമതി\" നിങ്ങൾ നൽകണം. അതിനു ശേഷം ഈ ആപ്പ് പൂർണമായും അടയ്ക്കുകയോ ഉപകരണം വീണ്ടും തുടങ്ങുകയോ ചെയ്യുക. ഇനി നിങ്ങൾക്ക് സ്റ്റോറേജ് ഉപയോഗിക്കാനുള്ള അനുവാദം തരാൻ പറ്റാതിരിക്കുകയും  പക്ഷെ പിന്നീട് ചിത്രങ്ങൾ സംരക്ഷിക്കുകയും ചെയ്യണമെങ്കിൽ, നിങ്ങൾക്ക് അനുവാദം പിന്നീട് നല്കാനാവും. അതിനായി സിസ്റ്റം ക്രമീകരണങ്ങൾ- ആപ്പുകൾ- ഡാൻഡേലിയൻ* തുറക്കുക. അതിൽ പെർമിഷൻ വിഭാഗത്തിൽ \"സ്റ്റോറേജിൽ എഴുതുവാനുള്ള അനുമതി\" നൽകുക.</string>
+    <string name="screenshot_permission__appspecific">സ്ക്രീന്ഷോട്ടുകൾ സംരക്ഷിക്കാൻ \"സ്റ്റോറേജ് ഉപയോഗിക്കാനുള്ള അനുമതി\" നിങ്ങൾ നൽകണം. അതിനു ശേഷം ഈ ആപ്പ് പൂർണമായും അടയ്ക്കുകയോ ഉപകരണം വീണ്ടും തുടങ്ങുകയോ ചെയ്യുക. ഇനി നിങ്ങൾക്ക് സ്റ്റോറേജ് ഉപയോഗിക്കാനുള്ള അനുവാദം തരാൻ പറ്റാതിരിക്കുകയും  പക്ഷെ പിന്നീട് സ്ക്രീൻഷോട്ട്  ഉപയോഗിക്കുകയും ചെയ്യണമെങ്കിൽ, നിങ്ങൾക്ക് അനുവാദം പിന്നീട് നല്കാനാവും. അതിനായി സിസ്റ്റം ക്രമീകരണങ്ങൾ- ആപ്പുകൾ- ഡാൻഡേലിയൻ* തുറക്കുക. അതിൽ പെർമിഷൻ വിഭാഗത്തിൽ \"സ്റ്റോറേജിൽ എഴുതുവാനുള്ള അനുമതി\" നൽകുക.</string>
+    <string name="image_permission_description__appspecific">ചിത്രങ്ങൾ സംരക്ഷിക്കാൻ/അപ്ലോഡ് ചെയ്യാൻ \"സ്റ്റോറേജ് ഉപയോഗിക്കാനുള്ള അനുമതി\" നിങ്ങൾ നൽകണം. അതിനു ശേഷം ഈ ആപ്പ് പൂർണമായും അടയ്ക്കുകയോ ഉപകരണം വീണ്ടും തുടങ്ങുകയോ ചെയ്യുക. ഇനി നിങ്ങൾക്ക് സ്റ്റോറേജ് ഉപയോഗിക്കാനുള്ള അനുവാദം തരാൻ പറ്റാതിരിക്കുകയും  പക്ഷെ പിന്നീട് ചിത്രങ്ങൾ സംരക്ഷിക്കുകയും ചെയ്യണമെങ്കിൽ, നിങ്ങൾക്ക് അനുവാദം പിന്നീട് നല്കാനാവും. അതിനായി സിസ്റ്റം ക്രമീകരണങ്ങൾ- ആപ്പുകൾ- ഡാൻഡേലിയൻ* തുറക്കുക. അതിൽ പെർമിഷൻ വിഭാഗത്തിൽ \"സ്റ്റോറേജിൽ എഴുതുവാനുള്ള അനുമതി\" നൽകുക.</string>
     <string name="permission_denied">അനുമതി നിരസിച്ചിരിക്കുന്നു.</string>
     <string name="permission_granted_try_again">അനുമതി നൽകിയിരിക്കുന്നു. വീണ്ടും ശ്രമിക്കുക.</string>
-    <string name="podselection__custom_pod">കസ്റ്റം പോഡ്</string>
+    <string name="custom_pod">കസ്റ്റം പോഡ്</string>
     <string name="pod_name">പോഡിന്റെ പേര്</string>
-    <string name="http_protocol">പ്രോട്ടോകോൾ</string>
+    <string name="protocol">പ്രോട്ടോകോൾ</string>
     <string name="pod_address">പോഡ് വിലാസം</string>
     <string name="missing_value">കാണാതായ മൂല്യം</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">സ്ട്രീമിലെ അവസാനമായി സന്ദർശിച്ച പേജിലേക്ക് പോകുക?</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">സ്ട്രീമിലെ അവസാനമായി സന്ദർശിച്ച പേജിലേക്ക് പോകുക?</string>
 
     <string name="about">കുറിച്ച്</string>
     <string name="license">ലൈസൻസ്</string>
@@ -91,29 +91,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">മുകളിലെ ടൂൾബാർ സ്‌ട്രീം ലോഡ് ചെയ്യുന്നു</string>
-    <string name="pref_desc__topbar_stream_shortcut">ടൂൾബാറിലെ ഒഴിഞ്ഞ സ്ഥലത്തു ക്ലിക്ക് ചെയ്തു സ്‌ട്രീം തുറക്കുക</string>
+    <string name="top_toolbar_loads_stream__appsp">മുകളിലെ ടൂൾബാർ സ്‌ട്രീം ലോഡ് ചെയ്യുന്നു</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">ടൂൾബാറിലെ ഒഴിഞ്ഞ സ്ഥലത്തു ക്ലിക്ക് ചെയ്തു സ്‌ട്രീം തുറക്കുക</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">രൂപം</string>
-    <string name="pref_cat__network">ശൃംഖല</string>
-    <string name="pref_cat__pod_settings">പോഡ് ക്രമീകരണങ്ങൾ</string>
-    <string name="pref_cat__operability">പ്രവർത്തിക്കുവാൻ കഴിയുന്നത്</string>
+    <string name="appearance">രൂപം</string>
+    <string name="network">ശൃംഖല</string>
+    <string name="pod_settings__appspecfic">പോഡ് ക്രമീകരണങ്ങൾ</string>
+    <string name="operability">പ്രവർത്തിക്കുവാൻ കഴിയുന്നത്</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">നാവിഗേഷൻ സ്ലൈഡർ</string>
-    <string name="pref_desc__sub_nav_slider">നാവിഗേഷൻ വലിപ്പിലെ രേഖപ്പെടുത്തലുകളുടെ കാഴ്ച്ച നിയന്ത്രിക്കുക</string>
-    <string name="pref_cat__visibility_nav_items__user">ഉപയോക്താവ്</string>
-    <string name="pref_cat__visibility_nav_items__general">പൊതു</string>
-    <string name="pref_cat__visibility_nav_items__admin">അഡ്മിൻ</string>
+    <string name="navigation_drawer">നാവിഗേഷൻ സ്ലൈഡർ</string>
+    <string name="control_visibility_of_entries_nav_drawer">നാവിഗേഷൻ വലിപ്പിലെ രേഖപ്പെടുത്തലുകളുടെ കാഴ്ച്ച നിയന്ത്രിക്കുക</string>
+    <string name="user">ഉപയോക്താവ്</string>
+    <string name="general">പൊതു</string>
+    <string name="admin">അഡ്മിൻ</string>
     <!-- Themes -->
-    <string name="pref_title__themes">തീമും നിറവും</string>
-    <string name="pref_desc__themes">ആപ്പിൽ മൊത്തമായി ഉപയോഗിക്കുന്ന നിറങ്ങൾ ക്രമീകരിക്കുക</string>
-    <string name="pref_title__primary_color">പ്രധാന നിറം</string>
-    <string name="pref_desc__primary_color">ടൂൾബാറുകളുടെ നിറം</string>
-    <string name="pref_title__accent_color">എടുത്തുകാണിക്കുന്ന നിറം</string>
-    <string name="pref_desc__accent_color">പ്രോഗ്രസ് ബാറിന്റെ നിറം</string>
+    <string name="theme_and_colors">തീമും നിറവും</string>
+    <string name="control_which_colors_are_used_in_app">ആപ്പിൽ മൊത്തമായി ഉപയോഗിക്കുന്ന നിറങ്ങൾ ക്രമീകരിക്കുക</string>
+    <string name="primary_colors">പ്രധാന നിറം</string>
+    <string name="colors_of_toolbars">ടൂൾബാറുകളുടെ നിറം</string>
+    <string name="accent_color">എടുത്തുകാണിക്കുന്ന നിറം</string>
+    <string name="color_of_progressbar">പ്രോഗ്രസ് ബാറിന്റെ നിറം</string>
     <string name="amoled_mode">അമോൾഡ് മോഡ്</string>
-    <string name="pref_desc__primary_color__amoled_mode">അമോലെഡ് ഡിസ്പ്ലേ സൗഹൃദമായ കറുപ്പ് നിറം ആപ്പിന്റെ പല ഭാഗങ്ങളിലും മറ്റു നിറങ്ങളെ മറികടക്കും. ഈ ക്രമീകരണം മാറ്റുവാൻ ആപ്പ് വീണ്ടും തുറക്കേണ്ടി വരും. നിങ്ങളുടെ സ്വകാര്യ ഡയസ്പോറ* അകൗണ്ട് ക്രമീകരണങ്ങളിലെ ഇരുണ്ട തീം പ്രയോഗിച്ചാൽ ഡയസ്പോറ* നിങ്ങൾക്ക് ഇരുണ്ട പശ്ചാത്തലത്തിൽ ഉപയോഗിക്കാം.</string>
+    <string name="amoled_mode_description__app_specific">അമോലെഡ് ഡിസ്പ്ലേ സൗഹൃദമായ കറുപ്പ് നിറം ആപ്പിന്റെ പല ഭാഗങ്ങളിലും മറ്റു നിറങ്ങളെ മറികടക്കും. ഈ ക്രമീകരണം മാറ്റുവാൻ ആപ്പ് വീണ്ടും തുറക്കേണ്ടി വരും. നിങ്ങളുടെ സ്വകാര്യ ഡയസ്പോറ* അകൗണ്ട് ക്രമീകരണങ്ങളിലെ ഇരുണ്ട തീം പ്രയോഗിച്ചാൽ ഡയസ്പോറ* നിങ്ങൾക്ക് ഇരുണ്ട പശ്ചാത്തലത്തിൽ ഉപയോഗിക്കാം.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">വ്യാപിപ്പിച്ച വിജ്ഞാപനങ്ങൾ</string>
     <string name="extendend_notifications_bell_description__appspecific">വിജ്ഞാപന വിഭാഗങ്ങൾ കാണിക്കുന്ന താഴേക്ക് വലിക്കാവുന്ന മെനുവിൽ വിജ്ഞാപന മണി വലുതാക്കുക</string>

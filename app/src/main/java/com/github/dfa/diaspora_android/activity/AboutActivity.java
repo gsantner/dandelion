@@ -214,7 +214,7 @@ public class AboutActivity extends ThemedActivity
                     sharingIntent.setType("text/plain");
                     sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.app_name));
                     sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.hey_checkout_dandelion_tag__appspecific, getString(R.string.fragment_about__fdroid_link)));
-                    startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.action_share_dotdotdot)));
+                    startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.share_dotdotdot)));
                     break;
             }
         }

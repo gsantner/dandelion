@@ -19,10 +19,10 @@
     <string name="changelog">Değişme Günlüğü</string>
     <string name="statistics">İstatistikler</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Tüm Bildimler</string>
-    <string name="notifications__also_commented">Ayrıca Yorumlar</string>
-    <string name="notifications__comment_on_post">Gönderine Yorumlar</string>
-    <string name="notifications__liked">Beğeniler</string>
+    <string name="all_notifications">Tüm Bildimler</string>
+    <string name="also_commented">Ayrıca Yorumlar</string>
+    <string name="comment_on_post">Gönderine Yorumlar</string>
+    <string name="deleteme_____1">Beğeniler</string>
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <!-- More from MainActivity -->
@@ -64,26 +64,26 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Üst araç çubuğu akışı yükler</string>
-    <string name="pref_desc__topbar_stream_shortcut">Üst araç çubuğunda boş bir yere tıklayarak akışı başlatabilirsiniz</string>
+    <string name="top_toolbar_loads_stream__appsp">Üst araç çubuğu akışı yükler</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Üst araç çubuğunda boş bir yere tıklayarak akışı başlatabilirsiniz</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Görünüş</string>
-    <string name="pref_cat__network">Ağ</string>
-    <string name="pref_cat__pod_settings">Pod Ayarları</string>
-    <string name="pref_cat__operability">Çalışabilirlik</string>
+    <string name="appearance">Görünüş</string>
+    <string name="network">Ağ</string>
+    <string name="pod_settings__appspecfic">Pod Ayarları</string>
+    <string name="operability">Çalışabilirlik</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Menü Kaydırıcı</string>
-    <string name="pref_cat__visibility_nav_items__user">Kullanıcı</string>
-    <string name="pref_cat__visibility_nav_items__general">Genel</string>
-    <string name="pref_cat__visibility_nav_items__admin">Yönetici</string>
+    <string name="navigation_drawer">Menü Kaydırıcı</string>
+    <string name="user">Kullanıcı</string>
+    <string name="general">Genel</string>
+    <string name="admin">Yönetici</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Tema ve Renkler</string>
-    <string name="pref_desc__themes">Uygulamada hangi renklerin kullanılacağını kontrol edin</string>
-    <string name="pref_title__primary_color">Birincil Renk</string>
-    <string name="pref_desc__primary_color">Araç çubuğu rengi</string>
-    <string name="pref_title__accent_color">Vurgu rengi</string>
-    <string name="pref_desc__accent_color">İlerleme çubuğunun rengi</string>
+    <string name="theme_and_colors">Tema ve Renkler</string>
+    <string name="control_which_colors_are_used_in_app">Uygulamada hangi renklerin kullanılacağını kontrol edin</string>
+    <string name="primary_colors">Birincil Renk</string>
+    <string name="colors_of_toolbars">Araç çubuğu rengi</string>
+    <string name="accent_color">Vurgu rengi</string>
+    <string name="color_of_progressbar">İlerleme çubuğunun rengi</string>
     <string name="amoled_mode">AMOLED Modu</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Genişletilmiş Bildirimler</string>

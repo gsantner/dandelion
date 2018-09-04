@@ -19,63 +19,63 @@
     <string name="changelog">Amaynut</string>
     <string name="statistics">Tidaddanin</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Meṛṛa ilɣa</string>
-    <string name="notifications__also_commented">Iwennet daɣen</string>
-    <string name="notifications__comment_on_post">Iwenniten ɣef yizen</string>
-    <string name="notifications__liked">Aḥemmel</string>
-    <string name="notifications__mentioned">Tummliwin</string>
-    <string name="notifications__reshared">Yules beṭṭu</string>
-    <string name="notifications__started_sharing">Yebda beṭṭu</string>
+    <string name="all_notifications">Meṛṛa ilɣa</string>
+    <string name="also_commented">Iwennet daɣen</string>
+    <string name="comment_on_post">Iwenniten ɣef yizen</string>
+    <string name="deleteme_____1">Aḥemmel</string>
+    <string name="mentioned">Tummliwin</string>
+    <string name="reshared">Yules beṭṭu</string>
+    <string name="started_sharing">Yebda beṭṭu</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Tuccḍa: Ur iemir ara ad d-yawi tabdart n ipoden!</string>
-    <string name="no_internet">Suref-aɣ, yessefk ad teqqneḍ ar Internet akken ad tkemmleḍ</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Tuccḍa: Ur iemir ara ad d-yawi tabdart n ipoden!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Suref-aɣ, yessefk ad teqqneḍ ar Internet akken ad tkemmleḍ</string>
     <string name="confirmation">Asentem</string>
-    <string name="confirm_exit">Tebɣiḍ ad teffɣeḍ?</string>
+    <string name="do_you_want_to_exit">Tebɣiḍ ad teffɣeḍ?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Ugar</string>
-    <string name="nav_help_license">Ɣef | Tallelt</string>
-    <string name="nav_followed_tags">Tibzimin yettwaḍefren</string>
-    <string name="nav_public_activities">Irmuden izuyaz</string>
-    <string name="nav_reports">Ineqqisen</string>
-    <string name="share__share_link_as_text">Bḍu aseɣwen am uḍris</string>
-    <string name="share__share_screenshot">Bḍu tuṭṭfa n ugdil n usmel web</string>
-    <string name="share__take_screenshot">Ṭṭef agdil n usmel web</string>
-    <string name="share__toast_saved_image_to_location">Asekles n tugna ar</string>
-    <string name="share__toast_screenshot">Asekles n tuṭṭfa s yisem:</string>
-    <string name="share__toast_link_address_copied">Aseɣwen yettwanɣel&#8230;</string>
+    <string name="more">Ugar</string>
+    <string name="help_license">Ɣef | Tallelt</string>
+    <string name="followed_tags">Tibzimin yettwaḍefren</string>
+    <string name="public_activities">Irmuden izuyaz</string>
+    <string name="reports">Ineqqisen</string>
+    <string name="share_link_as_text">Bḍu aseɣwen am uḍris</string>
+    <string name="share_screenshot_of_webpage">Bḍu tuṭṭfa n ugdil n usmel web</string>
+    <string name="take_screenshot_of_webpage">Ṭṭef agdil n usmel web</string>
+    <string name="saving_image_to">Asekles n tugna ar</string>
+    <string name="saving_screenshot_as">Asekles n tuṭṭfa s yisem:</string>
+    <string name="link_adress_copied">Aseɣwen yettwanɣel&#8230;</string>
     <string name="new_post">Izen n uɣrab amaynut</string>
-    <string name="action_go_to_top">Ddu ar usnas</string>
-    <string name="action_search_by_tags_or_persons">Anadi s tebqzimin neɣ s imdanen</string>
-    <string name="action_exit_app">Ffeɣ seg usnas</string>
-    <string name="action_toggle_desktop_page">Rmed/Sens timeẓri aselkim/aziraz</string>
-    <string name="action_share_dotdotdot">Bḍu&#8230;</string>
-    <string name="search_alert_tag">s tebzimin</string>
-    <string name="search_alert_people">s imdanen</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Rnu isem</string>
-    <string name="context_menu_share_link">Bḍu tansa n useɣwen</string>
-    <string name="context_menu_save_image">Sekles tugna</string>
-    <string name="context_menu_share_image">Bḍu tugna</string>
-    <string name="context_menu_open_external_browser">Ldi deg iminig azɣaray&#8230;</string>
-    <string name="copy_link_to_clipboard">Nɣel aseɣwen ɣef afus</string>
-    <string name="context_menu_copy_image_link">Nɣel tugna ɣef afus</string>
+    <string name="go_to_top">Ddu ar usnas</string>
+    <string name="search_by_tags_or_persons__appspecific">Anadi s tebqzimin neɣ s imdanen</string>
+    <string name="exit_app">Ffeɣ seg usnas</string>
+    <string name="toggle_mobile_desktop_view">Rmed/Sens timeẓri aselkim/aziraz</string>
+    <string name="share_dotdotdot">Bḍu&#8230;</string>
+    <string name="by_tags">s tebzimin</string>
+    <string name="by_people">s imdanen</string>
+    <string name="please_add_a_name">Rnu isem</string>
+    <string name="share_link_address">Bḍu tansa n useɣwen</string>
+    <string name="save_image">Sekles tugna</string>
+    <string name="share_image">Bḍu tugna</string>
+    <string name="open_in_external_browser">Ldi deg iminig azɣaray&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Nɣel aseɣwen ɣef afus</string>
+    <string name="copy_image_address_to_clipboard">Nɣel tugna ɣef afus</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Ur izmir ara ad d-isali tugna</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Yessefk ad tmuddeḍ tasiregt \"Snifel neɣ kkes agbur di tkarḍa Sd \" akken ad teskelseḍ tuṭṭfiwin n ugdil. Sakin, yessefk ad tmedleḍ asnas neɣ ad talseḍ tanekra n tiliɣri-ik. Ma yella ur tmuddeḍ ara tasiregt n unelcum ar umḍiq n usekles acu kan tebɣiḍ ad tesqedceḍ tamahilt n tuṭṭfa n ugdil ar zdat, yessefk ad tmuddeḍ tasiregt ticki. Ma ulac aṣili ldi: Iɣewwaren  - isnasen - dandelion*. Di tgezmi Tisirag, yessefk ad tmuddeḍ tasiregt \"Snifel neɣ kkes agbur n tkarḍa Sd\".</string>
-    <string name="permissions_image">Yessefk ad tmuddeḍ tasiregt \"Mudd tisirag n usekles \" akken ad teskelseḍ/ad tessaliḍ
+    <string name="screenshot_permission__appspecific">Yessefk ad tmuddeḍ tasiregt \"Snifel neɣ kkes agbur di tkarḍa Sd \" akken ad teskelseḍ tuṭṭfiwin n ugdil. Sakin, yessefk ad tmedleḍ asnas neɣ ad talseḍ tanekra n tiliɣri-ik. Ma yella ur tmuddeḍ ara tasiregt n unelcum ar umḍiq n usekles acu kan tebɣiḍ ad tesqedceḍ tamahilt n tuṭṭfa n ugdil ar zdat, yessefk ad tmuddeḍ tasiregt ticki. Ma ulac aṣili ldi: Iɣewwaren  - isnasen - dandelion*. Di tgezmi Tisirag, yessefk ad tmuddeḍ tasiregt \"Snifel neɣ kkes agbur n tkarḍa Sd\".</string>
+    <string name="image_permission_description__appspecific">Yessefk ad tmuddeḍ tasiregt \"Mudd tisirag n usekles \" akken ad teskelseḍ/ad tessaliḍ
         tiwlafin. Sakin, yessefk ad tmedleḍ asnas neɣ ad talseḍ tanekra n tiliɣri-ik. Ma yella ur tmuddeḍ ara tasiregt n unekcum 
         ar umḍiq n usekles acu kan tebɣiḍ ad tesqedceḍ tamahilt n tuṭṭfa n ugdil ar zdat, yessefk ad tmuddeḍ tasiregt ticki. Ma ulac aṣili ldi: Iɣewwaren  - isnasen - 
         dandelion*. Di tgezmi Tisirag, yessefk ad tmuddeḍ tasiregt \"Tisiragt n usekles n tira\".</string>
     <string name="permission_denied">Tasiregt tettwagi.</string>
     <string name="permission_granted_try_again">Tasiregt tettunefk. Ɛreḍ tikelt nniḍen.</string>
-    <string name="podselection__custom_pod">Apod udmawan</string>
+    <string name="custom_pod">Apod udmawan</string>
     <string name="pod_name">Isem n upod</string>
-    <string name="http_protocol">Aneggaf</string>
+    <string name="protocol">Aneggaf</string>
     <string name="pod_address">Tansa n upod</string>
     <string name="missing_value">Azal yettwazgel</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Ddu ar usebter aneggaru yettwarzan deg usuddem?</string>
-    <string name="pref_summary__is_statusbar_hidden">Ffer afeggag n waddad di tmeẓri tagejdant</string>
-    <string name="pref_title__is_statusbar_hidden">Ffer afeggag n waddad</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Ddu ar usebter aneggaru yettwarzan deg usuddem?</string>
+    <string name="hide_statusbar_in_mainview">Ffer afeggag n waddad di tmeẓri tagejdant</string>
+    <string name="hide_statusbar">Ffer afeggag n waddad</string>
 
     <string name="about">Γef</string>
     <string name="license">Turagt</string>
@@ -119,29 +119,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Afeggag n ufella yessalay-d asuddem</string>
-    <string name="pref_desc__topbar_stream_shortcut">Sit ɣef tallunt tilemt n ufella akken ad d-ldiḍ asuddem</string>
+    <string name="top_toolbar_loads_stream__appsp">Afeggag n ufella yessalay-d asuddem</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Sit ɣef tallunt tilemt n ufella akken ad d-ldiḍ asuddem</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Udem</string>
-    <string name="pref_cat__network">Aẓeṭṭa</string>
-    <string name="pref_cat__pod_settings">Iɣewwaṛen Pod</string>
-    <string name="pref_cat__operability">Tasnemhelt</string>
+    <string name="appearance">Udem</string>
+    <string name="network">Aẓeṭṭa</string>
+    <string name="pod_settings__appspecfic">Iɣewwaṛen Pod</string>
+    <string name="operability">Tasnemhelt</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Taḥnaccaḍt n iminig</string>
-    <string name="pref_desc__sub_nav_slider">Ad iqareɛ askan n inekcam deg ugalis n tunigin</string>
-    <string name="pref_cat__visibility_nav_items__user">Aseqdac</string>
-    <string name="pref_cat__visibility_nav_items__general">Amatu</string>
-    <string name="pref_cat__visibility_nav_items__admin">Anedbal</string>
+    <string name="navigation_drawer">Taḥnaccaḍt n iminig</string>
+    <string name="control_visibility_of_entries_nav_drawer">Ad iqareɛ askan n inekcam deg ugalis n tunigin</string>
+    <string name="user">Aseqdac</string>
+    <string name="general">Amatu</string>
+    <string name="admin">Anedbal</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Isental d yiniten</string>
-    <string name="pref_desc__themes">Ad iqareɛ initen yettwasqedcen i usnas</string>
-    <string name="pref_title__primary_color">Ini amezwaru</string>
-    <string name="pref_desc__primary_color">Ini n ufeggag n ifecka</string>
-    <string name="pref_title__accent_color">Ini asnawan</string>
-    <string name="pref_desc__accent_color">Ini n ufeggag n usfari</string>
+    <string name="theme_and_colors">Isental d yiniten</string>
+    <string name="control_which_colors_are_used_in_app">Ad iqareɛ initen yettwasqedcen i usnas</string>
+    <string name="primary_colors">Ini amezwaru</string>
+    <string name="colors_of_toolbars">Ini n ufeggag n ifecka</string>
+    <string name="accent_color">Ini asnawan</string>
+    <string name="color_of_progressbar">Ini n ufeggag n usfari</string>
     <string name="amoled_mode">Askar AMOLED</string>
-    <string name="pref_desc__primary_color__amoled_mode">Semselsi initen s uberkan yemṣadan d uskan AMOLED, ɣef ddeqs n yiḥricen n usnas. Akken ad tinigeḍ di diaspora* s sukan ubrik, tzemreḍ daɣen ad tesqedceḍ asentel Aberkan, win ara tafeḍ deg iɣewwaṛen-ik udmawanen n umiḍan-ik diaspora*.</string>
+    <string name="amoled_mode_description__app_specific">Semselsi initen s uberkan yemṣadan d uskan AMOLED, ɣef ddeqs n yiḥricen n usnas. Akken ad tinigeḍ di diaspora* s sukan ubrik, tzemreḍ daɣen ad tesqedceḍ asentel Aberkan, win ara tafeḍ deg iɣewwaṛen-ik udmawanen n umiḍan-ik diaspora*.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Ilɣa n usiɣzef</string>
     <string name="extendend_notifications_bell_description__appspecific">Siɣzef nnaqus n ilɣa s umuɣ n udrurem ara d-iseknen taggayin n ulɣu</string>

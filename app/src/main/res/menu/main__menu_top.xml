@@ -26,43 +26,43 @@
             <item
                 android:id="@+id/action_notifications_all"
                 android:icon="@drawable/ic_dashboard_black_48px"
-                android:title="@string/notifications__all" />
+                android:title="@string/all_notifications" />
 
             <item
                 android:id="@+id/action_notifications_also_commented"
                 android:icon="@drawable/ic_question_answer_black_48px"
-                android:title="@string/notifications__also_commented" />
+                android:title="@string/also_commented" />
 
             <item
                 android:id="@+id/action_notifications_comment_on_post"
                 android:icon="@drawable/ic_comment_black_48px"
-                android:title="@string/notifications__comment_on_post" />
+                android:title="@string/comment_on_post" />
 
             <item
                 android:id="@+id/action_notifications_liked"
                 android:icon="@drawable/ic_thumb_up_black_48px"
-                android:title="@string/notifications__liked" />
+                android:title="@string/deleteme_____1" />
 
             <item
                 android:id="@+id/action_notifications_mentioned"
                 android:icon="@drawable/ic_person_pin_black_48px"
-                android:title="@string/notifications__mentioned" />
+                android:title="@string/mentioned" />
 
             <item
                 android:id="@+id/action_notifications_reshared"
                 android:icon="@drawable/ic_repeat_black_48px"
-                android:title="@string/notifications__reshared" />
+                android:title="@string/reshared" />
             <item
                 android:id="@+id/action_notifications_started_sharing"
                 android:icon="@drawable/ic_person_add_black_48px"
-                android:title="@string/notifications__started_sharing" />
+                android:title="@string/started_sharing" />
         </menu>
     </item>
 
     <item
         android:id="@+id/action_search"
         android:icon="@drawable/ic_search_white_48px"
-        android:title="@string/action_search_by_tags_or_persons"
+        android:title="@string/search_by_tags_or_persons__appspecific"
         app:showAsAction="always" />
 
     <item

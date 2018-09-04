@@ -161,7 +161,7 @@ public class PodSelectionFragment extends ThemedFragment implements SearchView.O
                     } catch (JSONException ignored) {
                     }
                 } else {
-                    Snackbar.make(listViewPod, R.string.podlist_error, Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(listViewPod, R.string.could_not_retrieve_list_of_pods__appspecific, Snackbar.LENGTH_SHORT).show();
                 }
             }
         }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="open_navdrawer">Open navigation drawer</string>
+    <string name="close_navdrawer">Close navigation drawer</string>
     <string name="reload">Reload</string>
 
     <!-- Common Words -->
@@ -23,112 +23,112 @@
     <string name="statistics">Statistics</string>
 
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">All Notifications</string>
-    <string name="notifications__also_commented">Also Commented</string>
-    <string name="notifications__comment_on_post">Comment on Post</string>
-    <string name="notifications__liked">Liked</string>
-    <string name="notifications__mentioned">Mentioned</string>
-    <string name="notifications__reshared">Reshared</string>
-    <string name="notifications__started_sharing">Started Sharing</string>
+    <string name="all_notifications">All Notifications</string>
+    <string name="also_commented">Also Commented</string>
+    <string name="comment_on_post">Comment on Post</string>
+    <string name="deleteme_____1">Liked</string>
+    <string name="mentioned">Mentioned</string>
+    <string name="reshared">Reshared</string>
+    <string name="started_sharing">Started Sharing</string>
 
 
     <!-- Pod Activity -->
-    <string name="podlist_error">Error: Could not retrieve list of pods!</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Error: Could not retrieve list of pods!</string>
 
-    <string name="no_internet">Sorry, you must be connected to the Internet to proceed</string>
+    <string name="sorry_need_to_be_connected_to_internet">Sorry, you must be connected to the Internet to proceed</string>
     <string name="confirmation">Confirmation</string>
-    <string name="confirm_exit">Do you want to exit?</string>
+    <string name="do_you_want_to_exit">Do you want to exit?</string>
 
 
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">More</string>
-    <string name="nav_help_license">About | Help</string>
-    <string name="nav_followed_tags">Followed Tags</string>
-    <string name="nav_public_activities">Public activities</string>
-    <string name="nav_reports">Reports</string>
+    <string name="more">More</string>
+    <string name="help_license">About | Help</string>
+    <string name="followed_tags">Followed Tags</string>
+    <string name="public_activities">Public activities</string>
+    <string name="reports">Reports</string>
 
-    <string name="share__share_link_as_text">Share link as text</string>
-    <string name="share__share_screenshot">Share screenshot of webpage</string>
-    <string name="share__take_screenshot">Take screenshot of webpage</string>
-    <string name="share__toast_saved_image_to_location">Saving image to</string>
-    <string name="share__toast_screenshot">Saving screenshot as:</string>
-    <string name="share__toast_link_address_copied">Link address copied …</string>
+    <string name="share_link_as_text">Share link as text</string>
+    <string name="share_screenshot_of_webpage">Share screenshot of webpage</string>
+    <string name="take_screenshot_of_webpage">Take screenshot of webpage</string>
+    <string name="saving_image_to">Saving image to</string>
+    <string name="saving_screenshot_as">Saving screenshot as:</string>
+    <string name="link_adress_copied">Link address copied …</string>
 
 
     <string name="new_post">New post</string>
-    <string name="action_go_to_top">Go to top</string>
-    <string name="action_search_by_tags_or_persons">Search by tags or persons</string>
-    <string name="action_exit_app">Exit app</string>
-    <string name="action_toggle_desktop_page">Toggle mobile/desktop view</string>
-    <string name="action_share_dotdotdot">Share…</string>
+    <string name="go_to_top">Go to top</string>
+    <string name="search_by_tags_or_persons__appspecific">Search by tags or persons</string>
+    <string name="exit_app">Exit app</string>
+    <string name="toggle_mobile_desktop_view">Toggle mobile/desktop view</string>
+    <string name="share_dotdotdot">Share…</string>
 
 
-    <string name="search_alert_tag">by tags</string>
-    <string name="search_alert_people">by people</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Please add a name</string>
+    <string name="by_tags">by tags</string>
+    <string name="by_people">by people</string>
+    <string name="please_add_a_name">Please add a name</string>
 
-    <string name="context_menu_share_link">Share link address</string>
-    <string name="context_menu_save_image">Save image</string>
-    <string name="context_menu_share_image">Share image</string>
-    <string name="context_menu_open_external_browser">Open in external browser…</string>
-    <string name="copy_link_to_clipboard">Copy link address to clipboard</string>
-    <string name="context_menu_copy_image_link">Copy image address to clipboard</string>
+    <string name="share_link_address">Share link address</string>
+    <string name="save_image">Save image</string>
+    <string name="share_image">Share image</string>
+    <string name="open_in_external_browser">Open in external browser…</string>
+    <string name="copy_link_adress_to_clipboard">Copy link address to clipboard</string>
+    <string name="copy_image_address_to_clipboard">Copy image address to clipboard</string>
 
 
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Unable to load image</string>
 
     <!-- Permissions -->
-    <string name="permissions_screenshot">You must grant \"Access Storage Permission\" to save screenshots. After that you should
+    <string name="screenshot_permission__appspecific">You must grant \"Access Storage Permission\" to save screenshots. After that you should
         completely close the app or restart the device. If you don\'t permit the storage access but want to use the
         screenshot function at a later time, you can grant the permission later. Please open then: systemsettings - apps -
         dandelion*. In the permissions section you can grant the \"write storage permission\".</string>
-    <string name="permissions_image">You must grant \"Access Storage Permission\" to save/upload images. After that you should
+    <string name="image_permission_description__appspecific">You must grant \"Access Storage Permission\" to save/upload images. After that you should
         completely close the app or restart the device. If you don\'t permit the storage access but want to save images
         at a later time, you can grant the permission later. Please open then: systemsettings - apps -
         dandelion*. In the permissions section you can grant the \"write storage permission\".</string>
     <string name="permission_denied">Permission denied.</string>
     <string name="permission_granted_try_again">Permission granted. Please try again.</string>
-    <string name="podselection__custom_pod">Custom Pod</string>
+    <string name="custom_pod">Custom Pod</string>
     <string name="pod_name">Pod name</string>
-    <string name="http_protocol">Protocol</string>
+    <string name="protocol">Protocol</string>
     <string name="pod_address">Pod address</string>
     <string name="missing_value">Missing value</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Jump to last visited page in stream?</string>
-    <string name="pref_summary__is_statusbar_hidden">Hide statusbar at main view</string>
-    <string name="pref_title__is_statusbar_hidden">Hide statusbar</string>
-    <string name="pref_summary__show_title">Show title in the main view</string>
-    <string name="pref_title__show_title">Show title</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Jump to last visited page in stream?</string>
+    <string name="hide_statusbar_in_mainview">Hide statusbar at main view</string>
+    <string name="hide_statusbar">Hide statusbar</string>
+    <string name="show_title_in_main_view">Show title in the main view</string>
+    <string name="show_title">Show title</string>
     <string name="launcher_shortcut">Launcher shortcut</string>
 
 
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Top toolbar loads stream</string>
-    <string name="pref_desc__topbar_stream_shortcut">Click an empty space in the top toolbar to open the stream</string>
+    <string name="top_toolbar_loads_stream__appsp">Top toolbar loads stream</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Click an empty space in the top toolbar to open the stream</string>
 
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Appearance</string>
-    <string name="pref_cat__network">Network</string>
-    <string name="pref_cat__pod_settings">Pod settings</string>
-    <string name="pref_cat__operability">Operability</string>
+    <string name="appearance">Appearance</string>
+    <string name="network">Network</string>
+    <string name="pod_settings__appspecfic">Pod settings</string>
+    <string name="operability">Operability</string>
 
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Navigation Slider</string>
-    <string name="pref_desc__sub_nav_slider">Control visibility of entries in the navigation drawer</string>
-    <string name="pref_cat__visibility_nav_items__user">User</string>
-    <string name="pref_cat__visibility_nav_items__general">General</string>
-    <string name="pref_cat__visibility_nav_items__admin">Admin</string>
+    <string name="navigation_drawer">Navigation Slider</string>
+    <string name="control_visibility_of_entries_nav_drawer">Control visibility of entries in the navigation drawer</string>
+    <string name="user">User</string>
+    <string name="general">General</string>
+    <string name="admin">Admin</string>
 
     <!-- Themes -->
-    <string name="pref_title__themes">Theme and Colors</string>
-    <string name="pref_desc__themes">Control which colors are used throughout the app</string>
-    <string name="pref_title__primary_color">Primary Color</string>
-    <string name="pref_desc__primary_color">Color of the toolbars</string>
-    <string name="pref_title__accent_color">Accent Color</string>
-    <string name="pref_desc__accent_color">Color of the progressbar</string>
+    <string name="theme_and_colors">Theme and Colors</string>
+    <string name="control_which_colors_are_used_in_app">Control which colors are used throughout the app</string>
+    <string name="primary_colors">Primary Color</string>
+    <string name="colors_of_toolbars">Color of the toolbars</string>
+    <string name="accent_color">Accent Color</string>
+    <string name="color_of_progressbar">Color of the progressbar</string>
     <string name="amoled_mode">AMOLED Mode</string>
-    <string name="pref_desc__primary_color__amoled_mode">Override colors with AMOLED display friendly black at many parts of the app. You need to restart to toggle this setting. To browse diaspora* in dark you also need to activate the Dark theme, which can be found in your personal diaspora* account settings.</string>
+    <string name="amoled_mode_description__app_specific">Override colors with AMOLED display friendly black at many parts of the app. You need to restart to toggle this setting. To browse diaspora* in dark you also need to activate the Dark theme, which can be found in your personal diaspora* account settings.</string>
 
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Extended Notifications</string>

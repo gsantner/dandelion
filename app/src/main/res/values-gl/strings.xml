@@ -2,8 +2,8 @@
 <!--Editado con nano-->
 <resources>
     <!-- Application -->
-<string name="navigation_drawer_open">Abrir cadro de navegación</string>
-<string name="navigation_drawer_close">Pechar cadro de navegación</string>
+<string name="open_navdrawer">Abrir cadro de navegación</string>
+<string name="close_navdrawer">Pechar cadro de navegación</string>
     <string name="reload">Actualizar</string>
     <!-- Common Words -->
     <string name="settings">Axustes</string>
@@ -22,65 +22,65 @@
     <string name="changelog">Rexistro de cambios</string>
     <string name="statistics">Estatísticas</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Todas as notificacións</string>
-    <string name="notifications__also_commented">Tamén comentado</string>
-    <string name="notifications__comment_on_post">Comentario nunha publicación</string>
-    <string name="notifications__liked">Gústame</string>
-    <string name="notifications__mentioned">Mencionado</string>
-    <string name="notifications__reshared">Compartido</string>
-    <string name="notifications__started_sharing">Comezou a compartir</string>
+    <string name="all_notifications">Todas as notificacións</string>
+    <string name="also_commented">Tamén comentado</string>
+    <string name="comment_on_post">Comentario nunha publicación</string>
+    <string name="deleteme_____1">Gústame</string>
+    <string name="mentioned">Mencionado</string>
+    <string name="reshared">Compartido</string>
+    <string name="started_sharing">Comezou a compartir</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Problema: non se obtivo a lista de nodos!</string>
-    <string name="no_internet">Desculpe, precisa unha conexión a internet para esa tarefa</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Problema: non se obtivo a lista de nodos!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Desculpe, precisa unha conexión a internet para esa tarefa</string>
     <string name="confirmation">Confirmación</string>
-    <string name="confirm_exit">Quere saír?</string>
+    <string name="do_you_want_to_exit">Quere saír?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Máis</string>
-    <string name="nav_help_license">Sobre | Axuda</string>
-    <string name="nav_followed_tags">Etiquetas seguidas</string>
-    <string name="nav_public_activities">Actividade pública</string>
-    <string name="nav_reports">Informes</string>
-    <string name="share__share_link_as_text">Compartir ligazón como texto</string>
-    <string name="share__share_screenshot">Compartir captura de páxina</string>
-    <string name="share__take_screenshot">Capturar imaxe de páxina web</string>
-    <string name="share__toast_saved_image_to_location">Gardar imaxe en</string>
-    <string name="share__toast_screenshot">Gardando captura como:</string>
-    <string name="share__toast_link_address_copied">Enderezo da ligazón copiado &#8230;</string>
+    <string name="more">Máis</string>
+    <string name="help_license">Sobre | Axuda</string>
+    <string name="followed_tags">Etiquetas seguidas</string>
+    <string name="public_activities">Actividade pública</string>
+    <string name="reports">Informes</string>
+    <string name="share_link_as_text">Compartir ligazón como texto</string>
+    <string name="share_screenshot_of_webpage">Compartir captura de páxina</string>
+    <string name="take_screenshot_of_webpage">Capturar imaxe de páxina web</string>
+    <string name="saving_image_to">Gardar imaxe en</string>
+    <string name="saving_screenshot_as">Gardando captura como:</string>
+    <string name="link_adress_copied">Enderezo da ligazón copiado &#8230;</string>
     <string name="new_post">Nova mensaxe</string>
-    <string name="action_go_to_top">Ir arriba</string>
-    <string name="action_search_by_tags_or_persons">Buscar persoas ou etiquetas</string>
-    <string name="action_exit_app">Saír do app</string>
-    <string name="action_toggle_desktop_page">Vista móbil/escritorio</string>
-    <string name="action_share_dotdotdot">Compartir&#8230;</string>
-    <string name="search_alert_tag">Etiquetas</string>
-    <string name="search_alert_people">Persoas</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Por favor, engada un nome</string>
-    <string name="context_menu_share_link">Compartir ligazón</string>
-    <string name="context_menu_save_image">Gardar imaxe</string>
-    <string name="context_menu_share_image">Compartir imaxe</string>
-    <string name="context_menu_open_external_browser">Abrir nun navegador externo&#8230;</string>
-    <string name="copy_link_to_clipboard">Copiar ligazón ao portapapeis</string>
-    <string name="context_menu_copy_image_link">Copia enderezo da imaxe ao portapapeis</string>
+    <string name="go_to_top">Ir arriba</string>
+    <string name="search_by_tags_or_persons__appspecific">Buscar persoas ou etiquetas</string>
+    <string name="exit_app">Saír do app</string>
+    <string name="toggle_mobile_desktop_view">Vista móbil/escritorio</string>
+    <string name="share_dotdotdot">Compartir&#8230;</string>
+    <string name="by_tags">Etiquetas</string>
+    <string name="by_people">Persoas</string>
+    <string name="please_add_a_name">Por favor, engada un nome</string>
+    <string name="share_link_address">Compartir ligazón</string>
+    <string name="save_image">Gardar imaxe</string>
+    <string name="share_image">Compartir imaxe</string>
+    <string name="open_in_external_browser">Abrir nun navegador externo&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Copiar ligazón ao portapapeis</string>
+    <string name="copy_image_address_to_clipboard">Copia enderezo da imaxe ao portapapeis</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Non se cargou a imaxe</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Debe permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Pode
+    <string name="screenshot_permission__appspecific">Debe permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Pode
         pechar a aplicación ou reiniciar o dispositivo. Si non permite acceder ao almacenamento pero que utilizar máis tarde a captura de pantalla, poderá permitir posteriormente o acceso na sección de permisos do dispositivo onde pode activar o \"permiso de acceso a almacenamento\" para dandelion*.</string>
-    <string name="permissions_image">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar/subir imaxes. Despois de iso debería
+    <string name="image_permission_description__appspecific">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar/subir imaxes. Despois de iso debería
         pechar a aplicación ou reiniciar o dispositivo. Se non permite acceder ao almacenamento, para poder gardar imaxes posteriormente, deberá abrir: preferencias do sistema - apps - dandelion* no dispositivo.
    Na sección de permisos pode activar o \"permiso de escritura no almacenamento\".</string>
     <string name="permission_denied">Permiso denegado.</string>
     <string name="permission_granted_try_again">Permiso concedido. Inténteo de novo.</string>
-    <string name="podselection__custom_pod">Nodo personalizado</string>
+    <string name="custom_pod">Nodo personalizado</string>
     <string name="pod_name">Nome do nodo</string>
-    <string name="http_protocol">Protocolo</string>
+    <string name="protocol">Protocolo</string>
     <string name="pod_address">Enderezo do nodo</string>
     <string name="missing_value">Faltan datos</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Ir a última paxina lida na conversa?</string>
-    <string name="pref_summary__is_statusbar_hidden">Agochar a barra de estado na vista principal</string>
-    <string name="pref_title__is_statusbar_hidden">Agochar barra de estado</string>
-    <string name="pref_summary__show_title">Mostrar título na vista principal</string>
-    <string name="pref_title__show_title">Mostrar título</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Ir a última paxina lida na conversa?</string>
+    <string name="hide_statusbar_in_mainview">Agochar a barra de estado na vista principal</string>
+    <string name="hide_statusbar">Agochar barra de estado</string>
+    <string name="show_title_in_main_view">Mostrar título na vista principal</string>
+    <string name="show_title">Mostrar título</string>
 	<string name="launcher_shortcut">Atallo do lanzador</string>
 
     <string name="about">Sobre</string>
@@ -125,29 +125,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">A barra superior carga a conversa</string>
-    <string name="pref_desc__topbar_stream_shortcut">Pulse nun espazo baldeiro na barra superior para abrir a conversa</string>
+    <string name="top_toolbar_loads_stream__appsp">A barra superior carga a conversa</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Pulse nun espazo baldeiro na barra superior para abrir a conversa</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Aparencia</string>
-    <string name="pref_cat__network">Rede</string>
-    <string name="pref_cat__pod_settings">Axustes do nodo</string>
-    <string name="pref_cat__operability">Operabilidade</string>
+    <string name="appearance">Aparencia</string>
+    <string name="network">Rede</string>
+    <string name="pod_settings__appspecfic">Axustes do nodo</string>
+    <string name="operability">Operabilidade</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Cadro de navegación</string>
-    <string name="pref_desc__sub_nav_slider">Controle a visibiidade das entradas no cadro de navegación</string>
-    <string name="pref_cat__visibility_nav_items__user">Usuaria</string>
-    <string name="pref_cat__visibility_nav_items__general">Xeral</string>
-    <string name="pref_cat__visibility_nav_items__admin">Admin</string>
+    <string name="navigation_drawer">Cadro de navegación</string>
+    <string name="control_visibility_of_entries_nav_drawer">Controle a visibiidade das entradas no cadro de navegación</string>
+    <string name="user">Usuaria</string>
+    <string name="general">Xeral</string>
+    <string name="admin">Admin</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Decorado e cores</string>
-    <string name="pref_desc__themes">Estableza qué cores se utilizan na aplicación</string>
-    <string name="pref_title__primary_color">Cor primaria</string>
-    <string name="pref_desc__primary_color">Cor das barras de ferramentas</string>
-    <string name="pref_title__accent_color">Cor de énfase</string>
-    <string name="pref_desc__accent_color">Cor da barra de progreso</string>
+    <string name="theme_and_colors">Decorado e cores</string>
+    <string name="control_which_colors_are_used_in_app">Estableza qué cores se utilizan na aplicación</string>
+    <string name="primary_colors">Cor primaria</string>
+    <string name="colors_of_toolbars">Cor das barras de ferramentas</string>
+    <string name="accent_color">Cor de énfase</string>
+    <string name="color_of_progressbar">Cor da barra de progreso</string>
     <string name="amoled_mode">Modo AMOLED</string>
-    <string name="pref_desc__primary_color__amoled_mode">Sobreescribir as cores co negro dos dispositivos AMOLED en varios lugares da aplicación. Precisa reiniciar para habilitar esta preferencia. Para navegar diaspora* en modo oscuro tamén precisa activar o Decorado Oscuro, que pode atopar nos axustes personais na súa conta de diaspora*.</string>
+    <string name="amoled_mode_description__app_specific">Sobreescribir as cores co negro dos dispositivos AMOLED en varios lugares da aplicación. Precisa reiniciar para habilitar esta preferencia. Para navegar diaspora* en modo oscuro tamén precisa activar o Decorado Oscuro, que pode atopar nos axustes personais na súa conta de diaspora*.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notificacións extendidas</string>
     <string name="extendend_notifications_bell_description__appspecific">Extender a icona da campá de notificación con un menú desplegable que mostre a categoría das notificacións</string>

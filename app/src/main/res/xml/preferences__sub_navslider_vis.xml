@@ -3,7 +3,7 @@
 
     <!-- User -->
     <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
-        android:title="@string/pref_cat__visibility_nav_items__user">
+        android:title="@string/user">
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="true"
             android:key="@string/pref_key__visibility_nav__profile"
@@ -11,7 +11,7 @@
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="true"
             android:key="@string/pref_key__visibility_nav__followed_tags"
-            android:title="@string/nav_followed_tags"/>
+            android:title="@string/followed_tags"/>
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="true"
             android:key="@string/pref_key__visibility_nav__aspects"
@@ -39,7 +39,7 @@
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="false"
             android:key="@string/pref_key__visibility_nav__public_activities"
-            android:title="@string/nav_public_activities"/>
+            android:title="@string/public_activities"/>
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="false"
             android:key="@string/pref_key__visibility_nav__gsantner_account"
@@ -50,32 +50,32 @@
 
     <!-- General -->
     <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
-        android:title="@string/pref_cat__visibility_nav_items__general">
+        android:title="@string/general">
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="true"
             android:key="@string/pref_key__visibility_nav__exit"
-            android:title="@string/action_exit_app"/>
+            android:title="@string/exit_app"/>
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="false"
             android:key="@string/pref_key__visibility_nav__toggle_mobile_desktop"
-            android:title="@string/action_toggle_desktop_page"/>
+            android:title="@string/toggle_mobile_desktop_view"/>
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="true"
             android:key="@string/pref_key__visibility_nav__help_license"
-            android:title="@string/nav_help_license"/>
+            android:title="@string/help_license"/>
 
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 
 
     <!-- Admin -->
     <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
-        android:title="@string/pref_cat__visibility_nav_items__admin">
+        android:title="@string/admin">
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="false"
             android:key="@string/pref_key__visibility_nav__reports"
-            android:title="@string/nav_reports"/>
+            android:title="@string/reports"/>
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedVisibilityPreference
             android:defaultValue="false"

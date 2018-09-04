@@ -19,60 +19,60 @@
     <string name="changelog">Lista zmian</string>
     <string name="statistics">Statystyki</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Wszystkie powiadomienia</string>
-    <string name="notifications__also_commented">Także skomentował/a</string>
-    <string name="notifications__comment_on_post">Skomentował/a Twój wpis</string>
-    <string name="notifications__liked">Polubienia</string>
-    <string name="notifications__mentioned">Wzmianki</string>
-    <string name="notifications__reshared">Powtórzenia</string>
-    <string name="notifications__started_sharing">Zaczęli się z Tobą dzielić</string>
+    <string name="all_notifications">Wszystkie powiadomienia</string>
+    <string name="also_commented">Także skomentował/a</string>
+    <string name="comment_on_post">Skomentował/a Twój wpis</string>
+    <string name="deleteme_____1">Polubienia</string>
+    <string name="mentioned">Wzmianki</string>
+    <string name="reshared">Powtórzenia</string>
+    <string name="started_sharing">Zaczęli się z Tobą dzielić</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Błąd: Nie udało się pobrać listy podów!</string>
-    <string name="no_internet">Przykro mi, lecz aby kontynuować, musisz mieć połączenie z Internetem</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Błąd: Nie udało się pobrać listy podów!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Przykro mi, lecz aby kontynuować, musisz mieć połączenie z Internetem</string>
     <string name="confirmation">Potwierdzenie</string>
-    <string name="confirm_exit">Czy chcesz wyjść?</string>
+    <string name="do_you_want_to_exit">Czy chcesz wyjść?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Więcej</string>
-    <string name="nav_help_license">Informacje | Pomoc</string>
-    <string name="nav_followed_tags">Obserwowane tagi</string>
-    <string name="nav_public_activities">Aktywność publiczna</string>
-    <string name="nav_reports">Zgłoszenia</string>
-    <string name="share__share_link_as_text">Udostępnij link jako tekst</string>
-    <string name="share__share_screenshot">Udostępnij zrzut ekranu strony internetowej</string>
-    <string name="share__take_screenshot">Wykonaj zrzut ekranu strony internetowej</string>
-    <string name="share__toast_saved_image_to_location">Zapisywanie obrazu do</string>
-    <string name="share__toast_screenshot">Zapisywanie zrzutu ekranu jako:</string>
-    <string name="share__toast_link_address_copied">Skopiowano adres linku&#8230;</string>
+    <string name="more">Więcej</string>
+    <string name="help_license">Informacje | Pomoc</string>
+    <string name="followed_tags">Obserwowane tagi</string>
+    <string name="public_activities">Aktywność publiczna</string>
+    <string name="reports">Zgłoszenia</string>
+    <string name="share_link_as_text">Udostępnij link jako tekst</string>
+    <string name="share_screenshot_of_webpage">Udostępnij zrzut ekranu strony internetowej</string>
+    <string name="take_screenshot_of_webpage">Wykonaj zrzut ekranu strony internetowej</string>
+    <string name="saving_image_to">Zapisywanie obrazu do</string>
+    <string name="saving_screenshot_as">Zapisywanie zrzutu ekranu jako:</string>
+    <string name="link_adress_copied">Skopiowano adres linku&#8230;</string>
     <string name="new_post">Nowy wpis</string>
-    <string name="action_go_to_top">Przejdź do góry</string>
-    <string name="action_search_by_tags_or_persons">Szukaj tagów lub osób</string>
-    <string name="action_exit_app">Zamknij aplikację</string>
-    <string name="action_toggle_desktop_page">Przełącz na widok mobilny/standardowy</string>
-    <string name="action_share_dotdotdot">Udostępnij&#8230;</string>
-    <string name="search_alert_tag">w tagach</string>
-    <string name="search_alert_people">w osobach</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Podaj nazwę użytkownika lub tagu</string>
-    <string name="context_menu_share_link">Udostępnij adres odnośnika</string>
-    <string name="context_menu_save_image">Zapisz obraz</string>
-    <string name="context_menu_share_image">Udostępnij obraz</string>
-    <string name="context_menu_open_external_browser">Otwórz w zewnętrznej przeglądarce&#8230;</string>
-    <string name="copy_link_to_clipboard">Skopiuj adres odnośnika do schowka</string>
-    <string name="context_menu_copy_image_link">Skopiuj adres obrazu do schowka</string>
+    <string name="go_to_top">Przejdź do góry</string>
+    <string name="search_by_tags_or_persons__appspecific">Szukaj tagów lub osób</string>
+    <string name="exit_app">Zamknij aplikację</string>
+    <string name="toggle_mobile_desktop_view">Przełącz na widok mobilny/standardowy</string>
+    <string name="share_dotdotdot">Udostępnij&#8230;</string>
+    <string name="by_tags">w tagach</string>
+    <string name="by_people">w osobach</string>
+    <string name="please_add_a_name">Podaj nazwę użytkownika lub tagu</string>
+    <string name="share_link_address">Udostępnij adres odnośnika</string>
+    <string name="save_image">Zapisz obraz</string>
+    <string name="share_image">Udostępnij obraz</string>
+    <string name="open_in_external_browser">Otwórz w zewnętrznej przeglądarce&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Skopiuj adres odnośnika do schowka</string>
+    <string name="copy_image_address_to_clipboard">Skopiuj adres obrazu do schowka</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Nie udało się wczytać obrazu</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Aby móc zapisywać zrzuty ekranu, musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz, powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - dandelion*. W sekcji uprawnień zaznacz \"Pamięć\".</string>
-    <string name="permissions_image">Aby móc zapisywać/wysyłać obrazy, musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz, powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - dandelion*. W sekcji uprawnień zaznacz \"Pamięć\".</string>
+    <string name="screenshot_permission__appspecific">Aby móc zapisywać zrzuty ekranu, musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz, powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - dandelion*. W sekcji uprawnień zaznacz \"Pamięć\".</string>
+    <string name="image_permission_description__appspecific">Aby móc zapisywać/wysyłać obrazy, musisz nadać aplikacji uprawnienia do \"modyfikowania i usuwania zawartości karty SD\". Gdy to zrobisz, powinieneś całkowicie zamknąć aplikację lub zrestartować urządzenie. Jeśli nie nadasz teraz tego uprawnienia, ale będziesz chciał zrobić to w przyszłości, otwórz Ustawienia - Aplikacje - dandelion*. W sekcji uprawnień zaznacz \"Pamięć\".</string>
     <string name="permission_denied">Odmowa dostępu.</string>
     <string name="permission_granted_try_again">Dostęp przyznany. Spróbuj ponownie.</string>
-    <string name="podselection__custom_pod">Pod spoza listy</string>
+    <string name="custom_pod">Pod spoza listy</string>
     <string name="pod_name">Nazwa Poda</string>
-    <string name="http_protocol">Protokół</string>
+    <string name="protocol">Protokół</string>
     <string name="pod_address">Adres Poda</string>
     <string name="missing_value">Nie podano danych</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Przejść do ostatnio odwiedzonej strony w strumieniu?</string>
-    <string name="pref_summary__is_statusbar_hidden">Ukryj pasek stanu w głównym widoku</string>
-    <string name="pref_title__is_statusbar_hidden">Ukryj pasek stanu</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Przejść do ostatnio odwiedzonej strony w strumieniu?</string>
+    <string name="hide_statusbar_in_mainview">Ukryj pasek stanu w głównym widoku</string>
+    <string name="hide_statusbar">Ukryj pasek stanu</string>
 
     <string name="about">O aplikacji</string>
     <string name="license">Licencja</string>
@@ -116,29 +116,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Górny pasek narzędzi wczytuje strumień</string>
-    <string name="pref_desc__topbar_stream_shortcut">Aby otworzyć strumień, kliknij na pustą przestrzeń w górnym pasku narzędziowym</string>
+    <string name="top_toolbar_loads_stream__appsp">Górny pasek narzędzi wczytuje strumień</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Aby otworzyć strumień, kliknij na pustą przestrzeń w górnym pasku narzędziowym</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Wygląd</string>
-    <string name="pref_cat__network">Sieć</string>
-    <string name="pref_cat__pod_settings">Ustawienia poda</string>
-    <string name="pref_cat__operability">Obsługa</string>
+    <string name="appearance">Wygląd</string>
+    <string name="network">Sieć</string>
+    <string name="pod_settings__appspecfic">Ustawienia poda</string>
+    <string name="operability">Obsługa</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Pasek nawigacji</string>
-    <string name="pref_desc__sub_nav_slider">Wybierz elementy widoczne w panelu nawigacyjnym</string>
-    <string name="pref_cat__visibility_nav_items__user">Użytkownik</string>
-    <string name="pref_cat__visibility_nav_items__general">Ogólne</string>
-    <string name="pref_cat__visibility_nav_items__admin">Administracja</string>
+    <string name="navigation_drawer">Pasek nawigacji</string>
+    <string name="control_visibility_of_entries_nav_drawer">Wybierz elementy widoczne w panelu nawigacyjnym</string>
+    <string name="user">Użytkownik</string>
+    <string name="general">Ogólne</string>
+    <string name="admin">Administracja</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Motywy i kolory</string>
-    <string name="pref_desc__themes">Ustaw, jakich kolorów ma używać aplikacja</string>
-    <string name="pref_title__primary_color">Kolor podstawowy</string>
-    <string name="pref_desc__primary_color">Kolor pasków narzędzi</string>
-    <string name="pref_title__accent_color">Kolor dodatkowy</string>
-    <string name="pref_desc__accent_color">Kolor paska postępu</string>
+    <string name="theme_and_colors">Motywy i kolory</string>
+    <string name="control_which_colors_are_used_in_app">Ustaw, jakich kolorów ma używać aplikacja</string>
+    <string name="primary_colors">Kolor podstawowy</string>
+    <string name="colors_of_toolbars">Kolor pasków narzędzi</string>
+    <string name="accent_color">Kolor dodatkowy</string>
+    <string name="color_of_progressbar">Kolor paska postępu</string>
     <string name="amoled_mode">Tryb AMOLED</string>
-    <string name="pref_desc__primary_color__amoled_mode">Nadpisz kolory w wielu częściach aplikacji, używając czarnego przyjaznego dla ekranów AMOLED. Aby zobaczyć zmiany, musisz zrestartować aplikację. Żeby przeglądać diasporę* w ciemności, musisz także aktywować Ciemny (Dark) motyw. Opcję tę znajdziesz w ustawieniach Twojego konta diaspory*.</string>
+    <string name="amoled_mode_description__app_specific">Nadpisz kolory w wielu częściach aplikacji, używając czarnego przyjaznego dla ekranów AMOLED. Aby zobaczyć zmiany, musisz zrestartować aplikację. Żeby przeglądać diasporę* w ciemności, musisz także aktywować Ciemny (Dark) motyw. Opcję tę znajdziesz w ustawieniach Twojego konta diaspory*.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Rozszerzone powiadomienia</string>
     <string name="extendend_notifications_bell_description__appspecific">Dodaj do ikony powiadomień menu wyboru kategorii powiadomień</string>

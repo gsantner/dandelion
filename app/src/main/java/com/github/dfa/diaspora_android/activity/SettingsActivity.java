@@ -310,7 +310,7 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
             final LineColorPicker base = dialogLayout.findViewById(R.id.color_picker_dialog__base_picker);
             final LineColorPicker shade = dialogLayout.findViewById(R.id.color_picker_dialog__shade_picker);
 
-            title.setText(type == 1 ? R.string.pref_title__primary_color : R.string.pref_title__accent_color);
+            title.setText(type == 1 ? R.string.primary_colors : R.string.accent_color);
             title.setTextColor(getResources().getColor(R.color.white));
             final int[] current = (type == 1 ? appSettings.getPrimaryColorSettings() : appSettings.getAccentColorSettings());
             base.setColors((type == 1 ? ColorPalette.getBaseColors(context) : ColorPalette.getAccentColors(context)));

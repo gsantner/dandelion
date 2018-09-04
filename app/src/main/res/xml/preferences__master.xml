@@ -3,19 +3,19 @@
     <!-- Appearance -->
     <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
         android:key="@string/pref_key__title__appearance"
-        android:title="@string/pref_cat__visuals">
+        android:title="@string/appearance">
 
         <Preference
             android:icon="@drawable/ic_color_lens_black_24px"
             android:key="@string/pref_key__cat_themes"
-            android:summary="@string/pref_desc__themes"
-            android:title="@string/pref_title__themes"/>
+            android:summary="@string/control_which_colors_are_used_in_app"
+            android:title="@string/theme_and_colors"/>
 
         <Preference
             android:icon="@drawable/ic_visibility_on_black_24px"
             android:key="@string/pref_key__cat_nav_slider"
-            android:summary="@string/pref_desc__sub_nav_slider"
-            android:title="@string/pref_title__sub_nav_slider"/>
+            android:summary="@string/control_visibility_of_entries_nav_drawer"
+            android:title="@string/navigation_drawer"/>
 
         <net.gsantner.opoc.preference.nonsupport.LanguagePreference
             android:icon="@drawable/ic_language_black_48px"
@@ -36,7 +36,7 @@
 
     <!-- Operability -->
     <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
-        android:title="@string/pref_cat__operability">
+        android:title="@string/operability">
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="false"
@@ -49,8 +49,8 @@
             android:icon="@drawable/ic_visibility_black_24dp"
             android:defaultValue="false"
             android:key="@string/pref_key__is_overview_statusbar_hidden"
-            android:summary="@string/pref_summary__is_statusbar_hidden"
-            android:title="@string/pref_title__is_statusbar_hidden"/>
+            android:summary="@string/hide_statusbar_in_mainview"
+            android:title="@string/hide_statusbar"/>
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="false"
@@ -77,15 +77,15 @@
             android:defaultValue="false"
             android:icon="@drawable/ic_touch_app_black_24px"
             android:key="@string/pref_key__topbar_stream_shortcut"
-            android:summary="@string/pref_desc__topbar_stream_shortcut"
-            android:title="@string/pref_title__topbar_stream_shortcut"/>
+            android:summary="@string/click_empty_space_top_toolbar_load_stream__appspecific"
+            android:title="@string/top_toolbar_loads_stream__appsp"/>
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="false"
             android:icon="@drawable/ic_visibility_black_24dp"
             android:key="@string/pref_key__show_title"
-            android:summary="@string/pref_summary__show_title"
-            android:title="@string/pref_title__show_title"/>
+            android:summary="@string/show_title_in_main_view"
+            android:title="@string/show_title"/>
 
         <ListPreference
             android:defaultValue="@string/rotation_val_system"
@@ -101,7 +101,7 @@
     <!-- Diaspora Pod Settings -->
     <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
         android:key="@string/pref_key__title__pod_settings"
-        android:title="@string/pref_cat__pod_settings">
+        android:title="@string/pod_settings__appspecfic">
         <Preference
             android:icon="@drawable/ic_person_black_24px"
             android:key="@string/pref_key__personal_settings"
@@ -130,7 +130,7 @@
     <!-- Networking -->
     <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
         android:key="@string/pref_key__title__network"
-        android:title="@string/pref_cat__network">
+        android:title="@string/network">
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="true"
             android:icon="@drawable/ic_file_download_black_24px"

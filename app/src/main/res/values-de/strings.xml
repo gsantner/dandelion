@@ -20,65 +20,65 @@
     <string name="changelog">Änderungen</string>
     <string name="statistics">Statistik</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Alle Benachrichtigungen</string>
-    <string name="notifications__also_commented">Auch kommentiert</string>
-    <string name="notifications__comment_on_post">Einen Beitrag kommentiert</string>
-    <string name="notifications__liked">Gefällt</string>
-    <string name="notifications__mentioned">Erwähnt</string>
-    <string name="notifications__reshared">Weitergesagt</string>
-    <string name="notifications__started_sharing">Angefangen zu teilen</string>
+    <string name="all_notifications">Alle Benachrichtigungen</string>
+    <string name="also_commented">Auch kommentiert</string>
+    <string name="comment_on_post">Einen Beitrag kommentiert</string>
+    <string name="deleteme_____1">Gefällt</string>
+    <string name="mentioned">Erwähnt</string>
+    <string name="reshared">Weitergesagt</string>
+    <string name="started_sharing">Angefangen zu teilen</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Fehler: Konnte die Podliste nicht abfragen!</string>
-    <string name="no_internet">Entschuldigung, du musst mit dem Internet verbunden sein, um fortzufahren.</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Fehler: Konnte die Podliste nicht abfragen!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Entschuldigung, du musst mit dem Internet verbunden sein, um fortzufahren.</string>
     <string name="confirmation">Bestätigung</string>
-    <string name="confirm_exit">Möchtest du die App verlassen?</string>
+    <string name="do_you_want_to_exit">Möchtest du die App verlassen?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Mehr</string>
-    <string name="nav_help_license">Über | Hilfe</string>
-    <string name="nav_followed_tags">Tags</string>
-    <string name="nav_public_activities">Öffentliche Aktivitäten</string>
-    <string name="nav_reports">Meldungen</string>
-    <string name="share__share_link_as_text">Link als Text teilen</string>
-    <string name="share__share_screenshot">Bildschirmfoto teilen</string>
-    <string name="share__take_screenshot">Bildschirmfoto speichern</string>
-    <string name="share__toast_saved_image_to_location">Speichere Bild als</string>
-    <string name="share__toast_screenshot">Bildschirmfoto wird gespeichert unter:</string>
-    <string name="share__toast_link_address_copied">Link-Adresse kopiert &#8230;</string>
+    <string name="more">Mehr</string>
+    <string name="help_license">Über | Hilfe</string>
+    <string name="followed_tags">Tags</string>
+    <string name="public_activities">Öffentliche Aktivitäten</string>
+    <string name="reports">Meldungen</string>
+    <string name="share_link_as_text">Link als Text teilen</string>
+    <string name="share_screenshot_of_webpage">Bildschirmfoto teilen</string>
+    <string name="take_screenshot_of_webpage">Bildschirmfoto speichern</string>
+    <string name="saving_image_to">Speichere Bild als</string>
+    <string name="saving_screenshot_as">Bildschirmfoto wird gespeichert unter:</string>
+    <string name="link_adress_copied">Link-Adresse kopiert &#8230;</string>
     <string name="new_post">Neuer Beitrag</string>
-    <string name="action_go_to_top">Nach oben scrollen</string>
-    <string name="action_search_by_tags_or_persons">Suche nach Tags oder Personen…</string>
-    <string name="action_exit_app">App beenden</string>
-    <string name="action_toggle_desktop_page">Mobil-/Desktopansicht umschalten</string>
-    <string name="action_share_dotdotdot">Teilen&#8230;</string>
-    <string name="search_alert_tag">nach Tags</string>
-    <string name="search_alert_people">nach Personen</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Füge einen Namen ein.</string>
-    <string name="context_menu_share_link">Link-Adresse teilen</string>
-    <string name="context_menu_save_image">Bild speichern</string>
-    <string name="context_menu_share_image">Bild teilen</string>
-    <string name="context_menu_open_external_browser">In externem Browser öffnen&#8230;</string>
-    <string name="copy_link_to_clipboard">Link-Adresse kopieren</string>
-    <string name="context_menu_copy_image_link">Bild-Adresse kopieren</string>
+    <string name="go_to_top">Nach oben scrollen</string>
+    <string name="search_by_tags_or_persons__appspecific">Suche nach Tags oder Personen…</string>
+    <string name="exit_app">App beenden</string>
+    <string name="toggle_mobile_desktop_view">Mobil-/Desktopansicht umschalten</string>
+    <string name="share_dotdotdot">Teilen&#8230;</string>
+    <string name="by_tags">nach Tags</string>
+    <string name="by_people">nach Personen</string>
+    <string name="please_add_a_name">Füge einen Namen ein.</string>
+    <string name="share_link_address">Link-Adresse teilen</string>
+    <string name="save_image">Bild speichern</string>
+    <string name="share_image">Bild teilen</string>
+    <string name="open_in_external_browser">In externem Browser öffnen&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Link-Adresse kopieren</string>
+    <string name="copy_image_address_to_clipboard">Bild-Adresse kopieren</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Konnte Bild nicht laden…</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Du musst der App Zugriff auf den Gerätespeicher gewähren, damit das Bildschirmfoto
+    <string name="screenshot_permission__appspecific">Du musst der App Zugriff auf den Gerätespeicher gewähren, damit das Bildschirmfoto
         gespeichert werden kann. Danach solltest du die Anwendung komplett schließen oder das Gerät neu starten.
         Wenn du den Zugriff verweigerst und die Funktion später doch nutzen willst, kannst du die Berechtigung
         nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - dandelion*. Im Bereich Berechtigungen kannst
         dann die entsprechende Einstellung vornehmen.</string>
-    <string name="permissions_image">Du musst der App Zugriff auf den Gerätespeicher gewähren, damit Bilder gespeichert oder hochgeladen werden können. Danach solltest du die Anwendung komplett schließen oder das Telefon neu starten. Wenn du den Zugriff verweigerst und die Funktion später doch nutzen willst, kannst du die Berechtigung
+    <string name="image_permission_description__appspecific">Du musst der App Zugriff auf den Gerätespeicher gewähren, damit Bilder gespeichert oder hochgeladen werden können. Danach solltest du die Anwendung komplett schließen oder das Telefon neu starten. Wenn du den Zugriff verweigerst und die Funktion später doch nutzen willst, kannst du die Berechtigung
 nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - dandelion*. Im Bereich Berechtigungen kannst dann die entsprechende Einstellung vornehmen.</string>
     <string name="permission_denied">Berechtigung verweigert.</string>
     <string name="permission_granted_try_again">Berechtigung erteilt. Bitte versuche es erneut.</string>
-    <string name="podselection__custom_pod">Benutzerdefinierter Pod</string>
+    <string name="custom_pod">Benutzerdefinierter Pod</string>
     <string name="pod_name">Pod Name</string>
-    <string name="http_protocol">Protokoll</string>
+    <string name="protocol">Protokoll</string>
     <string name="pod_address">Pod Adresse</string>
     <string name="missing_value">Fehlender Wert</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Zuletzt besuchte Seite im Stream aufrufen?</string>
-    <string name="pref_summary__is_statusbar_hidden">Statusleiste in Hauptansicht verstecken</string>
-    <string name="pref_title__is_statusbar_hidden">Statusleiste verstecken</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Zuletzt besuchte Seite im Stream aufrufen?</string>
+    <string name="hide_statusbar_in_mainview">Statusleiste in Hauptansicht verstecken</string>
+    <string name="hide_statusbar">Statusleiste verstecken</string>
 
     <string name="about">Über</string>
     <string name="license">Lizenz</string>
@@ -122,29 +122,29 @@ nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - dandelion*. 
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Obere Werkzeugleiste lädt Stream</string>
-    <string name="pref_desc__topbar_stream_shortcut">Klicks auf leere Flächen der oberen Werkzeugleiste öffnen den Stream</string>
+    <string name="top_toolbar_loads_stream__appsp">Obere Werkzeugleiste lädt Stream</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Klicks auf leere Flächen der oberen Werkzeugleiste öffnen den Stream</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Erscheinungsbild</string>
-    <string name="pref_cat__network">Netzwerk</string>
-    <string name="pref_cat__pod_settings">Pod Einstellungen</string>
-    <string name="pref_cat__operability">Bedienbarkeit</string>
+    <string name="appearance">Erscheinungsbild</string>
+    <string name="network">Netzwerk</string>
+    <string name="pod_settings__appspecfic">Pod Einstellungen</string>
+    <string name="operability">Bedienbarkeit</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Navigations Slider</string>
-    <string name="pref_desc__sub_nav_slider">Konfiguration der Sichtbarkeit von Einträgen im Navigation-Slider</string>
-    <string name="pref_cat__visibility_nav_items__user">Benutzer</string>
-    <string name="pref_cat__visibility_nav_items__general">Allgemeines</string>
-    <string name="pref_cat__visibility_nav_items__admin">Administrator</string>
+    <string name="navigation_drawer">Navigations Slider</string>
+    <string name="control_visibility_of_entries_nav_drawer">Konfiguration der Sichtbarkeit von Einträgen im Navigation-Slider</string>
+    <string name="user">Benutzer</string>
+    <string name="general">Allgemeines</string>
+    <string name="admin">Administrator</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Farbschema</string>
-    <string name="pref_desc__themes">Einstellungen des Farbdesigns</string>
-    <string name="pref_title__primary_color">Primärfarbe</string>
-    <string name="pref_desc__primary_color">Färbung der Werkzeugleisten</string>
-    <string name="pref_title__accent_color">Akzentfarbe</string>
-    <string name="pref_desc__accent_color">Färbung der Details</string>
+    <string name="theme_and_colors">Farbschema</string>
+    <string name="control_which_colors_are_used_in_app">Einstellungen des Farbdesigns</string>
+    <string name="primary_colors">Primärfarbe</string>
+    <string name="colors_of_toolbars">Färbung der Werkzeugleisten</string>
+    <string name="accent_color">Akzentfarbe</string>
+    <string name="color_of_progressbar">Färbung der Details</string>
     <string name="amoled_mode">AMOLED Modus</string>
-    <string name="pref_desc__primary_color__amoled_mode">Farben mit AMOLED-Display freundlichen Farben an vielen Orten der App überschreiben. Ein Neustart ist erforderlich um diese Einstellung zu ändern. Du kannst in deinen persönlichen diaspora* Einstellungen das dunkle Thema aktivieren, damit wird auch der Inhalt dunkler.</string>
+    <string name="amoled_mode_description__app_specific">Farben mit AMOLED-Display freundlichen Farben an vielen Orten der App überschreiben. Ein Neustart ist erforderlich um diese Einstellung zu ändern. Du kannst in deinen persönlichen diaspora* Einstellungen das dunkle Thema aktivieren, damit wird auch der Inhalt dunkler.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Erweiterte Benachrichtigungen</string>
     <string name="extendend_notifications_bell_description__appspecific">Erweitere die Benachrichtigungsglocke um ein Ausklappmenü mit verschiedenen Benachrichtigungskategorien</string>

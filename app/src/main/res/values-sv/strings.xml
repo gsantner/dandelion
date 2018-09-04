@@ -19,64 +19,64 @@
     <string name="changelog">Ändringar</string>
     <string name="statistics">Statistik</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Alla Notiser</string>
-    <string name="notifications__also_commented">Kommenterade Även</string>
-    <string name="notifications__comment_on_post">Kommentar till tillägg</string>
-    <string name="notifications__liked">Gillade</string>
-    <string name="notifications__mentioned">Omnämnd</string>
-    <string name="notifications__reshared">Vidaredelad</string>
-    <string name="notifications__started_sharing">Började Dela</string>
+    <string name="all_notifications">Alla Notiser</string>
+    <string name="also_commented">Kommenterade Även</string>
+    <string name="comment_on_post">Kommentar till tillägg</string>
+    <string name="deleteme_____1">Gillade</string>
+    <string name="mentioned">Omnämnd</string>
+    <string name="reshared">Vidaredelad</string>
+    <string name="started_sharing">Började Dela</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Fel: Kunde inte hämta podlista!</string>
-    <string name="no_internet">Ursäkta, du måste ansluta till Internet för att fortsätta</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Fel: Kunde inte hämta podlista!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Ursäkta, du måste ansluta till Internet för att fortsätta</string>
     <string name="confirmation">Bekräftelse</string>
-    <string name="confirm_exit">Vill du avsluta?</string>
+    <string name="do_you_want_to_exit">Vill du avsluta?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Mer</string>
-    <string name="nav_help_license">Om | Hjälp</string>
-    <string name="nav_followed_tags">Följda Taggar</string>
-    <string name="nav_public_activities">Offentliga aktiviteter</string>
-    <string name="nav_reports">Rapporter</string>
-    <string name="share__share_link_as_text">Dela länk som text</string>
-    <string name="share__share_screenshot">Dela skämdump av en webbsida</string>
-    <string name="share__take_screenshot">Ta skärmdump av en webbsida</string>
-    <string name="share__toast_saved_image_to_location">Sparar bild som</string>
-    <string name="share__toast_screenshot">Sparar skärmdump som:</string>
-    <string name="share__toast_link_address_copied">Länkadress kopierad&#8230;</string>
+    <string name="more">Mer</string>
+    <string name="help_license">Om | Hjälp</string>
+    <string name="followed_tags">Följda Taggar</string>
+    <string name="public_activities">Offentliga aktiviteter</string>
+    <string name="reports">Rapporter</string>
+    <string name="share_link_as_text">Dela länk som text</string>
+    <string name="share_screenshot_of_webpage">Dela skämdump av en webbsida</string>
+    <string name="take_screenshot_of_webpage">Ta skärmdump av en webbsida</string>
+    <string name="saving_image_to">Sparar bild som</string>
+    <string name="saving_screenshot_as">Sparar skärmdump som:</string>
+    <string name="link_adress_copied">Länkadress kopierad&#8230;</string>
     <string name="new_post">Nytt inlägg</string>
-    <string name="action_go_to_top">Till toppen</string>
-    <string name="action_search_by_tags_or_persons">Sök på taggar eller personer</string>
-    <string name="action_exit_app">Avsluta appen</string>
-    <string name="action_toggle_desktop_page">Växla mellan telefon- och skrivbordsvy</string>
-    <string name="action_share_dotdotdot">Dela&#8230;</string>
-    <string name="search_alert_tag">efter taggar</string>
-    <string name="search_alert_people">efter människor</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Var god ange namn</string>
-    <string name="context_menu_share_link">Dela länkadress</string>
-    <string name="context_menu_save_image">Spara bild</string>
-    <string name="context_menu_share_image">Dela bild</string>
-    <string name="context_menu_open_external_browser">Öppna i en extern webbläsare&#8230;</string>
-    <string name="copy_link_to_clipboard">Kopiera länkadress</string>
-    <string name="context_menu_copy_image_link">Kopiera bildadressen</string>
+    <string name="go_to_top">Till toppen</string>
+    <string name="search_by_tags_or_persons__appspecific">Sök på taggar eller personer</string>
+    <string name="exit_app">Avsluta appen</string>
+    <string name="toggle_mobile_desktop_view">Växla mellan telefon- och skrivbordsvy</string>
+    <string name="share_dotdotdot">Dela&#8230;</string>
+    <string name="by_tags">efter taggar</string>
+    <string name="by_people">efter människor</string>
+    <string name="please_add_a_name">Var god ange namn</string>
+    <string name="share_link_address">Dela länkadress</string>
+    <string name="save_image">Spara bild</string>
+    <string name="share_image">Dela bild</string>
+    <string name="open_in_external_browser">Öppna i en extern webbläsare&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Kopiera länkadress</string>
+    <string name="copy_image_address_to_clipboard">Kopiera bildadressen</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Kunde inte ladda bilden</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Du måste bevilja lagringsbehörighet för att spara skärmdumpar. När du gjort det, bör du
+    <string name="screenshot_permission__appspecific">Du måste bevilja lagringsbehörighet för att spara skärmdumpar. När du gjort det, bör du
         stänga ned appen eller starta om din enhet. Om du inte vill bevilja lagringsbehörighet men ändå vill använda
         skärmdumpsfunktionen senare, kan du bevilja behörighet senare. Öppna då systeminställningarna, appar,
         dandelion*. Bland behörigheterna väljer du att bevilja den att skriva data.</string>
-    <string name="permissions_image">Du måste bevilja lagringsbehörighet för att spara och ladda upp bilder. När du gjort det, bör du
+    <string name="image_permission_description__appspecific">Du måste bevilja lagringsbehörighet för att spara och ladda upp bilder. När du gjort det, bör du
         stänga ned appen eller starta om din enhet. Om du inte vill bevilja lagringsbehörighet men ändå vill spara bilder
          senare, kan du bevilja behörighet senare. Öppna då systeminställningarna, appar,
         dandelion*. Bland behörigheterna väljer du att bevilja den att skriva data.</string>
     <string name="permission_denied">Åtkomst nekad.</string>
     <string name="permission_granted_try_again">Åtkomst beviljad. Var god försök igen.</string>
-    <string name="podselection__custom_pod">Anpassad pod</string>
+    <string name="custom_pod">Anpassad pod</string>
     <string name="pod_name">Podnamn</string>
-    <string name="http_protocol">Protokoll</string>
+    <string name="protocol">Protokoll</string>
     <string name="pod_address">Podadress</string>
     <string name="missing_value">Värde saknas</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Vill du hoppa senast besökta sida i strömmen?</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Vill du hoppa senast besökta sida i strömmen?</string>
 
     <string name="about">Om</string>
     <string name="license">Licens</string>
@@ -120,29 +120,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Den övre verktygspanelen laddar stöm</string>
-    <string name="pref_desc__topbar_stream_shortcut">Tryck på en tom yta i övre verktygsfältet för att öppna strömmen</string>
+    <string name="top_toolbar_loads_stream__appsp">Den övre verktygspanelen laddar stöm</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Tryck på en tom yta i övre verktygsfältet för att öppna strömmen</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Utseende</string>
-    <string name="pref_cat__network">Nätverk</string>
-    <string name="pref_cat__pod_settings">Pod-inställningar</string>
-    <string name="pref_cat__operability">Funktionsdugligheten</string>
+    <string name="appearance">Utseende</string>
+    <string name="network">Nätverk</string>
+    <string name="pod_settings__appspecfic">Pod-inställningar</string>
+    <string name="operability">Funktionsdugligheten</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Navigeringsreglage</string>
-    <string name="pref_desc__sub_nav_slider">Kontrollera synligheten för inlägg i den utdragbara panelen</string>
-    <string name="pref_cat__visibility_nav_items__user">Användare</string>
-    <string name="pref_cat__visibility_nav_items__general">Generella</string>
-    <string name="pref_cat__visibility_nav_items__admin">Administratör</string>
+    <string name="navigation_drawer">Navigeringsreglage</string>
+    <string name="control_visibility_of_entries_nav_drawer">Kontrollera synligheten för inlägg i den utdragbara panelen</string>
+    <string name="user">Användare</string>
+    <string name="general">Generella</string>
+    <string name="admin">Administratör</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Tema och färger</string>
-    <string name="pref_desc__themes">Styr vilka färger som ska används i programmet</string>
-    <string name="pref_title__primary_color">Primär färg</string>
-    <string name="pref_desc__primary_color">Färgen på verktygspanelerna</string>
-    <string name="pref_title__accent_color">Accentfärg</string>
-    <string name="pref_desc__accent_color">Färg på förloppsindikatorn</string>
+    <string name="theme_and_colors">Tema och färger</string>
+    <string name="control_which_colors_are_used_in_app">Styr vilka färger som ska används i programmet</string>
+    <string name="primary_colors">Primär färg</string>
+    <string name="colors_of_toolbars">Färgen på verktygspanelerna</string>
+    <string name="accent_color">Accentfärg</string>
+    <string name="color_of_progressbar">Färg på förloppsindikatorn</string>
     <string name="amoled_mode">AMOLED-läge</string>
-    <string name="pref_desc__primary_color__amoled_mode">Överskrid färger med svart i flera delar av appen, anpassad AMOLED-skärmar. Du behöver starta om för att verkställa. För att använda Diaspora* i mörkt läge behöver du också aktivera Dark theme, som du hittar bland dina personliga Diaspora*-kontoinställningar.</string>
+    <string name="amoled_mode_description__app_specific">Överskrid färger med svart i flera delar av appen, anpassad AMOLED-skärmar. Du behöver starta om för att verkställa. För att använda Diaspora* i mörkt läge behöver du också aktivera Dark theme, som du hittar bland dina personliga Diaspora*-kontoinställningar.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Utökade notifikationer</string>
     <string name="extendend_notifications_bell_description__appspecific">Utöka notifikationsklockan med en rullgardinsmeny som visar kategorier för notifieringar</string>

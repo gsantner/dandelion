@@ -19,58 +19,58 @@
     <string name="changelog">Újdonságok</string>
     <string name="statistics">Statisztika</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Összes értesítés</string>
-    <string name="notifications__also_commented">Más hozzászólások</string>
-    <string name="notifications__comment_on_post">Közvetlen hozzászólások</string>
-    <string name="notifications__liked">Kedvelések</string>
-    <string name="notifications__mentioned">Megemlítések</string>
-    <string name="notifications__reshared">Megosztások</string>
-    <string name="notifications__started_sharing">Új kapcsolatok</string>
+    <string name="all_notifications">Összes értesítés</string>
+    <string name="also_commented">Más hozzászólások</string>
+    <string name="comment_on_post">Közvetlen hozzászólások</string>
+    <string name="deleteme_____1">Kedvelések</string>
+    <string name="mentioned">Megemlítések</string>
+    <string name="reshared">Megosztások</string>
+    <string name="started_sharing">Új kapcsolatok</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Hiba: Nem lehetett lekérni a podok listáját!</string>
-    <string name="no_internet">Bocsánat, csatlakoznod kell az internethez a folytatáshoz</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Hiba: Nem lehetett lekérni a podok listáját!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Bocsánat, csatlakoznod kell az internethez a folytatáshoz</string>
     <string name="confirmation">Jóváhagyás</string>
-    <string name="confirm_exit">Ki akarsz lépni?</string>
+    <string name="do_you_want_to_exit">Ki akarsz lépni?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Egyebek</string>
-    <string name="nav_help_license">Névjegy | Segítség</string>
-    <string name="nav_followed_tags">Követett címkék</string>
-    <string name="nav_public_activities">Nyilvános tevékenységek</string>
-    <string name="nav_reports">Jelentések</string>
-    <string name="share__share_link_as_text">Link megosztása szövegként</string>
-    <string name="share__share_screenshot">Weboldal képernyőképének megosztása</string>
-    <string name="share__take_screenshot">Képernyőkép készítése weboldalról</string>
-    <string name="share__toast_saved_image_to_location">Kép mentése a következő helyre</string>
-    <string name="share__toast_screenshot">Képernyőkép mentése mint:</string>
-    <string name="share__toast_link_address_copied">Másolt link címe&#8230;</string>
+    <string name="more">Egyebek</string>
+    <string name="help_license">Névjegy | Segítség</string>
+    <string name="followed_tags">Követett címkék</string>
+    <string name="public_activities">Nyilvános tevékenységek</string>
+    <string name="reports">Jelentések</string>
+    <string name="share_link_as_text">Link megosztása szövegként</string>
+    <string name="share_screenshot_of_webpage">Weboldal képernyőképének megosztása</string>
+    <string name="take_screenshot_of_webpage">Képernyőkép készítése weboldalról</string>
+    <string name="saving_image_to">Kép mentése a következő helyre</string>
+    <string name="saving_screenshot_as">Képernyőkép mentése mint:</string>
+    <string name="link_adress_copied">Másolt link címe&#8230;</string>
     <string name="new_post">Új bejegyzés</string>
-    <string name="action_go_to_top">Ugrás az oldal tetejére</string>
-    <string name="action_search_by_tags_or_persons">Címkék vagy emberek keresése</string>
-    <string name="action_exit_app">Kilépés az alkalmazásból</string>
-    <string name="action_toggle_desktop_page">Mobil-/asztali mód</string>
-    <string name="action_share_dotdotdot">Megosztás&#8230;</string>
-    <string name="search_alert_tag">címkékre</string>
-    <string name="search_alert_people">emberekre</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Kérlek, adj meg egy nevet</string>
-    <string name="context_menu_share_link">Link címének megosztása</string>
-    <string name="context_menu_save_image">Kép mentése</string>
-    <string name="context_menu_share_image">Kép megosztása</string>
-    <string name="context_menu_open_external_browser">Megnyitás külső böngészőben&#8230;</string>
-    <string name="copy_link_to_clipboard">Link címének másolása a vágólapra</string>
-    <string name="context_menu_copy_image_link">Kép címének másolása a vágólapra</string>
+    <string name="go_to_top">Ugrás az oldal tetejére</string>
+    <string name="search_by_tags_or_persons__appspecific">Címkék vagy emberek keresése</string>
+    <string name="exit_app">Kilépés az alkalmazásból</string>
+    <string name="toggle_mobile_desktop_view">Mobil-/asztali mód</string>
+    <string name="share_dotdotdot">Megosztás&#8230;</string>
+    <string name="by_tags">címkékre</string>
+    <string name="by_people">emberekre</string>
+    <string name="please_add_a_name">Kérlek, adj meg egy nevet</string>
+    <string name="share_link_address">Link címének megosztása</string>
+    <string name="save_image">Kép mentése</string>
+    <string name="share_image">Kép megosztása</string>
+    <string name="open_in_external_browser">Megnyitás külső böngészőben&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Link címének másolása a vágólapra</string>
+    <string name="copy_image_address_to_clipboard">Kép címének másolása a vágólapra</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Nem lehet betölteni a képet</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">Engedélyezned kell a tárhely elérését a képernyőképek mentéséhez. Aztán teljesen be kell zárnod az alkalmazást vagy újra kell indítanod az eszközt. Ha most nem akarod engedélyezni a tárhely elérését, de később szeretnéd használni a képernyőkép-funkciót, kérlek, tedd meg az alábbi helyen: Rendszerbeállítások - Alkalmazások - dandelion*. Itt az engedélyeknél hozzáadhatod az a tárhelyre való írást.</string>
-    <string name="permissions_image">Engedélyezned kell a tárhely elérését a képek mentéséhez/feltöltéséhez. Aztán teljesen be kell zárnod az alkalmazást vagy újra kell indítanod az eszközt. Ha most nem akarod engedélyezni a tárhely elérését, de később szeretnéd használni a képernyőkép-funkciót, kérlek, tedd meg az alábbi helyen: Rendszerbeállítások - Alkalmazások - dandelion*. Itt az engedélyeknél hozzáadhatod az a tárhelyre való írást.</string>
+    <string name="screenshot_permission__appspecific">Engedélyezned kell a tárhely elérését a képernyőképek mentéséhez. Aztán teljesen be kell zárnod az alkalmazást vagy újra kell indítanod az eszközt. Ha most nem akarod engedélyezni a tárhely elérését, de később szeretnéd használni a képernyőkép-funkciót, kérlek, tedd meg az alábbi helyen: Rendszerbeállítások - Alkalmazások - dandelion*. Itt az engedélyeknél hozzáadhatod az a tárhelyre való írást.</string>
+    <string name="image_permission_description__appspecific">Engedélyezned kell a tárhely elérését a képek mentéséhez/feltöltéséhez. Aztán teljesen be kell zárnod az alkalmazást vagy újra kell indítanod az eszközt. Ha most nem akarod engedélyezni a tárhely elérését, de később szeretnéd használni a képernyőkép-funkciót, kérlek, tedd meg az alábbi helyen: Rendszerbeállítások - Alkalmazások - dandelion*. Itt az engedélyeknél hozzáadhatod az a tárhelyre való írást.</string>
     <string name="permission_denied">Hozzáférés megtagadva.</string>
     <string name="permission_granted_try_again">Hozzáférés megtagadva. Kérlek, próbáld újra!</string>
-    <string name="podselection__custom_pod">Egyéni pod</string>
+    <string name="custom_pod">Egyéni pod</string>
     <string name="pod_name">Pod neve</string>
-    <string name="http_protocol">Protokoll</string>
+    <string name="protocol">Protokoll</string>
     <string name="pod_address">Pod címe</string>
     <string name="missing_value">Hiányzó érték</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Ugorjunk a legutóbb meglátogatott oldalra a hírfolyamon belül?</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Ugorjunk a legutóbb meglátogatott oldalra a hírfolyamon belül?</string>
 
     <string name="about">Névjegy</string>
     <string name="license">Licensz</string>
@@ -115,29 +115,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">A fenti eszköztár betölti a hírfolyamot</string>
-    <string name="pref_desc__topbar_stream_shortcut">Kattints egy üres helyre a fenti eszköztáron a hírfolyam megnyitásához</string>
+    <string name="top_toolbar_loads_stream__appsp">A fenti eszköztár betölti a hírfolyamot</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Kattints egy üres helyre a fenti eszköztáron a hírfolyam megnyitásához</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Megjelenés</string>
-    <string name="pref_cat__network">Hálózat</string>
-    <string name="pref_cat__pod_settings">Podbeállítások</string>
-    <string name="pref_cat__operability">Működés</string>
+    <string name="appearance">Megjelenés</string>
+    <string name="network">Hálózat</string>
+    <string name="pod_settings__appspecfic">Podbeállítások</string>
+    <string name="operability">Működés</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Navigációs csúszka</string>
-    <string name="pref_desc__sub_nav_slider">Az oldalsó navigációs menü elemei láthatóságának megadása</string>
-    <string name="pref_cat__visibility_nav_items__user">Felhasználó</string>
-    <string name="pref_cat__visibility_nav_items__general">Általános</string>
-    <string name="pref_cat__visibility_nav_items__admin">Adminisztrátor</string>
+    <string name="navigation_drawer">Navigációs csúszka</string>
+    <string name="control_visibility_of_entries_nav_drawer">Az oldalsó navigációs menü elemei láthatóságának megadása</string>
+    <string name="user">Felhasználó</string>
+    <string name="general">Általános</string>
+    <string name="admin">Adminisztrátor</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Témák és színek</string>
-    <string name="pref_desc__themes">Az alkalmazás által használt színek megadása</string>
-    <string name="pref_title__primary_color">Elsődleges szín</string>
-    <string name="pref_desc__primary_color">Az eszköztárak színe</string>
-    <string name="pref_title__accent_color">Másodlagos szín</string>
-    <string name="pref_desc__accent_color">A folyamatsáv színe</string>
+    <string name="theme_and_colors">Témák és színek</string>
+    <string name="control_which_colors_are_used_in_app">Az alkalmazás által használt színek megadása</string>
+    <string name="primary_colors">Elsődleges szín</string>
+    <string name="colors_of_toolbars">Az eszköztárak színe</string>
+    <string name="accent_color">Másodlagos szín</string>
+    <string name="color_of_progressbar">A folyamatsáv színe</string>
     <string name="amoled_mode">AMOLED mód</string>
-    <string name="pref_desc__primary_color__amoled_mode">A színek felülbírálása feketével az alkalmazás sok részén, mely hasznos lehet AMOLED kijelzők esetében. Újra kell indítanod az alkalmazást ehhez a változtatáshoz. Hogy sötétben böngészd a diaspora*-ot, engedélyezned kell a Sötét téma beállítást, amely megtalálható a személyes diaspora* fiókbeállításaidnál.</string>
+    <string name="amoled_mode_description__app_specific">A színek felülbírálása feketével az alkalmazás sok részén, mely hasznos lehet AMOLED kijelzők esetében. Újra kell indítanod az alkalmazást ehhez a változtatáshoz. Hogy sötétben böngészd a diaspora*-ot, engedélyezned kell a Sötét téma beállítást, amely megtalálható a személyes diaspora* fiókbeállításaidnál.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Kiterjesztett értesítések</string>
     <string name="extendend_notifications_bell_description__appspecific">Az értesítések gombra kattintva megjelenik egy gyorsmenü, amely értesítéskategóriákat mutat</string>

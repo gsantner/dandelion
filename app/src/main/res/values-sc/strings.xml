@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
-    <string name="navigation_drawer_open">Aberi su pannellu de nàvigu</string>
-    <string name="navigation_drawer_close">Serra su pannellu de nàvigu</string>
+    <string name="open_navdrawer">Aberi su pannellu de nàvigu</string>
+    <string name="close_navdrawer">Serra su pannellu de nàvigu</string>
     <string name="reload">Torra a carrigare</string>
 
     <!-- Common Words -->
@@ -23,76 +23,76 @@
     <string name="statistics">Istatìsticas</string>
 
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Totu sas notìficas</string>
-    <string name="notifications__also_commented">Àteros cummentos</string>
-    <string name="notifications__comment_on_post">Cummentu in una publicatzione</string>
-    <string name="notifications__liked">Agradèssidas</string>
-    <string name="notifications__mentioned">Numenada</string>
-    <string name="notifications__reshared">Torrada a cumparzire</string>
-    <string name="notifications__started_sharing">At incumintzadu a cumpartzire</string>
+    <string name="all_notifications">Totu sas notìficas</string>
+    <string name="also_commented">Àteros cummentos</string>
+    <string name="comment_on_post">Cummentu in una publicatzione</string>
+    <string name="deleteme_____1">Agradèssidas</string>
+    <string name="mentioned">Numenada</string>
+    <string name="reshared">Torrada a cumparzire</string>
+    <string name="started_sharing">At incumintzadu a cumpartzire</string>
 
 
     <!-- Pod Activity -->
-    <string name="podlist_error">Errore: Impossìbile recuperare sa lista de sos pods!</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Errore: Impossìbile recuperare sa lista de sos pods!</string>
 
-    <string name="no_internet">Depes èssere connessu a ìnternet pro sighire</string>
+    <string name="sorry_need_to_be_connected_to_internet">Depes èssere connessu a ìnternet pro sighire</string>
     <string name="confirmation">Cunfirma</string>
-    <string name="confirm_exit">Cheres essire?</string>
+    <string name="do_you_want_to_exit">Cheres essire?</string>
 
 
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Àteru</string>
-    <string name="nav_help_license">Informatziones |Agiudu</string>
-    <string name="nav_followed_tags">Etichetas sighidas</string>
-    <string name="nav_public_activities">Atividades pùblicas</string>
-    <string name="nav_reports">Sinnalatziones</string>
+    <string name="more">Àteru</string>
+    <string name="help_license">Informatziones |Agiudu</string>
+    <string name="followed_tags">Etichetas sighidas</string>
+    <string name="public_activities">Atividades pùblicas</string>
+    <string name="reports">Sinnalatziones</string>
 
-    <string name="share__share_link_as_text">Cumpartzi unu ligàmene comente testu</string>
-    <string name="share__share_screenshot">Cumpartzi s\'ischermada de sa pàgina web</string>
-    <string name="share__take_screenshot">Faghe un\'ischermada de sa pàgina web</string>
-    <string name="share__toast_saved_image_to_location">Sarbende s\'immàgine in</string>
-    <string name="share__toast_screenshot">Sarbende s\'ischermada in:</string>
-    <string name="share__toast_link_address_copied">Ligàmene copiadu…</string>
+    <string name="share_link_as_text">Cumpartzi unu ligàmene comente testu</string>
+    <string name="share_screenshot_of_webpage">Cumpartzi s\'ischermada de sa pàgina web</string>
+    <string name="take_screenshot_of_webpage">Faghe un\'ischermada de sa pàgina web</string>
+    <string name="saving_image_to">Sarbende s\'immàgine in</string>
+    <string name="saving_screenshot_as">Sarbende s\'ischermada in:</string>
+    <string name="link_adress_copied">Ligàmene copiadu…</string>
 
 
     <string name="new_post">Publicatzione noa</string>
-    <string name="action_go_to_top">Torra a s\'incumintzu</string>
-    <string name="action_search_by_tags_or_persons">Chirca etichetas o persones</string>
-    <string name="action_exit_app">Essi dae s\'aplicatzione</string>
-    <string name="action_toggle_desktop_page">Allughe/istuda sa versione mòbile</string>
-    <string name="action_share_dotdotdot">Cumpartzi…</string>
+    <string name="go_to_top">Torra a s\'incumintzu</string>
+    <string name="search_by_tags_or_persons__appspecific">Chirca etichetas o persones</string>
+    <string name="exit_app">Essi dae s\'aplicatzione</string>
+    <string name="toggle_mobile_desktop_view">Allughe/istuda sa versione mòbile</string>
+    <string name="share_dotdotdot">Cumpartzi…</string>
 
 
-    <string name="search_alert_tag">pro eticheta</string>
-    <string name="search_alert_people">pro persone</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Pro praghere annanghe unu nùmene</string>
+    <string name="by_tags">pro eticheta</string>
+    <string name="by_people">pro persone</string>
+    <string name="please_add_a_name">Pro praghere annanghe unu nùmene</string>
 
-    <string name="context_menu_share_link">Cumpartzi ligàmene</string>
-    <string name="context_menu_save_image">Sarva s\'immàgine</string>
-    <string name="context_menu_share_image">Cumpartzi s\'immàgine</string>
-    <string name="context_menu_open_external_browser">Aberi in un\'esploradore (browser) esternu…</string>
-    <string name="copy_link_to_clipboard">Còpia su ligàmenes in sos apuntos</string>
-    <string name="context_menu_copy_image_link">Còpia s\'indiritzu de s\'immàgine in sos apuntos</string>
+    <string name="share_link_address">Cumpartzi ligàmene</string>
+    <string name="save_image">Sarva s\'immàgine</string>
+    <string name="share_image">Cumpartzi s\'immàgine</string>
+    <string name="open_in_external_browser">Aberi in un\'esploradore (browser) esternu…</string>
+    <string name="copy_link_adress_to_clipboard">Còpia su ligàmenes in sos apuntos</string>
+    <string name="copy_image_address_to_clipboard">Còpia s\'indiritzu de s\'immàgine in sos apuntos</string>
 
 
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Impossìbile carrigare s\'immàgine</string>
 
     <!-- Permissions -->
-    <string name="permissions_screenshot">Depes frunire \"Permissu de atzessu a sa memòria\" pro sarvare sas ischermadas. A pustis dias dèpere         serrare de su totu s\'aplicatzione o torrare a allùghere su dispositivu. Si no as a frunire su permissu a sa memòria ma cheres impreare sa         funtzionalidade de ischermada, prus a tardu, l\'as a pòdere fàghere tando. Pro praghere aberi: systemsettings - apps -         dandelion*. In sa setzione pro sos permissosas a pòdere frunire su \"permissu de atzessu a sa memòria\".</string>
-    <string name="permissions_image">Depes frunire \"Permissu de atzessu a sa memòria\" pro sarvare e carrigare sas immàgines. A pustis dias dèpere         serrare de su totu s\'aplicatzione o torrare a allùghere su dispositivu. Si no as a frunire su permissu a sa memòria ma cheres impreare sa         funtzionalidade de ischermada, prus a tardu, l\'as a pòdere fàghere tando. Pro praghere aberi: systemsettings - apps -         dandelion*. In sa setzione pro sos permissosas a pòdere frunire su \"permissu de atzessu a sa memòria\".</string>
+    <string name="screenshot_permission__appspecific">Depes frunire \"Permissu de atzessu a sa memòria\" pro sarvare sas ischermadas. A pustis dias dèpere         serrare de su totu s\'aplicatzione o torrare a allùghere su dispositivu. Si no as a frunire su permissu a sa memòria ma cheres impreare sa         funtzionalidade de ischermada, prus a tardu, l\'as a pòdere fàghere tando. Pro praghere aberi: systemsettings - apps -         dandelion*. In sa setzione pro sos permissosas a pòdere frunire su \"permissu de atzessu a sa memòria\".</string>
+    <string name="image_permission_description__appspecific">Depes frunire \"Permissu de atzessu a sa memòria\" pro sarvare e carrigare sas immàgines. A pustis dias dèpere         serrare de su totu s\'aplicatzione o torrare a allùghere su dispositivu. Si no as a frunire su permissu a sa memòria ma cheres impreare sa         funtzionalidade de ischermada, prus a tardu, l\'as a pòdere fàghere tando. Pro praghere aberi: systemsettings - apps -         dandelion*. In sa setzione pro sos permissosas a pòdere frunire su \"permissu de atzessu a sa memòria\".</string>
     <string name="permission_denied">Permissu dennegadu.</string>
     <string name="permission_granted_try_again">Permissu cuntzessu. Pro praghere torra a proare.</string>
-    <string name="podselection__custom_pod">Pod personalizadu</string>
+    <string name="custom_pod">Pod personalizadu</string>
     <string name="pod_name">Nùmene de su pod</string>
-    <string name="http_protocol">Protocollu</string>
+    <string name="protocol">Protocollu</string>
     <string name="pod_address">Indiritzu de su pod</string>
     <string name="missing_value">Valore fartante</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Brincare a s\'ùrtima pàgina visitada in su flussu?</string>
-    <string name="pref_summary__is_statusbar_hidden">Istichi sa barra de s\'istadu in sa vista printzipale</string>
-    <string name="pref_title__is_statusbar_hidden">Istichi sa barra de s\'istadu</string>
-    <string name="pref_summary__show_title">Ammustra su tìtulu in sa vista printzipale</string>
-    <string name="pref_title__show_title">Ammustra tìtulu</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Brincare a s\'ùrtima pàgina visitada in su flussu?</string>
+    <string name="hide_statusbar_in_mainview">Istichi sa barra de s\'istadu in sa vista printzipale</string>
+    <string name="hide_statusbar">Istichi sa barra de s\'istadu</string>
+    <string name="show_title_in_main_view">Ammustra su tìtulu in sa vista printzipale</string>
+    <string name="show_title">Ammustra tìtulu</string>
     <string name="launcher_shortcut">Incurtzada de s\'allughidore</string>
 
 
@@ -146,33 +146,33 @@
     <!-- Key Names (Untranslatable) -->
 
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Sa barra superiore aberit su flussu</string>
-    <string name="pref_desc__topbar_stream_shortcut">Incarca in unu tretu bòidu in sa barra superiore de sas ainas pro abèrrere su flussu</string>
+    <string name="top_toolbar_loads_stream__appsp">Sa barra superiore aberit su flussu</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Incarca in unu tretu bòidu in sa barra superiore de sas ainas pro abèrrere su flussu</string>
 
 
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Aparèntzia</string>
-    <string name="pref_cat__network">Retza</string>
-    <string name="pref_cat__pod_settings">Impostatziones de su pod</string>
-    <string name="pref_cat__operability">Operabilidade</string>
+    <string name="appearance">Aparèntzia</string>
+    <string name="network">Retza</string>
+    <string name="pod_settings__appspecfic">Impostatziones de su pod</string>
+    <string name="operability">Operabilidade</string>
 
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Menù de nàvigu</string>
-    <string name="pref_desc__sub_nav_slider">Controlla sa visibilidade de sos elementos in su menù de nàvigu</string>
-    <string name="pref_cat__visibility_nav_items__user">Impreadore</string>
-    <string name="pref_cat__visibility_nav_items__general">Generales</string>
-    <string name="pref_cat__visibility_nav_items__admin">Amministratzione</string>
+    <string name="navigation_drawer">Menù de nàvigu</string>
+    <string name="control_visibility_of_entries_nav_drawer">Controlla sa visibilidade de sos elementos in su menù de nàvigu</string>
+    <string name="user">Impreadore</string>
+    <string name="general">Generales</string>
+    <string name="admin">Amministratzione</string>
 
     <!-- Themes -->
-    <string name="pref_title__themes">Temas e colores</string>
-    <string name="pref_desc__themes">Controlla cales colores sunt impreados in s\'aplicatzione</string>
-    <string name="pref_title__primary_color">Colore primàriu</string>
-    <string name="pref_desc__primary_color">Colore de sas barras de sas ainas</string>
-    <string name="pref_title__accent_color">Colore secondàriu</string>
-    <string name="pref_desc__accent_color">Colore de sa barra de progressu</string>
+    <string name="theme_and_colors">Temas e colores</string>
+    <string name="control_which_colors_are_used_in_app">Controlla cales colores sunt impreados in s\'aplicatzione</string>
+    <string name="primary_colors">Colore primàriu</string>
+    <string name="colors_of_toolbars">Colore de sas barras de sas ainas</string>
+    <string name="accent_color">Colore secondàriu</string>
+    <string name="color_of_progressbar">Colore de sa barra de progressu</string>
     <string name="amoled_mode">Modalidade AMOLED</string>
-    <string name="pref_desc__primary_color__amoled_mode">Remplasa sos colores cun su nigheddu pro ischermos AMOLED in medas tretos de s\'aplicatzione. As a dèpere torrare a allùghere s\'aplicatzione pro ativare custa impostatzione. Pro navigare in diaspora* cun su tema iscuru lu depes fintzas allùghere dae sas optziones personales de su contu de diaspora* tuo.</string>
+    <string name="amoled_mode_description__app_specific">Remplasa sos colores cun su nigheddu pro ischermos AMOLED in medas tretos de s\'aplicatzione. As a dèpere torrare a allùghere s\'aplicatzione pro ativare custa impostatzione. Pro navigare in diaspora* cun su tema iscuru lu depes fintzas allùghere dae sas optziones personales de su contu de diaspora* tuo.</string>
 
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notìficas ismanniadas</string>

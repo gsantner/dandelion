@@ -5,25 +5,25 @@
     <item
         android:icon="@drawable/ic_share_white_48px"
         android:orderInCategory="300"
-        android:title="@string/action_share_dotdotdot"
+        android:title="@string/share_dotdotdot"
         app:showAsAction="never">
         <menu>
             <item
                 android:id="@+id/action_share_screenshot"
-                android:title="@string/share__share_screenshot" />
+                android:title="@string/share_screenshot_of_webpage" />
             <item
                 android:id="@+id/action_take_screenshot"
-                android:title="@string/share__take_screenshot" />
+                android:title="@string/take_screenshot_of_webpage" />
             <item
                 android:id="@+id/action_share_pdf"
                 android:title="@string/pdf"
                 android:visible="false" />
             <item
                 android:id="@+id/action_share_link"
-                android:title="@string/share__share_link_as_text" />
+                android:title="@string/share_link_as_text" />
             <item
                 android:id="@+id/action_share_link_to_clipboard"
-                android:title="@string/copy_link_to_clipboard" />
+                android:title="@string/copy_link_adress_to_clipboard" />
             <item
                 android:id="@+id/action_create_launcher_shortcut"
                 android:title="@string/launcher_shortcut" />
@@ -34,7 +34,7 @@
         android:id="@+id/action_go_to_top"
         android:icon="@drawable/ic_arrow_upward_white_48px"
         android:orderInCategory="400"
-        android:title="@string/action_go_to_top"
+        android:title="@string/go_to_top"
         app:showAsAction="never" />
 
     <item

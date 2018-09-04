@@ -19,62 +19,62 @@
     <string name="changelog">更新紀錄</string>
     <string name="statistics">統計資料</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">全部的通知</string>
-    <string name="notifications__also_commented">其他留言</string>
-    <string name="notifications__comment_on_post">貼文被留言</string>
-    <string name="notifications__liked">被按讚</string>
-    <string name="notifications__mentioned">被指指點點</string>
-    <string name="notifications__reshared">被分享</string>
-    <string name="notifications__started_sharing">開始分享</string>
+    <string name="all_notifications">全部的通知</string>
+    <string name="also_commented">其他留言</string>
+    <string name="comment_on_post">貼文被留言</string>
+    <string name="deleteme_____1">被按讚</string>
+    <string name="mentioned">被指指點點</string>
+    <string name="reshared">被分享</string>
+    <string name="started_sharing">開始分享</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">錯誤: 無法取得豆莢列表！</string>
-    <string name="no_internet">抱歉，要有網路連線才能繼續</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">錯誤: 無法取得豆莢列表！</string>
+    <string name="sorry_need_to_be_connected_to_internet">抱歉，要有網路連線才能繼續</string>
     <string name="confirmation">確認</string>
-    <string name="confirm_exit">確定要退出嗎？</string>
+    <string name="do_you_want_to_exit">確定要退出嗎？</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">再來</string>
-    <string name="nav_help_license">說明 | 幫助</string>
-    <string name="nav_followed_tags">追蹤中的標籤</string>
-    <string name="nav_public_activities">公開活動</string>
-    <string name="nav_reports">回報</string>
-    <string name="share__share_link_as_text">分享連結文字</string>
-    <string name="share__share_screenshot">分享網頁截圖</string>
-    <string name="share__take_screenshot">產生網路截圖</string>
-    <string name="share__toast_saved_image_to_location">圖片儲存為</string>
-    <string name="share__toast_screenshot">截圖儲存為:</string>
-    <string name="share__toast_link_address_copied">已經複製了連結網址&#8230;</string>
+    <string name="more">再來</string>
+    <string name="help_license">說明 | 幫助</string>
+    <string name="followed_tags">追蹤中的標籤</string>
+    <string name="public_activities">公開活動</string>
+    <string name="reports">回報</string>
+    <string name="share_link_as_text">分享連結文字</string>
+    <string name="share_screenshot_of_webpage">分享網頁截圖</string>
+    <string name="take_screenshot_of_webpage">產生網路截圖</string>
+    <string name="saving_image_to">圖片儲存為</string>
+    <string name="saving_screenshot_as">截圖儲存為:</string>
+    <string name="link_adress_copied">已經複製了連結網址&#8230;</string>
     <string name="new_post">新增貼文</string>
-    <string name="action_go_to_top">回到最上面</string>
-    <string name="action_search_by_tags_or_persons">找人或標籤</string>
-    <string name="action_exit_app">退出應用程式</string>
-    <string name="action_toggle_desktop_page">切換行動/桌上型版面</string>
-    <string name="action_share_dotdotdot">分享&#8230;</string>
-    <string name="search_alert_tag">找標籤</string>
-    <string name="search_alert_people">找人</string>
-    <string name="search_alert_bypeople_validate_needsomedata">請輸入名稱</string>
-    <string name="context_menu_share_link">分享連結網址</string>
-    <string name="context_menu_save_image">儲存圖片</string>
-    <string name="context_menu_share_image">分享圖片</string>
-    <string name="context_menu_open_external_browser">用外部瀏覽器開啟&#8230;</string>
-    <string name="copy_link_to_clipboard">將連結網址複製到剪貼簿</string>
-    <string name="context_menu_copy_image_link">將圖片網址複製到剪貼簿</string>
+    <string name="go_to_top">回到最上面</string>
+    <string name="search_by_tags_or_persons__appspecific">找人或標籤</string>
+    <string name="exit_app">退出應用程式</string>
+    <string name="toggle_mobile_desktop_view">切換行動/桌上型版面</string>
+    <string name="share_dotdotdot">分享&#8230;</string>
+    <string name="by_tags">找標籤</string>
+    <string name="by_people">找人</string>
+    <string name="please_add_a_name">請輸入名稱</string>
+    <string name="share_link_address">分享連結網址</string>
+    <string name="save_image">儲存圖片</string>
+    <string name="share_image">分享圖片</string>
+    <string name="open_in_external_browser">用外部瀏覽器開啟&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">將連結網址複製到剪貼簿</string>
+    <string name="copy_image_address_to_clipboard">將圖片網址複製到剪貼簿</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">無法載入圖片</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">必須要給予應用程式「儲存空間」的權限，才能儲存畫面截圖。給予後應該要將應用程式完全結束，或是將裝置重新啟動。如果你現在沒給權限，之後才想要使用截圖功能，還是可以重給權限。作法是：先打開「設定」—應用程式—dandelion*，在「權限」的地方切換是否給予「儲存空間」權限。</string>
-    <string name="permissions_image">必須要給予應用程式「儲存空間」的權限，才能儲存或上傳圖片。給予後應該要將應用程式完全結束，或是將裝置重新啟動。如果你現在沒給權限，之後才想要儲存圖片，還是可以重給權限。作法是：先打開「設定」—應用程式—dandelion*，在「權限」的地方切換是否給予「儲存空間」權限。</string>
+    <string name="screenshot_permission__appspecific">必須要給予應用程式「儲存空間」的權限，才能儲存畫面截圖。給予後應該要將應用程式完全結束，或是將裝置重新啟動。如果你現在沒給權限，之後才想要使用截圖功能，還是可以重給權限。作法是：先打開「設定」—應用程式—dandelion*，在「權限」的地方切換是否給予「儲存空間」權限。</string>
+    <string name="image_permission_description__appspecific">必須要給予應用程式「儲存空間」的權限，才能儲存或上傳圖片。給予後應該要將應用程式完全結束，或是將裝置重新啟動。如果你現在沒給權限，之後才想要儲存圖片，還是可以重給權限。作法是：先打開「設定」—應用程式—dandelion*，在「權限」的地方切換是否給予「儲存空間」權限。</string>
     <string name="permission_denied">權限被拒絕了。</string>
     <string name="permission_granted_try_again">取得權限了。請再重試一次。</string>
-    <string name="podselection__custom_pod">自選豆莢</string>
+    <string name="custom_pod">自選豆莢</string>
     <string name="pod_name">豆莢名稱</string>
-    <string name="http_protocol">網路協定</string>
+    <string name="protocol">網路協定</string>
     <string name="pod_address">豆莢網址</string>
     <string name="missing_value">沒有填值</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">回到最近瀏覽的流水帳頁面嗎？</string>
-    <string name="pref_summary__is_statusbar_hidden">隱藏主畫面中的狀態列</string>
-    <string name="pref_title__is_statusbar_hidden">隱藏狀態列</string>
-    <string name="pref_summary__show_title">在主畫面中顯示標題列</string>
-    <string name="pref_title__show_title">顯示標題列</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">回到最近瀏覽的流水帳頁面嗎？</string>
+    <string name="hide_statusbar_in_mainview">隱藏主畫面中的狀態列</string>
+    <string name="hide_statusbar">隱藏狀態列</string>
+    <string name="show_title_in_main_view">在主畫面中顯示標題列</string>
+    <string name="show_title">顯示標題列</string>
 
     <string name="about">說明</string>
     <string name="license">授權條款</string>
@@ -118,29 +118,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">上方工具列可載入流水帳</string>
-    <string name="pref_desc__topbar_stream_shortcut">可以點上方工具列的空白區域來進入流水帳</string>
+    <string name="top_toolbar_loads_stream__appsp">上方工具列可載入流水帳</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">可以點上方工具列的空白區域來進入流水帳</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">外觀</string>
-    <string name="pref_cat__network">網路</string>
-    <string name="pref_cat__pod_settings">豆莢設定</string>
-    <string name="pref_cat__operability">操作</string>
+    <string name="appearance">外觀</string>
+    <string name="network">網路</string>
+    <string name="pod_settings__appspecfic">豆莢設定</string>
+    <string name="operability">操作</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">側邊導覽選單</string>
-    <string name="pref_desc__sub_nav_slider">控制側邊導覽選單中顯示的項目</string>
-    <string name="pref_cat__visibility_nav_items__user">使用者</string>
-    <string name="pref_cat__visibility_nav_items__general">平常</string>
-    <string name="pref_cat__visibility_nav_items__admin">管理員</string>
+    <string name="navigation_drawer">側邊導覽選單</string>
+    <string name="control_visibility_of_entries_nav_drawer">控制側邊導覽選單中顯示的項目</string>
+    <string name="user">使用者</string>
+    <string name="general">平常</string>
+    <string name="admin">管理員</string>
     <!-- Themes -->
-    <string name="pref_title__themes">佈景主題和色彩</string>
-    <string name="pref_desc__themes">控制應用程式使用的顏色</string>
-    <string name="pref_title__primary_color">主要顏色</string>
-    <string name="pref_desc__primary_color">工具列使用的顏色</string>
-    <string name="pref_title__accent_color">強調顏色</string>
-    <string name="pref_desc__accent_color">進度條使用的顏色</string>
+    <string name="theme_and_colors">佈景主題和色彩</string>
+    <string name="control_which_colors_are_used_in_app">控制應用程式使用的顏色</string>
+    <string name="primary_colors">主要顏色</string>
+    <string name="colors_of_toolbars">工具列使用的顏色</string>
+    <string name="accent_color">強調顏色</string>
+    <string name="color_of_progressbar">進度條使用的顏色</string>
     <string name="amoled_mode">AMOLED 顯示模式</string>
-    <string name="pref_desc__primary_color__amoled_mode">在應用程式中使用適合 AMOLED 螢幕的黑色來顯示。改變這項設定後需要重開應用程式。另外你還需要使用色彩主題 Dark 才會有深色的版面，請到你的 diaspora* 帳號設定頁面修改。</string>
+    <string name="amoled_mode_description__app_specific">在應用程式中使用適合 AMOLED 螢幕的黑色來顯示。改變這項設定後需要重開應用程式。另外你還需要使用色彩主題 Dark 才會有深色的版面，請到你的 diaspora* 帳號設定頁面修改。</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">延伸型通知</string>
     <string name="extendend_notifications_bell_description__appspecific">將通知鈴伸展成為顯示通知類別的下拉式選單</string>

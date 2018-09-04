@@ -19,58 +19,58 @@
     <string name="changelog">Logboekwijzigingen</string>
     <string name="statistics">Statistieken</string>
     <!-- Notifications dropdown menu -->
-    <string name="notifications__all">Alle meldingen</string>
-    <string name="notifications__also_commented">Heeft ook gereageerd</string>
-    <string name="notifications__comment_on_post">Reageer op het bericht</string>
-    <string name="notifications__liked">Leuk gevonden</string>
-    <string name="notifications__mentioned">Genoemd</string>
-    <string name="notifications__reshared">Opnieuw gedeeld</string>
-    <string name="notifications__started_sharing">Begonnen met delen</string>
+    <string name="all_notifications">Alle meldingen</string>
+    <string name="also_commented">Heeft ook gereageerd</string>
+    <string name="comment_on_post">Reageer op het bericht</string>
+    <string name="deleteme_____1">Leuk gevonden</string>
+    <string name="mentioned">Genoemd</string>
+    <string name="reshared">Opnieuw gedeeld</string>
+    <string name="started_sharing">Begonnen met delen</string>
     <!-- Pod Activity -->
-    <string name="podlist_error">Fout: Kan niet de podlijst ophalen!</string>
-    <string name="no_internet">Sorry, u moet verbinding met internet hebben om verder te gaan</string>
+    <string name="could_not_retrieve_list_of_pods__appspecific">Fout: Kan niet de podlijst ophalen!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Sorry, u moet verbinding met internet hebben om verder te gaan</string>
     <string name="confirmation">Bevestiging</string>
-    <string name="confirm_exit">Wilt u afsluiten?</string>
+    <string name="do_you_want_to_exit">Wilt u afsluiten?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
-    <string name="nav_menu_more">Meer</string>
-    <string name="nav_help_license">Over | Help</string>
-    <string name="nav_followed_tags">Gevolgde Tags</string>
-    <string name="nav_public_activities">Publieke activiteiten</string>
-    <string name="nav_reports">Rapporten</string>
-    <string name="share__share_link_as_text">Link delen als tekst</string>
-    <string name="share__share_screenshot">Screenshot van de webpagina delen</string>
-    <string name="share__take_screenshot">Neem screenshot van de webpagina</string>
-    <string name="share__toast_saved_image_to_location">Afbeelding opslaan</string>
-    <string name="share__toast_screenshot">Screenshot oplaan als:</string>
-    <string name="share__toast_link_address_copied">Link adres gekopieerd&#8230;</string>
+    <string name="more">Meer</string>
+    <string name="help_license">Over | Help</string>
+    <string name="followed_tags">Gevolgde Tags</string>
+    <string name="public_activities">Publieke activiteiten</string>
+    <string name="reports">Rapporten</string>
+    <string name="share_link_as_text">Link delen als tekst</string>
+    <string name="share_screenshot_of_webpage">Screenshot van de webpagina delen</string>
+    <string name="take_screenshot_of_webpage">Neem screenshot van de webpagina</string>
+    <string name="saving_image_to">Afbeelding opslaan</string>
+    <string name="saving_screenshot_as">Screenshot oplaan als:</string>
+    <string name="link_adress_copied">Link adres gekopieerd&#8230;</string>
     <string name="new_post">Nieuw Bericht</string>
-    <string name="action_go_to_top">Terug naar boven</string>
-    <string name="action_search_by_tags_or_persons">Zoeken op tags of personen</string>
-    <string name="action_exit_app">App afsluiten</string>
-    <string name="action_toggle_desktop_page">Desktop weergave in-/uitschakelen</string>
-    <string name="action_share_dotdotdot">Delen&#8230;</string>
-    <string name="search_alert_tag">viaTags</string>
-    <string name="search_alert_people">via mensen</string>
-    <string name="search_alert_bypeople_validate_needsomedata">Voeg een naam toe</string>
-    <string name="context_menu_share_link">Deel adreslink</string>
-    <string name="context_menu_save_image">Afbeelding opslaan</string>
-    <string name="context_menu_share_image">Deel afbeelding</string>
-    <string name="context_menu_open_external_browser">Geopend in externe browser&#8230;</string>
-    <string name="copy_link_to_clipboard">Link-adres kopiëren naar Klembord</string>
-    <string name="context_menu_copy_image_link">Afbeelding kopiëren naar Klembord</string>
+    <string name="go_to_top">Terug naar boven</string>
+    <string name="search_by_tags_or_persons__appspecific">Zoeken op tags of personen</string>
+    <string name="exit_app">App afsluiten</string>
+    <string name="toggle_mobile_desktop_view">Desktop weergave in-/uitschakelen</string>
+    <string name="share_dotdotdot">Delen&#8230;</string>
+    <string name="by_tags">viaTags</string>
+    <string name="by_people">via mensen</string>
+    <string name="please_add_a_name">Voeg een naam toe</string>
+    <string name="share_link_address">Deel adreslink</string>
+    <string name="save_image">Afbeelding opslaan</string>
+    <string name="share_image">Deel afbeelding</string>
+    <string name="open_in_external_browser">Geopend in externe browser&#8230;</string>
+    <string name="copy_link_adress_to_clipboard">Link-adres kopiëren naar Klembord</string>
+    <string name="copy_image_address_to_clipboard">Afbeelding kopiëren naar Klembord</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Niet in staat om afbeelding te laden</string>
     <!-- Permissions -->
-    <string name="permissions_screenshot">U moet machtegingen aan \"Access Storage Permission\" geven om screenshots op te slaan. Daarna moet u de app volledig afsluiten of de telefoon opnieuw opstarten. Als u geen toestemming aan opslag wil geven maar screenshot functie later wil gebruiken, kunt u de toestemming later geven. Open dan: systemsettings - apps - dandelion*. In de machtegings sectie kunt u machtegingen geven aan \"write storage permission\".</string>
-    <string name="permissions_image">U moet machtigingen aan \"Access Storage Permission\" geven om screenshots op te slaan. Daarna moet u de app volledig afsluiten of de telefoon opnieuw opstarten. Als u geen toestemming aan opslag wilt geven maar screenshot functie later wilt gebruiken, kunt u de toestemming later geven. Open dan: system settings - apps - dandelion*. In de machtigingssectie kunt u machtigingen geven aan \"write storage permission\".</string>
+    <string name="screenshot_permission__appspecific">U moet machtegingen aan \"Access Storage Permission\" geven om screenshots op te slaan. Daarna moet u de app volledig afsluiten of de telefoon opnieuw opstarten. Als u geen toestemming aan opslag wil geven maar screenshot functie later wil gebruiken, kunt u de toestemming later geven. Open dan: systemsettings - apps - dandelion*. In de machtegings sectie kunt u machtegingen geven aan \"write storage permission\".</string>
+    <string name="image_permission_description__appspecific">U moet machtigingen aan \"Access Storage Permission\" geven om screenshots op te slaan. Daarna moet u de app volledig afsluiten of de telefoon opnieuw opstarten. Als u geen toestemming aan opslag wilt geven maar screenshot functie later wilt gebruiken, kunt u de toestemming later geven. Open dan: system settings - apps - dandelion*. In de machtigingssectie kunt u machtigingen geven aan \"write storage permission\".</string>
     <string name="permission_denied">Toestemming geweigerd.</string>
     <string name="permission_granted_try_again">Toestemming verleend. Probeer het opnieuw.</string>
-    <string name="podselection__custom_pod">Aangepaste Pod</string>
+    <string name="custom_pod">Aangepaste Pod</string>
     <string name="pod_name">Pod naam</string>
-    <string name="http_protocol">Protocol</string>
+    <string name="protocol">Protocol</string>
     <string name="pod_address">Pod adres</string>
     <string name="missing_value">Ontbrekende waarde</string>
-    <string name="jump_to_last_visited_timestamp_in_stream">Ga naar laatste bezochte pagina in de stream?</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Ga naar laatste bezochte pagina in de stream?</string>
 
     <string name="about">Over</string>
     <string name="license">Licentie</string>
@@ -114,29 +114,29 @@
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
-    <string name="pref_title__topbar_stream_shortcut">Bovenste werkbalk laadt stream</string>
-    <string name="pref_desc__topbar_stream_shortcut">Klik op een lege ruimte in de bovenste werkbalk om de stream te openen</string>
+    <string name="top_toolbar_loads_stream__appsp">Bovenste werkbalk laadt stream</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Klik op een lege ruimte in de bovenste werkbalk om de stream te openen</string>
     <!-- Category Titles -->
-    <string name="pref_cat__visuals">Vormgeving</string>
-    <string name="pref_cat__network">Netwerk</string>
-    <string name="pref_cat__pod_settings">Pod-instellingen</string>
-    <string name="pref_cat__operability">Bruikbaarheid</string>
+    <string name="appearance">Vormgeving</string>
+    <string name="network">Netwerk</string>
+    <string name="pod_settings__appspecfic">Pod-instellingen</string>
+    <string name="operability">Bruikbaarheid</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
-    <string name="pref_title__sub_nav_slider">Navigatie Slider</string>
-    <string name="pref_desc__sub_nav_slider">Configureer zichtbaarheid van vermeldingen in navigatie slider</string>
-    <string name="pref_cat__visibility_nav_items__user">Gebruiker</string>
-    <string name="pref_cat__visibility_nav_items__general">Algemeen</string>
-    <string name="pref_cat__visibility_nav_items__admin">Administrator</string>
+    <string name="navigation_drawer">Navigatie Slider</string>
+    <string name="control_visibility_of_entries_nav_drawer">Configureer zichtbaarheid van vermeldingen in navigatie slider</string>
+    <string name="user">Gebruiker</string>
+    <string name="general">Algemeen</string>
+    <string name="admin">Administrator</string>
     <!-- Themes -->
-    <string name="pref_title__themes">Themakleuren</string>
-    <string name="pref_desc__themes">Bepalen welke kleuren worden gebruikt in de app</string>
-    <string name="pref_title__primary_color">Hoofdkleur</string>
-    <string name="pref_desc__primary_color">Kleur van de werkbalken</string>
-    <string name="pref_title__accent_color">Accentkleur</string>
-    <string name="pref_desc__accent_color">Kleur van de progresbalk</string>
+    <string name="theme_and_colors">Themakleuren</string>
+    <string name="control_which_colors_are_used_in_app">Bepalen welke kleuren worden gebruikt in de app</string>
+    <string name="primary_colors">Hoofdkleur</string>
+    <string name="colors_of_toolbars">Kleur van de werkbalken</string>
+    <string name="accent_color">Accentkleur</string>
+    <string name="color_of_progressbar">Kleur van de progresbalk</string>
     <string name="amoled_mode">AMOLED modus</string>
-    <string name="pref_desc__primary_color__amoled_mode">Overschrijd kleuren met AMOLED display vriendelijk zwart op veel plekken in de app. Je moet de app restarten om deze verandering te zien. Om diaspora* in het donker te zien moet je de Dark thema activeren, dat gevonden kan worden in je eigen diaspora* account instellingen.</string>
+    <string name="amoled_mode_description__app_specific">Overschrijd kleuren met AMOLED display vriendelijk zwart op veel plekken in de app. Je moet de app restarten om deze verandering te zien. Om diaspora* in het donker te zien moet je de Dark thema activeren, dat gevonden kan worden in je eigen diaspora* account instellingen.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Uitgebreide meldingen</string>
     <string name="extendend_notifications_bell_description__appspecific">Breidt de notificatie bel uit met een dropdown menu dat de notificatie categorieën laat zien</string>

@@ -70,7 +70,7 @@
     <string name="pref_title__logging_enabled" translatable="false">@string/debug_log</string>
     <string name="pref_title__logging_spam_enabled" translatable="false">@string/debug_log_verbose</string>
     <string name="pref_desc__sub_proxy" translatable="false">@string/proxy_dandelion_traffic__appspecific</string>
-    <string name="pref_cat__more" translatable="false">@string/nav_menu_more</string>
+    <string name="pref_cat__more" translatable="false">@string/more</string>
 
     <!--
     Pref keys

@@ -51,7 +51,7 @@
         <item
             android:id="@+id/nav_public"
             android:icon="@drawable/ic_public_black_48px"
-            android:title="@string/nav_public_activities" />
+            android:title="@string/public_activities" />
 
         <item
             android:id="@+id/nav_product_support"
@@ -66,12 +66,12 @@
         <item
             android:id="@+id/nav_reports"
             android:icon="@drawable/ic_report_black_48px"
-            android:title="@string/nav_reports" />
+            android:title="@string/reports" />
 
         <item
             android:id="@+id/nav_exit"
             android:icon="@drawable/ic_cancel_black_48px"
-            android:title="@string/action_exit_app"
+            android:title="@string/exit_app"
             android:visible="false" />
     </group>
 
@@ -79,7 +79,7 @@
         <item
             android:id="@+id/nav_toggle_desktop_page"
             android:icon="@drawable/ic_sync_white_48px"
-            android:title="@string/action_toggle_desktop_page" />
+            android:title="@string/toggle_mobile_desktop_view" />
 
         <item
             android:id="@+id/nav_settings"
@@ -89,7 +89,7 @@
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_info_black_48px"
-            android:title="@string/nav_help_license" />
+            android:title="@string/help_license" />
     </group>
 
 </menu>
