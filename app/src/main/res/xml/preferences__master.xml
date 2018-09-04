@@ -20,17 +20,17 @@
         <net.gsantner.opoc.preference.nonsupport.LanguagePreference
             android:icon="@drawable/ic_language_black_48px"
             android:key="@string/pref_key__language"
-            android:summary="@string/pref_desc__language"
-            android:title="@string/pref_title__language"/>
+            android:summary="@string/language_change_restart_description"
+            android:title="@string/language"/>
 
         <ListPreference
-            android:dialogTitle="@string/pref_title__font_size"
+            android:dialogTitle="@string/font_size"
             android:entries="@array/pref_entries__font_size"
             android:entryValues="@array/pref_entries_values__font_size"
             android:icon="@drawable/ic_format_size_black_24px"
             android:key="@string/pref_key__font_size"
-            android:summary="@string/pref_desc__font_size"
-            android:title="@string/pref_title__font_size"/>
+            android:summary="@string/control_textsize_of_webview"
+            android:title="@string/font_size"/>
 
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 
@@ -42,8 +42,8 @@
             android:defaultValue="false"
             android:icon="@drawable/ic_zoom_out_map_black_24px"
             android:key="@string/pref_key__intellihide_toolbars"
-            android:summary="@string/pref_desc__intellihide_toolbars"
-            android:title="@string/pref_title__intellihide_toolbars"/>
+            android:summary="@string/intellihide_toolbars__appspecific"
+            android:title="@string/intellihide_toolbars"/>
 
         <CheckBoxPreference
             android:icon="@drawable/ic_visibility_black_24dp"
@@ -56,21 +56,21 @@
             android:defaultValue="false"
             android:icon="@drawable/ic_notifications_black_24px"
             android:key="@string/pref_key__extended_notifications"
-            android:summary="@string/pref_desc__extended_notifications"
-            android:title="@string/pref_title__extended_notifications"/>
+            android:summary="@string/extendend_notifications_bell_description__appspecific"
+            android:title="@string/extended_notifications"/>
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="true"
             android:icon="@drawable/ic_thumb_up_black_24px"
             android:key="@string/pref_key__append_shared_via_app"
-            android:summary="@string/pref_desc__append_shared_via_app"
-            android:title="@string/pref_title__append_shared_via_app"/>
+            android:summary="@string/append_shared_by_notice__appspecific"
+            android:title="@string/append_shared_by_notice"/>
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="true"
             android:icon="@drawable/ic_open_in_new_black_24px"
             android:key="@string/pref_key__chrome_custom_tabs_enabled"
-            android:summary="@string/pref_desc__chrome_custom_tabs_enabled"
+            android:summary="@string/open_external_links_with_chrome_custom_tabs_description"
             android:title="@string/pref_title__chrome_custom_tabs_enabled"/>
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
@@ -93,8 +93,8 @@
             android:entryValues="@array/pref_entries_values__screen_rotation"
             android:icon="@drawable/ic_screen_rotation_black_24px"
             android:key="@string/pref_key__screen_rotation"
-            android:summary="@string/pref_desc__screen_rotation"
-            android:title="@string/pref_title__screen_rotation"/>
+            android:summary="@string/control_screen_rotation"
+            android:title="@string/screen_rotation"/>
 
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 
@@ -105,26 +105,26 @@
         <Preference
             android:icon="@drawable/ic_person_black_24px"
             android:key="@string/pref_key__personal_settings"
-            android:summary="@string/pref_desc__personal_settings"
-            android:title="@string/pref_title__personal_settings"/>
+            android:summary="@string/open_diaspora_account_settings__appspecific"
+            android:title="@string/personal_settings"/>
 
         <Preference
             android:icon="@drawable/ic_people_black_24px"
             android:key="@string/pref_key__manage_contacts"
-            android:summary="@string/pref_desc__manage_contacts"
+            android:summary="@string/manage_your_contact_list"
             android:title="@string/pref_title__manage_contacts"/>
 
         <Preference
             android:icon="@drawable/ic_format_list_bulleted_black_24px"
             android:key="@string/pref_key__manage_tags"
-            android:summary="@string/pref_desc__manage_tags"
-            android:title="@string/pref_title__manage_tags"/>
+            android:summary="@string/unfollow_already_followed_hashtags__appspecific"
+            android:title="@string/manage_hashtags"/>
 
         <Preference
             android:icon="@drawable/ic_arrow_back_black_24px"
             android:key="@string/pref_key__change_account"
-            android:summary="@string/pref_desc__change_account"
-            android:title="@string/pref_title__change_account"/>
+            android:summary="@string/loug_warning_description__appspecific"
+            android:title="@string/change_account"/>
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 
     <!-- Networking -->
@@ -135,27 +135,27 @@
             android:defaultValue="true"
             android:icon="@drawable/ic_file_download_black_24px"
             android:key="@string/pref_key__load_images"
-            android:summary="@string/pref_desc__load_images"
-            android:title="@string/pref_title__load_images"/>
+            android:summary="@string/toggle_image_loading_to_save_mobile_data"
+            android:title="@string/load_images"/>
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="true"
             android:icon="@drawable/ic_file_download_black_24px"
             android:key="@string/pref_key__adblock_enable"
-            android:summary="@string/pref_desc__adblock_enable"
-            android:title="@string/pref_title__adblock_enable"/>
+            android:summary="@string/enable_basic_adblocker_description"
+            android:title="@string/block_advertisments"/>
 
         <Preference
             android:icon="@drawable/ic_clear_black_24px"
             android:key="@string/pref_key__clear_cache"
-            android:summary="@string/pref_desc__clear_cache"
-            android:title="@string/pref_title__clear_cache"/>
+            android:summary="@string/clear_webview_cache"
+            android:title="@string/clear_cache"/>
 
         <Preference
             android:icon="@drawable/ic_vpn_lock_black_24px"
             android:key="@string/pref_key__cat_proxy"
             android:summary="@string/pref_desc__sub_proxy"
-            android:title="@string/pref_title__sub_proxy"/>
+            android:title="@string/proxy"/>
 
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 

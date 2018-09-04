@@ -18,7 +18,7 @@
     <string name="http" translatable="false">http</string>
     <string name="https" translatable="false">https</string>
 
-    <string name="licenses" translatable="false">@string/about_activity__title_about_license</string>
+    <string name="licenses" translatable="false">@string/license</string>
     <string name="copyright_license_text_official" translatable="false">
         Copyright © 2015-2018
         \nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -26,7 +26,7 @@
         \nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
     </string>
     <string name="fragment_license__license_gpl_link" translatable="false">https://www.gnu.org/licenses/gpl-3.0.html</string>
-    <string name="fragment_license__misc" translatable="false">@string/pref_title__sub_miscelaneous</string>
+    <string name="fragment_license__misc" translatable="false">@string/miscellaneous</string>
     <string name="fragment_licesen__misc_leafpic_link" translatable="false">https://github.com/HoraApps/LeafPic</string>
     <string name="fragment_about__fdroid_link" translatable="false">https://f-droid.org/repository/browse/?fdid=com.github.dfa.diaspora_android</string>
     <string name="fragment_about__about" translatable="false">@string/app_name</string>
@@ -65,11 +65,11 @@
     <string name="pref_title__chrome_custom_tabs_enabled" translatable="false">Chrome Custom Tabs</string>
     <string name="pref_key__proxy_was_enabled" translatable="false">wasProxyEnabled</string>
     <string name="pref_title__manage_contacts" translatable="false">@string/contacts</string>
-    <string name="pref_title__sub_logging" translatable="false">@string/about_activity__title_debug_info</string>
-    <string name="pref_desc__sub_logging" translatable="false">@string/fragment_debug__section_log</string>
-    <string name="pref_title__logging_enabled" translatable="false">@string/fragment_debug__section_log</string>
-    <string name="pref_title__logging_spam_enabled" translatable="false">@string/fragment_debug__section_log_spam</string>
-    <string name="pref_desc__sub_proxy" translatable="false">@string/pref_desc__http_proxy_enabled</string>
+    <string name="pref_title__sub_logging" translatable="false">@string/debugging</string>
+    <string name="pref_desc__sub_logging" translatable="false">@string/debug_log</string>
+    <string name="pref_title__logging_enabled" translatable="false">@string/debug_log</string>
+    <string name="pref_title__logging_spam_enabled" translatable="false">@string/debug_log_verbose</string>
+    <string name="pref_desc__sub_proxy" translatable="false">@string/proxy_dandelion_traffic__appspecific</string>
     <string name="pref_cat__more" translatable="false">@string/nav_menu_more</string>
 
     <!--

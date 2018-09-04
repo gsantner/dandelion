@@ -169,7 +169,7 @@ public class AboutActivity extends ThemedActivity
             if (isAdded()) {
                 try {
                     PackageInfo pInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
-                    appVersion.setText(getString(R.string.fragment_debug__app_version, pInfo.versionName + " (" + pInfo.versionCode + ")"));
+                    appVersion.setText(getString(R.string.app_version_with_arg, pInfo.versionName + " (" + pInfo.versionCode + ")"));
 
                 } catch (PackageManager.NameNotFoundException e) {
                     e.printStackTrace();
@@ -213,7 +213,7 @@ public class AboutActivity extends ThemedActivity
                     Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                     sharingIntent.setType("text/plain");
                     sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.app_name));
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.fragment_about__spread_the_word_share_text, getString(R.string.fragment_about__fdroid_link)));
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.hey_checkout_dandelion_tag__appspecific, getString(R.string.fragment_about__fdroid_link)));
                     startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.action_share_dotdotdot)));
                     break;
             }
@@ -258,9 +258,9 @@ public class AboutActivity extends ThemedActivity
             ButterKnife.bind(this, view);
             accentColor = ContextUtils.get().colorToHexString(ThemeHelper.getAccentColor());
 
-            maintainers.setTextFormatted(getString(R.string.fragment_license__maintainers_text,
+            maintainers.setTextFormatted(getString(R.string.this_app_is_currently_developed_and_maintained_by_witharg,
                     ContextUtils.get().loadMarkdownForTextViewFromRaw(R.raw.maintainers, "")));
-            contributors.setTextFormatted(getString(R.string.fragment_license__contributors_thank_you,
+            contributors.setTextFormatted(getString(R.string.thank_you_witharg,
                     ContextUtils.get().loadMarkdownForTextViewFromRaw(R.raw.contributors, "")));
             thirdPartyLibs.setTextFormatted(
                     ContextUtils.get().loadMarkdownForTextViewFromRaw(R.raw.licenses_3rd_party, ""));
@@ -341,7 +341,7 @@ public class AboutActivity extends ThemedActivity
                         ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(CLIPBOARD_SERVICE);
                         ClipData clip = ClipData.newPlainText("DEBUG_LOG", AppLog.Log.getLogBuffer());
                         clipboard.setPrimaryClip(clip);
-                        Toast.makeText(DebugFragment.this.getActivity(), R.string.fragment_debug__toast_log_copied, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DebugFragment.this.getActivity(), R.string.debug_log_copied_to_clipboard, Toast.LENGTH_SHORT).show();
                     } else {
                         AppLog.d(this, "Not Added!");
                     }
@@ -356,13 +356,13 @@ public class AboutActivity extends ThemedActivity
                     PackageInfo pInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
                     AppSettings appSettings = ((App) getActivity().getApplication()).getSettings();
                     packageName.setText(pInfo.packageName);
-                    appVersion.setText(getString(R.string.fragment_debug__app_version, pInfo.versionName + " (" + pInfo.versionCode + ")"));
+                    appVersion.setText(getString(R.string.app_version_with_arg, pInfo.versionName + " (" + pInfo.versionCode + ")"));
 
-                    osVersion.setText(getString(R.string.fragment_debug__android_version, Build.VERSION.RELEASE));
-                    deviceName.setText(getString(R.string.fragment_debug__device_name, Build.MANUFACTURER + " " + Build.MODEL));
+                    osVersion.setText(getString(R.string.android_version_witharg, Build.VERSION.RELEASE));
+                    deviceName.setText(getString(R.string.device_name_witharg, Build.MANUFACTURER + " " + Build.MODEL));
                     if (app.getSettings().getPod() != null) {
-                        podDomain.setText(getString(R.string.fragment_debug__pod_profile_url, app.getSettings().getPod().getPodUrl()));
-                        podName.setText(getString(R.string.fragment_debug__pod_profile_name, app.getSettings().getPod().getName()));
+                        podDomain.setText(getString(R.string.pod_domain_witharg__appspecific, app.getSettings().getPod().getPodUrl()));
+                        podName.setText(getString(R.string.pod_profile_name_witharg__appspecific, app.getSettings().getPod().getName()));
                     }
 
                 } catch (PackageManager.NameNotFoundException e) {
@@ -420,11 +420,11 @@ public class AboutActivity extends ThemedActivity
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return getString(R.string.about_activity__title_about_app);
+                    return getString(R.string.about);
                 case 1:
-                    return getString(R.string.about_activity__title_about_license);
+                    return getString(R.string.license);
                 case 2:
-                    return getString(R.string.about_activity__title_debug_info);
+                    return getString(R.string.debugging);
             }
             return null;
         }

@@ -131,7 +131,7 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
         if (top != null && top.getFragmentTag().equals(SettingsFragmentProxy.TAG)) {
             ProxyHandler.ProxySettings newProxySettings = getAppSettings().getProxySettings();
             if (oldProxySettings.isEnabled() && !newProxySettings.isEnabled()) {
-                Toast.makeText(this, R.string.toast__proxy_disabled__restart_required, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.app_needs_restart_to_disable_proxy_usage, Toast.LENGTH_LONG).show();
             }
         }
         super.onBackPressed();
@@ -226,7 +226,7 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
                 } else if (settings.isKeyEqual(key, R.string.pref_key__change_account)) {
                     new ThemedAlertDialogBuilder(getActivity(), AppSettings.get())
                             .setTitle(getString(R.string.confirmation))
-                            .setMessage(getString(R.string.pref_warning__change_account))
+                            .setMessage(getString(R.string.logout_warning_description))
                             .setNegativeButton(android.R.string.no, null)
                             .setPositiveButton(android.R.string.yes,
                                     new DialogInterface.OnClickListener() {
@@ -412,7 +412,7 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
                 if (appSettings.isKeyEqual(key, R.string.pref_key__http_proxy_load_tor_preset)) {
                     appSettings.setProxyHttpHost("127.0.0.1");
                     appSettings.setProxyHttpPort(8118);
-                    Toast.makeText(screen.getContext(), R.string.toast__proxy_orbot_preset_loaded, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(screen.getContext(), R.string.orbot_proxy_preset_loaded, Toast.LENGTH_SHORT).show();
                     return true;
                 }
             }
@@ -477,7 +477,7 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
 
             ThemedAlertDialogBuilder builder = new ThemedAlertDialogBuilder(getActivity(), appSettings);
             builder.setTitle(R.string.confirmation)
-                    .setMessage(R.string.dialog_content__wipe_settings)
+                    .setMessage(R.string.wipe_settings_warning__appspecific)
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {

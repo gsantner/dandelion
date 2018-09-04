@@ -20,12 +20,12 @@
 
     <!-- Miscellaneous -->
     <com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory
-        android:title="@string/pref_title__sub_miscelaneous">
+        android:title="@string/miscellaneous">
 
         <Preference
             android:key="@string/pref_key__wipe_settings"
-            android:title="@string/pref_title__wipe_settings"
-            android:summary="@string/pref_desc__wipe_settings" />
+            android:title="@string/full_reset"
+            android:summary="@string/wipe_settings_and_logout" />
 
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 </PreferenceScreen>

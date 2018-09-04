@@ -19,7 +19,7 @@
             android:defaultValue="false"
             android:key="@string/pref_key__primary_color__amoled_mode"
             android:summary="@string/pref_desc__primary_color__amoled_mode"
-            android:title="@string/pref_title__primary_color__amoled_mode"
+            android:title="@string/amoled_mode"
             android:icon="@drawable/ic_color_lens_black_24px" />
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 </PreferenceScreen>

@@ -1068,7 +1068,7 @@ public class MainActivity extends ThemedActivity
                 SearchOrCustomTextDialogCreator.showDiasporaTagsDialog(this, arg -> {
                     if (arg.startsWith(SearchOrCustomTextDialogCreator.SPECIAL_PREFIX)) {
                         arg = arg.replace(SearchOrCustomTextDialogCreator.SPECIAL_PREFIX, "").trim();
-                        if (arg.equals(getString(R.string.pref_title__manage_tags))) {
+                        if (arg.equals(getString(R.string.manage_hashtags))) {
                             openDiasporaUrl(urls.getManageTagsUrl());
                         } else {
                             openDiasporaUrl(urls.getAllFollowedTagsUrl());
@@ -1084,7 +1084,7 @@ public class MainActivity extends ThemedActivity
                 SearchOrCustomTextDialogCreator.showDiasporaAspectsDialog(this, arg -> {
                     if (arg.startsWith(SearchOrCustomTextDialogCreator.SPECIAL_PREFIX)) {
                         arg = arg.replace(SearchOrCustomTextDialogCreator.SPECIAL_PREFIX, "").trim();
-                        if (arg.equals(getString(R.string.pref_desc__manage_contacts))) {
+                        if (arg.equals(getString(R.string.manage_your_contact_list))) {
                             openDiasporaUrl(urls.getContactsUrl());
                         } else if (arg.equals(getString(R.string.nav_profile))) {
                             openDiasporaUrl(urls.getProfileUrl());

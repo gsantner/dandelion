@@ -34,7 +34,7 @@ public class SearchOrCustomTextDialogCreator {
                 hl.add(highlighted);
             }
 
-            for (int strid : new int[]{R.string.pref_title__manage_tags}) {
+            for (int strid : new int[]{R.string.manage_hashtags}) {
                 String special = surroundString(appSettings.rstr(strid));
                 data.add(0, special);
                 hl.add(special);
@@ -64,7 +64,7 @@ public class SearchOrCustomTextDialogCreator {
             for (DiasporaAspect aspect : AppSettings.get().getAspects()) {
                 data.add(aspect.name);
             }
-            for (int strid : new int[]{R.string.nav_profile, R.string.pref_desc__manage_contacts}) {
+            for (int strid : new int[]{R.string.nav_profile, R.string.manage_your_contact_list}) {
                 String special = surroundString(appSettings.rstr(strid));
                 data.add(0, special);
                 hl.add(special);

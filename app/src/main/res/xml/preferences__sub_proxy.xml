@@ -6,26 +6,26 @@
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="false"
             android:key="@string/pref_key__http_proxy_enabled"
-            android:summary="@string/pref_desc__http_proxy_enabled"
-            android:title="@string/pref_title__proxy_enabled"/>
+            android:summary="@string/proxy_dandelion_traffic__appspecific"
+            android:title="@string/enable_proxy"/>
 
         <EditTextPreference
             android:dependency="@string/pref_key__http_proxy_enabled"
             android:inputType="textNoSuggestions"
             android:key="@string/pref_key__http_proxy_host"
-            android:title="@string/pref_title__http_proxy_host"/>
+            android:title="@string/host"/>
         <EditTextPreference
             android:dependency="@string/pref_key__http_proxy_enabled"
             android:inputType="number"
             android:key="@string/pref_key__http_proxy_port"
-            android:title="@string/pref_title__http_proxy_port"/>
+            android:title="@string/port"/>
 
         <Preference
             android:icon="@drawable/tor_onion"
             android:dependency="@string/pref_key__http_proxy_enabled"
             android:key="@string/pref_key__http_proxy_load_tor_preset"
-            android:summary="@string/pref_desc__http_proxy_load_tor_preset"
-            android:title="@string/pref_title__http_proxy_load_tor_preset"/>
+            android:summary="@string/load_proxy_settins_for_tor"
+            android:title="@string/load_tor_preset"/>
 
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 </PreferenceScreen>

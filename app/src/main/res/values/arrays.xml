@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="pref_entries__font_size" translatable="false">
-        <item translatable="false">@string/font_size_normal</item>
-        <item translatable="false">@string/font_size_large</item>
-        <item translatable="false">@string/font_size_huge</item>
+        <item translatable="false">@string/normal</item>
+        <item translatable="false">@string/large</item>
+        <item translatable="false">@string/huge</item>
     </array>
     <!-- prefix 's' is needed to make this a string array. Otherwise ListPreference would crash -->
     <array name="pref_entries_values__font_size" translatable="false">
@@ -20,9 +20,9 @@
         <item translatable="false">@string/rotation_val_landscape</item>
     </array>
     <array name="pref_entries__screen_rotation" translatable="false">
-        <item translatable="false">@string/rotation_system</item>
-        <item translatable="false">@string/rotation_sensor</item>
-        <item translatable="false">@string/rotation_portrait</item>
-        <item translatable="false">@string/rotation_landscape</item>
+        <item translatable="false">@string/default_</item>
+        <item translatable="false">@string/sensor_ignore_system_settings</item>
+        <item translatable="false">@string/portrait</item>
+        <item translatable="false">@string/landscape</item>
     </array>
 </resources>

@@ -127,131 +127,131 @@
     <string name="pref_desc__primary_color">Color of the toolbars</string>
     <string name="pref_title__accent_color">Accent Color</string>
     <string name="pref_desc__accent_color">Color of the progressbar</string>
-    <string name="pref_title__primary_color__amoled_mode">AMOLED Mode</string>
+    <string name="amoled_mode">AMOLED Mode</string>
     <string name="pref_desc__primary_color__amoled_mode">Override colors with AMOLED display friendly black at many parts of the app. You need to restart to toggle this setting. To browse diaspora* in dark you also need to activate the Dark theme, which can be found in your personal diaspora* account settings.</string>
 
     <!-- Notifications dropdown -->
-    <string name="pref_title__extended_notifications">Extended Notifications</string>
-    <string name="pref_desc__extended_notifications">Extend the notifications bell with a dropdown menu that shows notification categories</string>
+    <string name="extended_notifications">Extended Notifications</string>
+    <string name="extendend_notifications_bell_description__appspecific">Extend the notifications bell with a dropdown menu that shows notification categories</string>
 
-    <string name="pref_desc__language">Change language of this app. Restart app for changes to take effect</string>
-    <string name="pref_title__language">Language</string>
-    <string name="language_system">System language</string>
+    <string name="language_change_restart_description">Change language of this app. Restart app for changes to take effect</string>
+    <string name="language">Language</string>
+    <string name="system_language">System language</string>
 
     <!-- Font size -->
-    <string name="pref_desc__font_size">Control text size of the WebView</string>
-    <string name="pref_title__font_size">Font size</string>
-    <string name="font_size_normal">Normal</string>
-    <string name="font_size_large">Large</string>
-    <string name="font_size_huge">Huge</string>
+    <string name="control_textsize_of_webview">Control text size of the WebView</string>
+    <string name="font_size">Font size</string>
+    <string name="normal">Normal</string>
+    <string name="large">Large</string>
+    <string name="huge">Huge</string>
 
     <!-- Load images -->
-    <string name="pref_title__load_images">Load images</string>
-    <string name="pref_desc__load_images">Toggle image loading to eg. save mobile data</string>
+    <string name="load_images">Load images</string>
+    <string name="toggle_image_loading_to_save_mobile_data">Toggle image loading to eg. save mobile data</string>
 
     <!-- Screen rotation -->
-    <string name="pref_title__screen_rotation">Screen rotation</string>
-    <string name="pref_desc__screen_rotation">Control automatic screen rotation</string>
-    <string name="rotation_system">Default</string>
-    <string name="rotation_sensor">Sensor\n(ignore system settings)</string>
-    <string name="rotation_portrait">Portrait</string>
-    <string name="rotation_landscape">Landscape</string>
+    <string name="screen_rotation">Screen rotation</string>
+    <string name="control_screen_rotation">Control automatic screen rotation</string>
+    <string name="default_">Default</string>
+    <string name="sensor_ignore_system_settings">Sensor\n(ignore system settings)</string>
+    <string name="portrait">Portrait</string>
+    <string name="landscape">Landscape</string>
 
     <!-- Proxy -->
-    <string name="pref_title__http_proxy_load_tor_preset">Load Tor Preset</string>
-    <string name="pref_desc__http_proxy_load_tor_preset">Load proxy settings for Tor (Orbot) HTTP Proxy</string>
-    <string name="pref_title__sub_proxy">Proxy</string>
-    <string name="pref_title__proxy_enabled">Enable Proxy</string>
-    <string name="pref_desc__http_proxy_enabled">Proxy dandelion*\'s traffic to circumvent firewalls.\nMay require restart. This might not work on some phones.</string>
-    <string name="pref_title__http_proxy_host">Host</string>
-    <string name="pref_title__http_proxy_port">Port</string>
-    <string name="toast__proxy_disabled__restart_required">App needs to restart to disable proxy usage</string>
-    <string name="toast__proxy_orbot_preset_loaded">Orbot proxy preset loaded</string>
+    <string name="load_tor_preset">Load Tor Preset</string>
+    <string name="load_proxy_settins_for_tor">Load proxy settings for Tor (Orbot) HTTP Proxy</string>
+    <string name="proxy">Proxy</string>
+    <string name="enable_proxy">Enable Proxy</string>
+    <string name="proxy_dandelion_traffic__appspecific">Proxy dandelion*\'s traffic to circumvent firewalls.\nMay require restart. This might not work on some phones.</string>
+    <string name="host">Host</string>
+    <string name="port">Port</string>
+    <string name="app_needs_restart_to_disable_proxy_usage">App needs to restart to disable proxy usage</string>
+    <string name="orbot_proxy_preset_loaded">Orbot proxy preset loaded</string>
 
 
     <!-- Chrome custom tabs -->
-    <string name="pref_desc__chrome_custom_tabs_enabled">Open external links with Chrome Custom Tabs. Chromium, Firefox or Google Chrome needs to be installed in order to use this feature. \nIMPORTANT NOTE: Chrome Custom Tabs do not use configured proxy servers!</string>
+    <string name="open_external_links_with_chrome_custom_tabs_description">Open external links with Chrome Custom Tabs. Chromium, Firefox or Google Chrome needs to be installed in order to use this feature. \nIMPORTANT NOTE: Chrome Custom Tabs do not use configured proxy servers!</string>
 
     <!-- Diaspora Settings -->
-    <string name="pref_title__personal_settings">Personal settings</string>
-    <string name="pref_desc__personal_settings">Open your diaspora* account settings</string>
-    <string name="pref_desc__manage_contacts">Manage your contact list</string>
+    <string name="personal_settings">Personal settings</string>
+    <string name="open_diaspora_account_settings__appspecific">Open your diaspora* account settings</string>
+    <string name="manage_your_contact_list">Manage your contact list</string>
 
-    <string name="pref_title__manage_tags">Manage Hashtags</string>
-    <string name="pref_desc__manage_tags">Unfollow already followed hashtags</string>
+    <string name="manage_hashtags">Manage Hashtags</string>
+    <string name="unfollow_already_followed_hashtags__appspecific">Unfollow already followed hashtags</string>
 
-    <string name="pref_title__change_account">Change Account</string>
-    <string name="pref_desc__change_account">Erase local session data and switch to another diaspora* pod/account</string>
-    <string name="pref_warning__change_account">This will erase all cookies and session data. Do you really want to change your account?</string>
+    <string name="change_account">Change Account</string>
+    <string name="loug_warning_description__appspecific">Erase local session data and switch to another diaspora* pod/account</string>
+    <string name="logout_warning_description">This will erase all cookies and session data. Do you really want to change your account?</string>
 
-    <string name="pref_title__clear_cache">Clear cache</string>
-    <string name="pref_desc__clear_cache">Clear WebView cache</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="clear_webview_cache">Clear WebView cache</string>
 
 
-    <string name="pref_desc__intellihide_toolbars">Automatically hide top and bottom toolbars while scrolling</string>
-    <string name="pref_title__intellihide_toolbars">Intellihide Toolbars</string>
+    <string name="intellihide_toolbars__appspecific">Automatically hide top and bottom toolbars while scrolling</string>
+    <string name="intellihide_toolbars">Intellihide Toolbars</string>
 
-    <string name="pref_title__append_shared_via_app">Append shared-by-notice</string>
-    <string name="pref_desc__append_shared_via_app">Append a reference to this app to shared texts: [via #dandelion]</string>
+    <string name="append_shared_by_notice">Append shared-by-notice</string>
+    <string name="append_shared_by_notice__appspecific">Append a reference to this app to shared texts: [via #dandelion]</string>
 
     <!-- More -->
-    <string name="pref_title__sub_miscelaneous">Miscellaneous</string>
+    <string name="miscellaneous">Miscellaneous</string>
 
-    <string name="pref_title__wipe_settings">Full Reset</string>
-    <string name="pref_desc__wipe_settings">Locally wipe all settings related to the app and log out from all accounts</string>
+    <string name="full_reset">Full Reset</string>
+    <string name="wipe_settings_and_logout">Locally wipe all settings related to the app and log out from all accounts</string>
 
-    <string name="dialog_content__wipe_settings">This will reset all changed settings of the app to their default values and log you out from all pods. Your downloaded images will stay untouched. Are you sure you want to proceed?</string>
+    <string name="wipe_settings_warning__appspecific">This will reset all changed settings of the app to their default values and log you out from all pods. Your downloaded images will stay untouched. Are you sure you want to proceed?</string>
 
-    <string name="pref_desc__adblock_enable">Enable basic AdBlocker. Ads may be included e.g. in embedded views</string>
-    <string name="pref_title__adblock_enable">Block advertisements</string>
+    <string name="enable_basic_adblocker_description">Enable basic AdBlocker. Ads may be included e.g. in embedded views</string>
+    <string name="block_advertisments">Block advertisements</string>
 
 
-    <string name="about_activity__title_about_app">About</string>
-    <string name="about_activity__title_about_license">License</string>
-    <string name="about_activity__title_debug_info">Debugging</string>
-    <string name="fragment_debug__section_app">Application</string>
-    <string name="fragment_debug__section_device">Device</string>
-    <string name="fragment_debug__section_pod">diaspora* Pod</string>
-    <string name="fragment_debug__section_log">Debug Log</string>
-    <string name="fragment_debug__section_log_spam">Debug Log (Verbose)</string>
-    <string name="fragment_debug__app_version">App Version: %1$s</string>
-    <string name="fragment_debug__android_version">Android Version: %1$s</string>
-    <string name="fragment_debug__device_name">Device Name: %1$s</string>
-    <string name="fragment_debug__app_codename">Codename: %1$s</string>
-    <string name="fragment_debug__pod_profile_name">Pod Profile Name: %1$s</string>
-    <string name="fragment_debug__pod_profile_url">Pod Domain: %1$s</string>
-    <string name="fragment_debug__toast_log_copied">Debug log copied to clipboard</string>
+    <string name="about">About</string>
+    <string name="license">License</string>
+    <string name="debugging">Debugging</string>
+    <string name="application">Application</string>
+    <string name="device">Device</string>
+    <string name="diaspora_pod__appspecific">diaspora* Pod</string>
+    <string name="debug_log">Debug Log</string>
+    <string name="debug_log_verbose">Debug Log (Verbose)</string>
+    <string name="app_version_with_arg">App Version: %1$s</string>
+    <string name="android_version_witharg">Android Version: %1$s</string>
+    <string name="device_name_witharg">Device Name: %1$s</string>
+    <string name="code_name_witharg">Codename: %1$s</string>
+    <string name="pod_profile_name_witharg__appspecific">Pod Profile Name: %1$s</string>
+    <string name="pod_domain_witharg__appspecific">Pod Domain: %1$s</string>
+    <string name="debug_log_copied_to_clipboard">Debug log copied to clipboard</string>
 
-    <string name="fragment_about__about_text">dandelion* is your companion app for browsing the social network diaspora*. It adds features like useful toolbars and support for proxy servers like the Tor Network to your social experience.</string>
+    <string name="dandelion_is_your_companion__appspecific">dandelion* is your companion app for browsing the social network diaspora*. It adds features like useful toolbars and support for proxy servers like the Tor Network to your social experience.</string>
 
-    <string name="fragment_about__contribute">Contribute Code!</string>
-    <string name="fragment_about__contribute_text">dandelion* is developed free as in Freedom and follows the ideas of the diaspora* project. If you want to contribute, go ahead! Currently we are a very small team, so we greatly appreciate any kind of help!</string>
-    <string name="fragment_about__contribute_button">Get the source</string>
+    <string name="contribute_code">Contribute Code!</string>
+    <string name="dandelion_is_developed_as_foss__appspecific">dandelion* is developed free as in Freedom and follows the ideas of the diaspora* project. If you want to contribute, go ahead! Currently we are a very small team, so we greatly appreciate any kind of help!</string>
+    <string name="get_the_source">Get the source</string>
 
-    <string name="fragment_about__translate">Translate the App!</string>
-    <string name="fragment_about__translate_text">The app is not available in your language? You can change that! Why don\'t you help us by translating it? We use the crowdin platform to enable anyone to translate the app.</string>
-    <string name="fragment_about__translate_button">Let me translate</string>
+    <string name="translate_the_app">Translate the App!</string>
+    <string name="app_not_available_in_your_lang_translate_with_stringlate">The app is not available in your language? You can change that! Why don\'t you help us by translating it? We use Stringlate to enable anyone to translate the app.</string>
+    <string name="let_me_translate">Let me translate</string>
 
-    <string name="fragment_about__feedback">Give Feedback!</string>
-    <string name="fragment_about__feedback_text">dandelion* is still in development, so if you have suggestions or any kind of feedback, please use our bug tracker to let us know!</string>
-    <string name="fragment_about__feedback_button">Report Bugs</string>
+    <string name="give_feedback">Give Feedback!</string>
+    <string name="dandelion_still_in_development__appspecific">dandelion* is still in development, so if you have suggestions or any kind of feedback, please use our bug tracker to let us know!</string>
+    <string name="report_bugs">Report Bugs</string>
 
-    <string name="fragment_about__spread_the_word">Spread the word!</string>
-    <string name="fragment_about__spread_the_word_text">Tell your friends and family about diaspora* and #dandelion! Why don\'t you blog about your experiences? We\'d love to hear from you!</string>
-    <string name="fragment_about__spread_the_word_button">Share the app</string>
-    <string name="fragment_about__spread_the_word_share_text">Hey! Check out #dandelion! %1$s</string>
+    <string name="spread_the_word">Spread the word!</string>
+    <string name="tell_your_friends_about_diaspora__appspecific">Tell your friends and family about diaspora* and #dandelion! Why don\'t you blog about your experiences? We\'d love to hear from you!</string>
+    <string name="share_the_app">Share the app</string>
+    <string name="hey_checkout_dandelion_tag__appspecific">Hey! Check out #dandelion! %1$s</string>
 
 
     <!-- License & help (large amount of text) -->
-    <string name="fragment_license__maintainers">Maintainers</string>
-    <string name="fragment_license__maintainers_text">This app is currently being developed and maintained by &lt;br>&lt;br>%1$s</string>
-    <string name="fragment_license__contributors">Contributors</string>
-    <string name="fragment_license__contributors_thank_you">%1$s&lt;br>&lt;br>Thank you!</string>
+    <string name="maintainers">Maintainers</string>
+    <string name="this_app_is_currently_developed_and_maintained_by_witharg">This app is currently being developed and maintained by &lt;br>&lt;br>%1$s</string>
+    <string name="contributors">Contributors</string>
+    <string name="thank_you_witharg">%1$s&lt;br>&lt;br>Thank you!</string>
 
-    <string name="fragment_license__license_button">GNU GPLv3+ License</string>
-    <string name="fragment_license__thirdparty_libs">Third-Party Libraries</string>
-    <string name="fragment_license__thirdparty_libs_text">The following libraries are used:</string>
-    <string name="fragment_license__misc_leafpic">We took some inspiration and code from LeafPic. Go check it out, it\'s free software as well!</string>
-    <string name="fragment_license__misc_leafpic_button">Tell me more</string>
+    <string name="gnu_gplv3_license">GNU GPLv3+ License</string>
+    <string name="show_third_party_licenses">Third-Party Libraries</string>
+    <string name="the_following_libraries_are_used">The following libraries are used:</string>
+    <string name="inspiration_from_leafpic__appspecific">We took some inspiration and code from LeafPic. Go check it out, it\'s free software as well!</string>
+    <string name="tell_me_more">Tell me more</string>
 
 </resources>

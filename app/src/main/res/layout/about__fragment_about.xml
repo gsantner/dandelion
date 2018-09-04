@@ -43,13 +43,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/fragment_debug__app_version"/>
+                    android:text="@string/app_version_with_arg"/>
 
                 <TextView
                     android:id="@+id/fragment_about__app_codename"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_debug__app_codename"
+                    android:text="@string/code_name_witharg"
                     android:layout_marginBottom="8dp"
                     android:visibility="gone"/> <!-- Change later -->
 
@@ -57,7 +57,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_about__about_text"
+                    android:text="@string/dandelion_is_your_companion__appspecific"
                     android:layout_marginBottom="16dp"/>
 
             </LinearLayout>
@@ -86,14 +86,14 @@
                     style="@android:style/TextAppearance.DeviceDefault.Large"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_about__contribute"
+                    android:text="@string/contribute_code"
                     android:layout_marginBottom="8dp"/>
 
                 <TextView
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_about__contribute_text"/>
+                    android:text="@string/dandelion_is_developed_as_foss__appspecific"/>
 
                 <Button
                     android:id="@+id/fragment_about__contribute_button"
@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/fragment_about__contribute_button"/>
+                    android:text="@string/get_the_source"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -128,14 +128,14 @@
                     style="@android:style/TextAppearance.DeviceDefault.Large"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_about__translate"
+                    android:text="@string/translate_the_app"
                     android:layout_marginBottom="8dp"/>
 
                 <TextView
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_about__translate_text"/>
+                    android:text="@string/app_not_available_in_your_lang_translate_with_stringlate"/>
 
                 <Button
                     android:id="@+id/fragment_about__translate_button"
@@ -143,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/fragment_about__translate_button"/>
+                    android:text="@string/let_me_translate"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -170,14 +170,14 @@
                     style="@android:style/TextAppearance.DeviceDefault.Large"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_about__feedback"
+                    android:text="@string/give_feedback"
                     android:layout_marginBottom="8dp"/>
 
                 <TextView
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_about__feedback_text"/>
+                    android:text="@string/dandelion_still_in_development__appspecific"/>
 
                 <Button
                     android:id="@+id/fragment_about__feedback_button"
@@ -185,7 +185,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/fragment_about__feedback_button"/>
+                    android:text="@string/report_bugs"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -212,7 +212,7 @@
                     style="@android:style/TextAppearance.DeviceDefault.Large"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_about__spread_the_word"
+                    android:text="@string/spread_the_word"
                     android:layout_marginBottom="8dp"/>
 
                 <com.github.dfa.diaspora_android.ui.HtmlTextView
@@ -220,7 +220,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_about__spread_the_word_text"/>
+                    android:text="@string/tell_your_friends_about_diaspora__appspecific"/>
 
                 <Button
                     android:id="@+id/fragment_about__spread_the_word_button"
@@ -228,7 +228,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/fragment_about__spread_the_word_button"/>
+                    android:text="@string/share_the_app"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 

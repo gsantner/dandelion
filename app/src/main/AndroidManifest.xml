@@ -47,7 +47,7 @@
         <activity
             android:name="com.github.dfa.diaspora_android.activity.AboutActivity"
             android:configChanges="locale"
-            android:label="@string/about_activity__title_about_app"
+            android:label="@string/about"
             android:theme="@style/DiasporaLight.NoActionBar" />
 
         <activity

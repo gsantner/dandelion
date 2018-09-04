@@ -72,22 +72,22 @@
     <string name="missing_value">കാണാതായ മൂല്യം</string>
     <string name="jump_to_last_visited_timestamp_in_stream">സ്ട്രീമിലെ അവസാനമായി സന്ദർശിച്ച പേജിലേക്ക് പോകുക?</string>
 
-    <string name="about_activity__title_about_app">കുറിച്ച്</string>
-    <string name="about_activity__title_about_license">ലൈസൻസ്</string>
-    <string name="about_activity__title_debug_info">തെറ്റു കണ്ടുപിടിക്കുക</string>
-    <string name="fragment_debug__section_app">ആപ്പ്ളിക്കേഷൻ</string>
-    <string name="fragment_debug__section_device">ഉപകരണം</string>
-    <string name="fragment_debug__section_pod">diaspora* പോഡ്</string>
-    <string name="fragment_debug__section_log">തിരുത്തിയ തെറ്റുകളുടെ പട്ടിക</string>
-    <string name="fragment_debug__section_log_spam">തിരുത്തിയ തെറ്റുകൾ (വേർബോസ്)</string>
-    <string name="fragment_debug__app_version">ആപ്പ് വേർഷൻ: %1$s</string>
-    <string name="fragment_debug__android_version">ആൻഡ്രോയ്ഡ് വേർഷൻ: %1$s</string>
-    <string name="fragment_debug__device_name">ഉപകരണത്തിന്റെ പേര്:%1$s</string>
-    <string name="fragment_debug__app_codename">കോഡ്നെയിം: %1$s</string>
+    <string name="about">കുറിച്ച്</string>
+    <string name="license">ലൈസൻസ്</string>
+    <string name="debugging">തെറ്റു കണ്ടുപിടിക്കുക</string>
+    <string name="application">ആപ്പ്ളിക്കേഷൻ</string>
+    <string name="device">ഉപകരണം</string>
+    <string name="diaspora_pod__appspecific">diaspora* പോഡ്</string>
+    <string name="debug_log">തിരുത്തിയ തെറ്റുകളുടെ പട്ടിക</string>
+    <string name="debug_log_verbose">തിരുത്തിയ തെറ്റുകൾ (വേർബോസ്)</string>
+    <string name="app_version_with_arg">ആപ്പ് വേർഷൻ: %1$s</string>
+    <string name="android_version_witharg">ആൻഡ്രോയ്ഡ് വേർഷൻ: %1$s</string>
+    <string name="device_name_witharg">ഉപകരണത്തിന്റെ പേര്:%1$s</string>
+    <string name="code_name_witharg">കോഡ്നെയിം: %1$s</string>
     <!-- License & help (large amount of text) -->
-    <string name="fragment_license__thirdparty_libs_text">താഴെ പറഞ്ഞിരിക്കുന്ന ലൈബ്രറികൾ ഉപയോഗിച്ചിരിക്കുന്നു:</string>
-    <string name="fragment_license__misc_leafpic">ഞങ്ങൾ ചില കോഡുകൾ കടമെടുത്തതും പ്രചോദനമായതും ലീഫ്പിക് ഇൽ നിന്നാണ്. ഒന്നു പരിശോധിക്കൂ.. അതും സ്വതന്ത്ര സോഫ്റ്റ്‌വേർ ആണ്!</string>
-    <string name="fragment_license__misc_leafpic_button">വിശദീകരിക്കുക</string>
+    <string name="the_following_libraries_are_used">താഴെ പറഞ്ഞിരിക്കുന്ന ലൈബ്രറികൾ ഉപയോഗിച്ചിരിക്കുന്നു:</string>
+    <string name="inspiration_from_leafpic__appspecific">ഞങ്ങൾ ചില കോഡുകൾ കടമെടുത്തതും പ്രചോദനമായതും ലീഫ്പിക് ഇൽ നിന്നാണ്. ഒന്നു പരിശോധിക്കൂ.. അതും സ്വതന്ത്ര സോഫ്റ്റ്‌വേർ ആണ്!</string>
+    <string name="tell_me_more">വിശദീകരിക്കുക</string>
 
     <!-- Key Names (Untranslatable) -->
     <!-- Operability -->
@@ -112,52 +112,52 @@
     <string name="pref_desc__primary_color">ടൂൾബാറുകളുടെ നിറം</string>
     <string name="pref_title__accent_color">എടുത്തുകാണിക്കുന്ന നിറം</string>
     <string name="pref_desc__accent_color">പ്രോഗ്രസ് ബാറിന്റെ നിറം</string>
-    <string name="pref_title__primary_color__amoled_mode">അമോൾഡ് മോഡ്</string>
+    <string name="amoled_mode">അമോൾഡ് മോഡ്</string>
     <string name="pref_desc__primary_color__amoled_mode">അമോലെഡ് ഡിസ്പ്ലേ സൗഹൃദമായ കറുപ്പ് നിറം ആപ്പിന്റെ പല ഭാഗങ്ങളിലും മറ്റു നിറങ്ങളെ മറികടക്കും. ഈ ക്രമീകരണം മാറ്റുവാൻ ആപ്പ് വീണ്ടും തുറക്കേണ്ടി വരും. നിങ്ങളുടെ സ്വകാര്യ ഡയസ്പോറ* അകൗണ്ട് ക്രമീകരണങ്ങളിലെ ഇരുണ്ട തീം പ്രയോഗിച്ചാൽ ഡയസ്പോറ* നിങ്ങൾക്ക് ഇരുണ്ട പശ്ചാത്തലത്തിൽ ഉപയോഗിക്കാം.</string>
     <!-- Notifications dropdown -->
-    <string name="pref_title__extended_notifications">വ്യാപിപ്പിച്ച വിജ്ഞാപനങ്ങൾ</string>
-    <string name="pref_desc__extended_notifications">വിജ്ഞാപന വിഭാഗങ്ങൾ കാണിക്കുന്ന താഴേക്ക് വലിക്കാവുന്ന മെനുവിൽ വിജ്ഞാപന മണി വലുതാക്കുക</string>
-    <string name="pref_desc__language">ആപ്പിന്റെ ഭാഷ മാറ്റുക. മാറ്റം ഫലപ്രദമാകുവാൻ ആപ്പ് വീണ്ടും തുറക്കുക</string>
-    <string name="pref_title__language">ഭാഷ</string>
-    <string name="language_system">സിസ്റ്റത്തിലെ ഭാഷ</string>
+    <string name="extended_notifications">വ്യാപിപ്പിച്ച വിജ്ഞാപനങ്ങൾ</string>
+    <string name="extendend_notifications_bell_description__appspecific">വിജ്ഞാപന വിഭാഗങ്ങൾ കാണിക്കുന്ന താഴേക്ക് വലിക്കാവുന്ന മെനുവിൽ വിജ്ഞാപന മണി വലുതാക്കുക</string>
+    <string name="language_change_restart_description">ആപ്പിന്റെ ഭാഷ മാറ്റുക. മാറ്റം ഫലപ്രദമാകുവാൻ ആപ്പ് വീണ്ടും തുറക്കുക</string>
+    <string name="language">ഭാഷ</string>
+    <string name="system_language">സിസ്റ്റത്തിലെ ഭാഷ</string>
     <!-- Font size -->
-    <string name="pref_desc__font_size">വെബ്‌വ്യൂ അക്ഷരങ്ങളുടെ വലിപ്പം നിയന്ത്രിക്കുക</string>
-    <string name="pref_title__font_size">അക്ഷരങ്ങളുടെ വലിപ്പം</string>
-    <string name="font_size_normal">സാധാരണ</string>
-    <string name="font_size_large">വലിയ</string>
-    <string name="font_size_huge">ഭീമാകാരമായ</string>
+    <string name="control_textsize_of_webview">വെബ്‌വ്യൂ അക്ഷരങ്ങളുടെ വലിപ്പം നിയന്ത്രിക്കുക</string>
+    <string name="font_size">അക്ഷരങ്ങളുടെ വലിപ്പം</string>
+    <string name="normal">സാധാരണ</string>
+    <string name="large">വലിയ</string>
+    <string name="huge">ഭീമാകാരമായ</string>
     <!-- Load images -->
-    <string name="pref_title__load_images">ചിത്രങ്ങൾ ലോഡ് ചെയ്യുക</string>
-    <string name="pref_desc__load_images">ചിത്രം ലോഡ് ചെയ്യുന്നത് മാറ്റുക. ഉദാ:- മൊബൈൽ ഡാറ്റാ ലഭിക്കുന്നതിനായി</string>
+    <string name="load_images">ചിത്രങ്ങൾ ലോഡ് ചെയ്യുക</string>
+    <string name="toggle_image_loading_to_save_mobile_data">ചിത്രം ലോഡ് ചെയ്യുന്നത് മാറ്റുക. ഉദാ:- മൊബൈൽ ഡാറ്റാ ലഭിക്കുന്നതിനായി</string>
     <!-- Screen rotation -->
-    <string name="pref_title__screen_rotation">സ്‌ക്രീൻ കറക്കുക</string>
-    <string name="pref_desc__screen_rotation">തനിയെ സ്‌ക്രീൻ ചുറ്റുന്നത് നിയന്ത്രിക്കുക</string>
-    <string name="rotation_system">സ്വതേ ഉള്ള മൂല്യം</string>
-    <string name="rotation_sensor">സെൻസർ\n (സിസ്റ്റം ക്രമീകരണങ്ങളെ അവഗണിക്കുക)</string>
-    <string name="rotation_portrait">പോർട്രൈറ്റ്</string>
-    <string name="rotation_landscape">ലാൻസ്‌കേപ്</string>
+    <string name="screen_rotation">സ്‌ക്രീൻ കറക്കുക</string>
+    <string name="control_screen_rotation">തനിയെ സ്‌ക്രീൻ ചുറ്റുന്നത് നിയന്ത്രിക്കുക</string>
+    <string name="default_">സ്വതേ ഉള്ള മൂല്യം</string>
+    <string name="sensor_ignore_system_settings">സെൻസർ\n (സിസ്റ്റം ക്രമീകരണങ്ങളെ അവഗണിക്കുക)</string>
+    <string name="portrait">പോർട്രൈറ്റ്</string>
+    <string name="landscape">ലാൻസ്‌കേപ്</string>
     <!-- Proxy -->
-    <string name="pref_title__http_proxy_load_tor_preset">ടോറിൽ മുൻകൂറായി രേഖപ്പെടുത്തിയ മൂല്യങ്ങൾ ലോഡ് ചെയ്യുക</string>
-    <string name="pref_desc__http_proxy_load_tor_preset">ടോർ (ഓർബോട്ട്) HTTP പ്രോക്സി ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യുക</string>
-    <string name="pref_title__sub_proxy">പ്രോക്സി</string>
-    <string name="pref_title__proxy_enabled">പ്രോക്സി പ്രയോഗിക്കുക</string>
-    <string name="pref_title__http_proxy_host">ഹോസ്റ്റ്</string>
-    <string name="pref_title__http_proxy_port">പോർട്ട്</string>
-    <string name="toast__proxy_disabled__restart_required">പ്രോക്സി ഉപയോഗം പ്രവർത്തനരഹിതമാക്കുവാൻ ആപ്പ് വീണ്ടും തുറക്കുക</string>
-    <string name="toast__proxy_orbot_preset_loaded">മുൻകൂറായി ഉണ്ടായിരുന്ന ഓർബോട്ട് പ്രോക്സി ലോഡ് ചെയ്തു</string>
+    <string name="load_tor_preset">ടോറിൽ മുൻകൂറായി രേഖപ്പെടുത്തിയ മൂല്യങ്ങൾ ലോഡ് ചെയ്യുക</string>
+    <string name="load_proxy_settins_for_tor">ടോർ (ഓർബോട്ട്) HTTP പ്രോക്സി ക്രമീകരണങ്ങൾ ലോഡ് ചെയ്യുക</string>
+    <string name="proxy">പ്രോക്സി</string>
+    <string name="enable_proxy">പ്രോക്സി പ്രയോഗിക്കുക</string>
+    <string name="host">ഹോസ്റ്റ്</string>
+    <string name="port">പോർട്ട്</string>
+    <string name="app_needs_restart_to_disable_proxy_usage">പ്രോക്സി ഉപയോഗം പ്രവർത്തനരഹിതമാക്കുവാൻ ആപ്പ് വീണ്ടും തുറക്കുക</string>
+    <string name="orbot_proxy_preset_loaded">മുൻകൂറായി ഉണ്ടായിരുന്ന ഓർബോട്ട് പ്രോക്സി ലോഡ് ചെയ്തു</string>
     <!-- Chrome custom tabs -->
-    <string name="pref_desc__chrome_custom_tabs_enabled">പുറമെയുള്ള ലിങ്കുകൾ ക്രോം കസ്റ്റം ടാബിൽ തുറക്കുക. ക്രോമിയം അല്ലെങ്കിൽ ഗൂഗിൾ ക്രോം ഈ സൗകര്യം ലഭിക്കുന്നതിനായി ഇൻസ്റ്റാൾ ചെയ്തിരിക്കണം.
+    <string name="open_external_links_with_chrome_custom_tabs_description">പുറമെയുള്ള ലിങ്കുകൾ ക്രോം കസ്റ്റം ടാബിൽ തുറക്കുക. ക്രോമിയം അല്ലെങ്കിൽ ഗൂഗിൾ ക്രോം ഈ സൗകര്യം ലഭിക്കുന്നതിനായി ഇൻസ്റ്റാൾ ചെയ്തിരിക്കണം.
 \n പ്രധാന അറിയിപ്പ്: ക്രമീകരിച്ച പ്രോക്സി സെർവറുകൾ ക്രോം കസ്റ്റം ടാബുകൾ ഉപയോഗിക്കാറില്ല!</string>
     <!-- Diaspora Settings -->
-    <string name="pref_title__personal_settings">സ്വകാര്യ ക്രമീകരണങ്ങൾ</string>
-    <string name="pref_desc__personal_settings">നിങ്ങളുടെ ഡയസ്പോറ* അക്കൗണ്ട് ക്രമീകരണങ്ങൾ തുറക്കുക</string>
-    <string name="pref_desc__manage_contacts">നിങ്ങളുടെ സമ്പർക്കങ്ങളുടെ പട്ടിക കൈകാര്യം ചെയ്യുക</string>
-    <string name="pref_title__manage_tags">ഹാഷ്ടാഗുകൾ കൈകാര്യം ചെയ്യുക</string>
-    <string name="pref_desc__manage_tags">പിന്തുടർന്ന് വന്ന ഹാഷ്ടാഗുകൾ പിന്തുടരാതിരിക്കുക</string>
-    <string name="pref_title__change_account">അക്കൗണ്ട് മാറ്റുക</string>
-    <string name="pref_desc__change_account">പ്രാദേശികമായ സെഷൻ ഡാറ്റ മായ്ച്ച ശേഷം മറ്റൊരു ഡയസ്പോറ* പോഡ്/അക്കൗണ്ട് ലേക്ക് മാറുക</string>
-    <string name="pref_desc__intellihide_toolbars">മുകളിലെയും ചുവട്ടിലെയും ടൂൾബാറുകൾ സ്ക്രോൾ ചെയ്യുമ്പോൾ താനേ അപ്രത്യക്ഷമാക്കുക</string>
+    <string name="personal_settings">സ്വകാര്യ ക്രമീകരണങ്ങൾ</string>
+    <string name="open_diaspora_account_settings__appspecific">നിങ്ങളുടെ ഡയസ്പോറ* അക്കൗണ്ട് ക്രമീകരണങ്ങൾ തുറക്കുക</string>
+    <string name="manage_your_contact_list">നിങ്ങളുടെ സമ്പർക്കങ്ങളുടെ പട്ടിക കൈകാര്യം ചെയ്യുക</string>
+    <string name="manage_hashtags">ഹാഷ്ടാഗുകൾ കൈകാര്യം ചെയ്യുക</string>
+    <string name="unfollow_already_followed_hashtags__appspecific">പിന്തുടർന്ന് വന്ന ഹാഷ്ടാഗുകൾ പിന്തുടരാതിരിക്കുക</string>
+    <string name="change_account">അക്കൗണ്ട് മാറ്റുക</string>
+    <string name="loug_warning_description__appspecific">പ്രാദേശികമായ സെഷൻ ഡാറ്റ മായ്ച്ച ശേഷം മറ്റൊരു ഡയസ്പോറ* പോഡ്/അക്കൗണ്ട് ലേക്ക് മാറുക</string>
+    <string name="intellihide_toolbars__appspecific">മുകളിലെയും ചുവട്ടിലെയും ടൂൾബാറുകൾ സ്ക്രോൾ ചെയ്യുമ്പോൾ താനേ അപ്രത്യക്ഷമാക്കുക</string>
     <!-- More -->
-    <string name="pref_desc__adblock_enable">ലളിതമായ ആഡ്ബ്ലോക്കർ സജ്ജമാക്കുക. പരസ്യങ്ങൾ ചിലപ്പോൾ ഉൾപ്പെടാം. ഉദാ: എംബെഡ്ഡ് ചെയ്‌ത കാഴ്ചയിൽ</string>
-    <string name="pref_title__adblock_enable">പരസ്യങ്ങൾ തടയുക</string>
+    <string name="enable_basic_adblocker_description">ലളിതമായ ആഡ്ബ്ലോക്കർ സജ്ജമാക്കുക. പരസ്യങ്ങൾ ചിലപ്പോൾ ഉൾപ്പെടാം. ഉദാ: എംബെഡ്ഡ് ചെയ്‌ത കാഴ്ചയിൽ</string>
+    <string name="block_advertisments">പരസ്യങ്ങൾ തടയുക</string>
 </resources>

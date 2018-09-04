@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="about_activity__title_about_app">حول البرنامجgood app</string>
+    <string name="about">حول البرنامجgood app</string>
     <!-- License & help (large amount of text) -->
 </resources>

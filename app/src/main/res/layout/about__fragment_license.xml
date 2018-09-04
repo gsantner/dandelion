@@ -36,14 +36,14 @@
                     style="@android:style/TextAppearance.DeviceDefault.Large"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_license__maintainers"/>
+                    android:text="@string/maintainers"/>
 
                 <com.github.dfa.diaspora_android.ui.HtmlTextView
                     android:id="@+id/fragment_license__maintainers_text"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_license__maintainers_text"
+                    android:text="@string/this_app_is_currently_developed_and_maintained_by_witharg"
                     android:layout_marginBottom="8dp"/>
 
             </LinearLayout>
@@ -72,7 +72,7 @@
                     style="@android:style/TextAppearance.DeviceDefault.Large"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_license__contributors"
+                    android:text="@string/contributors"
                     android:layout_marginBottom="8dp"/>
 
                 <com.github.dfa.diaspora_android.ui.HtmlTextView
@@ -123,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/fragment_license__license_button"/>
+                    android:text="@string/gnu_gplv3_license"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -150,14 +150,14 @@
                     style="@android:style/TextAppearance.DeviceDefault.Large"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_license__thirdparty_libs"
+                    android:text="@string/show_third_party_licenses"
                     android:layout_marginBottom="8dp"/>
 
                 <TextView
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_license__thirdparty_libs_text"/>
+                    android:text="@string/the_following_libraries_are_used"/>
 
                 <com.github.dfa.diaspora_android.ui.HtmlTextView
                     android:id="@+id/fragment_license__thirdparty_libs_text"
@@ -197,7 +197,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_license__misc_leafpic"/>
+                    android:text="@string/inspiration_from_leafpic__appspecific"/>
 
                 <Button
                     android:id="@+id/fragment_license__leafpic_button"
@@ -205,7 +205,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/fragment_license__misc_leafpic_button"/>
+                    android:text="@string/tell_me_more"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
