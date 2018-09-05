@@ -1,0 +1,240 @@
+From 90ae580fa732962127156a333b5d879cd4a80d36 Mon Sep 17 00:00:00 2001
+From: vanitasvitae <vanitasvitae@fsfe.org>
+Date: Mon, 10 Apr 2017 21:43:24 +0200
+Subject: [PATCH] Add first image viewer design
+
+---
+ app/build.gradle                              |  1 +
+ .../activity/ImageViewFragment.java           | 77 +++++++++++++++++++
+ .../activity/MainActivity.java                |  4 +
+ .../service/ImageDownloadTask.java            | 17 ++++
+ .../web/ContextMenuWebView.java               | 16 ++++
+ .../main/res/layout/image_view__fragment.xml  | 19 +++++
+ 6 files changed, 134 insertions(+)
+ create mode 100644 app/src/main/java/com/github/dfa/diaspora_android/activity/ImageViewFragment.java
+ create mode 100644 app/src/main/res/layout/image_view__fragment.xml
+
+diff --git a/app/build.gradle b/app/build.gradle
+index 5449e9fc..c46301ed 100644
+--- a/app/build.gradle
++++ b/app/build.gradle
+@@ -85,6 +85,7 @@ dependencies {
+     compile 'info.guardianproject.netcipher:netcipher:2.0.0-alpha1'
+     compile 'info.guardianproject.netcipher:netcipher-webkit:2.0.0-alpha1'
+     compile 'com.github.DASAR:ShiftColorPicker:v0.5'
++    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.6.0'
+     apt 'com.jakewharton:butterknife-compiler:8.0.1'
+ }
+ 
+diff --git a/app/src/main/java/com/github/dfa/diaspora_android/activity/ImageViewFragment.java b/app/src/main/java/com/github/dfa/diaspora_android/activity/ImageViewFragment.java
+new file mode 100644
+index 00000000..164e37ae
+--- /dev/null
++++ b/app/src/main/java/com/github/dfa/diaspora_android/activity/ImageViewFragment.java
+@@ -0,0 +1,77 @@
++package com.github.dfa.diaspora_android.activity;
++
++import android.graphics.Bitmap;
++import android.os.Bundle;
++import android.view.LayoutInflater;
++import android.view.Menu;
++import android.view.MenuInflater;
++import android.view.View;
++import android.view.ViewGroup;
++import android.widget.ProgressBar;
++
++import com.davemorrissey.labs.subscaleview.ImageSource;
++import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
++import com.github.dfa.diaspora_android.R;
++import com.github.dfa.diaspora_android.service.ImageDownloadTask;
++import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
++import com.github.dfa.diaspora_android.util.AppLog;
++
++import butterknife.BindView;
++import butterknife.ButterKnife;
++
++/**
++ * Created by vanitas on 10.04.17.
++ */
++
++public class ImageViewFragment extends ThemedFragment {
++    public static final String TAG = "com.github.dfa.diaspora_android.ImageViewFragment";
++    public static final String IMAGE_SOURCE = "IMAGE_SOURCE";
++
++    @BindView(R.id.imageView)
++    SubsamplingScaleImageView imageView;
++    @BindView(R.id.marker_progress)
++    ProgressBar progressBar;
++
++    @Override
++    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
++        AppLog.d(this, "onCreateView()");
++        View view = inflater.inflate(R.layout.image_view__fragment, container, false);
++        ButterKnife.bind(this, view);
++        return view;
++    }
++
++    @Override
++    public void onViewCreated(View view, Bundle savedInstanceState) {
++        super.onViewCreated(view, savedInstanceState);
++        new ImageDownloadTask.ImageViewFragmentDownloadTask(this)
++                .execute(getArguments().getString(IMAGE_SOURCE));
++        imageView.setMaxScale(5);
++        imageView.setDoubleTapZoomStyle(SubsamplingScaleImageView.ZOOM_FOCUS_CENTER);
++        imageView.setZoomEnabled(true);
++    }
++
++    @Override
++    protected void applyColorToViews() {
++
++    }
++
++    @Override
++    public String getFragmentTag() {
++        return TAG;
++    }
++
++    @Override
++    public void onCreateBottomOptionsMenu(Menu menu, MenuInflater inflater) {
++
++    }
++
++    @Override
++    public boolean onBackPressed() {
++        return false;
++    }
++
++    public void showBitmap(Bitmap bitmap) {
++        progressBar.setVisibility(View.GONE);
++        imageView.setImage(ImageSource.bitmap(bitmap));
++    }
++}
+diff --git a/app/src/main/java/com/github/dfa/diaspora_android/activity/MainActivity.java b/app/src/main/java/com/github/dfa/diaspora_android/activity/MainActivity.java
+index 8019fb6d..031b624f 100644
+--- a/app/src/main/java/com/github/dfa/diaspora_android/activity/MainActivity.java
++++ b/app/src/main/java/com/github/dfa/diaspora_android/activity/MainActivity.java
+@@ -321,6 +321,10 @@ protected CustomFragment getFragment(String fragmentTag) {
+                     PodSelectionFragment psf = new PodSelectionFragment();
+                     fm.beginTransaction().add(psf, fragmentTag).commit();
+                     return psf;
++                case ImageViewFragment.TAG:
++                    ImageViewFragment ivf = new ImageViewFragment();
++                    fm.beginTransaction().add(ivf, fragmentTag).commit();
++                    return ivf;
+                 default:
+                     AppLog.e(this, "Invalid Fragment Tag: " + fragmentTag
+                             + "\nAdd Fragments Tag to getFragment()'s switch case.");
+diff --git a/app/src/main/java/com/github/dfa/diaspora_android/service/ImageDownloadTask.java b/app/src/main/java/com/github/dfa/diaspora_android/service/ImageDownloadTask.java
+index 0834ee95..f11cfb82 100644
+--- a/app/src/main/java/com/github/dfa/diaspora_android/service/ImageDownloadTask.java
++++ b/app/src/main/java/com/github/dfa/diaspora_android/service/ImageDownloadTask.java
+@@ -24,6 +24,9 @@
+ import android.support.annotation.Nullable;
+ import android.widget.ImageView;
+ 
++import com.davemorrissey.labs.subscaleview.ImageSource;
++import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
++import com.github.dfa.diaspora_android.activity.ImageViewFragment;
+ import com.github.dfa.diaspora_android.util.AppLog;
+ 
+ import java.io.FileOutputStream;
+@@ -95,4 +98,18 @@ protected void onPostExecute(Bitmap result) {
+             imageView.setImageBitmap(result);
+         }
+     }
++
++    public static class ImageViewFragmentDownloadTask extends ImageDownloadTask {
++        ImageViewFragment ivf;
++
++        public ImageViewFragmentDownloadTask(ImageViewFragment imageViewFragment) {
++            super(null, null);
++            this.ivf = imageViewFragment;
++        }
++
++        @Override
++        protected void onPostExecute(Bitmap result) {
++            ivf.showBitmap(result);
++        }
++    }
+ }
+diff --git a/app/src/main/java/com/github/dfa/diaspora_android/web/ContextMenuWebView.java b/app/src/main/java/com/github/dfa/diaspora_android/web/ContextMenuWebView.java
+index c4c0e278..6c8947bd 100644
+--- a/app/src/main/java/com/github/dfa/diaspora_android/web/ContextMenuWebView.java
++++ b/app/src/main/java/com/github/dfa/diaspora_android/web/ContextMenuWebView.java
+@@ -30,6 +30,7 @@
+ import android.content.pm.PackageManager;
+ import android.graphics.Bitmap;
+ import android.net.Uri;
++import android.os.Bundle;
+ import android.os.Environment;
+ import android.support.v4.content.LocalBroadcastManager;
+ import android.util.AttributeSet;
+@@ -38,6 +39,7 @@
+ import android.widget.Toast;
+ 
+ import com.github.dfa.diaspora_android.R;
++import com.github.dfa.diaspora_android.activity.ImageViewFragment;
+ import com.github.dfa.diaspora_android.activity.MainActivity;
+ import com.github.dfa.diaspora_android.service.ImageDownloadTask;
+ 
+@@ -53,6 +55,7 @@
+     public static final int ID_SAVE_IMAGE = 10;
+     public static final int ID_IMAGE_EXTERNAL_BROWSER = 11;
+     public static final int ID_COPY_IMAGE_LINK = 15;
++    public static final int ID_VIEW_IMAGE = 16;
+     public static final int ID_COPY_LINK = 12;
+     public static final int ID_SHARE_LINK = 13;
+     public static final int ID_SHARE_IMAGE = 14;
+@@ -82,6 +85,18 @@ public boolean onMenuItemClick(MenuItem item) {
+                 HitTestResult result = getHitTestResult();
+                 String url = result.getExtra();
+                 switch (item.getItemId()) {
++
++                    case ID_VIEW_IMAGE: {
++                        ImageViewFragment ivf = new ImageViewFragment();
++                        Bundle b = new Bundle();
++                        b.putString(ImageViewFragment.IMAGE_SOURCE, url);
++                        ivf.setArguments(b);
++                        ((MainActivity) parentActivity).getSupportFragmentManager().beginTransaction()
++                                .addToBackStack(null)
++                                .replace(R.id.fragment_container, ivf).commit();
++                        break;
++                    }
++
+                     //Save image to external memory
+                     case ID_SAVE_IMAGE: {
+                         boolean writeToStoragePermitted = true;
+@@ -224,6 +239,7 @@ protected void onPostExecute(Bitmap result) {
+             menu.add(0, ID_IMAGE_EXTERNAL_BROWSER, 0, context.getString(R.string.context_menu_open_external_browser)).setOnMenuItemClickListener(handler);
+             menu.add(0, ID_SHARE_IMAGE, 0, context.getString(R.string.context_menu_share_image)).setOnMenuItemClickListener(handler);
+             menu.add(0, ID_COPY_IMAGE_LINK, 0, context.getString(R.string.context_menu_copy_image_link)).setOnMenuItemClickListener(handler);
++            menu.add(0, ID_VIEW_IMAGE, 0, "View").setOnMenuItemClickListener(handler);
+         } else if (result.getType() == HitTestResult.ANCHOR_TYPE ||
+                 result.getType() == HitTestResult.SRC_ANCHOR_TYPE) {
+             // Menu options for a hyperlink.
+diff --git a/app/src/main/res/layout/image_view__fragment.xml b/app/src/main/res/layout/image_view__fragment.xml
+new file mode 100644
+index 00000000..2b91c501
+--- /dev/null
++++ b/app/src/main/res/layout/image_view__fragment.xml
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:orientation="vertical" android:layout_width="match_parent"
++    android:layout_height="match_parent">
++    <ProgressBar
++        android:layout_centerVertical="true"
++        android:layout_centerHorizontal="true"
++        android:indeterminate="true"
++        android:id="@+id/marker_progress"
++        style="?android:attr/progressBarStyle"
++        android:layout_height="50dp"
++        android:layout_width="50dp"/>
++    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
++        android:id="@+id/imageView"
++        android:layout_centerHorizontal="true"
++        android:layout_centerVertical="true"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"/>
++</RelativeLayout>
+\ No newline at end of file
