@@ -133,6 +133,7 @@
   <string name="enable_proxy">Abìlita unu server intermèdiu</string>
   <string name="proxy_dandelion_traffic__appspecific">Faghe colare su tràficu de dandelion* in unu server intermèdiu pro isfrancare sos firewalls.\n
     Diat pòdere èssere netzessàriu a torrare a allùghere s\'aplicatzione. Diat pòdere non funtzionare pro carchi telèfono.</string>
+  <string name="host">Host</string>
   <string name="port">Ghenna</string>
   <string name="app_needs_restart_to_disable_proxy_usage">Depes torrare a allùghere s\'aplicatzione pro istudare s\'impreu de su server intermediàriu</string>
   <string name="orbot_proxy_preset_loaded">Impostatziones de su server de Orbot carrigadas</string>
