@@ -7,6 +7,7 @@
   <string name="settings">Instellingen</string>
   <string name="notifications">Meldingen</string>
   <string name="conversations">Gesprekken</string>
+  <string name="stream">Stream</string>
   <string name="profile">Profiel</string>
   <string name="aspects">Aspecten</string>
   <string name="activities">Activiteiten</string>
@@ -67,9 +68,11 @@
   <string name="permission_granted_try_again">Toestemming verleend. Probeer het opnieuw.</string>
   <string name="custom_pod">Aangepaste Pod</string>
   <string name="pod_name">Pod naam</string>
+  <string name="protocol">Protocol</string>
   <string name="pod_address">Pod adres</string>
   <string name="missing_value">Ontbrekende waarde</string>
   <string name="jump_to_last_visited_page_in_stream__appspecific">Ga naar laatste bezochte pagina in de stream?</string>
+  <string name="hide_statusbar">Verberg statusbalk</string>
   <!-- Operability -->
   <string name="top_toolbar_loads_stream__appsp">Bovenste werkbalk laadt stream</string>
   <string name="click_empty_space_top_toolbar_load_stream__appspecific">Klik op een lege ruimte in de bovenste werkbalk om de stream te openen</string>
@@ -119,8 +122,10 @@
   <!-- Proxy -->
   <string name="load_tor_preset">Tor Voorinstelling laden</string>
   <string name="load_proxy_settins_for_tor">Laden van de proxy-instellingen voor HTTP-Proxy Tor (Orbot)</string>
+  <string name="proxy">Proxy</string>
   <string name="enable_proxy">Proxy inschakelen</string>
   <string name="proxy_dandelion_traffic__appspecific">Proxy dandelion*-verkeer om firewalls te omzeilen. \nVereist mogelijk app herstart. Dit kan op sommige telefoons niet werken.</string>
+  <string name="host">Host</string>
   <string name="port">Poort</string>
   <string name="app_needs_restart_to_disable_proxy_usage">App moet opnieuw opstarten om het gebruik van de proxy uit te schakelen</string>
   <string name="orbot_proxy_preset_loaded">Orbot proxy voorinstelling geladen</string>
@@ -153,6 +158,7 @@
   <string name="debugging">Foutopsporing</string>
   <string name="application">Applicatie</string>
   <string name="device">Apparaat</string>
+  <string name="diaspora_pod__appspecific">diaspora* Pod</string>
   <string name="debug_log">Foutoplossing</string>
   <string name="debug_log_verbose">Foutoplossing (Verbose)</string>
   <string name="app_version_with_arg">App Versie: %1$s</string>
