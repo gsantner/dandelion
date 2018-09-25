@@ -78,6 +78,7 @@
   <string name="pod_address">Адреса поду</string>
   <string name="missing_value">Відсутнє значення</string>
   <string name="jump_to_last_visited_page_in_stream__appspecific">Перейти на останню відвідану сторінку в потоці?</string>
+  <string name="hide_statusbar">Сховати рядок статусу</string>
   <!-- Operability -->
   <string name="top_toolbar_loads_stream__appsp">Верхня панель завантажує потік</string>
   <string name="click_empty_space_top_toolbar_load_stream__appspecific">Натисніть на вільному місці верхньої панелі, щоб відкрити потік</string>
