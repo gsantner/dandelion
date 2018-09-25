@@ -3,9 +3,14 @@
 <resources>
   <!-- Application -->
   <!-- Common Words -->
+  <string name="settings">Innstillinger</string>
+  <string name="search">Søk</string>
+  <string name="changelog">Endringslogg</string>
   <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
+  <string name="more">Mer</string>
+  <string name="share_dotdotdot">Del…</string>
   <!-- More from MainActivity -->
   <!-- Permissions -->
   <!-- Operability -->
@@ -32,12 +37,19 @@
   <string name="color_of_progressbar">Fremgangslinjefarge</string>
   <string name="amoled_mode">AMOLED-modus</string>
   <!-- Notifications dropdown -->
+  <string name="language_change_restart_description">Bytt språket for denne appen og omstart slik at endringen kan ta sted</string>
+  <string name="language">Språk</string>
   <!-- Font size -->
   <!-- Load images -->
   <!-- Screen rotation -->
   <!-- Proxy -->
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
+  <string name="clear_cache">Tøm hurtigminne</string>
   <!-- More -->
+  <string name="miscellaneous">Forskjellig</string>
+  <string name="about">Om</string>
+  <string name="license">Lisens</string>
   <!-- License & help (large amount of text) -->
+  <string name="contributors">Medvirkende</string>
 </resources>
