@@ -7,15 +7,18 @@
   <string name="reload">Rafraîchir</string>
   <!-- Common Words -->
   <string name="settings">Paramètres</string>
+  <string name="notifications">Notifications</string>
   <string name="conversations">Discussions</string>
   <string name="stream">Flux</string>
   <string name="profile">Profil</string>
+  <string name="aspects">Aspects</string>
   <string name="activities">Activités</string>
   <string name="liked">Aimés</string>
   <string name="commented">Commentés</string>
   <string name="mentions">Mentionnés</string>
   <string name="public_">Publique</string>
   <string name="search">Recherche</string>
+  <string name="contacts">Contacts</string>
   <string name="changelog">Nouveautés</string>
   <string name="statistics">Statistiques</string>
   <!-- Notifications dropdown menu -->
@@ -90,6 +93,7 @@
   <string name="control_visibility_of_entries_nav_drawer">Visibilité de contrôle des entrées dans le volet de navigation</string>
   <string name="user">Utilisateur</string>
   <string name="general">Général</string>
+  <string name="admin">Admin</string>
   <!-- Themes -->
   <string name="theme_and_colors">Thème et couleurs</string>
   <string name="control_which_colors_are_used_in_app">Contrôler les couleurs utilisées pour l\'application</string>
@@ -108,6 +112,8 @@
   <!-- Font size -->
   <string name="control_textsize_of_webview">Contrôle de la taille du texte pour l\'affichage web</string>
   <string name="font_size">Taille de la police</string>
+  <string name="normal">Normal</string>
+  <string name="large">Large</string>
   <string name="huge">Très grand</string>
   <!-- Load images -->
   <string name="load_images">Charger les images</string>
@@ -117,13 +123,16 @@
   <string name="control_screen_rotation">Rotation automatique de l\'écran</string>
   <string name="default_">Par défaut</string>
   <string name="sensor_ignore_system_settings">Capteur\n(ignore les paramètres du système)</string>
+  <string name="portrait">Portrait</string>
   <string name="landscape">Paysage</string>
   <!-- Proxy -->
   <string name="load_tor_preset">Charger la pré-configuration Tor</string>
   <string name="load_proxy_settins_for_tor">Charger les paramètres proxy pour Tor (Orbot) HTTP Proxy</string>
+  <string name="proxy">Proxy</string>
   <string name="enable_proxy">Activer Proxy</string>
   <string name="proxy_dandelion_traffic__appspecific">Proxy pour dandelion* pour contourner les pare-feux.\nPeut nécessiter un redémarrage</string>
   <string name="host">Hôte</string>
+  <string name="port">Port</string>
   <string name="app_needs_restart_to_disable_proxy_usage">L\'application a besoin d\'être redémarrée pour désactiver l\'usage du proxy</string>
   <string name="orbot_proxy_preset_loaded">Préréglages proxy Orbot chargés</string>
   <!-- Chrome custom tabs -->
@@ -153,6 +162,7 @@
   <string name="about">À propos</string>
   <string name="license">Licence</string>
   <string name="debugging">Déboguer</string>
+  <string name="application">Application</string>
   <string name="device">Appareil</string>
   <string name="diaspora_pod__appspecific">Pod diaspora*</string>
   <string name="debug_log">Journal de débogage</string>
