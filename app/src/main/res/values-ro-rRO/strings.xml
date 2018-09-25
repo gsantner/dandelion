@@ -7,12 +7,14 @@
   <string name="settings">Setări</string>
   <string name="notifications">Notificări</string>
   <string name="conversations">Conversații</string>
+  <string name="stream">Stream</string>
   <string name="profile">Profil</string>
   <string name="aspects">Aspecte</string>
   <string name="activities">Activități</string>
   <string name="liked">Apreciate</string>
   <string name="commented">Comentate</string>
   <string name="mentions">Mențiuni</string>
+  <string name="public_">Public</string>
   <string name="search">Căutare</string>
   <string name="contacts">Contacte</string>
   <string name="changelog">Jurnalul modificărilor</string>
@@ -62,13 +64,17 @@
   <!-- Navigiation Slider -->
   <!-- Themes -->
   <!-- Notifications dropdown -->
+  <string name="language_change_restart_description">Schimbă limba acestei aplicații. Restartează aplicația pentru ca schimbările să ia efect</string>
+  <string name="language">Limbă</string>
   <!-- Font size -->
   <!-- Load images -->
   <!-- Screen rotation -->
   <!-- Proxy -->
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
+  <string name="clear_cache">Goliți memoria cache</string>
   <!-- More -->
+  <string name="miscellaneous">Diverse</string>
   <string name="about">Despre</string>
   <string name="license">Licenţă</string>
   <string name="debugging">Depanare</string>
@@ -86,4 +92,5 @@
   <string name="debug_log_copied_to_clipboard">Jurnal Depanare copiat în clipboard</string>
   <string name="dandelion_is_your_companion__appspecific">dandelion* este companionul tau pentru navigarea reţelei sociale diaspora *. Adaugă caracteristici cum ar fi utilele bare de instrumente şi suport pentru proxy servere ca Tor Network pentru experienţa ta socială.</string>
   <!-- License & help (large amount of text) -->
+  <string name="contributors">Contribuitori</string>
 </resources>
