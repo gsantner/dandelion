@@ -96,6 +96,7 @@
   <string name="control_visibility_of_entries_nav_drawer">Controle a visibiidade das entradas no cadro de navegación</string>
   <string name="user">Usuaria</string>
   <string name="general">Xeral</string>
+  <string name="admin">Admin</string>
   <!-- Themes -->
   <string name="theme_and_colors">Decorado e cores</string>
   <string name="control_which_colors_are_used_in_app">Estableza qué cores se utilizan na aplicación</string>
@@ -114,6 +115,7 @@
   <!-- Font size -->
   <string name="control_textsize_of_webview">Estableza o tamaño do texto na Vista Web</string>
   <string name="font_size">Tamaño do texto</string>
+  <string name="normal">Normal</string>
   <string name="large">Grande</string>
   <string name="huge">Enorme</string>
   <!-- Load images -->
@@ -129,6 +131,7 @@
   <!-- Proxy -->
   <string name="load_tor_preset">Cargar perfil Tor</string>
   <string name="load_proxy_settins_for_tor">Cargar axustes proxy para Tor (Orbot) HTTP Proxy</string>
+  <string name="proxy">Proxy</string>
   <string name="enable_proxy">Habilitar Proxy</string>
   <string name="proxy_dandelion_traffic__appspecific">Proxy para o tráfico de dandelion* para saltar cortalumes.\nPodería precisar reinicio. Esto podería non funcionar en algúns móbiles.</string>
   <string name="host">Servidor</string>
