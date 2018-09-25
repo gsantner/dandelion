@@ -3,18 +3,25 @@
 <resources>
   <!-- Application -->
   <string name="open_navdrawer">Abrir menu de navegação</string>
+  <string name="close_navdrawer">Fechar menu de navegação</string>
   <!-- Common Words -->
+  <string name="settings">Definições</string>
+  <string name="changelog">Alterações</string>
   <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <!-- More from MainActivity -->
   <!-- Permissions -->
+  <string name="show_title">Mostrar título</string>
   <!-- Operability -->
   <!-- Category Titles -->
+  <string name="appearance">Aparência</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
   <!-- Themes -->
   <!-- Notifications dropdown -->
+  <string name="language_change_restart_description">Altera o idioma da aplicação. Tem que reiniciar a aplicação para aplicar as alterações.</string>
+  <string name="language">Idioma</string>
   <!-- Font size -->
   <!-- Load images -->
   <!-- Screen rotation -->
@@ -22,5 +29,8 @@
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
   <!-- More -->
+  <string name="miscellaneous">Diversos</string>
+  <string name="about">Acerca</string>
   <!-- License & help (large amount of text) -->
+  <string name="contributors">Colaboradores</string>
 </resources>
