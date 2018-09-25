@@ -138,7 +138,12 @@
   <string name="unfollow_already_followed_hashtags__appspecific">പിന്തുടർന്ന് വന്ന ഹാഷ്ടാഗുകൾ പിന്തുടരാതിരിക്കുക</string>
   <string name="change_account">അക്കൗണ്ട് മാറ്റുക</string>
   <string name="loug_warning_description__appspecific">പ്രാദേശികമായ സെഷൻ ഡാറ്റ മായ്ച്ച ശേഷം മറ്റൊരു ഡയസ്പോറ* പോഡ്/അക്കൗണ്ട് ലേക്ക് മാറുക</string>
+  <string name="logout_warning_description">ഇത് താങ്കളുടെ കുക്കികളും സെഷൻ ഡാറ്റയും തുടച്ചുനീക്കും. താങ്കൾക്ക് അക്കൗണ്ട് മാറ്റണമെന്ന് ഉറപ്പുണ്ടോ?</string>
+  <string name="clear_cache">കാഷ് തുടച്ചുനീക്കുക</string>
+  <string name="clear_webview_cache">വെബ്വ്യൂ കാഷ് തുടച്ചുനീക്കുക</string>
   <string name="intellihide_toolbars__appspecific">മുകളിലെയും ചുവട്ടിലെയും ടൂൾബാറുകൾ സ്ക്രോൾ ചെയ്യുമ്പോൾ താനേ അപ്രത്യക്ഷമാക്കുക</string>
+  <string name="intellihide_toolbars">ടൂൾബാറുകൾ ഇന്റലിഹൈഡ് ചെയ്യുക</string>
+  <string name="append_shared_by_notice">അറിയിപ്പാൽ പങ്കുവച്ചത് എന്ന് കൂട്ടിച്ചേർക്കുക</string>
   <!-- More -->
   <string name="enable_basic_adblocker_description">ലളിതമായ ആഡ്ബ്ലോക്കർ സജ്ജമാക്കുക. പരസ്യങ്ങൾ ചിലപ്പോൾ ഉൾപ്പെടാം. ഉദാ: എംബെഡ്ഡ് ചെയ്‌ത കാഴ്ചയിൽ</string>
   <string name="block_advertisments">പരസ്യങ്ങൾ തടയുക</string>
@@ -154,6 +159,7 @@
   <string name="android_version_witharg">ആൻഡ്രോയ്ഡ് വേർഷൻ: %1$s</string>
   <string name="device_name_witharg">ഉപകരണത്തിന്റെ പേര്:%1$s</string>
   <string name="code_name_witharg">കോഡ്നെയിം: %1$s</string>
+  <string name="pod_domain_witharg__appspecific">പോഡിന്റെ അഡ്രസ്:%1$s</string>
   <!-- License & help (large amount of text) -->
   <string name="the_following_libraries_are_used">താഴെ പറഞ്ഞിരിക്കുന്ന ലൈബ്രറികൾ ഉപയോഗിച്ചിരിക്കുന്നു:</string>
   <string name="inspiration_from_leafpic__appspecific">ഞങ്ങൾ ചില കോഡുകൾ കടമെടുത്തതും പ്രചോദനമായതും ലീഫ്പിക് ഇൽ നിന്നാണ്. ഒന്നു പരിശോധിക്കൂ.. അതും സ്വതന്ത്ര സോഫ്റ്റ്‌വേർ ആണ്!</string>
