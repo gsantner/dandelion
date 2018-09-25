@@ -121,8 +121,11 @@
   <!-- Proxy -->
   <string name="load_tor_preset">Tor profil betöltése</string>
   <string name="load_proxy_settins_for_tor">Proxybeállítások betöltése a Tor (Orbot) HTTP Proxynak</string>
+  <string name="proxy">Proxy</string>
   <string name="enable_proxy">Proxy engedélyezése</string>
   <string name="proxy_dandelion_traffic__appspecific">Proxy használata a dandelion* adatforgalmának a tűzfalak kikerüléséért.\nÚjraindítás szükséges lehet. Nem biztos, hogy minden telefonon működik.</string>
+  <string name="host">Host</string>
+  <string name="port">Port</string>
   <string name="app_needs_restart_to_disable_proxy_usage">Az alkalmazást újra kell indítani a proxyhasználat kikapcsolásához</string>
   <string name="orbot_proxy_preset_loaded">Orbot proxyprofil betöltve</string>
   <!-- Chrome custom tabs -->
