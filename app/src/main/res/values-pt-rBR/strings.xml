@@ -142,6 +142,8 @@
   <string name="clear_cache">Limpar cache</string>
   <string name="clear_webview_cache">Limpar o cache do WebView</string>
   <string name="intellihide_toolbars__appspecific">Ocultar as barras de ferramentas superior e inferior automaticamente durante a rolagem</string>
+  <string name="intellihide_toolbars">Barras de ferramentas auto ocultante</string>
+  <string name="append_shared_by_notice">Acrescentar compartilhado-por-aviso</string>
   <string name="append_shared_by_notice__appspecific">Acrescentar referência a este aplicativo aos textos compartilhados: [via #dandelion]</string>
   <!-- More -->
   <string name="miscellaneous">Diversos</string>
@@ -155,6 +157,7 @@
   <string name="debugging">Depurando</string>
   <string name="application">Aplicação</string>
   <string name="device">Dispositivo</string>
+  <string name="diaspora_pod__appspecific">diaspora* Pod</string>
   <string name="debug_log">Histórico de Depuração</string>
   <string name="debug_log_verbose">Histórico de depuração (detalhado)</string>
   <string name="app_version_with_arg">Versão do App: %1$s</string>
@@ -163,6 +166,8 @@
   <string name="code_name_witharg">Codinome: %1$s</string>
   <string name="pod_domain_witharg__appspecific">Domínio do Pod: %1$s</string>
   <!-- License & help (large amount of text) -->
+  <string name="maintainers">Mantenedores</string>
+  <string name="contributors">Colaboradores</string>
   <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;Obrigado!</string>
   <string name="gnu_gplv3_license">Licença GNU GPLv3+</string>
   <string name="show_third_party_licenses">Bibliotecas de Terceiros</string>
