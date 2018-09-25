@@ -78,6 +78,10 @@
   <string name="pod_address">Podadress</string>
   <string name="missing_value">Värde saknas</string>
   <string name="jump_to_last_visited_page_in_stream__appspecific">Vill du hoppa senast besökta sida i strömmen?</string>
+  <string name="hide_statusbar_in_mainview">Dölj statusfältet vid huvudvyn</string>
+  <string name="hide_statusbar">Göm statusfältet</string>
+  <string name="show_title_in_main_view">Göm titeln i huvudvyn</string>
+  <string name="show_title">Visa titel</string>
   <!-- Operability -->
   <string name="top_toolbar_loads_stream__appsp">Den övre verktygspanelen laddar stöm</string>
   <string name="click_empty_space_top_toolbar_load_stream__appspecific">Tryck på en tom yta i övre verktygsfältet för att öppna strömmen</string>
@@ -111,6 +115,7 @@
   <!-- Font size -->
   <string name="control_textsize_of_webview">Justera textstorleken för WebView</string>
   <string name="font_size">Teckenstorlek</string>
+  <string name="normal">Normal</string>
   <string name="large">Stor</string>
   <string name="huge">Enorm</string>
   <!-- Load images -->
@@ -126,9 +131,11 @@
   <!-- Proxy -->
   <string name="load_tor_preset">Ladda Tor-nställningar</string>
   <string name="load_proxy_settins_for_tor">Ladda proxyinställningar för Tor (Orbot) HTTP Proxy</string>
+  <string name="proxy">Proxy</string>
   <string name="enable_proxy">Aktivera proxy</string>
   <string name="proxy_dandelion_traffic__appspecific">Använd proxy med dandelion* för att kringgå brandväggar.\nKan kräva omstart. Detta fungerar inte på vissa telefoner.</string>
   <string name="host">Värd</string>
+  <string name="port">Port</string>
   <string name="app_needs_restart_to_disable_proxy_usage">Appen måste startas om för att inaktivera proxyanvändning</string>
   <string name="orbot_proxy_preset_loaded">Orbot-proxyinställningar laddade</string>
   <!-- Chrome custom tabs -->
