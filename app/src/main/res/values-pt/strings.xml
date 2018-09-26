@@ -4,12 +4,47 @@
   <!-- Application -->
   <string name="open_navdrawer">Abrir menu de navegação</string>
   <string name="close_navdrawer">Fechar menu de navegação</string>
+  <string name="reload">Recarregar</string>
   <!-- Common Words -->
   <string name="settings">Definições</string>
+  <string name="notifications">Notificações</string>
+  <string name="conversations">Conversas</string>
+  <string name="stream">Fluxo</string>
+  <string name="profile">Perfil</string>
+  <string name="aspects">Aspetos</string>
+  <string name="activities">Atividades</string>
+  <string name="liked">Gostei</string>
+  <string name="commented">Comentado</string>
+  <string name="mentions">Menções</string>
+  <string name="public_">Público</string>
+  <string name="search">Pesquisar</string>
+  <string name="contacts">Contactos</string>
   <string name="changelog">Alterações</string>
+  <string name="statistics">Estatísticas</string>
   <!-- Notifications dropdown menu -->
+  <string name="all_notifications">Todas as notificações</string>
+  <string name="also_commented">Também comentado</string>
+  <string name="comment_on_post">Comentar publicação</string>
+  <string name="deleteme_____1">Gostei</string>
+  <string name="mentioned">Mencionado</string>
+  <string name="reshared">Repartilhado</string>
+  <string name="started_sharing">Partilha iniciada</string>
   <!-- Pod Activity -->
+  <string name="confirmation">Confirmação</string>
+  <string name="do_you_want_to_exit">Deseja sair?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
+  <string name="more">Mais</string>
+  <string name="help_license">Acerca | Ajuda</string>
+  <string name="public_activities">Atividade pública</string>
+  <string name="reports">Relatórios</string>
+  <string name="share_link_as_text">Partilhar ligação como texto</string>
+  <string name="new_post">Nova publicação</string>
+  <string name="exit_app">Sair da aplicação</string>
+  <string name="share_dotdotdot">Partilhar…</string>
+  <string name="save_image">Guardar imagem</string>
+  <string name="share_image">Partilhar imagem</string>
+  <string name="open_in_external_browser">Abrir no navegador externo…</string>
+  <string name="copy_link_adress_to_clipboard">Copiar ligação para área de transferência</string>
   <!-- More from MainActivity -->
   <!-- Permissions -->
   <string name="show_title">Mostrar título</string>
@@ -18,19 +53,63 @@
   <string name="appearance">Aparência</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
+  <string name="user">Utilizador</string>
+  <string name="general">Geral</string>
+  <string name="admin">Administrador</string>
   <!-- Themes -->
+  <string name="theme_and_colors">Tema e cores</string>
+  <string name="control_which_colors_are_used_in_app">Controlar as cores utilizadas na aplicação</string>
+  <string name="primary_colors">Cor principal</string>
+  <string name="colors_of_toolbars">Cor das barras de ferramentas</string>
+  <string name="accent_color">Cor secundária</string>
+  <string name="color_of_progressbar">Cor da barra de progresso</string>
+  <string name="amoled_mode">Modo AMOLED</string>
   <!-- Notifications dropdown -->
+  <string name="extended_notifications">Notificações expandidas</string>
   <string name="language_change_restart_description">Altera o idioma da aplicação. Tem que reiniciar a aplicação para aplicar as alterações.</string>
   <string name="language">Idioma</string>
   <!-- Font size -->
+  <string name="font_size">Tamanho do tipo de letra</string>
+  <string name="normal">Normal</string>
+  <string name="large">Grande</string>
+  <string name="huge">Enorme</string>
   <!-- Load images -->
+  <string name="load_images">Carregar imagens</string>
   <!-- Screen rotation -->
   <!-- Proxy -->
+  <string name="proxy">Proxy</string>
+  <string name="enable_proxy">Ativar proxy</string>
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
+  <string name="personal_settings">Definições pessoais</string>
+  <string name="manage_your_contact_list">Gerir lista de contactos</string>
+  <string name="clear_cache">Limpar cache</string>
   <!-- More -->
   <string name="miscellaneous">Diversos</string>
+  <string name="block_advertisments">Bloquear anúncios</string>
   <string name="about">Acerca</string>
+  <string name="license">Licença</string>
+  <string name="debugging">Depuração</string>
+  <string name="application">Aplicação</string>
+  <string name="device">Dispositivo</string>
+  <string name="diaspora_pod__appspecific">diaspora* Pod</string>
+  <string name="debug_log">Registo de depuração</string>
+  <string name="debug_log_verbose">Registo de depuração (detalhado)</string>
+  <string name="app_version_with_arg">Versão: %1$s</string>
+  <string name="android_version_witharg">Versão Android: %1$s</string>
+  <string name="device_name_witharg">Nome do dispositivo: %1$s</string>
+  <string name="code_name_witharg">Nome de código: %1$s</string>
+  <string name="pod_profile_name_witharg__appspecific">Nome do perfil Pod: %1$s</string>
+  <string name="pod_domain_witharg__appspecific">Domínio Pod: %1$s</string>
+  <string name="debug_log_copied_to_clipboard">Dados copiados para a área de transferência</string>
+  <string name="get_the_source">Obter o código fonte</string>
+  <string name="translate_the_app">Traduzir a aplicação!</string>
+  <string name="report_bugs">Reportar erros</string>
+  <string name="share_the_app">Partilhar plicação</string>
   <!-- License & help (large amount of text) -->
+  <string name="maintainers">Desenvolvimento</string>
   <string name="contributors">Colaboradores</string>
+  <string name="gnu_gplv3_license">Licença GNU GPLv3+</string>
+  <string name="show_third_party_licenses">Bibliotecas de terceiros</string>
+  <string name="the_following_libraries_are_used">Utilizamos as seguintes bibliotecas:</string>
 </resources>
