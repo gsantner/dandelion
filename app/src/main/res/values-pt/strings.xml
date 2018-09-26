@@ -104,11 +104,13 @@
   <string name="debug_log_copied_to_clipboard">Dados copiados para a área de transferência</string>
   <string name="get_the_source">Obter o código fonte</string>
   <string name="translate_the_app">Traduzir a aplicação!</string>
+  <string name="let_me_translate">Quero participar</string>
   <string name="report_bugs">Reportar erros</string>
   <string name="share_the_app">Partilhar plicação</string>
   <!-- License & help (large amount of text) -->
   <string name="maintainers">Desenvolvimento</string>
   <string name="contributors">Colaboradores</string>
+  <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;Obrigado!</string>
   <string name="gnu_gplv3_license">Licença GNU GPLv3+</string>
   <string name="show_third_party_licenses">Bibliotecas de terceiros</string>
   <string name="the_following_libraries_are_used">Utilizamos as seguintes bibliotecas:</string>
