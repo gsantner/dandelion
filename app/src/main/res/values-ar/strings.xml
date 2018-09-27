@@ -3,13 +3,9 @@
 <resources>
   <!-- Application -->
   <!-- Common Words -->
-  <string name="settings">إعدادات</string>
-  <string name="changelog">سجل التغيير</string>
   <!-- Notifications dropdown menu -->
   <!-- Pod Activity -->
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
-  <string name="more">المزيد</string>
-  <string name="share_dotdotdot">مشاركة</string>
   <!-- More from MainActivity -->
   <!-- Permissions -->
   <!-- Operability -->
@@ -24,11 +20,6 @@
   <!-- Proxy -->
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
-  <string name="clear_cache">مسح ذاكرة التخزين المؤقت</string>
   <!-- More -->
-  <string name="miscellaneous">المتنوعة</string>
-  <string name="about">حول البرنامجgood app</string>
-  <string name="license">ترخيص</string>
   <!-- License & help (large amount of text) -->
-  <string name="contributors">المساهمون</string>
 </resources>
