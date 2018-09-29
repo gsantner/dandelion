@@ -13,8 +13,8 @@
   <string name="profile">Perfil</string>
   <string name="aspects">Aspetos</string>
   <string name="activities">Atividades</string>
-  <string name="liked">Gostei</string>
-  <string name="commented">Comentado</string>
+  <string name="liked">Gostou</string>
+  <string name="commented">Comentou</string>
   <string name="mentions">Menções</string>
   <string name="public_">Público</string>
   <string name="search">Pesquisar</string>
@@ -39,20 +39,31 @@
   <string name="reports">Relatórios</string>
   <string name="share_link_as_text">Partilhar ligação como texto</string>
   <string name="new_post">Nova publicação</string>
+  <string name="go_to_top">Ir para o topo</string>
   <string name="exit_app">Sair da aplicação</string>
   <string name="share_dotdotdot">Partilhar…</string>
+  <string name="please_add_a_name">Por favor adicione um nome</string>
+  <string name="share_link_address">Partilhar ligação</string>
   <string name="save_image">Guardar imagem</string>
   <string name="share_image">Partilhar imagem</string>
   <string name="open_in_external_browser">Abrir no navegador externo…</string>
   <string name="copy_link_adress_to_clipboard">Copiar ligação para área de transferência</string>
+  <string name="copy_image_address_to_clipboard">Copiar endereço da imagem para a área de transferência</string>
   <!-- More from MainActivity -->
+  <string name="unable_to_load_image">Não foi possível carregar a imagem</string>
   <!-- Permissions -->
+  <string name="protocol">Protocolo</string>
+  <string name="missing_value">Valor em falta</string>
+  <string name="hide_statusbar">Ocultar barra de estado</string>
+  <string name="show_title_in_main_view">Mostrar título na vista principal</string>
   <string name="show_title">Mostrar título</string>
   <!-- Operability -->
   <!-- Category Titles -->
   <string name="appearance">Aparência</string>
+  <string name="network">Rede</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
+  <string name="navigation_drawer">Controlo de navegação</string>
   <string name="user">Utilizador</string>
   <string name="general">Geral</string>
   <string name="admin">Administrador</string>
@@ -68,6 +79,7 @@
   <string name="extended_notifications">Notificações expandidas</string>
   <string name="language_change_restart_description">Altera o idioma da aplicação. Tem que reiniciar a aplicação para aplicar as alterações.</string>
   <string name="language">Idioma</string>
+  <string name="system_language">Idioma do sistema</string>
   <!-- Font size -->
   <string name="font_size">Tamanho do tipo de letra</string>
   <string name="normal">Normal</string>
@@ -76,6 +88,12 @@
   <!-- Load images -->
   <string name="load_images">Carregar imagens</string>
   <!-- Screen rotation -->
+  <string name="screen_rotation">Rotação do ecrã</string>
+  <string name="control_screen_rotation">Controlar automaticamente a rotação do ecrã</string>
+  <string name="default_">Padrão</string>
+  <string name="sensor_ignore_system_settings">Sensor\n(ignorar definições do sistema)</string>
+  <string name="portrait">Vertical</string>
+  <string name="landscape">Horizontal</string>
   <!-- Proxy -->
   <string name="proxy">Proxy</string>
   <string name="enable_proxy">Ativar proxy</string>
@@ -114,4 +132,5 @@
   <string name="gnu_gplv3_license">Licença GNU GPLv3+</string>
   <string name="show_third_party_licenses">Bibliotecas de terceiros</string>
   <string name="the_following_libraries_are_used">Utilizamos as seguintes bibliotecas:</string>
+  <string name="tell_me_more">Saber mais</string>
 </resources>
