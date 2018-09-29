@@ -23,25 +23,37 @@
   <string name="statistics">Estatísticas</string>
   <!-- Notifications dropdown menu -->
   <string name="all_notifications">Todas as notificações</string>
-  <string name="also_commented">Também comentado</string>
+  <string name="also_commented">Também comentou</string>
   <string name="comment_on_post">Comentar publicação</string>
-  <string name="deleteme_____1">Gostei</string>
-  <string name="mentioned">Mencionado</string>
-  <string name="reshared">Repartilhado</string>
+  <string name="deleteme_____1">Gostou</string>
+  <string name="mentioned">Mencionou</string>
+  <string name="reshared">Partilhou</string>
   <string name="started_sharing">Partilha iniciada</string>
   <!-- Pod Activity -->
+  <string name="could_not_retrieve_list_of_pods__appspecific">Erro: não foi possível obter a lista de pods!</string>
+  <string name="sorry_need_to_be_connected_to_internet">Tem que haver uma ligação à Internet para continuar</string>
   <string name="confirmation">Confirmação</string>
   <string name="do_you_want_to_exit">Deseja sair?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="more">Mais</string>
   <string name="help_license">Acerca | Ajuda</string>
+  <string name="followed_tags">Etiquetas seguidas</string>
   <string name="public_activities">Atividade pública</string>
   <string name="reports">Relatórios</string>
   <string name="share_link_as_text">Partilhar ligação como texto</string>
+  <string name="share_screenshot_of_webpage">Partilhar imagem da página web</string>
+  <string name="take_screenshot_of_webpage">Obter imagem da página web</string>
+  <string name="saving_image_to">Guardar imagem em</string>
+  <string name="saving_screenshot_as">Guardar imagem como:</string>
+  <string name="link_adress_copied">Ligação copiada…</string>
   <string name="new_post">Nova publicação</string>
   <string name="go_to_top">Ir para o topo</string>
-  <string name="exit_app">Sair da aplicação</string>
+  <string name="search_by_tags_or_persons__appspecific">Pesquisar por etiquetas ou por pessoas</string>
+  <string name="exit_app">Sair</string>
+  <string name="toggle_mobile_desktop_view">Alternar entre vista móvel/desktop</string>
   <string name="share_dotdotdot">Partilhar…</string>
+  <string name="by_tags">por etiquetas</string>
+  <string name="by_people">por pessoa</string>
   <string name="please_add_a_name">Por favor adicione um nome</string>
   <string name="share_link_address">Partilhar ligação</string>
   <string name="save_image">Guardar imagem</string>
