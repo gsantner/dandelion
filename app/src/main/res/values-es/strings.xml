@@ -78,6 +78,7 @@
   <string name="hide_statusbar">Ocultar barra de estado</string>
   <string name="show_title_in_main_view">Mostrar título en la vista princial</string>
   <string name="show_title">Mostrar título</string>
+  <string name="launcher_shortcut">Atajo de lanzador</string>
   <!-- Operability -->
   <string name="top_toolbar_loads_stream__appsp">Barra de herramientas superior carga la portada</string>
   <string name="click_empty_space_top_toolbar_load_stream__appspecific">Haga clic en un espacio vacío en la barra de herramientas superior para abrir portada</string>
