@@ -78,6 +78,7 @@
   <string name="hide_statusbar">Скрыть строку состояния</string>
   <string name="show_title_in_main_view">Показывать заголовок на главном экране</string>
   <string name="show_title">Показывать заголовок</string>
+  <string name="launcher_shortcut">Ярлык лаунчера</string>
   <!-- Operability -->
   <string name="top_toolbar_loads_stream__appsp">Верхняя панель инструментов загружает Поток</string>
   <string name="click_empty_space_top_toolbar_load_stream__appspecific">Нажмите на пустое пространство на верхней панели инструментов, чтобы открыть Поток</string>

@@ -13,8 +13,8 @@
   <string name="profile">Perfil</string>
   <string name="aspects">Aspetos</string>
   <string name="activities">Atividades</string>
-  <string name="liked">Gostei</string>
-  <string name="commented">Comentado</string>
+  <string name="liked">Gostou</string>
+  <string name="commented">Comentou</string>
   <string name="mentions">Menções</string>
   <string name="public_">Público</string>
   <string name="search">Pesquisar</string>
@@ -23,36 +23,59 @@
   <string name="statistics">Estatísticas</string>
   <!-- Notifications dropdown menu -->
   <string name="all_notifications">Todas as notificações</string>
-  <string name="also_commented">Também comentado</string>
+  <string name="also_commented">Também comentou</string>
   <string name="comment_on_post">Comentar publicação</string>
-  <string name="deleteme_____1">Gostei</string>
-  <string name="mentioned">Mencionado</string>
-  <string name="reshared">Repartilhado</string>
+  <string name="deleteme_____1">Gostou</string>
+  <string name="mentioned">Mencionou</string>
+  <string name="reshared">Partilhou</string>
   <string name="started_sharing">Partilha iniciada</string>
   <!-- Pod Activity -->
+  <string name="could_not_retrieve_list_of_pods__appspecific">Erro: não foi possível obter a lista de pods!</string>
+  <string name="sorry_need_to_be_connected_to_internet">Tem que haver uma ligação à Internet para continuar</string>
   <string name="confirmation">Confirmação</string>
   <string name="do_you_want_to_exit">Deseja sair?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <string name="more">Mais</string>
   <string name="help_license">Acerca | Ajuda</string>
+  <string name="followed_tags">Etiquetas seguidas</string>
   <string name="public_activities">Atividade pública</string>
   <string name="reports">Relatórios</string>
   <string name="share_link_as_text">Partilhar ligação como texto</string>
+  <string name="share_screenshot_of_webpage">Partilhar imagem da página web</string>
+  <string name="take_screenshot_of_webpage">Obter imagem da página web</string>
+  <string name="saving_image_to">Guardar imagem em</string>
+  <string name="saving_screenshot_as">Guardar imagem como:</string>
+  <string name="link_adress_copied">Ligação copiada…</string>
   <string name="new_post">Nova publicação</string>
-  <string name="exit_app">Sair da aplicação</string>
+  <string name="go_to_top">Ir para o topo</string>
+  <string name="search_by_tags_or_persons__appspecific">Pesquisar por etiquetas ou por pessoas</string>
+  <string name="exit_app">Sair</string>
+  <string name="toggle_mobile_desktop_view">Alternar entre vista móvel/desktop</string>
   <string name="share_dotdotdot">Partilhar…</string>
+  <string name="by_tags">por etiquetas</string>
+  <string name="by_people">por pessoa</string>
+  <string name="please_add_a_name">Por favor adicione um nome</string>
+  <string name="share_link_address">Partilhar ligação</string>
   <string name="save_image">Guardar imagem</string>
   <string name="share_image">Partilhar imagem</string>
   <string name="open_in_external_browser">Abrir no navegador externo…</string>
   <string name="copy_link_adress_to_clipboard">Copiar ligação para área de transferência</string>
+  <string name="copy_image_address_to_clipboard">Copiar endereço da imagem para a área de transferência</string>
   <!-- More from MainActivity -->
+  <string name="unable_to_load_image">Não foi possível carregar a imagem</string>
   <!-- Permissions -->
+  <string name="protocol">Protocolo</string>
+  <string name="missing_value">Valor em falta</string>
+  <string name="hide_statusbar">Ocultar barra de estado</string>
+  <string name="show_title_in_main_view">Mostrar título na vista principal</string>
   <string name="show_title">Mostrar título</string>
   <!-- Operability -->
   <!-- Category Titles -->
   <string name="appearance">Aparência</string>
+  <string name="network">Rede</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
+  <string name="navigation_drawer">Controlo de navegação</string>
   <string name="user">Utilizador</string>
   <string name="general">Geral</string>
   <string name="admin">Administrador</string>
@@ -68,6 +91,7 @@
   <string name="extended_notifications">Notificações expandidas</string>
   <string name="language_change_restart_description">Altera o idioma da aplicação. Tem que reiniciar a aplicação para aplicar as alterações.</string>
   <string name="language">Idioma</string>
+  <string name="system_language">Idioma do sistema</string>
   <!-- Font size -->
   <string name="font_size">Tamanho do tipo de letra</string>
   <string name="normal">Normal</string>
@@ -76,6 +100,12 @@
   <!-- Load images -->
   <string name="load_images">Carregar imagens</string>
   <!-- Screen rotation -->
+  <string name="screen_rotation">Rotação do ecrã</string>
+  <string name="control_screen_rotation">Controlar automaticamente a rotação do ecrã</string>
+  <string name="default_">Padrão</string>
+  <string name="sensor_ignore_system_settings">Sensor\n(ignorar definições do sistema)</string>
+  <string name="portrait">Vertical</string>
+  <string name="landscape">Horizontal</string>
   <!-- Proxy -->
   <string name="proxy">Proxy</string>
   <string name="enable_proxy">Ativar proxy</string>
@@ -114,4 +144,5 @@
   <string name="gnu_gplv3_license">Licença GNU GPLv3+</string>
   <string name="show_third_party_licenses">Bibliotecas de terceiros</string>
   <string name="the_following_libraries_are_used">Utilizamos as seguintes bibliotecas:</string>
+  <string name="tell_me_more">Saber mais</string>
 </resources>
