@@ -81,6 +81,7 @@
   <string name="hide_statusbar">Ffer afeggag n waddad</string>
   <string name="show_title_in_main_view">Sken azwel deg iẓri agejdan.</string>
   <string name="show_title">Sken azwel</string>
+  <string name="launcher_shortcut">Anegzum n wagdil n umager.</string>
   <!-- Operability -->
   <string name="top_toolbar_loads_stream__appsp">Afeggag n ufella yessalay-d asuddem</string>
   <string name="click_empty_space_top_toolbar_load_stream__appspecific">Sit ɣef tallunt tilemt n ufella akken ad d-ldiḍ asuddem</string>
