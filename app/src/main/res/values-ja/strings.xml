@@ -78,6 +78,7 @@
   <string name="hide_statusbar">ステータスバーを非表示</string>
   <string name="show_title_in_main_view">メインビューにタイトルを表示します</string>
   <string name="show_title">タイトルを表示</string>
+  <string name="launcher_shortcut">ランチャーのショートカット</string>
   <!-- Operability -->
   <string name="top_toolbar_loads_stream__appsp">上部ツールバーでストリームを読み込み</string>
   <string name="click_empty_space_top_toolbar_load_stream__appspecific">上部ツールバーの空白部分をクリックして、ストリームを開きます。</string>
