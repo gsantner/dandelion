@@ -151,14 +151,26 @@
   <string name="miscellaneous">Divers</string>
   <string name="full_reset">Reinici complet</string>
   <string name="wipe_settings_and_logout">Esborra localment totes les configuracions relacionades amb l\'aplicació i tanca les sessions de tots els comptes</string>
+  <string name="wipe_settings_warning__appspecific">Això restablirà tots els paràmetres modificats de l\'aplicació als valors per defecte i es desconnectarà de tots els pods. Les vostres imatges baixades romandran intactes. Esteu segur que voleu continuar?</string>
+  <string name="enable_basic_adblocker_description">Activa el bloqueig d\'anuncis bàsic. Anuncis que es poden incloure p. ex. en vistes integrades</string>
+  <string name="block_advertisments">Bloqueja anuncis</string>
   <string name="about">Quant a</string>
   <string name="license">Llicècia</string>
   <string name="debugging">Depuració</string>
   <string name="application">Aplicació</string>
   <string name="device">Dispositiu</string>
+  <string name="diaspora_pod__appspecific">Pod de diaspora*</string>
+  <string name="debug_log">Registre de depuració</string>
+  <string name="debug_log_verbose">Registre de depuració (detallat)</string>
   <string name="app_version_with_arg">Versió de l\'aplicació: %1$s</string>
   <string name="android_version_witharg">Versió d\'Android: %1$s</string>
   <string name="device_name_witharg">Nom del dispositiu: %1$s</string>
+  <string name="code_name_witharg">Nom en clau: %1$s</string>
+  <string name="pod_profile_name_witharg__appspecific">Nom de perfil del pod: %1$s</string>
+  <string name="pod_domain_witharg__appspecific">Domini del pod: %1$s</string>
+  <string name="debug_log_copied_to_clipboard">S\'ha copiat el registre de depuració al porta-retalls</string>
+  <string name="dandelion_is_your_companion__appspecific">dandelion* és el seu complement per a navegar per la xarxa social diapora*. Afegeix característiques com útils barres d\'eines i suport per a servidors intermediaris com la xarxa Tor a la seva experiència social.</string>
+  <string name="contribute_code">Contribuïu amb codi!</string>
   <!-- License & help (large amount of text) -->
   <string name="contributors">Col·laboradors</string>
 </resources>
