@@ -28,9 +28,41 @@
   <string name="deleteme_____1">M\'ha agradat</string>
   <string name="mentioned">Mencionat</string>
   <string name="reshared">Recompartit</string>
+  <string name="started_sharing">S\'ha iniciat la compartició</string>
   <!-- Pod Activity -->
+  <string name="could_not_retrieve_list_of_pods__appspecific">Error: No s\'ha pogut recuperar la llista de pods!</string>
+  <string name="sorry_need_to_be_connected_to_internet">Cal que us connecteu a Internet per continuar</string>
+  <string name="confirmation">Confirmació</string>
+  <string name="do_you_want_to_exit">Voleu sortir?</string>
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
+  <string name="more">Més</string>
+  <string name="help_license">Quant a | Ajuda</string>
+  <string name="followed_tags">Etiquetes seguides</string>
+  <string name="public_activities">Activitats públiques</string>
+  <string name="reports">Informes</string>
+  <string name="share_link_as_text">Comparteix l\'enllaç com a text</string>
+  <string name="share_screenshot_of_webpage">Comparteix la captura de pantalla de la pàgina web</string>
+  <string name="take_screenshot_of_webpage">Feu una captura de pantalla de la pàgina web</string>
+  <string name="saving_image_to">S\'està desant la imatge per a</string>
+  <string name="saving_screenshot_as">S\'està desant la captura de pantalla com:</string>
+  <string name="link_adress_copied">S\'ha copiat l\'adreça de l\'enllaç…</string>
+  <string name="new_post">Nova publicació</string>
+  <string name="go_to_top">Vés a l\'inici</string>
+  <string name="search_by_tags_or_persons__appspecific">Cerca per etiquetes o persones</string>
+  <string name="exit_app">Surt de l\'aplicació</string>
+  <string name="toggle_mobile_desktop_view">Commuta la vista de mòbils/escriptori</string>
+  <string name="share_dotdotdot">Comparteix…</string>
+  <string name="by_tags">per etiquetes</string>
+  <string name="by_people">per persones</string>
+  <string name="please_add_a_name">Afegiu un nom</string>
+  <string name="share_link_address">Comparteix l\'adreça de l\'enllaç</string>
+  <string name="save_image">Desa la imatge</string>
+  <string name="share_image">Comparteix la imatge</string>
+  <string name="open_in_external_browser">Obre en un navegador extern…</string>
+  <string name="copy_link_adress_to_clipboard">Copia l\'adreça de l\'enllaç al porta-retalls</string>
+  <string name="copy_image_address_to_clipboard">Copia l\'adreça de la imatge al porta-retalls</string>
   <!-- More from MainActivity -->
+  <string name="unable_to_load_image">No s\'ha pogut carregar la imatge</string>
   <!-- Permissions -->
   <string name="hide_statusbar">Amaga la barra d\'estat</string>
   <string name="show_title">Mostra el títol</string>
