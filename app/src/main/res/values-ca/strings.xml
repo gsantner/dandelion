@@ -13,7 +13,7 @@
   <string name="profile">Perfil</string>
   <string name="aspects">Aspectes</string>
   <string name="activities">Activitats</string>
-  <string name="liked">M\'agrada</string>
+  <string name="liked">M\'ha agradat</string>
   <string name="commented">Comentat</string>
   <string name="mentions">Mencions</string>
   <string name="public_">Públic</string>
@@ -131,11 +131,13 @@ Aneu a: Configuració del sistema - Aplicacions - dandelion*. A la secció de pe
   <string name="load_proxy_settins_for_tor">Carrega la configuració del servidor intermediari per a Proxy HTTP (Orbot)</string>
   <string name="proxy">Servidor intermediari</string>
   <string name="enable_proxy">Activa el servidor intermediari</string>
+  <string name="proxy_dandelion_traffic__appspecific">Trànsit del servidor intermediari de dandelion* evadint el tallafocs.\nPot requerir reinici. Això podria no funcionar en alguns telèfons.</string>
   <string name="host">Amfitrió</string>
   <string name="port">Port</string>
   <string name="app_needs_restart_to_disable_proxy_usage">L\'aplicació necessita reiniciar-se per desactivar l\'ús del servidor intermediari</string>
   <string name="orbot_proxy_preset_loaded">S\'ha carregat la configuració per defecte de l\'Orbot</string>
   <!-- Chrome custom tabs -->
+  <string name="open_external_links_with_chrome_custom_tabs_description">Obre els enllaços externs amb les pestanyes personalitzades de Chrome. S\'ha d\'instal·lar Chromium, Firefox o Google Chrome per poder utilitzar aquesta funció. \nNOTA IMPORTANT: Les pestanyes personalitzades de Chrome no utilitzen servidors intermediaris configurats!</string>
   <!-- Diaspora Settings -->
   <string name="personal_settings">Configuració personal</string>
   <string name="open_diaspora_account_settings__appspecific">Obre la configuració del compte diaspora*</string>
