@@ -171,6 +171,18 @@
   <string name="debug_log_copied_to_clipboard">S\'ha copiat el registre de depuració al porta-retalls</string>
   <string name="dandelion_is_your_companion__appspecific">dandelion* és el seu complement per a navegar per la xarxa social diapora*. Afegeix característiques com útils barres d\'eines i suport per a servidors intermediaris com la xarxa Tor a la seva experiència social.</string>
   <string name="contribute_code">Contribuïu amb codi!</string>
+  <string name="dandelion_is_developed_as_foss__appspecific">dandelion* es desenvolupa lliurement, en el sentit de llibertat, i segueix les idees del projecte
+diaspora*. Si voleu contribuir, endavant! Actualment som un equip molt petit, de manera que us agrairíem molt qualsevol tipus d\'ajuda!</string>
+  <string name="get_the_source">Obtén el codi font</string>
+  <string name="translate_the_app">Traduïu l\'aplicació!</string>
+  <string name="app_not_available_in_your_lang_translate_with_stringlate">L\'aplicació no està disponible en el vostre idioma? Podeu canviar això! Per què no ens ajudeu a traduir-la? Utilitzem Stringlate perquè qualsevol persona pugui traduir l\'aplicació.</string>
+  <string name="let_me_translate">Permeteu-me traduir</string>
+  <string name="give_feedback">Valoreu-nos!</string>
+  <string name="dandelion_still_in_development__appspecific">dandelion* encara està en desenvolupament, així que si teniu suggeriments o qualsevol tipus de comentari, feu servir el nostre gestor d\'errors per informar-nos-en!</string>
+  <string name="report_bugs">Informe d\'errors</string>
+  <string name="spread_the_word">Difoneu aquest projecte</string>
+  <string name="tell_your_friends_about_diaspora__appspecific">Parleu als vostres amics i familiars sobre diaspora* i #dandelion! Per què no difoneu les vostres experiències? Ens encantaria escoltar-les!</string>
+  <string name="share_the_app">Comparteix l\'aplicació</string>
   <!-- License & help (large amount of text) -->
   <string name="contributors">Col·laboradors</string>
 </resources>
