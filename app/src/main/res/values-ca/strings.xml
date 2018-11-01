@@ -137,9 +137,28 @@
   <string name="open_diaspora_account_settings__appspecific">Obre la configuració del compte diaspora*</string>
   <string name="manage_your_contact_list">Gestioneu la vostra llista de contactes</string>
   <string name="manage_hashtags">Gestioneu les etiquetes</string>
+  <string name="unfollow_already_followed_hashtags__appspecific">Deixa de seguir les etiquetes seguides</string>
+  <string name="change_account">Canvia de compte</string>
+  <string name="loug_warning_description__appspecific">Esborra les dades locals de la sessió i canvia a un altre pod /compte diaspora*</string>
+  <string name="logout_warning_description">Això esborrarà totes les galetes i les dades de sessió. Esteu segur que voleu canviar el vostre compte?</string>
+  <string name="clear_cache">Esborra la memòria cau</string>
+  <string name="clear_webview_cache">Esborra la memòria cau de WebView</string>
+  <string name="intellihide_toolbars__appspecific">Amaga automàticament les barres d\'eines superior i inferior mentre es desplaça</string>
+  <string name="intellihide_toolbars">Barra d\'eines «Intellihide»</string>
+  <string name="append_shared_by_notice">Afegeix compartit per avís</string>
+  <string name="append_shared_by_notice__appspecific">Afegiu una referència a aquesta aplicació als textos compartits: [via #dandelion]</string>
   <!-- More -->
   <string name="miscellaneous">Divers</string>
+  <string name="full_reset">Reinici complet</string>
+  <string name="wipe_settings_and_logout">Esborra localment totes les configuracions relacionades amb l\'aplicació i tanca les sessions de tots els comptes</string>
   <string name="about">Quant a</string>
+  <string name="license">Llicècia</string>
+  <string name="debugging">Depuració</string>
+  <string name="application">Aplicació</string>
+  <string name="device">Dispositiu</string>
+  <string name="app_version_with_arg">Versió de l\'aplicació: %1$s</string>
+  <string name="android_version_witharg">Versió d\'Android: %1$s</string>
+  <string name="device_name_witharg">Nom del dispositiu: %1$s</string>
   <!-- License & help (large amount of text) -->
   <string name="contributors">Col·laboradors</string>
 </resources>
