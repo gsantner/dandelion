@@ -98,15 +98,45 @@
   <string name="primary_colors">Color primari</string>
   <string name="colors_of_toolbars">Color de les barres d\'eines</string>
   <string name="accent_color">Color d\'èmfasi</string>
+  <string name="color_of_progressbar">Color de la barra de progrés</string>
+  <string name="amoled_mode">Mode AMOLED</string>
   <!-- Notifications dropdown -->
+  <string name="extended_notifications">Notificacions ampliades</string>
+  <string name="extendend_notifications_bell_description__appspecific">Amplieu la campana de notificacions amb un menú desplegable que mostra les categories de notificacions</string>
   <string name="language_change_restart_description">Canvieu l\'idioma d\'aquesta aplicació. Reinicieu l\'aplicació perquè els canvis tinguin efecte</string>
   <string name="language">Idioma</string>
+  <string name="system_language">Idioma del sistema</string>
   <!-- Font size -->
+  <string name="control_textsize_of_webview">Controla la mida del text de WebView</string>
+  <string name="font_size">Mida de la lletra</string>
+  <string name="normal">Normal</string>
+  <string name="large">Gran</string>
+  <string name="huge">Enorme</string>
   <!-- Load images -->
+  <string name="load_images">Carrega imatges</string>
+  <string name="toggle_image_loading_to_save_mobile_data">Commuta la càrrega d\'imatges a p. ex. estalvia dades mòbils</string>
   <!-- Screen rotation -->
+  <string name="screen_rotation">Rotació de la pantalla</string>
+  <string name="control_screen_rotation">Control automàtic de la rotació de la pantalla</string>
+  <string name="default_">Per defecte</string>
+  <string name="sensor_ignore_system_settings">Sensor\n(ignora la configuració del sistema)</string>
+  <string name="portrait">Vertical</string>
+  <string name="landscape">Horitzontal</string>
   <!-- Proxy -->
+  <string name="load_tor_preset">Carrega Tor per defecte</string>
+  <string name="load_proxy_settins_for_tor">Carrega la configuració del servidor intermediari per a Proxy HTTP (Orbot)</string>
+  <string name="proxy">Servidor intermediari</string>
+  <string name="enable_proxy">Activa el servidor intermediari</string>
+  <string name="host">Amfitrió</string>
+  <string name="port">Port</string>
+  <string name="app_needs_restart_to_disable_proxy_usage">L\'aplicació necessita reiniciar-se per desactivar l\'ús del servidor intermediari</string>
+  <string name="orbot_proxy_preset_loaded">S\'ha carregat la configuració per defecte de l\'Orbot</string>
   <!-- Chrome custom tabs -->
   <!-- Diaspora Settings -->
+  <string name="personal_settings">Configuració personal</string>
+  <string name="open_diaspora_account_settings__appspecific">Obre la configuració del compte diaspora*</string>
+  <string name="manage_your_contact_list">Gestioneu la vostra llista de contactes</string>
+  <string name="manage_hashtags">Gestioneu les etiquetes</string>
   <!-- More -->
   <string name="miscellaneous">Divers</string>
   <string name="about">Quant a</string>
