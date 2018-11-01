@@ -4,10 +4,30 @@
   <!-- Application -->
   <string name="open_navdrawer">Obre el calaix de navegació</string>
   <string name="close_navdrawer">Tanca el calaix de navegació</string>
+  <string name="reload">Recarrega</string>
   <!-- Common Words -->
   <string name="settings">Configuració</string>
+  <string name="notifications">Notificacions</string>
+  <string name="conversations">Conversacions</string>
+  <string name="stream">Transmissió</string>
+  <string name="profile">Perfil</string>
+  <string name="aspects">Aspectes</string>
+  <string name="activities">Activitats</string>
+  <string name="liked">M\'agrada</string>
+  <string name="commented">Comentat</string>
+  <string name="mentions">Mencions</string>
+  <string name="public_">Públic</string>
+  <string name="search">Cerca</string>
+  <string name="contacts">Contactes</string>
   <string name="changelog">Novetats</string>
+  <string name="statistics">Estadí­stiques</string>
   <!-- Notifications dropdown menu -->
+  <string name="all_notifications">Totes les notificacions</string>
+  <string name="also_commented">També s\'ha comentat</string>
+  <string name="comment_on_post">Comenta sobre la publicació</string>
+  <string name="deleteme_____1">M\'ha agradat</string>
+  <string name="mentioned">Mencionat</string>
+  <string name="reshared">Recompartit</string>
   <!-- Pod Activity -->
   <!-- Drawer, Menu, Toolbar, ContextMenu -->
   <!-- More from MainActivity -->
@@ -21,7 +41,7 @@
   <!-- Navigiation Slider -->
   <!-- Themes -->
   <!-- Notifications dropdown -->
-  <string name="language_change_restart_description">Canvia l\'idioma d\'aquesta aplicació. Reinicia l\'aplicació perquè els canvis tinguin efecte</string>
+  <string name="language_change_restart_description">Canvieu l\'idioma d\'aquesta aplicació. Reinicieu l\'aplicació perquè els canvis tinguin efecte</string>
   <string name="language">Idioma</string>
   <!-- Font size -->
   <!-- Load images -->
