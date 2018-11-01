@@ -64,6 +64,9 @@
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">No s\'ha pogut carregar la imatge</string>
   <!-- Permissions -->
+  <string name="screenshot_permission__appspecific">Cal que concediu «Accés al permís d\'emmagatzematge» per desar captures de pantalla. Després, hauríeu de tancar l\'aplicació completament o reiniciar el dispositiu. Si no concediu l\'accés a l\'emmagatzematge, però voleu utilitzar la funció de captura de pantalla més endavant, podeu concedir el permís més endavant.
+Aneu a: Configuració del sistema - Aplicacions - dandelion*. A la secció de permisos podeu concedir el «permís d\'emmagatzematge d\'escriptura».</string>
+  <string name="image_permission_description__appspecific">Cal que concediu «Accés al permís d\'emmagatzematge» per desar/penjar imatges. Després, hauríeu de tancar l\'aplicació completament o reiniciar el dispositiu. Si no concediu l\'accés a l\'emmagatzematge, però voleu desar imatges més endavant, podeu concedir el permís més endavant. Aneu a: Configuració del sistema - Aplicacions - dandelion*. A la secció de permisos podeu concedir el «permís d\'emmagatzematge d\'escriptura».</string>
   <string name="permission_denied">Permís denegat.</string>
   <string name="permission_granted_try_again">Permís concedit. Torneu-ho a provar.</string>
   <string name="custom_pod">Pod personalitzat</string>
@@ -100,6 +103,7 @@
   <string name="accent_color">Color d\'èmfasi</string>
   <string name="color_of_progressbar">Color de la barra de progrés</string>
   <string name="amoled_mode">Mode AMOLED</string>
+  <string name="amoled_mode_description__app_specific">Substitueix el color amb la pantalla AMOLED compatible amb el negre en moltes parts de l\'aplicació. Cal reiniciar per canviar aquesta configuració. Per explorar diaspora* en la foscor, també heu d\'activar el tema fosc, que es pot trobar en la configuració del compte personal de diaspora*.</string>
   <!-- Notifications dropdown -->
   <string name="extended_notifications">Notificacions ampliades</string>
   <string name="extendend_notifications_bell_description__appspecific">Amplieu la campana de notificacions amb un menú desplegable que mostra les categories de notificacions</string>
