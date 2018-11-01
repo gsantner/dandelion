@@ -64,14 +64,40 @@
   <!-- More from MainActivity -->
   <string name="unable_to_load_image">No s\'ha pogut carregar la imatge</string>
   <!-- Permissions -->
+  <string name="permission_denied">Permís denegat.</string>
+  <string name="permission_granted_try_again">Permís concedit. Torneu-ho a provar.</string>
+  <string name="custom_pod">Pod personalitzat</string>
+  <string name="pod_name">Nom del pod</string>
+  <string name="protocol">Protocol</string>
+  <string name="pod_address">Adreça del pod</string>
+  <string name="missing_value">Falta el valor</string>
+  <string name="jump_to_last_visited_page_in_stream__appspecific">Voleu saltar a la última pàgina visitada?</string>
+  <string name="hide_statusbar_in_mainview">Amaga la barra d\'estat a la vista principal</string>
   <string name="hide_statusbar">Amaga la barra d\'estat</string>
+  <string name="show_title_in_main_view">Mostra el títol a la vista principal</string>
   <string name="show_title">Mostra el títol</string>
+  <string name="launcher_shortcut">Drecera del llançador</string>
   <!-- Operability -->
+  <string name="top_toolbar_loads_stream__appsp">La barra d\'eines superior carrega la transmissió</string>
+  <string name="click_empty_space_top_toolbar_load_stream__appspecific">Feu clic a un espai buit a la barra d\'eines superior per obrir la transmissió</string>
   <!-- Category Titles -->
   <string name="appearance">Aparença</string>
+  <string name="network">Xarxa</string>
+  <string name="pod_settings__appspecfic">Configuració del pod</string>
+  <string name="operability">Operabilitat</string>
   <!-- Visuals -->
   <!-- Navigiation Slider -->
+  <string name="navigation_drawer">Control lliscant de navegació</string>
+  <string name="control_visibility_of_entries_nav_drawer">Controleu la visibilitat de les entrades al calaix de navegació</string>
+  <string name="user">Usuari</string>
+  <string name="general">General</string>
+  <string name="admin">Administrador/a</string>
   <!-- Themes -->
+  <string name="theme_and_colors">Tema i colors</string>
+  <string name="control_which_colors_are_used_in_app">Controleu quins colors s\'utilitzen a tota l\'aplicació</string>
+  <string name="primary_colors">Color primari</string>
+  <string name="colors_of_toolbars">Color de les barres d\'eines</string>
+  <string name="accent_color">Color d\'èmfasi</string>
   <!-- Notifications dropdown -->
   <string name="language_change_restart_description">Canvieu l\'idioma d\'aquesta aplicació. Reinicieu l\'aplicació perquè els canvis tinguin efecte</string>
   <string name="language">Idioma</string>
