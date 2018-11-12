@@ -1,3 +1,7 @@
+### v1.2.3
+**Improved:**  
+- More supported languages, more complete translations!  
+
 ### v1.2.1
 **App release: dandelior**
 - Added an (rebranded) flavor of dandelion: dandelior
