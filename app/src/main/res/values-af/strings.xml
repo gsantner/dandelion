@@ -25,8 +25,33 @@
     <string name="also_commented">Ook Opgemerk</string>
     <string name="comment_on_post">Lewer kommentaar op hierdie plasing</string>
     <string name="mentioned">Aantal keer genoem</string>
+    <string name="reshared">Herdeel</string>
+    <string name="started_sharing">Begin deel</string>
     <!-- Pod Activity -->
+    <string name="confirmation">Bevestiging</string>
+    <string name="do_you_want_to_exit">Wil jy uitgaan?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Meer</string>
+    <string name="help_license">Omtrent | Hulp</string>
+    <string name="followed_tags">Gevolgde merkers</string>
+    <string name="public_activities">Publieke aktiwiteite</string>
+    <string name="reports">Verslae</string>
+    <string name="share_link_as_text">Deel skakel as teks</string>
+    <string name="share_screenshot_of_webpage">Deel vriesbeeld van webbladsy</string>
+    <string name="take_screenshot_of_webpage">Neem vriesbeeld van webbladsy</string>
+    <string name="saving_image_to">Stoor beeld na</string>
+    <string name="saving_screenshot_as">Stoor vriesbeeld as:</string>
+    <string name="link_adress_copied">Skakel adres gekopieer…</string>
+    <string name="new_post">Nuwe Plasing</string>
+    <string name="go_to_top">Gaan tot bo</string>
+    <string name="search_by_tags_or_persons__appspecific">Soek met merkers of persone</string>
+    <string name="exit_app">Verlaat toep</string>
+    <string name="toggle_mobile_desktop_view">Wissel Mobiele/Monitor oogpunt</string>
+    <string name="share_dotdotdot">Deel…</string>
+    <string name="by_tags">met merkers</string>
+    <string name="by_people">met mense</string>
+    <string name="please_add_a_name">Voer asseblief \'n naam in</string>
+    <string name="share_link_address">Deel skakel adres</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <!-- Operability -->
@@ -36,11 +61,24 @@
     <!-- Themes -->
     <!-- Notifications dropdown -->
     <!-- Font size -->
+    <string name="font_size">Fontgrootte</string>
+    <string name="normal">Normaal</string>
+    <string name="large">Groot</string>
+    <string name="huge">Masief</string>
     <!-- Load images -->
+    <string name="load_images">Laai beelde</string>
     <!-- Screen rotation -->
+    <string name="portrait">Portret</string>
+    <string name="landscape">Landskap</string>
     <!-- Proxy -->
+    <string name="load_tor_preset">Laai Tor voorkeure</string>
+    <string name="host">Gasheer</string>
+    <string name="port">Poort</string>
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="about">Omtrent</string>
+    <string name="license">Lisensie</string>
+    <string name="debugging">Ontfouting</string>
     <!-- License & help (large amount of text) -->
 </resources>
