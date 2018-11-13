@@ -68,17 +68,29 @@
     <!-- Load images -->
     <string name="load_images">Laai beelde</string>
     <!-- Screen rotation -->
+    <string name="screen_rotation">Skerm Rotasie</string>
+    <string name="control_screen_rotation">Beheer outomatiese skermrotasie</string>
+    <string name="default_">Verstek</string>
     <string name="portrait">Portret</string>
     <string name="landscape">Landskap</string>
     <!-- Proxy -->
     <string name="load_tor_preset">Laai Tor voorkeure</string>
     <string name="host">Gasheer</string>
     <string name="port">Poort</string>
+    <string name="app_needs_restart_to_disable_proxy_usage">Toep moet herlaai om volmag te deaktiveer</string>
+    <string name="orbot_proxy_preset_loaded">Orbot volmag voorkeure gelaai</string>
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
+    <string name="personal_settings">Persoonlike instellings</string>
     <!-- More -->
+    <string name="miscellaneous">Diverse</string>
+    <string name="full_reset">Volle herstel</string>
+    <string name="block_advertisments">Blok advertensies</string>
     <string name="about">Omtrent</string>
     <string name="license">Lisensie</string>
     <string name="debugging">Ontfouting</string>
+    <string name="application">Toepassing</string>
+    <string name="device">Toestel</string>
+    <string name="diaspora_pod__appspecific">diaspora * Pod</string>
     <!-- License & help (large amount of text) -->
 </resources>
