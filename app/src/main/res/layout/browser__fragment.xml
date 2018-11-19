@@ -5,11 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.github.dfa.diaspora_android.activity.MainActivity">
 
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <com.github.dfa.diaspora_android.web.ContextMenuWebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
+    </android.support.v4.widget.SwipeRefreshLayout>
+    
     <ProgressBar
         android:id="@+id/progressBar"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"

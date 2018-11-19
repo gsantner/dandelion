@@ -33,6 +33,7 @@ import com.github.dfa.diaspora_android.ui.theme.ThemeHelper;
 import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
 import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.AppSettings;
+import android.support.v4.widget.SwipeRefreshLayout;//pull to refresh
 
 /**
  * Fragment with a webView and a ProgressBar.
@@ -50,6 +51,7 @@ public class BrowserFragment extends ThemedFragment {
     protected WebSettings webSettings;
 
     protected String pendingUrl;
+    protected SwipeRefreshLayout swipe;//pull to refresh
 
     @Override
     protected int getLayoutResId() {
@@ -90,6 +92,11 @@ public class BrowserFragment extends ThemedFragment {
         webView.setParentActivity(getActivity());
 
         this.setRetainInstance(true);
+
+        //pull to refresh
+  swipe = view.findViewById(R.id.swipe);
+  swipe.setOnRefreshListener(() -> reloadUrl());
+  swipe.setDistanceToTriggerSync(20000);
     }
 
     @Override
@@ -192,6 +199,7 @@ public class BrowserFragment extends ThemedFragment {
                 @Override
                 public void run() {
                     getWebView().reload();
+                    swipe.setRefreshing(false);//pull to refresh
                 }
             });
 
