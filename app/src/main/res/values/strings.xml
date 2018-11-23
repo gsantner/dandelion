@@ -253,5 +253,7 @@
     <string name="the_following_libraries_are_used">The following libraries are used:</string>
     <string name="inspiration_from_leafpic__appspecific">We took some inspiration and code from LeafPic. Go check it out, it\'s free software as well!</string>
     <string name="tell_me_more">Tell me more</string>
+    <string name="open_youtube_external_tabs_description">Enable to open Youtube links on external app</string>
+    <string name="pref_title__open_youtube_external">Youtube links</string>
 
 </resources>

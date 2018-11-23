@@ -40,10 +40,7 @@ public class CustomWebViewClient extends WebViewClient {
     private final App app;
     private String lastLoadUrl = "";
     private boolean isAdBlockEnabled = false;
-    protected Context _context;
-
-    String newpipe = "org.schabi.newpipe";//for checking if app is installed
-    String youtube = "com.google.android.youtube";//for checking if app is installed
+    AppSettings appSettings = AppSettings.get();
 
     public CustomWebViewClient(App app, WebView webView) {
         this.app = app;
@@ -63,13 +60,10 @@ public class CustomWebViewClient extends WebViewClient {
                 || url.startsWith("http://" + host)))) {
             return false;
         }//make youtube links open external-->never customtab
-        else if (url.startsWith("https://youtube.com/") || url.startsWith("https://www.youtube.com/") || url.startsWith("https://m.youtube.com/") || url.startsWith("https://youtu.be/")){// && checkNewpipie != null || checkYoutube != null) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-            //Intent checkNewpipie = new Intent(_context.getPackageManager().getLaunchIntentForPackage(newpipe));
-            //Intent checkYoutube = new Intent(_context.getPackageManager().getLaunchIntentForPackage(youtube));
-            //if (checkNewpipie!=null || checkYoutube != null){view.getContext().startActivity(intent);}
-                    view.getContext().startActivity(intent);
-                    return true;
+        else if (appSettings.isOpenYoutubeExternalEnabled()&&(url.startsWith("https://youtube.com/") || url.startsWith("https://www.youtube.com/") || url.startsWith("https://m.youtube.com/") || url.startsWith("https://youtu.be/"))){
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            view.getContext().startActivity(intent);
+            return true;
         } else {
             Intent i = new Intent(MainActivity.ACTION_OPEN_EXTERNAL_URL);
             i.putExtra(MainActivity.EXTRA_URL, url);
