@@ -1,3 +1,7 @@
+### v1.2.4
+**New features:**  
+- Pull down to refresh in stream view
+
 ### v1.2.3
 **Improved:**  
 - More supported languages, more complete translations!  
