@@ -120,7 +120,7 @@ Aneu a: Configuració del sistema - Aplicacions - dandelion*. A la secció de pe
     <string name="load_images">Carrega imatges</string>
     <string name="toggle_image_loading_to_save_mobile_data">Commuta la càrrega d\'imatges a p. ex. estalvia dades mòbils</string>
     <!-- Screen rotation -->
-    <string name="screen_rotation">Rotació de la pantalla</string>
+    <string name="screen_rotation">Rotació de pantalla</string>
     <string name="control_screen_rotation">Control automàtic de la rotació de la pantalla</string>
     <string name="default_">Per defecte</string>
     <string name="sensor_ignore_system_settings">Sensor\n(ignora la configuració del sistema)</string>
