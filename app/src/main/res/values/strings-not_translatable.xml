@@ -148,5 +148,5 @@
     <string name="pref_key__show_title" translatable="false">pref_key__show_title</string>
     <string name="pdf" translatable="false">PDF</string>
     <string name="gsantner" translatable="false">gsantner</string>
-    <string name="pref_key__open_youtube_external_enabled" translatable="false">pref_key__open_youtube_external_enabled</string>//make youtube open external
-</resources>
+    <string name="pref_key__open_youtube_external_enabled" translatable="false">pref_key__open_youtube_external_enabled</string>
+  </resources>
