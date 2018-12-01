@@ -13,8 +13,10 @@
     <string name="share_dotdotdot">Подели…</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="hide_statusbar">Sakrij status</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Izgled</string>
     <string name="network">Мрежа</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
