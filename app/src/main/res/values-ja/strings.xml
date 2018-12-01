@@ -106,7 +106,7 @@
     <!-- Notifications dropdown -->
     <string name="extended_notifications">拡張通知</string>
     <string name="extendend_notifications_bell_description__appspecific">通知のカテゴリーを示すドロップダウン・メニューで通知ベルを拡張します</string>
-    <string name="language_change_restart_description">このアプリの言語を変更します。アプリを再起動すると変更を反映します</string>
+    <string name="language_change_restart_description">このアプリの言語を変更します。 変更を反映するにはアプリを再起動します</string>
     <string name="language">言語</string>
     <string name="system_language">システム言語</string>
     <!-- Font size -->
@@ -159,7 +159,7 @@
     <string name="wipe_settings_warning__appspecific">これはアプリの変更された設定をすべてデフォルトにリセットして、すべてのポッドからログアウトします。ダウンロードした画像はそのまま残ります。続行してもよろしいですか?</string>
     <string name="enable_basic_adblocker_description">基本 AdBlocker を有効にします。広告は、埋め込みビューなどに含まれることがあります</string>
     <string name="block_advertisments">広告をブロック</string>
-    <string name="about">アプリについて</string>
+    <string name="about">情報</string>
     <string name="license">ライセンス</string>
     <string name="debugging">デバッグ</string>
     <string name="application">アプリケーション</string>
