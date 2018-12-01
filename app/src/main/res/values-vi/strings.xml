@@ -3,6 +3,8 @@
 <resources>
     <!-- Application -->
     <!-- Common Words -->
+    <string name="settings">Cài đặt</string>
+    <string name="search">Tìm kiếm</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
