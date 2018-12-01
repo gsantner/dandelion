@@ -194,7 +194,7 @@ nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - dandelion*. 
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Entwickler</string>
     <string name="this_app_is_currently_developed_and_maintained_by_witharg">Diese Anwendung wird momentan entwickelt und betreut von &lt;br&gt;&lt;br&gt;%1$s</string>
-    <string name="contributors">Mitwirkende</string>
+    <string name="contributors">Beitragende</string>
     <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;Vielen Dank!</string>
     <string name="gnu_gplv3_license">GNU GPLv3+ Lizenz</string>
     <string name="show_third_party_licenses">Drittanbieter-Bibliotheken</string>
