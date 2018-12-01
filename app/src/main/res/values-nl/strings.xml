@@ -44,12 +44,12 @@
     <string name="saving_image_to">Afbeelding opslaan</string>
     <string name="saving_screenshot_as">Screenshot oplaan als:</string>
     <string name="link_adress_copied">Link adres gekopieerd&#8230;</string>
-    <string name="new_post">Nieuw Bericht</string>
+    <string name="new_post">Nieuw bericht</string>
     <string name="go_to_top">Terug naar boven</string>
     <string name="search_by_tags_or_persons__appspecific">Zoeken op tags of personen</string>
-    <string name="exit_app">App afsluiten</string>
+    <string name="exit_app">Afsluiten</string>
     <string name="toggle_mobile_desktop_view">Desktop weergave in-/uitschakelen</string>
-    <string name="share_dotdotdot">Delen&#8230;</string>
+    <string name="share_dotdotdot">Delen…</string>
     <string name="by_tags">viaTags</string>
     <string name="by_people">via mensen</string>
     <string name="please_add_a_name">Voeg een naam toe</string>
