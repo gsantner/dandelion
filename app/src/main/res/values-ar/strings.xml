@@ -3,9 +3,13 @@
 <resources>
     <!-- Application -->
     <!-- Common Words -->
+    <string name="settings">إعدادات</string>
+    <string name="search">بحث</string>
+    <string name="changelog">سِجل التغييرات</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">المزيد</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <!-- Operability -->
