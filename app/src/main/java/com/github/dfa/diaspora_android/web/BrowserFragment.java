@@ -94,9 +94,9 @@ public class BrowserFragment extends ThemedFragment {
         this.setRetainInstance(true);
 
         //pull to refresh
-  swipe = view.findViewById(R.id.swipe);
-  swipe.setOnRefreshListener(() -> reloadUrl());
-  swipe.setDistanceToTriggerSync(20000);
+    swipe = view.findViewById(R.id.swipe);
+    swipe.setOnRefreshListener(() -> reloadUrl());
+    swipe.setDistanceToTriggerSync(2000);
     }
 
     @Override
