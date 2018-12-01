@@ -4,7 +4,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Abrir cadro de navegación</string>
     <string name="close_navdrawer">Pechar cadro de navegación</string>
-    <string name="reload">Actualizar</string>
+    <string name="reload">Refrescar</string>
     <!-- Common Words -->
     <string name="settings">Axustes</string>
     <string name="notifications">Notificacións</string>
@@ -51,7 +51,7 @@
     <string name="search_by_tags_or_persons__appspecific">Buscar persoas ou etiquetas</string>
     <string name="exit_app">Saír do app</string>
     <string name="toggle_mobile_desktop_view">Vista móbil/escritorio</string>
-    <string name="share_dotdotdot">Compartir&#8230;</string>
+    <string name="share_dotdotdot">Compartir…</string>
     <string name="by_tags">Etiquetas</string>
     <string name="by_people">Persoas</string>
     <string name="please_add_a_name">Por favor, engada un nome</string>
