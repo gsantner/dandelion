@@ -94,7 +94,7 @@
     <string name="amoled_mode">Modo AMOLED</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notificações expandidas</string>
-    <string name="language_change_restart_description">Altera o idioma da aplicação. Tem que reiniciar a aplicação para aplicar as alterações.</string>
+    <string name="language_change_restart_description">Altera o idioma da aplicação. Tem que reiniciar a aplicação para aplicar as alterações</string>
     <string name="language">Idioma</string>
     <string name="system_language">Idioma do sistema</string>
     <!-- Font size -->
