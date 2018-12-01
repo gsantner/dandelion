@@ -35,13 +35,16 @@
     <string name="copy_link_adress_to_clipboard">Kopier link-adresse til udklipsholder</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="hide_statusbar">Gem statusbar</string>
     <!-- Operability -->
     <string name="top_toolbar_loads_stream__appsp">Øverste værktøjslinje indlæser strøm</string>
     <string name="click_empty_space_top_toolbar_load_stream__appspecific">Klik på tom plads i den øverste værktøjslinje for at åbne strømme</string>
     <!-- Category Titles -->
+    <string name="appearance">Udseende</string>
     <string name="network">Netværk</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Generelt</string>
     <!-- Themes -->
     <string name="primary_colors">Primær farve</string>
     <string name="colors_of_toolbars">Værktøjslinjers farver</string>
@@ -52,6 +55,7 @@
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">Standard</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
