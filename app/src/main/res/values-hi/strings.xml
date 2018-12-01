@@ -16,6 +16,7 @@
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <string name="hide_statusbar">स्थिति पट्टी छुपाएँ</string>
+    <string name="show_title">शीर्षक दिखाएं</string>
     <!-- Operability -->
     <!-- Category Titles -->
     <string name="appearance">दिखावट</string>
