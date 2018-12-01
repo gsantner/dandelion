@@ -51,7 +51,7 @@
     <string name="search_by_tags_or_persons__appspecific">Szukaj tagów lub osób</string>
     <string name="exit_app">Zamknij aplikację</string>
     <string name="toggle_mobile_desktop_view">Przełącz na widok mobilny/standardowy</string>
-    <string name="share_dotdotdot">Udostępnij&#8230;</string>
+    <string name="share_dotdotdot">Udostępnij…</string>
     <string name="by_tags">w tagach</string>
     <string name="by_people">w osobach</string>
     <string name="please_add_a_name">Podaj nazwę użytkownika lub tagu</string>
@@ -106,7 +106,7 @@
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Rozszerzone powiadomienia</string>
     <string name="extendend_notifications_bell_description__appspecific">Dodaj do ikony powiadomień menu wyboru kategorii powiadomień</string>
-    <string name="language_change_restart_description">Zmień język aplikacji. Uruchom ponownie aplikację, aby zobaczyć zmiany</string>
+    <string name="language_change_restart_description">Zmienia język aplikacji. Zrestartuj żeby wprowadzić zmiany</string>
     <string name="language">Język</string>
     <string name="system_language">Język systemowy</string>
     <!-- Font size -->
@@ -159,7 +159,7 @@
     <string name="wipe_settings_warning__appspecific">Ta operacja przywróci wszystkie zmodyfikowane przez Ciebie ustawienia aplikacji do ich domyślnych wartości i wyloguje Cię ze wszystkich Podów. Na pewno chcesz to zrobić?</string>
     <string name="enable_basic_adblocker_description">Włącz prosty AdBlocker. Reklamy mogą znajdować się m.in. w osadzonych widokach</string>
     <string name="block_advertisments">Blokuj reklamy</string>
-    <string name="about">O aplikacji</string>
+    <string name="about">Informacje</string>
     <string name="license">Licencja</string>
     <string name="debugging">Debugowanie</string>
     <string name="application">Aplikacja</string>
@@ -191,7 +191,7 @@
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Twórcy aplikacji</string>
     <string name="this_app_is_currently_developed_and_maintained_by_witharg">Rozwojem i utrzymaniem aplikacji aktualnie zajmują się &lt;br&gt;&lt;br&gt;%1$s</string>
-    <string name="contributors">Wnieśli wkład</string>
+    <string name="contributors">Współautorzy</string>
     <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;Wielkie dzięki!</string>
     <string name="gnu_gplv3_license">Licencja GNU GPLv3+</string>
     <string name="show_third_party_licenses">Biblioteki zewnętrzne</string>
