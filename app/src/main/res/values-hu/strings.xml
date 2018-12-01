@@ -153,7 +153,7 @@
     <string name="enable_basic_adblocker_description">Alap hirdetésblokkoló (AdBlocker) engedélyezése. Reklámok jelenhetnek meg pl. a beépített megjelenítéseknél</string>
     <string name="block_advertisments">Hirdetések blokkolása</string>
     <string name="about">Névjegy</string>
-    <string name="license">Licensz</string>
+    <string name="license">Licenc</string>
     <string name="debugging">Hibakeresés</string>
     <string name="application">Alkalmazás</string>
     <string name="device">Eszköz</string>
