@@ -198,4 +198,6 @@
     <string name="the_following_libraries_are_used">Se utilizan las siguientes bibliotecas:</string>
     <string name="inspiration_from_leafpic__appspecific">Tomamos algo de inspiración y código de LeafPic. ¡Venga, tomad prestado, es software libre también!</string>
     <string name="tell_me_more">Saber más</string>
+    <string name="open_youtube_external_tabs_description">Habilitar para abrir enlaces de Youtube en aplicaciones externas</string>
+    <string name="pref_title__open_youtube_external">Enlaces de YouTube</string>
 </resources>
