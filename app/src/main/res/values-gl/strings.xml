@@ -201,4 +201,6 @@
     <string name="the_following_libraries_are_used">Utilízase o seguinte código:</string>
     <string name="inspiration_from_leafpic__appspecific">Inspirámonos e collemos código de LeafPic. Bótalle un ollo, tamén é software libre!</string>
     <string name="tell_me_more">Cóntame máis</string>
+    <string name="open_youtube_external_tabs_description">Activar para abrir vídeos YouTube nunha app externa</string>
+    <string name="pref_title__open_youtube_external">Ligazóns YouTube</string>
 </resources>
