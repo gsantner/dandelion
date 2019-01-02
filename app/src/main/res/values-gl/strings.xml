@@ -49,7 +49,7 @@
     <string name="new_post">Nova mensaxe</string>
     <string name="go_to_top">Ir arriba</string>
     <string name="search_by_tags_or_persons__appspecific">Buscar persoas ou etiquetas</string>
-    <string name="exit_app">Saír do app</string>
+    <string name="exit_app">Saír da app</string>
     <string name="toggle_mobile_desktop_view">Vista móbil/escritorio</string>
     <string name="share_dotdotdot">Compartir…</string>
     <string name="by_tags">Etiquetas</string>
@@ -65,7 +65,7 @@
     <string name="unable_to_load_image">Non se cargou a imaxe</string>
     <!-- Permissions -->
     <string name="screenshot_permission__appspecific">Debe permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Pode
-        pechar a aplicación ou reiniciar o dispositivo. Si non permite acceder ao almacenamento pero que utilizar máis tarde a captura de pantalla, poderá permitir posteriormente o acceso na sección de permisos do dispositivo onde pode activar o \"permiso de acceso a almacenamento\" para dandelion*.</string>
+        pechar a aplicación ou reiniciar o dispositivo. Se non permite acceder ao almacenamento pero que utilizar máis tarde a captura de pantalla, poderá permitir posteriormente o acceso na sección de permisos do dispositivo onde pode activar o \"permiso de acceso a almacenamento\" para dandelion*.</string>
     <string name="image_permission_description__appspecific">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar/subir imaxes. Despois de iso debería
         pechar a aplicación ou reiniciar o dispositivo. Se non permite acceder ao almacenamento, para poder gardar imaxes posteriormente, deberá abrir: preferencias do sistema - apps - dandelion* no dispositivo.
    Na sección de permisos pode activar o \"permiso de escritura no almacenamento\".</string>
@@ -136,7 +136,7 @@
     <string name="proxy_dandelion_traffic__appspecific">Proxy para o tráfico de dandelion* para saltar cortalumes.\nPodería precisar reinicio. Esto podería non funcionar en algúns móbiles.</string>
     <string name="host">Servidor</string>
     <string name="port">Porto</string>
-    <string name="app_needs_restart_to_disable_proxy_usage">Precisa reiniciar o app para deshabilitar o uso do proxy</string>
+    <string name="app_needs_restart_to_disable_proxy_usage">Precisa reiniciar a app para desactivar o uso do proxy</string>
     <string name="orbot_proxy_preset_loaded">Cargadas as preferencias do proxy Orbot</string>
     <!-- Chrome custom tabs -->
     <string name="open_external_links_with_chrome_custom_tabs_description">Abrir ligazóns externas con Chrome Custom Tabs. Chromium ou Google Chrome ten que estar instalado para utilizar esta característica.\nIMPORTANTE: Chrome Custom Tabs non utiliza os servidores proxy configurados!</string>
@@ -170,7 +170,7 @@
     <string name="diaspora_pod__appspecific">Nodo diaspora*</string>
     <string name="debug_log">Rexistro de depuración</string>
     <string name="debug_log_verbose">Rexistro de depuración (polo miúdo)</string>
-    <string name="app_version_with_arg">Versión do App: %1$s</string>
+    <string name="app_version_with_arg">Versión da App: %1$s</string>
     <string name="android_version_witharg">Versión Android: %1$s</string>
     <string name="device_name_witharg">Nome do dispositivo: %1$s</string>
     <string name="code_name_witharg">Alcume: %1$s</string>
@@ -181,7 +181,7 @@
     <string name="contribute_code">Contribúa ao código!</string>
     <string name="dandelion_is_developed_as_foss__appspecific">dandelion* é desenvolto libre, libre de Liberdade, e segue o espíritu que marca o proxecto diaspora*. Se quere contribuír, adiante! Por agora somos un equipo pequeno, así que agradecemos calquer tipo de axuda!</string>
     <string name="get_the_source">Obteña as fontes</string>
-    <string name="translate_the_app">Traduza o app!</string>
+    <string name="translate_the_app">Traduza a app!</string>
     <string name="app_not_available_in_your_lang_translate_with_stringlate">Non está a aplicación no seu idioma? Pode cambiar eso! Por qué non nos axuda traducíndoa? Utilizamos a plataforma github para que calquera poida traducir a app.</string>
     <string name="let_me_translate">Deixame traducir</string>
     <string name="give_feedback">Qué lle parece!</string>
