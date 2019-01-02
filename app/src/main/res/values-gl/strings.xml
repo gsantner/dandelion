@@ -160,7 +160,7 @@
     <string name="full_reset">Restablecer completamente</string>
     <string name="wipe_settings_and_logout">Eliminar todas os axustes locais do app e desconectar todas as contas</string>
     <string name="wipe_settings_warning__appspecific">Esto restablecerá todos os axustes da aplicación ao valor por omisión e desconectarao de todos os nodos. As súas imaxes descargadas permanecerán. Seguro que quere proceder?</string>
-    <string name="enable_basic_adblocker_description">Habilitar un AdBlocker básico. Poderían verse anuncios por exemplo en vistas incrustadas</string>
+    <string name="enable_basic_adblocker_description">Activar un AdBlocker básico. Poderían verse anuncios por exemplo en vistas incrustadas</string>
     <string name="block_advertisments">Bloquear publicidade</string>
     <string name="about">Sobre</string>
     <string name="license">Licenza</string>
@@ -182,7 +182,7 @@
     <string name="dandelion_is_developed_as_foss__appspecific">dandelion* é desenvolto libre, libre de Liberdade, e segue o espíritu que marca o proxecto diaspora*. Se quere contribuír, adiante! Por agora somos un equipo pequeno, así que agradecemos calquer tipo de axuda!</string>
     <string name="get_the_source">Obteña as fontes</string>
     <string name="translate_the_app">Traduza a app!</string>
-    <string name="app_not_available_in_your_lang_translate_with_stringlate">Non está a aplicación no seu idioma? Pode cambiar eso! Por qué non nos axuda traducíndoa? Utilizamos a plataforma github para que calquera poida traducir a app.</string>
+    <string name="app_not_available_in_your_lang_translate_with_stringlate">Non está a aplicación no seu idioma? Pode cambiar eso! Por qué non nos axuda traducíndoa? Utilizamos a plataforma Crowdin para que calquera poida traducir a app.</string>
     <string name="let_me_translate">Deixame traducir</string>
     <string name="give_feedback">Qué lle parece!</string>
     <string name="dandelion_still_in_development__appspecific">dandelion* aínda está en desenvolvemento, asi que si ten suxerencias de calquer tipo o valoración, por favor utilice o noso xestor de erros para facérnolo saber!</string>
@@ -190,7 +190,7 @@
     <string name="spread_the_word">Difunda!</string>
     <string name="tell_your_friends_about_diaspora__appspecific">Dígalle aos seus amigos e familiares que utiliza diaspora* e #dandelion! Por qué no escribir sobre a experiencia? Encantaríanos saber de vostede!</string>
     <string name="share_the_app">Comparta a aplicación</string>
-    <string name="hey_checkout_dandelion_tag__appspecific">Ei!! Olla a #dandelion! %1$s</string>
+    <string name="hey_checkout_dandelion_tag__appspecific">Ei!! Olla #dandelion! %1$s</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Mantedores</string>
     <string name="this_app_is_currently_developed_and_maintained_by_witharg">Esta aplicación está a ser desenvolta e mantida por &lt;br&gt;&lt;br&gt;%1$s</string>
