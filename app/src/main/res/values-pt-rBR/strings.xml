@@ -49,9 +49,9 @@
     <string name="new_post">Nova postagem</string>
     <string name="go_to_top">Ir para o topo</string>
     <string name="search_by_tags_or_persons__appspecific">Procurar por tags ou pessoas</string>
-    <string name="exit_app">Sair do aplicativo</string>
+    <string name="exit_app">Sair do app</string>
     <string name="toggle_mobile_desktop_view">Alternar a exibição telefone/área de trabalho</string>
-    <string name="share_dotdotdot">Compartilhar&#8230;</string>
+    <string name="share_dotdotdot">Compartilhar…</string>
     <string name="by_tags">por tags</string>
     <string name="by_people">por pessoas</string>
     <string name="please_add_a_name">Por favor, adicione um nome</string>
@@ -73,7 +73,7 @@
     <string name="missing_value">Sem dado</string>
     <string name="jump_to_last_visited_page_in_stream__appspecific">Voltar para a última página visitada no fluxo?</string>
     <string name="hide_statusbar_in_mainview">Ocultar a barra de estado na janela principal</string>
-    <string name="hide_statusbar">Ocultar barra de status</string>
+    <string name="hide_statusbar">Esconder barra de status</string>
     <string name="show_title">Mostrar título</string>
     <!-- Operability -->
     <string name="top_toolbar_loads_stream__appsp">Barra de ferramentas superior abre o fluxo</string>
@@ -100,7 +100,7 @@
     <string name="amoled_mode">Modo AMOLED</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notificações estendidas</string>
-    <string name="language_change_restart_description">Alterar o idioma deste aplicativo. Reinicie o aplicativo para as mudanças terem efeito</string>
+    <string name="language_change_restart_description">Muda o idioma do aplicativo. Reinicie o aplicativo para que as alterações entrem em vigor</string>
     <string name="language">Idioma</string>
     <string name="system_language">Idioma do sistema</string>
     <!-- Font size -->

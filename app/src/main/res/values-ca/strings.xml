@@ -200,4 +200,6 @@ diaspora*. Si voleu contribuir, endavant! Actualment som un equip molt petit, de
     <string name="the_following_libraries_are_used">S\'utilitzen les següents biblioteques:</string>
     <string name="inspiration_from_leafpic__appspecific">Prenem alguna inspiració i codi de LeafPic. Aneu a comprovar-ho, també és programari gratuït!</string>
     <string name="tell_me_more">Expliqueu-me més</string>
+    <string name="open_youtube_external_tabs_description">Activeu-ho per obrir enllaços de Youtube en aplicacions externes</string>
+    <string name="pref_title__open_youtube_external">Enllaços de YouTube</string>
 </resources>

@@ -51,7 +51,7 @@
     <string name="search_by_tags_or_persons__appspecific">Recherche par tags ou par personnes</string>
     <string name="exit_app">Quitter l\'application</string>
     <string name="toggle_mobile_desktop_view">Activer/désactiver la vue bureau/mobile</string>
-    <string name="share_dotdotdot">Partager&#8230;</string>
+    <string name="share_dotdotdot">Partager…</string>
     <string name="by_tags">par tags</string>
     <string name="by_people">par personne</string>
     <string name="please_add_a_name">Veuillez ajouter un nom</string>
@@ -106,7 +106,7 @@
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notifications étendues</string>
     <string name="extendend_notifications_bell_description__appspecific">Étendre la cloche de notifications avec un menu déroulant qui affiche les catégories de notification</string>
-    <string name="language_change_restart_description">Change la langue de l\'application. Redémarrez l\'application pour que les changements prennent effet</string>
+    <string name="language_change_restart_description">Changer la langue de l\'interface. Vous devrez redémarrer l\'application pour que ce changement soit pris en compte</string>
     <string name="language">Langue</string>
     <string name="system_language">Langue du système</string>
     <!-- Font size -->
