@@ -3,23 +3,36 @@
 <resources>
     <!-- Application -->
     <!-- Common Words -->
+    <string name="settings">הגדרות</string>
+    <string name="search">חפש</string>
+    <string name="changelog">רשימת שינויים</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">עוד</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="hide_statusbar">הסתר שורת מצב</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">מראה</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">כללי</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">שנה את שפת האפליקציה. אתחל את האפליקציה בכדי שהשינויים יכנסו לתוקף</string>
+    <string name="language">שפה</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">ברירת מחדל</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">שונות</string>
+    <string name="about">אודות</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">תורמים</string>
 </resources>
