@@ -3,6 +3,7 @@
 <resources>
     <!-- Application -->
     <!-- Common Words -->
+    <string name="settings">Mga Tanawin</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
@@ -10,6 +11,7 @@
     <!-- Permissions -->
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Ayos</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <!-- Themes -->
