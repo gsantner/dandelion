@@ -1,3 +1,6 @@
+### v1.2.5
+Make youtube links open external/in youtube app (optional)  
+
 ### v1.2.3
 **Improved:**  
 - More supported languages, more complete translations!  
