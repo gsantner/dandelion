@@ -51,7 +51,7 @@
     <string name="search_by_tags_or_persons__appspecific">タグまたは人で検索</string>
     <string name="exit_app">アプリを終了</string>
     <string name="toggle_mobile_desktop_view">モバイル/デスクトップ表示の切り替え</string>
-    <string name="share_dotdotdot">シェア&#8230;</string>
+    <string name="share_dotdotdot">シェア…</string>
     <string name="by_tags">タグ別</string>
     <string name="by_people">人別</string>
     <string name="please_add_a_name">名前を追加してください</string>
@@ -106,7 +106,7 @@
     <!-- Notifications dropdown -->
     <string name="extended_notifications">拡張通知</string>
     <string name="extendend_notifications_bell_description__appspecific">通知のカテゴリーを示すドロップダウン・メニューで通知ベルを拡張します</string>
-    <string name="language_change_restart_description">このアプリの言語を変更します。アプリを再起動すると変更を反映します</string>
+    <string name="language_change_restart_description">このアプリの言語を変更します。 変更を反映するにはアプリを再起動します</string>
     <string name="language">言語</string>
     <string name="system_language">システム言語</string>
     <!-- Font size -->
@@ -159,7 +159,7 @@
     <string name="wipe_settings_warning__appspecific">これはアプリの変更された設定をすべてデフォルトにリセットして、すべてのポッドからログアウトします。ダウンロードした画像はそのまま残ります。続行してもよろしいですか?</string>
     <string name="enable_basic_adblocker_description">基本 AdBlocker を有効にします。広告は、埋め込みビューなどに含まれることがあります</string>
     <string name="block_advertisments">広告をブロック</string>
-    <string name="about">アプリについて</string>
+    <string name="about">情報</string>
     <string name="license">ライセンス</string>
     <string name="debugging">デバッグ</string>
     <string name="application">アプリケーション</string>
@@ -198,4 +198,6 @@
     <string name="the_following_libraries_are_used">以下のライブラリーが使用されます:</string>
     <string name="inspiration_from_leafpic__appspecific">LeafPic からいくつかのインスピレーションとコードを得ました。チェックしてみてください。同様のフリーソフトウェアです!</string>
     <string name="tell_me_more">さらに詳しく</string>
+    <string name="open_youtube_external_tabs_description">外部アプリで Youtube のリンクを開くことができます</string>
+    <string name="pref_title__open_youtube_external">Youtube のリンク</string>
 </resources>

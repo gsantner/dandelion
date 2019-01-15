@@ -17,7 +17,7 @@
     <string name="commented">Yorumlananlar</string>
     <string name="mentions">Bahsetmeler</string>
     <string name="public_">Herkes</string>
-    <string name="search">Arama</string>
+    <string name="search">Ara</string>
     <string name="contacts">Kişiler</string>
     <string name="changelog">Değişme Günlüğü</string>
     <string name="statistics">İstatistikler</string>
@@ -102,7 +102,7 @@
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Genişletilmiş Bildirimler</string>
     <string name="extendend_notifications_bell_description__appspecific">Bildirim zilini, bildirim kategorilerini gösteren bir açılır menü ile genişlet</string>
-    <string name="language_change_restart_description">Uygulamanın dilini değiştir. Değişikliklerin etkili olması için uygulamayı yeniden başlat</string>
+    <string name="language_change_restart_description">Bu uygulamanın dilini değiştir. Değişikliklerin etkili olması için uygulamayı yeniden başlatın</string>
     <string name="language">Dil</string>
     <string name="system_language">Sistem dili</string>
     <!-- Font size -->
@@ -184,7 +184,7 @@
     <string name="hey_checkout_dandelion_tag__appspecific">Hey %1$s ! #dandelion’a bir göz at!</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Yardımcılar</string>
-    <string name="contributors">Katkıda Bulunanlar</string>
+    <string name="contributors">Katkıda bulunanlar</string>
     <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;Teşekkürler!</string>
     <string name="gnu_gplv3_license">GNU GPLv3+ License</string>
     <string name="show_third_party_licenses">Üçüncü Parti Kütüphaneler</string>

@@ -3,17 +3,13 @@
 <resources>
     <!-- Application -->
     <!-- Common Words -->
-    <string name="settings">Cài đặt</string>
-    <string name="search">Tìm kiếm</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <!-- More from MainActivity -->
     <!-- Permissions -->
-    <string name="hide_statusbar">Ẩn thanh trạng thái</string>
     <!-- Operability -->
     <!-- Category Titles -->
-    <string name="appearance">Xuất hiện</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <!-- Themes -->
@@ -25,7 +21,5 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
-    <string name="about">Trong khoảng</string>
     <!-- License & help (large amount of text) -->
-    <string name="contributors">Những người đóng góp</string>
 </resources>

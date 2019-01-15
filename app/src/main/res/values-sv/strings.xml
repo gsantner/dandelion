@@ -51,7 +51,7 @@
     <string name="search_by_tags_or_persons__appspecific">Sök på taggar eller personer</string>
     <string name="exit_app">Avsluta appen</string>
     <string name="toggle_mobile_desktop_view">Växla mellan telefon- och skrivbordsvy</string>
-    <string name="share_dotdotdot">Dela&#8230;</string>
+    <string name="share_dotdotdot">Dela…</string>
     <string name="by_tags">efter taggar</string>
     <string name="by_people">efter människor</string>
     <string name="please_add_a_name">Var god ange namn</string>
@@ -81,7 +81,7 @@
     <string name="missing_value">Värde saknas</string>
     <string name="jump_to_last_visited_page_in_stream__appspecific">Vill du hoppa senast besökta sida i strömmen?</string>
     <string name="hide_statusbar_in_mainview">Dölj statusfältet vid huvudvyn</string>
-    <string name="hide_statusbar">Göm statusfältet</string>
+    <string name="hide_statusbar">Dölj statusfältet</string>
     <string name="show_title_in_main_view">Göm titeln i huvudvyn</string>
     <string name="show_title">Visa titel</string>
     <string name="launcher_shortcut">Programstartargenväg</string>

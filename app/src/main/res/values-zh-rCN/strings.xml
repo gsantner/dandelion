@@ -7,7 +7,7 @@
     <!-- Common Words -->
     <string name="settings">设置</string>
     <string name="search">搜索</string>
-    <string name="changelog">更新日志​​​​​</string>
+    <string name="changelog">更新日志</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
@@ -16,6 +16,7 @@
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <string name="hide_statusbar">隐藏状态栏</string>
+    <string name="show_title">显示标题</string>
     <!-- Operability -->
     <!-- Category Titles -->
     <string name="appearance">外观</string>

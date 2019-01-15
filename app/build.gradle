@@ -6,44 +6,25 @@ if (enable_plugin_kotlin) {
 }
 
 android {
-    compileSdkVersion version_setup_compileSdk
-    flavorDimensions "default"
+    buildToolsVersion rootProject.ext.version_buildTools
+    compileSdkVersion rootProject.ext.version_compileSdk
 
     defaultConfig {
-        minSdkVersion version_setup_minSdk
-        targetSdkVersion version_setup_targetSdk
+        minSdkVersion rootProject.ext.version_minSdk
+        targetSdkVersion rootProject.ext.version_compileSdk
         buildConfigField "boolean", "IS_TEST_BUILD", "false"
         buildConfigField "boolean", "IS_GPLAY_BUILD", "false"
         buildConfigField "String[]", "DETECTED_ANDROID_LOCALES", "${findUsedAndroidLocales()}"
         buildConfigField "String", "GITHASH", "\"${getGitHash()}\""
+
         resValue "string", "manifest_package_id", "com.github.dfa.diaspora_android"
-
         applicationId "com.github.dfa.diaspora_android"
-        versionName "1.2.3"
-        versionCode 36
-
-
+        versionName "1.2.5"
+        versionCode 40
         vectorDrawables.useSupportLibrary = true
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    sourceSets {
-        if (enable_plugin_kotlin) {
-            main.java.srcDirs += 'src/main/kotlin'
-        }
-    }
-
+    flavorDimensions "default"
     productFlavors {
         flavorDefault {
         }
@@ -64,8 +45,52 @@ android {
             buildConfigField "boolean", "IS_TEST_BUILD", "true"
         }
     }
+
+    sourceSets {
+        main { assets.srcDirs = ['src/main/assets'] }
+        if (enable_plugin_kotlin) {
+            main.java.srcDirs += 'src/main/kotlin'
+        }
+        main.java.srcDirs +=  'thirdparty/java'
+        main.res.srcDirs +=  'thirdparty/res'
+        main.assets.srcDirs +=  'thirdparty/assets'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            eachDependency { details ->
+                if (details.requested.group == 'com.android.support') {
+                    if (details.requested.name != 'multidex' && details.requested.name != 'multidex-instrumentation') {
+                        details.useVersion "${rootProject.ext.version_library_appcompat}"
+                    }
+                }
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE-LGPL-2.1.txt'
+        exclude 'META-INF/LICENSE-LGPL-3.txt'
+        exclude 'META-INF/LICENSE-W3C-TEST'
+    }
+
+    compileOptions {
+        encoding = 'UTF-8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     lintOptions {
         disable 'MissingTranslation'
+        disable 'InvalidPackage'
+        abortOnError false
     }
 }
 

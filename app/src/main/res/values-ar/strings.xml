@@ -3,23 +3,39 @@
 <resources>
     <!-- Application -->
     <!-- Common Words -->
+    <string name="settings">إعدادات</string>
+    <string name="search">بحث</string>
+    <string name="changelog">سِجل التغييرات</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">المزيد</string>
+    <string name="share_dotdotdot">مشاركة</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="hide_statusbar">اخفاء شريط الاشعارات</string>
+    <string name="show_title">إظهار العنوان</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">المظهر</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">تغيير لغة التطبيق. اعد فتح التطبيق لتفعيل التغيير</string>
+    <string name="language">اللّغة</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">افتراضي</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
+    <string name="clear_cache">مسح ذاكرة التخزين المؤقت</string>
     <!-- More -->
+    <string name="miscellaneous">أخرى</string>
+    <string name="about">عن التطبيق</string>
+    <string name="license">ترخيص</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">المساهمون</string>
 </resources>
