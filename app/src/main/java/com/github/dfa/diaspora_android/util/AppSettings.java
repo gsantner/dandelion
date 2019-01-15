@@ -363,6 +363,10 @@ public class AppSettings extends SharedPreferencesPropertyBackend {
         return getBool(R.string.pref_key__open_youtube_external_enabled, true);
     }
 
+    public boolean isSwipeRefreshEnabled() {
+        return getBool(R.string.pref_key__swipe_refresh_enabled, true);
+    }
+
     public String getScreenRotation() {
         return getString(R.string.pref_key__screen_rotation, R.string.rotation_val_system);
     }

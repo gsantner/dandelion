@@ -103,6 +103,13 @@
             android:summary="@string/control_screen_rotation"
             android:title="@string/screen_rotation"/>
 
+        <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_touch_app_black_24px"
+            android:key="@string/pref_key__swipe_refresh_enabled"
+            android:title="@string/pref_title_swipe_refresh"
+            android:summary="@string/swipe_refresh_description"/>
+
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 
     <!-- Diaspora Pod Settings -->

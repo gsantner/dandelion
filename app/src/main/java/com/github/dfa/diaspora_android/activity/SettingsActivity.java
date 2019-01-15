@@ -271,6 +271,8 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
 
         @Override
         public boolean onPreferenceTreeClick(PreferenceScreen screen, Preference preference) {
+            AppSettings settings = ((App) getActivity().getApplication()).getSettings();
+            DiasporaUrlHelper diasporaUrlHelper = new DiasporaUrlHelper(settings);
             if (isAdded() && preference.hasKey()) {
                 String key = preference.getKey();
                 if (key.equals(getString(R.string.pref_key__primary_color__preference_click))) {
@@ -278,6 +280,13 @@ public class SettingsActivity extends ThemedActivity implements SharedPreference
                     return true;
                 } else if (key.equals(getString(R.string.pref_key__accent_color__preference_click))) {
                     showColorPickerDialog(2);
+                    return true;
+                } else if (key.equals(getString(R.string.pref_key__manage_theme))) {
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    intent.setAction(MainActivity.ACTION_OPEN_URL);
+                    intent.putExtra(MainActivity.URL_MESSAGE, diasporaUrlHelper.getThemeUrl());
+                    startActivity(intent);
+                    getActivity().finish();
                     return true;
                 }
             }
