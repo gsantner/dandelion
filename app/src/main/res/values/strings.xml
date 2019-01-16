@@ -253,11 +253,10 @@
     <string name="the_following_libraries_are_used">The following libraries are used:</string>
     <string name="inspiration_from_leafpic__appspecific">We took some inspiration and code from LeafPic. Go check it out, it\'s free software as well!</string>
     <string name="tell_me_more">Tell me more</string>
-    <string name="open_youtube_external_tabs_description">Enable to open Youtube links on external app</string>
-    <string name="pref_title__open_youtube_external">Youtube links</string>
-    <string name="pref_desc__sub_theme">Change the theme of your channel</string>
-    <string name="pref_title__sub_theme">Hubzilla theme settings</string>
-    <string name="pref_title_swipe_refresh">Pull to refresh</string>
-    <string name="swipe_refresh_description">Pulling down on top of page to refresh.\nYou need to restart the app for changes to take effect.</string>
+    <string name="enable_to_open_youtube_links_on_external_app">Enable to open Youtube links on external app</string>
+    <string name="youtube_links">Youtube links</string>
+    <string name="change_the_theme_of_your_account">Change the theme of your account</string>
+    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">Pulling down on top of page to refresh.\nYou need to restart the app for changes to take effect.</string>
 
 </resources>

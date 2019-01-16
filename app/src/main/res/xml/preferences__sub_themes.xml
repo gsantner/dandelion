@@ -25,8 +25,8 @@
         <Preference
             android:icon="@drawable/ic_color_lens_black_24px"
             android:key="@string/pref_key__manage_theme"
-            android:summary="@string/pref_desc__sub_theme"
-            android:title="@string/pref_title__sub_theme"/>
+            android:summary="@string/change_the_theme_of_your_account"
+            android:title="@string/open_diaspora_account_settings__appspecific"/>
 
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 </PreferenceScreen>

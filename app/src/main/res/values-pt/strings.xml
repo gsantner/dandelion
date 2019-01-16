@@ -156,6 +156,6 @@
     <string name="show_third_party_licenses">Bibliotecas de terceiros</string>
     <string name="the_following_libraries_are_used">Utilizamos as seguintes bibliotecas:</string>
     <string name="tell_me_more">Saber mais</string>
-    <string name="open_youtube_external_tabs_description">Ative para abrir as ligações YouTube na aplicação externa</string>
-    <string name="pref_title__open_youtube_external">Ligações YouTube</string>
+    <string name="enable_to_open_youtube_links_on_external_app">Ative para abrir as ligações YouTube na aplicação externa</string>
+    <string name="youtube_links">Ligações YouTube</string>
 </resources>

@@ -100,8 +100,8 @@ public class BrowserFragment extends ThemedFragment {
         if (appSettings.isSwipeRefreshEnabled()){
             swipe.setEnabled( true );
 
-        }else {
-            swipe.setRefreshing(false);
+        } else {
+            swipe.setRefreshing( false );
             swipe.setEnabled( false );
             return;
         }

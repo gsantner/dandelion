@@ -77,8 +77,8 @@
             android:defaultValue="true"
             android:icon="@drawable/ic_open_yt_external_black_24px"
             android:key="@string/pref_key__open_youtube_external_enabled"
-            android:summary="@string/open_youtube_external_tabs_description"
-            android:title="@string/pref_title__open_youtube_external"/>
+            android:summary="@string/enable_to_open_youtube_links_on_external_app"
+            android:title="@string/youtube_links"/>
 
         <com.github.dfa.diaspora_android.ui.theme.ThemedCheckBoxPreference
             android:defaultValue="false"
@@ -107,8 +107,8 @@
             android:defaultValue="true"
             android:icon="@drawable/ic_touch_app_black_24px"
             android:key="@string/pref_key__swipe_refresh_enabled"
-            android:title="@string/pref_title_swipe_refresh"
-            android:summary="@string/swipe_refresh_description"/>
+            android:title="@string/pull_to_refresh"
+            android:summary="@string/pulling_down_on_top_of_page_to_refresh"/>
 
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 
