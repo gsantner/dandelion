@@ -149,4 +149,6 @@
     <string name="pdf" translatable="false">PDF</string>
     <string name="gsantner" translatable="false">gsantner</string>
     <string name="pref_key__open_youtube_external_enabled" translatable="false">pref_key__open_youtube_external_enabled</string>
+    <string name="pref_key__manage_theme" translatable="false">pref_key_manage_theme</string>
+    <string name="pref_key__swipe_refresh_enabled" translatable="false">pref_key__swipe_refresh_enabled</string>
   </resources>

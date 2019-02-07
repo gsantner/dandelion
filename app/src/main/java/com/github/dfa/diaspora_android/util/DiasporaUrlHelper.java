@@ -62,6 +62,7 @@ public class DiasporaUrlHelper {
     public static final String SUBURL_NOTIFICATIONS_MENTIONED = "/notifications?type=mentioned";
     public static final String SUBURL_NOTIFICATIONS_RESHARED = "/notifications?type=reshared";
     public static final String SUBURL_NOTIFICATIONS_STARTED_SHARING = "/notifications?type=started_sharing";
+    public static final String SUBURL_THEME = "/user/edit";
 
     public DiasporaUrlHelper(AppSettings settings) {
         this.settings = settings;
@@ -352,5 +353,14 @@ public class DiasporaUrlHelper {
         } catch (Exception ignored) {
         }
         return app.getString(R.string.aspects);
+    }
+
+    /**
+     * Return a url that points to the settings of the pod.
+     *
+     * @return https://(pod-domain.tld)/user/edit
+     */
+    public String getThemeUrl() {
+        return getPodUrl() + SUBURL_THEME;
     }
 }

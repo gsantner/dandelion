@@ -9,7 +9,7 @@ Where:
   * Reference: E-Mail, Webpage
   * Text: Information about / kind of contribution
 
-  
+
 
 ## LIST OF CONTRIBUTORS
 -->
@@ -30,3 +30,4 @@ Where:
 * **[Jean Lucas](jean AT 4ray DOT co)**<br/>~° Spanish translation
 * **[asereze](https://github.com/asereze)**<br/>~° Sardinian translation
 * **[Xosé M. Lamas](http://xmgz.eu)**<br />~° Galician translation
+* **[massimiliano](https://framagit.org/massimiliano)**<br />~° Contributor

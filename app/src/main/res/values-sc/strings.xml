@@ -201,6 +201,6 @@
     <string name="the_following_libraries_are_used">Sunt impreadas custas librerias:</string>
     <string name="inspiration_from_leafpic__appspecific">Amus pigadu ispiratzione e parte de su còdighe dae LeafPic. Abbistade·bos·lu, est fintzas cussu unu programma lìberu!</string>
     <string name="tell_me_more">Àteras informatziones</string>
-    <string name="open_youtube_external_tabs_description">Abìlita pro abèrrere sos ligàmenes de Youtube in un\'aplicatzione esterna</string>
-    <string name="pref_title__open_youtube_external">Ligàmenes de Youtube</string>
+    <string name="enable_to_open_youtube_links_on_external_app">Abìlita pro abèrrere sos ligàmenes de Youtube in un\'aplicatzione esterna</string>
+    <string name="youtube_links">Ligàmenes de Youtube</string>
 </resources>

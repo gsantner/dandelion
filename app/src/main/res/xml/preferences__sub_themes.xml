@@ -21,5 +21,12 @@
             android:summary="@string/amoled_mode_description__app_specific"
             android:title="@string/amoled_mode"
             android:icon="@drawable/ic_color_lens_black_24px" />
+
+        <Preference
+            android:icon="@drawable/ic_color_lens_black_24px"
+            android:key="@string/pref_key__manage_theme"
+            android:summary="@string/change_the_theme_of_your_account"
+            android:title="@string/open_diaspora_account_settings__appspecific"/>
+
     </com.github.dfa.diaspora_android.ui.theme.ThemedPreferenceCategory>
 </PreferenceScreen>
