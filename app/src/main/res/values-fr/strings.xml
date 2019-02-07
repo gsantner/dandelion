@@ -198,6 +198,9 @@
     <string name="the_following_libraries_are_used">Les bibliothèques suivantes sont utilisées :</string>
     <string name="inspiration_from_leafpic__appspecific">Nous avons pris des inspirations et du code de LeafPic. Allez voir, c\'est aussi un logiciel libre !</string>
     <string name="tell_me_more">En savoir plus</string>
+    <string name="enable_to_open_youtube_links_on_external_app">Autoriser l\'ouverture des liens Youtube par une appli externe</string>
     <string name="youtube_links">Liens Youtube</string>
     <string name="change_the_theme_of_your_account">Changer le thème de votre compte</string>
+    <string name="pull_to_refresh">Tirer vers le bas pour mettre à jour</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">Tirez depuis le haut de la page vers le bas pour l\'actualiser.\nVous devez redémarrer l\'application pour que ces changements prennent effet.</string>
 </resources>
