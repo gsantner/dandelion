@@ -3,7 +3,7 @@
 <resources>
     <!-- Application -->
     <string name="open_navdrawer">Stäng navigeringsmenyn</string>
-    <string name="close_navdrawer">Stäng navigeringsmenyn</string>
+    <string name="close_navdrawer">Stäng navigeringslådan</string>
     <string name="reload">Ladda om</string>
     <!-- Common Words -->
     <string name="settings">Inställningar</string>
