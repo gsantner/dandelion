@@ -20,6 +20,7 @@
     <string name="appearance">المظهر</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">عام</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
     <string name="language_change_restart_description">تغيير لغة التطبيق. اعد فتح التطبيق لتفعيل التغيير</string>
