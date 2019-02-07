@@ -93,6 +93,4 @@
     <string name="device">Toestel</string>
     <string name="diaspora_pod__appspecific">diaspora * Pod</string>
     <!-- License & help (large amount of text) -->
-    <string name="open_youtube_external_tabs_description">Bemagtig om Youtube links oop te maak in eksterne Toeps</string>
-    <string name="pref_title__open_youtube_external">Youtube links</string>
 </resources>
