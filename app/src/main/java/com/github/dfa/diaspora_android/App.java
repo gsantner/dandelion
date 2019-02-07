@@ -58,7 +58,7 @@ public class App extends Application {
         String a = new ContextUtils(this).bcstr("FLAVOR", "");
         a += "__";
 
-        if (appSettings.isAppFirstStart() && "flavorDandelior".equals(new ContextUtils(this).bcstr("FLAVOR", ""))){
+        if (appSettings.isAppFirstStart() && "flavorDandelior".equals(new ContextUtils(this).bcstr("FLAVOR", ""))) {
             appSettings.setAmoledColorMode(true);
         }
 

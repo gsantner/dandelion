@@ -565,12 +565,10 @@ public class MainActivity extends ThemedActivity
         } else if ("sc_activities".equals(action)) {
             openDiasporaUrl(urls.getActivityUrl());
             return;
-        }
-        else if ("sc_contacts".equals(action)) {
+        } else if ("sc_contacts".equals(action)) {
             onNavigationItemSelected(navView.getMenu().findItem(R.id.nav_aspects));
             return;
-        }
-        else if ("sc_tags".equals(action)) {
+        } else if ("sc_tags".equals(action)) {
             onNavigationItemSelected(navView.getMenu().findItem(R.id.nav_followed_tags));
             return;
         }

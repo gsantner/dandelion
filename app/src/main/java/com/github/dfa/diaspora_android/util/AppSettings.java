@@ -451,6 +451,7 @@ public class AppSettings extends SharedPreferencesPropertyBackend {
     public boolean isAmoledColorMode() {
         return getBool(R.string.pref_key__primary_color__amoled_mode, false);
     }
+
     public void setAmoledColorMode(boolean enable) {
         setBool(R.string.pref_key__primary_color__amoled_mode, enable);
     }

@@ -19,7 +19,6 @@
 package com.github.dfa.diaspora_android.web;
 
 import android.annotation.TargetApi;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -60,7 +59,7 @@ public class CustomWebViewClient extends WebViewClient {
                 || url.startsWith("http://" + host)))) {
             return false;
         }//make youtube links open external-->never customtab
-        else if (appSettings.isOpenYoutubeExternalEnabled()&&(url.startsWith("https://youtube.com/") || url.startsWith("https://www.youtube.com/") || url.startsWith("https://m.youtube.com/") || url.startsWith("https://youtu.be/"))){
+        else if (appSettings.isOpenYoutubeExternalEnabled() && (url.startsWith("https://youtube.com/") || url.startsWith("https://www.youtube.com/") || url.startsWith("https://m.youtube.com/") || url.startsWith("https://youtu.be/"))) {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             view.getContext().startActivity(intent);
             return true;

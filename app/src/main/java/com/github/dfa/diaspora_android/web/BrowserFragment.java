@@ -21,6 +21,7 @@ package com.github.dfa.diaspora_android.web;
 import android.content.Context;
 import android.content.MutableContextWrapper;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
@@ -33,7 +34,6 @@ import com.github.dfa.diaspora_android.ui.theme.ThemeHelper;
 import com.github.dfa.diaspora_android.ui.theme.ThemedFragment;
 import com.github.dfa.diaspora_android.util.AppLog;
 import com.github.dfa.diaspora_android.util.AppSettings;
-import android.support.v4.widget.SwipeRefreshLayout;//pull to refresh
 
 /**
  * Fragment with a webView and a ProgressBar.
@@ -94,15 +94,14 @@ public class BrowserFragment extends ThemedFragment {
         this.setRetainInstance(true);
 
         //pull to refresh
-        swipe = view.findViewById( R.id.swipe );
-        swipe.setDistanceToTriggerSync( 2000 );
-        swipe.setOnRefreshListener( () -> reloadUrl() );
-        if (appSettings.isSwipeRefreshEnabled()){
-            swipe.setEnabled( true );
-
+        swipe = view.findViewById(R.id.swipe);
+        swipe.setDistanceToTriggerSync(2000);
+        swipe.setOnRefreshListener(() -> reloadUrl());
+        if (appSettings.isSwipeRefreshEnabled()) {
+            swipe.setEnabled(true);
         } else {
-            swipe.setRefreshing( false );
-            swipe.setEnabled( false );
+            swipe.setRefreshing(false);
+            swipe.setEnabled(false);
             return;
         }
     }
