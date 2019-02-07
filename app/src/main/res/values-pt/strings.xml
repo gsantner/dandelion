@@ -98,12 +98,14 @@
     <string name="language">Idioma</string>
     <string name="system_language">Idioma do sistema</string>
     <!-- Font size -->
+    <string name="control_textsize_of_webview">Controlar tamanho do texto na WebView</string>
     <string name="font_size">Tamanho do tipo de letra</string>
     <string name="normal">Normal</string>
     <string name="large">Grande</string>
     <string name="huge">Enorme</string>
     <!-- Load images -->
     <string name="load_images">Carregar imagens</string>
+    <string name="toggle_image_loading_to_save_mobile_data">Alternar carregamento de imagens para poupar dados móveis</string>
     <!-- Screen rotation -->
     <string name="screen_rotation">Rotação do ecrã</string>
     <string name="control_screen_rotation">Controlar automaticamente a rotação do ecrã</string>
@@ -123,6 +125,7 @@
     <string name="manage_your_contact_list">Gerir lista de contactos</string>
     <string name="change_account">Mudar de conta</string>
     <string name="clear_cache">Limpar cache</string>
+    <string name="clear_webview_cache">Limpar cache WebView</string>
     <!-- More -->
     <string name="miscellaneous">Diversos</string>
     <string name="block_advertisments">Bloquear anúncios</string>
