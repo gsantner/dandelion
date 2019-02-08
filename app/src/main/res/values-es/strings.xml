@@ -200,4 +200,7 @@
     <string name="tell_me_more">Saber más</string>
     <string name="enable_to_open_youtube_links_on_external_app">Habilitar para abrir enlaces de Youtube en aplicaciones externas</string>
     <string name="youtube_links">Enlaces de YouTube</string>
+    <string name="change_the_theme_of_your_account">Cambiar el tema de tu cuenta</string>
+    <string name="pull_to_refresh">Tirar para refrescar</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">Deslizar hacia abajo la parte superior de la página para refrescar.\n Necesita reiniciar la aplicación para que los cambios surtan efecto.</string>
 </resources>
