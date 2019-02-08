@@ -206,4 +206,7 @@
     <string name="tell_me_more">Dimmi di più</string>
     <string name="enable_to_open_youtube_links_on_external_app">Abilita l\'apertura dei link Youtube su app esterna</string>
     <string name="youtube_links">Links Youtube</string>
+    <string name="change_the_theme_of_your_account">Cambia il tema del tuo account</string>
+    <string name="pull_to_refresh">Trascina per aggiornare</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">Trascina dall\'alto al basso per aggiornare la pagina.\nDevi riavviare l\'app affinchè le modifiche abbiano effetto.</string>
 </resources>
