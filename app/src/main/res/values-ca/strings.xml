@@ -202,4 +202,7 @@ diaspora*. Si voleu contribuir, endavant! Actualment som un equip molt petit, de
     <string name="tell_me_more">Expliqueu-me més</string>
     <string name="enable_to_open_youtube_links_on_external_app">Activeu-ho per obrir enllaços de Youtube en aplicacions externes</string>
     <string name="youtube_links">Enllaços de YouTube</string>
+    <string name="change_the_theme_of_your_account">Canvia el tema del vostre compte</string>
+    <string name="pull_to_refresh">Feu lliscar per actualitzar</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">S\'està lliscant cap avall a la part superior de la pàgina per actualitzar.\nCal que reinicieu l\'aplicació perquè els canvis tinguin efecte.</string>
 </resources>
