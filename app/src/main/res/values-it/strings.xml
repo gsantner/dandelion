@@ -204,4 +204,6 @@
     <string name="the_following_libraries_are_used">Sono utilizzate le seguenti librerie:</string>
     <string name="inspiration_from_leafpic__appspecific">Abbiamo preso ispirazione e parte del codice da LeafPic. Dagli un\'occhiata, anch\'esso è software libero!</string>
     <string name="tell_me_more">Dimmi di più</string>
+    <string name="enable_to_open_youtube_links_on_external_app">Abilita l\'apertura dei link Youtube su app esterna</string>
+    <string name="youtube_links">Links Youtube</string>
 </resources>
