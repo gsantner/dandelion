@@ -63,6 +63,7 @@
     <!-- Permissions -->
     <string name="permission_granted_try_again">已授予权限。请重试。</string>
     <string name="protocol">协议</string>
+    <string name="missing_value">缺失值</string>
     <string name="hide_statusbar">隐藏状态栏</string>
     <string name="show_title">显示标题</string>
     <!-- Operability -->
@@ -72,6 +73,13 @@
     <!-- Navigiation Slider -->
     <string name="general">通用</string>
     <!-- Themes -->
+    <string name="theme_and_colors">主题及颜色</string>
+    <string name="control_which_colors_are_used_in_app">控制应用所使用的颜色</string>
+    <string name="primary_colors">主颜色</string>
+    <string name="colors_of_toolbars">工具栏颜色</string>
+    <string name="accent_color">强调色</string>
+    <string name="color_of_progressbar">进度条颜色</string>
+    <string name="amoled_mode">AMOLED 模式</string>
     <!-- Notifications dropdown -->
     <string name="language_change_restart_description">更改语言（重启应用后生效）</string>
     <string name="language">语言</string>
