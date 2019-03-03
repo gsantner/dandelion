@@ -4,17 +4,65 @@
     <!-- Application -->
     <string name="open_navdrawer">打开导航栏</string>
     <string name="close_navdrawer">隐藏导航栏</string>
+    <string name="reload">刷新</string>
     <!-- Common Words -->
     <string name="settings">设置</string>
+    <string name="notifications">通知</string>
+    <string name="conversations">对话</string>
+    <string name="stream">串流</string>
+    <string name="profile">资料</string>
+    <string name="activities">活动</string>
+    <string name="liked">已赞</string>
+    <string name="commented">已评论</string>
+    <string name="mentions">提及</string>
+    <string name="public_">公共</string>
     <string name="search">搜索</string>
+    <string name="contacts">联系人</string>
     <string name="changelog">更新日志</string>
+    <string name="statistics">统计</string>
     <!-- Notifications dropdown menu -->
+    <string name="all_notifications">全部通知</string>
+    <string name="also_commented">也评论了</string>
+    <string name="comment_on_post">评论此文</string>
+    <string name="deleteme_____1">已赞</string>
+    <string name="mentioned">已提及</string>
+    <string name="reshared">已转发</string>
+    <string name="started_sharing">已开始分享</string>
     <!-- Pod Activity -->
+    <string name="confirmation">确认</string>
+    <string name="do_you_want_to_exit">您是否想要退出？</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <string name="more">更多</string>
+    <string name="help_license">关于 | 帮助</string>
+    <string name="followed_tags">关注的标签</string>
+    <string name="public_activities">公共活动</string>
+    <string name="reports">反馈</string>
+    <string name="share_link_as_text">以文本形式共享链接</string>
+    <string name="share_screenshot_of_webpage">分享网页截图</string>
+    <string name="take_screenshot_of_webpage">网页截图</string>
+    <string name="saving_image_to">保存图像至</string>
+    <string name="saving_screenshot_as">保存截图为:</string>
+    <string name="link_adress_copied">已复制链接地址</string>
+    <string name="new_post">新文章</string>
+    <string name="go_to_top">返回顶部</string>
+    <string name="search_by_tags_or_persons__appspecific">按标签或人物搜索</string>
+    <string name="exit_app">退出应用</string>
+    <string name="toggle_mobile_desktop_view">切换移动版/桌面版视图</string>
     <string name="share_dotdotdot">共享。。。</string>
+    <string name="by_tags">按标签搜索</string>
+    <string name="by_people">按人物搜索</string>
+    <string name="please_add_a_name">请添加姓名</string>
+    <string name="share_link_address">分享链接地址</string>
+    <string name="save_image">保存图像</string>
+    <string name="share_image">分享图像</string>
+    <string name="open_in_external_browser">在外部浏览器中打开</string>
+    <string name="copy_link_adress_to_clipboard">复制链接地址至剪切板</string>
+    <string name="copy_image_address_to_clipboard">复制图像地址至剪切板</string>
     <!-- More from MainActivity -->
+    <string name="unable_to_load_image">无法载入图像</string>
     <!-- Permissions -->
+    <string name="permission_granted_try_again">已授予权限。请重试。</string>
+    <string name="protocol">协议</string>
     <string name="hide_statusbar">隐藏状态栏</string>
     <string name="show_title">显示标题</string>
     <!-- Operability -->
