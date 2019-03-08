@@ -1,5 +1,6 @@
-### v1.2.5
-Make youtube links open external/in youtube app (optional)  
+### v1.3.0
+- Add option to open youtube links external/in YouTube app (optional)  
+- Pull to refresh  
 
 ### v1.2.3
 **Improved:**  
