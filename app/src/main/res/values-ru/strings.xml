@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Открыть панель навигации</string>
     <string name="close_navdrawer">Закрыть панель навигации</string>
     <string name="reload">Обновить</string>
+    <string name="close">Закрыть</string>
+    <string name="cancel">Отмена</string>
     <!-- Common Words -->
     <string name="settings">Настройки</string>
     <string name="notifications">Уведомления</string>
@@ -200,5 +202,8 @@
     <string name="tell_me_more">Расскажите мне больше</string>
     <string name="enable_to_open_youtube_links_on_external_app">Открывать ссылки на Youtube во внешних приложениях</string>
     <string name="youtube_links">Ссылки на Youtube</string>
+    <string name="change_the_theme_of_your_account">Изменить тему вашей учетной записи</string>
+    <string name="pull_to_refresh">Потяните для обновления</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">Потяните вниз, чтобы обновить страницу.\nВам нужно перезапустить приложение, чтобы изменения вступили в силу.</string>
     <string name="donate">Поддержать проект</string>
 </resources>
