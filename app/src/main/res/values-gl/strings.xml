@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Abrir cadro de navegación</string>
     <string name="close_navdrawer">Pechar cadro de navegación</string>
     <string name="reload">Refrescar</string>
+    <string name="close">Pechar</string>
+    <string name="cancel">Cancelar</string>
     <!-- Common Words -->
     <string name="settings">Axustes</string>
     <string name="notifications">Notificacións</string>
@@ -206,4 +208,5 @@
     <string name="change_the_theme_of_your_account">Cambiar o decorado da súa conta</string>
     <string name="pull_to_refresh">Tire para actualizar</string>
     <string name="pulling_down_on_top_of_page_to_refresh">Tirar hacia abaixo na parte superior da páxina.\nDebe reiniciar a app para que os cambios se apliquen.</string>
+    <string name="donate">Doar</string>
 </resources>
