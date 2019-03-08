@@ -204,4 +204,5 @@
     <string name="the_following_libraries_are_used">Використовуються такі бібліотеки:</string>
     <string name="inspiration_from_leafpic__appspecific">Ми взяли трохи натхнення і коду з LeafPic. Це також вільне програмне забезпечення, тож користуйтеся!</string>
     <string name="tell_me_more">Хочу знати більше</string>
+    <string name="donate">Пожертвувати</string>
 </resources>
