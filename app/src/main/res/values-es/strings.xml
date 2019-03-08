@@ -6,6 +6,7 @@
     <string name="close_navdrawer">Cerrar el panel de navegación</string>
     <string name="reload">Refrescar</string>
     <string name="close">Cerrar</string>
+    <string name="cancel">Cancelar</string>
     <!-- Common Words -->
     <string name="settings">Ajustes</string>
     <string name="notifications">Notificaciones</string>
