@@ -3,6 +3,7 @@
 <resources>
     <!-- Application -->
     <string name="reload">വീണ്ടും ലോഡ് ചെയ്യുക</string>
+    <string name="cancel">റദ്ദാക്കുക</string>
     <!-- Common Words -->
     <string name="settings">ക്രമീകരണങ്ങൾ</string>
     <string name="notifications">അറിയിപ്പുകൾ</string>
