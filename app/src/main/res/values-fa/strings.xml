@@ -33,4 +33,5 @@
     <string name="about">درباره مارکور</string>
     <!-- License & help (large amount of text) -->
     <string name="contributors">همکاران</string>
+    <string name="donate">کمک مالی</string>
 </resources>
