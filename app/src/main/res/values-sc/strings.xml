@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Aberi su pannellu de nàvigu</string>
     <string name="close_navdrawer">Serra su pannellu de nàvigu</string>
     <string name="reload">Torra a carrigare</string>
+    <string name="close">Serra</string>
+    <string name="cancel">Annulla</string>
     <!-- Common Words -->
     <string name="settings">Impostatziones</string>
     <string name="notifications">Notìficas</string>
@@ -203,4 +205,9 @@
     <string name="tell_me_more">Àteras informatziones</string>
     <string name="enable_to_open_youtube_links_on_external_app">Abìlita pro abèrrere sos ligàmenes de Youtube in un\'aplicatzione esterna</string>
     <string name="youtube_links">Ligàmenes de Youtube</string>
+    <string name="change_the_theme_of_your_account">Muda su tema de su contu tuo</string>
+    <string name="pull_to_refresh">Tira cara a bassu pro annoare</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">Tira cara a bassu pro annoare sa pàgina.\nDepes torrare a allùghere s\'aplicatzione pro fàghere in modu chi sas modìficas tèngiant efetu.</string>
+    <string name="donate">Dona</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">T\'agradat custu progetu? Cheres chi bèngiat megioradu e chi sos problemas bèngiant isortos?\n\nS\'isvilupu de aplicatziones e s\'iscritura de publicatziones curreladas in sos blogs pigat unu muntone de tempus! Si cheres agiudare, pro fàghere in modu chi su progetu potzat sighire, pro praghere piga in cunsìderu s\'idea de fàghere una donatzione, fintzas si minore!\n\nCustu progetu est isvilupadu in su tempus lìberu, totu de badas e chene annùntzios publitzitàrios!</string>
 </resources>

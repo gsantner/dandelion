@@ -5,6 +5,8 @@
     <string name="open_navdrawer">ナビゲーションドロワーを開く</string>
     <string name="close_navdrawer">ナビゲーションドロワーを閉じる</string>
     <string name="reload">再読み込み</string>
+    <string name="close">閉じる</string>
+    <string name="cancel">キャンセル</string>
     <!-- Common Words -->
     <string name="settings">設定</string>
     <string name="notifications">通知</string>
@@ -200,4 +202,9 @@
     <string name="tell_me_more">さらに詳しく</string>
     <string name="enable_to_open_youtube_links_on_external_app">外部アプリで Youtube のリンクを開くことができます</string>
     <string name="youtube_links">Youtube のリンク</string>
+    <string name="change_the_theme_of_your_account">アカウントのテーマを変更</string>
+    <string name="pull_to_refresh">引き下げて更新</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">ページの上から下に引き下げて更新します。\n変更を反映するため、アプリを再起動する必要があります。</string>
+    <string name="donate">寄付</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">このプロジェクトを気に入っていただけましたか? 改善したい、あるいは問題を修正したいですか?\n\nアプリの開発や、関連するブログの記事を書くに多くの時間がかかります! プロジェクトを進めるために、支援をしていただける場合は、少しの寄付をご検討ください!\n\nこのプロジェクトは余暇に開発していて、完全に無料で、広告はありません!</string>
 </resources>
