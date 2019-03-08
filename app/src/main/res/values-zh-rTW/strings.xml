@@ -201,4 +201,5 @@
     <string name="tell_me_more">再多說一些</string>
     <string name="enable_to_open_youtube_links_on_external_app">使用其他應用程式來開啟 Youtube 連結</string>
     <string name="youtube_links">Youtube 連結</string>
+    <string name="donate">贊助</string>
 </resources>
