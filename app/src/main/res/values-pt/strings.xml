@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Abrir menu de navegação</string>
     <string name="close_navdrawer">Fechar menu de navegação</string>
     <string name="reload">Recarregar</string>
+    <string name="close">Fechar</string>
+    <string name="cancel">Cancelar</string>
     <!-- Common Words -->
     <string name="settings">Definições</string>
     <string name="notifications">Notificações</string>
@@ -161,4 +163,9 @@
     <string name="tell_me_more">Saber mais</string>
     <string name="enable_to_open_youtube_links_on_external_app">Ative para abrir as ligações YouTube na aplicação externa</string>
     <string name="youtube_links">Ligações YouTube</string>
+    <string name="change_the_theme_of_your_account">Altera o tema da sua conta</string>
+    <string name="pull_to_refresh">Puxar para atualizar</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">Deslize de cima para baixo para recarregar.\nTem que reiniciar a aplicação para aplicar as alterações.</string>
+    <string name="donate">Donativos</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">Gosta deste projeto? Deseja ajudar a melhorar a aplicação e a corrigir erros?\n\nO desenvolvimento de aplicações custa-me imenso tempo! Se quiser ajudar a manter o projeto, por favor considere a hipótese de um donativo!\n\nEsta aplicação é desenvolvida durante o meu tempo livre, é completamente livre e não tem anúncios!</string>
 </resources>
