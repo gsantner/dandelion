@@ -200,4 +200,5 @@
     <string name="tell_me_more">Расскажите мне больше</string>
     <string name="enable_to_open_youtube_links_on_external_app">Открывать ссылки на Youtube во внешних приложениях</string>
     <string name="youtube_links">Ссылки на Youtube</string>
+    <string name="donate">Поддержать проект</string>
 </resources>
