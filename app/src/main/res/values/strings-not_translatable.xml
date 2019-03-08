@@ -13,6 +13,9 @@
     <string name="tor" translatable="false">Tor</string>
     <string name="HTTP" translatable="false">HTTP</string>
 
+    <string name="donate_" translatable="false">@string/donate</string>
+    <string name="app_donate_url" translatable="false"><![CDATA[https://gsantner.net/supportme/?project=markor&source=inapp_supdon]]></string>
+
     <string name="action_compose_new_post" translatable="false">@string/new_post</string>
     <string name="search_alert_title" translatable="false">@string/search</string>
     <string name="http" translatable="false">http</string>

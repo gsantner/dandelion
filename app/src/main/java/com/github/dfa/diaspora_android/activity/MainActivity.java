@@ -90,6 +90,7 @@ import com.github.dfa.diaspora_android.web.WebHelper;
 import com.github.dfa.diaspora_android.web.custom_tab.CustomTabActivityHelper;
 
 import net.gsantner.opoc.format.markdown.SimpleMarkdownParser;
+import net.gsantner.opoc.util.AndroidSupportMeWrapper;
 
 import java.io.IOException;
 
@@ -663,6 +664,7 @@ public class MainActivity extends ThemedActivity
     protected void onResume() {
         AppLog.v(this, "onResume()");
         super.onResume();
+        new AndroidSupportMeWrapper(this).mainOnResume();
         AppLog.v(this, "Register BroadcastReceivers");
         LocalBroadcastManager.getInstance(this).registerReceiver(brSetTitle, new IntentFilter(ACTION_UPDATE_TITLE_FROM_URL));
         LocalBroadcastManager.getInstance(this).registerReceiver(brOpenExternalLink, new IntentFilter(ACTION_OPEN_EXTERNAL_URL));
