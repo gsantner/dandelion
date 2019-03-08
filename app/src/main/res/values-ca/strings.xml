@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Obre el calaix de navegació</string>
     <string name="close_navdrawer">Tanca el calaix de navegació</string>
     <string name="reload">Recarrega</string>
+    <string name="close">Tanca</string>
+    <string name="cancel">Cancel·la</string>
     <!-- Common Words -->
     <string name="settings">Configuració</string>
     <string name="notifications">Notificacions</string>
@@ -202,4 +204,9 @@ diaspora*. Si voleu contribuir, endavant! Actualment som un equip molt petit, de
     <string name="tell_me_more">Expliqueu-me més</string>
     <string name="enable_to_open_youtube_links_on_external_app">Activeu-ho per obrir enllaços de Youtube en aplicacions externes</string>
     <string name="youtube_links">Enllaços de YouTube</string>
+    <string name="change_the_theme_of_your_account">Canvia el tema del vostre compte</string>
+    <string name="pull_to_refresh">Feu lliscar per actualitzar</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">S\'està lliscant cap avall a la part superior de la pàgina per actualitzar.\nCal que reinicieu l\'aplicació perquè els canvis tinguin efecte.</string>
+    <string name="donate">Fes un donatiu</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">Us agrada aquest projecte? Voleu que encara sigui millor i es solucionin els problemes?\n\nDesenvolupar aplicacions i escriure publicacions relacionades als blogs costa molt de temps! Si voleu ajudar perquè el projecte pugui continuar, considereu aportar una petita donació!\n\nAquest projecte es desenvolupa durant el temps lliure, completament gratis i sense publicitat!</string>
 </resources>
