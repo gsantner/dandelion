@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Otevøít navigaèní panel</string>
     <string name="close_navdrawer">Zavøít navigaèní panel</string>
     <string name="reload">Aktualizovat</string>
+    <string name="close">Konec</string>
+    <string name="cancel">Rakovina</string>
     <!-- Common Words -->
     <string name="settings">Nastavení</string>
     <string name="notifications">Oznámení</string>
@@ -20,6 +22,7 @@
     <string name="search">Hledat</string>
     <string name="contacts">Kontakty</string>
     <string name="changelog">Seznam změn</string>
+    <string name="statistics">Statistika</string>
     <!-- Notifications dropdown menu -->
     <string name="all_notifications">Všechna oznámení</string>
     <string name="also_commented">Také komentováno</string>
@@ -29,21 +32,37 @@
     <string name="reshared">Sdílen</string>
     <string name="started_sharing">Začalo sdílení</string>
     <!-- Pod Activity -->
+    <string name="could_not_retrieve_list_of_pods__appspecific">Error: Nemohl získat seznam podů!</string>
+    <string name="sorry_need_to_be_connected_to_internet">Omlouvám se, musíte být připojeni k internetu, abyste mohli pokračovat dál</string>
     <string name="confirmation">Potvrzení</string>
     <string name="do_you_want_to_exit">Chceš opustit aplikaci?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <string name="more">Více</string>
     <string name="help_license">O aplikaci | Pomoc</string>
+    <string name="followed_tags">Zlaté rány</string>
     <string name="public_activities">Veřejné aktivity</string>
     <string name="reports">Nahlášení</string>
+    <string name="share_link_as_text">Sdílejte odkaz jako text</string>
+    <string name="share_screenshot_of_webpage">Šablony obrázku webových stránek</string>
+    <string name="take_screenshot_of_webpage">Podívejte se na snímek webové stránky</string>
+    <string name="saving_image_to">Uložit obrázek</string>
+    <string name="saving_screenshot_as">Uložit snímky jako:</string>
+    <string name="link_adress_copied">Zapnutá adresa …</string>
     <string name="new_post">Nový příspěvek</string>
     <string name="go_to_top">Jít nahoru</string>
+    <string name="search_by_tags_or_persons__appspecific">Hledat štítky nebo osoby</string>
     <string name="exit_app">Ukončit aplikaci</string>
+    <string name="toggle_mobile_desktop_view">Pohled na pracovní plochu</string>
     <string name="share_dotdotdot">Sdílet…</string>
+    <string name="by_tags">tagy</string>
+    <string name="by_people">lidmi</string>
+    <string name="please_add_a_name">Prosím přidejte jméno</string>
+    <string name="share_link_address">Sdílejte adresu odkazu</string>
     <string name="save_image">Uložit obrázek</string>
     <string name="share_image">Sdílet obrázek</string>
     <string name="open_in_external_browser">Otevřít v externím prohlížeči…</string>
     <string name="copy_link_adress_to_clipboard">Zkopírovat link do schránky</string>
+    <string name="copy_image_address_to_clipboard">Kopírovat adresu obrázku do schránky</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Nemohl být načten obrázek</string>
     <!-- Permissions -->
@@ -56,7 +75,11 @@
     <string name="pod_address">Adresa Podu</string>
     <string name="missing_value">Chybějící hodnota</string>
     <string name="jump_to_last_visited_page_in_stream__appspecific">Zavolat poslední navštívenou stránku ve streamu?</string>
+    <string name="hide_statusbar_in_mainview">Hide bar at the main view at the view.</string>
     <string name="hide_statusbar">Schovat statusbar</string>
+    <string name="show_title_in_main_view">Zobrazit titul v hlavním pohledu</string>
+    <string name="show_title">Zobrazit titul</string>
+    <string name="launcher_shortcut">Launcher shortcut</string>
     <!-- Operability -->
     <string name="top_toolbar_loads_stream__appsp">Horní nástrojová lišta načítá stream</string>
     <string name="click_empty_space_top_toolbar_load_stream__appspecific">Pro otevření streamu klikni na práznou plochu v horní nástrojové liště</string>
@@ -67,14 +90,20 @@
     <string name="operability">Obsluha</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="navigation_drawer">Navigační šprýmař</string>
+    <string name="control_visibility_of_entries_nav_drawer">Ovládejte viditelnost položek v navigačním šuplíku</string>
     <string name="user">Uživatel</string>
     <string name="general">Obecné</string>
     <string name="admin">Administrátor</string>
     <!-- Themes -->
+    <string name="theme_and_colors">Téma a zmatek</string>
+    <string name="control_which_colors_are_used_in_app">Ovládání, které barvy jsou používány v průběhu aplikace</string>
     <string name="primary_colors">Primární barva</string>
     <string name="colors_of_toolbars">Barva nástrojové lišty</string>
     <string name="accent_color">Akcentová barva</string>
     <string name="color_of_progressbar">Barva detailů</string>
+    <string name="amoled_mode">AMOLED model</string>
+    <string name="amoled_mode_description__app_specific">Pro procházení barvy s AMOLED zobrazujeme příjemnou černou barvu v mnoha částech aplikace.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Rozšířené oznámení</string>
     <string name="extendend_notifications_bell_description__appspecific">Rozšiř oznámení zvonku pomocí výběrového menu, které zobrazuje kategorie oznámení</string>
@@ -89,6 +118,7 @@
     <string name="huge">Obrovské</string>
     <!-- Load images -->
     <string name="load_images">Načítej obrázky</string>
+    <string name="toggle_image_loading_to_save_mobile_data">Útok obrázku na např. uložte mobilní data</string>
     <!-- Screen rotation -->
     <string name="screen_rotation">Rotace obrazovky</string>
     <string name="control_screen_rotation">Kontroluj automatickou rotaci</string>
@@ -104,15 +134,31 @@
     <string name="proxy_dandelion_traffic__appspecific">Veď datovou cestu dandelion*, aby se obešla brána Firewall.\nMůže být vyžadován restart. Toto nemusí fungovat na všech přístrojích.</string>
     <string name="host">Host</string>
     <string name="port">Port</string>
+    <string name="app_needs_restart_to_disable_proxy_usage">Při restartu musíte zakázat používání proxy serveru</string>
+    <string name="orbot_proxy_preset_loaded">načtený panel proxy</string>
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <string name="personal_settings">Osobní nastavení</string>
+    <string name="open_diaspora_account_settings__appspecific">Otevřte nastavení účtu diaspory</string>
+    <string name="manage_your_contact_list">Spravte Váš seznam kontaktů</string>
+    <string name="manage_hashtags">Řídit Hashtagy</string>
+    <string name="unfollow_already_followed_hashtags__appspecific">Unfollow již následoval hashts</string>
     <string name="change_account">Změna konta</string>
+    <string name="loug_warning_description__appspecific">Erase local session data and switch to another diaspora* pod/účet</string>
+    <string name="logout_warning_description">Chcete změnit svůj účet?</string>
     <string name="clear_cache">Vyprázdnit cache</string>
+    <string name="clear_webview_cache">Smazat cache WebView</string>
+    <string name="intellihide_toolbars__appspecific">Automaticky skryjí horní a dolní lišty při každém hodnocení.</string>
+    <string name="intellihide_toolbars">Lity rozumových nástrojů</string>
+    <string name="append_shared_by_notice">Konečný společný přístup</string>
     <string name="append_shared_by_notice__appspecific">Přidat referenci této aplikace ke sdílenému textu: [via #dandelion]</string>
     <!-- More -->
     <string name="miscellaneous">Různé</string>
     <string name="full_reset">Celkový reset</string>
+    <string name="wipe_settings_and_logout">Podařilo se vám smazat všechna nastavení související s aplikací a přihlásit se ze všech účtů.</string>
+    <string name="wipe_settings_warning__appspecific">Toto přepíše všechna změněná nastavení aplikace do výchozích hodnot a vymaže vás ze všech podů.</string>
+    <string name="enable_basic_adblocker_description">Uživatelné základní Adcker může být součástí např. v embedded views.</string>
+    <string name="block_advertisments">Blokové reklamy</string>
     <string name="about">Informace</string>
     <string name="license">Licence</string>
     <string name="debugging">Debugging</string>
@@ -133,16 +179,27 @@
     <string name="dandelion_is_developed_as_foss__appspecific">dandelion* je svobodný software (free as in Freedom) a řídí se myšlenkami projektu diaspora*. Pokud chceš přispívat, jen do toho! Momentálně jsme velmi malý tým, takže jsme velmi vděční za jakýkoli druh pomoci!</string>
     <string name="get_the_source">Ke zdrojovému kódu</string>
     <string name="translate_the_app">Přelož aplikaci!</string>
+    <string name="app_not_available_in_your_lang_translate_with_stringlate">Pokud si nejste jistí, že jste se rozhodli pro něco, co potřebujete?</string>
     <string name="let_me_translate">Chci překládat</string>
     <string name="give_feedback">Dej zpětnou vazbu!</string>
     <string name="dandelion_still_in_development__appspecific">dandelion* je stále ve vývoji, takže pokud máš jakékoli návrhy, neváhej nám zanechat zpětnou vazbu pomocí užití našeho bug trackeru!</string>
     <string name="report_bugs">Nahlásit chybu</string>
     <string name="spread_the_word">Řekni o aplikaci ostatním!</string>
     <string name="tell_your_friends_about_diaspora__appspecific">Řekni svým přátelům a rodině o diaspora* a #dadelion! Proč nezačít blogovat o Tvých zkušenostech? Rádi o Tobě uslyšíme!</string>
+    <string name="share_the_app">Sdílejte chuť</string>
+    <string name="hey_checkout_dandelion_tag__appspecific">Hey! Podívejte se na #dandelion! %1$s</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Vývojáři</string>
     <string name="contributors">Spolupracovníci</string>
     <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;Děkujeme!</string>
     <string name="gnu_gplv3_license">GNU GPLv3+ Licence</string>
+    <string name="show_third_party_licenses">Knihovny třetí strany</string>
+    <string name="the_following_libraries_are_used">Následující knihovny jsou využívány:</string>
+    <string name="inspiration_from_leafpic__appspecific">We took some inspiration and code from LeafPic.</string>
     <string name="tell_me_more">Řekni mi více</string>
+    <string name="enable_to_open_youtube_links_on_external_app">Umožnit otevřít Youtube odkazy na externí aplikace</string>
+    <string name="youtube_links">Youtube odkazy</string>
+    <string name="change_the_theme_of_your_account">Změňte téma vašeho účtu</string>
+    <string name="pull_to_refresh">Pull osvěžit</string>
+    <string name="donate">Krátce</string>
 </resources>
