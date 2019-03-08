@@ -68,17 +68,25 @@
     <!-- Permissions -->
     <string name="permission_denied">Permissão recusada.</string>
     <string name="permission_granted_try_again">Permissão concedida. Tente novamente.</string>
+    <string name="custom_pod">Pod personalizado</string>
+    <string name="pod_name">Nome do Pod</string>
     <string name="protocol">Protocolo</string>
+    <string name="pod_address">Endereço do Pod</string>
     <string name="missing_value">Valor em falta</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Ir para a última página visitada no fluxo?</string>
     <string name="hide_statusbar_in_mainview">Ocultar barra de estado na vista principal</string>
     <string name="hide_statusbar">Ocultar barra de estado</string>
     <string name="show_title_in_main_view">Mostrar título na vista principal</string>
     <string name="show_title">Mostrar título</string>
     <string name="launcher_shortcut">Atalho para o lançador</string>
     <!-- Operability -->
+    <string name="top_toolbar_loads_stream__appsp">A barra de ferramentas superior carrega o fluxo</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Clique em um espaço vazio na barra de ferramentas superior para abrir o fluxo</string>
     <!-- Category Titles -->
     <string name="appearance">Aparência</string>
     <string name="network">Rede</string>
+    <string name="pod_settings__appspecfic">Configurações do Pod</string>
+    <string name="operability">Operabilidade</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <string name="navigation_drawer">Controlo de navegação</string>
@@ -94,8 +102,10 @@
     <string name="accent_color">Cor secundária</string>
     <string name="color_of_progressbar">Cor da barra de progresso</string>
     <string name="amoled_mode">Modo AMOLED</string>
+    <string name="amoled_mode_description__app_specific">Substitua as cores com o AMOLED exibe preto amigável em muitas partes do aplicativo. Você precisa reiniciar para alternar esta configuração. Para navegar em diaspora* no escuro, você também precisa ativar o tema escuro, que pode ser encontrado nas configurações da sua conta pessoal diaspora*.</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notificações expandidas</string>
+    <string name="extendend_notifications_bell_description__appspecific">Estenda o sinal de notificações com um menu suspenso que mostra as categorias de notificação</string>
     <string name="language_change_restart_description">Altera o idioma da aplicação. Tem que reiniciar a aplicação para aplicar as alterações</string>
     <string name="language">Idioma</string>
     <string name="system_language">Idioma do sistema</string>
@@ -116,20 +126,38 @@
     <string name="portrait">Vertical</string>
     <string name="landscape">Horizontal</string>
     <!-- Proxy -->
+    <string name="load_tor_preset">Carregar predefinição Tor</string>
+    <string name="load_proxy_settins_for_tor">Carregar configurações de proxy para Tor (Orbot) Proxy HTTP</string>
     <string name="proxy">Proxy</string>
     <string name="enable_proxy">Ativar proxy</string>
+    <string name="proxy_dandelion_traffic__appspecific">Proxy dandelion * tráfego para contornar firewalls.\nPode ser necessário reiniciar. Isso pode não funcionar em alguns telefones.</string>
     <string name="host">Servidor</string>
     <string name="port">Porta</string>
     <string name="app_needs_restart_to_disable_proxy_usage">Tem que reiniciar a aplicação para aplicar a alteração</string>
+    <string name="orbot_proxy_preset_loaded">Predefinição de proxy Orbot carregada</string>
     <!-- Chrome custom tabs -->
+    <string name="open_external_links_with_chrome_custom_tabs_description">Abra links externos com abas personalizadas do Chrome. Chromium, Firefox ou Google Chrome precisa ser instalado para usar este recurso. \nNOTA IMPORTANTE: Guias personalizadas do Chrome não usam servidores proxy configurados!</string>
     <!-- Diaspora Settings -->
     <string name="personal_settings">Definições pessoais</string>
+    <string name="open_diaspora_account_settings__appspecific">Abra suas configurações de conta diaspora*</string>
     <string name="manage_your_contact_list">Gerir lista de contactos</string>
+    <string name="manage_hashtags">Gerenciar Hashtags</string>
+    <string name="unfollow_already_followed_hashtags__appspecific">Não seguir hashtags já seguidas</string>
     <string name="change_account">Mudar de conta</string>
+    <string name="loug_warning_description__appspecific">Apagar dados de sessão local e mudar para outro servidor/conta diaspora*</string>
+    <string name="logout_warning_description">Isto irá apagar todos os dados de cookies e sessão. Você realmente deseja alterar sua conta?</string>
     <string name="clear_cache">Limpar cache</string>
     <string name="clear_webview_cache">Limpar cache WebView</string>
+    <string name="intellihide_toolbars__appspecific">Ocultar automaticamente as barras de ferramentas superior e inferior durante a rolagem</string>
+    <string name="intellihide_toolbars">Barra Intellihide</string>
+    <string name="append_shared_by_notice">Anexar compartilhado-por-aviso</string>
+    <string name="append_shared_by_notice__appspecific">Acrescentar uma referência a este aplicativo a textos compartilhados: [via #dandelion]</string>
     <!-- More -->
     <string name="miscellaneous">Diversos</string>
+    <string name="full_reset">Resetar tudo</string>
+    <string name="wipe_settings_and_logout">Localmente limpar todas as configurações relacionadas ao aplicativo e sair de todas as contas</string>
+    <string name="wipe_settings_warning__appspecific">Isto irá redefinir todas as configurações alteradas do aplicativo para seus valores padrão e sair de todos os servidores. Suas imagens baixadas permanecerão intactas. Tem certeza que deseja continuar?</string>
+    <string name="enable_basic_adblocker_description">Habilitar o AdBlocker básico. Anúncios podem ser incluídos, por exemplo, em visualizações incorporadas</string>
     <string name="block_advertisments">Bloquear anúncios</string>
     <string name="about">Acerca</string>
     <string name="license">Licença</string>
@@ -146,12 +174,20 @@
     <string name="pod_profile_name_witharg__appspecific">Nome do perfil Pod: %1$s</string>
     <string name="pod_domain_witharg__appspecific">Domínio Pod: %1$s</string>
     <string name="debug_log_copied_to_clipboard">Dados copiados para a área de transferência</string>
+    <string name="dandelion_is_your_companion__appspecific">dandelion* é seu aplicativo companheiro para navegar pela diaspora*. Ele adiciona recursos como barras de ferramentas úteis e suporte para servidores de proxy como a Tor Network para sua experiência social.</string>
+    <string name="contribute_code">Contribua com o código!</string>
+    <string name="dandelion_is_developed_as_foss__appspecific">dandelion* é desenvolvido gratuitamente como na Liberdade e segue as ideias do projeto diaspora*. Se você quiser contribuir, vá em frente! Atualmente somos uma equipe muito pequena, então nós apreciamos muito qualquer tipo de ajuda!</string>
     <string name="get_the_source">Obter o código fonte</string>
     <string name="translate_the_app">Traduzir a aplicação!</string>
+    <string name="app_not_available_in_your_lang_translate_with_stringlate">O aplicativo não está disponível em seu idioma? Você pode alterar isso! Por que você não nos ajuda traduzindo-lo? Nós usamos Stringlate para permitir que alguém traduza o aplicativo.</string>
     <string name="let_me_translate">Quero participar</string>
+    <string name="give_feedback">Dar Feedback!</string>
+    <string name="dandelion_still_in_development__appspecific">dandelion* ainda está em desenvolvimento, então se você tiver sugestões ou algum tipo de feedback, por favor, use nosso bug tracker para nos informar!</string>
     <string name="report_bugs">Reportar erros</string>
     <string name="spread_the_word">Passe a palavra!</string>
+    <string name="tell_your_friends_about_diaspora__appspecific">Conte aos seus amigos e familiares sobre diaspora* e #dandelion! Por que você não blog sobre suas experiências? Nós adoraríamos ouvir de você!</string>
     <string name="share_the_app">Partilhar plicação</string>
+    <string name="hey_checkout_dandelion_tag__appspecific">Ei! Confira #dandelion! %1$s</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Desenvolvimento</string>
     <string name="this_app_is_currently_developed_and_maintained_by_witharg">Esta aplicação está a ser desenvolvida e mantida por &lt;br&gt;&lt;br&gt;%1$s</string>
@@ -160,6 +196,7 @@
     <string name="gnu_gplv3_license">Licença GNU GPLv3+</string>
     <string name="show_third_party_licenses">Bibliotecas de terceiros</string>
     <string name="the_following_libraries_are_used">Utilizamos as seguintes bibliotecas:</string>
+    <string name="inspiration_from_leafpic__appspecific">Demos alguma inspiração e código do LeafPic. Vá conferir, é também software livre!</string>
     <string name="tell_me_more">Saber mais</string>
     <string name="enable_to_open_youtube_links_on_external_app">Ative para abrir as ligações YouTube na aplicação externa</string>
     <string name="youtube_links">Ligações YouTube</string>
