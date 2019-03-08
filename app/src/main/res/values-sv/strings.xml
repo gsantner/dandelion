@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Stäng navigeringsmenyn</string>
     <string name="close_navdrawer">Stäng navigeringslådan</string>
     <string name="reload">Ladda om</string>
+    <string name="close">Avsluta</string>
+    <string name="cancel">Avbryt</string>
     <!-- Common Words -->
     <string name="settings">Inställningar</string>
     <string name="notifications">Notiser</string>
@@ -204,4 +206,6 @@
     <string name="the_following_libraries_are_used">Följande bibliotek används:</string>
     <string name="inspiration_from_leafpic__appspecific">Vi hämtade inspiration och kod från LeafPic. Kika på det, det är också fri programvara!</string>
     <string name="tell_me_more">Berätta mer</string>
+    <string name="donate">Donera</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">Gillar du detta projektet? Vill du att det förbättras och att buggar åtgärdas snabbt?\n\nAtt utveckla appar och skriva relaterade blogginlägg tar mycket tid! Om du vill hjälpa till så att projektet kan fortgå så kan du överväga att ge en liten donation!\n\nDetta projektet utvecklas av volontärer på fritiden och är helt utan reklam!</string>
 </resources>

@@ -4,17 +4,68 @@
     <!-- Application -->
     <string name="open_navdrawer">打开导航栏</string>
     <string name="close_navdrawer">隐藏导航栏</string>
+    <string name="reload">刷新</string>
+    <string name="close">关闭</string>
+    <string name="cancel">取消</string>
     <!-- Common Words -->
     <string name="settings">设置</string>
+    <string name="notifications">通知</string>
+    <string name="conversations">对话</string>
+    <string name="stream">串流</string>
+    <string name="profile">资料</string>
+    <string name="activities">活动</string>
+    <string name="liked">已赞</string>
+    <string name="commented">已评论</string>
+    <string name="mentions">提及</string>
+    <string name="public_">公共</string>
     <string name="search">搜索</string>
+    <string name="contacts">联系人</string>
     <string name="changelog">更新日志</string>
+    <string name="statistics">统计</string>
     <!-- Notifications dropdown menu -->
+    <string name="all_notifications">全部通知</string>
+    <string name="also_commented">也评论了</string>
+    <string name="comment_on_post">评论此文</string>
+    <string name="deleteme_____1">已赞</string>
+    <string name="mentioned">已提及</string>
+    <string name="reshared">已转发</string>
+    <string name="started_sharing">已开始分享</string>
     <!-- Pod Activity -->
+    <string name="confirmation">确认</string>
+    <string name="do_you_want_to_exit">您是否想要退出？</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <string name="more">更多</string>
+    <string name="help_license">关于 | 帮助</string>
+    <string name="followed_tags">关注的标签</string>
+    <string name="public_activities">公共活动</string>
+    <string name="reports">反馈</string>
+    <string name="share_link_as_text">以文本形式共享链接</string>
+    <string name="share_screenshot_of_webpage">分享网页截图</string>
+    <string name="take_screenshot_of_webpage">网页截图</string>
+    <string name="saving_image_to">保存图像至</string>
+    <string name="saving_screenshot_as">保存截图为:</string>
+    <string name="link_adress_copied">已复制链接地址</string>
+    <string name="new_post">新文章</string>
+    <string name="go_to_top">返回顶部</string>
+    <string name="search_by_tags_or_persons__appspecific">按标签或人物搜索</string>
+    <string name="exit_app">退出应用</string>
+    <string name="toggle_mobile_desktop_view">切换移动版/桌面版视图</string>
     <string name="share_dotdotdot">共享。。。</string>
+    <string name="by_tags">按标签搜索</string>
+    <string name="by_people">按人物搜索</string>
+    <string name="please_add_a_name">请添加姓名</string>
+    <string name="share_link_address">分享链接地址</string>
+    <string name="save_image">保存图像</string>
+    <string name="share_image">分享图像</string>
+    <string name="open_in_external_browser">在外部浏览器中打开</string>
+    <string name="copy_link_adress_to_clipboard">复制链接地址至剪切板</string>
+    <string name="copy_image_address_to_clipboard">复制图像地址至剪切板</string>
     <!-- More from MainActivity -->
+    <string name="unable_to_load_image">无法载入图像</string>
     <!-- Permissions -->
+    <string name="permission_granted_try_again">已授予权限。请重试。</string>
+    <string name="protocol">协议</string>
+    <string name="missing_value">缺失值</string>
     <string name="hide_statusbar">隐藏状态栏</string>
     <string name="show_title">显示标题</string>
     <!-- Operability -->
@@ -24,6 +75,13 @@
     <!-- Navigiation Slider -->
     <string name="general">通用</string>
     <!-- Themes -->
+    <string name="theme_and_colors">主题及颜色</string>
+    <string name="control_which_colors_are_used_in_app">控制应用所使用的颜色</string>
+    <string name="primary_colors">主颜色</string>
+    <string name="colors_of_toolbars">工具栏颜色</string>
+    <string name="accent_color">强调色</string>
+    <string name="color_of_progressbar">进度条颜色</string>
+    <string name="amoled_mode">AMOLED 模式</string>
     <!-- Notifications dropdown -->
     <string name="language_change_restart_description">更改语言（重启应用后生效）</string>
     <string name="language">语言</string>
@@ -41,4 +99,6 @@
     <string name="license">许可</string>
     <!-- License & help (large amount of text) -->
     <string name="contributors">贡献者</string>
+    <string name="donate">捐赠</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">你喜欢这个项目吗？你想要它得到改善并解决问题吗？\n\n开发应用并撰写相关博客文章需要花费大量时间！如果你想要帮助项目继续进行，请考虑小额捐赠！\n\n这个项目是在闲暇时间开发的，完全免费且没有任何广告！</string>
 </resources>

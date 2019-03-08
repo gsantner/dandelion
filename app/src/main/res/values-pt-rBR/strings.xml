@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Abra o painel de navegação</string>
     <string name="close_navdrawer">Fechar painel de navegação</string>
     <string name="reload">Atualizar</string>
+    <string name="close">Fechar</string>
+    <string name="cancel">Cancelar</string>
     <!-- Common Words -->
     <string name="settings">Configurações</string>
     <string name="notifications">Notificações</string>
@@ -173,4 +175,6 @@
     <string name="show_third_party_licenses">Bibliotecas de Terceiros</string>
     <string name="the_following_libraries_are_used">São usadas as seguintes bibliotecas:</string>
     <string name="tell_me_more">Conte-me mais</string>
+    <string name="donate">Doar</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">Você gosta deste projeto? Você quer que ele fica melhor e com problemas corrigidos?\n\nDesenvolver aplicativos e escrever postagens relacionado em blog custa muito tempo! Se você quiser ajudar na continuação do projeto, por favor considere uma pequena doação!\n\nEsse projeto é desenvolvido durante o tempo de lazer, totalmente gratuito e sem propagandas!</string>
 </resources>

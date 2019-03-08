@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Gezinme çekmecesini aç</string>
     <string name="close_navdrawer">Gezinme çekmecesini kapat</string>
     <string name="reload">Yeniden Yükle</string>
+    <string name="close">Kapat</string>
+    <string name="cancel">İptal</string>
     <!-- Common Words -->
     <string name="settings">Ayarlar</string>
     <string name="notifications">Bildirimler</string>
@@ -191,4 +193,6 @@
     <string name="the_following_libraries_are_used">Şu kütüphaneler kullanıldı:</string>
     <string name="inspiration_from_leafpic__appspecific">LeafPic\'ten biraz ilham ve kod aldık. Göz atabilirsiniz, özgür bir yazılım!</string>
     <string name="tell_me_more">Daha fazla göster</string>
+    <string name="donate">Bağış yap</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">Bu projeyi beğendiniz mi? Projenin iyileştirilmesini ve sorunların çözülmesini istiyor musunuz?\n\nUygulama geliştirmek ve onunla ilgili blog gönderileri yazmak çok zaman alıyor! Projenin devam edebilmesi için yardım etmek istiyorsanız, lütfen küçük bir bağış yapmayı düşünün!\n\nBu proje boş zamanlarımda, tamamen ücretsiz ve reklamsız olarak geliştirilmiştir!</string>
 </resources>

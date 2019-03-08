@@ -35,4 +35,5 @@
     <string name="about">אודות</string>
     <!-- License & help (large amount of text) -->
     <string name="contributors">תורמים</string>
+    <string name="donate">תרום</string>
 </resources>
