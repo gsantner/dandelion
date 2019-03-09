@@ -5,6 +5,8 @@
     <string name="open_navdrawer">開啟側邊導覽選單</string>
     <string name="close_navdrawer">關閉側邊導覽選單</string>
     <string name="reload">重新下載</string>
+    <string name="close">關閉</string>
+    <string name="cancel">取消</string>
     <!-- Common Words -->
     <string name="settings">設定</string>
     <string name="notifications">通知</string>
@@ -202,4 +204,5 @@
     <string name="enable_to_open_youtube_links_on_external_app">使用其他應用程式來開啟 Youtube 連結</string>
     <string name="youtube_links">Youtube 連結</string>
     <string name="donate">贊助</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">喜歡這個專案嗎？希望它繼續改善而且問題得到解決嗎？\n\n開發應用程式以及撰寫相關部落格文章都需要很多時間！如果你想要幫忙讓專案可以繼續，請考慮小額捐款！\n\n這個專案是在閒暇時間開發的，完全免費，並且沒有任何廣告！</string>
 </resources>
