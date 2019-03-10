@@ -65,6 +65,7 @@
     <string name="unable_to_load_image">Kon nie beeld laai nie</string>
     <!-- Permissions -->
     <string name="permission_denied">Toestemming geweier.</string>
+    <string name="pod_name">Pod naam</string>
     <string name="protocol">Protokol</string>
     <string name="pod_address">Pod adres</string>
     <string name="missing_value">Vermiste waarde</string>
@@ -145,11 +146,13 @@
     <string name="hey_checkout_dandelion_tag__appspecific">Haai! Loer na #dandelion! %1$s</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Handhawers</string>
+    <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;baie dankie!</string>
     <string name="gnu_gplv3_license">GNU GPLv3+ Lisensie</string>
     <string name="show_third_party_licenses">Derdeparty biblioteke</string>
     <string name="tell_me_more">Vertel my meer</string>
     <string name="enable_to_open_youtube_links_on_external_app">Bemagtig om Youtube links oop te maak in eksterne Toeps</string>
     <string name="youtube_links">Youtube links</string>
+    <string name="change_the_theme_of_your_account">Verander die tema van jou rekening</string>
     <string name="pull_to_refresh">Trek om te verfris</string>
     <string name="donate">Skenk</string>
 </resources>
