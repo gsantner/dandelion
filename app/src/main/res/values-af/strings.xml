@@ -32,6 +32,7 @@
     <string name="reshared">Herdeel</string>
     <string name="started_sharing">Begin deel</string>
     <!-- Pod Activity -->
+    <string name="could_not_retrieve_list_of_pods__appspecific">Fout: Kon nie lys van pods verkry nie!</string>
     <string name="confirmation">Bevestiging</string>
     <string name="do_you_want_to_exit">Wil jy uitgaan?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
