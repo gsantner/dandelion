@@ -187,7 +187,7 @@
     <string name="dandelion_is_developed_as_foss__appspecific">dandelion* 像自由一样自由发展，遵循 diaspora* 项目的想法。如果你想作出贡献，继续前进！目前我们是一个非常小的团队，因此我们非常感谢任何帮助！</string>
     <string name="get_the_source">获取源</string>
     <string name="translate_the_app">翻译应用！</string>
-    <string name="app_not_available_in_your_lang_translate_with_stringlate">应用程序不可用您的语言？您可以更改它！为什么你没有帮助我们翻译它？我们使用Stringlay来让任何人能够翻译这个应用。</string>
+    <string name="app_not_available_in_your_lang_translate_with_stringlate">应用程序不可用您的语言？您可以更改它！为什么你没有帮助我们翻译它？我们使用Stringlate来让任何人能够翻译这个应用。</string>
     <string name="let_me_translate">让我翻译</string>
     <string name="give_feedback">提供反馈！</string>
     <string name="dandelion_still_in_development__appspecific">dandelion* 仍在开发中，所以如果您有任何建议或任何反馈，请使用我们的错误追踪器让我们知道！</string>
