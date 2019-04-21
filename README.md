@@ -3,7 +3,7 @@
 [![Translate - with Stringlate](https://img.shields.io/badge/stringlate-translate-green.svg)](https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion.git&mail=gro.xobliam@@rentnasg)
 [![Chat - Matrix](https://img.shields.io/badge/chat-on%20matrix-blue.svg)](https://matrix.to/#/#dandelion:matrix.org) [![Chat - FreeNode IRC](https://img.shields.io/badge/chat-on%20irc-blue.svg)](https://kiwiirc.com/client/irc.freenode.net/?nick=dandelion-anon|?##dandelion)
 [![Donate](https://img.shields.io/badge/donate-appreciation-orange.svg)](https://gsantner.net/supportme/?project=dandelion&source=readme)
-[![Donate LiberaPay](https://img.shields.io/badge/donate-liberapay-orange.svg)](https://liberapay.com/gsantner/donate)
+[![Donate LiberaPay](https://img.shields.io/badge/donate-liberapay-orange.svg)](https://liberapay.com/gsantner/donate) ![](https://test.gsantner.net/matomo/piwik.php?action_name=readme&idsite=2&rec=1&urlref=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion%2FREADME.md&_cvar=%7B%221%22%3A%5B%22source%22%2C%22readme%22%5D%2C%222%22%3A%5B%22project%22%2C%22dandelion%22%5D%2C%223%22%3A%5B%22packageid%22%2C%22com.github.dfa.diaspora_android%22%5D%2C%224%22%3A%5B%22referrer%22%2C%22https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion%2FREADME.md%22%5D%7D)
 
 # dandelion\*
 <img src="/app/src/main/ic_launcher-web.png" align="left" width="100" hspace="10" vspace="10">
