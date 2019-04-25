@@ -1,6 +1,10 @@
 ![](https://test.gsantner.net/matomo/piwik.php?action_name=inapp_changelog&idsite=2&rec=1&urlref=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion%2FCHANGELOG.md&_cvar=%7B%221%22%3A%5B%22source%22%2C%22changelog%22%5D%2C%222%22%3A%5B%22project%22%2C%22dandelion%22%5D%2C%223%22%3A%5B%22packageid%22%2C%22com.github.dfa.diaspora_android%22%5D%2C%224%22%3A%5B%22referrer%22%2C%22https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion%2FCHANGELOG.md%22%5D%7D)
 
 
+### v1.3.x
+- Updated translations
+- Added german F-Droid description translation
+
 ### v1.3.0
 - Add option to open youtube links external/in YouTube app (optional)  
 - Pull to refresh  
