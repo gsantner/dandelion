@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Maak navigasie balk oop</string>
     <string name="close_navdrawer">Sluit navigasie balk</string>
     <string name="reload">Herlaai</string>
+    <string name="close">Sluit</string>
+    <string name="cancel">Kanselleer</string>
     <!-- Common Words -->
     <string name="settings">Instellings</string>
     <string name="notifications">Kennisgewings</string>
@@ -13,6 +15,7 @@
     <string name="profile">Profiel</string>
     <string name="aspects">Aspekte</string>
     <string name="activities">Aktiwiteite</string>
+    <string name="liked">Hou van</string>
     <string name="commented">Opgemerk</string>
     <string name="mentions">Aantal keer genoem</string>
     <string name="public_">Publiek</string>
@@ -24,10 +27,12 @@
     <string name="all_notifications">Alle kennisgewings</string>
     <string name="also_commented">Ook Opgemerk</string>
     <string name="comment_on_post">Lewer kommentaar op hierdie plasing</string>
+    <string name="deleteme_____1">Hou van</string>
     <string name="mentioned">Aantal keer genoem</string>
     <string name="reshared">Herdeel</string>
     <string name="started_sharing">Begin deel</string>
     <!-- Pod Activity -->
+    <string name="could_not_retrieve_list_of_pods__appspecific">Fout: Kon nie lys van pods verkry nie!</string>
     <string name="confirmation">Bevestiging</string>
     <string name="do_you_want_to_exit">Wil jy uitgaan?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
@@ -52,14 +57,41 @@
     <string name="by_people">met mense</string>
     <string name="please_add_a_name">Voer asseblief \'n naam in</string>
     <string name="share_link_address">Deel skakel adres</string>
+    <string name="save_image">Stoor beeld</string>
+    <string name="share_image">Deel beeld</string>
+    <string name="open_in_external_browser">Maak in eksterne webleser oop…</string>
+    <string name="copy_link_adress_to_clipboard">Kopieer skakel adres na knipbord</string>
+    <string name="copy_image_address_to_clipboard">Kopieer beeld adres na knipbord</string>
     <!-- More from MainActivity -->
+    <string name="unable_to_load_image">Kon nie beeld laai nie</string>
     <!-- Permissions -->
+    <string name="permission_denied">Toestemming geweier.</string>
+    <string name="pod_name">Pod naam</string>
+    <string name="protocol">Protokol</string>
+    <string name="pod_address">Pod adres</string>
+    <string name="missing_value">Vermiste waarde</string>
+    <string name="hide_statusbar">Versteek status balk</string>
+    <string name="show_title">Wys titel</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Voorkoms</string>
+    <string name="network">Netwerk</string>
+    <string name="pod_settings__appspecfic">Pod verstellings</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="user">Gebruiker</string>
+    <string name="general">Algemeen</string>
+    <string name="admin">Admin</string>
     <!-- Themes -->
+    <string name="theme_and_colors">Tema en kleure</string>
+    <string name="primary_colors">Primêre kleur</string>
+    <string name="colors_of_toolbars">Kleur van die nutsbalke</string>
+    <string name="accent_color">Kontras kleur</string>
+    <string name="color_of_progressbar">Kleur van die vorderingsbalk</string>
+    <string name="amoled_mode">AMOLED modus</string>
     <!-- Notifications dropdown -->
+    <string name="extended_notifications">Uitgebreide Kennisgewings</string>
+    <string name="language">Taal</string>
     <!-- Font size -->
     <string name="font_size">Fontgrootte</string>
     <string name="normal">Normaal</string>
@@ -75,6 +107,7 @@
     <string name="landscape">Landskap</string>
     <!-- Proxy -->
     <string name="load_tor_preset">Laai Tor voorkeure</string>
+    <string name="proxy">Volmag</string>
     <string name="host">Gasheer</string>
     <string name="port">Poort</string>
     <string name="app_needs_restart_to_disable_proxy_usage">Toep moet herlaai om volmag te deaktiveer</string>
@@ -82,6 +115,11 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <string name="personal_settings">Persoonlike instellings</string>
+    <string name="manage_hashtags">Bestuur Hutsmerke</string>
+    <string name="unfollow_already_followed_hashtags__appspecific">Onvolg Hutsmerke</string>
+    <string name="change_account">Verander rekening</string>
+    <string name="clear_cache">Vee Buffer</string>
+    <string name="clear_webview_cache">Vee WebBuffer skoon</string>
     <!-- More -->
     <string name="miscellaneous">Diverse</string>
     <string name="full_reset">Volle herstel</string>
@@ -92,7 +130,30 @@
     <string name="application">Toepassing</string>
     <string name="device">Toestel</string>
     <string name="diaspora_pod__appspecific">diaspora * Pod</string>
+    <string name="app_version_with_arg">Tope weergawe: %1$s</string>
+    <string name="android_version_witharg">Android Weergawe%1$s</string>
+    <string name="device_name_witharg">Toestel naam%1$s</string>
+    <string name="code_name_witharg">Kodenaam: %1$s</string>
+    <string name="pod_profile_name_witharg__appspecific">Pod profiel naam: %1$s</string>
+    <string name="pod_domain_witharg__appspecific">Pod domein: %1$s</string>
+    <string name="get_the_source">Verkry die bron</string>
+    <string name="translate_the_app">Vertaal hierdie Toep!</string>
+    <string name="app_not_available_in_your_lang_translate_with_stringlate">Die toepassing is nie in jou taal beskikbaar? Jy kan dit verander! Hoekom help jy ons nie met die vertaling nie? Ons gebruik Stringlate om enigiemand te help om toepassing te vertaal.</string>
+    <string name="let_me_translate">Laat ek vertaal</string>
+    <string name="give_feedback">Gee terugvoer!</string>
+    <string name="dandelion_still_in_development__appspecific">dandelion * is nog in ontwikkeling, so as jy voorstelle of enige soort terugvoer het, gebruik asseblief ons probleem volger laat ons weet!</string>
+    <string name="report_bugs">Raporteer foute</string>
+    <string name="share_the_app">Deel die toep</string>
+    <string name="hey_checkout_dandelion_tag__appspecific">Haai! Loer na #dandelion! %1$s</string>
     <!-- License & help (large amount of text) -->
+    <string name="maintainers">Handhawers</string>
+    <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;baie dankie!</string>
+    <string name="gnu_gplv3_license">GNU GPLv3+ Lisensie</string>
+    <string name="show_third_party_licenses">Derdeparty biblioteke</string>
+    <string name="tell_me_more">Vertel my meer</string>
     <string name="enable_to_open_youtube_links_on_external_app">Bemagtig om Youtube links oop te maak in eksterne Toeps</string>
     <string name="youtube_links">Youtube links</string>
+    <string name="change_the_theme_of_your_account">Verander die tema van jou rekening</string>
+    <string name="pull_to_refresh">Trek om te verfris</string>
+    <string name="donate">Skenk</string>
 </resources>
