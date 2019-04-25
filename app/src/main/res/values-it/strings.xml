@@ -161,7 +161,7 @@
     <string name="append_shared_by_notice">Aggiungi avviso dell\'app</string>
     <string name="append_shared_by_notice__appspecific">Aggiungere un riferimento a questa applicazione ai testi condivisi: [via #dandelion]</string>
     <!-- More -->
-    <string name="miscellaneous">Vario</string>
+    <string name="miscellaneous">Altro</string>
     <string name="full_reset">Reset completo</string>
     <string name="wipe_settings_and_logout">Elimina localmente tutte le impostazioni relative all\'app e disconnette da tutti gli account</string>
     <string name="wipe_settings_warning__appspecific">Questo cancellerà tutte le impostazioni dell\'app che sono state cambiate ai loro valori predefiniti e ti disconnetterà da tutti i pod. Le immagini scaricate non verranno toccate. Sei sicuro di voler procedere?</string>
