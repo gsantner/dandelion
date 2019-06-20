@@ -47,7 +47,7 @@
     <string name="take_screenshot_of_webpage">Сделать скриншот страницы</string>
     <string name="saving_image_to">Сохранение изображения в</string>
     <string name="saving_screenshot_as">Сохранение скриншота как:</string>
-    <string name="link_adress_copied">Адрес ссылки скопирован&#8230;</string>
+    <string name="link_adress_copied">Адрес ссылки скопирован …</string>
     <string name="new_post">Новый пост</string>
     <string name="go_to_top">В начало</string>
     <string name="search_by_tags_or_persons__appspecific">Искать по тегам и людям</string>
