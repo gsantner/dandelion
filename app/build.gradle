@@ -108,11 +108,13 @@ dependencies {
     implementation "com.android.support:support-v4:${version_library_appcompat}"
     implementation "com.android.support:customtabs:${version_library_appcompat}"
     implementation "com.android.support:cardview-v7:${version_library_appcompat}"
+    implementation "com.android.support:preference-v7:${version_library_appcompat}"
 
     // UI libraries
     implementation "com.github.DASAR:ShiftColorPicker:v0.5"
 
     // Tool libraries
+    implementation 'commons-io:commons-io:2.6'
     implementation "info.guardianproject.netcipher:netcipher:${version_library_netcipher}"
     implementation "info.guardianproject.netcipher:netcipher-webkit:${version_library_netcipher}"
     implementation "com.jakewharton:butterknife:${version_library_butterknife}"

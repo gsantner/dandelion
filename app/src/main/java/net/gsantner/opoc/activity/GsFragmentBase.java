@@ -16,7 +16,10 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -33,6 +36,7 @@ public abstract class GsFragmentBase extends Fragment {
 
     protected ContextUtils _cu;
     protected Bundle _savedInstanceState = null;
+    protected Menu _fragmentMenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +55,9 @@ public abstract class GsFragmentBase extends Fragment {
         _cu = new ContextUtils(inflater.getContext());
         _cu.setAppLanguage(getAppLanguage());
         _savedInstanceState = savedInstanceState;
+        if (getLayoutResId() == 0) {
+            Log.e(getClass().getCanonicalName(), "Error: GsFragmentbase.onCreateview: Returned 0 for getLayoutResId");
+        }
         View view = inflater.inflate(getLayoutResId(), container, false);
         ButterKnife.bind(this, view);
         return view;
@@ -125,5 +132,15 @@ public abstract class GsFragmentBase extends Fragment {
                 onFragmentFirstTimeVisible();
             }
         }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        _fragmentMenu = menu;
+    }
+
+    public Menu getFragmentMenu() {
+        return _fragmentMenu;
     }
 }
