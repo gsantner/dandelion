@@ -5,6 +5,8 @@
     <string name="open_navdrawer">Otwórz panel nawigacyjny</string>
     <string name="close_navdrawer">Zamknij panel nawigacyjny</string>
     <string name="reload">Przeładuj</string>
+    <string name="close">Zamknij</string>
+    <string name="cancel">Anuluj</string>
     <!-- Common Words -->
     <string name="settings">Ustawienia</string>
     <string name="notifications">Powiadomienia</string>
@@ -198,5 +200,9 @@
     <string name="the_following_libraries_are_used">Zostały użyte następujące biblioteki zewnętrzne:</string>
     <string name="inspiration_from_leafpic__appspecific">Zaczerpnęliśmy kilka pomysłów oraz trochę kodu z aplikacji LeafPic. Wypróbuj ją, to także wolne oprogramowanie!</string>
     <string name="tell_me_more">Chcę wiedzieć więcej</string>
+    <string name="enable_to_open_youtube_links_on_external_app">Włącz aby otwierać linki do YouTube w zewnętrznej aplikacji</string>
+    <string name="youtube_links">Linki YouTube</string>
+    <string name="change_the_theme_of_your_account">Zmień motyw konta</string>
+    <string name="pull_to_refresh">Pociągnij aby odświeżyć</string>
     <string name="donate">Wspomóż</string>
 </resources>
