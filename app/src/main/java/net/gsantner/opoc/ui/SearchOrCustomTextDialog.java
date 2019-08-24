@@ -126,7 +126,6 @@ public class SearchOrCustomTextDialog {
             }
         };
 
-        final ActivityUtils activityUtils = new ActivityUtils(activity);
         final AppCompatEditText searchEditText = new AppCompatEditText(activity);
         searchEditText.setSingleLine(true);
         searchEditText.setMaxLines(1);
@@ -156,8 +155,7 @@ public class SearchOrCustomTextDialog {
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         if (dopt.isSearchEnabled) {
             LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            ContextUtils cu = new net.gsantner.opoc.util.ContextUtils(listView.getContext());
-            int px = (int) (new net.gsantner.opoc.util.ContextUtils(listView.getContext()).convertDpToPx(8));
+            int px = (int) (new ContextUtils(listView.getContext()).convertDpToPx(8));
             lp.setMargins(px, px / 2, px, px / 2);
             linearLayout.addView(searchEditText, lp);
         }
@@ -288,7 +286,13 @@ public class SearchOrCustomTextDialog {
             List<String> ret = new ArrayList<>();
 
             boolean first = true;
-            Iterator<File> iter = FileUtils.iterateFilesAndDirs(_searchDir, this, this);
+            Iterator<File> iter = null;
+            try {
+                iter = FileUtils.iterateFilesAndDirs(_searchDir, this, this);
+            } catch (Exception ex) {
+                // Iterator may throw an error at creation
+                return ret;
+            }
             while (iter.hasNext() && !isCancelled()) {
                 File f = iter.next();
                 if (first) {
