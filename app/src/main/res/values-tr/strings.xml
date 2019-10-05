@@ -28,7 +28,9 @@
     <string name="also_commented">Ayrıca Yorumlar</string>
     <string name="comment_on_post">Gönderine Yorumlar</string>
     <string name="deleteme_____1">Beğeniler</string>
+    <string name="mentioned">Bahsedilen</string>
     <string name="reshared">Yeniden paylaşılan</string>
+    <string name="started_sharing">Paylaşım Başlatıldı</string>
     <!-- Pod Activity -->
     <string name="could_not_retrieve_list_of_pods__appspecific">Hata: Pod listesi alınamadı!</string>
     <string name="sorry_need_to_be_connected_to_internet">Üzgünüm, devam etmek için internete bağlı olmalısın.</string>
@@ -73,6 +75,7 @@
     <string name="protocol">Protokol</string>
     <string name="pod_address">Pod adresi</string>
     <string name="missing_value">Eksik değer</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Akışta son ziyaret edilen sayfaya git?</string>
     <string name="hide_statusbar_in_mainview">Durum çubuğunu ana görünümde gizle</string>
     <string name="hide_statusbar">Durum çubuğunu gizle</string>
     <string name="show_title_in_main_view">Başlığı ana görünümde göster</string>
@@ -89,6 +92,7 @@
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <string name="navigation_drawer">Menü Kaydırıcı</string>
+    <string name="control_visibility_of_entries_nav_drawer">Gezinme çekmecesindeki girişlerin görünürlüğünü kontrol et</string>
     <string name="user">Kullanıcı</string>
     <string name="general">Genel</string>
     <string name="admin">Yönetici</string>
@@ -134,6 +138,7 @@
     <string name="host">Sunucu</string>
     <string name="port">Port</string>
     <string name="app_needs_restart_to_disable_proxy_usage">Proxy kullanımını devre dışı bırakmak için uygulamanın yeniden başlatılması gerekiyor</string>
+    <string name="orbot_proxy_preset_loaded">Orbot proxy hazır ayarı yüklendi</string>
     <!-- Chrome custom tabs -->
     <string name="open_external_links_with_chrome_custom_tabs_description">Chrome Özel Sekmeler ile harici bağlantılar açın. Bu özelliği kullanabilmek için Chromium, Firefox veya Google Chrome\'un yüklü olması gerekir.\n
   ÖNEMLİ NOT: Chrome Özel Sekmeler, yapılandırılmış proxy sunucuları kullanmaz!</string>
@@ -142,12 +147,14 @@
     <string name="open_diaspora_account_settings__appspecific">diaspora* hesap ayarlarını aç</string>
     <string name="manage_your_contact_list">Kişi listenizi yönetin</string>
     <string name="manage_hashtags">Etiketleri yönetin</string>
+    <string name="unfollow_already_followed_hashtags__appspecific">Mevcut takip edilen etiketleri takipten vazgeç</string>
     <string name="change_account">Hesabı Değiştir</string>
     <string name="loug_warning_description__appspecific">Yerel oturum verilerini silin ve başka bir diaspora * pod(a)/hesab(a) geçin</string>
     <string name="logout_warning_description">Bu, tüm çerezleri ve oturum verilerini siler. Gerçekten hesabını değiştirmek istiyor musun?</string>
     <string name="clear_cache">Önbelleği temizle</string>
     <string name="clear_webview_cache">WebView önbelleğini temizle</string>
     <string name="intellihide_toolbars__appspecific">Kaydırma yaparken üst ve alt araç çubuklarını otomatik olarak gizle</string>
+    <string name="intellihide_toolbars">Araç Çubuklarını Otomatik Gizle</string>
     <string name="append_shared_by_notice__appspecific">Bu uygulamaya, paylaşılan metinlere bir referans ekleyin: [örn #dandelion]</string>
     <!-- More -->
     <string name="miscellaneous">Çeşitli</string>
