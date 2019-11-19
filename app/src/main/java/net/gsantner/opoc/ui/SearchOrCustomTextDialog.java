@@ -11,8 +11,11 @@
 package net.gsantner.opoc.ui;
 
 import android.app.Activity;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -23,6 +26,7 @@ import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,9 +60,14 @@ public class SearchOrCustomTextDialog {
         public Callback.a1<String> callback;
         public List<? extends CharSequence> data = new ArrayList<>();
         public List<? extends CharSequence> highlightData = new ArrayList<>();
+        public List<Integer> iconsForData = new ArrayList<>();
         public String messageText = "";
         public boolean isSearchEnabled = true;
         public boolean isDarkDialog = false;
+        public int dialogWidthDp = WindowManager.LayoutParams.MATCH_PARENT;
+        public int dialogHeightDp = WindowManager.LayoutParams.WRAP_CONTENT;
+        public int gravity = Gravity.NO_GRAVITY;
+        public int searchInputType = 0;
 
         @ColorInt
         public int textColor = 0xFF000000;
@@ -88,6 +97,17 @@ public class SearchOrCustomTextDialog {
             public View getView(int pos, @Nullable View convertView, @NonNull ViewGroup parent) {
                 TextView textView = (TextView) super.getView(pos, convertView, parent);
                 String text = textView.getText().toString();
+
+                int posInOriginalList = dopt.data.indexOf(text);
+                if (posInOriginalList >= 0 && dopt.iconsForData != null && posInOriginalList < dopt.iconsForData.size() && dopt.iconsForData.get(posInOriginalList) != 0) {
+                    textView.setCompoundDrawablesWithIntrinsicBounds(dopt.iconsForData.get(posInOriginalList), 0, 0, 0);
+                    textView.setCompoundDrawablePadding(32);
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        textView.setCompoundDrawableTintList(ColorStateList.valueOf(dopt.isDarkDialog ? Color.WHITE : Color.BLACK));
+                    }
+                } else {
+                    textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+                }
 
                 boolean hl = dopt.highlightData.contains(text);
                 textView.setTextColor(hl ? dopt.highlightColor : dopt.textColor);
@@ -132,6 +152,7 @@ public class SearchOrCustomTextDialog {
         searchEditText.setTextColor(dopt.textColor);
         searchEditText.setHintTextColor((dopt.textColor & 0x00FFFFFF) | 0x99000000);
         searchEditText.setHint(dopt.searchHintText);
+        searchEditText.setInputType(dopt.searchInputType == 0 ? searchEditText.getInputType() : dopt.searchInputType);
 
         searchEditText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -166,9 +187,11 @@ public class SearchOrCustomTextDialog {
             dialogBuilder.setMessage(dopt.messageText);
         }
         dialogBuilder.setView(linearLayout)
-                .setTitle(dopt.titleText)
                 .setOnCancelListener(null)
                 .setNegativeButton(dopt.cancelButtonText, (dialogInterface, i) -> dialogInterface.dismiss());
+        if (dopt.titleText != 0) {
+            dialogBuilder.setTitle(dopt.titleText);
+        }
         if (dopt.isSearchEnabled) {
             dialogBuilder.setPositiveButton(dopt.okButtonText, (dialogInterface, i) -> {
                 dialogInterface.dismiss();
@@ -204,7 +227,15 @@ public class SearchOrCustomTextDialog {
         }
         dialog.show();
         if ((w = dialog.getWindow()) != null) {
-            w.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+            int ds_w = dopt.dialogWidthDp < 100 ? dopt.dialogWidthDp : ((int) (dopt.dialogWidthDp * activity.getResources().getDisplayMetrics().density));
+            int ds_h = dopt.dialogHeightDp < 100 ? dopt.dialogHeightDp : ((int) (dopt.dialogHeightDp * activity.getResources().getDisplayMetrics().density));
+            w.setLayout(ds_w, ds_h);
+        }
+
+        if ((w = dialog.getWindow()) != null && dopt.gravity != Gravity.NO_GRAVITY) {
+            WindowManager.LayoutParams wlp = w.getAttributes();
+            wlp.gravity = dopt.gravity;
+            w.setAttributes(wlp);
         }
 
         if (dopt.isSearchEnabled) {
