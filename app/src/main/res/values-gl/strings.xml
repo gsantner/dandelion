@@ -4,7 +4,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Abrir cadro de navegación</string>
     <string name="close_navdrawer">Pechar cadro de navegación</string>
-    <string name="reload">Refrescar</string>
+    <string name="reload">Actualizar</string>
     <string name="close">Pechar</string>
     <string name="cancel">Cancelar</string>
     <!-- Common Words -->
