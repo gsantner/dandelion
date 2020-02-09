@@ -4,14 +4,14 @@
     <!-- Application -->
     <string name="open_navdrawer">Abrir cadro de navegación</string>
     <string name="close_navdrawer">Pechar cadro de navegación</string>
-    <string name="reload">Refrescar</string>
+    <string name="reload">Actualizar</string>
     <string name="close">Pechar</string>
     <string name="cancel">Cancelar</string>
     <!-- Common Words -->
     <string name="settings">Axustes</string>
     <string name="notifications">Notificacións</string>
-    <string name="conversations">Conversa</string>
-    <string name="stream">Fío de comentarios</string>
+    <string name="conversations">Conversas</string>
+    <string name="stream">Cronoloxía</string>
     <string name="profile">Perfil</string>
     <string name="aspects">Aspecto</string>
     <string name="activities">Actividades</string>
@@ -30,10 +30,10 @@
     <string name="deleteme_____1">Gústame</string>
     <string name="mentioned">Mencionado</string>
     <string name="reshared">Compartido</string>
-    <string name="started_sharing">Comezou a compartir</string>
+    <string name="started_sharing">Xa compartes</string>
     <!-- Pod Activity -->
     <string name="could_not_retrieve_list_of_pods__appspecific">Problema: non se obtivo a lista de nodos!</string>
-    <string name="sorry_need_to_be_connected_to_internet">Desculpe, precisa unha conexión a internet para esa tarefa</string>
+    <string name="sorry_need_to_be_connected_to_internet">Desculpa, tes que ter conexión a internet para esto</string>
     <string name="confirmation">Confirmación</string>
     <string name="do_you_want_to_exit">Quere saír?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
