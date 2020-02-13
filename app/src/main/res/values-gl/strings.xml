@@ -111,7 +111,7 @@
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notificacións extendidas</string>
     <string name="extendend_notifications_bell_description__appspecific">Extender a icona da campá de notificación con un menú desplegable que mostre a categoría das notificacións</string>
-    <string name="language_change_restart_description">Cambiar o idioma de esta aplicación. Reinicie para que se aplique o troco</string>
+    <string name="language_change_restart_description">Cambiar o idioma de esta aplicación. Reinicia para que se aplique o troco</string>
     <string name="language">Idioma</string>
     <string name="system_language">Idioma do sistema</string>
     <!-- Font size -->
@@ -135,7 +135,7 @@
     <string name="load_proxy_settins_for_tor">Cargar axustes proxy para Tor (Orbot) HTTP Proxy</string>
     <string name="proxy">Proxy</string>
     <string name="enable_proxy">Habilitar Proxy</string>
-    <string name="proxy_dandelion_traffic__appspecific">Proxy para o tráfico de dandelion* para saltar cortalumes.\nPodería precisar reinicio. Esto podería non funcionar en algúns móbiles.</string>
+    <string name="proxy_dandelion_traffic__appspecific">Proxy para o tráfico de dandelion* para saltar cortalumes.\nPodería precisar reinicio. Esto podería non funcionar nalgúns móbiles.</string>
     <string name="host">Servidor</string>
     <string name="port">Porto</string>
     <string name="app_needs_restart_to_disable_proxy_usage">Precisa reiniciar a app para desactivar o uso do proxy</string>
@@ -145,12 +145,12 @@
     <!-- Diaspora Settings -->
     <string name="personal_settings">Axustes personais</string>
     <string name="open_diaspora_account_settings__appspecific">Abrir os axustes da conta diaspora*</string>
-    <string name="manage_your_contact_list">Xestione a súa lista de contactos</string>
+    <string name="manage_your_contact_list">Xestiona a lista de contactos</string>
     <string name="manage_hashtags">Xestionar etiquetas</string>
-    <string name="unfollow_already_followed_hashtags__appspecific">Deixar de seguir etiquetas que segue</string>
+    <string name="unfollow_already_followed_hashtags__appspecific">Deixar de seguir etiquetas que segues</string>
     <string name="change_account">Mudar de conta</string>
     <string name="loug_warning_description__appspecific">Eliminar os datos locais da sesión e cambiar a outro nodo/conta de diaspora*</string>
-    <string name="logout_warning_description">Esto eliminará todas as cookies e datos de sesión. Seguro que quere mudar de conta?</string>
+    <string name="logout_warning_description">Esto eliminará todas as cookies e datos de sesión. Seguro que queres mudar de conta?</string>
     <string name="clear_cache">Limpar cache</string>
     <string name="clear_webview_cache">Limpar a cache da VistaWeb</string>
     <string name="intellihide_toolbars__appspecific">Agochar automáticamente as barras superior e inferior mentras desplaza</string>
@@ -160,8 +160,8 @@
     <!-- More -->
     <string name="miscellaneous">Varios</string>
     <string name="full_reset">Restablecer completamente</string>
-    <string name="wipe_settings_and_logout">Eliminar todas os axustes locais do app e desconectar todas as contas</string>
-    <string name="wipe_settings_warning__appspecific">Esto restablecerá todos os axustes da aplicación ao valor por omisión e desconectarao de todos os nodos. As súas imaxes descargadas permanecerán. Seguro que quere proceder?</string>
+    <string name="wipe_settings_and_logout">Eliminar todolos axustes locais da app e desconectar todas as contas</string>
+    <string name="wipe_settings_warning__appspecific">Esto restablecerá todos os axustes da aplicación ao valor por omisión e desconectarate de todolos nodos. As imaxes descargadas permanecerán. Seguro que queres proceder?</string>
     <string name="enable_basic_adblocker_description">Activar un AdBlocker básico. Poderían verse anuncios por exemplo en vistas incrustadas</string>
     <string name="block_advertisments">Bloquear publicidade</string>
     <string name="about">Sobre</string>
@@ -179,12 +179,12 @@
     <string name="pod_profile_name_witharg__appspecific">Nome do perfil do nodo: %1$s</string>
     <string name="pod_domain_witharg__appspecific">Dominio do nodo: %1$s</string>
     <string name="debug_log_copied_to_clipboard">Ficheiro de depuración copiado ao portapapeis</string>
-    <string name="dandelion_is_your_companion__appspecific">dandelion* é a súa aplicación para a rede social diaspora*. Engade características como barras de ferramentas e soporte para servidores proxy como a rede Tor para a súa experiencia social.</string>
+    <string name="dandelion_is_your_companion__appspecific">dandelion* é a túa aplicación para a rede social diaspora*. Engade características como barras de ferramentas e soporte para servidores proxy como a rede Tor.</string>
     <string name="contribute_code">Contribúa ao código!</string>
-    <string name="dandelion_is_developed_as_foss__appspecific">dandelion* é desenvolto libre, libre de Liberdade, e segue o espíritu que marca o proxecto diaspora*. Se quere contribuír, adiante! Por agora somos un equipo pequeno, así que agradecemos calquer tipo de axuda!</string>
-    <string name="get_the_source">Obteña as fontes</string>
-    <string name="translate_the_app">Traduza a app!</string>
-    <string name="app_not_available_in_your_lang_translate_with_stringlate">Non está a aplicación no seu idioma? Pode cambiar eso! Por qué non nos axuda traducíndoa? Utilizamos a plataforma Crowdin para que calquera poida traducir a app.</string>
+    <string name="dandelion_is_developed_as_foss__appspecific">dandelion* é desenvolta libre, libre de Liberdade, e segue o espíritu que marca o proxecto diaspora*. Se queres contribuír, adiante! Por agora somos un equipo pequeno, así que agradecemos calquer tipo de axuda!</string>
+    <string name="get_the_source">Aquí as fontes</string>
+    <string name="translate_the_app">Traduce a app!</string>
+    <string name="app_not_available_in_your_lang_translate_with_stringlate">Non está a aplicación no teu idioma? Podes cambiar eso! Por qué non nos axudas traducíndoa? Utilizamos a plataforma Crowdin para que calquera poida traducir a app.</string>
     <string name="let_me_translate">Deixame traducir</string>
     <string name="give_feedback">Qué lle parece!</string>
     <string name="dandelion_still_in_development__appspecific">dandelion* aínda está en desenvolvemento, asi que si ten suxerencias de calquer tipo o valoración, por favor utilice o noso xestor de erros para facérnolo saber!</string>
