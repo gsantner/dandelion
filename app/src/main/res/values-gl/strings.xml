@@ -186,12 +186,12 @@
     <string name="translate_the_app">Traduce a app!</string>
     <string name="app_not_available_in_your_lang_translate_with_stringlate">Non está a aplicación no teu idioma? Podes cambiar eso! Por qué non nos axudas traducíndoa? Utilizamos a plataforma Crowdin para que calquera poida traducir a app.</string>
     <string name="let_me_translate">Deixame traducir</string>
-    <string name="give_feedback">Qué lle parece!</string>
-    <string name="dandelion_still_in_development__appspecific">dandelion* aínda está en desenvolvemento, asi que si ten suxerencias de calquer tipo o valoración, por favor utilice o noso xestor de erros para facérnolo saber!</string>
+    <string name="give_feedback">Danos a túa opinión!</string>
+    <string name="dandelion_still_in_development__appspecific">dandelion* aínda está en desenvolvemento, asi que se tes suxestións de calquer tipo ou valoración, por favor usa o noso xestor de errros para facérnolo saber!</string>
     <string name="report_bugs">Reporte erros</string>
-    <string name="spread_the_word">Difunda!</string>
-    <string name="tell_your_friends_about_diaspora__appspecific">Dígalle aos seus amigos e familiares que utiliza diaspora* e #dandelion! Por qué no escribir sobre a experiencia? Encantaríanos saber de vostede!</string>
-    <string name="share_the_app">Comparta a aplicación</string>
+    <string name="spread_the_word">Difunde!</string>
+    <string name="tell_your_friends_about_diaspora__appspecific">Dille aos teus amigos e familiares que utilizas diaspora* e #dandelion! Por qué non escribir sobre a experiencia? Encantaríanos saber de ti!</string>
+    <string name="share_the_app">Comparte a aplicación</string>
     <string name="hey_checkout_dandelion_tag__appspecific">Ei!! Olla #dandelion! %1$s</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Mantedores</string>
@@ -205,9 +205,9 @@
     <string name="tell_me_more">Cóntame máis</string>
     <string name="enable_to_open_youtube_links_on_external_app">Activar para abrir vídeos YouTube nunha app externa</string>
     <string name="youtube_links">Ligazóns YouTube</string>
-    <string name="change_the_theme_of_your_account">Cambiar o decorado da súa conta</string>
-    <string name="pull_to_refresh">Tire para actualizar</string>
-    <string name="pulling_down_on_top_of_page_to_refresh">Tirar hacia abaixo na parte superior da páxina.\nDebe reiniciar a app para que os cambios se apliquen.</string>
+    <string name="change_the_theme_of_your_account">Cambiar o decorado da túa conta</string>
+    <string name="pull_to_refresh">Tira para actualizar</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">Tirar hacia abaixo na parte superior da páxina.\nDebes reiniciar a app para que os cambios se apliquen.</string>
     <string name="donate">Doar</string>
     <string name="do_you_like_this_project_want_donate_to_keep_alive">Gústache este proxecto? Queres que siga mellorando e resolvendo os problemas?\n\nDesenvolver aplicacións e escribir a documentación leva moito tempo! Se queres apoiar ao proxecto para que continúe, por favor, considera facer unha pequena doazón!\n\nEste proxecto desenvólvese no tempo libre, ofrécese libre e gratuitamente e sen publicidade!</string>
 </resources>
