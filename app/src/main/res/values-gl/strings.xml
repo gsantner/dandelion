@@ -56,7 +56,7 @@
     <string name="share_dotdotdot">Compartir…</string>
     <string name="by_tags">Etiquetas</string>
     <string name="by_people">Persoas</string>
-    <string name="please_add_a_name">Por favor, engada un nome</string>
+    <string name="please_add_a_name">Por favor, engade un nome</string>
     <string name="share_link_address">Compartir ligazón</string>
     <string name="save_image">Gardar imaxe</string>
     <string name="share_image">Compartir imaxe</string>
@@ -66,19 +66,19 @@
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">Non se cargou a imaxe</string>
     <!-- Permissions -->
-    <string name="screenshot_permission__appspecific">Debe permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Pode
-        pechar a aplicación ou reiniciar o dispositivo. Se non permite acceder ao almacenamento pero que utilizar máis tarde a captura de pantalla, poderá permitir posteriormente o acceso na sección de permisos do dispositivo onde pode activar o \"permiso de acceso a almacenamento\" para dandelion*.</string>
-    <string name="image_permission_description__appspecific">Ten que permitir \"Permiso de acceso a almacenamento\" para gardar/subir imaxes. Despois de iso debería
-        pechar a aplicación ou reiniciar o dispositivo. Se non permite acceder ao almacenamento, para poder gardar imaxes posteriormente, deberá abrir: preferencias do sistema - apps - dandelion* no dispositivo.
-   Na sección de permisos pode activar o \"permiso de escritura no almacenamento\".</string>
+    <string name="screenshot_permission__appspecific">Debes permitir \"Permiso de acceso a almacenamento\" para gardar capturas. Podes
+        pechar a aplicación ou reiniciar o dispositivo. Se non permites acceder ao almacenamento pero queres utilizar máis tarde a captura de pantalla, poderás permitir posteriormente o acceso na sección de permisos do dispositivo onde podes activar o \"permiso de acceso a almacenamento\" para dandelion*.</string>
+    <string name="image_permission_description__appspecific">Tes que permitir \"Permiso de acceso a almacenamento\" para gardar/subir imaxes. Despois de iso deberías
+        pechar a aplicación ou reiniciar o dispositivo. Se non permites acceder ao almacenamento, para poder gardar imaxes posteriormente, deberás abrir: preferencias do sistema - apps - dandelion* no dispositivo.
+   Na sección de permisos podes activar o \"permiso de escritura no almacenamento\".</string>
     <string name="permission_denied">Permiso denegado.</string>
-    <string name="permission_granted_try_again">Permiso concedido. Inténteo de novo.</string>
+    <string name="permission_granted_try_again">Permiso concedido. Inténtao de novo.</string>
     <string name="custom_pod">Nodo personalizado</string>
     <string name="pod_name">Nome do nodo</string>
     <string name="protocol">Protocolo</string>
     <string name="pod_address">Enderezo do nodo</string>
     <string name="missing_value">Faltan datos</string>
-    <string name="jump_to_last_visited_page_in_stream__appspecific">Ir a última paxina lida na conversa?</string>
+    <string name="jump_to_last_visited_page_in_stream__appspecific">Ir a última páxina lida na conversa?</string>
     <string name="hide_statusbar_in_mainview">Agochar a barra de estado na vista principal</string>
     <string name="hide_statusbar">Agochar barra de estado</string>
     <string name="show_title_in_main_view">Mostrar título na vista principal</string>
@@ -86,7 +86,7 @@
     <string name="launcher_shortcut">Atallo do lanzador</string>
     <!-- Operability -->
     <string name="top_toolbar_loads_stream__appsp">A barra superior carga a conversa</string>
-    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Pulse nun espazo baldeiro na barra superior para abrir a conversa</string>
+    <string name="click_empty_space_top_toolbar_load_stream__appspecific">Preme nun espazo baleiro na barra superior para abrir a conversa</string>
     <!-- Category Titles -->
     <string name="appearance">Aparencia</string>
     <string name="network">Rede</string>
@@ -95,13 +95,13 @@
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <string name="navigation_drawer">Cadro de navegación</string>
-    <string name="control_visibility_of_entries_nav_drawer">Controle a visibiidade das entradas no cadro de navegación</string>
+    <string name="control_visibility_of_entries_nav_drawer">Controla a visibiidade das entradas no cadro de navegación</string>
     <string name="user">Usuaria</string>
     <string name="general">Xeral</string>
     <string name="admin">Admin</string>
     <!-- Themes -->
     <string name="theme_and_colors">Decorado e cores</string>
-    <string name="control_which_colors_are_used_in_app">Estableza qué cores se utilizan na aplicación</string>
+    <string name="control_which_colors_are_used_in_app">Escolle qué cores se utilizan na aplicación</string>
     <string name="primary_colors">Cor primaria</string>
     <string name="colors_of_toolbars">Cor das barras de ferramentas</string>
     <string name="accent_color">Cor de énfase</string>
@@ -111,7 +111,7 @@
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notificacións extendidas</string>
     <string name="extendend_notifications_bell_description__appspecific">Extender a icona da campá de notificación con un menú desplegable que mostre a categoría das notificacións</string>
-    <string name="language_change_restart_description">Cambiar o idioma de esta aplicación. Reinicie para que se aplique o troco</string>
+    <string name="language_change_restart_description">Cambiar o idioma de esta aplicación. Reinicia para que se aplique o troco</string>
     <string name="language">Idioma</string>
     <string name="system_language">Idioma do sistema</string>
     <!-- Font size -->
@@ -135,7 +135,7 @@
     <string name="load_proxy_settins_for_tor">Cargar axustes proxy para Tor (Orbot) HTTP Proxy</string>
     <string name="proxy">Proxy</string>
     <string name="enable_proxy">Habilitar Proxy</string>
-    <string name="proxy_dandelion_traffic__appspecific">Proxy para o tráfico de dandelion* para saltar cortalumes.\nPodería precisar reinicio. Esto podería non funcionar en algúns móbiles.</string>
+    <string name="proxy_dandelion_traffic__appspecific">Proxy para o tráfico de dandelion* para saltar cortalumes.\nPodería precisar reinicio. Esto podería non funcionar nalgúns móbiles.</string>
     <string name="host">Servidor</string>
     <string name="port">Porto</string>
     <string name="app_needs_restart_to_disable_proxy_usage">Precisa reiniciar a app para desactivar o uso do proxy</string>
@@ -145,12 +145,12 @@
     <!-- Diaspora Settings -->
     <string name="personal_settings">Axustes personais</string>
     <string name="open_diaspora_account_settings__appspecific">Abrir os axustes da conta diaspora*</string>
-    <string name="manage_your_contact_list">Xestione a súa lista de contactos</string>
+    <string name="manage_your_contact_list">Xestiona a lista de contactos</string>
     <string name="manage_hashtags">Xestionar etiquetas</string>
-    <string name="unfollow_already_followed_hashtags__appspecific">Deixar de seguir etiquetas que segue</string>
+    <string name="unfollow_already_followed_hashtags__appspecific">Deixar de seguir etiquetas que segues</string>
     <string name="change_account">Mudar de conta</string>
     <string name="loug_warning_description__appspecific">Eliminar os datos locais da sesión e cambiar a outro nodo/conta de diaspora*</string>
-    <string name="logout_warning_description">Esto eliminará todas as cookies e datos de sesión. Seguro que quere mudar de conta?</string>
+    <string name="logout_warning_description">Esto eliminará todas as cookies e datos de sesión. Seguro que queres mudar de conta?</string>
     <string name="clear_cache">Limpar cache</string>
     <string name="clear_webview_cache">Limpar a cache da VistaWeb</string>
     <string name="intellihide_toolbars__appspecific">Agochar automáticamente as barras superior e inferior mentras desplaza</string>
@@ -160,8 +160,8 @@
     <!-- More -->
     <string name="miscellaneous">Varios</string>
     <string name="full_reset">Restablecer completamente</string>
-    <string name="wipe_settings_and_logout">Eliminar todas os axustes locais do app e desconectar todas as contas</string>
-    <string name="wipe_settings_warning__appspecific">Esto restablecerá todos os axustes da aplicación ao valor por omisión e desconectarao de todos os nodos. As súas imaxes descargadas permanecerán. Seguro que quere proceder?</string>
+    <string name="wipe_settings_and_logout">Eliminar todolos axustes locais da app e desconectar todas as contas</string>
+    <string name="wipe_settings_warning__appspecific">Esto restablecerá todos os axustes da aplicación ao valor por omisión e desconectarate de todolos nodos. As imaxes descargadas permanecerán. Seguro que queres proceder?</string>
     <string name="enable_basic_adblocker_description">Activar un AdBlocker básico. Poderían verse anuncios por exemplo en vistas incrustadas</string>
     <string name="block_advertisments">Bloquear publicidade</string>
     <string name="about">Sobre</string>
@@ -179,19 +179,19 @@
     <string name="pod_profile_name_witharg__appspecific">Nome do perfil do nodo: %1$s</string>
     <string name="pod_domain_witharg__appspecific">Dominio do nodo: %1$s</string>
     <string name="debug_log_copied_to_clipboard">Ficheiro de depuración copiado ao portapapeis</string>
-    <string name="dandelion_is_your_companion__appspecific">dandelion* é a súa aplicación para a rede social diaspora*. Engade características como barras de ferramentas e soporte para servidores proxy como a rede Tor para a súa experiencia social.</string>
+    <string name="dandelion_is_your_companion__appspecific">dandelion* é a túa aplicación para a rede social diaspora*. Engade características como barras de ferramentas e soporte para servidores proxy como a rede Tor.</string>
     <string name="contribute_code">Contribúa ao código!</string>
-    <string name="dandelion_is_developed_as_foss__appspecific">dandelion* é desenvolto libre, libre de Liberdade, e segue o espíritu que marca o proxecto diaspora*. Se quere contribuír, adiante! Por agora somos un equipo pequeno, así que agradecemos calquer tipo de axuda!</string>
-    <string name="get_the_source">Obteña as fontes</string>
-    <string name="translate_the_app">Traduza a app!</string>
-    <string name="app_not_available_in_your_lang_translate_with_stringlate">Non está a aplicación no seu idioma? Pode cambiar eso! Por qué non nos axuda traducíndoa? Utilizamos a plataforma Crowdin para que calquera poida traducir a app.</string>
+    <string name="dandelion_is_developed_as_foss__appspecific">dandelion* é desenvolta libre, libre de Liberdade, e segue o espíritu que marca o proxecto diaspora*. Se queres contribuír, adiante! Por agora somos un equipo pequeno, así que agradecemos calquer tipo de axuda!</string>
+    <string name="get_the_source">Aquí as fontes</string>
+    <string name="translate_the_app">Traduce a app!</string>
+    <string name="app_not_available_in_your_lang_translate_with_stringlate">Non está a aplicación no teu idioma? Podes cambiar eso! Por qué non nos axudas traducíndoa? Utilizamos a plataforma Crowdin para que calquera poida traducir a app.</string>
     <string name="let_me_translate">Deixame traducir</string>
-    <string name="give_feedback">Qué lle parece!</string>
-    <string name="dandelion_still_in_development__appspecific">dandelion* aínda está en desenvolvemento, asi que si ten suxerencias de calquer tipo o valoración, por favor utilice o noso xestor de erros para facérnolo saber!</string>
+    <string name="give_feedback">Danos a túa opinión!</string>
+    <string name="dandelion_still_in_development__appspecific">dandelion* aínda está en desenvolvemento, asi que se tes suxestións de calquer tipo ou valoración, por favor usa o noso xestor de errros para facérnolo saber!</string>
     <string name="report_bugs">Reporte erros</string>
-    <string name="spread_the_word">Difunda!</string>
-    <string name="tell_your_friends_about_diaspora__appspecific">Dígalle aos seus amigos e familiares que utiliza diaspora* e #dandelion! Por qué no escribir sobre a experiencia? Encantaríanos saber de vostede!</string>
-    <string name="share_the_app">Comparta a aplicación</string>
+    <string name="spread_the_word">Difunde!</string>
+    <string name="tell_your_friends_about_diaspora__appspecific">Dille aos teus amigos e familiares que utilizas diaspora* e #dandelion! Por qué non escribir sobre a experiencia? Encantaríanos saber de ti!</string>
+    <string name="share_the_app">Comparte a aplicación</string>
     <string name="hey_checkout_dandelion_tag__appspecific">Ei!! Olla #dandelion! %1$s</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Mantedores</string>
@@ -205,9 +205,9 @@
     <string name="tell_me_more">Cóntame máis</string>
     <string name="enable_to_open_youtube_links_on_external_app">Activar para abrir vídeos YouTube nunha app externa</string>
     <string name="youtube_links">Ligazóns YouTube</string>
-    <string name="change_the_theme_of_your_account">Cambiar o decorado da súa conta</string>
-    <string name="pull_to_refresh">Tire para actualizar</string>
-    <string name="pulling_down_on_top_of_page_to_refresh">Tirar hacia abaixo na parte superior da páxina.\nDebe reiniciar a app para que os cambios se apliquen.</string>
+    <string name="change_the_theme_of_your_account">Cambiar o decorado da túa conta</string>
+    <string name="pull_to_refresh">Tira para actualizar</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">Tirar hacia abaixo na parte superior da páxina.\nDebes reiniciar a app para que os cambios se apliquen.</string>
     <string name="donate">Doar</string>
     <string name="do_you_like_this_project_want_donate_to_keep_alive">Gústache este proxecto? Queres que siga mellorando e resolvendo os problemas?\n\nDesenvolver aplicacións e escribir a documentación leva moito tempo! Se queres apoiar ao proxecto para que continúe, por favor, considera facer unha pequena doazón!\n\nEste proxecto desenvólvese no tempo libre, ofrécese libre e gratuitamente e sen publicidade!</string>
 </resources>
