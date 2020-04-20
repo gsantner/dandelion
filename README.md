@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/gsantner/dandelion.svg?branch=master)](https://travis-ci.org/gsantner/dandelion)
 [![Translate - with Stringlate](https://img.shields.io/badge/stringlate-translate-green.svg)](https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion.git&mail=gro.xobliam@@rentnasg)
 [![Chat - Matrix](https://img.shields.io/badge/chat-on%20matrix-blue.svg)](https://matrix.to/#/#dandelion:matrix.org) [![Chat - FreeNode IRC](https://img.shields.io/badge/chat-on%20irc-blue.svg)](https://kiwiirc.com/client/irc.freenode.net/?nick=dandelion-anon|?##dandelion)
-[![Donate](https://img.shields.io/badge/donate-appreciation-orange.svg)](https://gsantner.net/supportme/?project=dandelion&source=readme)
+[![Donate](https://img.shields.io/badge/donate-appreciation-orange.svg)](https://gsantner.net/page/supportme.html?project=dandelion&source=gh_readme)
 [![Donate LiberaPay](https://img.shields.io/badge/donate-liberapay-orange.svg)](https://liberapay.com/gsantner/donate) ![](https://r.gsantner.net/matomo/piwik.php?action_name=readme&idsite=2&rec=1&urlref=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion%2FREADME.md&_cvar=%7B%221%22%3A%5B%22source%22%2C%22readme%22%5D%2C%222%22%3A%5B%22project%22%2C%22dandelion%22%5D%2C%223%22%3A%5B%22packageid%22%2C%22com.github.dfa.diaspora_android%22%5D%2C%224%22%3A%5B%22referrer%22%2C%22https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion%2FREADME.md%22%5D%7D)
 
 # dandelion\*
@@ -78,7 +78,7 @@ For more licensing informations, see [`3rd party licenses`](/app/src/main/res/ra
 
 ### Notice
 #### Maintainers
-- gsantner ([GitHub](https://github.com/gsantner), [Web](https://gsantner.net/supportme/?project=dandelion&source=readme), [diaspora*](https://pod.geraspora.de/people/d1cbdd70095301341e834860008dbc6c))
-  - Bitcoin: [1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5](https://gsantner.net/supportme/?project=dandelion&source=readme)
+- gsantner ([GitHub](https://github.com/gsantner), [Web](https://gsantner.net/page/supportme.html?project=dandelion&source=gh_readme), [diaspora*](https://pod.geraspora.de/people/d1cbdd70095301341e834860008dbc6c))
+  - Bitcoin: [1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5](https://gsantner.net/page/supportme.html?project=dandelion&source=gh_readme)
 - vanitasvitae ([GitHub](https://github.com/vanitasvitae), [diaspora*](https://pod.geraspora.de/people/bbd7af90fbec013213e34860008dbc6c))
   - Bitcoin: 1Ao3W6NaQv3xKppviB7RSFKjHo6PGd8RTy
