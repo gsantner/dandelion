@@ -115,7 +115,7 @@ dependencies {
     implementation "com.github.DASAR:ShiftColorPicker:v0.5"
 
     // Tool libraries
-    implementation 'commons-io:commons-io:2.6'
+    implementation 'commons-io:commons-io:2.7'
     implementation "info.guardianproject.netcipher:netcipher:${version_library_netcipher}"
     implementation "info.guardianproject.netcipher:netcipher-webkit:${version_library_netcipher}"
     implementation "com.jakewharton:butterknife:${version_library_butterknife}"
