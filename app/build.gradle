@@ -101,7 +101,7 @@ dependencies {
 
     // Jars
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation 'junit:junit:4.13'
+    testImplementation 'junit:junit:4.13.1'
 
     // Android standard libs
     implementation "com.android.support:appcompat-v7:${version_library_appcompat}"
