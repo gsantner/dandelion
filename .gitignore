@@ -36,6 +36,7 @@ tmp/
 ### Gradle ###
 .gradle
 build/
+dist/
 gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)

@@ -21,6 +21,7 @@ android {
         buildConfigField "boolean", "IS_TEST_BUILD", "false"
         buildConfigField "boolean", "IS_GPLAY_BUILD", "false"
         buildConfigField "String[]", "DETECTED_ANDROID_LOCALES", "${findUsedAndroidLocales()}"
+        buildConfigField "String", "BUILD_DATE", "\"${getBuildDate()}\""
         buildConfigField "String", "GITHASH", "\"${getGitHash()}\""
         setProperty("archivesBaseName", applicationId + "-v" + versionCode + "-" + versionName)
     }
@@ -89,8 +90,7 @@ android {
     }
 
     lintOptions {
-        disable 'MissingTranslation'
-        disable 'InvalidPackage'
+        disable 'MissingTranslation', 'InvalidPackage', 'ObsoleteLintCustomCheck', 'DefaultLocale', 'UnusedAttribute', 'VectorRaster', 'InflateParams', 'IconLocation', 'UnusedResources', 'TypographyEllipsis'
         abortOnError false
     }
 }
@@ -118,9 +118,10 @@ dependencies {
     implementation 'commons-io:commons-io:2.6'
     implementation "info.guardianproject.netcipher:netcipher:${version_library_netcipher}"
     implementation "info.guardianproject.netcipher:netcipher-webkit:${version_library_netcipher}"
+    //noinspection AnnotationProcessorOnCompilePath
     implementation "com.jakewharton:butterknife:${version_library_butterknife}"
     if (enable_plugin_kotlin) {
-        implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$version_plugin_kotlin"
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${version_plugin_kotlin}"
     }
 
     // Processors
