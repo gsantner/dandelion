@@ -46,8 +46,9 @@ import java.util.Set;
 /**
  * Simple Host-Based AdBlocker
  */
-@SuppressWarnings({"WeakerAccess", "SpellCheckingInspection", "unused"})
+@SuppressWarnings({"WeakerAccess", "SpellCheckingInspection", "unused", "TryFinallyCanBeTryWithResources"})
 public class AdBlock {
+    private static final Object synchronizeObj = new Object();
     private static final AdBlock instance = new AdBlock();
 
     public static AdBlock getInstance() {
@@ -61,7 +62,9 @@ public class AdBlock {
     //########################
     private final Set<String> _adblockHostsFromRaw = new HashSet<>();
     private final Set<String> _adblockHosts = new HashSet<>();
-    private boolean _isLoaded;
+    private final List<Callback.b3<URI, String, String>> _customBlockCallbacks = new ArrayList<>();
+    private boolean _isLoaded = false;
+    private boolean _isAdblockLogging = false;
 
     //########################
     //##
@@ -72,25 +75,47 @@ public class AdBlock {
     }
 
     public boolean isAdHost(String urlS) {
+        boolean block = false;
         if (urlS != null && !urlS.isEmpty() && urlS.startsWith("http")) {
             try {
-                URI url = new URI(urlS);
+                URI url;
+                try {
+                    url = new URI(urlS);
+                } catch (Exception e) {
+                    url = new URI(urlS.replaceFirst("[?].*", ""));
+                }
                 String host = url.getHost().trim();
                 if (host.startsWith("www.") && host.length() >= 4) {
                     host = host.substring(4);
                 }
-                return _adblockHosts.contains(host) || _adblockHosts.contains("www." + host);
+                block = _adblockHosts.contains(host) || _adblockHosts.contains("www." + host);
+                for (Callback.b3<URI, String, String> cb : _customBlockCallbacks) {
+                    if (block) {
+                        break;
+                    }
+                    try {
+                        block = cb.callback(url, urlS, host);
+                    } catch (Exception ignored) {
+                    }
+                }
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
 
         }
-        return false;
+
+        if (_isAdblockLogging) {
+            Log.d(getClass().getSimpleName(), "UrlAllowed-" + (block ? "N" : "Y") + "  " + urlS);
+        }
+        return block;
     }
 
     public AdBlock reset() {
-        _adblockHosts.clear();
-        _adblockHosts.addAll(_adblockHostsFromRaw);
+        synchronized (synchronizeObj) {
+            _adblockHosts.clear();
+            _adblockHosts.addAll(_adblockHostsFromRaw);
+            _customBlockCallbacks.clear();
+        }
         return this;
     }
 
@@ -102,7 +127,7 @@ public class AdBlock {
         return new WebResourceResponse("text/plain", "utf-8", new ByteArrayInputStream("".getBytes()));
     }
 
-    public void addBlockedHosts(String... hosts) {
+    public AdBlock addBlockedHosts(String... hosts) {
         for (String host : hosts) {
             if (host != null) {
                 host = host.trim();
@@ -110,23 +135,29 @@ public class AdBlock {
                     host = host.substring(4);
                 }
                 if (!host.startsWith("#") && !host.startsWith("\"")) {
-                    _adblockHosts.add(host);
+                    synchronized (synchronizeObj) {
+                        _adblockHosts.add(host);
+                    }
                 }
             }
         }
-
+        return this;
     }
 
-    public void loadHostsFromRawAssetsAsync(final Context context) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
+    public void loadHostsFromRawAssetsAsync(final Context context, final boolean... debugIgnoreAssets) {
+        if (debugIgnoreAssets != null && debugIgnoreAssets.length > 0 && debugIgnoreAssets[0]) {
+            _isLoaded = true;
+            return;
+        }
+
+        new Thread(() -> {
+            try {
+                synchronized (synchronizeObj) {
                     loadHostsFromRawAssets(context);
                     _isLoaded = true;
-                } catch (IOException e) {
-                    e.printStackTrace();
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }).start();
     }
@@ -171,5 +202,18 @@ public class AdBlock {
             }
         }
         return adblockResIds;
+    }
+
+    // URI uri, String url, String host
+    public AdBlock addCustomBlockCallback(Callback.b3<URI, String, String> cb) {
+        synchronized (synchronizeObj) {
+            _customBlockCallbacks.add(cb);
+        }
+        return this;
+    }
+
+    public AdBlock setLogEnabled(boolean isAdblockLogging) {
+        _isAdblockLogging = isAdblockLogging;
+        return this;
     }
 }
