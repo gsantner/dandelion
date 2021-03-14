@@ -12,6 +12,8 @@
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">තව</string>
+    <string name="exit_app">යෙදුමෙන් පිටවන්න</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <string name="protocol">කෙටුම්පත</string>
