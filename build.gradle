@@ -26,7 +26,7 @@ buildscript {
         // https://github.com/JakeWharton/butterknife/releases
         version_library_butterknife = "8.8.1" //9.0.0-rc2
         // https://github.com/guardianproject/NetCipher/releases
-        version_library_netcipher = "2.0.0-alpha1"
+        version_library_netcipher = "2.1.0"
     }
 
     repositories {
