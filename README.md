@@ -1,9 +1,10 @@
-[![GitHub release](https://img.shields.io/github/tag/gsantner/dandelion.svg)](https://github.com/gsantner/dandelion/releases)
-[![Build Status](https://travis-ci.org/gsantner/dandelion.svg?branch=master)](https://travis-ci.org/gsantner/dandelion)
-[![Translate - with Stringlate](https://img.shields.io/badge/stringlate-translate-green.svg)](https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion.git&mail=gro.xobliam@@rentnasg)
-[![Chat - Matrix](https://img.shields.io/badge/chat-on%20matrix-blue.svg)](https://matrix.to/#/#dandelion:matrix.org) [![Chat - FreeNode IRC](https://img.shields.io/badge/chat-on%20irc-blue.svg)](https://kiwiirc.com/client/irc.freenode.net/?nick=dandelion-anon|?##dandelion)
-[![Donate](https://img.shields.io/badge/donate-appreciation-orange.svg)](https://gsantner.net/page/supportme.html?project=dandelion&source=gh_readme)
-[![Donate LiberaPay](https://img.shields.io/badge/donate-liberapay-orange.svg)](https://liberapay.com/gsantner/donate) ![](https://r.gsantner.net/matomo/piwik.php?action_name=readme&idsite=2&rec=1&urlref=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion%2FREADME.md&_cvar=%7B%221%22%3A%5B%22source%22%2C%22readme%22%5D%2C%222%22%3A%5B%22project%22%2C%22dandelion%22%5D%2C%223%22%3A%5B%22packageid%22%2C%22com.github.dfa.diaspora_android%22%5D%2C%224%22%3A%5B%22referrer%22%2C%22https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion%2FREADME.md%22%5D%7D)
+[![GitHub releases](https://img.shields.io/github/tag/gsantner/dandelion.svg)](https://github.com/gsantner/dandelion/releases)
+[![GitHub downloads](https://img.shields.io/github/downloads/gsantner/dandelion/total.svg?logo=github&logoColor=lime)](https://github.com/gsantner/dandelion/releases)
+[![Translate on Crowdin](https://img.shields.io/badge/translate-crowdin-green.svg)](https://crowdin.com/project/diaspora-for-android/invite)
+[![Donate - say thanks](https://img.shields.io/badge/donate-say%20thanks-red.svg)](https://gsantner.net/page/supportme.html?project=dandelion&source=readme)
+[![Chat on Matrix](https://img.shields.io/badge/chat-matrix-blue.svg)](https://matrix.to/#/#dandelion:matrix.org)
+[![GitHub CI](https://github.com/gsantner/dandelion/workflows/CI/badge.svg)](https://github.com/gsantner/dandelion/actions)
+[![Codacy code quality](https://img.shields.io/codacy/grade/aff869c440bc48b7bd64680e97cbc453)](https://www.codacy.com/app/gsantner/dandelion)
 
 # dandelion\*
 <img src="/app/src/main/ic_launcher-web.png" align="left" width="100" hspace="10" vspace="10">
@@ -43,8 +44,7 @@ The project uses [AOSP Java Code Style](https://source.android.com/source/code-s
 
 Translations can be contributed on GitHub or via [E-Mail](https://gsantner.net/#contact). You can use Stringlate ([![Translate - with Stringlate](https://img.shields.io/badge/stringlate-translate-green.svg)](https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion.git)) to translate the project directly on your Android phone. It allows you to export as E-Mail attachement and to post on GitHub.
 
-Join our IRC or Matrix channel (bridged) and say hello! Don't be afraid to start talking. [![Chat - Matrix](https://img.shields.io/badge/chat-on%20matrix-blue.svg)](https://matrix.to/#/#dandelion:matrix.org) [![Chat - FreeNode IRC](https://img.shields.io/badge/chat-on%20irc-blue.svg)](https://kiwiirc.com/client/irc.freenode.net/?nick=dandelion-anon|?##dandelion)
-
+Join our Matrix channel and say hello! Don't be afraid to start talking. [![Chat - Matrix](https://img.shields.io/badge/chat-on%20matrix-blue.svg)](https://matrix.to/#/#dandelion:matrix.org)  
 Note that the main project members are working on this project for free during leisure time, are mostly busy with their job/university/school, and may not react or start coding immediately.
 
 
