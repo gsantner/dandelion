@@ -46,7 +46,7 @@
     <string name="take_screenshot_of_webpage">Ta skärmdump av en webbsida</string>
     <string name="saving_image_to">Sparar bild som</string>
     <string name="saving_screenshot_as">Sparar skärmdump som:</string>
-    <string name="link_adress_copied">Länkadress kopierad&#8230;</string>
+    <string name="link_adress_copied">Länkadressen kopierades ...</string>
     <string name="new_post">Nytt inlägg</string>
     <string name="go_to_top">Till toppen</string>
     <string name="search_by_tags_or_persons__appspecific">Sök på taggar eller personer</string>
@@ -59,7 +59,7 @@
     <string name="share_link_address">Dela länkadress</string>
     <string name="save_image">Spara bild</string>
     <string name="share_image">Dela bild</string>
-    <string name="open_in_external_browser">Öppna i en extern webbläsare&#8230;</string>
+    <string name="open_in_external_browser">Öppna i en extern webbläsare...</string>
     <string name="copy_link_adress_to_clipboard">Kopiera länkadress</string>
     <string name="copy_image_address_to_clipboard">Kopiera bildadressen</string>
     <!-- More from MainActivity -->
