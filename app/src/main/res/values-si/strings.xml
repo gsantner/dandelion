@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application -->
+    <string name="close">වසන්න</string>
+    <string name="cancel">අවලංගු</string>
+    <!-- Common Words -->
+    <string name="settings">සැකසුම්</string>
+    <string name="notifications">දැනුම්දීම්</string>
+    <string name="conversations">සංවාද</string>
+    <string name="profile">පැතිකඩ</string>
+    <string name="search">සොයන්න</string>
+    <!-- Notifications dropdown menu -->
+    <!-- Pod Activity -->
+    <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">තව</string>
+    <string name="exit_app">යෙදුමෙන් පිටවන්න</string>
+    <!-- More from MainActivity -->
+    <!-- Permissions -->
+    <string name="protocol">කෙටුම්පත</string>
+    <!-- Operability -->
+    <!-- Category Titles -->
+    <string name="network">ජාලය</string>
+    <!-- Visuals -->
+    <!-- Navigiation Slider -->
+    <string name="user">පරිශීලක</string>
+    <!-- Themes -->
+    <!-- Notifications dropdown -->
+    <string name="language">භාෂාව</string>
+    <!-- Font size -->
+    <string name="normal">සාමාන්‍ය</string>
+    <!-- Load images -->
+    <!-- Screen rotation -->
+    <!-- Proxy -->
+    <string name="proxy">පෙරකලාසිය</string>
+    <string name="enable_proxy">පෙරකලාසිය සබල කරන්න</string>
+    <!-- Chrome custom tabs -->
+    <!-- Diaspora Settings -->
+    <string name="change_account">ගිණුම වෙනස් කරන්න</string>
+    <!-- More -->
+    <string name="about">පිලිබඳව</string>
+    <string name="license">බලපත්‍රය</string>
+    <string name="application">යෙදුම</string>
+    <string name="device">උපාංගය</string>
+    <!-- License & help (large amount of text) -->
+    <string name="donate">පරිත්‍යාග</string>
+</resources>
