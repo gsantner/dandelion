@@ -10,28 +10,27 @@
 #########################################################*/
 package net.gsantner.opoc.ui;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.support.annotation.ColorInt;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.AppCompatEditText;
-import android.text.Editable;
+import android.support.v7.widget.TooltipCompat;
 import android.text.InputType;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.util.Pair;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -40,34 +39,43 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Checkable;
 import android.widget.Filter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import net.gsantner.opoc.util.ActivityUtils;
+import net.gsantner.opoc.android.dummy.TextWatcherDummy;
 import net.gsantner.opoc.util.Callback;
 import net.gsantner.opoc.util.ContextUtils;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.IOFileFilter;
-
-import java.io.File;
-import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 import java.util.regex.Pattern;
 
-@SuppressWarnings("WeakerAccess")
+@SuppressLint("SetTextI18n")
 public class SearchOrCustomTextDialog {
 
     public static class DialogOptions {
-        public Callback.a1<String> callback;
-        public Callback.a2<String, Integer> withPositionCallback;
-        public List<? extends CharSequence> data;
-        public List<? extends CharSequence> highlightData;
+
+        // Callback for search text or text of single item
+        @Nullable
+        public Callback.a1<String> callback = null;
+
+        // Callback for indices of selected items.
+        // List will contain single item if isMultiSelectEnabled == false;
+        @Nullable
+        public Callback.a1<List<Integer>> positionCallback = null;
+
+        public boolean isMultiSelectEnabled = false;
+        public List<? extends CharSequence> data = null;
+        public List<? extends CharSequence> highlightData = null;
         public List<Integer> iconsForData;
         public String messageText = "";
         public String defaultText = "";
@@ -78,8 +86,9 @@ public class SearchOrCustomTextDialog {
         public int gravity = Gravity.NO_GRAVITY;
         public int searchInputType = InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
         public boolean searchIsRegex = false;
-        public Callback.a1<Spannable> highlighter;
+        public Callback.a1<Spannable> highlighter = null;
         public String extraFilter = null;
+        public List<Integer> preSelected = null;
 
         public Callback.a0 neutralButtonCallback = null;
 
@@ -97,41 +106,57 @@ public class SearchOrCustomTextDialog {
         public int titleText = 0;
         @StringRes
         public int searchHintText = android.R.string.search_go;
+        @DrawableRes
+        public int clearInputIcon = android.R.drawable.ic_input_delete;
     }
 
-    private static class WithPositionAdapter extends ArrayAdapter<Pair<String, Integer>> {
+    private static class Adapter extends ArrayAdapter<Integer> {
         @LayoutRes
-        final int _layout;
-        final LayoutInflater _inflater;
-        final DialogOptions _dopt;
-        final List<Pair<String, Integer>> _filteredItems;
-        final Pattern _extraPattern;
+        private final int _layout;
+        private final int _layoutHeight;
+        private final LayoutInflater _inflater;
+        private final DialogOptions _dopt;
+        private final List<Integer> _filteredItems;
+        private final Set<Integer> _selectedItems;
+        private final Pattern _extraPattern;
 
-        WithPositionAdapter(Context c_context, @LayoutRes int c_layout, List<Pair<String, Integer>> c_filteredItems, DialogOptions c_dopt) {
-            super(c_context, c_layout, c_filteredItems);
-            _inflater = LayoutInflater.from(c_context);
-            _layout = c_layout;
-            _dopt = c_dopt;
-            _filteredItems = c_filteredItems;
-            _extraPattern = (c_dopt.extraFilter == null ? null : Pattern.compile(c_dopt.extraFilter));
+        public static Adapter create(final Context context, final DialogOptions dopt) {
+            return new Adapter(context, dopt, dopt.isMultiSelectEnabled ? android.R.layout.simple_list_item_multiple_choice : android.R.layout.simple_list_item_1, new ArrayList<>());
+        }
+
+        private Adapter(final Context context, final DialogOptions dopt, final int layout, final List<Integer> filteredItems) {
+            super(context, layout, filteredItems);
+            _layout = layout;
+            _filteredItems = filteredItems;
+            _inflater = LayoutInflater.from(context);
+            _dopt = dopt;
+            _extraPattern = (_dopt.extraFilter == null ? null : Pattern.compile(_dopt.extraFilter));
+            _selectedItems = new HashSet<>(_dopt.preSelected != null ? _dopt.preSelected : Collections.emptyList());
+            ContextUtils cu = new ContextUtils(context);
+            _layoutHeight = (int) cu.convertDpToPx(36);
+            cu.freeContextRef();
         }
 
         @NonNull
         @Override
         public View getView(int pos, @Nullable View convertView, @NonNull ViewGroup parent) {
-            final Pair<String, Integer> item = getItem(pos);
-            final String text = item.first;
-            final int posInOriginalList = item.second;
+            final int index = getItem(pos);
 
             final TextView textView;
             if (convertView == null) {
                 textView = (TextView) _inflater.inflate(_layout, parent, false);
+                textView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+                textView.setMinHeight(_layoutHeight);
             } else {
                 textView = (TextView) convertView;
             }
 
-            if (posInOriginalList >= 0 && _dopt.iconsForData != null && posInOriginalList < _dopt.iconsForData.size() && _dopt.iconsForData.get(posInOriginalList) != 0) {
-                textView.setCompoundDrawablesWithIntrinsicBounds(_dopt.iconsForData.get(posInOriginalList), 0, 0, 0);
+            if (textView instanceof Checkable) {
+                ((Checkable) textView).setChecked(_selectedItems.contains(index));
+            }
+
+            if (index >= 0 && _dopt.iconsForData != null && index < _dopt.iconsForData.size() && _dopt.iconsForData.get(index) != 0) {
+                textView.setCompoundDrawablesWithIntrinsicBounds(_dopt.iconsForData.get(index), 0, 0, 0);
                 textView.setCompoundDrawablePadding(32);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     textView.setCompoundDrawableTintList(ColorStateList.valueOf(_dopt.isDarkDialog ? Color.WHITE : Color.BLACK));
@@ -140,6 +165,7 @@ public class SearchOrCustomTextDialog {
                 textView.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
             }
 
+            final CharSequence text = _dopt.data.get(index).toString();
             if (_dopt.highlightData != null) {
                 final boolean hl = _dopt.highlightData.contains(text);
                 textView.setTextColor(hl ? _dopt.highlightColor : _dopt.textColor);
@@ -157,6 +183,7 @@ public class SearchOrCustomTextDialog {
             return textView;
         }
 
+        @NonNull
         @Override
         public Filter getFilter() {
             return new Filter() {
@@ -164,24 +191,25 @@ public class SearchOrCustomTextDialog {
                 @Override
                 protected void publishResults(final CharSequence constraint, final FilterResults results) {
                     _filteredItems.clear();
-                    _filteredItems.addAll((List<Pair<String, Integer>>) results.values);
+                    _filteredItems.addAll((List<Integer>) results.values);
                     notifyDataSetChanged();
                 }
 
                 @Override
                 protected FilterResults performFiltering(final CharSequence constraint) {
-                    final ArrayList<Pair<CharSequence, Integer>> resList = new ArrayList<>();
+                    final List<Integer> resList = new ArrayList<>();
 
                     if (_dopt.data != null) {
                         final String fil = constraint.toString();
                         final boolean emptySearch = fil.isEmpty();
                         for (int i = 0; i < _dopt.data.size(); i++) {
-                            final CharSequence str = _dopt.data.get(i);
+                            final String str = _dopt.data.get(i).toString();
                             final boolean matchExtra = (_extraPattern == null) || _extraPattern.matcher(str).find();
-                            final boolean matchNormal = str.toString().toLowerCase(Locale.getDefault()).contains(fil.toLowerCase(Locale.getDefault()));
-                            final boolean matchRegex = _dopt.searchIsRegex && (str.toString().matches(fil));
+                            final Locale locale = Locale.getDefault();
+                            final boolean matchNormal = str.toLowerCase(locale).contains(fil.toLowerCase(locale));
+                            final boolean matchRegex = _dopt.searchIsRegex && (str.matches(fil));
                             if (matchExtra && (matchNormal || matchRegex || emptySearch)) {
-                                resList.add(new Pair<>(str, i));
+                                resList.add(i);
                             }
                         }
                     }
@@ -196,12 +224,11 @@ public class SearchOrCustomTextDialog {
     }
 
     public static void showMultiChoiceDialogWithSearchFilterUI(final Activity activity, final DialogOptions dopt) {
-        final List<Pair<String, Integer>> filteredItems = new ArrayList<>();
         final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(activity, dopt.isDarkDialog
                 ? android.support.v7.appcompat.R.style.Theme_AppCompat_Dialog
                 : android.support.v7.appcompat.R.style.Theme_AppCompat_Light_Dialog
         );
-        final WithPositionAdapter listAdapter = new WithPositionAdapter(activity, android.R.layout.simple_list_item_1, filteredItems, dopt);
+        final Adapter listAdapter = Adapter.create(activity, dopt);
 
         final AppCompatEditText searchEditText = new AppCompatEditText(activity);
         searchEditText.setText(dopt.defaultText);
@@ -211,21 +238,30 @@ public class SearchOrCustomTextDialog {
         searchEditText.setHintTextColor((dopt.textColor & 0x00FFFFFF) | 0x99000000);
         searchEditText.setHint(dopt.searchHintText);
         searchEditText.setInputType(dopt.searchInputType == 0 ? searchEditText.getInputType() : dopt.searchInputType);
+        searchEditText.addTextChangedListener(TextWatcherDummy.after((cbEditable) -> listAdapter.getFilter().filter(cbEditable)));
 
-        searchEditText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void afterTextChanged(final Editable arg0) {
-                listAdapter.getFilter().filter(searchEditText.getText());
-            }
+        final ContextUtils cu = new ContextUtils(activity);
+        final int margin = (int) cu.convertDpToPx(8);
+        cu.freeContextRef();
 
-            @Override
-            public void onTextChanged(final CharSequence arg0, final int arg1, final int arg2, final int arg3) {
-            }
+        final LinearLayout searchLayout = new LinearLayout(activity);
+        searchLayout.setOrientation(LinearLayout.HORIZONTAL);
 
-            @Override
-            public void beforeTextChanged(final CharSequence arg0, final int arg1, final int arg2, final int arg3) {
-            }
-        });
+        LinearLayout.LayoutParams lp;
+        lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT, 1);
+        lp.gravity = Gravity.START | Gravity.BOTTOM;
+        searchLayout.addView(searchEditText, lp);
+
+        // 'Button to clear the search box'
+        final ImageView clearButton = new ImageView(activity);
+        clearButton.setImageResource(dopt.clearInputIcon);
+        TooltipCompat.setTooltipText(clearButton, activity.getString(android.R.string.cancel));
+        clearButton.setColorFilter(dopt.isDarkDialog ? Color.WHITE : Color.parseColor("#ff505050"));
+        lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT, 0);
+        lp.gravity = Gravity.END | Gravity.CENTER_VERTICAL;
+        lp.setMargins(margin, 0, (int) (margin * 1.5), 0);
+        searchLayout.addView(clearButton, lp);
+        clearButton.setOnClickListener((v) -> searchEditText.setText(""));
 
         final ListView listView = new ListView(activity);
         final LinearLayout linearLayout = new LinearLayout(activity);
@@ -234,10 +270,9 @@ public class SearchOrCustomTextDialog {
         linearLayout.setOrientation(LinearLayout.VERTICAL);
 
         if (dopt.isSearchEnabled) {
-            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            int px = (int) (new ContextUtils(listView.getContext()).convertDpToPx(8));
-            lp.setMargins(px, px / 2, px, px / 2);
-            linearLayout.addView(searchEditText, lp);
+            lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            lp.setMargins(margin, margin / 2, margin, margin / 2);
+            linearLayout.addView(searchLayout, lp);
         }
 
         final LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0);
@@ -251,36 +286,32 @@ public class SearchOrCustomTextDialog {
                 .setOnCancelListener(null)
                 .setNegativeButton(dopt.cancelButtonText, (dialogInterface, i) -> dialogInterface.dismiss());
 
+        if (dopt.titleText != 0) {
+            dialogBuilder.setTitle(dopt.titleText);
+        }
+
+        // Ok button action
+        if ((dopt.isSearchEnabled && dopt.callback != null) || (dopt.isMultiSelectEnabled)) {
+            dialogBuilder.setPositiveButton(dopt.okButtonText, (dialogInterface, i) -> {
+                final String searchText = dopt.isSearchEnabled ? searchEditText.getText().toString() : null;
+                if (dopt.positionCallback != null && !listAdapter._selectedItems.isEmpty()) {
+                    final List<Integer> sel = new ArrayList<>(listAdapter._selectedItems);
+                    Collections.sort(sel);
+                    dopt.positionCallback.callback(sel);
+                } else if (dopt.callback != null && !TextUtils.isEmpty(searchText)) {
+                    dopt.callback.callback(searchText);
+                }
+            });
+        }
+
+        // Setup neutralbutton
         if (dopt.neutralButtonCallback != null && dopt.neutralButtonText != 0) {
             dialogBuilder.setNeutralButton(dopt.neutralButtonText, (dialogInterface, i) -> {
                 dopt.neutralButtonCallback.callback();
             });
         }
 
-        if (dopt.titleText != 0) {
-            dialogBuilder.setTitle(dopt.titleText);
-        }
-
-        if (dopt.isSearchEnabled) {
-            dialogBuilder.setPositiveButton(dopt.okButtonText, (dialogInterface, i) -> {
-                dialogInterface.dismiss();
-                if (dopt.callback != null && !TextUtils.isEmpty(searchEditText.getText().toString())) {
-                    dopt.callback.callback(searchEditText.getText().toString());
-                }
-            });
-        }
-
         final AlertDialog dialog = dialogBuilder.create();
-        listView.setOnItemClickListener((parent, view, position, id) -> {
-            dialog.dismiss();
-            if (dopt.callback != null) {
-                dopt.callback.callback(filteredItems.get(position).first);
-            }
-            if (dopt.withPositionCallback != null) {
-                final Pair<String, Integer> item = filteredItems.get(position);
-                dopt.withPositionCallback.callback(item.first, item.second);
-            }
-        });
 
         searchEditText.setOnKeyListener((keyView, keyCode, keyEvent) -> {
             if ((keyEvent.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
@@ -316,117 +347,49 @@ public class SearchOrCustomTextDialog {
         if (dopt.defaultText != null) {
             listAdapter.getFilter().filter(searchEditText.getText());
         }
-    }
 
+        // Helper function to trigger callback with single item
+        final Callback.b1<Integer> directActivate = (position) -> {
+            final int index = listAdapter._filteredItems.get(position);
+            dialog.dismiss();
+            if (dopt.callback != null) {
+                dopt.callback.callback(dopt.data.get(index).toString());
+            }
+            if (dopt.positionCallback != null) {
+                dopt.positionCallback.callback(Collections.singletonList(index));
+            }
+            return true;
+        };
 
-    public static SearchFilesTask recursiveFileSearch(Activity activity, File searchDir, String query, Callback.a1<List<String>> callback) {
-        query = query.replaceAll("(?<![.])[*]", ".*");
-        SearchFilesTask task = new SearchFilesTask(activity, searchDir, query, callback, query.startsWith("^") || query.contains("*"));
-        task.execute();
-        return task;
-    }
+        // Helper function to append selection count to OK button
+        final Button okButton = dialog.getButton(Dialog.BUTTON_POSITIVE);
+        final String okText = activity.getString(dopt.okButtonText) + (dopt.isMultiSelectEnabled ? " (%d)" : "");
+        final Callback.a0 setOkButtonState = () -> {
+            okButton.setText(okText.replace("%d", Integer.toString(listAdapter._selectedItems.size())));
+        };
 
-    public static class SearchFilesTask extends AsyncTask<Void, File, List<String>> implements IOFileFilter {
-        private final Callback.a1<List<String>> _callback;
-        private final File _searchDir;
-        private final String _query;
-        private final boolean _isRegex;
-        private final WeakReference<Activity> _activityRef;
+        // Set ok button text initially
+        setOkButtonState.callback();
 
-        private final Pattern _regex;
-        private Snackbar _snackBar;
-
-        public SearchFilesTask(Activity activity, File searchDir, String query, Callback.a1<List<String>> callback, boolean isRegex) {
-            _searchDir = searchDir;
-            _query = isRegex ? query : query.toLowerCase();
-            _callback = callback;
-            _isRegex = isRegex;
-            _regex = isRegex ? Pattern.compile(_query) : null;
-            _activityRef = new WeakReference<>(activity);
-        }
-
-        // Called for both, file and folder filter
-        @Override
-        public boolean accept(File file) {
-            return isMatching(file, true);
-        }
-
-        // Not called
-        @Override
-        public boolean accept(File dir, String name) {
-            return isMatching(new File(dir, name), true);
-        }
-
-        // In iterateFilesAndDirs, subdirs are only scanned when returning true on it
-        // But those dirs will also occur in iterator
-        // Hence call this aagain with alwaysMatchDir=false
-        public boolean isMatching(File file, boolean alwaysMatchDir) {
-            if (file.isDirectory()) {
-                // Do never scan .git directories, lots of files, lots of time
-                if (file.getName().equals(".git")) {
-                    return false;
+        // Item click action
+        listView.setOnItemClickListener((parent, textView, pos, id) -> {
+            if (dopt.isMultiSelectEnabled) {
+                final int index = listAdapter._filteredItems.get(pos);
+                if (listAdapter._selectedItems.contains(index)) {
+                    listAdapter._selectedItems.remove(index);
+                } else {
+                    listAdapter._selectedItems.add(index);
                 }
-                if (alwaysMatchDir) {
-                    return true;
+                if (textView instanceof Checkable) {
+                    ((Checkable) textView).setChecked(listAdapter._selectedItems.contains(index));
                 }
+                setOkButtonState.callback();
+            } else {
+                directActivate.callback(pos);
             }
-            String name = file.getName();
-            file = file.getParentFile();
-            return _isRegex ? _regex.matcher(name).matches() : name.toLowerCase().contains(_query);
-        }
+        });
 
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            if (_activityRef.get() != null) {
-                _snackBar = Snackbar.make(_activityRef.get().findViewById(android.R.id.content), _query + "...", Snackbar.LENGTH_INDEFINITE);
-                _snackBar.setAction(android.R.string.cancel, (v) -> {
-                    _snackBar.dismiss();
-                    cancel(true);
-                }).show();
-            }
-        }
-
-        @Override
-        protected List<String> doInBackground(Void... voidp) {
-            List<String> ret = new ArrayList<>();
-
-            boolean first = true;
-            Iterator<File> iter = null;
-            try {
-                iter = FileUtils.iterateFilesAndDirs(_searchDir, this, this);
-            } catch (Exception ex) {
-                // Iterator may throw an error at creation
-                return ret;
-            }
-            while (iter.hasNext() && !isCancelled()) {
-                File f = iter.next();
-                if (first) {
-                    first = false;
-                    if (f.equals(_searchDir)) {
-                        continue;
-                    }
-                }
-                if (f.isFile() || (f.isDirectory() && isMatching(f, false))) {
-                    ret.add(f.getAbsolutePath().replace(_searchDir.getAbsolutePath() + "/", ""));
-                }
-            }
-            return ret;
-        }
-
-        @Override
-        protected void onPostExecute(List<String> ret) {
-            super.onPostExecute(ret);
-            if (_snackBar != null) {
-                _snackBar.dismiss();
-            }
-            if (_callback != null) {
-                try {
-                    _callback.callback(ret);
-                } catch (Exception ignored) {
-                }
-            }
-            new ActivityUtils(_activityRef.get()).hideSoftKeyboard().freeContextRef();
-        }
+        // long click always activates
+        listView.setOnItemLongClickListener((parent, view, pos, id) -> directActivate.callback(pos));
     }
 }

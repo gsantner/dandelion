@@ -36,6 +36,7 @@ import com.github.dfa.diaspora_android.util.DiasporaUrlHelper;
 
 import net.gsantner.opoc.util.AdBlock;
 import net.gsantner.opoc.util.ContextUtils;
+import net.gsantner.opoc.util.ShareUtil;
 
 public class App extends Application {
     private volatile static App app;
@@ -51,6 +52,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        ShareUtil.setFileProviderAuthority(BuildConfig.APPLICATION_ID);
         app = this;
         final Context c = getApplicationContext();
         appSettings = AppSettings.get();

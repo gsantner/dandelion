@@ -78,7 +78,7 @@ public class ContextMenuWebView extends NestedWebView {
             public boolean onMenuItemClick(MenuItem item) {
                 HitTestResult result = getHitTestResult();
                 String url = result.getExtra();
-                final ShareUtil shu = new ShareUtil(context).setFileProviderAuthority(BuildConfig.APPLICATION_ID);
+                final ShareUtil shu = new ShareUtil(context);
                 final PermissionChecker permc = new PermissionChecker(parentActivity);
                 final AppSettings appSettings = new AppSettings(context);
 

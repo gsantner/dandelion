@@ -128,7 +128,7 @@ public class DiasporaStreamFragment extends BrowserFragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         AppLog.d(this, "StreamFragment.onOptionsItemSelected()");
-        ShareUtil shu = new ShareUtil(getContext()).setFileProviderAuthority(BuildConfig.APPLICATION_ID);
+        ShareUtil shu = new ShareUtil(getContext());
         PermissionChecker permc = new PermissionChecker(getActivity());
         switch (item.getItemId()) {
             case R.id.action_reload: {
@@ -185,7 +185,7 @@ public class DiasporaStreamFragment extends BrowserFragment {
                     if (permc.mkdirIfStoragePermissionGranted(fileSaveDirectory)) {
                         Bitmap bmp = ShareUtil.getBitmapFromWebView(webView);
                         String filename = "dandelion-" + ShareUtil.SDF_SHORT.format(new Date()) + ".jpg";
-                        _cu.writeImageToFileJpeg(new File(fileSaveDirectory, filename), bmp);
+                        _cu.writeImageToFile(new File(fileSaveDirectory, filename), bmp);
                         Snackbar.make(webView, getString(R.string.saving_screenshot_as)
                                 + " " + filename, Snackbar.LENGTH_LONG).show();
                     }
@@ -195,7 +195,7 @@ public class DiasporaStreamFragment extends BrowserFragment {
 
             case R.id.action_share_screenshot: {
                 if (permc.doIfExtStoragePermissionGranted(getString(R.string.screenshot_permission__appspecific))) {
-                    shu.shareImage(ShareUtil.getBitmapFromWebView(webView), Bitmap.CompressFormat.JPEG);
+                    shu.shareImage(ShareUtil.getBitmapFromWebView(webView));
                 }
                 return true;
             }
