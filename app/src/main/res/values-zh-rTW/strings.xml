@@ -202,6 +202,9 @@
     <string name="tell_me_more">再多說一些</string>
     <string name="enable_to_open_youtube_links_on_external_app">使用其他應用程式來開啟 Youtube 連結</string>
     <string name="youtube_links">Youtube 連結</string>
+    <string name="change_the_theme_of_your_account">修改帳號的佈景主題</string>
+    <string name="pull_to_refresh">下拉可更新</string>
+    <string name="pulling_down_on_top_of_page_to_refresh">從頁面的上方下拉一下可以更新內容。\n這個設定修改後需要重啟應用程式才會生效。</string>
     <string name="donate">贊助</string>
-    <string name="do_you_like_this_project_want_donate_to_keep_alive">喜歡這個專案嗎？希望它繼續改善而且問題得到解決嗎？\n\n開發應用程式以及撰寫相關部落格文章都需要很多時間！如果你想要幫忙讓專案可以繼續，請考慮小額捐款！\n\n這個專案是在閒暇時間開發的，完全免費，並且沒有任何廣告！</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">喜歡這個專案嗎？希望它繼續改善，而且問題得到解決嗎？\n\n無論是開發應用程式，還是撰寫相關部落格文章，都需要很多時間！如果你想要幫助專案持續發展，請考慮給我們小額捐款！\n\n這個專案是在閒暇時間開發的，完全免費，並且沒有任何廣告！</string>
 </resources>
