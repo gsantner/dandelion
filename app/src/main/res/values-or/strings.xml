@@ -45,9 +45,18 @@
     <string name="font_size">ଫଣ୍ଟ ଆକାର</string>
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="portrait">ପୋର୍ଟ୍ରେଟ୍</string>
+    <string name="landscape">ଲ୍ୟାଣ୍ଡସ୍କେପ୍</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="about">ବିଷୟରେ</string>
+    <string name="license">ଲାଇସେନ୍ସ</string>
+    <string name="application">ଆପ୍ଲିକେସନ୍</string>
+    <string name="device">ଡିଭାଇସ୍</string>
+    <string name="app_version_with_arg">ଆପ୍ ସଂସ୍କରଣ: %1$s</string>
+    <string name="android_version_witharg">ଆଣ୍ଡ୍ରଏଡ୍ ସଂସ୍କରଣ: %1$s</string>
+    <string name="device_name_witharg">ଡିଭାଇସ୍ ନାମ: %1$s</string>
     <!-- License & help (large amount of text) -->
 </resources>
