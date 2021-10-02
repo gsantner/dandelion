@@ -58,5 +58,14 @@
     <string name="app_version_with_arg">ଆପ୍ ସଂସ୍କରଣ: %1$s</string>
     <string name="android_version_witharg">ଆଣ୍ଡ୍ରଏଡ୍ ସଂସ୍କରଣ: %1$s</string>
     <string name="device_name_witharg">ଡିଭାଇସ୍ ନାମ: %1$s</string>
+    <string name="code_name_witharg">କୋଡ୍ ନାମ: %1$s</string>
+    <string name="translate_the_app">ଆପ୍ ଅନୁବାଦ କରନ୍ତୁ!</string>
+    <string name="let_me_translate">ମୋତେ ଅନୁବାଦ କରିବାକୁ ଦିଅ</string>
+    <string name="give_feedback">ମତାମତ ଦିଅନ୍ତୁ!</string>
+    <string name="share_the_app">ଆପ୍ ଅଂଶୀଦାର କରନ୍ତୁ</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">ଯୋଗଦାନକାରୀ</string>
+    <string name="gnu_gplv3_license">GNU GPLv3+ ଲାଇସେନ୍ସ</string>
+    <string name="tell_me_more">ମୋତେ ଆହୁରି କୁହନ୍ତୁ</string>
+    <string name="enable_to_open_youtube_links_on_external_app">ବାହ୍ୟ ଆପରେ YouTube ଲିଙ୍କ୍ ଖୋଲିବା ପାଇଁ ସକ୍ଷମ କରନ୍ତୁ</string>
 </resources>
