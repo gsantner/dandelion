@@ -15,11 +15,16 @@
     <!-- Operability -->
     <!-- Category Titles -->
     <string name="appearance">ରୂପ</string>
+    <string name="network">ନେଟୱର୍କ</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">ସାଧାରଣ</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language">ଭାଷା</string>
+    <string name="system_language">ସିଷ୍ଟମ୍ ଭାଷା</string>
     <!-- Font size -->
+    <string name="font_size">ଫଣ୍ଟ ଆକାର</string>
     <!-- Load images -->
     <!-- Screen rotation -->
     <!-- Proxy -->
