@@ -2,13 +2,19 @@
 <resources>
     <!-- Application -->
     <!-- Common Words -->
+    <string name="settings">ସେଟିଂସମୂହ</string>
+    <string name="profile">ପ୍ରୋଫାଇଲ୍</string>
+    <string name="changelog">ପରିବର୍ତ୍ତନ ଲଗ୍</string>
+    <string name="statistics">ପରିସଂଖ୍ୟାନ</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">ଅଧିକ</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">ରୂପ</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <!-- Themes -->
