@@ -11,22 +11,33 @@
     <string name="notifications">ବିଜ୍ଞପ୍ତି</string>
     <string name="conversations">ବାର୍ତ୍ତାଳାପ</string>
     <string name="profile">ପ୍ରୋଫାଇଲ୍</string>
+    <string name="search">ସନ୍ଧାନ କରନ୍ତୁ</string>
     <string name="changelog">ପରିବର୍ତ୍ତନ ଲଗ୍</string>
     <string name="statistics">ପରିସଂଖ୍ୟାନ</string>
     <!-- Notifications dropdown menu -->
+    <string name="all_notifications">ସମସ୍ତ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ</string>
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <string name="more">ଅଧିକ</string>
     <!-- More from MainActivity -->
+    <string name="unable_to_load_image">ପ୍ରତିଛବି ଲୋଡ୍ କରିବାରେ ଅସମର୍ଥ</string>
     <!-- Permissions -->
+    <string name="hide_statusbar_in_mainview">ମୁଖ୍ୟ ଦର୍ଶନରେ ସ୍ଥିତି ଦଣ୍ଡିକା ଲୁଚାନ୍ତୁ</string>
+    <string name="hide_statusbar">ସ୍ଥିତି ଦଣ୍ଡିକା ଲୁଚାଅ</string>
+    <string name="show_title_in_main_view">ମୁଖ୍ୟ ଦର୍ଶନରେ ଆଖ୍ୟା ଦେଖାନ୍ତୁ</string>
+    <string name="show_title">ଆଖ୍ୟା ଦେଖାନ୍ତୁ</string>
+    <string name="launcher_shortcut">ଉନ୍ମୋଚକ ସର୍ଟକଟ୍</string>
     <!-- Operability -->
     <!-- Category Titles -->
     <string name="appearance">ରୂପ</string>
     <string name="network">ନେଟୱର୍କ</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="user">ଉପଭୋକ୍ତା</string>
     <string name="general">ସାଧାରଣ</string>
+    <string name="admin">ବ୍ୟବସ୍ଥାପକ</string>
     <!-- Themes -->
+    <string name="theme_and_colors">ଥିମ୍ ଏବଂ ରଙ୍ଗ</string>
     <!-- Notifications dropdown -->
     <string name="language">ଭାଷା</string>
     <string name="system_language">ସିଷ୍ଟମ୍ ଭାଷା</string>
