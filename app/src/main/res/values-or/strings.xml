@@ -51,6 +51,7 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="block_advertisments">ବିଜ୍ଞାପନଗୁଡ଼ିକୁ ଅବରୋଧ କରନ୍ତୁ</string>
     <string name="about">ବିଷୟରେ</string>
     <string name="license">ଲାଇସେନ୍ସ</string>
     <string name="application">ଆପ୍ଲିକେସନ୍</string>
