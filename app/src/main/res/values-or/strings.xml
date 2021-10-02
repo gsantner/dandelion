@@ -62,10 +62,16 @@
     <string name="translate_the_app">ଆପ୍ ଅନୁବାଦ କରନ୍ତୁ!</string>
     <string name="let_me_translate">ମୋତେ ଅନୁବାଦ କରିବାକୁ ଦିଅ</string>
     <string name="give_feedback">ମତାମତ ଦିଅନ୍ତୁ!</string>
+    <string name="report_bugs">ବଗ୍‌ ରିପୋର୍ଟ୍‌ କରନ୍ତୁ</string>
+    <string name="spread_the_word">ଶବ୍ଦ ବିସ୍ତାର କରନ୍ତୁ!</string>
     <string name="share_the_app">ଆପ୍ ଅଂଶୀଦାର କରନ୍ତୁ</string>
     <!-- License & help (large amount of text) -->
     <string name="contributors">ଯୋଗଦାନକାରୀ</string>
     <string name="gnu_gplv3_license">GNU GPLv3+ ଲାଇସେନ୍ସ</string>
     <string name="tell_me_more">ମୋତେ ଆହୁରି କୁହନ୍ତୁ</string>
     <string name="enable_to_open_youtube_links_on_external_app">ବାହ୍ୟ ଆପରେ YouTube ଲିଙ୍କ୍ ଖୋଲିବା ପାଇଁ ସକ୍ଷମ କରନ୍ତୁ</string>
+    <string name="youtube_links">YouTube ଲିଙ୍କଗୁଡ଼ିକ</string>
+    <string name="change_the_theme_of_your_account">ଆପଣଙ୍କ ଆକାଉଣ୍ଟର ଥିମ୍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
+    <string name="pull_to_refresh">ସତେଜ କରିବାକୁ ଟାଣନ୍ତୁ</string>
+    <string name="donate">ଦାନ କରନ୍ତୁ</string>
 </resources>
