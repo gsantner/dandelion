@@ -17,6 +17,7 @@
     <!-- Notifications dropdown menu -->
     <string name="all_notifications">ସମସ୍ତ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ</string>
     <!-- Pod Activity -->
+    <string name="confirmation">ନିଶ୍ଚିତକରଣ</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <string name="more">ଅଧିକ</string>
     <string name="help_license">ବିଷୟରେ | ସହାୟତା</string>
@@ -26,12 +27,17 @@
     <string name="saving_image_to">ଏଥିରେ ପ୍ରତିଛବି ସଞ୍ଚୟ କରୁଛି</string>
     <string name="link_adress_copied">ଲିଙ୍କ୍ ଠିକଣା କପି ହୋଇଛି …</string>
     <string name="go_to_top">ଶୀର୍ଷକୁ ଯାଆନ୍ତୁ</string>
+    <string name="exit_app">ଆପ୍ ବାହାରକୁ ଯାଆନ୍ତୁ</string>
+    <string name="toggle_mobile_desktop_view">ମୋବାଇଲ୍/ଡେସ୍କଟପ୍ ଦର୍ଶନ ଟୋଗଲ୍ କରନ୍ତୁ</string>
+    <string name="share_dotdotdot">ଅଂଶୀଦାର…</string>
+    <string name="please_add_a_name">ଦୟାକରି ଏକ ନାମ ଯୋଡ଼ନ୍ତୁ</string>
     <string name="share_link_address">ଲିଙ୍କ୍ ଠିକଣା ଅଂଶୀଦାର କରନ୍ତୁ</string>
     <string name="save_image">ପ୍ରତିଛବି ସଞ୍ଚୟ କରନ୍ତୁ</string>
     <string name="share_image">ପ୍ରତିଛବି ଅଂଶୀଦାର କରନ୍ତୁ</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">ପ୍ରତିଛବି ଲୋଡ୍ କରିବାରେ ଅସମର୍ଥ</string>
     <!-- Permissions -->
+    <string name="protocol">ପ୍ରୋଟୋକଲ୍</string>
     <string name="hide_statusbar_in_mainview">ମୁଖ୍ୟ ଦର୍ଶନରେ ସ୍ଥିତି ଦଣ୍ଡିକା ଲୁଚାନ୍ତୁ</string>
     <string name="hide_statusbar">ସ୍ଥିତି ଦଣ୍ଡିକା ଲୁଚାଅ</string>
     <string name="show_title_in_main_view">ମୁଖ୍ୟ ଦର୍ଶନରେ ଆଖ୍ୟା ଦେଖାନ୍ତୁ</string>
@@ -58,9 +64,12 @@
     <string name="portrait">ପୋର୍ଟ୍ରେଟ୍</string>
     <string name="landscape">ଲ୍ୟାଣ୍ଡସ୍କେପ୍</string>
     <!-- Proxy -->
+    <string name="proxy">ପ୍ରକ୍ସି</string>
+    <string name="enable_proxy">ପ୍ରକ୍ସି ସକ୍ଷମ କରନ୍ତୁ</string>
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">ବିବିଧ</string>
     <string name="block_advertisments">ବିଜ୍ଞାପନଗୁଡ଼ିକୁ ଅବରୋଧ କରନ୍ତୁ</string>
     <string name="about">ବିଷୟରେ</string>
     <string name="license">ଲାଇସେନ୍ସ</string>
