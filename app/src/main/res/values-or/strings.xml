@@ -20,6 +20,15 @@
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <string name="more">ଅଧିକ</string>
     <string name="help_license">ବିଷୟରେ | ସହାୟତା</string>
+    <string name="share_link_as_text">ପାଠ୍ୟ ଭାବରେ ଲିଙ୍କ୍ ଅଂଶୀଦାର କରନ୍ତୁ</string>
+    <string name="share_screenshot_of_webpage">ୱେବପୃଷ୍ଠାର ସ୍କ୍ରିନସଟ୍ ଅଂଶୀଦାର କରନ୍ତୁ</string>
+    <string name="take_screenshot_of_webpage">ୱେବପୃଷ୍ଠାର ସ୍କ୍ରିନସଟ୍ ନିଅନ୍ତୁ</string>
+    <string name="saving_image_to">ଏଥିରେ ପ୍ରତିଛବି ସଞ୍ଚୟ କରୁଛି</string>
+    <string name="link_adress_copied">ଲିଙ୍କ୍ ଠିକଣା କପି ହୋଇଛି …</string>
+    <string name="go_to_top">ଶୀର୍ଷକୁ ଯାଆନ୍ତୁ</string>
+    <string name="share_link_address">ଲିଙ୍କ୍ ଠିକଣା ଅଂଶୀଦାର କରନ୍ତୁ</string>
+    <string name="save_image">ପ୍ରତିଛବି ସଞ୍ଚୟ କରନ୍ତୁ</string>
+    <string name="share_image">ପ୍ରତିଛବି ଅଂଶୀଦାର କରନ୍ତୁ</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">ପ୍ରତିଛବି ଲୋଡ୍ କରିବାରେ ଅସମର୍ଥ</string>
     <!-- Permissions -->
