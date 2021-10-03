@@ -60,7 +60,10 @@
     <!-- Font size -->
     <string name="font_size">ଫଣ୍ଟ ଆକାର</string>
     <!-- Load images -->
+    <string name="load_images">ପ୍ରତିଛବିଗୁଡ଼ିକୁ ଧାରଣ କରନ୍ତୁ</string>
     <!-- Screen rotation -->
+    <string name="screen_rotation">ସ୍କ୍ରିନ୍ ଘୂର୍ଣ୍ଣନ</string>
+    <string name="default_">ଡିଫଲ୍ଟ</string>
     <string name="portrait">ପୋର୍ଟ୍ରେଟ୍</string>
     <string name="landscape">ଲ୍ୟାଣ୍ଡସ୍କେପ୍</string>
     <!-- Proxy -->
@@ -70,6 +73,7 @@
     <!-- Diaspora Settings -->
     <!-- More -->
     <string name="miscellaneous">ବିବିଧ</string>
+    <string name="full_reset">ପୂର୍ଣ୍ଣ ପୁନଃସେଟ୍</string>
     <string name="block_advertisments">ବିଜ୍ଞାପନଗୁଡ଼ିକୁ ଅବରୋଧ କରନ୍ତୁ</string>
     <string name="about">ବିଷୟରେ</string>
     <string name="license">ଲାଇସେନ୍ସ</string>
