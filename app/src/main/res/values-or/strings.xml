@@ -19,6 +19,7 @@
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <string name="more">ଅଧିକ</string>
+    <string name="help_license">ବିଷୟରେ | ସହାୟତା</string>
     <!-- More from MainActivity -->
     <string name="unable_to_load_image">ପ୍ରତିଛବି ଲୋଡ୍ କରିବାରେ ଅସମର୍ଥ</string>
     <!-- Permissions -->
