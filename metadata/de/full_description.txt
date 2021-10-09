@@ -12,7 +12,7 @@ Verbessere dein Netzwerk-Erlebnis durch nützliche Features:
 
 🈯 Getrennte App- und Systemsprache. Nutze die App in beliebiger Sprache (zB. Englisch) und behalte deine Systemsprache (zB. Deutsch) bei.
 
-🔐 Du bist noch auf der Suche nach einem Pod um dich zu registrieren? Die App bringt eine große Liste mit und weitere Pods findest du auf <a href="https://podupti.me/">podupti.me</a>.
+🔐 Du bist noch auf der Suche nach einem Pod um dich zu registrieren? Die App bringt eine große Liste mit und weitere Pods findest du auf <a href="https://diaspora.fediverse.observer/">diaspora.fediverse.observer</a>.
 
 🍻 Mehrere Accounts: Nutze dandelion* und <a href="https://f-droid.org/de/packages/net.gsantner.dandelior/">dandelior*</a> um zwei Accounts auf dem gleichen Gerät zu nutzen. Die Apps besitzen eigene Icons und unterschiedliche Vorgabefarben.
 
