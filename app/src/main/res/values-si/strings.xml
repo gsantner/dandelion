@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="reload">නැවත පූරණය</string>
     <string name="close">වසන්න</string>
     <string name="cancel">අවලංගු</string>
     <!-- Common Words -->
@@ -8,11 +9,23 @@
     <string name="notifications">දැනුම්දීම්</string>
     <string name="conversations">සංවාද</string>
     <string name="profile">පැතිකඩ</string>
+    <string name="activities">ක්‍රියාකාරකම්</string>
+    <string name="mentions">සැඳහුම්</string>
+    <string name="public_">ප්‍රසිද්ධ</string>
     <string name="search">සොයන්න</string>
+    <string name="contacts">සබඳතා</string>
+    <string name="statistics">සංඛ්‍යාලේඛන</string>
     <!-- Notifications dropdown menu -->
+    <string name="all_notifications">සියළුම දැනුම්දීම්</string>
     <!-- Pod Activity -->
+    <string name="do_you_want_to_exit">ඔබට පිටවීමට ඇවැසිද?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <string name="more">තව</string>
+    <string name="help_license">පිළිබඳව | උපකාර</string>
+    <string name="public_activities">ප්‍රසිද්ධ ක්‍රියාකාරකම්</string>
+    <string name="reports">වාර්තා</string>
+    <string name="share_screenshot_of_webpage">වියමන පිටුවෙහි තිරසේයාවක් බෙදාගන්න</string>
+    <string name="take_screenshot_of_webpage">වියමන පිටුවෙහි තිර සේයාවක් අරගන්න</string>
     <string name="exit_app">යෙදුමෙන් පිටවන්න</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
