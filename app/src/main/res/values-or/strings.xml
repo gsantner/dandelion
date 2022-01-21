@@ -91,8 +91,11 @@
     <string name="share_the_app">ଆପ୍ ଅଂଶୀଦାର କରନ୍ତୁ</string>
     <!-- License & help (large amount of text) -->
     <string name="contributors">ଯୋଗଦାନକାରୀ</string>
+    <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;ଧନ୍ୟବାଦ!</string>
     <string name="gnu_gplv3_license">GNU GPLv3+ ଲାଇସେନ୍ସ</string>
+    <string name="show_third_party_licenses">ତୃତୀୟ-ପକ୍ଷ ଲାଇବ୍ରେରୀ</string>
     <string name="the_following_libraries_are_used">ନିମ୍ନଲିଖିତ ଲାଇବ୍ରେରୀଗୁଡ଼ିକ ବ୍ୟବହାର ହୋଇଛି:</string>
+    <string name="inspiration_from_leafpic__appspecific">ଆମେ LeafPic ରୁ କିଛି ପ୍ରେରଣା ଏବଂ କୋଡ୍ ନେଇଛୁ। ଯାଆନ୍ତୁ ଏହାକୁ ଥରେ ଦେଖି ଆସନ୍ତୁ, ଏହା ବି ଏକ ମାଗଣା ସଫ୍ଟୱେର୍!</string>
     <string name="tell_me_more">ମୋତେ ଆହୁରି କୁହନ୍ତୁ</string>
     <string name="enable_to_open_youtube_links_on_external_app">ବାହ୍ୟ ଆପରେ YouTube ଲିଙ୍କ୍ ଖୋଲିବା ପାଇଁ ସକ୍ଷମ କରନ୍ତୁ</string>
     <string name="youtube_links">YouTube ଲିଙ୍କଗୁଡ଼ିକ</string>
