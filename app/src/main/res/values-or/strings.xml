@@ -91,8 +91,10 @@
     <string name="app_not_available_in_your_lang_translate_with_stringlate">ଆପ୍ ଆପଣଙ୍କ ଭାଷାରେ ଉପଲବ୍ଧ ନାହିଁ କି? ଆପଣ ଏହା ବଦଳାଇପାରିବେ! ଆପଣ ଏହାକୁ ଅନୁବାଦ କରି ଆମକୁ କାହିଁକି ସାହାଯ୍ୟ କରୁନାହାଁନ୍ତି? ଆପ୍ ଅନୁବାଦ କରିବାରେ ଯେକୌଣସି ବ୍ୟକ୍ତିଙ୍କୁ ସକ୍ଷମ କରିବା ପାଇଁ ଆମେ Crowdin ବ୍ୟବହାର କରୁ।</string>
     <string name="let_me_translate">ମୋତେ ଅନୁବାଦ କରିବାକୁ ଦିଅ</string>
     <string name="give_feedback">ମତାମତ ଦିଅନ୍ତୁ!</string>
+    <string name="dandelion_still_in_development__appspecific">dandelion* ଏପର୍ଯ୍ୟନ୍ତ ବିକାଶରେ ଅଛି, ତେଣୁ ଯଦି ଆପଣଙ୍କର ପରାମର୍ଶ କିମ୍ୱା କୌଣସି ପ୍ରକାରର ମତାମତ ରହିଛି, ତେବେ ଦୟାକରି ଆମକୁ ଜଣାଇବା ପାଇଁ ଆମର ବଗ୍ ଟ୍ରାକର୍ ବ୍ୟବହାର କରନ୍ତୁ!</string>
     <string name="report_bugs">ବଗ୍‌ ରିପୋର୍ଟ୍‌ କରନ୍ତୁ</string>
     <string name="spread_the_word">ଶବ୍ଦ ବିସ୍ତାର କରନ୍ତୁ!</string>
+    <string name="tell_your_friends_about_diaspora__appspecific">diaspora* ଏବଂ #dandelion ବିଷୟରେ ଆପଣଙ୍କ ବନ୍ଧୁ ଏବଂ ପରିବାରକୁ କୁହନ୍ତୁ! ଆପଣ ଆପଣଙ୍କର ଅନୁଭୂତି ବିଷୟରେ କାହିଁକି ବ୍ଲଗ୍ କରୁନାହଁ? ଆମେ ଆପଣଙ୍କଠାରୁ ଶୁଣିବାକୁ ପସନ୍ଦ କରିବୁ!</string>
     <string name="share_the_app">ଆପ୍ ଅଂଶୀଦାର କରନ୍ତୁ</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">ରକ୍ଷଣାବେକ୍ଷଣକାରୀ</string>
