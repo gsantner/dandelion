@@ -88,6 +88,7 @@
     <string name="code_name_witharg">କୋଡ୍ ନାମ: %1$s</string>
     <string name="get_the_source">ଉତ୍ସ ପ୍ରାପ୍ତ କରନ୍ତୁ</string>
     <string name="translate_the_app">ଆପ୍ ଅନୁବାଦ କରନ୍ତୁ!</string>
+    <string name="app_not_available_in_your_lang_translate_with_stringlate">ଆପ୍ ଆପଣଙ୍କ ଭାଷାରେ ଉପଲବ୍ଧ ନାହିଁ କି? ଆପଣ ଏହା ବଦଳାଇପାରିବେ! ଆପଣ ଏହାକୁ ଅନୁବାଦ କରି ଆମକୁ କାହିଁକି ସାହାଯ୍ୟ କରୁନାହାଁନ୍ତି? ଆପ୍ ଅନୁବାଦ କରିବାରେ ଯେକୌଣସି ବ୍ୟକ୍ତିଙ୍କୁ ସକ୍ଷମ କରିବା ପାଇଁ ଆମେ Crowdin ବ୍ୟବହାର କରୁ।</string>
     <string name="let_me_translate">ମୋତେ ଅନୁବାଦ କରିବାକୁ ଦିଅ</string>
     <string name="give_feedback">ମତାମତ ଦିଅନ୍ତୁ!</string>
     <string name="report_bugs">ବଗ୍‌ ରିପୋର୍ଟ୍‌ କରନ୍ତୁ</string>
