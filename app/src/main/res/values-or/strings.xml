@@ -71,6 +71,8 @@
     <string name="enable_proxy">ପ୍ରକ୍ସି ସକ୍ଷମ କରନ୍ତୁ</string>
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
+    <string name="change_account">ଆକାଉଣ୍ଟ୍ ବଦଳାନ୍ତୁ</string>
+    <string name="logout_warning_description">ଏହା ସମସ୍ତ କୁକୀ ଏବଂ ଅଧିବେଶନ ଡାଟା ଲିଭାଇଦେବ। ଆପଣ ପ୍ରକୃତରେ ଆପଣଙ୍କ ଆକାଉଣ୍ଟ୍ ପରିବର୍ତ୍ତନ କରିବାକୁ ଚାହାଁନ୍ତି କି?</string>
     <!-- More -->
     <string name="miscellaneous">ବିବିଧ</string>
     <string name="full_reset">ପୂର୍ଣ୍ଣ ପୁନଃସେଟ୍</string>
@@ -83,6 +85,7 @@
     <string name="android_version_witharg">ଆଣ୍ଡ୍ରଏଡ୍ ସଂସ୍କରଣ: %1$s</string>
     <string name="device_name_witharg">ଡିଭାଇସ୍ ନାମ: %1$s</string>
     <string name="code_name_witharg">କୋଡ୍ ନାମ: %1$s</string>
+    <string name="get_the_source">ଉତ୍ସ ପ୍ରାପ୍ତ କରନ୍ତୁ</string>
     <string name="translate_the_app">ଆପ୍ ଅନୁବାଦ କରନ୍ତୁ!</string>
     <string name="let_me_translate">ମୋତେ ଅନୁବାଦ କରିବାକୁ ଦିଅ</string>
     <string name="give_feedback">ମତାମତ ଦିଅନ୍ତୁ!</string>
@@ -90,6 +93,8 @@
     <string name="spread_the_word">ଶବ୍ଦ ବିସ୍ତାର କରନ୍ତୁ!</string>
     <string name="share_the_app">ଆପ୍ ଅଂଶୀଦାର କରନ୍ତୁ</string>
     <!-- License & help (large amount of text) -->
+    <string name="maintainers">ରକ୍ଷଣାବେକ୍ଷଣକାରୀ</string>
+    <string name="this_app_is_currently_developed_and_maintained_by_witharg">ଏହି ଆପ୍ ବର୍ତ୍ତମାନ &lt;br&gt;&lt;br&gt;%1$sଙ୍କ ଦ୍ୱାରା ବିକାଶ ଓ ରକ୍ଷଣାବେକ୍ଷଣ କରାଯାଉଛି</string>
     <string name="contributors">ଯୋଗଦାନକାରୀ</string>
     <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;ଧନ୍ୟବାଦ!</string>
     <string name="gnu_gplv3_license">GNU GPLv3+ ଲାଇସେନ୍ସ</string>
