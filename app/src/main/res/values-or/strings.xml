@@ -55,10 +55,14 @@
     <!-- Themes -->
     <string name="theme_and_colors">ଥିମ୍ ଏବଂ ରଙ୍ଗ</string>
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">ଏହି ଆପ୍ ର ଭାଷା ବଦଳାନ୍ତୁ। ପରିବର୍ତ୍ତନଗୁଡ଼ିକ କାର୍ଯ୍ୟକାରୀ ହେବା ପାଇଁ ଆପ୍ ପୁନଃଆରମ୍ଭ କରନ୍ତୁ</string>
     <string name="language">ଭାଷା</string>
     <string name="system_language">ସିଷ୍ଟମ୍ ଭାଷା</string>
     <!-- Font size -->
     <string name="font_size">ଫଣ୍ଟ ଆକାର</string>
+    <string name="normal">ସାଧାରଣ</string>
+    <string name="large">ବଡ଼</string>
+    <string name="huge">ବିରାଟ</string>
     <!-- Load images -->
     <string name="load_images">ପ୍ରତିଛବିଗୁଡ଼ିକୁ ଧାରଣ କରନ୍ତୁ</string>
     <!-- Screen rotation -->
@@ -96,6 +100,7 @@
     <string name="spread_the_word">ଶବ୍ଦ ବିସ୍ତାର କରନ୍ତୁ!</string>
     <string name="tell_your_friends_about_diaspora__appspecific">diaspora* ଏବଂ #dandelion ବିଷୟରେ ଆପଣଙ୍କ ବନ୍ଧୁ ଏବଂ ପରିବାରକୁ କୁହନ୍ତୁ! ଆପଣ ଆପଣଙ୍କର ଅନୁଭୂତି ବିଷୟରେ କାହିଁକି ବ୍ଲଗ୍ କରୁନାହଁ? ଆମେ ଆପଣଙ୍କଠାରୁ ଶୁଣିବାକୁ ପସନ୍ଦ କରିବୁ!</string>
     <string name="share_the_app">ଆପ୍ ଅଂଶୀଦାର କରନ୍ତୁ</string>
+    <string name="hey_checkout_dandelion_tag__appspecific">ଆଜ୍ଞା! #dandelion କୁ ଥରେ ଦେଖିଯାଆନ୍ତୁ! %1$s</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">ରକ୍ଷଣାବେକ୍ଷଣକାରୀ</string>
     <string name="this_app_is_currently_developed_and_maintained_by_witharg">ଏହି ଆପ୍ ବର୍ତ୍ତମାନ &lt;br&gt;&lt;br&gt;%1$sଙ୍କ ଦ୍ୱାରା ବିକାଶ ଓ ରକ୍ଷଣାବେକ୍ଷଣ କରାଯାଉଛି</string>
