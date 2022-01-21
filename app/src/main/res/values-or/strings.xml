@@ -76,6 +76,7 @@
     <!-- More -->
     <string name="miscellaneous">ବିବିଧ</string>
     <string name="full_reset">ପୂର୍ଣ୍ଣ ପୁନଃସେଟ୍</string>
+    <string name="enable_basic_adblocker_description">ମୌଳିକ AdBlocker ସକ୍ଷମ କରନ୍ତୁ। ବିଜ୍ଞାପନଗୁଡ଼ିକ ଗ୍ରଥିତ ଦର୍ଶନରେ ଅନ୍ତର୍ଭୁକ୍ତ ହୋଇପାରେ</string>
     <string name="block_advertisments">ବିଜ୍ଞାପନଗୁଡ଼ିକୁ ଅବରୋଧ କରନ୍ତୁ</string>
     <string name="about">ବିଷୟରେ</string>
     <string name="license">ଲାଇସେନ୍ସ</string>
