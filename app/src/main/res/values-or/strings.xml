@@ -15,7 +15,7 @@
     <string name="changelog">ପରିବର୍ତ୍ତନ ଲଗ୍</string>
     <string name="statistics">ପରିସଂଖ୍ୟାନ</string>
     <!-- Notifications dropdown menu -->
-    <string name="all_notifications">ସମସ୍ତ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ</string>
+    <string name="all_notifications">ସବୁ ବିଜ୍ଞପ୍ତି</string>
     <!-- Pod Activity -->
     <string name="confirmation">ନିଶ୍ଚିତକରଣ</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
@@ -30,7 +30,7 @@
     <string name="exit_app">ଆପ୍ ବାହାରକୁ ଯାଆନ୍ତୁ</string>
     <string name="toggle_mobile_desktop_view">ମୋବାଇଲ୍/ଡେସ୍କଟପ୍ ଦର୍ଶନ ଟୋଗଲ୍ କରନ୍ତୁ</string>
     <string name="share_dotdotdot">ଅଂଶୀଦାର…</string>
-    <string name="please_add_a_name">ଦୟାକରି ଏକ ନାମ ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="please_add_a_name">ଦୟାକରି ଏକ ନାମ ଯୋଡ଼ନ୍ତୁ</string>
     <string name="share_link_address">ଲିଙ୍କ୍ ଠିକଣା ଅଂଶୀଦାର କରନ୍ତୁ</string>
     <string name="save_image">ପ୍ରତିଛବି ସଞ୍ଚୟ କରନ୍ତୁ</string>
     <string name="share_image">ପ୍ରତିଛବି ଅଂଶୀଦାର କରନ୍ତୁ</string>
@@ -112,7 +112,7 @@
     <string name="inspiration_from_leafpic__appspecific">ଆମେ LeafPic ରୁ କିଛି ପ୍ରେରଣା ଏବଂ କୋଡ୍ ନେଇଛୁ। ଯାଆନ୍ତୁ ଏହାକୁ ଥରେ ଦେଖି ଆସନ୍ତୁ, ଏହା ବି ଏକ ମାଗଣା ସଫ୍ଟୱେର୍!</string>
     <string name="tell_me_more">ମୋତେ ଆହୁରି କୁହନ୍ତୁ</string>
     <string name="enable_to_open_youtube_links_on_external_app">ବାହ୍ୟ ଆପରେ YouTube ଲିଙ୍କ୍ ଖୋଲିବା ପାଇଁ ସକ୍ଷମ କରନ୍ତୁ</string>
-    <string name="youtube_links">YouTube ଲିଙ୍କଗୁଡ଼ିକ</string>
+    <string name="youtube_links">YouTube ଲିଙ୍କଗୁଡ଼ିକ</string>
     <string name="change_the_theme_of_your_account">ଆପଣଙ୍କ ଆକାଉଣ୍ଟର ଥିମ୍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
     <string name="pull_to_refresh">ସତେଜ କରିବାକୁ ଟାଣନ୍ତୁ</string>
     <string name="donate">ଦାନ କରନ୍ତୁ</string>
