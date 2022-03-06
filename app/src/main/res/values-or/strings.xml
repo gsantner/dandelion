@@ -64,7 +64,7 @@
     <string name="large">ବଡ଼</string>
     <string name="huge">ବିରାଟ</string>
     <!-- Load images -->
-    <string name="load_images">ପ୍ରତିଛବିଗୁଡ଼ିକୁ ଧାରଣ କରନ୍ତୁ</string>
+    <string name="load_images">ପ୍ରତିଛବିଗୁଡ଼ିକୁ ଧାରଣ କରନ୍ତୁ</string>
     <!-- Screen rotation -->
     <string name="screen_rotation">ସ୍କ୍ରିନ୍ ଘୂର୍ଣ୍ଣନ</string>
     <string name="default_">ଡିଫଲ୍ଟ</string>
@@ -81,7 +81,7 @@
     <string name="miscellaneous">ବିବିଧ</string>
     <string name="full_reset">ପୂର୍ଣ୍ଣ ପୁନଃସେଟ୍</string>
     <string name="enable_basic_adblocker_description">ମୌଳିକ AdBlocker ସକ୍ଷମ କରନ୍ତୁ। ବିଜ୍ଞାପନଗୁଡ଼ିକ ଗ୍ରଥିତ ଦର୍ଶନରେ ଅନ୍ତର୍ଭୁକ୍ତ ହୋଇପାରେ</string>
-    <string name="block_advertisments">ବିଜ୍ଞାପନଗୁଡ଼ିକୁ ଅବରୋଧ କରନ୍ତୁ</string>
+    <string name="block_advertisments">ବିଜ୍ଞାପନଗୁଡ଼ିକୁ ଅବରୋଧ କରନ୍ତୁ</string>
     <string name="about">ବିଷୟରେ</string>
     <string name="license">ଲାଇସେନ୍ସ</string>
     <string name="application">ଆପ୍ଲିକେସନ୍</string>
