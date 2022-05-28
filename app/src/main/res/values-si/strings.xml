@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="reload">නැවත පූරණය</string>
     <string name="close">වසන්න</string>
     <string name="cancel">අවලංගු</string>
     <!-- Common Words -->
@@ -8,28 +9,55 @@
     <string name="notifications">දැනුම්දීම්</string>
     <string name="conversations">සංවාද</string>
     <string name="profile">පැතිකඩ</string>
+    <string name="activities">ක්‍රියාකාරකම්</string>
+    <string name="commented">අදහස් දැක්විණි</string>
+    <string name="mentions">සැඳහුම්</string>
+    <string name="public_">ප්‍රසිද්ධ</string>
     <string name="search">සොයන්න</string>
+    <string name="contacts">සබඳතා</string>
+    <string name="statistics">සංඛ්‍යාලේඛන</string>
     <!-- Notifications dropdown menu -->
+    <string name="all_notifications">සියළුම දැනුම්දීම්</string>
+    <string name="also_commented">එවගේම අදහස් දැක්විණි</string>
     <!-- Pod Activity -->
+    <string name="do_you_want_to_exit">ඔබට පිටවීමට ඇවැසිද?</string>
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
     <string name="more">තව</string>
+    <string name="help_license">පිළිබඳව | උපකාර</string>
+    <string name="public_activities">ප්‍රසිද්ධ ක්‍රියාකාරකම්</string>
+    <string name="reports">වාර්තා</string>
+    <string name="share_screenshot_of_webpage">වියමන පිටුවෙහි තිරසේයාවක් බෙදාගන්න</string>
+    <string name="take_screenshot_of_webpage">වියමන පිටුවෙහි තිර සේයාවක් අරගන්න</string>
+    <string name="saving_screenshot_as">ලෙස තිරසේයාව සුරකින්න:</string>
+    <string name="link_adress_copied">සබැඳියේ ලිපිනය පිටපත් විය…</string>
     <string name="exit_app">යෙදුමෙන් පිටවන්න</string>
+    <string name="share_dotdotdot">බෙදාගන්න…</string>
+    <string name="please_add_a_name">නමක් එකතු කරන්න</string>
+    <string name="share_link_address">සබැඳියේ ලිපිනය බෙදාගන්න</string>
+    <string name="open_in_external_browser">බාහිර අතිරික්සුවකින් විවෘත කරන්න…</string>
+    <string name="copy_link_adress_to_clipboard">සබැඳිය පසුරුපුවරුවට පිටපත් කරන්න</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <string name="protocol">කෙටුම්පත</string>
+    <string name="show_title">සිරැසිය පෙන්වන්න</string>
     <!-- Operability -->
     <!-- Category Titles -->
     <string name="network">ජාලය</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <string name="user">පරිශීලක</string>
+    <string name="admin">පරිපාලක</string>
     <!-- Themes -->
+    <string name="theme_and_colors">තේමාව සහ වර්ණ</string>
     <!-- Notifications dropdown -->
     <string name="language">භාෂාව</string>
+    <string name="system_language">පද්ධතියේ භාෂාව</string>
     <!-- Font size -->
+    <string name="font_size">මුද්‍රණඅකුරේ ප්‍රමාණය</string>
     <string name="normal">සාමාන්‍ය</string>
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">පෙරනිමි</string>
     <!-- Proxy -->
     <string name="proxy">පෙරකලාසිය</string>
     <string name="enable_proxy">පෙරකලාසිය සබල කරන්න</string>
@@ -41,6 +69,14 @@
     <string name="license">බලපත්‍රය</string>
     <string name="application">යෙදුම</string>
     <string name="device">උපාංගය</string>
+    <string name="android_version_witharg">ඇන්ඩ්‍රොයිඩ් අනුවාදය: %1$s</string>
+    <string name="device_name_witharg">උපාංගයේ නම: %1$s</string>
+    <string name="code_name_witharg">කේතනාමය: %1$s</string>
+    <string name="get_the_source">මූලාශ්‍රය ගන්න</string>
+    <string name="translate_the_app">යෙදුම පරිවර්තනය කරන්න!</string>
+    <string name="share_the_app">යෙදුම බෙදාගන්න</string>
     <!-- License & help (large amount of text) -->
+    <string name="gnu_gplv3_license">ජීඑන්යූ ජීපීඑල්v3+ බලපත්‍රය</string>
+    <string name="youtube_links">යූටියුබ් සබැඳිය</string>
     <string name="donate">පරිත්‍යාග</string>
 </resources>
