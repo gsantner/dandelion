@@ -12,7 +12,7 @@ It adds useful features to your networking experience:
 
 🈯 Use in any language that the app is translated in - for example in German but have English as system language.
 
-🔐 Looking for a pod to register? The app lists many pods with more being listed at <a href="https://podupti.me/">podupti.me</a>.
+🔐 Looking for a pod to register? The app lists many pods with more being listed at <a href="https://diaspora.fediverse.observer/">diaspora.fediverse.observer</a>.
 
 🍻 Multiple accounts: You can use dandelion* and dandelior* to use two accounts at the same time on one device. They use a different icon and other default colors.
 
