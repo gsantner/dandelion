@@ -108,7 +108,7 @@ Aneu a: Configuració del sistema - Aplicacions - dandelion*. A la secció de pe
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notificacions ampliades</string>
     <string name="extendend_notifications_bell_description__appspecific">Amplieu la campana de notificacions amb un menú desplegable que mostra les categories de notificacions</string>
-    <string name="language_change_restart_description">Canvieu l\'idioma d\'aquesta aplicació. Reinicieu l\'aplicació perquè els canvis tinguin efecte</string>
+    <string name="language_change_restart_description">Canvia l\'idioma d\'aquesta aplicació. Reinicia l\'aplicació perquè els canvis tinguin efecte</string>
     <string name="language">Idioma</string>
     <string name="system_language">Idioma del sistema</string>
     <!-- Font size -->
