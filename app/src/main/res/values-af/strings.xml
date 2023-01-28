@@ -90,6 +90,7 @@
     <string name="amoled_mode">AMOLED modus</string>
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Uitgebreide Kennisgewings</string>
+    <string name="language_change_restart_description">Verander taal van hierdie app. Herbegin app vir veranderinge wat in werking tree</string>
     <string name="language">Taal</string>
     <!-- Font size -->
     <string name="font_size">Fontgrootte</string>
@@ -146,6 +147,7 @@
     <string name="hey_checkout_dandelion_tag__appspecific">Haai! Loer na #dandelion! %1$s</string>
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Handhawers</string>
+    <string name="contributors">Bydraers</string>
     <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;baie dankie!</string>
     <string name="gnu_gplv3_license">GNU GPLv3+ Lisensie</string>
     <string name="show_third_party_licenses">Derdeparty biblioteke</string>
