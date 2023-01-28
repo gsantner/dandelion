@@ -4,6 +4,8 @@
     <string name="open_navdrawer">Buksan ang nabigasyon ng kahon</string>
     <string name="close_navdrawer">Isara ang navigation drawer</string>
     <string name="reload">I-reload</string>
+    <string name="close">Isara</string>
+    <string name="cancel">Ikansela</string>
     <!-- Common Words -->
     <string name="settings">Pagsasaayos</string>
     <string name="search">Hanapin</string>
