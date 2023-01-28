@@ -195,7 +195,7 @@
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Yardımcılar</string>
     <string name="this_app_is_currently_developed_and_maintained_by_witharg">Bu uygulamayı şu anda geliştiren ve devam ettiren &lt;br&gt;&lt;br&gt;%1$s</string>
-    <string name="contributors">Katkıda bulunanlar</string>
+    <string name="contributors">Katkıda Bulunanlar</string>
     <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;Teşekkürler!</string>
     <string name="gnu_gplv3_license">GNU GPLv3+ License</string>
     <string name="show_third_party_licenses">Üçüncü Parti Kütüphaneler</string>
