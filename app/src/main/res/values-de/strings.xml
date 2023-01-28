@@ -209,6 +209,4 @@ nachträglich erteilen. Öffne dafür: Systemeinstellungen - Apps - dandelion*. 
     <string name="change_the_theme_of_your_account">Thema des Accounts ändern</string>
     <string name="pull_to_refresh">Pull-To-Refresh</string>
     <string name="pulling_down_on_top_of_page_to_refresh">In der Website von ganz oben nach unten ziehen um zu aktualisieren.\nDu musst die App neu starten damit die Änderungen wirksam werden.</string>
-    <string name="donate">Spenden</string>
-    <string name="do_you_like_this_project_want_donate_to_keep_alive">Gefällt dir dieses Projekt? Möchtest du, dass es verbessert wird und Probleme behoben werden?\n\nDie Entwicklung von Apps und das schreiben von relevanten Blog-Einträgen kostet viel Zeit! Wenn du helfen möchtest, so dass das Projekt weitergehen kann, ziehe bitte eine kleine Spende in Betracht!\n\nDieses Projekt wird in der Freizeit, völlig kostenlos und ohne jegliche Werbeeinblendungen entwickelt &amp; angeboten!</string>
 </resources>

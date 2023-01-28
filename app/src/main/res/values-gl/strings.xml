@@ -207,6 +207,4 @@
     <string name="change_the_theme_of_your_account">Cambiar o decorado da túa conta</string>
     <string name="pull_to_refresh">Tira para actualizar</string>
     <string name="pulling_down_on_top_of_page_to_refresh">Tirar hacia abaixo na parte superior da páxina.\nDebes reiniciar a app para que os cambios se apliquen.</string>
-    <string name="donate">Doar</string>
-    <string name="do_you_like_this_project_want_donate_to_keep_alive">Gústache este proxecto? Queres que siga mellorando e resolvendo os problemas?\n\nDesenvolver aplicacións e escribir a documentación leva moito tempo! Se queres apoiar ao proxecto para que continúe, por favor, considera facer unha pequena doazón!\n\nEste proxecto desenvólvese no tempo libre, ofrécese libre e gratuitamente e sen publicidade!</string>
 </resources>

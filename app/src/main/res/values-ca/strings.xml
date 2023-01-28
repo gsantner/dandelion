@@ -206,6 +206,4 @@ diaspora*. Si voleu contribuir, endavant! Actualment som un equip molt petit, de
     <string name="change_the_theme_of_your_account">Canvia el tema del vostre compte</string>
     <string name="pull_to_refresh">Feu lliscar per actualitzar</string>
     <string name="pulling_down_on_top_of_page_to_refresh">S\'està lliscant cap avall a la part superior de la pàgina per actualitzar.\nCal que reinicieu l\'aplicació perquè els canvis tinguin efecte.</string>
-    <string name="donate">Fes un donatiu</string>
-    <string name="do_you_like_this_project_want_donate_to_keep_alive">Us agrada aquest projecte? Voleu que encara sigui millor i es solucionin els problemes?\n\nDesenvolupar aplicacions i escriure publicacions relacionades als blogs costa molt de temps! Si voleu ajudar perquè el projecte pugui continuar, considereu aportar una petita donació!\n\nAquest projecte es desenvolupa durant el temps lliure, completament gratis i sense publicitat!</string>
 </resources>

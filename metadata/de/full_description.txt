@@ -19,10 +19,5 @@ Verbessere dein Netzwerk-Erlebnis durch nützliche Features:
 🌍 Hinweis: Die App nutzt Androids WebView Komponente um Inhalte von diaspora* Pods in der mobilen Ansicht anzuzeigen. Für fehlende Features frage bitte auf dem diaspora* Bug Tracker.
 
 <b>Weitere Informationen:</b>
-<a href="https://gsantner.net/index.html?project=dandelion&source=fdroid">Projekt Blog</a> | <a href="https://wiki.diasporafoundation.org/FAQ_for_users">diaspora* FAQ</a>
+<a href="https://github.com/gsantner/dandelion">Project site</a> | <a href="https://wiki.diasporafoundation.org/FAQ_for_users">diaspora* FAQ</a>
 
-<b>Unterstütze das Projekt:</b>
-<a href="https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion.git&mail=gro.xobliam@@rentnasg">Übersetze mit Stringlate</a> | <a 
-href="https://matrix.to/#/#dandelion:matrix.org">Nimm per Matrix and der Diskussion teil</a> | <a href="https://github.com/gsantner/dandelion#contributions">Mitwirkende</a> | <a 
-href="https://gsantner.net/android-contribution-guide/?packageid=com.github.dfa.diaspora_android&name=dandelion&web=https://github.com/gsantner/dandelion&source=fdroid">Leitfaden zur Mitwirkung</a> 
-| <a href="https://gsantner.net/supportme?project=dandelion&source=fdroid">Unterstütze den Hauptentwickler</a>

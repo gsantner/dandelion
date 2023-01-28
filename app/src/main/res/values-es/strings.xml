@@ -204,6 +204,4 @@
     <string name="change_the_theme_of_your_account">Cambiar el tema de tu cuenta</string>
     <string name="pull_to_refresh">Tirar para refrescar</string>
     <string name="pulling_down_on_top_of_page_to_refresh">Deslizar hacia abajo la parte superior de la página para refrescar.\n Necesita reiniciar la aplicación para que los cambios surtan efecto.</string>
-    <string name="donate">Donar</string>
-    <string name="do_you_like_this_project_want_donate_to_keep_alive">¿Te gusta este proyecto? ¿Quieres que se mejore y se corrijan problemas?\n\nEl desarrollo de aplicaciones y la escritura de entradas relacionadas del blog cuesta mucho tiempo. Si quieres ayudar a que el proyecto pueda continuar, por favor considera una pequeña donación!\n\nEste proyecto se desarrolla en tiempo de ocio, completamente gratis y sin publicidad!</string>
 </resources>

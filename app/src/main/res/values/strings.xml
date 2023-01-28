@@ -261,7 +261,4 @@
     <string name="pull_to_refresh">Pull to refresh</string>
     <string name="pulling_down_on_top_of_page_to_refresh">Pulling down on top of page to refresh.\nYou need to restart the app for changes to take effect.</string>
 
-    <string name="donate">Donate</string>
-    <string name="do_you_like_this_project_want_donate_to_keep_alive">Do you like this project? Do you want that it gets improved and problems fixed?\n\nDeveloping apps and writing related blog posts costs a lot of time! If you want to help so that the project can go on, please consider a small donation!\n\nThis project is developed in leisure time, completely for free and without any advertisements!</string>
-
 </resources>

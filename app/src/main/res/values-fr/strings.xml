@@ -204,6 +204,4 @@
     <string name="change_the_theme_of_your_account">Changer le thème de votre compte</string>
     <string name="pull_to_refresh">Tirer vers le bas pour mettre à jour</string>
     <string name="pulling_down_on_top_of_page_to_refresh">Tirez depuis le haut de la page vers le bas pour l\'actualiser.\nVous devez redémarrer l\'application pour que ces changements prennent effet.</string>
-    <string name="donate">Donner</string>
-    <string name="do_you_like_this_project_want_donate_to_keep_alive">Vous aimez ce projet ? Vous voulez participer à son amélioration et corriger ses problèmes ?\n\nDévelopper des applications et écrire les posts de blog correspondants demande beaucoup de temps ! Si vous voulez aider à la poursuite du projet, merci de considérer une petite donation.\n\nCe projet est développé sur du temps libre, complètement gratuitement et sans publicité !</string>
 </resources>

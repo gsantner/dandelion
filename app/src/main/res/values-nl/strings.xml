@@ -204,5 +204,4 @@
     <string name="change_the_theme_of_your_account">Wijzig het thema van uw account</string>
     <string name="pull_to_refresh">Trek om te vernieuwen</string>
     <string name="pulling_down_on_top_of_page_to_refresh">Trek omlaag op de bovenkant van de pagina om te vernieuwen.\nU moet de app opnieuw opstarten om wijzigingen door te voeren.</string>
-    <string name="donate">Doneer</string>
 </resources>
