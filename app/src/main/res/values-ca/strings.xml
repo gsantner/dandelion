@@ -20,7 +20,7 @@
     <string name="public_">Públic</string>
     <string name="search">Cerca</string>
     <string name="contacts">Contactes</string>
-    <string name="changelog">Novetats</string>
+    <string name="changelog">Registre de canvis</string>
     <string name="statistics">Estadí­stiques</string>
     <!-- Notifications dropdown menu -->
     <string name="all_notifications">Totes les notificacions</string>
