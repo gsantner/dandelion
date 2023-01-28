@@ -2,6 +2,8 @@
 <resources>
     <!-- Application -->
     <string name="reload">إنعاش</string>
+    <string name="close">إغلاق</string>
+    <string name="cancel">إلغاء</string>
     <!-- Common Words -->
     <string name="settings">إعدادات</string>
     <string name="search">بحث</string>
