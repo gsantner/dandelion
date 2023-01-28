@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="reload">إنعاش</string>
     <!-- Common Words -->
     <string name="settings">إعدادات</string>
     <string name="search">بحث</string>
