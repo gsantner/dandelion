@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="reload">بارکردنەوە</string>
     <!-- Common Words -->
+    <string name="settings">ڕێکخستنەکان</string>
+    <string name="search">گەڕان</string>
+    <string name="changelog">گۆڕانکارییەکان</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">زیاتر</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">ڕووکار</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">گشتی</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">بۆ گۆڕینی زمان، پێویستە بەرنامەکە دابخەیت و دووبارە بیکەیتەوە</string>
+    <string name="language">زمان</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">بنەڕەتی</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">هەمەجۆر</string>
+    <string name="about">دەربارە</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">بەشداربووان</string>
 </resources>
