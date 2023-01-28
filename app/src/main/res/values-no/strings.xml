@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Åpne navigasjonsskuff</string>
+    <string name="close_navdrawer">Lukk navigasjons skuff</string>
     <!-- Common Words -->
     <string name="settings">Innstillinger</string>
     <string name="search">Søk</string>
@@ -12,6 +14,7 @@
     <string name="share_dotdotdot">Del…</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="show_title">Vis tittel</string>
     <!-- Operability -->
     <string name="top_toolbar_loads_stream__appsp">Den øvre verktøylinjen laster inn strømmen</string>
     <string name="click_empty_space_top_toolbar_load_stream__appspecific">Klikk på en tom plass i den øvre verktøylinjen for å åpne strømmen</string>
