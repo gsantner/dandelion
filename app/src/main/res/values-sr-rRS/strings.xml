@@ -3,12 +3,14 @@
     <!-- Application -->
     <string name="open_navdrawer">Otvori navigacioni panel</string>
     <string name="close_navdrawer">Yatvori navigacioni panel</string>
+    <string name="close">Zatvori</string>
     <!-- Common Words -->
     <string name="settings">Podesavanja</string>
     <string name="changelog">Lista promena</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Više</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <string name="hide_statusbar">Sakrij status</string>
@@ -18,6 +20,7 @@
     <string name="appearance">Izgled</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Opšte</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
     <string name="language_change_restart_description">Promijeni jezik ove aplikacije. Restartuj apikaciju da bi podešavanja dobila efekat.</string>
