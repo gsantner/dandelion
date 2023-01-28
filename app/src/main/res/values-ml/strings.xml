@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">നാവിഗേഷൻ ഡ്രോയർ തുറക്കുക</string>
+    <string name="close_navdrawer">നാവിഗേഷൻ ഡ്രോയർ അടയ്ക്കുക</string>
     <string name="reload">വീണ്ടും ലോഡ് ചെയ്യുക</string>
+    <string name="close">അടയ്ക്കുക</string>
     <string name="cancel">റദ്ദാക്കുക</string>
     <!-- Common Words -->
     <string name="settings">ക്രമീകരണങ്ങൾ</string>
@@ -72,6 +75,8 @@
     <string name="pod_address">പോഡ് വിലാസം</string>
     <string name="missing_value">കാണാതായ മൂല്യം</string>
     <string name="jump_to_last_visited_page_in_stream__appspecific">സ്ട്രീമിലെ അവസാനമായി സന്ദർശിച്ച പേജിലേക്ക് പോകുക?</string>
+    <string name="hide_statusbar">സ്റ്റാറ്റസ് ബാർ മറയ്ക്കുക</string>
+    <string name="show_title">ശീർഷകം കാണിക്കുക</string>
     <!-- Operability -->
     <string name="top_toolbar_loads_stream__appsp">മുകളിലെ ടൂൾബാർ സ്‌ട്രീം ലോഡ് ചെയ്യുന്നു</string>
     <string name="click_empty_space_top_toolbar_load_stream__appspecific">ടൂൾബാറിലെ ഒഴിഞ്ഞ സ്ഥലത്തു ക്ലിക്ക് ചെയ്തു സ്‌ട്രീം തുറക്കുക</string>
@@ -85,7 +90,7 @@
     <string name="navigation_drawer">നാവിഗേഷൻ സ്ലൈഡർ</string>
     <string name="control_visibility_of_entries_nav_drawer">നാവിഗേഷൻ വലിപ്പിലെ രേഖപ്പെടുത്തലുകളുടെ കാഴ്ച്ച നിയന്ത്രിക്കുക</string>
     <string name="user">ഉപയോക്താവ്</string>
-    <string name="general">പൊതു</string>
+    <string name="general">പൊതുവായിട്ടുള്ളത്</string>
     <string name="admin">അഡ്മിൻ</string>
     <!-- Themes -->
     <string name="theme_and_colors">തീമും നിറവും</string>
@@ -145,6 +150,7 @@
     <string name="intellihide_toolbars">ടൂൾബാറുകൾ ഇന്റലിഹൈഡ് ചെയ്യുക</string>
     <string name="append_shared_by_notice">അറിയിപ്പാൽ പങ്കുവച്ചത് എന്ന് കൂട്ടിച്ചേർക്കുക</string>
     <!-- More -->
+    <string name="miscellaneous">പലവക</string>
     <string name="enable_basic_adblocker_description">ലളിതമായ ആഡ്ബ്ലോക്കർ സജ്ജമാക്കുക. പരസ്യങ്ങൾ ചിലപ്പോൾ ഉൾപ്പെടാം. ഉദാ: എംബെഡ്ഡ് ചെയ്‌ത കാഴ്ചയിൽ</string>
     <string name="block_advertisments">പരസ്യങ്ങൾ തടയുക</string>
     <string name="about">കുറിച്ച്</string>
@@ -161,6 +167,7 @@
     <string name="code_name_witharg">കോഡ്നെയിം: %1$s</string>
     <string name="pod_domain_witharg__appspecific">പോഡിന്റെ അഡ്രസ്:%1$s</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">സംഭാവകർ</string>
     <string name="the_following_libraries_are_used">താഴെ പറഞ്ഞിരിക്കുന്ന ലൈബ്രറികൾ ഉപയോഗിച്ചിരിക്കുന്നു:</string>
     <string name="inspiration_from_leafpic__appspecific">ഞങ്ങൾ ചില കോഡുകൾ കടമെടുത്തതും പ്രചോദനമായതും ലീഫ്പിക് ഇൽ നിന്നാണ്. ഒന്നു പരിശോധിക്കൂ.. അതും സ്വതന്ത്ര സോഫ്റ്റ്‌വേർ ആണ്!</string>
     <string name="tell_me_more">വിശദീകരിക്കുക</string>
