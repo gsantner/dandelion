@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Hərəkət siyirməsini aç</string>
+    <string name="close_navdrawer">Naviqasiya çəkməcəsini bağla</string>
     <!-- Common Words -->
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
