@@ -79,6 +79,7 @@
     <string name="pod_address">포드 주소</string>
     <string name="missing_value">값이 없습니다</string>
     <string name="jump_to_last_visited_page_in_stream__appspecific">스트림의 마지막 방문 페이지로 이동합니까?</string>
+    <string name="show_title">제목 보기</string>
     <!-- Operability -->
     <string name="top_toolbar_loads_stream__appsp">상단 툴바에서 스트림 읽기</string>
     <string name="click_empty_space_top_toolbar_load_stream__appspecific">상단 툴바의 빈 부분을 클릭해 스트림 열기</string>
