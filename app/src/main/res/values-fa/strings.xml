@@ -4,6 +4,8 @@
     <string name="open_navdrawer">بازکردن کشوی جهت‌یابی</string>
     <string name="close_navdrawer">بستن کشوی جهت‌یابی</string>
     <string name="reload">بارگزاری مجدد</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
     <!-- Common Words -->
     <string name="settings">تنظیمات</string>
     <string name="search">جستجو</string>
