@@ -3,6 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Hap sirtarin nagivues</string>
     <string name="close_navdrawer">Mbyll sirtarin navigues</string>
+    <string name="close">Mbyll</string>
     <!-- Common Words -->
     <string name="settings">Parametrat</string>
     <string name="changelog">Ndryshim</string>
@@ -30,5 +31,8 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Të ndryshme</string>
+    <string name="about">Rreth</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">Kontribuesit</string>
 </resources>
