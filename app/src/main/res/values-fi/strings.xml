@@ -13,16 +13,23 @@
     <!-- Permissions -->
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Ulkoasu</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Yleiset</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">Vaihda tämän sovelluksen kieli. Käynnistä sovellus uudelleen, jotta muutokset tulevat voimaan</string>
+    <string name="language">Kieli</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">Oletus</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="about">Tietoja</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">Osallistujat</string>
 </resources>
