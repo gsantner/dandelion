@@ -3,6 +3,8 @@
     <!-- Application -->
     <string name="open_navdrawer">Malfermi navigan fenestron</string>
     <string name="close_navdrawer">Fermi navigan fenestron</string>
+    <string name="close">Fermi</string>
+    <string name="cancel">Rezigni</string>
     <!-- Common Words -->
     <string name="settings">Agordoj</string>
     <string name="search">Serĉi</string>
