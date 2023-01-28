@@ -107,7 +107,7 @@
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Genişletilmiş Bildirimler</string>
     <string name="extendend_notifications_bell_description__appspecific">Bildirim zilini, bildirim kategorilerini gösteren bir açılır menü ile genişlet</string>
-    <string name="language_change_restart_description">Bu uygulamanın dilini değiştir. Değişikliklerin etkili olması için uygulamayı yeniden başlatın</string>
+    <string name="language_change_restart_description">Bu uygulamanın dilini değiştirin. Değişikliklerin etkili olması için uygulamayı yeniden başlatın</string>
     <string name="language">Dil</string>
     <string name="system_language">Sistem dili</string>
     <!-- Font size -->
