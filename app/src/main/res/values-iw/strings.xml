@@ -4,6 +4,8 @@
     <string name="open_navdrawer">פתיחת מגירת ניווט</string>
     <string name="close_navdrawer">סגור את מגירת יישומים</string>
     <string name="reload">טען מחדש</string>
+    <string name="close">סגירה</string>
+    <string name="cancel">ביטול</string>
     <!-- Common Words -->
     <string name="settings">הגדרות</string>
     <string name="search">חפש</string>
@@ -15,6 +17,7 @@
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <string name="hide_statusbar">הסתר שורת מצב</string>
+    <string name="show_title">הצג כותרת</string>
     <!-- Operability -->
     <!-- Category Titles -->
     <string name="appearance">מראה</string>
