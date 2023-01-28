@@ -4,6 +4,7 @@
     <string name="open_navdrawer">Ldi umuɣ n tunigin</string>
     <string name="close_navdrawer">Ffer umuɣ n tunigin</string>
     <string name="reload">Smiren</string>
+    <string name="close">Mdel</string>
     <!-- Common Words -->
     <string name="settings">Iɣewwaṛen</string>
     <string name="notifications">Ilɣa</string>
@@ -193,7 +194,7 @@
     <!-- License & help (large amount of text) -->
     <string name="maintainers">Wid yettseggimen</string>
     <string name="this_app_is_currently_developed_and_maintained_by_witharg">Asnas-agi yezga di tneflit akked useggem sɣru &lt;br&gt;&lt;br&gt;%1$s</string>
-    <string name="contributors">Imttekkiyen</string>
+    <string name="contributors">Iwiziwen</string>
     <string name="thank_you_witharg">%1$s&lt;br&gt;&lt;br&gt;Tanemmirt!</string>
     <string name="gnu_gplv3_license">Turagt GNU GPLv3+</string>
     <string name="show_third_party_licenses">Tinedlisin tis kraḍ</string>
