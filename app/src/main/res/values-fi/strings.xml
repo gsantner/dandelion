@@ -2,9 +2,13 @@
 <resources>
     <!-- Application -->
     <!-- Common Words -->
+    <string name="settings">Asetukset</string>
+    <string name="search">Hae</string>
+    <string name="changelog">Muutosloki</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Lisää</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <!-- Operability -->
