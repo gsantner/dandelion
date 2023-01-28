@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="close">Girtin</string>
+    <string name="cancel">Bişûndekirin</string>
     <!-- Common Words -->
+    <string name="settings">Mîhengan</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Bêhtir</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Xuyang</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Giştî</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language">Ziman</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">Jixweber</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Dîtir</string>
+    <string name="about">Debar</string>
     <!-- License & help (large amount of text) -->
 </resources>
