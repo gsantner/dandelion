@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Отвори навигациону фиоку</string>
+    <string name="close_navdrawer">Затвори фиоку навигације</string>
     <!-- Common Words -->
     <string name="settings">Поставке</string>
     <string name="search">тражи</string>
@@ -13,12 +15,14 @@
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <string name="hide_statusbar">Sakrij status</string>
+    <string name="show_title">Схов наслов</string>
     <!-- Operability -->
     <!-- Category Titles -->
     <string name="appearance">Izgled</string>
     <string name="network">Мрежа</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Опште</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
     <string name="language_change_restart_description">Промените језик апликације. Поново покрените након тога</string>
