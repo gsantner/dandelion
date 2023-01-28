@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Buka panel navigasi</string>
+    <string name="close_navdrawer">Tutup panel navigasi</string>
+    <string name="reload">Muat ulang</string>
     <!-- Common Words -->
+    <string name="settings">Setelan</string>
+    <string name="search">Cari</string>
+    <string name="changelog">Catatan Perubahan</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Lainnya</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="hide_statusbar">Sembunyikan kolom status</string>
+    <string name="show_title">Tampilkan judul</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Tampilan</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Umum</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">Mengubah bahasa aplikasi. Buka ulang aplikasi setelah mengubah preferensi bahasa</string>
+    <string name="language">Bahasa</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">Bawaan</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Lain-lain</string>
     <!-- License & help (large amount of text) -->
 </resources>
