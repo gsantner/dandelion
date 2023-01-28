@@ -2,6 +2,7 @@
 <resources>
     <!-- Application -->
     <!-- Common Words -->
+    <string name="settings">การตั้งค่าโปรไฟล์</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
