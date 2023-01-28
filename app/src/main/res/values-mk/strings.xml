@@ -3,6 +3,8 @@
     <!-- Application -->
     <string name="open_navdrawer">Отвори поле за навигација</string>
     <string name="close_navdrawer">Затвори поле за навигација</string>
+    <string name="close">Затвори</string>
+    <string name="cancel">Откажи</string>
     <!-- Common Words -->
     <string name="settings">Подесувања</string>
     <string name="search">Пребарај</string>
@@ -19,14 +21,21 @@
     <string name="appearance">Изглед</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Општо</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">Смени јазик на апликацијата. Рестартирај ја апликацијата за промените да се видат</string>
+    <string name="language">Јазик</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">Стандардно</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Разно</string>
+    <string name="about">За</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">Соработници</string>
 </resources>
