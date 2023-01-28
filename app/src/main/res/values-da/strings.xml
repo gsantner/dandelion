@@ -2,6 +2,8 @@
 <resources>
     <!-- Application -->
     <string name="reload">Genindlæs</string>
+    <string name="close">Luk</string>
+    <string name="cancel">Annuller</string>
     <!-- Common Words -->
     <string name="settings">Indstillinger</string>
     <string name="notifications">Notifikationer</string>
