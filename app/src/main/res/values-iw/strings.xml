@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">פתיחת מגירת ניווט</string>
+    <string name="close_navdrawer">סגור את מגירת יישומים</string>
+    <string name="reload">טען מחדש</string>
     <!-- Common Words -->
     <string name="settings">הגדרות</string>
     <string name="search">חפש</string>
