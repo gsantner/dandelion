@@ -3,6 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">নেভিগেশন ড্রয়ার খুলুন</string>
     <string name="close_navdrawer">নেভিগেশন ড্রয়ার বন্ধ করুন</string>
+    <string name="close">বন্ধ করুন</string>
     <!-- Common Words -->
     <string name="settings">সেটিংস</string>
     <string name="search">অনুসন্ধান</string>
@@ -34,4 +35,5 @@
     <string name="miscellaneous">বিবিধ</string>
     <string name="about">সম্পর্কে</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">অবদানকারীরা</string>
 </resources>
