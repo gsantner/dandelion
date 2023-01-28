@@ -3,6 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Otvori navigacijsku ladicu</string>
     <string name="close_navdrawer">Zatvorite navigacijsku ladicu</string>
+    <string name="reload">Učitaj ponovo</string>
     <string name="close">Zatvori</string>
     <string name="cancel">Otkaži</string>
     <!-- Common Words -->
@@ -16,6 +17,7 @@
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <string name="hide_statusbar">Sakrij statusnu traku</string>
+    <string name="show_title">Prikaži naslov</string>
     <!-- Operability -->
     <!-- Category Titles -->
     <string name="appearance">Izgled</string>
@@ -24,7 +26,7 @@
     <string name="general">Opće</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
-    <string name="language_change_restart_description">Promijeni jezik programa. Iznova pokrenite program da aktivirate promjenu</string>
+    <string name="language_change_restart_description">Promijenite jezik programa. Iznova pokrenite program da aktivirate promjenu</string>
     <string name="language">Jezik</string>
     <!-- Font size -->
     <!-- Load images -->
