@@ -3,7 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Abrir cadro de navegación</string>
     <string name="close_navdrawer">Pechar cadro de navegación</string>
-    <string name="reload">Actualizar</string>
+    <string name="reload">Refrescar</string>
     <string name="close">Pechar</string>
     <string name="cancel">Cancelar</string>
     <!-- Common Words -->
@@ -50,7 +50,7 @@
     <string name="new_post">Nova mensaxe</string>
     <string name="go_to_top">Ir arriba</string>
     <string name="search_by_tags_or_persons__appspecific">Buscar persoas ou etiquetas</string>
-    <string name="exit_app">Saír da app</string>
+    <string name="exit_app">Saír do app</string>
     <string name="toggle_mobile_desktop_view">Vista móbil/escritorio</string>
     <string name="share_dotdotdot">Compartir…</string>
     <string name="by_tags">Etiquetas</string>
@@ -71,7 +71,7 @@
         pechar a aplicación ou reiniciar o dispositivo. Se non permites acceder ao almacenamento, para poder gardar imaxes posteriormente, deberás abrir: preferencias do sistema - apps - dandelion* no dispositivo.
    Na sección de permisos podes activar o \"permiso de escritura no almacenamento\".</string>
     <string name="permission_denied">Permiso denegado.</string>
-    <string name="permission_granted_try_again">Permiso concedido. Inténtao de novo.</string>
+    <string name="permission_granted_try_again">Permiso concedido. Inténteo de novo.</string>
     <string name="custom_pod">Nodo personalizado</string>
     <string name="pod_name">Nome do nodo</string>
     <string name="protocol">Protocolo</string>
@@ -110,7 +110,7 @@
     <!-- Notifications dropdown -->
     <string name="extended_notifications">Notificacións extendidas</string>
     <string name="extendend_notifications_bell_description__appspecific">Extender a icona da campá de notificación con un menú desplegable que mostre a categoría das notificacións</string>
-    <string name="language_change_restart_description">Cambiar o idioma de esta aplicación. Reinicia para que se aplique o troco</string>
+    <string name="language_change_restart_description">Cambiar o idioma de esta aplicación. Reinicie para que se aplique o troco</string>
     <string name="language">Idioma</string>
     <string name="system_language">Idioma do sistema</string>
     <!-- Font size -->
