@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">بازکردن کشوی جهت‌یابی</string>
+    <string name="close_navdrawer">بستن کشوی جهت‌یابی</string>
+    <string name="reload">بارگزاری مجدد</string>
     <!-- Common Words -->
     <string name="settings">تنظیمات</string>
     <string name="search">جستجو</string>
@@ -12,8 +15,10 @@
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <string name="hide_statusbar">مخفی کردن نوار وضعیت</string>
+    <string name="show_title">عنوان را نشان دهید</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">ظاهر</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <string name="general">عمومی</string>
@@ -29,6 +34,7 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">متفرقه</string>
     <string name="about">درباره مارکور</string>
     <!-- License & help (large amount of text) -->
     <string name="contributors">همکاران</string>
