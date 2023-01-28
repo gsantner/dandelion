@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Buksan ang nabigasyon ng kahon</string>
+    <string name="close_navdrawer">Isara ang navigation drawer</string>
+    <string name="reload">I-reload</string>
     <!-- Common Words -->
-    <string name="settings">Mga Tanawin</string>
+    <string name="settings">Pagsasaayos</string>
     <string name="search">Hanapin</string>
+    <string name="changelog">Mga Pagbabago</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Karagdagan</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="hide_statusbar">Itago ang status bar</string>
+    <string name="show_title">Ipakita ang pamagat</string>
     <!-- Operability -->
     <!-- Category Titles -->
-    <string name="appearance">Ayos</string>
+    <string name="appearance">Hitsura</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Kabuuan</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">Baguhin ang wika ng app. I-restart ang app para umepekto ang mga pagbabago</string>
+    <string name="language">Wika</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">Default</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Sari-sari</string>
+    <string name="about">Tungkol sa</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">Mga Nag-ambag</string>
 </resources>
