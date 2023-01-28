@@ -3,6 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Mở ngăn điều hướng</string>
     <string name="close_navdrawer">Đóng ngăn điều hướng</string>
+    <string name="close">Đóng</string>
     <!-- Common Words -->
     <string name="settings">Cài đặt</string>
     <string name="search">Tìm kiếm</string>
@@ -32,6 +33,7 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Khác</string>
     <string name="about">Trong khoảng</string>
     <!-- License & help (large amount of text) -->
     <string name="contributors">Những người đóng góp</string>
