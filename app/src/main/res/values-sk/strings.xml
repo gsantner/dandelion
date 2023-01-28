@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Otvoriť navigačné menu</string>
+    <string name="close_navdrawer">Zatvorenie navigačnej zásuvky</string>
     <!-- Common Words -->
+    <string name="settings">Nastavenie</string>
+    <string name="search">Hľadať</string>
+    <string name="changelog">Záznam zmien</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Viac</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="show_title">Zobraziť názov</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Vzhľad</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Všeobecné</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">Zmeniť jazyk aplikácie. Reštartujte aplikáciu aby sa zmeny uložili</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
