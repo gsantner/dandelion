@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="reload">Επαναφόρτωση</string>
     <!-- Common Words -->
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="search">Αναζήτηση</string>
+    <string name="changelog">Αρχείο Αλλαγών</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Περισσότερα</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <!-- Operability -->
