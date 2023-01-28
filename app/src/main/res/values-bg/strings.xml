@@ -3,6 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Отваряне на главното меню</string>
     <string name="close_navdrawer">Затваряне на чекмеджето за навигация</string>
+    <string name="close">Затвори</string>
     <!-- Common Words -->
     <string name="settings">Настройки</string>
     <string name="changelog">Преглед на измененията</string>
@@ -12,12 +13,17 @@
     <string name="more">Още</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="show_title">Покажи заглавие</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Външен вид</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Общи</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">Промяна на езика на това приложение. Рестартирайте приложението, за да влязат в сила промените</string>
+    <string name="language">Език</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
@@ -25,5 +31,8 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Други</string>
+    <string name="about">Относно</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">Сътрудници</string>
 </resources>
