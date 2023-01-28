@@ -2,7 +2,7 @@
 <resources>
     <!-- Application -->
     <string name="open_navdrawer">Apri barra di navigazione</string>
-    <string name="close_navdrawer">Chiudi barra di navigazione</string>
+    <string name="close_navdrawer">Chiudi la barra di navigazione</string>
     <string name="reload">Ricarica</string>
     <string name="close">Chiudi</string>
     <string name="cancel">Annulla</string>
