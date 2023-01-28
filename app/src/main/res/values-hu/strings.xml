@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Navigációs menü megnyitása</string>
+    <string name="close_navdrawer">Navigációs menü bezárása</string>
     <string name="reload">Újratölt</string>
     <!-- Common Words -->
     <string name="settings">Beállítások</string>
