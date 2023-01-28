@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">வழிசெலுத்தல் இடத்தைத் திற</string>
+    <string name="close_navdrawer">வழிசெலுத்தல் இழுப்பறையை மூடு</string>
+    <string name="reload">திரும்ப ஏற்று</string>
     <!-- Common Words -->
+    <string name="settings">அமைப்புகள்</string>
+    <string name="search">தேடு</string>
+    <string name="changelog">மாற்றப்பதிவேடு</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">மேலும்</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="hide_statusbar">நிலைமைப்பட்டையை மறை</string>
+    <string name="show_title">தலைப்பைக் காட்டு</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">தோற்றம்</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">பொதுவானவை</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">இந்த செயலியின் மொழியை தெரிவு செய்யவும். இந்த மாற்றங்களின் விளைவு தெரிய மீண்டும் செயலியை திறக்கவும்</string>
+    <string name="language">மொழி</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">இயல்புநிலை</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">இதர</string>
+    <string name="about">இதைப்பற்றி</string>
     <!-- License & help (large amount of text) -->
 </resources>
