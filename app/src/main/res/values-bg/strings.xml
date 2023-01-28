@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Отваряне на главното меню</string>
+    <string name="close_navdrawer">Затваряне на чекмеджето за навигация</string>
     <!-- Common Words -->
+    <string name="settings">Настройки</string>
+    <string name="changelog">Преглед на измененията</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Още</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
     <!-- Operability -->
