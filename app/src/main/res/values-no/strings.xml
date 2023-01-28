@@ -3,6 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Åpne navigasjonsskuff</string>
     <string name="close_navdrawer">Lukk navigasjons skuff</string>
+    <string name="close">Lukk</string>
     <!-- Common Words -->
     <string name="settings">Innstillinger</string>
     <string name="search">Søk</string>
