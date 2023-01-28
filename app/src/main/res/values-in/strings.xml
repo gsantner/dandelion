@@ -4,6 +4,8 @@
     <string name="open_navdrawer">Buka panel navigasi</string>
     <string name="close_navdrawer">Tutup panel navigasi</string>
     <string name="reload">Muat ulang</string>
+    <string name="close">Tutup</string>
+    <string name="cancel">Batal</string>
     <!-- Common Words -->
     <string name="settings">Setelan</string>
     <string name="search">Cari</string>
@@ -35,5 +37,7 @@
     <!-- Diaspora Settings -->
     <!-- More -->
     <string name="miscellaneous">Lain-lain</string>
+    <string name="about">Tentang Kami</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">Kontributor</string>
 </resources>
