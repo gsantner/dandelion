@@ -4,8 +4,8 @@
     <string name="open_navdrawer">Otevøít navigaèní panel</string>
     <string name="close_navdrawer">Zavøít navigaèní panel</string>
     <string name="reload">Aktualizovat</string>
-    <string name="close">Konec</string>
-    <string name="cancel">Rakovina</string>
+    <string name="close">Zavřít</string>
+    <string name="cancel">Zrušit</string>
     <!-- Common Words -->
     <string name="settings">Nastavení</string>
     <string name="notifications">Oznámení</string>
