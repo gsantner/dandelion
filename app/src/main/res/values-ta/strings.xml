@@ -4,6 +4,8 @@
     <string name="open_navdrawer">வழிசெலுத்தல் இடத்தைத் திற</string>
     <string name="close_navdrawer">வழிசெலுத்தல் இழுப்பறையை மூடு</string>
     <string name="reload">திரும்ப ஏற்று</string>
+    <string name="close">மூடவும்</string>
+    <string name="cancel">ரத்து செய்</string>
     <!-- Common Words -->
     <string name="settings">அமைப்புகள்</string>
     <string name="search">தேடு</string>
@@ -37,4 +39,5 @@
     <string name="miscellaneous">இதர</string>
     <string name="about">இதைப்பற்றி</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">பங்களிப்பாளர்கள்</string>
 </resources>
