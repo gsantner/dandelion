@@ -4,6 +4,8 @@
     <string name="open_navdrawer">नेविगेशन ड्रॉवर खोलें</string>
     <string name="close_navdrawer">नेविगेशन ड्रॉवर को बंद करें</string>
     <string name="reload">फिर से लोड करें</string>
+    <string name="close">बंद</string>
+    <string name="cancel">रद्द करना</string>
     <!-- Common Words -->
     <string name="settings">सेटिंग्स</string>
     <string name="search">खोजें</string>
