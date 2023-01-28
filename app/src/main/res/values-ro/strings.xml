@@ -57,10 +57,13 @@
     <string name="share_image">Partajează imaginea</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="show_title">Arată titlul</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Aspect</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">General</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
     <string name="language_change_restart_description">Schimbă limba acestei aplicații. Restartează aplicația pentru ca schimbările să ia efect</string>
