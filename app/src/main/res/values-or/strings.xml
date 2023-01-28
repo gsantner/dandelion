@@ -2,7 +2,7 @@
 <resources>
     <!-- Application -->
     <string name="open_navdrawer">ନେଭିଗେସନ୍ ଡ୍ରୟର୍ ଖୋଲନ୍ତୁ</string>
-    <string name="close_navdrawer">ନେଭିଗେସନ୍ ଡ୍ରୟର୍ ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="close_navdrawer">ନେଵିଗେଶନ୍ ଡ୍ରୟର୍ ବନ୍ଦ କରିବା</string>
     <string name="reload">ପୁନଃଲୋଡ୍ କରନ୍ତୁ</string>
     <string name="close">ବନ୍ଦ କରନ୍ତୁ</string>
     <string name="cancel">ବାତିଲ୍ କର</string>
