@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Hap sirtarin nagivues</string>
+    <string name="close_navdrawer">Mbyll sirtarin navigues</string>
     <!-- Common Words -->
+    <string name="settings">Parametrat</string>
+    <string name="changelog">Ndryshim</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Më tepër</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="show_title">Shfaq titullin</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Pamja</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Gjeneral</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">Ndrysho gjuhën e këtij aplikacioni. Rinisni aplikacionin që ndryshimet të hyjnë në fuqi</string>
+    <string name="language">Gjuha</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
