@@ -2,6 +2,8 @@
 <resources>
     <!-- Application -->
     <string name="reload">Επαναφόρτωση</string>
+    <string name="close">Κλείσιμο</string>
+    <string name="cancel">Ακύρωση</string>
     <!-- Common Words -->
     <string name="settings">Ρυθμίσεις</string>
     <string name="search">Αναζήτηση</string>
@@ -14,16 +16,24 @@
     <!-- Permissions -->
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Εμφάνιση</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Γενικά</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">Αλλαγή γλώσσας αυτής της εφαρμογής. Επανεκκίνηση της εφαρμογής για να τεθούν σε ισχύ οι αλλαγές</string>
+    <string name="language">Γλώσσα</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
+    <string name="default_">Προεπιλογή</string>
     <!-- Proxy -->
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Διάφορα</string>
+    <string name="about">Σχετικά</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">Συντελεστές</string>
 </resources>
