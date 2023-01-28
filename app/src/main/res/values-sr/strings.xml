@@ -3,6 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Отвори навигациону фиоку</string>
     <string name="close_navdrawer">Затвори фиоку навигације</string>
+    <string name="close">Затвори</string>
     <!-- Common Words -->
     <string name="settings">Поставке</string>
     <string name="search">тражи</string>
