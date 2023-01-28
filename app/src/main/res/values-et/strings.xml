@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">Ava navigeerimise sakk</string>
+    <string name="close_navdrawer">Sulge navigeerimissahtel</string>
     <!-- Common Words -->
+    <string name="settings">Seaded</string>
+    <string name="changelog">Muuda logi</string>
     <!-- Notifications dropdown menu -->
     <!-- Pod Activity -->
     <!-- Drawer, Menu, Toolbar, ContextMenu -->
+    <string name="more">Lisaks</string>
     <!-- More from MainActivity -->
     <!-- Permissions -->
+    <string name="show_title">Näita pealkiri</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">Välimus</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
+    <string name="general">Üldine</string>
     <!-- Themes -->
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">Muutke selle rakenduse keelt. Muudatuste jõustumiseks taaskäivitage rakendus</string>
+    <string name="language">Keel</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
@@ -20,5 +30,7 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Mitmesugune</string>
+    <string name="about">Teave</string>
     <!-- License & help (large amount of text) -->
 </resources>
