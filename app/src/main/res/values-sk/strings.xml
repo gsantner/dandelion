@@ -3,6 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">Otvoriť navigačné menu</string>
     <string name="close_navdrawer">Zatvorenie navigačnej zásuvky</string>
+    <string name="close">Zavrieť</string>
     <!-- Common Words -->
     <string name="settings">Nastavenie</string>
     <string name="search">Hľadať</string>
@@ -23,6 +24,7 @@
     <!-- Themes -->
     <!-- Notifications dropdown -->
     <string name="language_change_restart_description">Zmeniť jazyk aplikácie. Reštartujte aplikáciu aby sa zmeny uložili</string>
+    <string name="language">Jazyk</string>
     <!-- Font size -->
     <!-- Load images -->
     <!-- Screen rotation -->
@@ -30,5 +32,8 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">Rôzne</string>
+    <string name="about">O aplikacii</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">Prispievatelia</string>
 </resources>
