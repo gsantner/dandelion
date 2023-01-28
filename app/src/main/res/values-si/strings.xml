@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
+    <string name="open_navdrawer">සංචාලන ලාච්චුව දිගහරින්න</string>
+    <string name="close_navdrawer">සංචාලන ලාච්චුව වසන්න</string>
     <string name="reload">නැවත පූරණය</string>
     <string name="close">වසන්න</string>
     <string name="cancel">අවලංගු</string>
@@ -15,6 +17,7 @@
     <string name="public_">ප්‍රසිද්ධ</string>
     <string name="search">සොයන්න</string>
     <string name="contacts">සබඳතා</string>
+    <string name="changelog">චේන්ජ්ලොග්</string>
     <string name="statistics">සංඛ්‍යාලේඛන</string>
     <!-- Notifications dropdown menu -->
     <string name="all_notifications">සියළුම දැනුම්දීම්</string>
@@ -42,14 +45,17 @@
     <string name="show_title">සිරැසිය පෙන්වන්න</string>
     <!-- Operability -->
     <!-- Category Titles -->
+    <string name="appearance">පෙනුම</string>
     <string name="network">ජාලය</string>
     <!-- Visuals -->
     <!-- Navigiation Slider -->
     <string name="user">පරිශීලක</string>
+    <string name="general">ජනරාල්</string>
     <string name="admin">පරිපාලක</string>
     <!-- Themes -->
     <string name="theme_and_colors">තේමාව සහ වර්ණ</string>
     <!-- Notifications dropdown -->
+    <string name="language_change_restart_description">මෙම යෙදුමේ භාෂාව වෙනස් කරන්න. වෙනස්කම් බලාත්මක වීමට යෙදුම නැවත ආරම්භ කරන්න</string>
     <string name="language">භාෂාව</string>
     <string name="system_language">පද්ධතියේ භාෂාව</string>
     <!-- Font size -->
@@ -65,6 +71,7 @@
     <!-- Diaspora Settings -->
     <string name="change_account">ගිණුම වෙනස් කරන්න</string>
     <!-- More -->
+    <string name="miscellaneous">විවිධ</string>
     <string name="about">පිලිබඳව</string>
     <string name="license">බලපත්‍රය</string>
     <string name="application">යෙදුම</string>
@@ -76,6 +83,7 @@
     <string name="translate_the_app">යෙදුම පරිවර්තනය කරන්න!</string>
     <string name="share_the_app">යෙදුම බෙදාගන්න</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">සහ දායකයින්</string>
     <string name="gnu_gplv3_license">ජීඑන්යූ ජීපීඑල්v3+ බලපත්‍රය</string>
     <string name="youtube_links">යූටියුබ් සබැඳිය</string>
 </resources>
