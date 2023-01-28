@@ -4,6 +4,8 @@
     <string name="open_navdrawer">Navigációs menü megnyitása</string>
     <string name="close_navdrawer">Navigációs menü bezárása</string>
     <string name="reload">Újratölt</string>
+    <string name="close">Bezárás</string>
+    <string name="cancel">Mégse</string>
     <!-- Common Words -->
     <string name="settings">Beállítások</string>
     <string name="notifications">Értesítések</string>
@@ -73,6 +75,7 @@
     <string name="pod_address">Pod címe</string>
     <string name="missing_value">Hiányzó érték</string>
     <string name="jump_to_last_visited_page_in_stream__appspecific">Ugorjunk a legutóbb meglátogatott oldalra a hírfolyamon belül?</string>
+    <string name="show_title">Műsor címe</string>
     <!-- Operability -->
     <string name="top_toolbar_loads_stream__appsp">A fenti eszköztár betölti a hírfolyamot</string>
     <string name="click_empty_space_top_toolbar_load_stream__appspecific">Kattints egy üres helyre a fenti eszköztáron a hírfolyam megnyitásához</string>
