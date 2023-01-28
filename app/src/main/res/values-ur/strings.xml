@@ -3,6 +3,7 @@
     <!-- Application -->
     <string name="open_navdrawer">نیویگیشن کی دراز کھولیں</string>
     <string name="close_navdrawer">نیویگیشن کی دراز بند کریں</string>
+    <string name="close">بند کریں</string>
     <!-- Common Words -->
     <string name="settings">ترتیبات</string>
     <string name="search">تلاش</string>
@@ -31,5 +32,8 @@
     <!-- Chrome custom tabs -->
     <!-- Diaspora Settings -->
     <!-- More -->
+    <string name="miscellaneous">منفرق مضامین</string>
+    <string name="about">کے بارے میں</string>
     <!-- License & help (large amount of text) -->
+    <string name="contributors">معاونین</string>
 </resources>
