@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Application -->
-    <string name="open_navdrawer">Öppna navigeringslådan</string>
+    <string name="open_navdrawer">Open navigation drawer</string>
     <string name="close_navdrawer">Stäng navigeringslådan</string>
     <string name="reload">Ladda om</string>
-    <string name="close">Avsluta</string>
+    <string name="close">Stäng</string>
     <string name="cancel">Avbryt</string>
     <!-- Common Words -->
-    <string name="settings">Inställningar</string>
+    <string name="settings">Inställning</string>
     <string name="notifications">Notiser</string>
     <string name="conversations">Konversationer</string>
     <string name="stream">Ström</string>
@@ -208,6 +208,6 @@
     <string name="enable_to_open_youtube_links_on_external_app">Aktivera för att öppna Youtube-länkar i en extern app</string>
     <string name="youtube_links">Youtube-länkar</string>
     <string name="change_the_theme_of_your_account">Ändra temat för ditt konto</string>
-    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="pull_to_refresh">Dra för att uppdatera</string>
     <string name="pulling_down_on_top_of_page_to_refresh">Dra ner på toppen av sidan för att uppdatera.\nDu måste starta om appen för att ändringarna ska träda i kraft.</string>
 </resources>
