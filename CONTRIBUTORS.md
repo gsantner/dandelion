@@ -1,6 +1,5 @@
 <!--
 This file contains references to people who contributed to the app.
-You can also send a mail to [gsantner AT mailbox DOT org](http://gsantner.net#contact) to get included.
 
 Schema:  **[Name](Reference)**<br/>~° Text
 
@@ -13,7 +12,7 @@ Where:
 
 ## LIST OF CONTRIBUTORS
 -->
-* **[Gregor Santner](http://gsantner.net)**<br/>~° Current developer of dandelion
+* **[Gregor Santner](http://github.com/gsantner)**<br/>~° Development of dandelion
 * **[Paul Schaub](https://github.com/vanitasvitae)**<br/>~° Development of dandelion
 * **[Martín Vukovic](martinvukovic AT protonmail DOT com)**<br/>~° Diaspora Native WebApp
 * **[Gaukler Faun](https://github.com/scoute-dich)**<br/>~° Diaspora Native WebApp additions

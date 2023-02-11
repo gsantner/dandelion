@@ -21,7 +21,7 @@ package com.github.dfa.diaspora_android.listener;
 import com.github.dfa.diaspora_android.data.DiasporaUserProfile;
 
 /**
- * Created by gsantner (https://gsantner.net/) on 26.03.16.
+ * Created by gsantner (gsantner AT mailbox DOT org) on 26.03.16.
  * Interface that needs to be implemented by classes that listen for Profile related changes
  */
 public interface DiasporaUserProfileChangedListener {

@@ -32,7 +32,7 @@ import org.json.JSONObject;
 
 /**
  * User profile
- * Created by gsantner (https://gsantner.net/) on 24.03.16.  Part of dandelion*.
+ * Created by gsantner (gsantner AT mailbox DOT org) on 24.03.16.  Part of dandelion*.
  */
 public class DiasporaUserProfile {
     private static final int MINIMUM_USERPROFILE_LOAD_TIMEDIFF = 5000;

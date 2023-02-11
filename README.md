@@ -39,9 +39,9 @@ dandelion\* requires access to the Internet and to external storage to be able t
 
 ## Contributions
 The project is always open for contributions and accepts pull requests.
-The project uses [AOSP Java Code Style](https://source.android.com/source/code-style#follow-field-naming-conventions), with one exception: private members are `_camelCase` instead of `mBigCamel`. You may use Android Studios _auto reformat feature_ before sending a PR. See [gsantner's android contribution guide](https://gsantner.net/android-contribution-guide/?packageid=com.github.dfa.diaspora_android&name=dandelion&web=https://github.com/gsantner/dandelion&source=readme#logcat) for more information.
+The project uses [AOSP Java Code Style](https://source.android.com/source/code-style#follow-field-naming-conventions), with one exception: private members are `_camelCase` instead of `mBigCamel`. You may use Android Studios _auto reformat feature_ before sending a PR.
 
-Translations can be contributed on GitHub or via [E-Mail](https://gsantner.net/#contact). You can use Stringlate ([![Translate - with Stringlate](https://img.shields.io/badge/stringlate-translate-green.svg)](https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion.git)) to translate the project directly on your Android phone. It allows you to export as E-Mail attachement and to post on GitHub.
+Translations can be contributed on GitHub. You can use Stringlate ([![Translate - with Stringlate](https://img.shields.io/badge/stringlate-translate-green.svg)](https://lonamiwebs.github.io/stringlate/translate?git=https%3A%2F%2Fgithub.com%2Fgsantner%2Fdandelion.git)) to translate the project directly on your Android phone. It allows you to export as E-Mail attachement and to post on GitHub.
 
 Join our Matrix channel and say hello! Don't be afraid to start talking. [![Chat - Matrix](https://img.shields.io/badge/chat-on%20matrix-blue.svg)](https://matrix.to/#/#dandelion:matrix.org)  
 Note that the main project members are working on this project for free during leisure time, are mostly busy with their job/university/school, and may not react or start coding immediately.

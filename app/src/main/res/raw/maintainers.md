@@ -1,5 +1,5 @@
 * Gregor Santner (gsantner)
-~° http://gsantner.net
+~° https://github.com/gsantner
 
 * Paul Schaub (vanitasvitae)
 ~° https://github.com/vanitasvitae

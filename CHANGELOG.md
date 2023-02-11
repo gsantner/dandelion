@@ -1,5 +1,5 @@
 ### Recent changes
-- See [Discussions](https://github.com/gsantner/dandelion/discussions), [Issues](https://github.com/gsantner/dandelion/issues) and [Project website](https://gsantner.net/) to see what is going on.
+- See [Discussions](https://github.com/gsantner/dandelion/discussions), [Issues](https://github.com/gsantner/dandelion/issues) and [Project page](https://github.com/gsantner/dandelion#readme) to see what is going on.
 
 ### v1.4.0
 - Add seconds to 'save picture' date format
@@ -23,7 +23,6 @@
 
 **New features:**  
 - All new Aspects and Tags, using a searchable dialog
-- A new home - project blog/page: <https://gsantner.net/project/dandelion.html>
 
 **Fixed:**  
 - Sometimes the Stream went white, which is due an still (>3 years) unfixed Android Support library bug. It should not occur very often anymore due less use of fragments.
